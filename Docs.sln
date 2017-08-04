@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}"
+	ProjectSection(SolutionItems) = preProject
+		Messaging\About.md = Messaging\About.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04EDBE3-F54D-407D-9F97-6F8CFBD25256}"
+	ProjectSection(SolutionItems) = preProject
+		Messaging\Parsing\DeviceMessageIdParsing.md = Messaging\Parsing\DeviceMessageIdParsing.md
+		Messaging\Parsing\FramingBytes.md = Messaging\Parsing\FramingBytes.md
+		Messaging\Parsing\Index.md = Messaging\Parsing\Index.md
+		Messaging\Parsing\ParsingBinaryMessages.md = Messaging\Parsing\ParsingBinaryMessages.md
+		Messaging\Parsing\ParsingDelimitedMessage.md = Messaging\Parsing\ParsingDelimitedMessage.md
+		Messaging\Parsing\ParsingFromBody.md = Messaging\Parsing\ParsingFromBody.md
+		Messaging\Parsing\ParsingFromHeader.md = Messaging\Parsing\ParsingFromHeader.md
+		Messaging\Parsing\ParsingFromPath.md = Messaging\Parsing\ParsingFromPath.md
+		Messaging\Parsing\ParsingFromQueryString.md = Messaging\Parsing\ParsingFromQueryString.md
+		Messaging\Parsing\ParsingJsonMessage.md = Messaging\Parsing\ParsingJsonMessage.md
+		Messaging\Parsing\ParsingStringMessage.md = Messaging\Parsing\ParsingStringMessage.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{AA4E331B-EE82-475D-9EF7-559C3207A1D6}"
+	ProjectSection(SolutionItems) = preProject
+		Index.md = Index.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{F66103ED-F8CC-4368-8951-39E08B670C56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1CF2DC1C-D7F6-46EA-90ED-B90247B8007E}"
+	ProjectSection(SolutionItems) = preProject
+		faq.md = faq.md
+		Index.md = Index.md
+		overview.md = overview.md
+		terminology.md = terminology.md
+		why.md = why.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D04EDBE3-F54D-407D-9F97-6F8CFBD25256} = {75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}
+	EndGlobalSection
+EndGlobal
