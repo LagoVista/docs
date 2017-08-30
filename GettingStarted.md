@@ -10,7 +10,7 @@ It's important before you begin to understand your goals, there are a lot of coo
 Assuming you have your list let's get started.
 
 This getting started guide assumes that you have a basic idea of what you want to do and have identified your sensors, if you need help
-with this please feel free to [contact us](mailto:partners.iotappstudio.com) and we would be happy to discussion options.
+with this please feel free to [contact us](mailto:partners@iotappstudio.com) and we would be happy to discussion options.
 
 #### General Approach
 
@@ -29,17 +29,17 @@ you will want to integrate as well as any messages they will send and/or receive
 The following assumes that you have decided on some sensors that you have no control over how they communicate.  If you are creating
 your own sensors and communication protocols, you can use the following steps to help capture requirements.
 
-[First we will define our Device Types](../Devices/DeviceTypes.md)
+[First we will define our Device Types](./Devices/DeviceTypes.md)
 
-[Then we will define our Device Messages](../Devices/DeviceMessages.md)
+[Then we will define our Device Messages](./Devices/DeviceMessages.md)
  
 ### Define your Device Workflow
 
 Now that you have figured out how your devics communicate, let's configure your solution to do something with those messages and data.  In this step
-you will configure the [Inputs](../workflow/Input.md) by mapping the fields from your messages.  You'll also describe [Attributes](./workflow/Attributes.md) or data called state that will be 
-saved between device calls.  You can even add [Input Commands](../workflow/InputCommands.md) where you can expose REST based services to interact with your 
-workflow and ultimately with your devices from third party apps or services.  You'll also add [State Machines](./StateMachines.md) (don't worry this isn't as hard as it sounds) to define how your devices should react to
-incoming data and messages.  Finally you'll define your [Output Commands](../workflow/OutputCommand.md) that will be used to send data or commands back to the device.
+you will configure the [Inputs](./Workflows/Input.md) by mapping the fields from your messages.  You'll also describe [Attributes](./Workflows/Attributes.md) or data called state that will be 
+saved between device calls.  You can even add [Input Commands](./Workflows/InputCommands.md) where you can expose REST based services to interact with your 
+workflow and ultimately with your devices from third party apps or services.  You'll also add [State Machines](./Workflows/StateMachines.md) (don't worry this isn't as hard as it sounds) to define how your devices should react to
+incoming data and messages.  Finally you'll define your [Output Commands](./Workflows/OutputCommands.md) that will be used to send data or commands back to the device.
 
 You can do all of this via a WYSWIG designer, where you can add custom scripts and even calls to your custom code with our container frameworks.
 

@@ -33,10 +33,32 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1CF2DC1C-D7F6-46EA-90ED-B90247B8007E}"
 	ProjectSection(SolutionItems) = preProject
 		faq.md = faq.md
+		GettingStarted.md = GettingStarted.md
 		Index.md = Index.md
 		overview.md = overview.md
 		terminology.md = terminology.md
 		why.md = why.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126E0BE-38D8-470F-A0F3-74A4324CB116}"
+	ProjectSection(SolutionItems) = preProject
+		DeviceMessages.md = DeviceMessages.md
+		DeviceTypes.md = DeviceTypes.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38765E25-6F53-4D43-A420-A10EDF456AAF}"
+	ProjectSection(SolutionItems) = preProject
+		Attributes.md = Attributes.md
+		Input.md = Input.md
+		InputCommands.md = InputCommands.md
+		OutputCommands.md = OutputCommands.md
+		StateMachines.md = StateMachines.md
+		Workflow.md = Workflow.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topics", "topics", "{D061F3A8-91A6-45CC-BAF8-3D7CEDB6C998}"
+	ProjectSection(SolutionItems) = preProject
+		Keys.md = Keys.md
 	EndProjectSection
 EndProject
 Global
