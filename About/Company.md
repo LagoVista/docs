@@ -14,8 +14,19 @@ and began developing applications for those platforms.  In 2008 Kevin D. Wolf wa
 to a very small number of programmers in the world for his work with Windows Mobile. To this day Kevin D. Wolf has annually been 
 reawarded this honor.
 
-After a decade of building mobile apps, In 2015 Software Logsitics again began to shift it's focus to the Internet of Things or IoT.
-Prior to starting Software Logistics, Kevin D. Wolf developed hardware and software for embedded systems for Weigh-Tronix
+After a decade of building mobile apps, In 2015 Software Logistics began to shift it's focus to the Internet of Things or IoT.
+Prior to starting Software Logistics, Kevin D. Wolf developed hardware and software for embedded systems for Weigh-Tronix so
+transitioning back to controlling hardware with software was a natural fit.  After designing numerous microcontroller based
+circuit board including the NiVek quadcopter platform, Software Logistics started spending some time really understanding 
+what is involved with an IoT solution.
+
+As with any software solution there are many common components to building an IoT application.  Software Logistics has had
+great success in the past building data driven solutions so in the second half of 2016 work was begun creating a design for
+a secure data driven platform to build IoT applications where the focus is on configuration not coding, but allows the right
+set of integration points to add custom code as necessary.
+
+Software Logistics plans to launch their NuvIoT platform with a limited set of beta customers in the fall of 2017 and general 
+availability in early 2018.   
 
 
 

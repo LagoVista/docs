@@ -1,4 +1,4 @@
-﻿[Device Messaging Home](Index.md) > [Parsing Binary Messages] (ParsingBinaryMessage.md)
+﻿[Home](../../Index.md) > [Device Messaging](Index.md) > [Parsing Binary Messages](ParsingBinaryMessages.md)
 
 # Framing Bytes
 

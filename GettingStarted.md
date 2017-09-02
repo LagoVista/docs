@@ -45,3 +45,39 @@ You can do all of this via a WYSWIG designer, where you can add custom scripts a
 
 Remember you are creating a reusable component, so it doesn't have to map 1:1 with your devices, in this step you just configure what you want to do 
 and then map it to the devices at a later time.
+
+### Create your Pipeline
+
+To allow for maximum flexibiity and performance we have chosen a pipeline architecture to process messages.  This allows you to use default modules 
+where necessary, configure standard modules where you need to and even build a custom module where your needs dictate.  The following is a typical 
+chain of pipeline modules:
+
+1. [Listener](./PipelineModules/Listener.md) - A mechanism that listens to a port and protocol or subscribes to events or topics from an external server
+1. [Planner](./PipelineModules/Planner.md) - Examines message for a message id and device id, then plans out the rest of the route.
+1. [Sentinel](./PipelineModules/Sentinel.md) - Authenticates and potentially descrypts the message
+1. [Input Translator](./PipelineModules/InputTranslator.md) - Extract values from input message
+1. [Workflow](./PipelineModules/Workflow.md) - Performs any business logic and prepares output messages
+1. [Output Translator](./PipelineModules/OutputTranslator.md) - Converts outputs from the workflow back into a format the device can understand
+1. [Transmitter](./PipelineModules/Transmitter.md) - Send values back to the device, either directly or queueing thenm
+
+### Device Configuration
+
+Once you have created and configured the things that make up a complete solution you will assemble those in a [Device Configuration](./Devices/DeviceConfigurations.md). 
+A device configuration consists of a [route](./Routes/Route.md) that includes all the messages from the [Sentinel](./PipelineModules/Sentinel.md) to the [Transmitter](./PipelineModules/Transmitter.md) 
+and definitions of the message types that when found should trigger this [route](./Routes/Route.md).  A device configuration can have many routes.
+
+
+### Assemble a Solution
+
+A [solution](./Solutions/Index.md) is a collection of [Device Confiugrations](./devices/DeviceConfigurations.md) 
+that implements a specific set of services to manage a device.  A solution can consist of many device configurations.  In addition
+your solution needs to specify the [listeners](./PipelineModules/Listener.md) that will listen for messages from your devices.  Finally
+a solution must include exactly one [planner](./PipelineModules/Planner.md) module to map the incoming messages to [routes](./Routes/Route.md).
+
+A solution is a complete spec that will listen for and process messages from a device.
+
+### Instance
+
+A solution describes how your application shold work, to make it do something, you need to deploy it as an instance.  To deploy it you
+will need to select a [deployment confiugration](./Deployment/DeploymentConfiguration.md) that will determine the physical compute
+resources that will be allocated.  You also need to specify a key that will be used to the domain name where you can access your listeners.

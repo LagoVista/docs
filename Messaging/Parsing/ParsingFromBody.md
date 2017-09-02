@@ -1,3 +1,3 @@
-﻿[Device Messaging Home](Index.md)
+﻿[Home](../../Index.md) > [Device Messaging](Index.md)
 
 # Parsing from Body or Payload
