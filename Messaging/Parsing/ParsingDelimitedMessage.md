@@ -1,4 +1,4 @@
-﻿[Home](../../Index.md) > [Device Messaging](Index.md)
+﻿[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
 # Parsing a Delimited Messaged
 

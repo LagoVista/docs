@@ -1,4 +1,4 @@
-[Home](../Index.md) > [Getting Started](../GettingStarted.md)
+[Home](../Index.md) > [Devices](Index.md)
 
 # Device Messages
 

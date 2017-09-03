@@ -1,6 +1,6 @@
 ﻿[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
-# Parsing from Path
+# Parsing from Topics
 
 To Extract value from the path use the following syntax for your Path Locator
 

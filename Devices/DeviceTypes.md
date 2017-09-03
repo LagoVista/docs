@@ -1,4 +1,4 @@
-[Home](../Index.md) 
+[Home](../Index.md) > [Devices](Index.md)
 
 # Device Types
 
