@@ -61,7 +61,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topics", "topics", "{D061F3
 		Keys.md = Keys.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocGen", "DocGen\DocGen.csproj", "{12959BDF-97E5-462C-B761-811EF2DD4A42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuvIot.WebDocs", "NuvIot.WebDocs\NuvIot.WebDocs.csproj", "{346397B7-62CE-4DD8-92E0-169B8956C3A4}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12959BDF-97E5-462C-B761-811EF2DD4A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12959BDF-97E5-462C-B761-811EF2DD4A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12959BDF-97E5-462C-B761-811EF2DD4A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12959BDF-97E5-462C-B761-811EF2DD4A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346397B7-62CE-4DD8-92E0-169B8956C3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346397B7-62CE-4DD8-92E0-169B8956C3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346397B7-62CE-4DD8-92E0-169B8956C3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346397B7-62CE-4DD8-92E0-169B8956C3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

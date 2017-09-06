@@ -1,0 +1,16 @@
+<p><a href="../Index.md">Home</a></p>
+<h1>Pipeline Modules</h1>
+<p>To allow for maximum reuse and scalability you build your application as a set of pipeline modules.  Once the <a href="Listener.md">listener</a>
+receives a message that is handed off to the <a href="Planner.md">planner</a> to determine processing a <a href="../Routes/Route.md">route</a> is created.</p>
+<p>A route is series of pipeline modules that are executed sequentially to perform processing on the incoming messages.</p>
+<p>The following are the default pipeline modules that make up a typical route.</p>
+<ul>
+<li><a href="Sentinel.md">Sentinel</a> - Authenticates and potentially descrypts the message</li>
+<li><a href="InputTranslator.md">Input Translator</a> - Extract values from input message</li>
+<li><a href="Workflow.md">Workflow</a> - Performs any business logic and prepares output messages</li>
+<li><a href="OutputTranslator.md">Output Translator</a> - Converts outputs from the workflow back into a format the device can understand</li>
+<li><a href="Transmitter.md">Transmitter</a> - Send values back to the device, either directly or queueing thenm</li>
+</ul>
+<p>Most of the time message business logic is done in the <a href="Workflow.md">workflow module</a>.  The worflow allows for a significant amount
+of customization in the form of scripting and creating <a href="../Workflows/StateMachines.md">state machines</a> however if these don't meet
+your needs you can always create pipeline modules with custom code and deploy them as containers to participate in the device workflow.</p>

@@ -1,0 +1,18 @@
+<p><a href="../../Index.md">Home</a> &gt; <a href="../Index.md">Device Messaging</a> &gt; <a href="Index.md">Parsing</a></p>
+<h1>Parsing a Json Message</h1>
+<p>To Select a JSON value make sure the Search Location is set to Body</p>
+<p><em>Note</em> - Currently arrays are not supported in JSON format, this will likely change relatively soon after initial launch or sooner based on implementation requirements</p>
+<p>The values can be extract by using a period (.) to denote the path to the object within the JSON document.</p>
+<p>Assuming the following JSON:</p>
+<pre><code>{
+	'field1':'value1',
+	'subset1':{
+		'field3':'value2',
+		'field4':'another value'
+	}
+}
+</code></pre>
+<p>Values can be extracted with the following JSON path.</p>
+<p><code>field</code> = value1</p>
+<p><code>subset1.field3</code> = value2</p>
+<p><code>subset1.field4</code> = another value</p>

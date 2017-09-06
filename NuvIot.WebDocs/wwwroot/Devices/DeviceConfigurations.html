@@ -1,0 +1,13 @@
+<p><a href="../Index.md">Home</a> &gt; <a href="Index.md">Devices</a></p>
+<h1>Device Configurations</h1>
+<p>A device configuration consists of two parts:</p>
+<ul>
+<li>A collection of <a href="../Routes/Route.md">routes</a></li>
+<li>A set of supported <a href="../Devices/DeviceMessages.md">messages defintions</a> that will trigger those routes</li>
+</ul>
+<p>When you create a <a href="../Deployment/Solutions.md">solution</a> you specify a set of <a href="../PipelineModules/Listener.md">listeners</a> and a
+planner as well as any supported device configurations.  The listeners job is to listen for messages, once a message is received
+it is passed to the listener that determine the message id and device id.  With those two pieces of information it will attempt
+to find a match for a device configuration based on known devices and supported messages types.  If a match is found it will
+then use the steps as defined in the route to process the rest of the message.</p>
+<p><img src="../Images/Planner.png" alt="planner process" /></p>

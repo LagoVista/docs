@@ -1,0 +1,59 @@
+<h1>Getting Started</h1>
+<p>Building an IoT application is a non-trivial task.  As with any non-trivial tasks, it's best to tackle in small easy verifiable steps.  In addition
+our built in project management with task templates are very helpful to get you off to a great start!</p>
+<p>In addition, we have created an Expert System that you can use to help capture your requirements and device your solution.  After answering a number of questions
+our Expert System will create a project plan including a set of pre-populated tasks that you can complete to build out your application.</p>
+<p>It's important before you begin to understand your goals, there are a lot of cool things you can do so it's a good idea to make a list and prioritize.<br />
+Assuming you have your list let's get started.</p>
+<p>This getting started guide assumes that you have a basic idea of what you want to do and have identified your sensors, if you need help
+with this please feel free to <a href="mailto:partners@iotappstudio.com">contact us</a> and we would be happy to discussion options.</p>
+<h4>General Approach</h4>
+<p>When designing any sort of complex architecture it's a good idea to decouple the the components of your system as much
+as possible, both for testing and reuse.  Our system let's you create small reusable data driven configurations for much
+of which you need to do for any typical IoT system.  Once you have configured your compoments you can then assembled them
+into a fully functional and testable solution.  After a short amount of time you'll assemble a collection of resuable
+data driven components that let you bring on whole new solutions in a small fraction of the time it would take to
+start from scratch.</p>
+<h3>Without Devices and Sensors you Can't Have IoT</h3>
+<p>Let's start with your devices, sensors and equipement, the goal of this step is to configure all the specific device types
+you will want to integrate as well as any messages they will send and/or receive.</p>
+<p>The following assumes that you have decided on some sensors that you have no control over how they communicate.  If you are creating
+your own sensors and communication protocols, you can use the following steps to help capture requirements.</p>
+<p><a href="./Devices/DeviceTypes.md">First we will define our Device Types</a></p>
+<p><a href="./Devices/DeviceMessages.md">Then we will define our Device Messages</a></p>
+<h3>Define your Device Workflow</h3>
+<p>Now that you have figured out how your devics communicate, let's configure your solution to do something with those messages and data.  In this step
+you will configure the <a href="./Workflows/Input.md">Inputs</a> by mapping the fields from your messages.  You'll also describe <a href="./Workflows/Attributes.md">Attributes</a> or data called state that will be
+saved between device calls.  You can even add <a href="./Workflows/InputCommands.md">Input Commands</a> where you can expose REST based services to interact with your
+workflow and ultimately with your devices from third party apps or services.  You'll also add <a href="./Workflows/StateMachines.md">State Machines</a> (don't worry this isn't as hard as it sounds) to define how your devices should react to
+incoming data and messages.  Finally you'll define your <a href="./Workflows/OutputCommands.md">Output Commands</a> that will be used to send data or commands back to the device.</p>
+<p>You can do all of this via a WYSWIG designer, where you can add custom scripts and even calls to your custom code with our container frameworks.</p>
+<p>Remember you are creating a reusable component, so it doesn't have to map 1:1 with your devices, in this step you just configure what you want to do
+and then map it to the devices at a later time.</p>
+<h3>Create your Pipeline</h3>
+<p>To allow for maximum flexibiity and performance we have chosen a pipeline architecture to process messages.  This allows you to use default modules
+where necessary, configure standard modules where you need to and even build a custom module where your needs dictate.  The following is a typical
+chain of pipeline modules:</p>
+<ol>
+<li><a href="./PipelineModules/Listener.md">Listener</a> - A mechanism that listens to a port and protocol or subscribes to events or topics from an external server</li>
+<li><a href="./PipelineModules/Planner.md">Planner</a> - Examines message for a message id and device id, then plans out the rest of the route.</li>
+<li><a href="./PipelineModules/Sentinel.md">Sentinel</a> - Authenticates and potentially descrypts the message</li>
+<li><a href="./PipelineModules/InputTranslator.md">Input Translator</a> - Extract values from input message</li>
+<li><a href="./PipelineModules/Workflow.md">Workflow</a> - Performs any business logic and prepares output messages</li>
+<li><a href="./PipelineModules/OutputTranslator.md">Output Translator</a> - Converts outputs from the workflow back into a format the device can understand</li>
+<li><a href="./PipelineModules/Transmitter.md">Transmitter</a> - Send values back to the device, either directly or queueing thenm</li>
+</ol>
+<h3>Device Configuration</h3>
+<p>Once you have created and configured the things that make up a complete solution you will assemble those in a <a href="./Devices/DeviceConfigurations.md">Device Configuration</a>.
+A device configuration consists of a <a href="./Routes/Route.md">route</a> that includes all the messages from the <a href="./PipelineModules/Sentinel.md">Sentinel</a> to the <a href="./PipelineModules/Transmitter.md">Transmitter</a>
+and definitions of the message types that when found should trigger this <a href="./Routes/Route.md">route</a>.  A device configuration can have many routes.</p>
+<h3>Assemble a Solution</h3>
+<p>A <a href="./Solutions/Index.md">solution</a> is a collection of <a href="./devices/DeviceConfigurations.md">Device Confiugrations</a>
+that implements a specific set of services to manage a device.  A solution can consist of many device configurations.  In addition
+your solution needs to specify the <a href="./PipelineModules/Listener.md">listeners</a> that will listen for messages from your devices.  Finally
+a solution must include exactly one <a href="./PipelineModules/Planner.md">planner</a> module to map the incoming messages to <a href="./Routes/Route.md">routes</a>.</p>
+<p>A solution is a complete spec that will listen for and process messages from a device.</p>
+<h3>Instance</h3>
+<p>A solution describes how your application shold work, to make it do something, you need to deploy it as an instance.  To deploy it you
+will need to select a <a href="./Deployment/DeploymentConfiguration.md">deployment confiugration</a> that will determine the physical compute
+resources that will be allocated.  You also need to specify a key that will be used to the domain name where you can access your listeners.</p>

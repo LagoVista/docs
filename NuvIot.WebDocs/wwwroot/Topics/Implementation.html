@@ -1,0 +1,41 @@
+<p><a href="../Index.md">Home</a></p>
+<h1>Implementation Overview</h1>
+<ol>
+<li><p><a href="../Devices/DeviceTypes.md">Device Types</a> - It all starts with devices, without Devices you can't have IoT, so the first step is to define the devices
+that you will want to process messages from.  This is simply defining a model number and other basic information about the device</p>
+</li>
+<li><p><a href="../Devices/DeviceMessages.md">Define Message Types</a> - Devices communicate with the servers by sending and receiving Messages.
+IoT App Studio lets you define messages and fields that will be sent by your devices.</p>
+</li>
+<li><p><a href="../Workflows/Index.md">Device Workflows</a> - Getting and storing device data is an important part of what IoT App Studio lets you do, but the real
+value is doing something with data.  You can use a Graphical user interface to map processes and check conditions using the
+data contained in messages from your device.</p>
+</li>
+<li><p><a href="../PipelineModules/Index.md">Pipeline Modules</a> - To support ultimate flexibility, you will chain together a set of pipeline
+modules that will act on the device messages as they are received.  A typical chain would be:</p>
+<ol>
+<li><a href="../PipelineModules/Sentinel.md">Sentinel</a> - Performs Security Checks</li>
+<li><a href="../PipelineModules/InputTranslator.md">Input Translator</a> - Uses the Message Definitions you created to extract fields</li>
+<li><a href="../PipelineModules/Workflow.md">Workflow</a> - Perform Device Workflows on your message</li>
+<li><a href="../PipelineModules/OutputTranslator.md">Output Translator</a> - Take the output from the workflow and convert it to a message to be
+sent to the device</li>
+<li><a href="../PipelineModules/Transmitter.md">Transmitter</a> - Communicate back to the device with output messages</li>
+</ol>
+</li>
+<li><p><a href="../PipelineModules/Listener.md">Listener</a> - The Listener is how the messaages get into the system.  You have complete control on how
+your listeners are configured and can choose from things like listening on a UDP/TCP socket, a REST endpoint, MQTT as well as many other options.</p>
+</li>
+<li><p><a href="../PipelineModules/Planner.md">Planner</a> - Next the planner takes the message from the listener and decides how it should be processed, it uses parsers you configure to extract the device id and optionally a message id.<br />
+This information is then used to determine how the device messages should be processed.</p>
+</li>
+<li><p><a href="../Devices/DeviceConfigurations.md">Device Configuration</a> - To pull all of the above compoments together you will create a Device Configuration. A Device Configuration
+consists of a collection of routes.  Routes are used to map an incoming message to how it will be processed.</p>
+</li>
+<li><p><a href="../Devices/DeviceRepositories.md">Device Repository</a> - To help organize your devices you define and allocate storage in the form a device repository.</p>
+</li>
+<li><p><a href="../Deployment/Solution.md">Solution</a> - All of the above items make up reusable components that you can assemble into a solution.</p>
+</li>
+<li><p><a href="../Deployment/Instance.md">Instance</a> - After you have created your solution, you will choose the compute resources and hardware configuration and deploy your
+solution to an instance.</p>
+</li>
+</ol>

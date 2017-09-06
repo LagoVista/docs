@@ -1,0 +1,9 @@
+<p><a href="../../Index.md">Home</a> &gt; <a href="../Index.md">Pipeline Modules</a> &gt; <a href="../Listener.md">Listeners</a></p>
+<h1>AMQP Client</h1>
+<p>Currently NuvIoT doesn't implement it's own dedicated AMQP listener, it does however offer the option to connect to a 3rd party AMQP server
+of your choosing.</p>
+<p>You have two options for adding an AMQP server, you can use a could based provider such as <a href="https://portal.azure.com">Azure</a> or
+<a href="https://aws.amazon.com/">Amazon</a> or you can launch a dedicated AMQP server in a container that is preconfigured to specifically work with NuvIoT.
+If you use a 3rd party server you will be responsible for managing authentication of devices as they connect (<em>although if the third
+party service allows you can call our <a href="../../API/Index.md">API</a> to authenticate your devices</em>).  If you choose to launch a dedicated
+AMQP server, it will automatically authenticate your devices.  Please contact us for more details on dedicated AMQP server availability.</p>
