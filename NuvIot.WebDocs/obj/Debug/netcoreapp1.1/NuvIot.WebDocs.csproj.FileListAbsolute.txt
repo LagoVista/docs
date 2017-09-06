@@ -1,0 +1,9 @@
+D:\nuviot\do.Docs\NuvIot.WebDocs\bin\Debug\netcoreapp1.1\NuvIot.WebDocs.deps.json
+D:\nuviot\do.Docs\NuvIot.WebDocs\bin\Debug\netcoreapp1.1\NuvIot.WebDocs.runtimeconfig.json
+D:\nuviot\do.Docs\NuvIot.WebDocs\bin\Debug\netcoreapp1.1\NuvIot.WebDocs.runtimeconfig.dev.json
+D:\nuviot\do.Docs\NuvIot.WebDocs\bin\Debug\netcoreapp1.1\NuvIot.WebDocs.dll
+D:\nuviot\do.Docs\NuvIot.WebDocs\bin\Debug\netcoreapp1.1\NuvIot.WebDocs.pdb
+D:\nuviot\do.Docs\NuvIot.WebDocs\obj\Debug\netcoreapp1.1\NuvIot.WebDocs.csprojResolveAssemblyReference.cache
+D:\nuviot\do.Docs\NuvIot.WebDocs\obj\Debug\netcoreapp1.1\NuvIot.WebDocs.AssemblyInfo.cs
+D:\nuviot\do.Docs\NuvIot.WebDocs\obj\Debug\netcoreapp1.1\NuvIot.WebDocs.dll
+D:\nuviot\do.Docs\NuvIot.WebDocs\obj\Debug\netcoreapp1.1\NuvIot.WebDocs.pdb

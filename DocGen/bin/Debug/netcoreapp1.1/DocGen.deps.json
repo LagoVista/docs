@@ -1,0 +1,38 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "c1739cff7123a91b59c943d4ca40c4dbe83d2ac6"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "docgen/1.0.0": {
+        "dependencies": {
+          "Markdig": "0.13.3"
+        },
+        "runtime": {
+          "DocGen.dll": {}
+        }
+      },
+      "markdig/0.13.3": {
+        "runtime": {
+          "lib/netstandard1.1/Markdig.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "docgen/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "markdig/0.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wH1vT3Bxu0s5M5Sqcev9HQ3DnfMdHi43nLqUic07VxG2jeLn+RufYMQLia1AFNRFhEVD+f7IvAZWvNpU6Xgp6g==",
+      "path": "markdig/0.13.3",
+      "hashPath": "markdig.0.13.3.nupkg.sha512"
+    }
+  }
+}

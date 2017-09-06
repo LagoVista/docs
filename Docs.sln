@@ -34,6 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1C
 		GettingStarted.md = GettingStarted.md
 		Index.md = Index.md
 		overview.md = overview.md
+		toc.md = toc.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126E0BE-38D8-470F-A0F3-74A4324CB116}"
@@ -120,9 +121,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{D643877D-E18
 		API\index.md = API\index.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocGen", "DocGen\DocGen.csproj", "{12959BDF-97E5-462C-B761-811EF2DD4A42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocGen", "DocGen\DocGen.csproj", "{12959BDF-97E5-462C-B761-811EF2DD4A42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuvIot.WebDocs", "NuvIot.WebDocs\NuvIot.WebDocs.csproj", "{346397B7-62CE-4DD8-92E0-169B8956C3A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuvIot.WebDocs", "NuvIot.WebDocs\NuvIot.WebDocs.csproj", "{346397B7-62CE-4DD8-92E0-169B8956C3A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
