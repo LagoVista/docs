@@ -5,60 +5,119 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}"
 	ProjectSection(SolutionItems) = preProject
-		Messaging\About.md = Messaging\About.md
+		Messaging\Index.md = Messaging\Index.md
+		Messaging\MessageFields.md = Messaging\MessageFields.md
+		Messaging\StateSets.md = Messaging\StateSets.md
+		Messaging\UnitSets.md = Messaging\UnitSets.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04EDBE3-F54D-407D-9F97-6F8CFBD25256}"
 	ProjectSection(SolutionItems) = preProject
-		Messaging\Parsing\DeviceMessageIdParsing.md = Messaging\Parsing\DeviceMessageIdParsing.md
+		Messaging\Parsing\DeviceIdParsing.md = Messaging\Parsing\DeviceIdParsing.md
 		Messaging\Parsing\FramingBytes.md = Messaging\Parsing\FramingBytes.md
 		Messaging\Parsing\Index.md = Messaging\Parsing\Index.md
+		Messaging\Parsing\MessageIdParsing.md = Messaging\Parsing\MessageIdParsing.md
 		Messaging\Parsing\ParsingBinaryMessages.md = Messaging\Parsing\ParsingBinaryMessages.md
 		Messaging\Parsing\ParsingDelimitedMessage.md = Messaging\Parsing\ParsingDelimitedMessage.md
 		Messaging\Parsing\ParsingFromBody.md = Messaging\Parsing\ParsingFromBody.md
 		Messaging\Parsing\ParsingFromHeader.md = Messaging\Parsing\ParsingFromHeader.md
 		Messaging\Parsing\ParsingFromPath.md = Messaging\Parsing\ParsingFromPath.md
 		Messaging\Parsing\ParsingFromQueryString.md = Messaging\Parsing\ParsingFromQueryString.md
+		Messaging\Parsing\ParsingFromTopic.md = Messaging\Parsing\ParsingFromTopic.md
 		Messaging\Parsing\ParsingJsonMessage.md = Messaging\Parsing\ParsingJsonMessage.md
 		Messaging\Parsing\ParsingStringMessage.md = Messaging\Parsing\ParsingStringMessage.md
+		Messaging\Parsing\ParsingXmlMessage.md = Messaging\Parsing\ParsingXmlMessage.md
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{AA4E331B-EE82-475D-9EF7-559C3207A1D6}"
-	ProjectSection(SolutionItems) = preProject
-		Index.md = Index.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{F66103ED-F8CC-4368-8951-39E08B670C56}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1CF2DC1C-D7F6-46EA-90ED-B90247B8007E}"
 	ProjectSection(SolutionItems) = preProject
-		faq.md = faq.md
 		GettingStarted.md = GettingStarted.md
 		Index.md = Index.md
 		overview.md = overview.md
-		terminology.md = terminology.md
-		why.md = why.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126E0BE-38D8-470F-A0F3-74A4324CB116}"
 	ProjectSection(SolutionItems) = preProject
-		DeviceMessages.md = DeviceMessages.md
-		DeviceTypes.md = DeviceTypes.md
+		Devices\DeviceConfigurations.md = Devices\DeviceConfigurations.md
+		Devices\DeviceMessages.md = Devices\DeviceMessages.md
+		Devices\DeviceRepositories.md = Devices\DeviceRepositories.md
+		Devices\DeviceTypes.md = Devices\DeviceTypes.md
+		Devices\Index.md = Devices\Index.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38765E25-6F53-4D43-A420-A10EDF456AAF}"
 	ProjectSection(SolutionItems) = preProject
-		Attributes.md = Attributes.md
-		Input.md = Input.md
-		InputCommands.md = InputCommands.md
-		OutputCommands.md = OutputCommands.md
-		StateMachines.md = StateMachines.md
-		Workflow.md = Workflow.md
+		Workflows\Attributes.md = Workflows\Attributes.md
+		Workflows\Index.md = Workflows\Index.md
+		Workflows\Input.md = Workflows\Input.md
+		Workflows\InputCommands.md = Workflows\InputCommands.md
+		Workflows\OutputCommands.md = Workflows\OutputCommands.md
+		Workflows\StateMachines.md = Workflows\StateMachines.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topics", "topics", "{D061F3A8-91A6-45CC-BAF8-3D7CEDB6C998}"
 	ProjectSection(SolutionItems) = preProject
-		Keys.md = Keys.md
+		Topics\Implementation.md = Topics\Implementation.md
+		Topics\Keys.md = Topics\Keys.md
+		Topics\Terminology.md = Topics\Terminology.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{ACB909A0-1CDB-4A18-8A3F-FE053ACD5E7E}"
+	ProjectSection(SolutionItems) = preProject
+		About\Branding.md = About\Branding.md
+		About\Company.md = About\Company.md
+		About\DesignPhilosophy.md = About\DesignPhilosophy.md
+		About\Faq.md = About\Faq.md
+		About\Why.md = About\Why.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PipelineModules", "PipelineModules", "{3BD3EEED-6B78-4C32-842C-33C12433312D}"
+	ProjectSection(SolutionItems) = preProject
+		PipelineModules\Index.md = PipelineModules\Index.md
+		PipelineModules\InputTranslator.md = PipelineModules\InputTranslator.md
+		PipelineModules\Listener.md = PipelineModules\Listener.md
+		PipelineModules\OutputTranslator.md = PipelineModules\OutputTranslator.md
+		PipelineModules\Planner.md = PipelineModules\Planner.md
+		PipelineModules\Sentinel.md = PipelineModules\Sentinel.md
+		PipelineModules\Transmitter.md = PipelineModules\Transmitter.md
+		PipelineModules\Workflow.md = PipelineModules\Workflow.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Routes", "Routes", "{E03CF4D0-55D3-44A7-94DE-28BDA033DF06}"
+	ProjectSection(SolutionItems) = preProject
+		Routes\Route.md = Routes\Route.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{92B10C11-CC3A-4A7F-A276-F434058CFD64}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Configuration.md = Deployment\Configuration.md
+		Deployment\EdgeTechnology.md = Deployment\EdgeTechnology.md
+		Deployment\HighAvailability.md = Deployment\HighAvailability.md
+		Deployment\Host.md = Deployment\Host.md
+		Deployment\Index.md = Deployment\Index.md
+		Deployment\Instance.md = Deployment\Instance.md
+		Deployment\NuvIoTInfrastructure.md = Deployment\NuvIoTInfrastructure.md
+		Deployment\Solution.md = Deployment\Solution.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{93264E26-6CEF-4F7F-95E9-0153783094C8}"
+	ProjectSection(SolutionItems) = preProject
+		PipelineModules\Listeners\AMQPClient.md = PipelineModules\Listeners\AMQPClient.md
+		PipelineModules\Listeners\AMQPHostedServer.md = PipelineModules\Listeners\AMQPHostedServer.md
+		PipelineModules\Listeners\AzureEventHubs.md = PipelineModules\Listeners\AzureEventHubs.md
+		PipelineModules\Listeners\AzureIoTHub.md = PipelineModules\Listeners\AzureIoTHub.md
+		PipelineModules\Listeners\AzureServiceBus.md = PipelineModules\Listeners\AzureServiceBus.md
+		PipelineModules\Listeners\MSMQClient.md = PipelineModules\Listeners\MSMQClient.md
+		PipelineModules\Listeners\MSMQHostedServer.md = PipelineModules\Listeners\MSMQHostedServer.md
+		PipelineModules\Listeners\MSMQListener.md = PipelineModules\Listeners\MSMQListener.md
+		PipelineModules\Listeners\Rest.md = PipelineModules\Listeners\Rest.md
+		PipelineModules\Listeners\TCP.md = PipelineModules\Listeners\TCP.md
+		PipelineModules\Listeners\UDP.md = PipelineModules\Listeners\UDP.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{D643877D-E181-485E-9469-D924A678CB7C}"
+	ProjectSection(SolutionItems) = preProject
+		API\index.md = API\index.md
 	EndProjectSection
 EndProject
 Global
@@ -67,5 +126,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D04EDBE3-F54D-407D-9F97-6F8CFBD25256} = {75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}
+		{93264E26-6CEF-4F7F-95E9-0153783094C8} = {3BD3EEED-6B78-4C32-842C-33C12433312D}
 	EndGlobalSection
 EndGlobal
