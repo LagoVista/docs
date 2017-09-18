@@ -1,0 +1,9 @@
+D:\nuviot\do.Docs\NuvIoT.WebDocs\bin\Release\netcoreapp1.1\NuvIoT.WebDocs.deps.json
+D:\nuviot\do.Docs\NuvIoT.WebDocs\bin\Release\netcoreapp1.1\NuvIoT.WebDocs.runtimeconfig.json
+D:\nuviot\do.Docs\NuvIoT.WebDocs\bin\Release\netcoreapp1.1\NuvIoT.WebDocs.runtimeconfig.dev.json
+D:\nuviot\do.Docs\NuvIoT.WebDocs\bin\Release\netcoreapp1.1\NuvIoT.WebDocs.dll
+D:\nuviot\do.Docs\NuvIoT.WebDocs\bin\Release\netcoreapp1.1\NuvIoT.WebDocs.pdb
+D:\nuviot\do.Docs\NuvIoT.WebDocs\obj\Release\netcoreapp1.1\NuvIoT.WebDocs.csproj.CoreCompileInputs.cache
+D:\nuviot\do.Docs\NuvIoT.WebDocs\obj\Release\netcoreapp1.1\NuvIoT.WebDocs.AssemblyInfo.cs
+D:\nuviot\do.Docs\NuvIoT.WebDocs\obj\Release\netcoreapp1.1\NuvIoT.WebDocs.dll
+D:\nuviot\do.Docs\NuvIoT.WebDocs\obj\Release\netcoreapp1.1\NuvIoT.WebDocs.pdb

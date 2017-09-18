@@ -2,8 +2,7 @@
 
 # Input
 
-An Input is a value that will come from a device message.  You define your Inputs on a Workflow and then can map fields
-from your messages to the Input.
+An Input is a value that will come from a [Device Message](../Messaging/Index.md) that has a specfic [Type](../Messaging/TypeSystem/Index.md).      
 
 ### Mapping from Inputs
 

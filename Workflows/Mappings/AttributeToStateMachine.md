@@ -2,5 +2,7 @@
 
 # Attribute to State Machine
 
-An Input is a value that will come from a device message.  You define your Inputs on a Workflow and then can map fields
-from your messages to the Input.
+When Mapping and [Attribute](../Attributes.md) to a [State Machine](../StateMachines.md), you will need to 
+select which event should be invoked when this attribute arrives.  The
+state machine transitions that handle the event will then receive as an input
+the value of the attribute.  

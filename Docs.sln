@@ -62,7 +62,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38
 		Workflows\InputCommands.md = Workflows\InputCommands.md
 		Workflows\OutputCommands.md = Workflows\OutputCommands.md
 		Workflows\StateMachines.md = Workflows\StateMachines.md
-		Workflow.md = Workflow.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocGen", "DocGen\DocGen.csproj", "{12959BDF-97E5-462C-B761-811EF2DD4A42}"
@@ -147,6 +146,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mappings", "Mappings", "{23
 		Workflows\Mappings\InputToStateMachine.md = Workflows\Mappings\InputToStateMachine.md
 		Workflows\Mappings\StateMachineToAttribute.md = Workflows\Mappings\StateMachineToAttribute.md
 		Workflows\Mappings\StateMachineToOutputCommand.md = Workflows\Mappings\StateMachineToOutputCommand.md
+		Workflows\Mappings\StateMachineToStateMachine.md = Workflows\Mappings\StateMachineToStateMachine.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mappings", "Mappings", "{7C7C2C70-D37A-439D-AA70-A15D8CA1AD18}"
+	ProjectSection(SolutionItems) = preProject
+		Routes\Mappings\Index.md = Routes\Mappings\Index.md
+		Routes\Mappings\InputTranslatorToWorkflow.md = Routes\Mappings\InputTranslatorToWorkflow.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{01432627-DE08-44BF-9B6C-2B63DB88E064}"
+	ProjectSection(SolutionItems) = preProject
+		Scripting\Index.md = Scripting\Index.md
+		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
 	EndProjectSection
 EndProject
 Global
@@ -172,5 +184,6 @@ Global
 		{1549B421-916A-441C-B788-DDEC7002052B} = {75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}
 		{2B9A7390-DCBB-4E38-B308-5ABF4CB6159F} = {C09DB466-10FA-4F80-9FDE-1ECE7EC3F938}
 		{23022230-21D5-4B41-A0B1-16B2FD87A440} = {38765E25-6F53-4D43-A420-A10EDF456AAF}
+		{7C7C2C70-D37A-439D-AA70-A15D8CA1AD18} = {55C74D1B-6D8D-4302-B9EB-CC2788F5EEEA}
 	EndGlobalSection
 EndGlobal
