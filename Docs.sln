@@ -7,9 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{
 	ProjectSection(SolutionItems) = preProject
 		Messaging\Index.md = Messaging\Index.md
 		Messaging\MessageFields.md = Messaging\MessageFields.md
-		Messaging\StateSets.md = Messaging\StateSets.md
-		Messaging\TypeSystem.md = Messaging\TypeSystem.md
-		Messaging\UnitSets.md = Messaging\UnitSets.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04EDBE3-F54D-407D-9F97-6F8CFBD25256}"
@@ -44,13 +41,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1CF2DC1C-D7F6-46EA-90ED-B90247B8007E}"
 	ProjectSection(SolutionItems) = preProject
-		faq.md = faq.md
+		Faq.md = Faq.md
 		GettingStarted.md = GettingStarted.md
 		Index.md = Index.md
 		overview.md = overview.md
-		terminology.md = terminology.md
 		toc.md = toc.md
-		why.md = why.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126E0BE-38D8-470F-A0F3-74A4324CB116}"
@@ -65,16 +60,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38
 		Workflows\Index.md = Workflows\Index.md
 		Workflows\Input.md = Workflows\Input.md
 		Workflows\InputCommands.md = Workflows\InputCommands.md
-		OutputCommands.md = OutputCommands.md
 		Workflows\OutputCommands.md = Workflows\OutputCommands.md
-		StateMachines.md = StateMachines.md
 		Workflows\StateMachines.md = Workflows\StateMachines.md
 		Workflow.md = Workflow.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topics", "topics", "{D061F3A8-91A6-45CC-BAF8-3D7CEDB6C998}"
-	ProjectSection(SolutionItems) = preProject
-		Keys.md = Keys.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocGen", "DocGen\DocGen.csproj", "{12959BDF-97E5-462C-B761-811EF2DD4A42}"
@@ -83,9 +71,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuvIot.WebDocs", "NuvIot.We
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TypeSystem", "TypeSystem", "{1549B421-916A-441C-B788-DDEC7002052B}"
 	ProjectSection(SolutionItems) = preProject
+		Messaging\TypeSystem\Booleans.md = Messaging\TypeSystem\Booleans.md
 		Messaging\TypeSystem\DateTime.md = Messaging\TypeSystem\DateTime.md
+		Messaging\TypeSystem\Decimals.md = Messaging\TypeSystem\Decimals.md
 		Messaging\TypeSystem\GeoLocation.md = Messaging\TypeSystem\GeoLocation.md
 		Messaging\TypeSystem\Index.md = Messaging\TypeSystem\Index.md
+		Messaging\TypeSystem\Integers.md = Messaging\TypeSystem\Integers.md
+		Messaging\TypeSystem\StatesAndEnums.md = Messaging\TypeSystem\StatesAndEnums.md
+		Messaging\TypeSystem\Strings.md = Messaging\TypeSystem\Strings.md
+		Messaging\TypeSystem\ValueWithUnits.md = Messaging\TypeSystem\ValueWithUnits.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Routes", "Routes", "{55C74D1B-6D8D-4302-B9EB-CC2788F5EEEA}"
@@ -133,6 +127,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{
 		PipelineModules\Listeners\UDP.md = PipelineModules\Listeners\UDP.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topics", "Topics", "{7489B6D0-6287-47A2-9051-7F227A4E6917}"
+	ProjectSection(SolutionItems) = preProject
+		Topics\Implementation.md = Topics\Implementation.md
+		Topics\Keys.md = Topics\Keys.md
+		Topics\Terminology.md = Topics\Terminology.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mappings", "Mappings", "{23022230-21D5-4B41-A0B1-16B2FD87A440}"
+	ProjectSection(SolutionItems) = preProject
+		Workflows\Mappings\AttributeToOutputCommand.md = Workflows\Mappings\AttributeToOutputCommand.md
+		Workflows\Mappings\AttributeToStateMachine.md = Workflows\Mappings\AttributeToStateMachine.md
+		Workflows\Mappings\Index.md = Workflows\Mappings\Index.md
+		Workflows\Mappings\InputCommandToAttribute.md = Workflows\Mappings\InputCommandToAttribute.md
+		Workflows\Mappings\InputCommandToOutputCommand.md = Workflows\Mappings\InputCommandToOutputCommand.md
+		Workflows\Mappings\InputCommandToStateMachine.md = Workflows\Mappings\InputCommandToStateMachine.md
+		Workflows\Mappings\InputToAttribute.md = Workflows\Mappings\InputToAttribute.md
+		Workflows\Mappings\InputToOutputCommand.md = Workflows\Mappings\InputToOutputCommand.md
+		Workflows\Mappings\InputToStateMachine.md = Workflows\Mappings\InputToStateMachine.md
+		Workflows\Mappings\StateMachineToAttribute.md = Workflows\Mappings\StateMachineToAttribute.md
+		Workflows\Mappings\StateMachineToOutputCommand.md = Workflows\Mappings\StateMachineToOutputCommand.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,5 +171,6 @@ Global
 		{D04EDBE3-F54D-407D-9F97-6F8CFBD25256} = {75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}
 		{1549B421-916A-441C-B788-DDEC7002052B} = {75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}
 		{2B9A7390-DCBB-4E38-B308-5ABF4CB6159F} = {C09DB466-10FA-4F80-9FDE-1ECE7EC3F938}
+		{23022230-21D5-4B41-A0B1-16B2FD87A440} = {38765E25-6F53-4D43-A420-A10EDF456AAF}
 	EndGlobalSection
 EndGlobal

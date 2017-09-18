@@ -1,0 +1,20 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/TypeSystem/Index.md">Type System</a></p>
+<h1>States and Enumerations</h1>
+<p>In some cases your attributes can contain any number or value.  In some cases you may want to limit the values that can be assigned to an attribute.  To limit
+the allow availables to a limited set of entries you can create an Enumeration or State Set.  A State Set can contain a finite number of states or enumeration values.</p>
+<p>An trivial example of this would be as follows:</p>
+<pre><code>On
+Off
+</code></pre>
+<p>In this case we have two states <code>On</code> and <code>Off</code> and these are the only allowable value.</p>
+<h3>State Sets</h3>
+<p>In NuvIoT we will use the term <strong>State Set</strong> to define the collection of states or enumeration values and <strong>State</strong> to define the individual values.</p>
+<p>When creating a State Set you define the name of your state and a <a href="#/Topics/Keys.md">key</a>.</p>
+<h3>States</h3>
+<p>When you define the States that make up a State Set you need to define the following values:</p>
+<p>| Field     | Description |
+| --------- | ----------  |
+| Name   | A textual representation of the state, this can be changed. |
+| Key    | The unique <a href="#/Topics/Keys.md">key</a> that identifies this state. |
+| Enum (optional) | If you want to map this enum value to a numeric value in your message, you can supply an integer perform this mapping. |</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>

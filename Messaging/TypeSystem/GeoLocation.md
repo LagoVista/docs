@@ -67,20 +67,20 @@ are [RegEx 101](https://regex101.com/).
 
 ```
 Latitude DM
-    ^(?'hh'\d{1,2})°?\s?(?'mm'[0-9\.]{1,8})'?\s??\s?(?'ns'[NS])$
+    ^(?'hh'\d{1,3})°?\s?(?'mm'[0-9\.]{1,8})'?\s??\s?(?'ns'[NS])$
 
 Longitude DM
     ^(?'hh'\d{1,3})°?\s?(?'mm'[0-9\.]{1,8})'?\s??\s?(?'ew'[EW])$
 
 Latitude DMS 
-    ^(?'hh'\d{1,2})°?\s?(?'mm'\d{1,2})'?\s?(?'sss'\d{1,2}\.?\d{0,5}?)"?\s?(?'ew'[NS])$
+    ^(?'hh'\d{1,3})°?\s?(?'mm'\d{1,2})'?\s?(?'sss'\d{1,2}\.?\d{0,5}?)"?\s?(?'ew'[NS])$
 
 Longitude DMS
     ^(?'hh'\d{1,3})°?\s?(?'mm'\d{1,2})'?\s?(?'sss'\d{1,2}\.?\d{0,5}?)"?\s?(?'ew'[EW])$
 
 Latitude as String DDD.DDDDDD (NS)
-    ^(?'ddd'\d{1,2}\.\d{1,10})°?\s(?'ns'[NS])$
+    ^(?'ddd'\d{1,3}\.\d{1,10})°?\s?(?'ns'[NS])$
 
 Longitude as String DDD.DDDDDD (EW)
-    ^(?'ddd'\d{1,3}\.\d{1,10})°?\s(?'ew'[EW])$
+    ^(?'ddd'\d{1,3}\.\d{1,10})°?\s?(?'ew'[EW])$
 ```

@@ -1,0 +1,21 @@
+<p><a href="#/Messaging/Parsing/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a></p>
+<h1>Parsing Strategies</h1>
+<p>Values can be parsed to find a Message Id and Device ID or values from the message payload.</p>
+<h3>Device Id and Message Id</h3>
+<p>One of the responsibilities of the <a href="#/PipelineModules/Planner.md">planner</a> is to extact the device an message id.  You can will need to create parsers to extact these values.</p>
+<h3>Payload</h3>
+<p>Your message will likey contain a number of attributes you want to extact to be used in workflow processing, these values defined as part of
+the message and considered th emessage payload.</p>
+<h3>Parsing Options</h3>
+<p>There are a number of different options for extracting values from your message</p>
+<p><a href="#/Messaging/Parsing/ParsingFromHeader.md">Headers</a> - For HTTP/HTTPS message that includes a HTTP Header<br />
+<a href="#/Messaging/Parsing/ParsingFromQueryString.md">Query String</a> - Parse values from an HTTP(s) GET/POST/PUT or DELETE Query String<br />
+<a href="#/Messaging/Parsing/ParsingFromPath.md">Path</a> - Extract Values from the URL Path for an HTTP(s) request<br />
+<a href="#/Messaging/Parsing/ParsingTopics.md">Topic</a> - Extract Values from a message that uses a topic such as a publish scribe protocol<br />
+<a href="#/Messaging/Parsing/ParsingBinaryMessages.md">Binary Messages</a> - Extact values based on position and data types from a binary message<br />
+<a href="#/Messaging/Parsing/ParsingDelimitedMessage.md">Delimited Messages</a> - Use delimiters such as commas or tabs to extact values<br />
+<a href="#/Messaging/Parsing/ParsingJsonMessage.md">JSON</a> - Extract Message Values from a JSON document from any source<br />
+<a href="#/Messaging/Parsing/ParsingXmlMessage.md">XML</a> - Extract Message Values from an XML document from any source<br />
+<a href="#/Messaging/Parsing/ParsingWithRegEx.md">String with Regular Expression</a> - Build a Regular Expression to extract multiple values from a string based payload
+<a href="#/Messaging/Parsing/ParsingStringMessage.md">String with Position</a> - Use start index and length to extact values from a string based message</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>

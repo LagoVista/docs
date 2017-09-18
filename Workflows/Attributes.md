@@ -7,3 +7,15 @@ be available for reporting or to use in any workflows associated with your devic
 
 Attributes have a [key](../topics/Keys.md) assigned to them when they are created, this key can then be used in scripts or other formulas.  
 Since attributes are defined on a [workflow](Index.md), they need to be fully qualified to be used external to the workflow
+
+### Mappings from Attributes
+
+[To Output Command](./Mappings/AttributeToOutputCommand.md)  
+[To State Machine](./Mappings/AttributeToStateMachine.md)  
+
+### Mappings to Attributes
+
+[From Input](./Mappings/InputToAttribute.md)  
+[From Input Command](./Mappings/InputCommandToAttribute.md)  
+[From State Machine](./Mappings/StateMachineToAttribute.md)  
+
