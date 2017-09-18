@@ -1,5 +1,4 @@
-# Table of Contents
-
+* [Home](Index.md)
 * [Getting Started](GettingStarted.md)
 * [Implementationv Overview](./Topics/Implementation.md)
 * [Design Philosophy](./About/DesignPhilosophy.md)

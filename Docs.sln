@@ -8,42 +8,55 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{
 		Messaging\Index.md = Messaging\Index.md
 		Messaging\MessageFields.md = Messaging\MessageFields.md
 		Messaging\StateSets.md = Messaging\StateSets.md
+		Messaging\TypeSystem.md = Messaging\TypeSystem.md
 		Messaging\UnitSets.md = Messaging\UnitSets.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04EDBE3-F54D-407D-9F97-6F8CFBD25256}"
 	ProjectSection(SolutionItems) = preProject
-		Messaging\Parsing\DeviceIdParsing.md = Messaging\Parsing\DeviceIdParsing.md
+		Messaging\Parsing\DeviceMessageIdParsing.md = Messaging\Parsing\DeviceMessageIdParsing.md
 		Messaging\Parsing\FramingBytes.md = Messaging\Parsing\FramingBytes.md
 		Messaging\Parsing\Index.md = Messaging\Parsing\Index.md
-		Messaging\Parsing\MessageIdParsing.md = Messaging\Parsing\MessageIdParsing.md
 		Messaging\Parsing\ParsingBinaryMessages.md = Messaging\Parsing\ParsingBinaryMessages.md
 		Messaging\Parsing\ParsingDelimitedMessage.md = Messaging\Parsing\ParsingDelimitedMessage.md
 		Messaging\Parsing\ParsingFromBody.md = Messaging\Parsing\ParsingFromBody.md
 		Messaging\Parsing\ParsingFromHeader.md = Messaging\Parsing\ParsingFromHeader.md
 		Messaging\Parsing\ParsingFromPath.md = Messaging\Parsing\ParsingFromPath.md
 		Messaging\Parsing\ParsingFromQueryString.md = Messaging\Parsing\ParsingFromQueryString.md
-		Messaging\Parsing\ParsingFromTopic.md = Messaging\Parsing\ParsingFromTopic.md
 		Messaging\Parsing\ParsingJsonMessage.md = Messaging\Parsing\ParsingJsonMessage.md
+		Messaging\Parsing\ParsingStrategies.md = Messaging\Parsing\ParsingStrategies.md
 		Messaging\Parsing\ParsingStringMessage.md = Messaging\Parsing\ParsingStringMessage.md
+		Messaging\Parsing\ParsingTopics.md = Messaging\Parsing\ParsingTopics.md
+		Messaging\Parsing\ParsingWithRegEx.md = Messaging\Parsing\ParsingWithRegEx.md
 		Messaging\Parsing\ParsingXmlMessage.md = Messaging\Parsing\ParsingXmlMessage.md
+		Messaging\Parsing\Verifiers.md = Messaging\Parsing\Verifiers.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{AA4E331B-EE82-475D-9EF7-559C3207A1D6}"
+	ProjectSection(SolutionItems) = preProject
+		Index.md = Index.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{F66103ED-F8CC-4368-8951-39E08B670C56}"
+	ProjectSection(SolutionItems) = preProject
+		Instances\Index.md = Instances\Index.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1CF2DC1C-D7F6-46EA-90ED-B90247B8007E}"
 	ProjectSection(SolutionItems) = preProject
+		faq.md = faq.md
 		GettingStarted.md = GettingStarted.md
 		Index.md = Index.md
 		overview.md = overview.md
+		terminology.md = terminology.md
 		toc.md = toc.md
+		why.md = why.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126E0BE-38D8-470F-A0F3-74A4324CB116}"
 	ProjectSection(SolutionItems) = preProject
-		Devices\DeviceConfigurations.md = Devices\DeviceConfigurations.md
-		Devices\DeviceMessages.md = Devices\DeviceMessages.md
-		Devices\DeviceRepositories.md = Devices\DeviceRepositories.md
-		Devices\DeviceTypes.md = Devices\DeviceTypes.md
-		Devices\Index.md = Devices\Index.md
+		DeviceMessages.md = DeviceMessages.md
+		DeviceTypes.md = DeviceTypes.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38765E25-6F53-4D43-A420-A10EDF456AAF}"
@@ -52,27 +65,48 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38
 		Workflows\Index.md = Workflows\Index.md
 		Workflows\Input.md = Workflows\Input.md
 		Workflows\InputCommands.md = Workflows\InputCommands.md
+		OutputCommands.md = OutputCommands.md
 		Workflows\OutputCommands.md = Workflows\OutputCommands.md
+		StateMachines.md = StateMachines.md
 		Workflows\StateMachines.md = Workflows\StateMachines.md
+		Workflow.md = Workflow.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topics", "topics", "{D061F3A8-91A6-45CC-BAF8-3D7CEDB6C998}"
 	ProjectSection(SolutionItems) = preProject
-		Topics\Implementation.md = Topics\Implementation.md
-		Topics\Keys.md = Topics\Keys.md
-		Topics\Terminology.md = Topics\Terminology.md
+		Keys.md = Keys.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{ACB909A0-1CDB-4A18-8A3F-FE053ACD5E7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocGen", "DocGen\DocGen.csproj", "{12959BDF-97E5-462C-B761-811EF2DD4A42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuvIot.WebDocs", "NuvIot.WebDocs\NuvIot.WebDocs.csproj", "{346397B7-62CE-4DD8-92E0-169B8956C3A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TypeSystem", "TypeSystem", "{1549B421-916A-441C-B788-DDEC7002052B}"
 	ProjectSection(SolutionItems) = preProject
-		About\Branding.md = About\Branding.md
-		About\Company.md = About\Company.md
-		About\DesignPhilosophy.md = About\DesignPhilosophy.md
-		About\Faq.md = About\Faq.md
-		About\Why.md = About\Why.md
+		Messaging\TypeSystem\DateTime.md = Messaging\TypeSystem\DateTime.md
+		Messaging\TypeSystem\GeoLocation.md = Messaging\TypeSystem\GeoLocation.md
+		Messaging\TypeSystem\Index.md = Messaging\TypeSystem\Index.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PipelineModules", "PipelineModules", "{3BD3EEED-6B78-4C32-842C-33C12433312D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Routes", "Routes", "{55C74D1B-6D8D-4302-B9EB-CC2788F5EEEA}"
+	ProjectSection(SolutionItems) = preProject
+		Routes\Route.md = Routes\Route.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{CA00752F-BCB0-4785-8429-FB9DBFD354F8}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Configuration.md = Deployment\Configuration.md
+		Deployment\EdgeTechnology.md = Deployment\EdgeTechnology.md
+		Deployment\HighAvailability.md = Deployment\HighAvailability.md
+		Deployment\Host.md = Deployment\Host.md
+		Deployment\Index.md = Deployment\Index.md
+		Deployment\Instance.md = Deployment\Instance.md
+		Deployment\NuvIoTInfrastructure.md = Deployment\NuvIoTInfrastructure.md
+		Deployment\Solution.md = Deployment\Solution.md
+		Deployment\Subscriptions.md = Deployment\Subscriptions.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PipelineModules", "PipelineModules", "{C09DB466-10FA-4F80-9FDE-1ECE7EC3F938}"
 	ProjectSection(SolutionItems) = preProject
 		PipelineModules\Index.md = PipelineModules\Index.md
 		PipelineModules\InputTranslator.md = PipelineModules\InputTranslator.md
@@ -84,24 +118,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PipelineModules", "Pipeline
 		PipelineModules\Workflow.md = PipelineModules\Workflow.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Routes", "Routes", "{E03CF4D0-55D3-44A7-94DE-28BDA033DF06}"
-	ProjectSection(SolutionItems) = preProject
-		Routes\Route.md = Routes\Route.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{92B10C11-CC3A-4A7F-A276-F434058CFD64}"
-	ProjectSection(SolutionItems) = preProject
-		Deployment\Configuration.md = Deployment\Configuration.md
-		Deployment\EdgeTechnology.md = Deployment\EdgeTechnology.md
-		Deployment\HighAvailability.md = Deployment\HighAvailability.md
-		Deployment\Host.md = Deployment\Host.md
-		Deployment\Index.md = Deployment\Index.md
-		Deployment\Instance.md = Deployment\Instance.md
-		Deployment\NuvIoTInfrastructure.md = Deployment\NuvIoTInfrastructure.md
-		Deployment\Solution.md = Deployment\Solution.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{93264E26-6CEF-4F7F-95E9-0153783094C8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{2B9A7390-DCBB-4E38-B308-5ABF4CB6159F}"
 	ProjectSection(SolutionItems) = preProject
 		PipelineModules\Listeners\AMQPClient.md = PipelineModules\Listeners\AMQPClient.md
 		PipelineModules\Listeners\AMQPHostedServer.md = PipelineModules\Listeners\AMQPHostedServer.md
@@ -115,15 +132,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{
 		PipelineModules\Listeners\TCP.md = PipelineModules\Listeners\TCP.md
 		PipelineModules\Listeners\UDP.md = PipelineModules\Listeners\UDP.md
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{D643877D-E181-485E-9469-D924A678CB7C}"
-	ProjectSection(SolutionItems) = preProject
-		API\index.md = API\index.md
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocGen", "DocGen\DocGen.csproj", "{12959BDF-97E5-462C-B761-811EF2DD4A42}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuvIot.WebDocs", "NuvIot.WebDocs\NuvIot.WebDocs.csproj", "{346397B7-62CE-4DD8-92E0-169B8956C3A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +153,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D04EDBE3-F54D-407D-9F97-6F8CFBD25256} = {75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}
-		{93264E26-6CEF-4F7F-95E9-0153783094C8} = {3BD3EEED-6B78-4C32-842C-33C12433312D}
+		{1549B421-916A-441C-B788-DDEC7002052B} = {75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}
+		{2B9A7390-DCBB-4E38-B308-5ABF4CB6159F} = {C09DB466-10FA-4F80-9FDE-1ECE7EC3F938}
 	EndGlobalSection
 EndGlobal

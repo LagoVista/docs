@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: RobotoBlack;
+            src: url(/fonts/Roboto-Black.ttf);
+        }
+
+        @font-face {
+            font-family: RobotoBold;
+            src: url(/fonts/Roboto-Black.ttf);
+        }
+
+        @font-face {
+            font-family: RobotoRegular;
+            src: url(/fonts/Roboto-Regular.ttf);
+        }
+
+        body {
+            margin-top: 70px
+        }
+    </style>
+
+    <title>NuvIot - Documentation</title>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header" style="margin-left:50px">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://www.IoTAppStudio.com" target="_blank" class="navbar-brand">NuvIoT</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right" style="margin-right:50px">
+            <li><a href="https://www.IoTAppStudio.com/Contact" target="_blank">Contact Us <i class="fa fa-phone"></i> </a></li>
+        </ul>
+    </div>
+
+
+    
+
+    <div class="container">
+        <p style="font-family:'Myanmar Text'" class="mast-head lead">NuvIoT Support Network</p>
+        <div class="row hidden-md">
+            <div class="col-lg-6" style="text-align:center;padding-top:40px">
+                <img src="/images/NuvIoT-256x256B.png" style="display:inline-block" />
+            </div>
+            <div class="col-lg-6" style="text-align:center">
+                <img src="/images/SupportGirl.png" style="display:inline-block" />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="panel panel-default" style="height:210px">
+                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Online Help</div>
+                    <div class="panel-body">
+                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-address-book"></i>
+                        As part of making final preperations for our public release we are offering a free one hour consulation to discuss and answer any IoT related topics.
+                        <div style="position:absolute;bottom:20px;right:30px;">
+                            <a href="/help.html">Go To Help Site >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="panel panel-default" style="height:210px">
+                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Open a Support Ticket</div>
+                    <div class="panel-body">
+                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-address-book"></i>
+                        Sign up for a Free no-oblication account and use our free Expert System A.I. to capture and organize your implementations requirements.
+                        <div style="position:absolute;bottom:20px;right:30px;">
+                            <a href="https://nuviot.supportsystem.com">Open a Support Ticket >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="panel panel-default" style="height:210px;">
+                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Online Forums</div>
+                    <div class="panel-body">
+                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-address-book"></i>
+                        If you decide that NuVIoT is the right tool for your next IoT Application and make a commitment, we'll provide a generous implementation credit on your account to help ensure your success.
+                        <div style="position:absolute;bottom:20px;right:30px;">
+                            <a href="http://forums.nuviot.com" target="_blank">Visit our Forum >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="panel panel-default" style="height:210px">
+                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Chat</div>
+                    <div class="panel-body">
+                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-address-book"></i>
+                        We don't Charge to Innovate, use our Free Development Tier to build your Proof of Concept, then when you are ready, deploy your solutions to production grade hosting.
+                        <div style="position:absolute;bottom:20px;right:30px;">
+                            <a href="/Chat">Chat >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr />
+        <div class="row" align="center">
+            <img src="/Images/sftlog-medium.png" />
+        </div>
+    </div>
+
+
+    <div style="position:fixed;bottom:0;width:100%;background-color:rgba(0,0,0,0.5);padding:5px;">
+        <span style="color:white;margin-left:50px">&copy; 2017 - Software Logistics, LLC</span>
+        <div style="float:right">
+            <a style="margin-right:50px;color:white" href="https://app.termly.io/document/terms-of-use-for-saas/90eaf71a-610a-435e-95b1-c94b808f8aca" target="_blank">Terms and Conditions</a>
+            <a style="margin-right:50px;color:white" href="https://app.termly.io/document/privacy-policy-for-website/f0b67cde-2a08-4fe8-a35e-5e4571545d00" target="_blank">Privacy Statement</a>
+        </div>
+    </div>
+
+</body>
+</html>

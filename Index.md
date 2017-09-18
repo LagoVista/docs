@@ -1,8 +1,5 @@
-# Home
+### Select a Help Topic
 
-Welcome to NuvIoT
-
-### Top Level Topics
 
 * [Getting Started](GettingStarted.md)
 * [Implementationv Overview](./Topics/Implementation.md)

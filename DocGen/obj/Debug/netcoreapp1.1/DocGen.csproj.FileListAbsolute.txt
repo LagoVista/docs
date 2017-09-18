@@ -7,3 +7,17 @@ D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.csprojResolveAssemblyRef
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.AssemblyInfo.cs
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.dll
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.pdb
+D:\nuviot\do.Documentation\netcoreapp1.1\DocGen.deps.json
+D:\nuviot\do.Documentation\netcoreapp1.1\DocGen.runtimeconfig.json
+D:\nuviot\do.Documentation\netcoreapp1.1\DocGen.runtimeconfig.dev.json
+D:\nuviot\do.Documentation\netcoreapp1.1\DocGen.dll
+D:\nuviot\do.Documentation\netcoreapp1.1\DocGen.pdb
+D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.csprojResolveAssemblyReference.cache
+D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.AssemblyInfo.cs
+D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.dll
+D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.pdb
+D:\nuviot\netcoreapp1.1\DocGen.deps.json
+D:\nuviot\netcoreapp1.1\DocGen.runtimeconfig.json
+D:\nuviot\netcoreapp1.1\DocGen.runtimeconfig.dev.json
+D:\nuviot\netcoreapp1.1\DocGen.dll
+D:\nuviot\netcoreapp1.1\DocGen.pdb

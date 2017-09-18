@@ -1,3 +1,3 @@
-﻿[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
+﻿[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
 
 # Parsing from Header

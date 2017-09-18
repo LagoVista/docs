@@ -71,18 +71,17 @@ namespace DocGen
                     md = md.Replace($@"""{link}""", $@"""#{newLink}""");
                 }
 
-
                 if (fileInfo.Name.ToLower() != "toc.md")
                 {
                     md += "<hr />";
-                    md += $"<h4>Documentation Built: {DateTime.Now.ToString()}</h4>";
-                    md += $"<h4>Copyright Sofware Logistics - {DateTime.Now.Year}</h4>";
+                    md += "<div class=\"helppage-footer\">";
+                    md += $"<div>Documentation Built: {DateTime.Now.ToString()}</div>";
+                    md += $"<div>Copyright Sofware Logistics - {DateTime.Now.Year}</div>";
+                    md += "</div>";
                 }
-
 
                 var newFileName = fileInfo.Name.Replace(".md", ".html");
                 System.IO.File.WriteAllText($@"{outputDir}\\{newFileName}", md);
-
 
                 bldr.AppendLine($@"{{""link"":""{fullFilePath}"",""file"":""/help{fullFilePath.Replace(".md", ".html")}""}},");
             }
@@ -105,7 +104,7 @@ namespace DocGen
 
         static void Main(string[] args)
         {
-            var rootPath = @"D:\nuviot\do.Docs";
+            var rootPath = @"D:\nuviot\do.Documentation";
 
             if (args.Length == 1)
             {
@@ -124,8 +123,6 @@ namespace DocGen
             {
                 System.IO.Directory.Delete(outputDirectory, true);
             }
-
-
             RelativePath = rootPath;
 
             ParseDirectory(rootPath, outputDirectory);
@@ -134,10 +131,7 @@ namespace DocGen
             json += "];}";
 
             System.IO.File.WriteAllText($"{outputDirectory}\\index.js", json);
-
-            Console.WriteLine(json);
-
-            Console.ReadKey();
+            Console.WriteLine("Completed");
         }
     }
 }

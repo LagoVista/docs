@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <script src="/help/index.js"></script>
+
+    <title>NuvIot - Documentation</title>
+
+    <script>
+        var app = angular.module("DocApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            var routes = getHelpIndexRoutes();
+            $routeProvider.when("/", { templateUrl: "/help/Index.html" });
+
+            for (var route of routes) {
+                $routeProvider.when(route.link, { templateUrl: route.file });
+            }
+
+        });
+
+        function parseChildNodes(parentNode, nodes) {
+            let parent = $(parentNode);
+
+            for (let node of parent.children()) {
+                let child = $(node);
+                if (child.children().length > 0) {
+                    var grandChildren = child.children();
+                    if (grandChildren) {
+                        for (let grandChild of grandChildren) {
+                            if (grandChild.localName == "ul") {
+                                var childNodes = [];
+                                nodes.push({ 'children': childNodes });
+                                parseChildNodes(grandChild, childNodes);
+                            }
+                            else if (grandChild.localName === "a") {
+                                nodes.push({ 'link': grandChild.href, 'name': grandChild.innerText });
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        function createHelpLeaf(parentNode, nodes) {
+            var previousNode;
+            for (let node of nodes) {
+                if (node.children) {
+                    var newParent = $('<ul class=\"childNodeSet\"></ul>');
+                    previousNode.append(newParent);
+                    previousNode.prepend('<i class="fa fa-plus"></i>');
+                    previousNode.addClass("parentNode");
+                    createHelpLeaf(newParent, node.children);
+                }
+                else {
+                    previousNode = $(`<li><a href=\"${node.link}\">${node.name}</a></li>`);
+                    parentNode.append(previousNode);
+                }
+            }
+        }
+
+        $.get("/help/toc.html", function (tree) {
+            let element = $(tree);
+            var nodes = [];
+            parseChildNodes(element, nodes);
+
+            let parentNode = $("<ul class='topNodeSet'></ul>");
+            createHelpLeaf(parentNode, nodes);
+            $('.list').append(parentNode);
+            $('ul.childNodeSet').toggle();
+        });
+
+        $(document).ready(function () {
+            $('.list  ul > li.parentNode > i').click(function (e) {
+                e.stopPropagation();
+
+                var childNodeList = $(this).parent().find("ul").first();
+                childNodeList.toggle();
+
+                var toggleElement = $(this);
+
+                if (childNodeList.is(":visible")) {
+                    toggleElement.removeClass('fa-plus')
+                    toggleElement.addClass('fa-minus')
+                }
+                else {
+                    toggleElement.addClass('fa-plus')
+                    toggleElement.removeClass('fa-minus')
+                }
+            });
+        });
+    </script>
+    <style>
+        body { padding-top:50px; }
+
+        ul.topNodeSet > li {
+            list-style: none;
+            margin-left: -25px;
+            margin-bottom: 10px;
+        }
+
+        ul.childNodeSet > li {
+            list-style: none;
+            margin-left: -15px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        .list ul > li.parentNode > i {
+            color: #337ab7;
+        }
+
+        li > i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body ng-app="DocApp">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://www.IoTAppStudio.com" class="navbar-brand">NuvIoT</a>
+            
+        </div>
+
+        <a href="/" class="navbar-brand">Home</a>
+    </div>
+
+    <div style="background-color:#f0f0f0">
+        <div>
+            <img src="images/NuvIoT-64x64B.png" />
+            <img src="images/sftlog-small.png" />
+        </div>
+    </div>
+    <div style="float:left;width:250px;">
+        <div style="align-items:stretch" >
+            <div class="list"></div>
+        </div>
+    </div>
+    <div ng-view style="margin-left:270px;z-index:-99;width:800px">
+
+    </div>
+</body>
+</html>
