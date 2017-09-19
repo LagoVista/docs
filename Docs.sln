@@ -50,8 +50,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126E0BE-38D8-470F-A0F3-74A4324CB116}"
 	ProjectSection(SolutionItems) = preProject
-		DeviceMessages.md = DeviceMessages.md
-		DeviceTypes.md = DeviceTypes.md
+		Devices\DeviceConfigurations.md = Devices\DeviceConfigurations.md
+		Devices\DeviceMessages.md = Devices\DeviceMessages.md
+		Devices\DeviceRepositories.md = Devices\DeviceRepositories.md
+		Devices\DeviceTypes.md = Devices\DeviceTypes.md
+		Devices\Index.md = Devices\Index.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38765E25-6F53-4D43-A420-A10EDF456AAF}"
@@ -157,7 +160,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mappings", "Mappings", "{7C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{01432627-DE08-44BF-9B6C-2B63DB88E064}"
 	ProjectSection(SolutionItems) = preProject
+		Scripting\AttributeOnSet.md = Scripting\AttributeOnSet.md
 		Scripting\Index.md = Scripting\Index.md
+		Scripting\InputCommandArrive.md = Scripting\InputCommandArrive.md
+		Scripting\StateTransition.md = Scripting\StateTransition.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
 	EndProjectSection
 EndProject

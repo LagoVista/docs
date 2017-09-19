@@ -2,5 +2,7 @@
 
 # Input to Attribute
 
-An Input is a value that will come from a device message.  You define your Inputs on a Workflow and then can map fields
-from your messages to the Input.
+If an [Input](../Input.md) is mapped to an [Attribute](../Attributes.md) the value contained
+in the input will be applied and stored to the attribute so it can be accessed at a later time
+or used within a report.  Inputs are temporary and will only exist while the message is being 
+processsed.

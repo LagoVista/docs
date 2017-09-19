@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-What is NuvIoT?
+**What is NuvIoT?**
 
 
 **How do I get Started?**
@@ -33,7 +33,16 @@ complete solutions for as little as $99 a month.  See our [Pricing Page](https:/
 
 **What do you mean by Config More Code Less?**
 
+In any IoT application there are a number of common components.  With our data driven architecture you will
+be surprised with how much of your application you'll be able to bring online by simply configuring our core 
+components.  If/when you do hit a dead end, don't worry you'll still be able components you have created with
+your favorite language.
+
 **What devices does NuvIoT work with?**
+
+By Definition NuvIoT was designed to work with your devices.  Unlike other system, NuvIoT doesn't dictate that you need
+to install an SDK or conform to a specified protocol.  We know that you may have a large investment in your devices
+and our system is configurable to pick your communications protocol and specify your own unique message definitions. 
 
 
 

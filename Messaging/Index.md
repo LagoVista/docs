@@ -17,8 +17,8 @@ your device send messages.
 
 [Parsing Strategies](Parsing/ParsingStrategies.md)
 
-[State Sets](StateSets.md)
+[State Sets](./TypeSystem/StatesAndEnums.md)
 
 [Type System](TypeSystem/Index.md)
 
-[Unit Sets](UnitSets.md)
+[Unit Sets](./TypeSystem/ValueWithUnits.md)

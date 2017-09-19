@@ -1,6 +1,7 @@
 [Home](../../Index.md) > [Workflow](../Index.md) > [Mappings](Index.md)
 
-# Input Command to Output Cmmand
+# Input Command to Output Command
 
-An Input is a value that will come from a device message.  You define your Inputs on a Workflow and then can map fields
-from your messages to the Input.
+If an [Input Command](../InputCommands.md) is mapped to an [Output Command](../OutputCommands.md) values from the 
+input command are made available to the output command.
+

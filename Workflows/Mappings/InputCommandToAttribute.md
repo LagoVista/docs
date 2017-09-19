@@ -2,7 +2,6 @@
 
 # Input Command to Attribute
 
-If an [Input](../Input.md) is mapped to an [Attribute](../Attributes.md) the value contained
-in the input will be applied and stored to the attribute so it can be accessed at a later time
-or used within a report.  Inputs are temporary and will only exist while the message is being 
-processsed.
+If an [Input Command](../InputCommands.md) is mapped to an [Attribute](../Attributes.md) the value or values
+that are passed in from the Input Command are set on the Attribute.  These are set via mappings.  As the 
+attribute is set, the Attribute OnSet script is executed.
