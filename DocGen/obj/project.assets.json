@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -7074,15 +7074,29 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\nuviot\\do.Docs\\DocGen\\DocGen.csproj",
       "projectName": "DocGen",
       "projectPath": "D:\\nuviot\\do.Docs\\DocGen\\DocGen.csproj",
+      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
       "outputPath": "D:\\nuviot\\do.Docs\\DocGen\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "D:\\nuviot\\NuGet.Config",
+        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "sources": {
+        "D:\\nuviot\\LocalPackages": {},
+        "D:\\nuviot\\LocalPrivatePackages": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
