@@ -1,6 +1,18 @@
+---
+title: Deployment Table of Contents
+keywords: deployment
+
+created: 20170922
+updated: 20170922
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 [Home](../Index.md)
 
 # Deployment
+
+After you have built your IoT application, you need to deploy it.  Below are some of the resources that will help
+get you started.
 
 [Configurations](Configuration.md)
 
