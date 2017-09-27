@@ -1,3 +1,12 @@
+---
+title: Parsing Binary Messages
+keywords: parsers, binary, data, messaging, messages
+
+created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
 
 # Parsing a Binary Message

@@ -1,4 +1,13 @@
-﻿[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md) > [Parsing Binary Messages](ParsingBinaryMessages.md)
+﻿---
+title: Framing Bytes
+keywords: parsers, messaging, binary, hex
+
+created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
+[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md) > [Parsing Binary Messages](ParsingBinaryMessages.md)
 
 # Framing Bytes
 
@@ -19,6 +28,7 @@ For example the binary message:
 You could specify the following Framing Bytes:
 
 | Position | Byte | Description |
+|-----|-----|-----|
 |  0  | 01 | Look for SOH in the first position |
 |  2  | 02 | Look for STX in the second position |
 |  6  | 03 | Look for ETX in the sixth position |

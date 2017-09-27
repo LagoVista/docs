@@ -11,9 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04EDBE3-F54D-407D-9F97-6F8CFBD25256}"
 	ProjectSection(SolutionItems) = preProject
-		Messaging\Parsing\DeviceMessageIdParsing.md = Messaging\Parsing\DeviceMessageIdParsing.md
+		Messaging\Parsing\DeviceIdParsing.md = Messaging\Parsing\DeviceIdParsing.md
 		Messaging\Parsing\FramingBytes.md = Messaging\Parsing\FramingBytes.md
 		Messaging\Parsing\Index.md = Messaging\Parsing\Index.md
+		Messaging\Parsing\MessageIdParsing.md = Messaging\Parsing\MessageIdParsing.md
+		Messaging\Parsing\Overview.md = Messaging\Parsing\Overview.md
 		Messaging\Parsing\ParsingBinaryMessages.md = Messaging\Parsing\ParsingBinaryMessages.md
 		Messaging\Parsing\ParsingDelimitedMessage.md = Messaging\Parsing\ParsingDelimitedMessage.md
 		Messaging\Parsing\ParsingFromBody.md = Messaging\Parsing\ParsingFromBody.md
@@ -23,9 +25,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04E
 		Messaging\Parsing\ParsingJsonMessage.md = Messaging\Parsing\ParsingJsonMessage.md
 		Messaging\Parsing\ParsingStrategies.md = Messaging\Parsing\ParsingStrategies.md
 		Messaging\Parsing\ParsingStringMessage.md = Messaging\Parsing\ParsingStringMessage.md
+		Messaging\Parsing\ParsingTextMessages.md = Messaging\Parsing\ParsingTextMessages.md
 		Messaging\Parsing\ParsingTopics.md = Messaging\Parsing\ParsingTopics.md
 		Messaging\Parsing\ParsingWithRegEx.md = Messaging\Parsing\ParsingWithRegEx.md
 		Messaging\Parsing\ParsingXmlMessage.md = Messaging\Parsing\ParsingXmlMessage.md
+		Messaging\Parsing\RegExValueSelector.md = Messaging\Parsing\RegExValueSelector.md
+		Messaging\Parsing\Validation.md = Messaging\Parsing\Validation.md
 		Messaging\Parsing\Verifiers.md = Messaging\Parsing\Verifiers.md
 	EndProjectSection
 EndProject

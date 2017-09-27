@@ -28,6 +28,10 @@ In NuvIoT we will use the term **State Set** to define the collection of states 
 
 When creating a State Set you define the name of your state and a [key](../../Topics/Keys.md).
 
+Also when creating your State Set you have the option of adding enum (or integer values) to your states, this is done with
+the **Require Enum** property of the state set.  These enum values are useful (especially in binary protocols) if your device messages sent integer values
+rather than text to identify certain states or conditions.
+
 
 ### States
 When you define the States that make up a State Set you need to define the following values:

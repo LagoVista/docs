@@ -1,6 +1,15 @@
-﻿[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
+﻿---
+title: Parsing a Delimited Messasge
+keywords: parsers, delimited, csv, text, string, data, messaging, messages
 
-# Parsing a Delimited Messaged
+created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
+[Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
+
+# Parsing a Delimited Message
 
 If you message content is text the values can be seperated by a delimiter.  This is generally a comma but is configurable but at this only one character delimiters are supported.
 
