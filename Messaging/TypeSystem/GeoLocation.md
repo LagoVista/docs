@@ -1,3 +1,12 @@
+---
+title: Working with Geo Location Vallues
+keywords: messages, messaging, parsing, fields, geo, geolocation, latitude, longitude, location
+
+created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)
 
 # Working with Geo Location Values

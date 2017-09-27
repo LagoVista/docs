@@ -44,6 +44,6 @@ By Definition NuvIoT was designed to work with your devices.  Unlike other syste
 to install an SDK or conform to a specified protocol.  We know that you may have a large investment in your devices
 and our system is configurable to pick your communications protocol and specify your own unique message definitions. 
 
-
-
+**What is an Attribute?**  
+An [attibute](./Workflows/Attributes.md) is a peice of data that is associated with a device through a device configuraiton.
 

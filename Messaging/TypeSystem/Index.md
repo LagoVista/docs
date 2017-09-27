@@ -1,8 +1,21 @@
+---
+title: Type System
+keywords: messages, messaging, types, string, decimal, integer, boolean, datetime, geolocation, latitude, longitude, state, unit
+
+created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 [Home](../../Index.md) > [Device Messaging](../Index.md)
 
 # Type System
 
-At the heart of the 
+To ensure a consistent and repeatable workflows and and processing of your device messages there is a core type system that has been define.  
+
+As messages are parsed and data is made available a type is associated with those values to ensure processing works as expected. 
+
+#### Available Types
 
 [String](Strings.md) - Simple Textual Representation of Data  
 [Integers](Integers.md) - Whole Numbers or Numbers such as 1,-1, 100, 0, etc...  
