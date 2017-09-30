@@ -2,7 +2,7 @@
 
 # AMQP Client
 
-Currently NuvIoT doesn't implement it's own dedicated AMQP listener, it does however offer the option to connect to a 3rd party AMQP server
+Currently NuvIoT doesn't implement it's own dedicated AMQP server, it does however offer the option to connect to a 3rd party AMQP server
 of your choosing.    
 
 You have two options for adding an AMQP server, you can use a could based provider such as [Azure](https://portal.azure.com) or 

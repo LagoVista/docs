@@ -1,5 +1,5 @@
 ---
-title: Working with Geo Location Vallues
+title: Working with Geo Location Values
 keywords: messages, messaging, parsing, fields, geo, geolocation, latitude, longitude, location
 
 created: 20170927
