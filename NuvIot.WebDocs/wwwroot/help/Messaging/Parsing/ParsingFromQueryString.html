@@ -1,3 +1,27 @@
+<hr />
+<p>title: Parsing from a Path
+keywords: messages, messaging, parsing, rest, querystring, http</p>
+<h2>created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf</h2>
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/ParsingStrategies.md">Parsing Strategies</a></p>
 <h1>Parsing from Query String</h1>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>A <a href="#https://en.wikipedia.org/wiki/Query_string">Query String</a> is used on <a href="#https://en.wikipedia.org/wiki/Representational_state_transfer">REST Messages</a> and can be used to extract message values.</p>
+<p>For the following URL</p>
+<pre><code>https://myapp.iothost.net/power?state=on
+</code></pre>
+<p>The query string would be the portion after theh ? or</p>
+<pre><code>state=on
+</code></pre>
+<p>To extract the value state and use that within your workflow you select</p>
+<p><strong>Search Location</strong><br />
+Query String</p>
+<p>Then for<br />
+<strong>Query String Field</strong><br />
+<code>state</code></p>
+<p>The value that will be store for the above query string in the state field will be <code>on</code></p>
+<p><strong>Hint:</strong> <em>This would be an excellent use of the <a href="#/Messaging/TypeSystem/StatesAndEnums.md">State and Enums</a></em> data type to ensure the values are either <code>on</code> or <code>off</code></p>
+<h5>Storage Type</h5>
+<p>You will also need to add a <a href="#/Messaging/TypeSystem/Index.md">Storage Type</a> to identify how this field should be stored.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/27/2017 18:39:51</div><div>Copyright Sofware Logistics - 2017</div></div>

@@ -1,3 +1,28 @@
+<hr />
+<p>title: Verifiers
+keywords: messages, messaging, verifiers, samplemessages</p>
+<h2>created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf</h2>
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/Index.md">Parsing</a></p>
 <h1>Verifiers</h1>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>Once you have created your parser, you will want to test it to make sure it behaves as expected.  You can create a verifier that will take a sample message and run it through the verifier to ensure you get the results you need.  All without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same and you will have the same fields available to the workflow.</p>
+<h3>To add a verifier</h3>
+<ol>
+<li>Add a message parser</li>
+<li>Click on Verifiers &gt; Edit</li>
+<li>Click on Add</li>
+<li>Add the name and key</li>
+<li>Select a Payload Type</li>
+<li>Populate the fields that make up your sample message</li>
+<li>Add expected values, you can use the fields you created as part of the message to add an expected value.</li>
+</ol>
+<p><strong>NOTE:</strong> <em>If you have a binary message, you can copy the hex bytes that make up your messages into the payload field such as:</em></p>
+<pre><code>0x03 0x43 0x04 0x23 0x52 0x41 0x05 0x06 
+</code></pre>
+<h3>To use a verifier</h3>
+<ol>
+<li>On the Device Message Definition, press run, your results will be displayed.</li>
+</ol>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/27/2017 18:39:51</div><div>Copyright Sofware Logistics - 2017</div></div>

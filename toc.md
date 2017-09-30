@@ -19,6 +19,7 @@
     * [Repositories](./Devices/DeviceRepositories.md)
 * [Messaging](./Messaging/Index.md)
   * [Message Fields](./Messaging/MessageFields.md)
+  * [Content Types](./Messaging/ContentTypes.md)
   * [Parsing](./Messaging/Parsing/Index.md)
     * [Overview](./Messaging/Parsing/Overview.md)
     * [Device Id](./Messaging/Parsing/DeviceIdParsing.md)

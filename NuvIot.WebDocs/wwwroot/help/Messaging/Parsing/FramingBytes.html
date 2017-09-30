@@ -1,3 +1,10 @@
+<hr />
+<p>title: Framing Bytes
+keywords: parsers, messaging, binary, hex</p>
+<h2>created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf</h2>
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/Index.md">Parsing</a> &gt; <a href="#/Messaging/Parsing/ParsingBinaryMessages.md">Parsing Binary Messages</a></p>
 <h1>Framing Bytes</h1>
 <p>When parsing a binary message you can use framing bytes to ensure your message is in the exact format you expect as well set check points for relative locations in your message (not implemented as of 5/18/2017)</p>
@@ -10,6 +17,7 @@
 <p><code>01 32 02 43 52 08 03 04</code></p>
 <p>You could specify the following Framing Bytes:</p>
 <p>| Position | Byte | Description |
+|-----|-----|-----|
 |  0  | 01 | Look for SOH in the first position |
 |  2  | 02 | Look for STX in the second position |
 |  6  | 03 | Look for ETX in the sixth position |
@@ -18,4 +26,4 @@
 <p>If you use the same framing bytes with the message</p>
 <p><code>01 32 43 02 43 52 08 03 04</code></p>
 <p>The parsing of the message would fail since the character <code>02 (STX)</code> is located at position 3 not position 2.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/27/2017 18:39:51</div><div>Copyright Sofware Logistics - 2017</div></div>

@@ -1,3 +1,10 @@
+<hr />
+<p>title: States and Enumerations
+keywords: statemachine, workflow, states</p>
+<h2>created: 20170922
+updated: 20170922
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf</h2>
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/TypeSystem/Index.md">Type System</a></p>
 <h1>States and Enumerations</h1>
 <p>In some cases your attributes can contain any number or value.  In some cases you may want to limit the values that can be assigned to an attribute.  To limit
@@ -10,6 +17,10 @@ Off
 <h3>State Sets</h3>
 <p>In NuvIoT we will use the term <strong>State Set</strong> to define the collection of states or enumeration values and <strong>State</strong> to define the individual values.</p>
 <p>When creating a State Set you define the name of your state and a <a href="#/Topics/Keys.md">key</a>.</p>
+<p>The <a href="#/Topics/Keys.md">Key</a> that you provide for each <strong>State</strong> will be used to store the value of the state associated with data item.</p>
+<h5>Integer Enumerations</h5>
+<p>Also when creating your State Set, you can specify if an integer enumeration value should be provided, this is useful for mapping to integer values from messages.  If you specify that it should be provided then each state <strong>must</strong> include an integer enumeration.  Integer enumeration
+values are only provided to map to incoming and outgoing messages.  The value will be converted to the string Key value prior to being saved.</p>
 <h3>States</h3>
 <p>When you define the States that make up a State Set you need to define the following values:</p>
 <p>| Field     | Description |
@@ -17,4 +28,4 @@ Off
 | Name   | A textual representation of the state, this can be changed. |
 | Key    | The unique <a href="#/Topics/Keys.md">key</a> that identifies this state. |
 | Enum (optional) | If you want to map this enum value to a numeric value in your message, you can supply an integer perform this mapping. |</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/27/2017 18:39:51</div><div>Copyright Sofware Logistics - 2017</div></div>

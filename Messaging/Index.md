@@ -32,6 +32,8 @@ flow prior to bringing real devices online
 
 [Overview](Parsing/Overview.md)
 
+[Content Types](ContentTypes.md)
+
 [Message Fields](MessageFields.md)
 
 [Parsing Strategies](Parsing/ParsingStrategies.md)

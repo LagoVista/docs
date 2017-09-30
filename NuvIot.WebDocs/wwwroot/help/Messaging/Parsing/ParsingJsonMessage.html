@@ -1,7 +1,17 @@
+<hr />
+<p>title: Parsing from a JSON message
+keywords: messages, messaging, parsing, json, rest, post, http</p>
+<h2>created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf</h2>
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/ParsingStrategies.md">Parsing Strategies</a></p>
 <h1>Parsing a Json Message</h1>
-<p>To Select a JSON value make sure the Search Location is set to Body</p>
-<p><em>Note</em> - Currently arrays are not supported in JSON format, this will likely change relatively soon after initial launch or sooner based on implementation requirements</p>
+<p>To work with JSON in your message ensure the content type of your message is set to JSON</p>
+<p>When you have a JSON message, and select the Search Location of Body</p>
+<p><strong>Search Location</strong><br />
+Body</p>
+<p>You can specify a locator to identify the field within your JSON content.</p>
 <p>The values can be extract by using a period (.) to denote the path to the object within the JSON document.</p>
 <p>Assuming the following JSON:</p>
 <pre><code>{
@@ -12,8 +22,15 @@
 	}
 }
 </code></pre>
-<p>Values can be extracted with the following JSON path.</p>
-<p><code>field</code> = value1</p>
-<p><code>subset1.field3</code> = value2</p>
-<p><code>subset1.field4</code> = another value</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>Values can be extracted with the following <strong>JSON Path</strong>.</p>
+<p><strong>JSON Path</strong><br />
+<code>field</code> = value1</p>
+<p><strong>JSON Path</strong><br />
+<code>subset1.field3</code> = value2</p>
+<p><strong>JSON Path</strong><br />
+<code>subset1.field4</code> = another value</p>
+<p><strong>Note:</strong> <em>Currently arrays are not supported in JSON format, Please <a href="#http://support.nuviot.com">contact us</a> if your implementation requires this feature</em></p>
+<p>IN addition you can use <a href="#/Messaging/Parsing/RegExValueSelector.md">RegEx Value Selector</a> and <a href="#/Messaging/Parsing/Validation.md">Validation</a> to fine tune your selection and validate it's contents</p>
+<h5>Storage Type</h5>
+<p>You will also need to add a <a href="#/Messaging/TypeSystem/Index.md">Storage Type</a> to identify how this field should be stored.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/27/2017 18:39:51</div><div>Copyright Sofware Logistics - 2017</div></div>

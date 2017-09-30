@@ -10,6 +10,7 @@ namespace DocGen
 {
     class Program
     {
+        static int fileCount = 0;
         static StringBuilder bldr = new StringBuilder("function getHelpIndexRoutes() { return [");
         static string RelativePath;
         static void ParseDirectory(string dir, string outputDir)
@@ -27,7 +28,7 @@ namespace DocGen
                 var fullFilePath = file.Replace(RelativePath, "");
                 fullFilePath = fullFilePath.Replace(@"\", @"/");
                 var dirPath = fullFilePath.Substring(0, fullFilePath.LastIndexOf("/") );
-
+                fileCount++;
                 var links = new List<string>();
 
                 foreach (var group in matches)
@@ -131,7 +132,9 @@ namespace DocGen
             json += "];}";
 
             System.IO.File.WriteAllText($"{outputDirectory}\\index.js", json);
+            Console.WriteLine($"Processed {fileCount} files");
             Console.WriteLine("Completed");
+            Console.ReadKey();
         }
     }
 }

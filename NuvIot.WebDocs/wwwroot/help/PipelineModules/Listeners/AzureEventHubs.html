@@ -1,3 +1,25 @@
+<hr />
+<p>title: Azure Event Hubs
+keywords: listener, cloud, azure, eventhub, messagequeue</p>
+<h2>created: 20170922
+updated: 20170922
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf</h2>
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
 <h1>Azure Event Hubs</h1>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/18/2017 14:34:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>You can provide a link to your Azure Event Hub to consume messages.  This will allow you
+to use your own front end to capture the events and use NuvIoT to process messages and perform workflows.</p>
+<p>You must have an <a href="#https://portal.azure.com">Azure account</a> and have a configured <a href="#https://docs.microsoft.com/en-us/azure/event-hubs/">Event Hub</a>.</p>
+<p>If you need help getting started, <a href="#http://support.nuviot.com">contact us</a> and we'll put you in touch with one
+of our implementation partners to help you get going.</p>
+<p>The next steps assume that you have <a href="#https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create">successfully created an Event Hub</a> and have access to the necessary credentials.</p>
+<p>First you will need to create a <a href="#/PipelineModules/Listener.md">Listener</a>, and select the listener type of Event Hub.</p>
+<p><strong>Listener Type</strong><br />
+Azure EventHub</p>
+<p>You can select the <a href="#/Messaging/ContentTypes.md">content type</a> of the message you are expecting, any content types are acceptable.</p>
+<p><strong>Endpoint</strong> - Name of the Event Hub Resource you created in Azure.  For example in
+<code>sb://myeventhub.servicebus.windows.net</code> the End point would be <code>myeventhub</code></p>
+<p><strong>Resource Name</strong> - Name of the specific Event Hub you wish to listen on.</p>
+<p><strong>Consumer Group</strong> (optional) - If you want to listen on a specific Consumer Group, enter it here, if you leave this blank you will connect to the <code>[$Default]</code> Consumer Group</p>
+<p><strong>Access Key</strong> - Enter the Primary or Secondary Key to allow access to your event hub.  No keys are stored in plain text.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/27/2017 18:39:51</div><div>Copyright Sofware Logistics - 2017</div></div>
