@@ -34,7 +34,6 @@ The [Key](../../Topics/Keys.md) that you provide for each **State** will be used
 Also when creating your State Set, you can specify if an integer enumeration value should be provided, this is useful for mapping to integer values from messages.  If you specify that it should be provided then each state **must** include an integer enumeration.  Integer enumeration
 values are only provided to map to incoming and outgoing messages.  The value will be converted to the string Key value prior to being saved.
 
-
 ### States
 When you define the States that make up a State Set you need to define the following values:
 
