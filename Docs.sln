@@ -125,13 +125,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{2B9A7390-DCBB-4E38-B308-5ABF4CB6159F}"
 	ProjectSection(SolutionItems) = preProject
 		PipelineModules\Listeners\AMQPClient.md = PipelineModules\Listeners\AMQPClient.md
-		PipelineModules\Listeners\AMQPHostedServer.md = PipelineModules\Listeners\AMQPHostedServer.md
 		PipelineModules\Listeners\AzureEventHubs.md = PipelineModules\Listeners\AzureEventHubs.md
 		PipelineModules\Listeners\AzureIoTHub.md = PipelineModules\Listeners\AzureIoTHub.md
 		PipelineModules\Listeners\AzureServiceBus.md = PipelineModules\Listeners\AzureServiceBus.md
 		PipelineModules\Listeners\MSMQClient.md = PipelineModules\Listeners\MSMQClient.md
 		PipelineModules\Listeners\MSMQHostedServer.md = PipelineModules\Listeners\MSMQHostedServer.md
 		PipelineModules\Listeners\MSMQListener.md = PipelineModules\Listeners\MSMQListener.md
+		PipelineModules\Listeners\RabbitMQ.md = PipelineModules\Listeners\RabbitMQ.md
 		PipelineModules\Listeners\Rest.md = PipelineModules\Listeners\Rest.md
 		PipelineModules\Listeners\TCP.md = PipelineModules\Listeners\TCP.md
 		PipelineModules\Listeners\UDP.md = PipelineModules\Listeners\UDP.md

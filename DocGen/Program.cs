@@ -22,6 +22,14 @@ namespace DocGen
             {
                 var fileInfo = new System.IO.FileInfo(file);
                 var markdown = System.IO.File.ReadAllText(file);
+                var headerRegEx = new Regex(@"(---[\s\S]{0,}---)");
+
+                var headerMatch = headerRegEx.Match(markdown);
+                if(headerMatch.Success)
+                {
+                    markdown = markdown.Substring(headerMatch.Groups[0].Length);
+                }
+
                 var md = Markdown.ToHtml(markdown);
                 var regEx = new Regex(@"<a\s+href=(?:""([^""]+)""|'([^']+)').*?>(.*?)<\/a>");
                 var matches = regEx.Matches(md);
@@ -105,7 +113,8 @@ namespace DocGen
 
         static void Main(string[] args)
         {
-            var rootPath = @"D:\nuviot\do.Documentation";
+            //  var rootPath = @"D:\nuviot\do.Documentation";
+            var rootPath = @"D:\nuviot\do.Docs";
 
             if (args.Length == 1)
             {

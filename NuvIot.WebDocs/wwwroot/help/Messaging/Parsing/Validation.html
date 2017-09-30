@@ -1,21 +1,4 @@
-<hr />
-<p>title: Validation
-keywords: messages, messaging, parsing, fields, regex, validation</p>
-<h2>created: 20170927
-updated: 20170927
-createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf</h2>
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/Index.md">Parsing</a></p>
-<h1>Validation</h1>
-<p>It is important to enssure that the messages contain the fields you expect prior to those messages being processed.  There are some mechanisms you
-can use to validate the contents of the fields that you parse.  Those mechanisms are dependent on the type of data you are extracting.</p>
-<h3>Automatic Validation</h3>
-<p>In some cases the validation occurs automatically.  For example if you specify a number (either decimal or integer) the parser
-will ensure that no textual characters are present in the field prior to assigning the field to a storage value and making it
-available to the reset of the workflow.</p>
-<p>The following are fields that are automatically validated</p>
-<p>| Storage Type | Validation |
-| ------------ | --- |
+<p>|
 | <a href="#/Messaging/TypeSystem/Booleans.md">Boolean</a> | A value that represents to or false, text values are not case sensitve, &quot;True&quot;, true, False &quot;false&quot; or 0, 1 |
 | <a href="#/Messaging/TypeSystem/Decimals.md">Decimal</a> | A real number such as 1.25, 5, -12.30, 0 |
 | <a href="#/Messaging/TypeSystem/Integers.md">Integer</a> | A whole number such has 1, 5, -5, 1,000,333 or 0 |
@@ -34,4 +17,4 @@ processing will not continue.</p>
 acceptable for the incoming value.  These values are inclusive of the range values, that is to say that if a minimum value of <code>8</code> was specified a
 value of <code>8</code> would be valid however <code>7.99999</code> would not.  Also if minimum or maximum value is not present no validation will take place.  It is possible
 to have a minumum value without a maximum value and vice-versa.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/27/2017 18:39:51</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 9/30/2017 17:44:16</div><div>Copyright Sofware Logistics - 2017</div></div>

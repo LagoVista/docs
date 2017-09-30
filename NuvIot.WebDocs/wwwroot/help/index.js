@@ -1,4 +1,4 @@
-function getHelpIndexRoutes() { return [{"link":"/faq.md","file":"/help/faq.html"},
+function getHelpIndexRoutes() { return [{"link":"/Faq.md","file":"/help/Faq.html"},
 {"link":"/GettingStarted.md","file":"/help/GettingStarted.html"},
 {"link":"/HowDoI.md","file":"/help/HowDoI.html"},
 {"link":"/Index.md","file":"/help/Index.html"},
@@ -76,6 +76,7 @@ function getHelpIndexRoutes() { return [{"link":"/faq.md","file":"/help/faq.html
 {"link":"/PipelineModules/Listeners/MSMQClient.md","file":"/help/PipelineModules/Listeners/MSMQClient.html"},
 {"link":"/PipelineModules/Listeners/MSMQHostedServer.md","file":"/help/PipelineModules/Listeners/MSMQHostedServer.html"},
 {"link":"/PipelineModules/Listeners/MSMQListener.md","file":"/help/PipelineModules/Listeners/MSMQListener.html"},
+{"link":"/PipelineModules/Listeners/RabbitMQ.md","file":"/help/PipelineModules/Listeners/RabbitMQ.html"},
 {"link":"/PipelineModules/Listeners/Rest.md","file":"/help/PipelineModules/Listeners/Rest.html"},
 {"link":"/PipelineModules/Listeners/TCP.md","file":"/help/PipelineModules/Listeners/TCP.html"},
 {"link":"/PipelineModules/Listeners/UDP.md","file":"/help/PipelineModules/Listeners/UDP.html"},

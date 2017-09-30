@@ -1,3 +1,12 @@
+---
+title: Input Translator
+keywords: listeners, inputtranslator, pipelinemodule
+
+created: 20170927
+updated: 20170927
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 [Home](../Index.md) > [Pipeline Modules](Index.md)
 
 # Listeners
@@ -7,13 +16,13 @@ and hand them off to the [Planner](Planner.md) to determine how the message shou
 
 The following standard listener types are supported and can be configured to meet your needs:
 * [AMQP Client](./Listeners/AMQPClient.md) - Connect to a 3rd Party AMQP Server for Messages
-* [AMQP Hosted Server](./Listeners/AMQPHostedServer.md) - Deploy a Container Based AMQP Server with built in NuvIoT Integration
 * [Azure Event Hubs](./Listeners/AzureEventHubs.md) - Connect to an [Azure Event Hub](https://azure.microsoft.com/en-us/services/event-hubs/)
 * [Azure IoT Event Hub](./Listeners/AzureIoThub.md) - Connect to an [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/)
 * [Azure Service Bus](./Listeners/AzureServiceBus.md) - Connect to an [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) 
-* [MSMQ Client](./Listeners/MSMQClient.md) - Connect to a 3rd Party MQTT Server and listen for Messages
-* [MSMQ Hosted Server](./Listeners/MSMQHostedServer.md) - Deploy a Container Based MQTT Server with built in NuvIoT Integration
+* [MSMQ Client](./Listeners/MSMQClient.md) - Connect to a 3rd Party MQTT Broker and listen for Messages
+* [MSMQ Hosted Server](./Listeners/MSMQHostedServer.md) - Deploy a Container Based MQTT Broker with built in NuvIoT Integration
 * [MSMQ Listener](./Listeners/MSMQListener.md) - Our free light-weight built in MQTT Listener (low volume)
+* [RabbitMQ](./Listeners/RabbitMQ.md) - Deploy a Container hosting RabbitMQ that is integrated with NuvIoT
 * [REST](./Listeners/Rest.md) - Listen for HTTP and HTTPS [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) messages
 * [TCP](./Listeners/TCP.md) - Listen on a TCP port for messages
 * [UDP](./Listeners/UDP.md) - Listen on a UDP port for datagram based messages
