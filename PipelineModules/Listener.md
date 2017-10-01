@@ -22,6 +22,7 @@ The following standard listener types are supported and can be configured to mee
 * [MSMQ Client](./Listeners/MSMQClient.md) - Connect to a 3rd Party MQTT Broker and listen for Messages
 * [MSMQ Hosted Server](./Listeners/MSMQHostedServer.md) - Deploy a Container Based MQTT Broker with built in NuvIoT Integration
 * [MSMQ Listener](./Listeners/MSMQListener.md) - Our free light-weight built in MQTT Listener (low volume)
+* [RabbitMQ Client](./Listeners/RabbitMQClient.md) - Connect to your RabbitMQ server
 * [RabbitMQ](./Listeners/RabbitMQ.md) - Deploy a Container hosting RabbitMQ that is integrated with NuvIoT
 * [REST](./Listeners/Rest.md) - Listen for HTTP and HTTPS [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) messages
 * [TCP](./Listeners/TCP.md) - Listen on a TCP port for messages

@@ -11,4 +11,5 @@ updatedby: Kevin D. Wolf
 
 # MSMQ Hosted Broker
 
-Connect to a 3rd Party MQTT Broker and listen for Messages
+Currently in development is a integration to a scalable high-availability MQTT server with tight integration into NuvIoT.  Please [contact us](http://support.nuviot.com) if you need this capability.
+You can also [connect to your own server](MSMQClient.md).

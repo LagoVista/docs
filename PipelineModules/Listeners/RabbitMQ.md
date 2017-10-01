@@ -11,7 +11,6 @@ updatedby: Kevin D. Wolf
 
 # RabbitMQ
 
-Another option for listening for device messages is our Hosted RabbitMQ listener.  We have created a plugin module for RabbitMQ for tight 
-integration with NuvIoT.
 
-Have your own RabbitMQ server?  We also offer a listener that you can use to subscribe to messages from a third party installation
+Currently in development is a integration to a scalable high-availability RabbitMQ server with tight integration with NuvIoT.  Please [contact us](http://support.nuviot.com) if you need this capability.
+You can also [connect to your own server](MSMQClient.md)

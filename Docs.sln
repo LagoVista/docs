@@ -132,6 +132,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{
 		PipelineModules\Listeners\MSMQHostedServer.md = PipelineModules\Listeners\MSMQHostedServer.md
 		PipelineModules\Listeners\MSMQListener.md = PipelineModules\Listeners\MSMQListener.md
 		PipelineModules\Listeners\RabbitMQ.md = PipelineModules\Listeners\RabbitMQ.md
+		PipelineModules\Listeners\RabbitMQClient.md = PipelineModules\Listeners\RabbitMQClient.md
 		PipelineModules\Listeners\Rest.md = PipelineModules\Listeners\Rest.md
 		PipelineModules\Listeners\TCP.md = PipelineModules\Listeners\TCP.md
 		PipelineModules\Listeners\UDP.md = PipelineModules\Listeners\UDP.md
