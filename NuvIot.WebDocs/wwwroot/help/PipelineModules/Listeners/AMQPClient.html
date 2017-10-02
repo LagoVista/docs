@@ -1,10 +1,30 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
 <h1>AMQP Client</h1>
+<p><strong>Note:</strong>  <em>Please <a href="#http://support.nuviot.com">contact us</a> if you plan to use your AMQP Server or Broker and are running into issues with integration, we'll be
+happy to work with you to ensure a successful integration</em></p>
 <p>Currently NuvIoT doesn't implement it's own dedicated AMQP server, it does however offer the option to connect to a 3rd party AMQP server
 of your choosing.</p>
-<p>You have two options for adding an AMQP server, you can use a could based provider such as <a href="#https://portal.azure.com">Azure</a> or
+<p>You have any number of options for adding an AMQP server, you can use a could based provider such as <a href="#https://portal.azure.com">Azure</a> or
 <a href="#https://aws.amazon.com/">Amazon</a> or you can launch a dedicated AMQP server in a container that is preconfigured to specifically work with NuvIoT.
 If you use a 3rd party server you will be responsible for managing authentication of devices as they connect (<em>although if the third
 party service allows you can call our <a href="#/API/Index.md">API</a> to authenticate your devices</em>).  If you choose to launch a dedicated
 AMQP server, it will automatically authenticate your devices.  Please contact us for more details on dedicated AMQP server availability.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/30/2017 17:44:16</div><div>Copyright Sofware Logistics - 2017</div></div>
+<h3>Required Fields</h3>
+<p>In addition to the standard fields that are required for any listener the following fields are required:</p>
+<p><strong>Listener Type</strong><br />
+<code>AMQP Client</code></p>
+<p><strong>Content Type</strong><br />
+Select the <a href="#/Messaging/ContentTypes.md">content type</a> of the message you are expecting, any content types are acceptable.</p>
+<p><strong>Host Name</strong><br />
+Host Name of your AMQP Server</p>
+<p><strong>User Id</strong><br />
+User Id of the account that has access to the AMQP queues</p>
+<p><strong>Password</strong><br />
+Password of the account that has access to the AMQP queues</p>
+<p><strong>Topic</strong><br />
+The Topic or Queue to listen for messages, note you can use wildcards such as <code>#</code> and <code>*</code> where</p>
+<ul>
+<li><code>*</code> (star) can substitute for exactly one word.</li>
+<li><code>#</code> (hash) can substitute for zero or more words.</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/2/2017 14:59:29</div><div>Copyright Sofware Logistics - 2017</div></div>

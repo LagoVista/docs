@@ -1,4 +1,28 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
 <h1>Azure IoT Hubs</h1>
-<p>You can connect to an existing Azure IoT Hub.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/30/2017 17:44:16</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>NuvIoT supports connecting directly to your IoT Hub.  It's important to realize that to connect to Azure IoT Hub
+you will need to find the URL from the Event Hub Compatible connection string and the Event Hub Compatible Name you
+can see <a href="#https://blogs.msdn.microsoft.com/iotdev/2017/05/09/understand-different-connection-strings-in-azure-iot-hub/">this blog post</a>
+on IoT Hub Connection Strings</p>
+<p><strong>Important Note:</strong> <em>If you use Azure IoT Hub as a listener those devices must be registered in the <a href="#/Devices/AzureIoTHubDeviceRepo.md">Azure IoT Hub device repository</a></em></p>
+<h3>Required Fields</h3>
+<p>In addition to the standard fields that are required for any listener the following fields are required:</p>
+<p><strong>Listener Type</strong><br />
+<code>Azure IoT Hub</code></p>
+<p><strong>Content Type</strong><br />
+Select the <a href="#/Messaging/ContentTypes.md">content type</a> of the message you are expecting, any content types are acceptable.</p>
+<p><strong>Host Name</strong><br />
+Host Name of the event hub compatible end point, this is not the the primary host name associated with the Azure IoT Hub,
+once you find the Event Hub-compatible endpoint, locate the host and leaving out the protocol <code>sb://</code>.<br />
+Your host name will be something like <code>ihsuprodblres987dednamespace.servicebus.windows.net</code></p>
+<p><strong>Resource Name</strong><br />
+Enter the Event Hub-compatible name from the Azure site.  This is located just above the Event Hub-compatible end point.
+You can also create your own custom end point via the Azure Portal if you need to listen to a different route.</p>
+<p><strong>Access Key Name</strong><br />
+Name of Acess Key (similar to iothubowner, services), it is important that your key has <code>service connect</code> permissions.</p>
+<p><strong>Access Key</strong><br />
+Assigned Access Key for your IoT Hub that was specified in the <strong>Access Key Name</strong> section.</p>
+<h3>Optional Fields</h3>
+<p><strong>Consumer Group</strong><br />
+If not present will use the <code>$Default</code> Consumer Group</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/2/2017 14:59:29</div><div>Copyright Sofware Logistics - 2017</div></div>

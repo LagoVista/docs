@@ -1,4 +1,18 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
 <h1>MSMQ Listener</h1>
-<p>A Free Light-Weight MQTT Broker that is built in to NuvIoT.  This is a good choice for low volume, or development applications.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/30/2017 17:44:16</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>NuvIoT provies a free light-weight MQTT Broker that is built in to get you up and running quickly.<br />
+This is a good choice for low volume, or development applications.</p>
+<h3>Required Fields</h3>
+<p>In addition to the standard fields that are required for any listener the following fields are required:</p>
+<p><strong>Listener Type</strong><br />
+<code>MQTT Listener</code></p>
+<p><strong>Anonymous Connection</strong><br />
+Select this option if your MQTT server does not require authentication (not recommended)</p>
+<p><strong>User Name</strong><br />
+User Name with access privelages to your MQTT Server if not an anonymous connection</p>
+<p><strong>Password</strong><br />
+Password with access privelages to your MQTT Server if not an anonymous connection</p>
+<p><strong>Listen on Port</strong><br />
+The port that you want to listen for MQTT connections, this is usually 1883, but you can add additional listeners that run on different ports.<br />
+As this is a low volume listener, primarily intendend for development or non-critical applications, SSL/TLS connections are not supported.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/2/2017 14:59:29</div><div>Copyright Sofware Logistics - 2017</div></div>

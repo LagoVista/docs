@@ -58,6 +58,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126E0BE-38D8-470F-A0F3-74A4324CB116}"
 	ProjectSection(SolutionItems) = preProject
+		Devices\AzureIoTHubDeviceRepo.md = Devices\AzureIoTHubDeviceRepo.md
 		Devices\DeviceConfigurations.md = Devices\DeviceConfigurations.md
 		Devices\DeviceMessages.md = Devices\DeviceMessages.md
 		Devices\DeviceRepositories.md = Devices\DeviceRepositories.md
@@ -174,6 +175,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 		Scripting\InputCommandArrive.md = Scripting\InputCommandArrive.md
 		Scripting\StateTransition.md = Scripting\StateTransition.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{9231A2EF-953A-4367-917E-F76D71B6F8FF}"
+	ProjectSection(SolutionItems) = preProject
+		Security\Index.md = Security\Index.md
 	EndProjectSection
 EndProject
 Global

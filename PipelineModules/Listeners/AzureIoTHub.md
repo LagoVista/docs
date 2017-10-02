@@ -16,6 +16,7 @@ you will need to find the URL from the Event Hub Compatible connection string an
 can see [this blog post](https://blogs.msdn.microsoft.com/iotdev/2017/05/09/understand-different-connection-strings-in-azure-iot-hub/)
 on IoT Hub Connection Strings  
 
+**Important Note:** *If you use Azure IoT Hub as a listener those devices must be registered in the [Azure IoT Hub device repository](../../Devices/AzureIoTHubDeviceRepo.md)*
 
 ### Required Fields
 
@@ -37,10 +38,10 @@ Enter the Event Hub-compatible name from the Azure site.  This is located just a
 You can also create your own custom end point via the Azure Portal if you need to listen to a different route.
 
 **Access Key Name**  
-Name of Acess Key (similar to iothubowner, services)
+Name of Acess Key (similar to iothubowner, services), it is important that your key has `service connect` permissions.
 
 **Access Key**  
-Assigned Access Key for your IoT Hub
+Assigned Access Key for your IoT Hub that was specified in the **Access Key Name** section.
 
 ### Optional Fields
 **Consumer Group**  

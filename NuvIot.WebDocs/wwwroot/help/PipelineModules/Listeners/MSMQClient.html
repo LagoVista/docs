@@ -1,6 +1,26 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
-<h1>MSMQ Broker</h1>
-<p>Host your own MSMQ Broker.</p>
-<p>You have two options, use the basic MSMQ Server for free, good for limited use and development</p>
-<p>Use our premimum MSMQ Server for scalable, high availability applications.  Contact us for more details.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 9/30/2017 17:44:16</div><div>Copyright Sofware Logistics - 2017</div></div>
+<h1>MSMQ Client</h1>
+<p>If you have your own dedicated MSMQ server, you can establish a connection to it and monitor it for incoming messages.</p>
+<h3>Required Fields</h3>
+<p>In addition to the standard fields that are required for any listener the following fields are required:</p>
+<p><strong>Listener Type</strong><br />
+<code>MQTT Client</code></p>
+<p><strong>Host Name</strong><br />
+URL or IP address where your MQTT server is hosted.</p>
+<p><strong>Anonymous Connection</strong><br />
+Select this option if your MQTT server does not require authentication (not recommended)</p>
+<p><strong>User Name</strong><br />
+User Name with access privelages to your MQTT Server if not an anonymous connection</p>
+<p><strong>Password</strong><br />
+Password with access privelages to your MQTT Server if not an anonymous connection</p>
+<p><strong>Connect with SSL/TLS</strong><br />
+Select this option if your server supports SSL/TLS</p>
+<p><strong>Connect to Port</strong><br />
+The port that will be used to connect to your server, usually 1883 or 8883 for SSL/TLS</p>
+<p><strong>Topic</strong><br />
+Topic to listen for messages, note you can use wildcards as supported by your MQTT server such as <code>#</code> and <code>+</code> where</p>
+<ul>
+<li><code>+</code> (plus) can substitute for exactly one word.</li>
+<li><code>#</code> (hash) can substitute for zero or more words.</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/2/2017 14:59:29</div><div>Copyright Sofware Logistics - 2017</div></div>

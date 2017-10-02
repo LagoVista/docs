@@ -38,8 +38,8 @@ values are only provided to map to incoming and outgoing messages.  The value wi
 When you define the States that make up a State Set you need to define the following values:
 
 
-| Field     | Description |
-| --------- | ----------  |
-| Name   | A textual representation of the state, this can be changed. |
-| Key    | The unique [key](../../Topics/Keys.md) that identifies this state. |
+| Field           | Description |
+| --------------- | ----------  |
+| Name            | A textual representation of the state, this can be changed. |
+| Key             | The unique [key](../../Topics/Keys.md) that identifies this state. |
 | Enum (optional) | If you want to map this enum value to a numeric value in your message, you can supply an integer perform this mapping. |

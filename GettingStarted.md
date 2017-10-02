@@ -1,3 +1,12 @@
+---
+title: Getting Started
+keywords: help, overview, tutorial
+
+created: 20171002
+updated: 20171002
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 # Getting Started
 
 Building an IoT application is a non-trivial task.  As with any non-trivial tasks, it's best to tackle in small easy verifiable steps.  In addition 
