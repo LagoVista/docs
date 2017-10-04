@@ -12,5 +12,6 @@
 * [Pipeline Modules](./PipelineModules/Index.md)
 * [Routes](./Routes/Route.md)
 * [Scripting](./Scripting/Index.md)
+* [Simulator](./Simulator/Index.md)
 * [Terminology](./Topics/Terminology.md)
 * [Workflow](./Workflows/Index.md)

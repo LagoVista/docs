@@ -27,7 +27,7 @@ can have the best of both worlds!
 
 **Why is NuvIoT different than cloud services such as Azure, IBM Watson, Amazon Web Service etc..?**  
 Those are great set of infrastructure components that can be used to build solutions, in fact our platform
-will run on many of those components.  NuvIoT is a SaaS (Softawre as a Solution) development tool platform that will 
+will run on many of those components. NuvIoT is a SaaS (Software as a Solution) development tool platform that will 
 allow you to build end to end solutions where the focus is more on configuration and less on coding.    
 
 **How much does it cost?**  
@@ -50,5 +50,5 @@ and our system is configurable to pick your communications protocol and specify 
 Bottom Line - Yes!  NuVioT implements many layers of security that are architected in to the core.  See our [security overview](./Security/Index.md) for more information.
 
 **What is an Attribute?**  
-An [attibute](./Workflows/Attributes.md) is a peice of data that is associated with a device through a device configuraiton.
+An [attibute](./Workflows/Attributes.md) is a peice of data that is associated with a device through a device configuration.
 
