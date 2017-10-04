@@ -16,7 +16,7 @@ may send different types of messages.  What you do in response to an incoming me
 device sending the message and the Message ID.  Prior to the Planner establishing a course of action, the Message ID and 
 Device ID must be extracted from the incoming message.
 
-As with extracting values from a message, the message and device IDs can be extracted from the following locations:
+As with extracting values from a message, the Message and Device IDs can be extracted from the following locations:
 * Headers
 * Path
 * Query String 
