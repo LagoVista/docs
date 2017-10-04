@@ -9,14 +9,14 @@ updatedby: Kevin D. Wolf
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
-# Device Id Parsing
+# Device ID Parsing
 
-To allow for maximum flexibility your listeners can support monitoring and connecting to many different devices.  In addition devices 
+To allow for maximum flexibility, your listeners can support monitoring and connecting to many different devices.  In addition, devices 
 may send different types of messages.  What you do in response to an incoming message is dependent on the 
-device sending the message and the message id.  Prior to the Planner establishing a course of action the Message Id and 
-Device Id must be extracted from the incoming message.
+device sending the message and the Message ID.  Prior to the Planner establishing a course of action, the Message ID and 
+Device ID must be extracted from the incoming message.
 
-As with extracting values from a message the message and device id's can be extracted from the following locations
+As with extracting values from a message, the message and device IDs can be extracted from the following locations:
 * Headers
 * Path
 * Query String 
