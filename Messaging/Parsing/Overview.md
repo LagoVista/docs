@@ -45,7 +45,7 @@ This can be extracted using the same mechanisms available for extracting values 
 The difference is, since the type of message is not defined, you need to include things such as delimiter, 
 endianness, and other values that are normally specified at the message level to extract the field.  
 
-You can also use peform a [Regular Expression Validation](ParsingWithRegEx.md) on the value.
+You can also use perform a [Regular Expression Validation](ParsingWithRegEx.md) on the value.
 
 Your Message and Device IDs are always saved as strings.
 
@@ -71,7 +71,7 @@ These make up the type system that is used throughout the rest of the system:
 * Integer - 64-bit signed integer
 * Decimal - double precision floating point number
 * True False - Boolean
-* GeoLocation - stored as latitude and longitude in decimal degrees with 6 decimal points
+* Geolocation - stored as latitude and longitude in decimal degrees with 6 decimal points
 * Date Time - stored in [ISO 8601 Format](https://en.wikipedia.org/wiki/ISO_8601)
 
 *Note* - Arrays are not currently supported.  Please [Contact Us]('https://www.IoTAppStudio.com/Support/Request') if they are required for implementation.
