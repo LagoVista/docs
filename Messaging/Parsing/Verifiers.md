@@ -16,8 +16,8 @@ Once you have created your parser, you will want to test it to make sure it beha
 ### To Add a Verifier
 
 1. Add a message parser
-2. Click on Verifiers > Edit
-3. Click on Add
+2. Click on **Verifiers** > **Edit**
+3. Click on **Add**
 4. Add the name and key
 5. Select a Payload Type
 6. Populate the fields that make up your sample message
@@ -30,6 +30,6 @@ Once you have created your parser, you will want to test it to make sure it beha
 
 ### To Use a Verifier
 
-1. On the Device Message Definition, press **run**.  Your results will be displayed.
+1. On the Device Message Definition, press **Run**.  Your results will be displayed.
 
 
