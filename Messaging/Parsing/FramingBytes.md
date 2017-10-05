@@ -11,14 +11,14 @@ updatedby: Kevin D. Wolf
 
 # Framing Bytes
 
-When parsing a binary message, you can use framing bytes to ensure that your message is in the exact format you expect.  You can also set checkpoints for relative locations in your message (not implemented as of 5/18/2017)
+When parsing a binary message, you can use framing bytes to ensure that your message is in the exact format you expect.  You can also set checkpoints for relative locations in your message.  Note: this has not been implemented as of 5/18/2017.
 
 Framing bytes consist of two parameters:
 
-*Byte - Two-character representation of the byte (for example, 0D would be 13 or CR)
-*Index - Index within the message where this character should be located
+* Byte - Two-character representation of the byte.  For example, 0D would be 13 or CR
+* Index - The index within the message where this character should be located
 
-*NOTE* In this case, the index or binary offset is 0 based which is different than parsing delimited values where the index of the delimited value is 1.
+*NOTE* In this case, the index or binary offset is 0-based, which is different than parsing delimited values where the index of the delimited value is 1.
 
 ### Example
 For example, in the following binary message:
