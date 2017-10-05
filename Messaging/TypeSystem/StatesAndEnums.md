@@ -20,7 +20,7 @@ On
 Off
 ```
 
-In this case we have two states ```On``` and ```Off``` and these are the only allowable values.
+In this case we have two states, ```On``` and ```Off```, and these are the only allowable values.
 
 ### State Sets
 In NuvIoT we will use the term **State Set** to define the collection of states or enumeration values and **State** to define the individual values.
