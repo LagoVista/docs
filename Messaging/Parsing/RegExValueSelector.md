@@ -29,4 +29,4 @@ If you use a regular expression similar to
 The value that will be used is 32.0
 
 An excellent tool to test your regular expressions is [RegEx101](http://regex101.com).  Also, make sure you take advantage of our 
-[verifiers](Verifiers.md) to ensure that the parsing process works as you expect. 
+[Verifiers](Verifiers.md) to ensure that the parsing process works as you expect. 
