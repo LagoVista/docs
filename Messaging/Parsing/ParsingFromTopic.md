@@ -2,11 +2,11 @@
 
 # Parsing from Topics
 
-To Extract value from the path use the following syntax for your Path Locator
+To extract a value from the path, use the following syntax for your Path Locator:
 
 `/deviceadmin/{deviceid}`
 
-With the above Path Locator and the a given path of
+With the above Path Locator and a path of
 
 `/deviceadmin/device1234`
 
