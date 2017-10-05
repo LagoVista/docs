@@ -16,7 +16,7 @@ In addition to the basic types, NuvIoT supports a native format for working with
 ## Storage Format
 To maintain consistency, we normalize any geolocation values to two decimal numbers with 6 points behind the decimal that are stored as strings.
 
-We then convert those two decimal numbers to string values and concatenate them with a (,).  Latitude will be the first number and longitude will be the second number.
+We then convert those two decimal numbers to string values and concatenate them with a comma.  Latitude will be the first number and longitude will be the second number.
 
 This is only how they are stored internally so they will fit into one column.  Utilities are provided to convert and work with
 these values in a native format for performance.
