@@ -38,7 +38,7 @@ The following are the available data types that can be extracted from a binary m
 ## Binary Offset
 Enter the absolute offset or relative offset within the message to extract the value.  The data type will determine how many bytes will be read.  If you attempt to read past the end of the message, the parser will fail.
 
-*NOTE* In this case, the index or binary offset is 0-based which is different than parsing delimited values where the index of the delimited value is: 
+Note: In this case, the index or binary offset is 0-based which is different than parsing delimited values where the index of the delimited value is: 
 * Absolute - Use this if your message is always the same size and the expected values are always in the same position.
 * Relative - Use this if your message size is different based on the type of message.  This is generally the case when there are strings included or when content depends on values parsed earlier in the message.
 
