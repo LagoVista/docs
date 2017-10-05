@@ -1,5 +1,5 @@
 ﻿---
-title: Parsing from a JSON message
+title: Parsing from a JSON Message
 keywords: messages, messaging, parsing, json, rest, post, http
 
 created: 20170927
@@ -13,17 +13,13 @@ updatedby: Kevin D. Wolf
 
 # Parsing a Json Message
 
-To work with JSON in your message ensure the content type of your message is set to JSON
+To work with JSON in your message, be sure that the content type of your message is set to JSON.
 
-When you have a JSON message, and select the Search Location of Body
-
-**Search Location**      
-Body
-
-You can specify a locator to identify the field within your JSON content.
+When you have a JSON message and select the Search Location of 
+**Body**, you can specify a locator to identify the field within your JSON content.
 
 
-The values can be extract by using a period (.) to denote the path to the object within the JSON document.
+The desired values can then be extracted by using a period (.) to denote the path to the object within the JSON document.
 
 Assuming the following JSON:
 ~~~~
@@ -36,20 +32,18 @@ Assuming the following JSON:
 }
 ~~~~
 
-Values can be extracted with the following **JSON Path**.
+Values can be extracted with the following JSON path:
 
-**JSON Path**  
+1.  **JSON Path**  
 `field` = value1
-
-**JSON Path**  
+2.  **JSON Path**  
 `subset1.field3` = value2
-
-**JSON Path**  
+3.  **JSON Path**  
 `subset1.field4` = another value
 
-**Note:** *Currently arrays are not supported in JSON format, Please [contact us](http://support.nuviot.com) if your implementation requires this feature*
+**Note:** *Arrays are not currently supported in JSON format, please [contact us](http://support.nuviot.com) if your implementation requires this feature*.
 
-IN addition you can use [RegEx Value Selector](RegExValueSelector.md) and [Validation](Validation.md) to fine tune your selection and validate it's contents
+You can use [RegEx Value Selector](RegExValueSelector.md) and [Validation](Validation.md) to fine-tune your selection and validate its contents.
 
 ##### Storage Type
 You will also need to add a [Storage Type](../TypeSystem/Index.md) to identify how this field should be stored.
