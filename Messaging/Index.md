@@ -20,7 +20,7 @@ To help get you started, complete the following steps:
 2. Define the fields that make up your messages as well as how those fields should be extracted or parsed.
 3. As an optional step, create verifiers to check your parsers without even having your device send messages.
 
-After you have created your messaages, you can use them as a basis to build simulators to test out your system
+After you have created your messaages, you can use them as a basis for building simulators to test out your system
 flow prior to bringing real devices online.
 
 
