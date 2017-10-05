@@ -23,5 +23,5 @@ As messages are parsed and data is made available, a type is associated with tho
 [Boolean](Booleans.md)  - true or false values     
 [Date Time](DateTime.md) - contains date and time values  
 [Geo Locations](GeoLocation.md) - represents a latitude and longitude value  
-[States and Enumerations](StatesAndEnums.md) - represents a set of variables that can be used to constrain a value. A simple example of this is On/Off. 
+[States and Enumerations](StatesAndEnums.md) - represents a set of variables that can be used to constrain a value. (On/Off, etc.)
 [Values with Units](ValueWithUnits.md) -  [Decimal Value](Decimals.md) that has a unit attached.  The unit can have multiple conversion factors.
