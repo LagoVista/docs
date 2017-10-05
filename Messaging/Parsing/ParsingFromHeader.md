@@ -11,16 +11,10 @@ updatedby: Kevin D. Wolf
 
 # Parsing from Header
 
-If your mesage was sent via REST or HTTP, the headers that were sent with your message will be made availale to the parsing algorithm.
+If your message was sent via REST or HTTP, the headers that were sent with your message will be made available to the parsing algorithm.
 
-To parse a value from a Haeder, add a field, and then select
-
-**Search Location**  
-Header
-
-And Populate the field **Header Name** 
-
-With the name of the header that contains theh field you wish to extract.
-
-##### Storage Type
-You will also need to add a [Storage Type](../TypeSystem/Index.md) to identify how this field should be stored.
+To parse a value from a header:
+1.  Add a field
+2.  Select **Search Location** header
+3.  Populate the field **Header Name** with the name of the header that contains the field you wish to extract
+4.  Add a [Storage Type](../TypeSystem/Index.md) to identify how this field should be stored.
