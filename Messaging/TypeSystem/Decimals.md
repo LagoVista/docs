@@ -11,4 +11,4 @@ updatedby: Kevin D. Wolf
 
 # Decimal or Real Values
 
-Values can be stored such that numbers behind the decimal point are maintained.
+Values can be stored such that numbers behind the decimal point are retained.
