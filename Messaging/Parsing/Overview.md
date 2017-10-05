@@ -40,7 +40,7 @@ If you have a REST message, this will be the POST or PUT content.  Most transpor
 * [XML](ParsingXMLMessage.md)
 
 ### Message ID and Device ID Parsers
-An important part of processing the incoming data is to identify the [message id](MessageIdParsing.md) and [device id](DeviceIdParsing.md).
+An important part of processing the incoming data is to identify the [Message ID](MessageIdParsing.md) and the [Device ID](DeviceIdParsing.md).
 This can be extracted using the same mechanisms available for extracting values for a message.
 The difference is, since the type of message is not defined, you need to include things such as delimiter, 
 endianness, and other values that are normally specified at the message level to extract the field.  
