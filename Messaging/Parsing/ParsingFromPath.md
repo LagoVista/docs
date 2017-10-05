@@ -11,18 +11,18 @@ updatedby: Kevin D. Wolf
 
 # Parsing from a Path
 
-To Extract value from the path, select the search location
+To extract value from a path, select the search location:
 
 **Search Location**  
 Path
 
-And use the following syntax in the Path Locator
+And use the following syntax in the Path Locator:
 
 **Path Locator**  
 `/deviceadmin/{deviceid}`
 
 
-With the above **Path Locator** and the a given path of
+With the above **Path Locator** and a path of
 
 `/deviceadmin/device1234`
 
