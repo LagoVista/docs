@@ -19,7 +19,7 @@ As messages are parsed and data is made available, a type is associated with tho
 
 [String](Strings.md) - simple textual representation of data  
 [Integers](Integers.md) - whole numbers (1,-1, 100, 0, etc..)  
-[Decimals](Decimals.md) - numbers with a decimal (1.42, 523.4, -53.5, etc.)
+[Decimals](Decimals.md) - numbers with a decimal (1.42, 523.4, -53.5, etc.)  
 [Boolean](Booleans.md)  - true or false values     
 [Date Time](DateTime.md) - contains date and time values  
 [Geo Locations](GeoLocation.md) - represents a latitude and longitude value  
