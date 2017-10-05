@@ -37,7 +37,7 @@ If you have a REST message, this will be the POST or PUT content.  Most transpor
 * [String](ParsingStringMessage.md)
 * [Delimited](ParsingDelimitedMessage.md)
 * [JSON](ParsingJsonMessage.md)
-* [XML](ParsingXMLMessage.md)
+* [XML](ParsingXmlMessage.md)
 
 ### Message ID and Device ID Parsers
 An important part of processing the incoming data is to identify the [Message ID](MessageIdParsing.md) and the [Device ID](DeviceIdParsing.md).
