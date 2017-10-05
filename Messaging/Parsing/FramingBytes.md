@@ -18,7 +18,7 @@ Framing bytes consist of two parameters:
 * Byte - Two-character representation of the byte.  For example, 0D would be 13 or CR
 * Index - The index within the message where this character should be located
 
-*NOTE* In this case, the index or binary offset is 0-based, which is different than parsing delimited values where the index of the delimited value is 1.
+Note: In this case, the index or binary offset is 0-based, which is different than parsing delimited values where the index of the delimited value is 1.
 
 ### Example
 For example, in the following binary message:
