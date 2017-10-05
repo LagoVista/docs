@@ -11,7 +11,7 @@ updatedby: Kevin D. Wolf
 
 
 
-# Parsing a Json Message
+# Parsing a JSON Message
 
 To work with JSON in your message, be sure that the content type of your message is set to JSON.
 
@@ -41,7 +41,7 @@ Values can be extracted with the following JSON path:
 3.  **JSON Path**  
 `subset1.field4` = another value
 
-**Note:** *Arrays are not currently supported in JSON format, please [contact us](http://support.nuviot.com) if your implementation requires this feature*.
+Note: Arrays are not currently supported in JSON format, please [contact us](http://support.nuviot.com) if your implementation requires this feature.
 
 You can use [RegEx Value Selector](RegExValueSelector.md) and [Validation](Validation.md) to fine-tune your selection and validate its contents.
 
