@@ -23,10 +23,10 @@ Depending on the source of your message, you will have different areas from whic
 For HTTP sources such as REST or SOAP, these are the [HTTP Headers](ParsingFromHeader.md) that come along with the message.  For other transport types, additional data may be available.  See documentation about the particular listener you are using.
 
 #### Query String
-This is primarily used for REST-based protocols but can be used to extract values from a [query string](ParsingFromQueryString.md) using key value pairs.
+This is primarily used for REST-based protocols but can be used to extract values from a [Query String](ParsingFromQueryString.md) using key value pairs.
 
 #### Topics
-For pub/sub protocols, messages can be identified by [topics](ParsingFromTopic.md).
+For pub/sub protocols, messages can be identified by [Topics](ParsingFromTopic.md).
 
 #### Path
 In addition to the server and port number being available in your message, if the message also specifies a resource address such as https://mydomain.coom/device/run/2342, the /device/run/2342 can be used to populate the message content.
@@ -45,7 +45,7 @@ This can be extracted using the same mechanisms available for extracting values 
 The difference is, since the type of message is not defined, you need to include things such as delimiter, 
 endianness, and other values that are normally specified at the message level to extract the field.  
 
-You can also use peform a regular expression validation on the value.
+You can also use peform a [Regular Expression Validation](ParsingWithRegEx.md) on the value.
 
 Your Message and Device IDs are always saved as strings.
 
@@ -74,13 +74,13 @@ These make up the type system that is used throughout the rest of the system:
 * GeoLocation - stored as latitude and longitude in decimal degrees with 6 decimal points
 * Date Time - stored in [ISO 8601 Format](https://en.wikipedia.org/wiki/ISO_8601)
 
-*Note* - Arrays are not currently supported.  Please [contact us]('https://www.IoTAppStudio.com/Support/Request') if they are required for implementation.
+*Note* - Arrays are not currently supported.  Please [Contact Us]('https://www.IoTAppStudio.com/Support/Request') if they are required for implementation.
 
 ### Fine Tuning Selections
-For any textual values, use a [regular expression](RegExValueSelector.md) to extract a value. 
+For any textual values, use a [Regular Expression](RegExValueSelector.md) to extract a value. 
 
 ### Validating Message Values
-Once a value is extracted, you can use three mechanisms to [validate](Validation.md) the value prior to using it in your workflow.
+Once a value is extracted, you can use three mechanisms to [Validate](Validation.md) the value prior to using it in your workflow.
 
 
 
