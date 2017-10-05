@@ -11,7 +11,7 @@ updatedby: Kevin D. Wolf
 
 # Verifiers
 
-Once you have created your parser, you will want to test it to make sure it behaves as expected.  You can create a verifier that will take a sample message and run it through the verifier to ensure that you get the results you need, all without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same and you will have the same fields available to the workflow.
+Once you have created your parser, you should test it to make sure it behaves as expected.  You can create a verifier that will take a sample message and run it through the verifier to ensure that you get the results you need, all without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same and you will have the same fields available to the workflow.
 
 ### To Add a Verifier
 
