@@ -22,14 +22,14 @@ Off
 
 In this case we have two states, ```On``` and ```Off```, and these are the only allowable values.
 
-### State Sets
+## State Sets
 In NuvIoT we will use the term **State Set** to define the collection of states or enumeration values and **State** to define the individual values.
 
 When creating a State Set, you define the name of your state and a [Key](../../Topics/Keys.md).
 
 The Key that you provide for each **State** will be used to store the value of the state associated with that data item.
 
-##### Integer Enumerations
+### Integer Enumerations
 When creating your State Set, you can specify if an integer enumeration value should be provided.  This is useful for mapping to integer values from messages.  If you specify that it should be provided, then each state **must** include an integer enumeration.  Integer enumeration
 values are only provided to map to incoming and outgoing messages.  The value will be converted to the string Key value prior to being saved.
 
