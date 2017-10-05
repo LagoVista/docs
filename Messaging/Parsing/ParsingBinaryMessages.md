@@ -22,7 +22,7 @@ The following are the available data types that can be extracted from a binary m
 * char - big or little endian
 * byte - big or little endian
 * Int16 - big or little endian
-* UInt16 - big or Little Endian
+* UInt16 - big or little Endian
 * Int32 - big or little endian
 * UInt32 - big or little endian
 * Int64 - big or little endian
