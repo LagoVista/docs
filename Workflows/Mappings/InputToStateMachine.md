@@ -2,5 +2,5 @@
 
 # Input to State Machine
 
-An Input is a value that will come from a device message.  You define your Inputs on a Workflow and then can map fields
+An Input is a value that comes from a device message.  You define your Inputs on a workflow, then you can map fields
 from your messages to the Input.
