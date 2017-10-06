@@ -11,7 +11,7 @@ updatedby: Kevin D. Wolf
 
 # Listeners
 
-Each Solution must have at a minimum one listener, a listeners primary responsibility is to monitor a message source for incoming messages
+Each solution must have at a minimum one listener.  A listener's primary responsibility is to monitor a message source for incoming messages
 and hand them off to the [Planner](Planner.md) to determine how the message should be processed.
 
 The following standard listener types are supported and can be configured to meet your needs:
@@ -28,19 +28,18 @@ The following standard listener types are supported and can be configured to mee
 * [TCP](./Listeners/TCP.md) - Listen on a TCP port for messages
 * [UDP](./Listeners/UDP.md) - Listen on a UDP port for datagram based messages
 
-If you have something that is unique for your implementation you can create a customer listener that monitors your unique channel
+If you have something that is unique for your implementation, you can create a customer listener that monitors your unique channel
 and then hands these off to the planner to leverage existing processing.
 
-It is important that a listener listens for a full message.  That is to say if the message is sent over multiple TCP packets or datagrams
-the listener must ensure that all the bytes that make up the message are received prior to handing it off to planner.  All standard listeners 
-can be configured to do this by default, however if you create your own listner you must ensure this is the case.
+It is important that a listener listens for a full message.  If the message is sent over multiple TCP packets or datagrams,
+the listener must ensure that all the bytes that make up the message are received prior to handing it off to the planner.  All standard listeners 
+can be configured to do this by default.  However, if you create your own listener, you must ensure that this is the case.
 
-Listeners can be configured to either immediately acknowledge the message as soon as it arrives or configured to keep the connection
+Listeners can be configured to either immediately acknowledge the message as soon as it arrives or keep the connection
 open until the processing of the message has been completed.
 
-With the queue based pipeline architecture your listener will almost always be bottle neck and most critical part of the system 
+With the queue-based pipeline architecture, your listener will almost always be a potential bottleneck and the most critical part of the system 
 both in terms of high availability and performance.
 
-_As of the time of this writing the high availability architecture for the listeners has been designed but not implemented, this includes
-geo redundent load balancers.  If you are in need of this place contact us and we will work with you to help understand this approach and
-ensure it is in place prior to your system going live_
+Note:  At this time, the high availability architecture for the listeners has been designed but not implemented.  This includes
+geo-redundant load balancers.  If you are in need of this, please Contact Us and we will work with you to help understand this approach and ensure that it is in place prior to your system going live.
