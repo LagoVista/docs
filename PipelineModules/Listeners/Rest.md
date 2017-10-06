@@ -49,4 +49,3 @@ if you use your own host name, we will need to work with you to uplooad your cus
 
 **Listen on Port**  
 The port you wish to listen for incoming messages, this is normally port 80 or port 443 for SSL connections, but any port is supported in both configurations.
- 

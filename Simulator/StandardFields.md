@@ -21,5 +21,5 @@ By default the following fields will be available to be added to your message
 * `~username~` - User Name as specified in the simulator settings
 * `~password~` - Password as specified in the simulator settings
 * `~accesskey~` - Access Key as specified in the simulator settings
-* `~random-float.x.y~` - Generate a random floating point number between x and y, an example of this is `~random.5.15~` would generate floating point numbers from 5 to 15 inclusive of the end points  
-* `~random-int.x.y~` - Generate a random integer number between x and y, an example of this is `~random.5.15~` would generate an integer numbers from 5 to 15 inclusive of the end points
+* `~random-float.x.y~` - Generate a random floating point number between x and y, an example of this is `~random-float,-5.5,30.0~` would generate floating point numbers from 5 to 15 inclusive of the end points.  Values will be rounded to two decimal points
+* `~random-int.x.y~` - Generate a random integer number between x and y, an example of this is `~random-int,53,80~` would generate an integer numbers from 53 to 80 inclusive of the end points

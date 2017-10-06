@@ -14,7 +14,7 @@ updatedby: Kevin D. Wolf
 ### Simulator Settings
 
 *NOTE:* *For the initial release our MQTT simulator does not support MQTT over TLS/SSL, this is planned for Q1 2018, if you need this sooner please consider
-submitting a [pull request](http://github.com/lagovista/simulator) or [contacting us](http://support.nuviot.com.*
+submitting a [pull request](http://github.com/lagovista/simulator) or [contacting us](http://support.nuviot.com.)*
 
 **Name**  
 Name of the Simulator
@@ -31,11 +31,19 @@ This is the full url of your IoT hub, it should be something similar to `myiothu
 **Port** (*Required*)  
 Note this will usually be 1883 or 8883 when TLS/SSL is supported.
 
+**DeviceId** (optional)  
+You can add a Device Id to your simulator, this may be, but does not have to be the same as the user name.
+
 **User Name**  
 UserName (optional) to log in to your MQTT server.
 
 **Password**  
 Password (optional) to log in to your MQTT server.
+
+**Subscription** (optional)  
+You can subscribe to an MQTT topic and receive messages in your simulator.  To susbscribe to a topic based on device you can use
+the following format 
+```/messages/~deviceid~``` where `~deviceid~` is replaced by the device id you added for your simulator.
 
 **Default Payload Type**  (*Required*)  
 The default format of the payload you will send with each message, it can be either a simple string or [binary](BinaryContent.md)

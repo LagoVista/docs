@@ -46,8 +46,11 @@ Name of the Message
 **Key**  
 A [unique key](../Topics/Keys.md) to identify the message
 
+**Content Type**  
+If you have a specific content type such as `application/json` you can enter it here.  If you leave this blank it will send the content type `text/plain`
+
 **HTTP Verb**  
-`GET, POST, PUT and DELETE`
+`GET, POST, PUT` and `DELETE`
 
 **Text**  
 Add any content that will be sent as the body of the message [allows for tag replacement](DynamicFields.md)
