@@ -18,12 +18,12 @@ There are two steps to extract values from your message as a string:
 1. Define a regular expression including name groups to extract the values.
 2. Create fields that map to each value you wish to extract.  Each group will contain the regular expression group name to extract the value from the regular expression result.
 
-For Example, at the message level you would declare the regular expression:
-`<val1:(?'V1'[0-9]*)>`
+For Example, at the message level you declare the regular expression:
+`<val1:(?'V1'[0-9]*)>`,
 
 Then add a field to the message with the group name `V1`.
 
-If the message parser receives a message similar to
+If the message parser receives a message similar to:
 
 `<val1:32>`,
 
