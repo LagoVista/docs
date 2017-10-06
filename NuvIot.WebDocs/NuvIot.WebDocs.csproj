@@ -8,13 +8,20 @@
     <Content Remove="wwwroot\Models\Activity.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="nuviot.pfx" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="wwwroot\Controllers\ChatController.cs" />
     <Compile Include="wwwroot\Models\Activity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nuviot.pfx" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Https" Version="1.1.3" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />

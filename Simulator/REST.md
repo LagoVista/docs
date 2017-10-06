@@ -53,7 +53,10 @@ A [unique key](../Topics/Keys.md) to identify the message
 Add any content that will be sent as the body of the message [allows for tag replacement](DynamicFields.md)
 
 **Path and Query String**
-Add the path and query string that will be sent to the server [allows for tag replacement](DynamicFields.md)
+Add the path and query string that will be sent to the server [allows for tag replacement](DynamicFields.md).  Note the Path should be in the format  
+`/mypath/~deviceid~?field=value`
+
+Note that it should have `/` as the first value.
 
 #### Message Headers
 Add key value pairs that will be sent with the message  

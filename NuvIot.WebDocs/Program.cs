@@ -11,10 +11,16 @@ namespace NuvIot.WebDocs
     {
         public static void Main(string[] args)
         {
+            var sslkey = Environment.GetEnvironmentVariable("SSLKEY");
+
             var host = new WebHostBuilder()
-                .UseKestrel()
+                .UseKestrel(options =>
+                {
+                    options.UseHttps("nuviot.pfx", sslkey);
+                })
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
+                .UseUrls("https://support.nuviot.com:443", "http://support.nuviot.com:80")
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
                 .Build();
