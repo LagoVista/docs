@@ -30,7 +30,6 @@ The following assumes that you have decided on some sensors that communicate in 
 
 
 1. Define your [Device Types](./Devices/DeviceTypes.md)
-
 2. Define your [Device Messages](./Devices/DeviceMessages.md)
  
 ### Define Your Device Workflow
