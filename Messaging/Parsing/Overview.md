@@ -45,21 +45,21 @@ This can be extracted using the same mechanisms available for extracting values 
 The difference is, since the type of message is not defined, you need to include things such as delimiter, 
 endianness, and other values that are normally specified at the message level to extract the field.  
 
-You can also use perform a [Regular Expression Validation](ParsingWithRegEx.md) on the value.
+You can also perform a [Regular Expression Validation](ParsingWithRegEx.md) on the value.
 
 Your Message and Device IDs are always saved as strings.
 
 ### Message Value Parsers
-There are two parts of defining how values are parsed out of a message.  First, define common parameters such as the delimiter, quoted text, and endianness at the message level.  Next, define field particulars such as the field index or parameter name.  More details are available based on the type of message.
+There are two parts to defining how values are parsed out of a message.  First, define common parameters such as the delimiter, quoted text, and endianness at the message level.  Next, define field particulars such as the field index or parameter name.  More details are available based on the type of message.
 
 There are three important parts of defining how your messages are parsed and used, including: 
-* [Key](../../Topics/Keys.md) - The key will be used to identify this value as it is used to further process the message
-* [Search Location](#Search-Location) - The listener will populate different components that can be used to search for message values
+* [Key](../../Topics/Keys.md) - The key identifies this value as it is used to further process the message
+* [Search Location](#Search-Location) - The listener populates different components that can be used to search for message values
 * [Storage Type](#Storage-Types) - The data type that is used to identify the data
 
 
 #### Search Locations
-The following are four different areas that can be searched.  These values are populated from the listener and more details are available in that section.  Note that not all listeners support all of the different locations.
+The following are four different areas that can be searched.  These values are populated from the listener. More details are available in that section.  Note that not all listeners support all of the different locations.
 * Headers
 * Query String
 * Path
@@ -67,17 +67,17 @@ The following are four different areas that can be searched.  These values are p
 
 #### Storage Types
 These make up the type system that is used throughout the rest of the system:
-* String - text, currently single byte ASCII text is supported
+* String - Text, currently single-byte ASCII text is supported
 * Integer - 64-bit signed integer
-* Decimal - double precision floating point number
+* Decimal - Double precision floating point number
 * True False - Boolean
-* Geolocation - stored as latitude and longitude in decimal degrees with 6 decimal points
-* Date Time - stored in [ISO 8601 Format](https://en.wikipedia.org/wiki/ISO_8601)
+* Geolocation - Stored as latitude and longitude in decimal degrees with 6 decimal points
+* Date Time - Stored in [ISO 8601 Format](https://en.wikipedia.org/wiki/ISO_8601)
 
-*Note* - Arrays are not currently supported.  Please [Contact Us]('https://www.IoTAppStudio.com/Support/Request') if they are required for implementation.
+Note:  Arrays are not currently supported.  Please [Contact Us]('https://www.IoTAppStudio.com/Support/Request') if they are required for implementation.
 
 ### Fine Tuning Selections
-For any textual values, use a [Regular Expression](RegExValueSelector.md) to extract a value. 
+For textual values, use a [Regular Expression](RegExValueSelector.md) to extract a value. 
 
 ### Validating Message Values
 Once a value is extracted, you can use three mechanisms to [Validate](Validation.md) the value prior to using it in your workflow.
