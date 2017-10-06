@@ -11,7 +11,7 @@ updatedby: Kevin D. Wolf
 
 ### Intro
 
-The following topics apply to Parsing Messages
+The following topics apply to Parsing Messages:
 
 * [Overview](Overview.md)
 * [Device Id](DeviceIdParsing.md)
