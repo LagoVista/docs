@@ -25,10 +25,10 @@ The following are fields that are automatically validated:
 | [Boolean](../TypeSystem/Booleans.md) | A value that represents true or false.  Text values are not case sensitive.  Examples include "True", true, False "false" or 0, 1. |
 | [Decimal](../TypeSystem/Decimals.md) | A real number such as 1.25, 5, -12.30, 0 |
 | [Integer](../TypeSystem/Integers.md) | A whole number such has 1, 5, -5, 1,000,333 or 0 |
-| [Geolocations](../TypeSystem/GeoLocation.md) | A valid latitude and longitude.  For a full description of what is valid, please see [Working with Geo Codes](../TypeSystem/GeoLocation.md) for more information. |
-| [State Sets](../TypeSystem/StatesAndEnums.md) | State sets are an important data type in that they ensure that only the values you specify can be assigned.  For example, if your State Set only includes ```on``` and ```off``` and the value you receive is True, that value will be considered invalid.|
-| [Strings](../TypeSystem/Strings.md) | Almost any value can be stored to a String Location.  Currently, only ASCII values are supported. If your message sends Unicode strings, please [Contact Us](http://support.nuviot.com) for assistance. |
-| [Values with Units](../TypeSystem/Integers.md) | Values with Units or Unit Sets are units that can be applied to a value.  Validation on incoming values is the same as for a decimal value.  However, you can specify the number of decimal points (precision) for storage. |
+| [Geolocations](../TypeSystem/GeoLocation.md) | A valid latitude and longitude.  For a full description of what is valid, please see [Working with Geolocation Values](../TypeSystem/GeoLocation.md) for more information. |
+| [State Sets](../TypeSystem/StatesAndEnums.md) | State Sets are an important data type in that they ensure that only the values you specify can be assigned.  For example, if your State Set only includes ```on``` and ```off``` and the value you receive is True, that value will be considered invalid.|
+| [Strings](../TypeSystem/Strings.md) | Almost any value can be stored to a String Location.  Currently, only ASCII values are supported. If your message sends unicode strings, please [Contact Us](http://support.nuviot.com) for assistance. |
+| [Values with Units](../TypeSystem/Integers.md) | Values with Units or Unit Sets are units that can be applied to a value.  Validation on incoming values is the same as for a decimal value.  However, you can specify the number of digits to the right of decimal points (precision) for storage. |
 
 ### Additional Validation
 
