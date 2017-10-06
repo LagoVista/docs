@@ -2,7 +2,6 @@
 
 # Attribute to State Machine
 
-When Mapping and [Attribute](../Attributes.md) to a [State Machine](../StateMachines.md), you will need to 
-select which event should be invoked when this attribute arrives.  The
-state machine transitions that handles the event will then receive as an input
-the value of the attribute.  
+When Mapping an [Attribute](../Attributes.md) to a [State Machine](../StateMachines.md), you will need to 
+select which event should be invoked when the attribute arrives.  The
+State Machine transitions that handle the event will then receive the value of the attribute as an input.
