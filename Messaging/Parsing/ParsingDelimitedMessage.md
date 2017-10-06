@@ -11,7 +11,7 @@ updatedby: Kevin D. Wolf
 
 # Parsing a Delimited Message
 
-If your message content is text, the values can be seperated by a delimiter.  This is generally a comma but is configurable. At this point, only one-character delimiters are supported.
+If your message content is text, the values can be separated by a delimiter.  This is generally a comma but is configurable. At this point, only one-character delimiters are supported.
 
 The delimiter breaks your message into a 1-indexed array of values you can extract with a delimiter index.
 
@@ -20,7 +20,7 @@ The delimiter breaks your message into a 1-indexed array of values you can extra
 Depending on how your device sends a message, it may use quotes (") or ticks (') to denote strings.  Always select the quoted text option.  If you do not select this option, the message does not support having embedded ticks or quotes.  If you select this option, you can use traditional escape characters such as \n \r \t, etc...
 
 
-### Eamples
+### Examples
 Here is an example of a message that does not use quoted text:
 
 `msg004,dev0001,324,52,45,off,overrange`
