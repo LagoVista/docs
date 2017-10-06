@@ -30,4 +30,4 @@ To extract the value state and use that within your workflow:
 
 The value that will be stored for the above query string in the state field will be ```on```.
 
-**Hint:** This would be an excellent use of the [State and Enums](../TypeSystem/StatesAndEnums.md) data type to ensure that the values are either ```on``` or ```off```. 
+**Hint:** This would be an excellent use of the [States and Enumerations](../TypeSystem/StatesAndEnums.md) data type to ensure that the values are either ```on``` or ```off```. 
