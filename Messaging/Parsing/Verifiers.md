@@ -23,7 +23,7 @@ Once you have created your parser, you should test it to make sure it behaves as
 6. Populate the fields that make up your sample message
 7. Add expected values.  You can use the fields you created as part of the message to add an expected value.
 
-**NOTE:** *If you have a binary message, you can copy the hex bytes that make up your messages into the payload field such as:*
+**NOTE:** If you have a binary message, you can copy the hex bytes that make up your messages into the payload field such as:
 ```
 0x03 0x43 0x04 0x23 0x52 0x41 0x05 0x06 
 ```
