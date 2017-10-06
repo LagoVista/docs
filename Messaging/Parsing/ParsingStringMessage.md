@@ -14,7 +14,7 @@ updatedby: Kevin D. Wolf
 There are two options for parsing a pure string message.  One is with regular 
 expressions, the second is by using positional attributes.
 
-For your message, if you select the content type "String with Position", provide a 
+For your message, select the content type **String with Position** and provide a 
 start index and a length in order to extract the field from the string content.  If your message uses delimiters, 
 there is a [Parsing Strategy](ParsingDelimitedMessage.md) that will work better for you.
 
