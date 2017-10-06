@@ -72,8 +72,7 @@ and definitions of the message types that, when found, should trigger this [Rout
 
 A [Solution](./Solutions/Index.md) is a collection of [Device Confiugrations](./devices/DeviceConfigurations.md) 
 that implements a specific set of services to manage a device.  A solution can consist of many device configurations.  In addition,
-your solution needs to specify the [Listeners](./PipelineModules/Listener.md) that will listen for messages from your devices.  Finally
-a solution must include exactly one [Planner](./PipelineModules/Planner.md) module to map the incoming messages to [Routes](./Routes/Route.md).
+your solution needs to specify the [Listeners](./PipelineModules/Listener.md) that will listen for messages from your devices.  Finally, a solution must include exactly one [Planner](./PipelineModules/Planner.md) module to map the incoming messages to [Routes](./Routes/Route.md).
 
 A solution is a complete specification that will listen for and process messages from a device.
 
