@@ -11,4 +11,4 @@ updatedby: Kevin D. Wolf
 
 # Booleans Values
 
-A Boolean Data type represents either true or false.
+A Boolean data type is either true or false.
