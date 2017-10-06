@@ -14,7 +14,7 @@ updatedby: Kevin D. Wolf
 In addition to the basic types, NuvIoT supports a native format for working with geolocation values.
 
 ## Storage Format
-To maintain consistency, we normalize any geolocation values to two decimal numbers with six places to the right of the decimal point that are stored as strings.
+To maintain consistency, we normalize any geolocation values to two decimal numbers with six digits to the right of the decimal point that are stored as strings.
 
 We then convert those two decimal numbers to string values and concatenate them with a comma.  Latitude will be the first number and longitude will be the second number.
 
@@ -32,7 +32,7 @@ The Internal storage format is in the string format:
 
 In degrees, (-) on latitude indicates South. If no sign is present, a positive, or North, is assumed.  Likewise (-) on longitude is West and no sign on longitude is assumed to be positive, or East.
 
-In addition, there will always be six places to the right of the decimal point and zeroes will be padded if the source does not provide that resolution.
+In addition, there will always be six digits to the right of the decimal point and zeroes will be padded if the source does not provide that resolution.
 The values will have a minimum of one digit.  That digit will be 0, if applicable, and values will not be padded.  Longitude may have up to three digits and latitude will have up to two digits.
 
 
