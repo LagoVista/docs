@@ -11,9 +11,9 @@ updatedby: Kevin D. Wolf
 
 # Parsing Text Messages
 
-If the format of your message is text, you have the following options to extract values from your message
+If the format of your message is text, you have the following options to extract values from your message:
 
 * [String](ParsingStringMessage.md)
 * [Delimited](ParsingDelimitedMessage.md)
 * [JSON](ParsingJsonMessage.md)
-* [XML](ParsingXMLMessage.md)
+* [XML](ParsingXmlMessage.md)
