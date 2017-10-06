@@ -14,7 +14,7 @@ updatedby: Kevin D. Wolf
 In addition to the basic types, NuvIoT supports a native format for working with geolocation values.
 
 ## Storage Format
-To maintain consistency, we normalize any geolocation values to two decimal numbers with 6 points behind the decimal that are stored as strings.
+To maintain consistency, we normalize any geolocation values to two decimal numbers with six places to the right of the decimal point that are stored as strings.
 
 We then convert those two decimal numbers to string values and concatenate them with a comma.  Latitude will be the first number and longitude will be the second number.
 
@@ -32,8 +32,8 @@ The Internal storage format is in the string format:
 
 In degrees, (-) on latitude indicates South. If no sign is present, a positive, or North, is assumed.  Likewise (-) on longitude is West and no sign on longitude is assumed to be positive, or East.
 
-In addition, there will always be six spaces after the decimal point and zeroes will be padded if the source does not provide that resolution.
-The values will have a minimum of one digit.  That digit will be 0, if applicable, values will not be padded.  Longitude may have up to three digits and latitude will have up to 2 digits.
+In addition, there will always be six places to the right of the decimal point and zeroes will be padded if the source does not provide that resolution.
+The values will have a minimum of one digit.  That digit will be 0, if applicable, and values will not be padded.  Longitude may have up to three digits and latitude will have up to two digits.
 
 
 ## Parsing Values
@@ -62,9 +62,9 @@ EWNS are the upper case characters E, W, N and S for East, West North and South.
 
 If a decimal value is provided for the geolocation, the format is assumed to be (+/-)DDD.DDDDD.
 
-At this time, parsing [NEMA GGA](http://www.gpsinformation.org/dale/nmea.htm#GGA) messages is unsupported.  If you need this or any other format, please [contact support](http://support.nuviot.com/) and we will work with you to ensure that your format is supported.
+At this time, parsing [NEMA GGA](http://www.gpsinformation.org/dale/nmea.htm#GGA) messages is unsupported.  If you need this or any other format, please [Contact Us](http://support.nuviot.com/) and we will work with you to ensure that your format is supported.
 
-If you are unsure whether or not your GPS format will work, please use our [verifier technology](../Parsing/Verifiers.md) and supply some sample messages with the formats you intend to use.
+If you are unsure whether or not your GPS format will work, please use our [Verifier Technology](../Parsing/Verifiers.md) and supply some sample messages with the formats you intend to use.
 
 As a reference, the following regular expressions are used to parse DM and DMS geolocation values.  A good place to test the expressions and your values is [RegEx 101](https://regex101.com/).
 
