@@ -22,7 +22,7 @@ And use the following syntax in the Path Locator:
 `/deviceadmin/{deviceid}`
 
 
-With the above **Path Locator** and a path of
+With the above Path Locator and a path of
 
 `/deviceadmin/device1234`
 
