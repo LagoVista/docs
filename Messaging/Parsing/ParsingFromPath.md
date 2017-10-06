@@ -11,7 +11,7 @@ updatedby: Kevin D. Wolf
 
 # Parsing from a Path
 
-To extract value from a path, select the search location:
+To extract a value from a path, select the search location:
 
 **Search Location**  
 Path
