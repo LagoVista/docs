@@ -2,7 +2,7 @@
 
 # Output Commands
 
-Output Commands are used to send message back to your device.  When creating an output command you select a [Message 
+Output Commands are used to send a message back to your device.  When creating an output command you select a [Message 
 Definition](../Messaging/Index.md) that contains the fields that make up your outgoing message.  You will then be required
 to map fields that are either available from the incoming message or the device.
 
