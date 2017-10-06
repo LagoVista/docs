@@ -20,7 +20,7 @@ Temperature = 32.0 F
 
 The value that you want to extract as the temperature is simply ```32.0```
 
-If you use a regular expression similar to
+If you use a regular expression similar to:
 
 ```
 ^Temperature\s?=\s?([\d\.]{1,5})\s?F$
