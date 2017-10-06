@@ -26,7 +26,7 @@ When designing any sort of complex architecture, it is a good idea to decouple t
 
 Let's start with your devices, sensors and equipment.  The goal of this step is to configure all the specific device types that you want to integrate as well as any messages that they will send and/or receive.
 
-The following assumes that you have decided on some sensors over which you have no control regarding how they communicate.  If you are creating your own sensors and communication protocols, you can use the following steps to help capture requirements:
+The following assumes that you have decided on some sensors that communicate in a way over which you have no control.  If you are creating your own sensors and communication protocols, you can use the following steps to help capture requirements:
 
 
 1. Define your [Device Types](./Devices/DeviceTypes.md)
