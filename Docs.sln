@@ -176,6 +176,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 		Scripting\DeviceWorkflowScriptingModel.md = Scripting\DeviceWorkflowScriptingModel.md
 		Scripting\Index.md = Scripting\Index.md
 		Scripting\InputCommandArrive.md = Scripting\InputCommandArrive.md
+		Scripting\InvokeOutputCommand.md = Scripting\InvokeOutputCommand.md
 		Scripting\PropertyBag.md = Scripting\PropertyBag.md
 		Scripting\StateTransition.md = Scripting\StateTransition.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
