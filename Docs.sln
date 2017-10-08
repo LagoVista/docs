@@ -47,6 +47,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1CF2DC1C-D7F6-46EA-90ED-B90247B8007E}"
 	ProjectSection(SolutionItems) = preProject
+		Scripting\AttributeOnSet.md = Scripting\AttributeOnSet.md
 		Faq.md = Faq.md
 		GettingStarted.md = GettingStarted.md
 		HowDoI.md = HowDoI.md
@@ -171,8 +172,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{01432627-DE08-44BF-9B6C-2B63DB88E064}"
 	ProjectSection(SolutionItems) = preProject
 		Scripting\AttributeOnSet.md = Scripting\AttributeOnSet.md
+		Scripting\DeviceScriptingModel.md = Scripting\DeviceScriptingModel.md
+		Scripting\DeviceWorkflowScriptingModel.md = Scripting\DeviceWorkflowScriptingModel.md
 		Scripting\Index.md = Scripting\Index.md
 		Scripting\InputCommandArrive.md = Scripting\InputCommandArrive.md
+		Scripting\PropertyBag.md = Scripting\PropertyBag.md
 		Scripting\StateTransition.md = Scripting\StateTransition.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
 	EndProjectSection

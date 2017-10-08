@@ -31,6 +31,12 @@ The port to send http request, this is usually `80` for REST (http) and `443` fo
 **Device Id**  
 The Device ID that will be used to send along with each message
 
+**User Name**  
+You can provide a user name that will be available for you to use in tag replacement to provide authentication with your message
+
+**Password**  
+You can provide a password that will be available for you to use in tag replacement to provide authentication with your message
+
 **Access Key**  
 If your device requires authentication, you can specify and access key, this could also be a password.  This will be available for
 tag replacement.  You can also add any authentication credentials to the each message as well.
