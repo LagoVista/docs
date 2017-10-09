@@ -28,7 +28,7 @@ The following are fields that are automatically validated:
 | [Geolocations](../TypeSystem/GeoLocation.md) | A valid latitude and longitude.  For a full description of what is valid, please see [Working with Geolocation Values](../TypeSystem/GeoLocation.md) for more information. |
 | [State Sets](../TypeSystem/StatesAndEnums.md) | State Sets are an important data type in that they ensure that only the values you specify can be assigned.  For example, if your State Set only includes ```on``` and ```off``` and the value you receive is True, that value will be considered invalid.|
 | [Strings](../TypeSystem/Strings.md) | Almost any value can be stored to a String Location.  Currently, only ASCII values are supported. If your message sends unicode strings, please [Contact Us](http://support.nuviot.com) for assistance. |
-| [Values with Units](../TypeSystem/Integers.md) | Values with Units or Unit Sets are units that can be applied to a value.  Validation on incoming values is the same as for a decimal value.  However, you can specify the number of digits to the right of decimal points (precision) for storage. |
+| [Values with Units](../TypeSystem/Integers.md) | Values with Units or Unit Sets are units that can be applied to a value.  Validation on incoming values is the same as for a decimal value.  However, you can specify the number of digits to the right of decimal place (precision) for storage. |
 
 ### Additional Validation
 
