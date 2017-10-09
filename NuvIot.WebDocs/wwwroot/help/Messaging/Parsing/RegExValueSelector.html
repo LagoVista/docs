@@ -1,14 +1,14 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/Index.md">Parsing</a></p>
 <h1>Regular Expression Value Selectors</h1>
-<p>To allow for maximum flexibility in extracting values from your message, we have provided a mechanism to extract a value from a string and be used as value.</p>
-<p>Consider the following scenario where your inintial selector will find the following string</p>
+<p>To allow for maximum flexibility in extracting values from your message, we have provided a mechanism to extract a value from a string.</p>
+<p>Consider the following scenario where your initial selector will find the following string:</p>
 <pre><code>Temperature = 32.0 F
 </code></pre>
-<p>The value that you want to extact as the temperature is simply <code>32.0</code></p>
-<p>If you use a regular expression similar to</p>
+<p>The value that you want to extract as the temperature is simply <code>32.0</code></p>
+<p>If you use a regular expression similar to:</p>
 <pre><code>^Temperature\s?=\s?([\d\.]{1,5})\s?F$
 </code></pre>
-<p>The value that will be used will be 32.0</p>
-<p>An excellent tool to test your Regular Expressions is <a href="#http://regex101.com">RegEx101</a>.  Also  make sure you take advantage of our
-<a href="#/Messaging/Parsing/Verifiers.md">verifiers</a> to ensure the parsing process works as you expect</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/3/2017 17:01:53</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>The value that will be used is 32.0</p>
+<p>An excellent tool to test your regular expressions is <a href="#http://regex101.com">RegEx101</a>.  Also, make sure you take advantage of our
+<a href="#/Messaging/Parsing/Verifiers.md">Verifiers</a> to ensure that the parsing process works as you expect.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>

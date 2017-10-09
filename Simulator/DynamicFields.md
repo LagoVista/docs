@@ -2,6 +2,7 @@
 title: Dynamic Fields
 keywords: simulator, message, dynamicfields, attributes
 
+status: readyforreview
 created: 20171003
 updated: 20171003
 createdby: Kevin D. Wolf

@@ -1,10 +1,14 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Workflows/Index.md">Workflow</a></p>
 <h1>Input</h1>
 <p>An Input is a value that will come from a <a href="#/Messaging/Index.md">Device Message</a> that has a specfic <a href="#/Messaging/TypeSystem/Index.md">Type</a>.</p>
+<p>When building your workflow you can update your device data from data arriving from incoming messages.  After the
+<a href="#/PipelineModules/InputTranslator.md">Input Translator</a> converts the raw message format into standard message format,
+the fields on the standard message format are mapped to inputs within a <a href="#/Routes/Route.md">route</a>.</p>
+<p>In addition you can provide a <a href="#/Scripting/WorkflowInputOnSet.md">script</a> that will get executed when the input is set.</p>
 <h3>Mapping from Inputs</h3>
 <p><a href="#//WorkflowsMappings/InputToAttribute.md">To Attribute</a><br />
 <a href="#//WorkflowsMappings/InputToOutputCommand.md">To Output Command</a><br />
 <a href="#//WorkflowsMappings/InputToStateMachine.md">To State Machine</a></p>
 <h3>Mapping from Inputs</h3>
 <p>None - an Input can only be a source for mappings</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/3/2017 17:01:53</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>

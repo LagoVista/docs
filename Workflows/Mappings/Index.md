@@ -1,3 +1,13 @@
+---
+title: Workflow Mapping
+keywords: workflow, mapping
+
+status: readyforreview
+created: 20171009
+updated: 20171009
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 [Home](../../Index.md) > [Workflow](../Index.md) 
 
 # Workflow Mappings

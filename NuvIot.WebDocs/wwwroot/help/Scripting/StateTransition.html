@@ -1,3 +1,17 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
-<h1>State Machine - OnTransition</h1>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/3/2017 17:01:53</div><div>Copyright Sofware Logistics - 2017</div></div>
+<h1>State Machine - onTransition</h1>
+<p>When a state machine performs a transiton between states, a method will be called that you can customize.</p>
+<pre><code>function onTransition(value) {
+    ...
+}
+
+- or -
+
+function onTransition(latitude, longitude) {
+    ...
+}
+</code></pre>
+<p>The method will be called with an optional parameter.  The value that will be passed in will be determined by the type
+of action that initiates the transition.  If the value is a geolocation both the latitude and longitude will be provided.</p>
+<p>You will also have access to the <a href="#/Scripting/DeviceScriptingModel.md">device properties, attributes</a> and state machines and can invoke <a href="">output commands</a></p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>

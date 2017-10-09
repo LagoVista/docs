@@ -2,6 +2,7 @@
 title: Azure Event Hub Simulator
 keywords: simulator, windows, azureeventhub
 
+status: readyforreview
 created: 20171003
 updated: 20171003
 createdby: Kevin D. Wolf
@@ -60,7 +61,7 @@ If set the ascii character 0x0D will be appended to the message
 **Append LF (0x0A)**  
 If set the ascii character 0x0D will be appended to the message
 
-NOTE: *Based on your Payload Type you can add either a text or binary messsage*
+**Note:** *Based on your Payload Type you can add either a text or binary messsage*
 
 **Text**  
 Add any content that will be sent as the body of the message [allows for tag replacement](DynamicFields.md)

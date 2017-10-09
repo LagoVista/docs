@@ -2,6 +2,7 @@
 title: Azure Event Hubs
 keywords: listener, cloud, azure, eventhub, messagequeue
 
+status: readyforreview
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf

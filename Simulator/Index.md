@@ -2,6 +2,7 @@
 title: Simulator
 keywords: simulator, windows, udp, tcp, mqtt, azureiothub, azureeventhub, rest
 
+status: readyforreview
 created: 20171003
 updated: 20171003
 createdby: Kevin D. Wolf
@@ -18,8 +19,10 @@ A Simulator is also a good option if your physical devices are still in developm
 
 Creating all simulators has a commmon workflow
 1. Create a base simulator that contains the connection and protocol information
-2. Add messages including the ability to add values to things like headers, topics, query strings, etc...
-3. Add dynamic properties that can be populated at run time.
+2. Add messages, this including the ability to add values to things like headers, topics, query strings, etc...
+3. Add dynamic properties that can be modified at run time.
+
+Once you have created your simulator, it will be stored for free on our servers.  Any connection strings or passwords that you define will be stored in our encrypted secure storage.
 
 The simulator isn't specific to our NuvIoT platform, however you will need to create a NuvIoT account so you can store and retreive your simulators and message templates.
 
@@ -28,6 +31,7 @@ The following simulators are available:
 
 * [AMQP](AMQP.md) - Send and Receive Messages from a MQTT Broker
 * [Azure Event Hub](AzureEventHub.md) - Send messages to an Azure Event Hub.
+* [Azure Service Bus](AzureServiceBus.md) - Send messages to an Azure Service Bus.
 * [Azure IoT Hub](AzureIoTHub.md) - Send and Receive Messages from an Azure IoT Event Hub
 * [MQTT](MQTT.md) - Send and Receive Messages from a MQTT Broker
 * [REST](REST.md) - Send and Receive HTTP(s) GET, POST, PUT and DELETE messages 

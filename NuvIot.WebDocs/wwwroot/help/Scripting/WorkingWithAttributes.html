@@ -1,0 +1,28 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
+<h1>Working with Attributes</h1>
+<p>When working with scripts that have access to your device, you have access to read, write and clear <a href="#/Workflows/Attributes.md">attributes</a>.</p>
+<p>While editing your script you will have access to the entire <a href="#/Scripting/DeviceScriptingModel.md">Device</a> and <a href="#/Scripting/DeviceWorkflowScriptingModel.md">Device Workflow</a> data.</p>
+<h5>Setting an Attribute</h5>
+<p>If you have a named attribute <code>temperature</code> on your workflow you can get and set it with any scripts associated
+with the workflow.</p>
+<p>The script template that will set the value will look as follows:</p>
+<pre><code>function onXXXX(value) {
+    Attributes.temperature.value = value;
+};
+</code></pre>
+<p>It's important to realize that each <a href="#/Workflows/Attributes.md">Attribute</a> has a <a href="#/Messaging/TypeSystem/Index.md">specific data type</a> assigned to it.  When
+you assign a new value, the type should match.  If the type should match if it doesn't an attempt will be made to convert
+the assigned value to the correct type.  This will cause an error and the entire device transition will fail</p>
+<h5>Getting an Attribute</h5>
+<p>The script template that will get a value will look as follows:</p>
+<pre><code>function onXXXX(value) {
+    var currentValue = Attributes.temperature.value;
+};
+</code></pre>
+<h5>Clearing an Attribute</h5>
+<p>The script that clears an attribute will look as follows:</p>
+<pre><code>function onXXXX(value) {
+    Attributes.temperature.value = null;
+}
+</code></pre>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>

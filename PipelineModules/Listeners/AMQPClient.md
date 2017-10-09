@@ -2,6 +2,7 @@
 title: AMQP Client
 keywords: listener, cloud, azure, eventhub, messagequeue
 
+status: inprocess
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf

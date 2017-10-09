@@ -1,0 +1,19 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
+<h1>State Machine - handle</h1>
+<p>Within any of the scripts within your workflow, you can send an event to
+a state machine.  For our example we will have a <a href="#/Workflows/StateMachines.md">state machine</a> with a <a href="#/Topics/Keys.md">key</a> of
+<code>mystatemachine</code>.  That state machine will have an event called <code>event1</code> defined.  To cause the
+state machine to handle that event you can use the following script:</p>
+<pre><code>// Handle an event without a parameter
+function onXXXXX(value) {
+    StateMachines.mystatemachine.handle('event1');
+}
+
+-or-
+
+// Pass a parameter with the event handler.
+function onXXXXX(value) {
+    StateMachines.mystatemachine.handle('event1',value);
+}
+</code></pre>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>

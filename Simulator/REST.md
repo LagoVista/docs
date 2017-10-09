@@ -2,6 +2,7 @@
 title: REST/HTTP Simulator
 keywords: simulator, windows, rest, http
 
+status: readyforreview
 created: 20171003
 updated: 20171003
 createdby: Kevin D. Wolf
@@ -29,17 +30,17 @@ The dns name or IP address that will be used to make the call.  Note: this does 
 The port to send http request, this is usually `80` for REST (http) and `443` for REST (https) but is not required to be so.
 
 **Device Id**  
-The Device ID that will be used to send along with each message
+The Device ID that will be used to send along with each message.  The Device ID will be available for [tag replacement](StandardFields.md) in your message
 
 **User Name**  
-You can provide a user name that will be available for you to use in tag replacement to provide authentication with your message
+You can provide a user name that will be available for you to use in [tag replacement](StandardFields.md) to provide authentication with your message
 
 **Password**  
-You can provide a password that will be available for you to use in tag replacement to provide authentication with your message
+You can provide a password that will be available for you to use in [tag replacement](StandardFields.md) to provide authentication with your message
 
 **Access Key**  
 If your device requires authentication, you can specify and access key, this could also be a password.  This will be available for
-tag replacement.  You can also add any authentication credentials to the each message as well.
+[tag replacement](StandardFields.md).  You can also add any authentication credentials to the each message as well.
 
 **Description**  
 Free form text use to provide notes for your simulator

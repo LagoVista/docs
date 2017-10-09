@@ -12,22 +12,22 @@ updatedby: Kevin D. Wolf
 
 ### Simulator Settings
 
-**Name**  
+**Name** (*Required*)  
 Name of the Simulator
 
-**Key**  
+**Key** (*Required*)  
 A [unique key](../Topics/Keys.md) to identify the message
 
-**Transport**  
+**Transport** (*Required*)  
 For an Azure IoT Hub simulator this should be `Azure IoT Hub`
 
 **Default End Point** (*Required*)  
 This is the full url of your IoT hub, it should be something similar to `myiothub.azure-devices.net`
 
-**Access Key**  
+**Access Key** (*Required*)  
 The Primary key for For the device id as specified for this simulator.
 
-**Device Id**  
+**Device Id** (*Required*)    
 A device id that has been allocated on your Azure IoT Hub
 
 **Default Payload Type**  (*Required*)  
@@ -54,7 +54,7 @@ Topic in which to publish your message
 If set the ascii character 0x0D will be appended to the message
 
 **Append LF (0x0A)**  
-If set the ascii character 0x0D will be appended to the message
+If set the ascii character 0x0A will be appended to the message
 
 NOTE: *Based on your Payload Type you can add either a text or binary messsage*
 

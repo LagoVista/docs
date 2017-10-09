@@ -1,17 +1,17 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
 <h1>Azure IoT Hub Simulator</h1>
 <h3>Simulator Settings</h3>
-<p><strong>Name</strong><br />
+<p><strong>Name</strong> (<em>Required</em>)<br />
 Name of the Simulator</p>
-<p><strong>Key</strong><br />
+<p><strong>Key</strong> (<em>Required</em>)<br />
 A <a href="#/Topics/Keys.md">unique key</a> to identify the message</p>
-<p><strong>Transport</strong><br />
+<p><strong>Transport</strong> (<em>Required</em>)<br />
 For an Azure IoT Hub simulator this should be <code>Azure IoT Hub</code></p>
 <p><strong>Default End Point</strong> (<em>Required</em>)<br />
 This is the full url of your IoT hub, it should be something similar to <code>myiothub.azure-devices.net</code></p>
-<p><strong>Access Key</strong><br />
+<p><strong>Access Key</strong> (<em>Required</em>)<br />
 The Primary key for For the device id as specified for this simulator.</p>
-<p><strong>Device Id</strong><br />
+<p><strong>Device Id</strong> (<em>Required</em>)<br />
 A device id that has been allocated on your Azure IoT Hub</p>
 <p><strong>Default Payload Type</strong>  (<em>Required</em>)<br />
 The default format of the payload you will send with each message, it can be either a simple string or <a href="#/Simulator/BinaryContent.md">binary</a></p>
@@ -29,7 +29,7 @@ Topic in which to publish your message</p>
 <p><strong>Append CR (0x0D)</strong><br />
 If set the ascii character 0x0D will be appended to the message</p>
 <p><strong>Append LF (0x0A)</strong><br />
-If set the ascii character 0x0D will be appended to the message</p>
+If set the ascii character 0x0A will be appended to the message</p>
 <p>NOTE: <em>Based on your Payload Type you can add either a text or binary messsage</em></p>
 <p><strong>Text</strong><br />
 Add any content that will be sent as the body of the message <a href="#/Simulator/DynamicFields.md">allows for tag replacement</a></p>
@@ -38,4 +38,4 @@ Add any content that will be sent as the body of the message <a href="#/Simulato
 <a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</p>
 <p><strong>Dynamic Attributes</strong> (<em>For Text Paylaods Only</em>)<br />
 For more information, please see the <a href="#/Simulator/DynamicFields.md">Dynamic Fields</a> section.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/3/2017 17:01:53</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>

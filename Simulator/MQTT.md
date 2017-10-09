@@ -2,6 +2,7 @@
 title: MQTT Simulator
 keywords: simulator, windows, mqtt
 
+status: readyforreview
 created: 20171003
 updated: 20171003
 createdby: Kevin D. Wolf
@@ -13,16 +14,16 @@ updatedby: Kevin D. Wolf
 
 ### Simulator Settings
 
-*NOTE:* *For the initial release our MQTT simulator does not support MQTT over TLS/SSL, this is planned for Q1 2018, if you need this sooner please consider
+**Note:** *For the initial release our MQTT simulator does not support MQTT over TLS/SSL, this is planned for Q1 2018, if you need this sooner please consider
 submitting a [pull request](http://github.com/lagovista/simulator) or [contacting us](http://support.nuviot.com.)*
 
-**Name**  
+**Name** (*Required*)   
 Name of the Simulator
 
-**Key**  
+**Key** (*Required*)   
 A [unique key](../Topics/Keys.md) to identify the message
 
-**Transport**  
+**Transport** (*Required*)   
 For an MQTT Simulator this should be `MQTT`
 
 **Default End Point** (*Required*)  
@@ -31,14 +32,14 @@ This is the full url of your IoT hub, it should be something similar to `myiothu
 **Port** (*Required*)  
 Note this will usually be 1883 or 8883 when TLS/SSL is supported.
 
-**DeviceId** (optional)  
+**DeviceId**  
 You can add a Device Id to your simulator, this may be, but does not have to be the same as the user name.
 
 **User Name**  
-UserName (optional) to log in to your MQTT server.
+UserName to log in to your MQTT server.
 
 **Password**  
-Password (optional) to log in to your MQTT server.
+Password to log in to your MQTT server.
 
 **Subscription** (optional)  
 You can subscribe to an MQTT topic and receive messages in your simulator.  To susbscribe to a topic based on device you can use
@@ -53,13 +54,13 @@ Free form text use to provide notes for your simulator
 
 ### Message Setting
 
-**Name**  
+**Name** (*Required*)    
 Name of the Message
 
-**Key**  
+**Key** (*Required*)    
 A [unique key](../Topics/Keys.md) to identify the message
 
-**Payload Type**  (*Required*)  
+**Payload Type** (*Required*)  
 Either send a Text Message or a Binary message, in almost all cases this will be text.
 
 **Topic**  

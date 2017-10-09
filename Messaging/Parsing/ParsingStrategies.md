@@ -25,7 +25,7 @@ There are a number of different options for extracting values from your message:
 [Headers](ParsingFromHeader.md) - For HTTP/HTTPS message that includes an HTTP Header  
 [Query String](ParsingFromQueryString.md) - Parse values from an HTTP(s) GET/POST/PUT or DELETE Query String   
 [Path](ParsingFromPath.md) - Extract Values from the URL Path for an HTTP(s) request  
-[Topic](ParsingTopics.md) - Extract Values from a message that uses a Topic, such as a publish scribe protocol  
+[Topic](ParsingFromTopic.md) - Extract Values from a message that uses a Topic, such as a publish scribe protocol  
 [Binary Messages](ParsingBinaryMessages.md) - Extract values based on position and data types from a binary message  
 [Delimited Messages](ParsingDelimitedMessage.md) - Use delimiters such as commas or tabs to extract values  
 [JSON](ParsingJsonMessage.md) - Extract Message Values from a JSON document from any source  

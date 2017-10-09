@@ -10,9 +10,22 @@ namespace DocGen
 {
     class Program
     {
+        static Dictionary<string, List<string>> _filesByStatus = new Dictionary<string, List<string>>();
+
         static int fileCount = 0;
         static StringBuilder bldr = new StringBuilder("function getHelpIndexRoutes() { return [");
         static string RelativePath;
+
+        static void AddFileByStatus(string status, string fileName)
+        {
+            if(!_filesByStatus.ContainsKey(status))
+            {
+                _filesByStatus.Add(status, new List<string>());
+            }
+
+            _filesByStatus[status].Add(fileName);
+        }
+
         static void ParseDirectory(string dir, string outputDir)
         {
             System.IO.Directory.CreateDirectory(outputDir);
@@ -27,7 +40,34 @@ namespace DocGen
                 var headerMatch = headerRegEx.Match(markdown);
                 if(headerMatch.Success)
                 {
+                    var header = headerMatch.Value;
+                    var lines = header.Split('\r');
+                    bool hasStatus = false;
+                    foreach(var line in lines)
+                    {
+                        var parts = line.Split(':');
+                        if (parts.Length == 2)
+                        {
+                            var field = parts[0].Trim();
+                            var value = parts[1].Trim();
+                            if(field == "status")
+                            {
+                                AddFileByStatus(value, fileInfo.FullName);
+                                hasStatus = true;
+                            }
+                        }
+                    }
+
+                    if(!hasStatus)
+                    {
+                        AddFileByStatus("nostatus", fileInfo.FullName);
+                    }
+
                     markdown = markdown.Substring(headerMatch.Groups[0].Length);
+                }
+                else
+                {
+                    AddFileByStatus("noheader", fileInfo.FullName);
                 }
 
                 var md = Markdown.ToHtml(markdown);
@@ -113,8 +153,8 @@ namespace DocGen
 
         static void Main(string[] args)
         {
-              var rootPath = @"D:\nuviot\do.Documentation";
-            //var rootPath = @"D:\nuviot\do.Docs";
+            //  var rootPath = @"D:\nuviot\do.Documentation";
+            var rootPath = @"D:\nuviot\do.Docs";
 
             if (args.Length == 1)
             {
@@ -142,6 +182,20 @@ namespace DocGen
 
             System.IO.File.WriteAllText($"{outputDirectory}\\index.js", json);
             Console.WriteLine($"Processed {fileCount} files");
+            Console.WriteLine("==============");
+            foreach (var status in _filesByStatus.Keys)
+            {
+                Console.WriteLine($"{status} {_filesByStatus[status].Count}");
+            }
+
+            var noHeaders = _filesByStatus["noheader"];
+            foreach(var noHeader in noHeaders)
+            {
+                Console.WriteLine(noHeader);
+            }
+
+
+            Console.WriteLine("==============");
             Console.WriteLine("Completed");
             Console.ReadKey();
         }

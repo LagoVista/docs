@@ -2,6 +2,7 @@
 title: IoT Edge Technology
 keywords: deployment, edge, localhost, host, solution
 
+status: new
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf

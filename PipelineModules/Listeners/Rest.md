@@ -2,6 +2,7 @@
 title: REST Server
 keywords: listeners, rest, networking, pipelinemodule
 
+status: readyforreview
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf

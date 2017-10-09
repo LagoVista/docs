@@ -2,6 +2,7 @@
 title: High Availability
 keywords: deployment, host, solution, redundency, highavailability, cloud, loadbalancer
 
+status: new
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf

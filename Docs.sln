@@ -23,11 +23,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04E
 		Messaging\Parsing\ParsingFromHeader.md = Messaging\Parsing\ParsingFromHeader.md
 		Messaging\Parsing\ParsingFromPath.md = Messaging\Parsing\ParsingFromPath.md
 		Messaging\Parsing\ParsingFromQueryString.md = Messaging\Parsing\ParsingFromQueryString.md
+		Messaging\Parsing\ParsingFromTopic.md = Messaging\Parsing\ParsingFromTopic.md
 		Messaging\Parsing\ParsingJsonMessage.md = Messaging\Parsing\ParsingJsonMessage.md
 		Messaging\Parsing\ParsingStrategies.md = Messaging\Parsing\ParsingStrategies.md
 		Messaging\Parsing\ParsingStringMessage.md = Messaging\Parsing\ParsingStringMessage.md
 		Messaging\Parsing\ParsingTextMessages.md = Messaging\Parsing\ParsingTextMessages.md
-		Messaging\Parsing\ParsingTopics.md = Messaging\Parsing\ParsingTopics.md
 		Messaging\Parsing\ParsingWithRegEx.md = Messaging\Parsing\ParsingWithRegEx.md
 		Messaging\Parsing\ParsingXmlMessage.md = Messaging\Parsing\ParsingXmlMessage.md
 		Messaging\Parsing\RegExValueSelector.md = Messaging\Parsing\RegExValueSelector.md
@@ -36,9 +36,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04E
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{AA4E331B-EE82-475D-9EF7-559C3207A1D6}"
-	ProjectSection(SolutionItems) = preProject
-		Index.md = Index.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{F66103ED-F8CC-4368-8951-39E08B670C56}"
 	ProjectSection(SolutionItems) = preProject
@@ -47,7 +44,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1CF2DC1C-D7F6-46EA-90ED-B90247B8007E}"
 	ProjectSection(SolutionItems) = preProject
-		Scripting\AttributeOnSet.md = Scripting\AttributeOnSet.md
 		Faq.md = Faq.md
 		GettingStarted.md = GettingStarted.md
 		HowDoI.md = HowDoI.md
@@ -177,9 +173,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 		Scripting\Index.md = Scripting\Index.md
 		Scripting\InputCommandArrive.md = Scripting\InputCommandArrive.md
 		Scripting\InvokeOutputCommand.md = Scripting\InvokeOutputCommand.md
+		Scripting\Logging.md = Scripting\Logging.md
+		Scripting\Networking.md = Scripting\Networking.md
 		Scripting\PropertyBag.md = Scripting\PropertyBag.md
+		Scripting\StateMachineSendEvent.md = Scripting\StateMachineSendEvent.md
 		Scripting\StateTransition.md = Scripting\StateTransition.md
+		Scripting\Utilities.md = Scripting\Utilities.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
+		Scripting\WorkingWithAttributes.md = Scripting\WorkingWithAttributes.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{9231A2EF-953A-4367-917E-F76D71B6F8FF}"
@@ -192,6 +193,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulator", "Simulator", "{
 		Simulator\AMQP.md = Simulator\AMQP.md
 		Simulator\AzureEventHub.md = Simulator\AzureEventHub.md
 		Simulator\AzureIoTHub.md = Simulator\AzureIoTHub.md
+		Simulator\AzureServiceBus.md = Simulator\AzureServiceBus.md
 		Simulator\BinaryContent.md = Simulator\BinaryContent.md
 		Simulator\DynamicFields.md = Simulator\DynamicFields.md
 		Simulator\Index.md = Simulator\Index.md
@@ -201,6 +203,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulator", "Simulator", "{
 		Simulator\StandardFields.md = Simulator\StandardFields.md
 		Simulator\TCP.md = Simulator\TCP.md
 		Simulator\UDP.md = Simulator\UDP.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{D6A9F977-1D00-4C9B-AD21-66C122EC495B}"
+	ProjectSection(SolutionItems) = preProject
+		About\Branding.md = About\Branding.md
+		About\Company.md = About\Company.md
+		About\DesignPhilosophy.md = About\DesignPhilosophy.md
+		About\Faq.md = About\Faq.md
+		About\Why.md = About\Why.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B86E8080-EC33-4652-9137-6315891E0B0D}"
+	ProjectSection(SolutionItems) = preProject
+		API\index.md = API\index.md
 	EndProjectSection
 EndProject
 Global

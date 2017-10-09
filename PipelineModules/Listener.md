@@ -2,6 +2,7 @@
 title: Input Translator
 keywords: listeners, inputtranslator, pipelinemodule, workflow
 
+status: readyforreview
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf

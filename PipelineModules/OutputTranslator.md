@@ -2,6 +2,7 @@
 title: Output Translator
 keywords: listeners, inputtranslator, pipelinemodule, workflow
 
+status: new
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf

@@ -1,3 +1,13 @@
+---
+title: Workflow Mapping - Attribute to Output Command
+keywords: workflow, mapping, attribute, outputcommand
+
+status: new
+created: 20171009
+updated: 20171009
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 [Home](../../Index.md) > [Workflow](../Index.md) > [Mappings](Index.md)
 
 # Attribute to Output Command

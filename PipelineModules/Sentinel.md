@@ -2,6 +2,7 @@
 title: Sentinel
 keywords: sentinel, security, pipelinemodule
 
+status: inprocess
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf

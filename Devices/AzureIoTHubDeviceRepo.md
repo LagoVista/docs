@@ -2,6 +2,7 @@
 title: Azure IoT Hub Device Repository
 keywords: device, devicerepo, azureiothub
 
+status: readyforreview
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf

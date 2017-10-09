@@ -1,3 +1,13 @@
+---
+title: Software Logistics
+keywords: company, about, softwarelogistics, history info
+
+status: new
+created: 20170922
+updated: 20170922
+createdby: Kevin D. Wolf
+updatedby: Kevin D. Wolf
+---
 # Software Logistics
 
 Software Logistics was established by Kevin D. Wolf in 2001 as a high-end software consulting business. It's provided

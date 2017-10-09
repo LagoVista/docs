@@ -2,6 +2,7 @@
 title: MSMQ Listener
 keywords: listener, cloud, msmq, msmqbroker, messagequeue, topics
 
+status: readyforreview
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf

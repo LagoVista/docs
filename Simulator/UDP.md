@@ -2,6 +2,7 @@
 title: UDP Simulator
 keywords: simulator, windows, tcp
 
+status: readyforreview
 created: 20171003
 updated: 20171003
 createdby: Kevin D. Wolf
@@ -13,13 +14,13 @@ updatedby: Kevin D. Wolf
 
 ### Simulator Settings
 
-**Name**  
+**Name** (*Required*)    
 Name of the Simulator
 
-**Key**  
+**Key** (*Required*)    
 A [unique key](../Topics/Keys.md) to identify the message
 
-**Transport**  
+**Transport** (*Required*)    
 For a TCP Simulator this should be `TCP`
 
 **Default End Point** (*Required*)  
@@ -44,9 +45,6 @@ A [unique key](../Topics/Keys.md) to identify the message
 
 **Payload Type**  (*Required*)  
 Either send a Text Message or a Binary message, in almost all cases this will be text.
-
-**Topic**  
-Topic in which to publish your message
 
 **Append CR (0x0D)**  
 If set the ascii character 0x0D will be appended to the message

@@ -1,11 +1,9 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/ParsingStrategies.md">Parsing Strategies</a></p>
-<h1>Parsing a Json Message</h1>
-<p>To work with JSON in your message ensure the content type of your message is set to JSON</p>
-<p>When you have a JSON message, and select the Search Location of Body</p>
-<p><strong>Search Location</strong><br />
-Body</p>
-<p>You can specify a locator to identify the field within your JSON content.</p>
-<p>The values can be extract by using a period (.) to denote the path to the object within the JSON document.</p>
+<h1>Parsing a JSON Message</h1>
+<p>To work with JSON in your message, be sure that the content type of your message is set to JSON.</p>
+<p>When you have a JSON message and select the Search Location of
+<strong>Body</strong>, you can specify a locator to identify the field within your JSON content.</p>
+<p>The desired values can then be extracted by using a period (.) to denote the path to the object within the JSON document.</p>
 <p>Assuming the following JSON:</p>
 <pre><code>{
 	'field1':'value1',
@@ -15,15 +13,17 @@ Body</p>
 	}
 }
 </code></pre>
-<p>Values can be extracted with the following <strong>JSON Path</strong>.</p>
-<p><strong>JSON Path</strong><br />
-<code>field</code> = value1</p>
-<p><strong>JSON Path</strong><br />
-<code>subset1.field3</code> = value2</p>
-<p><strong>JSON Path</strong><br />
-<code>subset1.field4</code> = another value</p>
-<p><strong>Note:</strong> <em>Currently arrays are not supported in JSON format, Please <a href="#http://support.nuviot.com">contact us</a> if your implementation requires this feature</em></p>
-<p>IN addition you can use <a href="#/Messaging/Parsing/RegExValueSelector.md">RegEx Value Selector</a> and <a href="#/Messaging/Parsing/Validation.md">Validation</a> to fine tune your selection and validate it's contents</p>
+<p>Values can be extracted with the following JSON path:</p>
+<ol>
+<li><strong>JSON Path</strong><br />
+<code>field</code> = value1</li>
+<li><strong>JSON Path</strong><br />
+<code>subset1.field3</code> = value2</li>
+<li><strong>JSON Path</strong><br />
+<code>subset1.field4</code> = another value</li>
+</ol>
+<p>Note: Arrays are not currently supported in JSON format, please <a href="#http://support.nuviot.com">Contact Us</a> if your implementation requires this feature.</p>
+<p>You can use <a href="#/Messaging/Parsing/RegExValueSelector.md">RegEx Value Selector</a> and <a href="#/Messaging/Parsing/Validation.md">Validation</a> to fine-tune your selection and validate its contents.</p>
 <h5>Storage Type</h5>
 <p>You will also need to add a <a href="#/Messaging/TypeSystem/Index.md">Storage Type</a> to identify how this field should be stored.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/3/2017 17:01:53</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>

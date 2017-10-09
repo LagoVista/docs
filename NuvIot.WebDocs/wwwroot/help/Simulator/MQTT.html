@@ -1,32 +1,38 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
 <h1>MQTT Simulator</h1>
 <h3>Simulator Settings</h3>
-<p><em>NOTE:</em> <em>For the initial release our MQTT simulator does not support MQTT over TLS/SSL, this is planned for Q1 2018, if you need this sooner please consider
-submitting a <a href="#http://github.com/lagovista/simulator">pull request</a> or [contacting us](http://support.nuviot.com.</em></p>
-<p><strong>Name</strong><br />
+<p><strong>Note:</strong> <em>For the initial release our MQTT simulator does not support MQTT over TLS/SSL, this is planned for Q1 2018, if you need this sooner please consider
+submitting a <a href="#http://github.com/lagovista/simulator">pull request</a> or <a href="#http://support.nuviot.com.">contacting us</a></em></p>
+<p><strong>Name</strong> (<em>Required</em>)<br />
 Name of the Simulator</p>
-<p><strong>Key</strong><br />
+<p><strong>Key</strong> (<em>Required</em>)<br />
 A <a href="#/Topics/Keys.md">unique key</a> to identify the message</p>
-<p><strong>Transport</strong><br />
+<p><strong>Transport</strong> (<em>Required</em>)<br />
 For an MQTT Simulator this should be <code>MQTT</code></p>
 <p><strong>Default End Point</strong> (<em>Required</em>)<br />
 This is the full url of your IoT hub, it should be something similar to <code>myiothub.azure-devices.net</code></p>
 <p><strong>Port</strong> (<em>Required</em>)<br />
 Note this will usually be 1883 or 8883 when TLS/SSL is supported.</p>
+<p><strong>DeviceId</strong><br />
+You can add a Device Id to your simulator, this may be, but does not have to be the same as the user name.</p>
 <p><strong>User Name</strong><br />
-UserName (optional) to log in to your MQTT server.</p>
+UserName to log in to your MQTT server.</p>
 <p><strong>Password</strong><br />
-Password (optional) to log in to your MQTT server.</p>
+Password to log in to your MQTT server.</p>
+<p><strong>Subscription</strong> (optional)<br />
+You can subscribe to an MQTT topic and receive messages in your simulator.  To susbscribe to a topic based on device you can use
+the following format
+<code>/messages/~deviceid~</code> where <code>~deviceid~</code> is replaced by the device id you added for your simulator.</p>
 <p><strong>Default Payload Type</strong>  (<em>Required</em>)<br />
 The default format of the payload you will send with each message, it can be either a simple string or <a href="#/Simulator/BinaryContent.md">binary</a></p>
 <p><strong>Description</strong><br />
 Free form text use to provide notes for your simulator</p>
 <h3>Message Setting</h3>
-<p><strong>Name</strong><br />
+<p><strong>Name</strong> (<em>Required</em>)<br />
 Name of the Message</p>
-<p><strong>Key</strong><br />
+<p><strong>Key</strong> (<em>Required</em>)<br />
 A <a href="#/Topics/Keys.md">unique key</a> to identify the message</p>
-<p><strong>Payload Type</strong>  (<em>Required</em>)<br />
+<p><strong>Payload Type</strong> (<em>Required</em>)<br />
 Either send a Text Message or a Binary message, in almost all cases this will be text.</p>
 <p><strong>Topic</strong><br />
 Topic in which to publish your message</p>
@@ -42,4 +48,4 @@ Add any content that will be sent as the body of the message <a href="#/Simulato
 <a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</p>
 <p><strong>Dynamic Attributes</strong> (<em>For Text Paylaods Only</em>)<br />
 For more information, please see the <a href="#/Simulator/DynamicFields.md">Dynamic Fields</a> section.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/3/2017 17:01:53</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/9/2017 11:45:26</div><div>Copyright Sofware Logistics - 2017</div></div>
