@@ -1,4 +1,4 @@
-﻿---
+---
 title: Parsing from Headers
 keywords: messages, messaging, parsing, payload, header, http, rest
 
