@@ -2,7 +2,7 @@
 title: Parsing from a JSON Message
 keywords: messages, messaging, parsing, json, rest, post, http
 
-ParsingStringMessage.md
+status: readyforapproval
 created: 20170927
 updated: 20171010
 createdby: Kevin D. Wolf
