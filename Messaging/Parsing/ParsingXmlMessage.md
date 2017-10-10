@@ -2,6 +2,7 @@
 title: Parsing an XML Message
 keywords: messages, messaging, parsing, xml, xpath
 
+status: new
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf
