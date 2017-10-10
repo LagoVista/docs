@@ -2,16 +2,17 @@
 title: Verifiers
 keywords: messages, messaging, verifiers, samplemessages
 
+status:readyforreview
 created: 20170927
-updated: 20170927
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
 # Verifiers
 
-Once you have created your parser, you should test it to make sure it behaves as expected.  You can create a verifier that will take a sample message and run it through the verifier to ensure that you get the results you need, all without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same and you will have the same fields available to the workflow.
+Once you have created your parser, you should test it to make sure it behaves as expected.  You can create a Verifier that will take a sample message and run it through the Verifier to ensure that you get the results you need, all without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same and you will have the same fields available to the workflow.
 
 ### To Add a Verifier
 
