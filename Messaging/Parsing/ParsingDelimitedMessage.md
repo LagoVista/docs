@@ -1,4 +1,4 @@
-﻿---
+---
 title: Parsing a Delimited Message
 keywords: parsers, delimited, csv, text, string, data, messaging, messages
 
