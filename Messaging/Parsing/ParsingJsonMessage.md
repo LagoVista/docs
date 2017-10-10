@@ -1,4 +1,4 @@
-﻿---
+---
 title: Parsing from a JSON Message
 keywords: messages, messaging, parsing, json, rest, post, http
 
