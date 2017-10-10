@@ -1,0 +1,41 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
+<h1>Scripting - Building Output Commands</h1>
+<p>To build an output command implement an <code>onExecute</code> function, it will take as a parameter the command you are building as well as any additional parameters.
+You can add a script by editing the OutputCommand node in the Workflow Canvas.</p>
+<pre><code>//  The minimum function is
+function onExecute() {
+    ...
+}
+
+//  Additional parameters can be passed in by the method that initiates sending the command
+function onExecute(arg1, arg2) {
+    ...
+}
+</code></pre>
+<p>To build the actual command you will need to assign properties to the command, you can only set values that
+you have <a href="#/Workflows/OutputCommandFields.md">defined</a> as part of your output command.</p>
+<p>For our example below our Output Command has four fields assigned</p>
+<ol>
+<li>messageid</li>
+<li>arg1</li>
+<li>arg2</li>
+<li>temperature</li>
+</ol>
+<p>These fields will be made available to the <a href="#/PipelineModules/OutputTranslator.md">output translator</a> to convert them to a native format that can be sent back to the device or external source.</p>
+<pre><code>function onExecute(arg1, arg2) {
+    let command = OutputCommands.sensoroutput.create() 
+    command.messageid = 'msg001';
+    command.arg1 = arg1;
+    command.arg2 = arg2;
+    command.temperature = Attributes.temperature.value;
+    command.enqueue();
+}
+</code></pre>
+<p>The sources to be assigned to the Output Command can come from different sources, in our case:</p>
+<ul>
+<li><code>command.messageid = 'msg001';</code> is a simple string.</li>
+<li><code>command.arg1 = arg1;</code> is passed in as a parameter to the <code>onExecute</code> method.</li>
+<li><code>command.arg2 = arg2;</code> is also passed in as a parameter to the <code>onExecute</code> method.</li>
+<li><code>command.temperature = Attributes.temperature.value;</code> is an <a href="#/Workflows/Attributes.md">attribute</a> from the device.</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/10/2017 19:08:40</div><div>Copyright Sofware Logistics - 2017</div></div>

@@ -140,6 +140,7 @@
 
         .list ul > li.parentNode > i {
             color: #337ab7;
+            cursor:pointer;
         }
 
         li > i {
@@ -169,13 +170,17 @@
             <img src="images/sftlog-small.png" />
         </div>
     </div>
-    <div style="float:left;width:250px;">
-        <div style="align-items:stretch" >
-            <div class="list"></div>
-        </div>
-    </div>
-    <div ng-view style="margin-left:270px;z-index:-99;width:800px">
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-3">
+                <div style="align-items:stretch">
+                    <div style="overflow-y:auto" class="list"></div>
+                </div>
+            </div>
+            <div class="col-lg-9" ng-view style="overflow-y:auto">
 
+            </div>
+        </div>
     </div>
 </body>
 </html>

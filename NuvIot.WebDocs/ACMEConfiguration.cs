@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿/*using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System;
 using Webapp.Services;
@@ -184,4 +184,4 @@ namespace Microsoft.AspNetCore.Hosting
             options.AcmeSettings = _acmeSettings;
         }
     }
-}
+}*/
