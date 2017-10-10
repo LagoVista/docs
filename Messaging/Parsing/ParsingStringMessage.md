@@ -1,4 +1,4 @@
-﻿---
+---
 title: Parsing String Messages
 keywords: messages, messaging, parsing, text, string, regularexpression, regex, position
 
