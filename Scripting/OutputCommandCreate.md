@@ -3,10 +3,10 @@ title: Scripting - Building Output Commands
 keywords: workflow, scripting, workflow, outputs, messages, sending, transmitter
 
 status: readyforreview
-created: 20171009
-updated: 20171008
-createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+created: 20171010
+updated: 20171010
+createdby: bytemaster-0xff
+updatedby: bytemaster-0xff
 ---
 [Home](../Index.md) > [Scripting](Index.md)
 
@@ -18,21 +18,20 @@ You can add a script by editing the OutputCommand node in the Workflow Canvas.
 
 ```
 //  The minimum function is
-function onExecute(command) {
+function onExecute() {
     ...
 }
 
 //  Additional parameters can be passed in by the method that initiates sending the command
-function onExecute(command, arg1, arg2) {
+function onExecute(arg1, arg2) {
     ...
 }
-
 ```
 
 To build the actual command you will need to assign properties to the command, you can only set values that 
 you have [defined](../Workflows/OutputCommandFields.md) as part of your output command.
 
-For our example below our Output Command has three fields assigned
+For our example below our Output Command has four fields assigned
 1. messageid
 2. arg1
 3. arg2
@@ -42,11 +41,13 @@ These fields will be made available to the [output translator](../PipelineModule
 
 
 ```
-function onExecute(command, arg1, arg2) {
+function onExecute(arg1, arg2) {
+    let command = OutputCommands.sensoroutput.create() 
     command.messageid = 'msg001';
     command.arg1 = arg1;
     command.arg2 = arg2;
     command.temperature = Attributes.temperature.value;
+    command.enqueue();
 }
 ```
 
