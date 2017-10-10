@@ -2,10 +2,11 @@
 title: Parsing Overview
 keywords: parsers, messaging, messages
 
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](Index.md) > [Device Messaging](../Index.md)
 
@@ -55,7 +56,7 @@ There are two parts to defining how values are parsed out of a message.  First, 
 There are three important parts of defining how your messages are parsed and used, including: 
 * [Key](../../Topics/Keys.md) - The key identifies this value as it is used to further process the message
 * [Search Location](#Search-Location) - The listener populates different components that can be used to search for message values
-* [Storage Type](#Storage-Types) - The data type that is used to identify the data
+* [Storage Type](#Storage-Types) - This is the data type that is used to identify the data
 
 
 #### Search Locations
@@ -69,12 +70,12 @@ The following are four different areas that can be searched.  These values are p
 These make up the type system that is used throughout the rest of the system:
 * String - Text, currently single-byte ASCII text is supported
 * Integer - 64-bit signed integer
-* Decimal - Double precision floating point number
+* Decimal - Double precision floating point format
 * True False - Boolean
-* Geolocation - Stored as latitude and longitude in decimal degrees with 6 decimal points
+* Geolocation - Stored as latitude and longitude in decimal degrees to six decimal places
 * Date Time - Stored in [ISO 8601 Format](https://en.wikipedia.org/wiki/ISO_8601)
 
-Note:  Arrays are not currently supported.  Please [Contact Us]('https://www.IoTAppStudio.com/Support/Request') if they are required for implementation.
+Note:  Arrays are not currently supported.  Please [Contact Us](http://support.nuviot.com) if they are required for implementation.
 
 ### Fine Tuning Selections
 For textual values, use a [Regular Expression](RegExValueSelector.md) to extract a value. 
