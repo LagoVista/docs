@@ -1,4 +1,4 @@
-﻿---
+---
 title: Device Id Parsing
 keywords: planner, parsers, messaging, devices, deviceid, routes, deviceconfigurations
 
