@@ -4,7 +4,7 @@ keywords: planner, parsers, messaging, devices, deviceid, routes, deviceconfigur
 
 status:  readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171010
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
