@@ -2,10 +2,11 @@
 title: Parsing a Delimited Message
 keywords: parsers, delimited, csv, text, string, data, messaging, messages
 
+ParsingStringMessage.md
 created: 20170927
-updated: 20170927
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
 
@@ -38,7 +39,7 @@ Here are the extracted values with their corresponding delimiter index:
 |               7 |  overrange |
 
 
-Here is an example of the same message using quoted text:
+Here is an example of the same message using quoted text.  Since that option was selected, the tick marks are retained as part of the message.
 
 `'msg004','dev0001',324,52,45,off,'overrange'`
 
