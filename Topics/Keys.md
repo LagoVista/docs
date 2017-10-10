@@ -2,11 +2,11 @@
 title: Keys
 keywords: keys, scripting, workflow
 
-status: new
+status: issues header Namespaces with no further detail
 created: 20171009
-updated: 20171008
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md)
 
