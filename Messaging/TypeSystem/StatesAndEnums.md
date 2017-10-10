@@ -2,10 +2,11 @@
 title: States and Enumerations
 keywords: statemachine, workflow, states
 
+status: issue geolocation link doesn't work
 created: 20170922
-updated: 20170922
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)
 
@@ -34,11 +35,11 @@ When creating your State Set, you can specify if an integer enumeration value sh
 values are only provided to map to incoming and outgoing messages.  The value will be converted to the string Key value prior to being saved.
 
 ### States
-When you define the States that make up a State Set, you need to define the following values:
+When you define the states that make up a State Set, you need to define the following values:
 
 
-| Field           | Description |
-| --------------- | ----------  |
-| Name            | A textual representation of the state.  This can be changed. |
-| Key             | The unique [Key](../../Topics/Keys.md) that identifies this state. |
-| Enum (optional) | If you want to map this Enum value to a numeric value in your message, you can supply an integer to perform this mapping. |
+| Field                  | Description |
+| ---------------        | ----------  |
+| Name                   | A textual representation of the state.  This can be changed. |
+| Key                    | The unique [Key](../../Topics/Keys.md) that identifies this state. |
+| Enumeration (optional) | If you want to map this Enum value to a numeric value in your message, you can supply an integer to perform this mapping. |
