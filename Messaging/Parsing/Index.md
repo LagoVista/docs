@@ -10,7 +10,7 @@ updatedby: klworkman
 ---
 [Home](Index.md) > [Device Messaging](../Index.md)
 
-### Intro
+### Introduction
 
 The following topics apply to Parsing Messages:
 
