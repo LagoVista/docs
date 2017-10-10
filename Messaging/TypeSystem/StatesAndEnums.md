@@ -2,7 +2,7 @@
 title: States and Enumerations
 keywords: statemachine, workflow, states
 
-status: issue geolocation link doesn't work
+status: readyforapproval
 created: 20170922
 updated: 20171010
 createdby: Kevin D. Wolf
@@ -24,11 +24,11 @@ Off
 In this case we have two states, ```On``` and ```Off```, and these are the only allowable values.
 
 ## State Sets
-In NuvIoT we will use the term **State Set** to define the collection of states or enumeration values and **State** to define the individual values.
+In NuvIoT we will use the term State Set to define the collection of states or enumeration values and state to define the individual values.
 
 When creating a State Set, you define the name of your state and a [Key](../../Topics/Keys.md).
 
-The Key that you provide for each **State** will be used to store the value of the state associated with that data item.
+The Key that you provide for each state will be used to store the value of the state associated with that data item.
 
 ### Integer Enumerations
 When creating your State Set, you can specify if an integer enumeration value should be provided.  This is useful for mapping to integer values from messages.  If you specify that it should be provided, then each state **must** include an integer enumeration.  Integer enumeration
