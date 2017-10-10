@@ -17,5 +17,5 @@ If your message was sent via REST or HTTP, the headers that were sent with your 
 To parse a value from a header:
 1.  Add a field
 2.  Select **Search Location** header
-3.  Populate the field **Header Name** with the name of the header that contains the field you wish to extract
+3.  Populate the field Header Name with the name of the header that contains the field you wish to extract
 4.  Add a [Storage Type](../TypeSystem/Index.md) to identify how this field should be stored
