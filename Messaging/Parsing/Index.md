@@ -23,7 +23,7 @@ The following topics apply to Parsing Messages:
 * [Parsing from Body](ParsingFromBody.md)
 * [Parsing from Header](ParsingFromHeader.md)
 * [Parsing from Path](ParsingFromPath.md)
-* [Parsing from QueryString](ParsingFromQueryString.md)
+* [Parsing from Query String](ParsingFromQueryString.md)
 * [Parsing Text with Position](ParsingStringMessage.md)
 * [Parsing Text with Regular Expressions](ParsingWithRegEx.md)
 * [Parsing from Topic](ParsingFromTopic.md)
