@@ -2,7 +2,7 @@
 title: Parsing a Delimited Message
 keywords: parsers, delimited, csv, text, string, data, messaging, messages
 
-ParsingStringMessage.md
+status: readyforapproval
 created: 20170927
 updated: 20171010
 createdby: Kevin D. Wolf
