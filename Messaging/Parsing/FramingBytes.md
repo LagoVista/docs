@@ -2,10 +2,11 @@
 title: Framing Bytes
 keywords: parsers, messaging, binary, hex
 
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md) > [Parsing Binary Messages](ParsingBinaryMessages.md)
 
@@ -17,8 +18,8 @@ Note: this has not been implemented as of 5/18/2017.
 
 Framing bytes consist of two parameters:
 
-* Byte - Two-character representation of the byte.  For example, 0D would be 13 or CR
-* Index - The index within the message where this character should be located
+* Byte - Two-character representation of the byte.  For example, 0D would be 13 or CR.
+* Index - The index within the message where this character should be located.
 
 Note: In this case, the index or binary offset is 0-based, which is different than parsing delimited values where the index of the delimited value is 1.
 
