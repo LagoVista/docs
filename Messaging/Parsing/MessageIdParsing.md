@@ -1,4 +1,4 @@
-﻿---
+---
 title: Message ID Parsing
 keywords: planner, parsers, messaging, messageid, routes, deviceconfigurations
 
