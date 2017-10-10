@@ -29,7 +29,7 @@ The following are the available data types that can be extracted from a binary m
 * Int64 - big or little endian
 * UInt64 - big or little endian
 * Boolean - 0 = False, Not 0 = true
-* String ([configurable](ParsingStringMessage.md))
+* String ([Configurable](ParsingStringMessage.md))
 * Single-precision floating point as defined by [IEEE 754-1985](https://en.wikipedia.org/wiki/IEEE_754-1985)
 * Double-precision floating point as defined by [IEEE 754-1985](https://en.wikipedia.org/wiki/IEEE_754-1985)
 
