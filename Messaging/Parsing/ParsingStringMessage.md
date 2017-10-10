@@ -2,7 +2,7 @@
 title: Parsing String Messages
 keywords: messages, messaging, parsing, text, string, regularexpression, regex, position
 
-ParsingStringMessage.md
+status: readyforapproval
 created: 20170927
 updated: 20171010
 createdby: Kevin D. Wolf
