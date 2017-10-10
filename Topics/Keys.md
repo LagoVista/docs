@@ -2,7 +2,7 @@
 title: Keys
 keywords: keys, scripting, workflow
 
-status: issues header Namespaces with no further detail
+status: new
 created: 20171009
 updated: 20171010
 createdby: Kevin D. Wolf

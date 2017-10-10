@@ -69,6 +69,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38
 		Workflows\Index.md = Workflows\Index.md
 		Workflows\Input.md = Workflows\Input.md
 		Workflows\InputCommands.md = Workflows\InputCommands.md
+		Workflows\OutputCommandFields.md = Workflows\OutputCommandFields.md
 		Workflows\OutputCommands.md = Workflows\OutputCommands.md
 		Workflows\StateMachines.md = Workflows\StateMachines.md
 	EndProjectSection
@@ -175,6 +176,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 		Scripting\InvokeOutputCommand.md = Scripting\InvokeOutputCommand.md
 		Scripting\Logging.md = Scripting\Logging.md
 		Scripting\Networking.md = Scripting\Networking.md
+		Scripting\OutputCommandCreate.md = Scripting\OutputCommandCreate.md
 		Scripting\PropertyBag.md = Scripting\PropertyBag.md
 		Scripting\StateMachineSendEvent.md = Scripting\StateMachineSendEvent.md
 		Scripting\StateTransition.md = Scripting\StateTransition.md

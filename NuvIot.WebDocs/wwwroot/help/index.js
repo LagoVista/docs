@@ -1,4 +1,4 @@
-function getHelpIndexRoutes() { return [{"link":"/Faq.md","file":"/help/Faq.html"},
+function getHelpIndexRoutes() { return [{"link":"/faq.md","file":"/help/faq.html"},
 {"link":"/GettingStarted.md","file":"/help/GettingStarted.html"},
 {"link":"/HowDoI.md","file":"/help/HowDoI.html"},
 {"link":"/Index.md","file":"/help/Index.html"},

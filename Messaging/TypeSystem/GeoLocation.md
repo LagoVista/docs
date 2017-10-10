@@ -2,6 +2,7 @@
 title: Working with Geolocation Values
 keywords: messages, messaging, parsing, fields, geo, geolocation, latitude, longitude, location
 
+status: readyforreview
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf

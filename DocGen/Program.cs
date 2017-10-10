@@ -153,8 +153,8 @@ namespace DocGen
 
         static void Main(string[] args)
         {
-            //  var rootPath = @"D:\nuviot\do.Documentation";
-            var rootPath = @"D:\nuviot\do.Docs";
+             var rootPath = @"D:\nuviot\do.Documentation";
+            //var rootPath = @"D:\nuviot\do.Docs";
 
             if (args.Length == 1)
             {
