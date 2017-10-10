@@ -2,10 +2,11 @@
 title: Parsing Index
 keywords: parsers, messaging, messages
 
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](Index.md) > [Device Messaging](../Index.md)
 
@@ -14,11 +15,11 @@ updatedby: Kevin D. Wolf
 The following topics apply to Parsing Messages:
 
 * [Overview](Overview.md)
-* [Device Id](DeviceIdParsing.md)
+* [Device ID](DeviceIdParsing.md)
 * [Framing Bytes](FramingBytes.md)
 * [Binary Messages](ParsingBinaryMessages.md)
 * [Delimited Messages](ParsingDelimitedMessage.md)
-* [Message Id](MessageIdParsing.md)
+* [Message ID](MessageIdParsing.md)
 * [Parsing from Body](ParsingFromBody.md)
 * [Parsing from Header](ParsingFromHeader.md)
 * [Parsing from Path](ParsingFromPath.md)
