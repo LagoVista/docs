@@ -2,10 +2,11 @@
 title: Parsing from a JSON Message
 keywords: messages, messaging, parsing, json, rest, post, http
 
+ParsingStringMessage.md
 created: 20170927
-updated: 20170927
+updated: 20171010
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
 
@@ -13,9 +14,9 @@ updatedby: Kevin D. Wolf
 
 # Parsing a JSON Message
 
-To work with JSON in your message, be sure that the content type of your message is set to JSON.
+To work with JSON in your message, be sure that the Content Type of your message is set to **JSON**.
 
-When you have a JSON message and select the Search Location of 
+When you have a JSON message and select Search Location of 
 **Body**, you can specify a locator to identify the field within your JSON content.
 
 
