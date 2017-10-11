@@ -1,4 +1,4 @@
-﻿---
+---
 title: Framing Bytes
 keywords: parsers, messaging, binary, hex
 
