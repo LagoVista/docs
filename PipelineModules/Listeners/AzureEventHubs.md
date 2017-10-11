@@ -2,11 +2,11 @@
 title: Azure Event Hubs
 keywords: listener, cloud, azure, eventhub, messagequeue
 
-status: readyforreview
+status: readyforapproval
 created: 20170922
-updated: 20170922
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Pipeline Modules](../Index.md) > [Listeners](../Listener.md)
 
@@ -17,36 +17,37 @@ to use your own front end to capture the events and use NuvIoT to process messag
 
 You must have an [Azure Account](https://portal.azure.com) and have a configured [Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/).
 
-If you need help getting started, [contact us](http://support.nuviot.com) and we'll put you in touch with one 
+If you need help getting started, [Contact Us](http://support.nuviot.com) and we will put you in touch with one 
 of our implementation partners to help you get going.
 
-The next steps assume that you have [successfully created an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) and have access to the necessary credentials.
+The next steps assume that you have [Successfully Created an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) and have access to the necessary credentials.
 
-First you will need to create a [Listener](../Listener.md), and select the listener type of Event Hub.
+First, create a [Listener](../Listener.md) and select the Listener Type of Event Hub.
 
 ### Required Fields
 
-In addition to the standard fields that are required for any listener the following fields are required:
+In addition to the standard fields that are required for any listener, the following fields are required:
 
-**Listener Type**  
+* Listener Type 
 `Azure Event Hub`
 
-**Content Type**  
-Select the [content type](../../Messaging/ContentTypes.md) of the message you are expecting, any content types are acceptable.
+* Content Type  
+Select the [Content Type](../../Messaging/ContentTypes.md) of the message that you are expecting.  All Content Types are acceptable.
 
-**Host Name**  
-Host Name of the Event Hub Resource you created in Azure.  For example in
+* Host Name 
+The Host Name of the Event Hub Resource you created in Azure.  For example in
 ```sb://myeventhub.servicebus.windows.net``` the Host Name would be ```myeventhub.servicebus.windows.net```
 
-**Resource Name**  
-Name of the specific Event Hub you wish to listen on.
+* Resource Name  
+The name of the specific Event Hub you wish to listen on.
 
-**Access Key**  
-Enter the Primary or Secondary Key to allow access to your event hub.  No keys are stored in plain text.
+* Access Key  
+The Primary or Secondary Key to allow access to your Event Hub.  No keys are stored in plain text.
 
 ### Optional Fields
-**Access Key Name**  
-You can enter a custome policy/access key name but if you leave this blank, the default this will be ```RootManageSharedAccessKey``` 
 
-**Consumer Group** 
-If you want to listen on a specific Consumer Group, enter it here, if you leave this blank you will connect to the ```[$Default]``` Consumer Group
+* Access Key Name 
+Enter a custom Policy/Access Key name where applicable.  If you leave this blank, the default will be: ```RootManageSharedAccessKey``` 
+
+* Consumer Group 
+If you wish to listen on a specific Consumer Group, enter it here.  If this is left blank, you will connect to the ```[$Default]``` Consumer Group.
