@@ -39,7 +39,7 @@ Here are the extracted values with their corresponding delimiter index:
 |               7 |  overrange |
 
 
-Here is an example of the same message using quoted text.  Since that Quoted Text option was selected, the tick marks are retained.
+Here is an example of the same message using quoted text.  Since the Quoted Text option was selected, the tick marks are retained.
 
 `'msg004','dev0001',324,52,45,off,'overrange'`
 
