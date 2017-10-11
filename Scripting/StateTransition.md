@@ -2,7 +2,7 @@
 title: State Machine - onTransition 
 keywords: workflow, scripting, ontransition, statemachine
 
-status: readyforapproval
+status: issues [Device Properties, Attributes](DeviceScriptingModel.md) Should Device Properties link to a separate page and if so which one?
 created: 20171009
 updated: 20171011
 createdby: Kevin D. Wolf
