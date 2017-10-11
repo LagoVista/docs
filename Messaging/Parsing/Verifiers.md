@@ -12,14 +12,14 @@ updatedby: klworkman
 
 # Verifiers
 
-Once you have created your parser, you should test it to make sure it behaves as expected.  You can create a Verifier that will take a sample message and run it through the Verifier to ensure that you get the results you need, all without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same and you will have the same fields available to the workflow.
+Once you have created your parser, you should test it to make sure that it behaves as expected.  You can create a verifier that will take a sample message and run it through the Verifier to ensure that you get the results you need, all without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same way it does through the verifier and you will have the same fields available to the workflow.
 
-### To Add a Verifier
+### Add a Verifier
 
 1. Add a message parser
 2. Click on **Verifiers** > **Edit**
 3. Click on **Add**
-4. Add the name and key
+4. Add the Name and Key
 5. Select a Payload Type
 6. Populate the fields that make up your sample message
 7. Add expected values.  You can use the fields you created as part of the message to add an expected value.
