@@ -12,7 +12,7 @@ updatedby: Kevin D. Wolf
 
 # State Machine - onTransition
 
-When a state machine performs a transiton between states, a method will be called that you can customize.
+When a State Machine performs a transiton between States, a method will be called that you can customize.
 
 ```
 function onTransition() {
@@ -32,7 +32,7 @@ function onTransition(latitude, longitude) {
 }
 ```
 
-The method can be called with an optional parameter.  The value that will be passed in will be added by the [handle](StateMachineSendEvent.md) method that initiates 
-the transition.  If the value is a geolocation both the latitude and longitude will be provided.
+The method can be called with an optional parameter.  The value that will be passed in will be added by the [Handle](StateMachineSendEvent.md) method that initiates 
+the transition.  If the value is a geolocation, both the latitude and longitude will be provided.
 
-You will also have access to the [device properties, attributes](DeviceScriptingModel.md) and state machines and can invoke [output commands]() 
+You will also have access to the [Device Properties, Attributes](DeviceScriptingModel.md) and state machines and can invoke [Output Commands](https://github.com/LagoVista/docs/blob/master/Scripting/OutputCommandCreate.md) 
