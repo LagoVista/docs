@@ -12,8 +12,8 @@ updatedby: klworkman
 
 # State Machines
 
-State Machines are a powerful mechanism for building your application logic.  The idea is relatively simple, but
-when leveraged properly, you can build sophisticated processes that are easy to manage.  When you 
+State Machines are a powerful mechanism for building your application logic.  The idea is relatively simple.
+When leveraged properly, you can build sophisticated processes that are easy to manage.  When you 
 create a State Machine, you take into account the different States your device can be in.  You then define the events that can be applied to your device.  Finally, you define which events 
 should be handled in each State and what should happen when that event occurs.
 
