@@ -2,11 +2,11 @@
 title: Getting Started
 keywords: help, overview, tutorial
 
-status: readyforreview
+status: readyforapproval
 created: 20171002
-updated: 20171002
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 # Getting Started
 
@@ -21,39 +21,37 @@ This Getting Started guide assumes that you have a basic idea of what you want t
 
 #### General Approach
 
-When designing any sort of complex architecture, it is a good idea to decouple the components of your system as much as possible, both for testing and for reuse.  Our system lets you create small, reusable, data-driven configurations for much of what you need to do for any typical IoT system.  Once you have configured your components, you can then assemble them into a fully functional and testable solution.  After a short amount of time, you will assemble a collection of reusable, data-driven components that let you bring on whole new solutions in a small fraction of the time it would take to start from scratch.  
+When designing any sort of complex architecture, it is a good idea to decouple the components of your system as much as possible, both for testing and for reuse.  Our system lets you create small, reusable, data-driven configurations for much of what you need to do for any typical IoT system.  Once you have configured your components, you can then assemble them into a fully functional and testable solution.  After a short amount of time, you will assemble a collection of reusable, data-driven components that lets you bring on whole new solutions in a small fraction of the time it would take to start from scratch.  
 
 ### Without Devices and Sensors, You Cannot Have IoT
 
 Let's start with your devices, sensors and equipment.  The goal of this step is to configure all the specific device types that you want to integrate as well as any messages that they will send and/or receive.
 
 The following assumes that you have decided on some sensors that communicate in a way over which you have no control.  If you are creating your own sensors and communication protocols, you can use the following steps to help capture requirements:
-
-
 1. Define your [Device Types](./Devices/DeviceTypes.md)
 2. Define your [Device Messages](./Devices/DeviceMessages.md)
+ 
  
 ### Define Your Device Workflow
 Now that you have figured out how your devices communicate, let's configure your solution to do something with those messages and data.  In this step, you will:
 1. Configure the [Inputs](./Workflows/Input.md) by mapping the fields from your messages.  
-2. Describe [Attributes](./Workflows/Attributes.md) or data called state that will be 
+2. Describe [Attributes](./Workflows/Attributes.md) or "data called" state that will be 
 saved between device calls.  
 3. Add [Input Commands](./Workflows/InputCommands.md) where you can expose REST-based services to interact with your 
-workflow and ultimately with your devices from third party applications or services.  
+workflow and ultimately with your devices from third-party applications or services.  
 4. Add [State Machines](./Workflows/StateMachines.md) to define how your devices should react to
-incoming data and messages.   Don't worry, this isn't as hard as it sounds!
+incoming data and messages.   Don't worry, this is not as hard as it sounds!
 5. Define your [Output Commands](./Workflows/OutputCommands.md) that will be used to send data or commands back to the device.
 
 
-You can do all of this via a WYSWIG designer, where you can add custom scripts and even calls to your custom code with our container frameworks.
+You can do all of this via a WYSIWIG designer, where you can add custom scripts and even calls to your custom code with our container frameworks.
 
 Remember, you are creating a reusable component, so it does not have to map 1:1 with your devices.  In this step, you just configure what you want to do and then map it to the devices at a later time.
 
 ### Create your Pipeline
 
-To allow for maximum flexibiity and performance, we have chosen a pipeline architecture to process messages.  This allows you to use default modules (where necessary), configure standard modules as needed, and even build a custom module where your needs dictate.  The following is a typical 
+To allow for maximum flexibiity and performance, we have chosen a pipeline architecture to process messages.  This allows you to use default modules (where necessary), configure standard modules as needed, and even build a custom module as your needs dictate.  The following is a typical 
 chain of pipeline modules:
-
 1. [Listener](./PipelineModules/Listener.md) - A mechanism that listens to a port and protocol or subscribes to events or topics from an external server
 1. [Planner](./PipelineModules/Planner.md) - Examines each message for a Message ID and a Device ID, then plans out the rest of the route
 1. [Sentinel](./PipelineModules/Sentinel.md) - Authenticates and potentially decrypts the message
@@ -80,4 +78,4 @@ A solution is a complete specification that will listen for and process messages
 ### Instance
 
 A solution describes how your application should work.  To make it do something, you need to deploy it as an instance.  To deploy it, you need to select a [Deployment Configuration](./Deployment/DeploymentConfiguration.md) that will determine the physical compute
-resources that will be allocated.  You also need to specify a key that will be used to the domain name where you can access your listeners.
+resources that will be allocated.  You also need to specify a key that will be used to identify the domain name where you can access your listeners.
