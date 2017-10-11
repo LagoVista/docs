@@ -2,10 +2,11 @@
 title: Validation
 keywords: messages, messaging, parsing, fields, regex, validation
 
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
@@ -33,7 +34,7 @@ The following are fields that are automatically validated:
 ### Additional Validation
 
 #### For All Storage Type Values  
-Is Required- You can mark the field if it is required to be present.  If it is not present in the message, the message will be considered invalid and
+Is Required - You can mark this field if it is required.  If it is not present in the message, the message will be considered invalid and
 processing will not continue.
 
 #### For String Storage Type Values
