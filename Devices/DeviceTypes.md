@@ -2,24 +2,24 @@
 title: Device Types
 keywords: device, devicetypes, deviceconfiguration
 
-status: new
+status: readyforreview
 created: 20170922
-updated: 20170922
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Devices](Index.md)
 
 # Device Types
 
-Without Devices and Sensors you can't have IoT.  At the heart of any IoT system you will find devices and sensors,
-hopefully you'll be able to find off the shelf hardware but may need to create custom hardware.  Either way these 
-devices and sensors will have attributes such as names, model numbers and so on.
+Without devices and sensors, you cannot have IoT.  At the heart of any IoT system, you will find devices and sensors.
+Hopefully, you will be able to find off-the-shelf hardware but you may need to create custom hardware.  Either way, these 
+devices and sensors will have attributes such as names, model numbers, etc.
 
-You can add device types to help describing devices in your application.  When you create your device type you
-will need to give it a name, key and model number you can also add a manufacturer and other meta data about the device type.
+You can add Device Types to help describe devices in your application.  When you create your Device Type, you
+will need to give it a name, key, and model number.  You can also add a manufacturer and other metadata about the Device Type.
 
-Finally you'll need to add a default [Device Configuration](../Devices/DeviceConfigurations.md).  Since Device Types are used
-to provision new devices the default Device Configuration will be selected but can be overrided. 
+Finally, you will need to add a default [Device Configuration](../Devices/DeviceConfigurations.md).  Since Device Types are used
+to provision new devices, the default Device Configuration will be selected but can be overridden. 
 
  
