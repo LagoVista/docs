@@ -2,6 +2,7 @@
 title: Regular Expression Value Selectors
 keywords: messages, messaging, parsers, fields, regex, regularexpressions
 
+status:readyforreview
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf
@@ -11,9 +12,9 @@ updatedby: Kevin D. Wolf
 
 # Regular Expression Value Selectors
 
-To allow for maximum flexibility in extracting values from your message, we have provided a mechanism to extract a value from a string.
+To allow for maximum flexibility in extracting values from your message, we have provided a mechanism that allows you to extract a value from a string.
 
-Consider the following scenario where your initial selector will find the following string:
+Consider the following scenario, where your initial selector will find the following string:
 ```
 Temperature = 32.0 F
 ```
@@ -28,5 +29,5 @@ If you use a regular expression similar to:
 
 The value that will be used is 32.0
 
-An excellent tool to test your regular expressions is [RegEx101](http://regex101.com).  Also, make sure you take advantage of our 
+An excellent tool to test your regular expressions is [Regular Expressions 101](http://regex101.com).  Also, make sure you take advantage of our 
 [Verifiers](Verifiers.md) to ensure that the parsing process works as you expect. 
