@@ -12,7 +12,7 @@ updatedby: klworkman
 
 # Azure Service Bus
 
-Azure Service Bus is a good choice for listening for incoming messages that will allow incredible scale.
+Azure Service Bus is a good choice for listening for incoming messages, it will allow incredible scale.
 For this option, your devices will communicate directly with  [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/)
 and NuvIoT will subscribe to that bus to receive messages.  Once the message is received, it can participate in
 the standard NuvIoT [Procssing Pipeline](../Index.md), including the Device ID and Message Parsers.
