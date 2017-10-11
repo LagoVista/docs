@@ -11,8 +11,11 @@ updatedby: Kevin D. Wolf
 [Home](../Index.md) > [Deployment](Index.md)
 
 # Solution
-NuvIoT is made up of a number of reusable components such as [listeners](../PipelineModules/Listener.md), 
-[routes](../Routes/Route.md), [workflows](../Workflows/Index.md), [message](../Messaging/Index.md) as well as many more.
+NuvIoT is made up of a number of reusable components, including:
+*  [Listeners](../PipelineModules/Listener.md) 
+*  [Routes](../Routes/Route.md)
+*  [Workflows](../Workflows/Index.md)
+*  [Message](../Messaging/Index.md)
 
-A solution is how you take all of those reusable components you have created and assemble them into an IoT Application.  Once you
-have created your solution you will able able deploy an [instance](Instance.md) of it to a [host](Host.md).
+A solution represents how you take all of the reusable components you have created and assemble them into an IoT Application.  Once you
+have created your solution, you will able to deploy an [Instance](Instance.md) of it to a [Host](Host.md).
