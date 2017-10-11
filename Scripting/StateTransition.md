@@ -2,7 +2,7 @@
 title: State Machine - onTransition 
 keywords: workflow, scripting, ontransition, statemachine
 
-status: issues [Device Properties, Attributes] link to this: DeviceScriptingModel.md Should Device Properties link to sep page? 
+status: issues [Device Properties, Attributes] link to single page, are they 2 separate links or 1? 
 created: 20171009
 updated: 20171011
 createdby: Kevin D. Wolf
