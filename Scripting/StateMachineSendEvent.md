@@ -1,5 +1,5 @@
 ---
-title: State Machine - handle
+title: State Machine - Handle
 keywords: workflow, scripting, handle, statemchine
 
 status: readyforreview
@@ -10,12 +10,12 @@ updatedby: Kevin D. Wolf
 ---
 [Home](../Index.md) > [Scripting](Index.md)
 
-# State Machine - handle
+# State Machine - Handle
 
 Within any of the scripts within your workflow, you can send an event to 
-a state machine.  For our example we will have a [state machine](../Workflows/StateMachines.md) with a [key](../Topics/Keys.md) of 
-`mystatemachine`.  That state machine will have an event called `event1` defined.  To cause the 
-state machine to handle that event you can use the following script:
+a State Machine.  For this example, we will have a [State Machine](../Workflows/StateMachines.md) with a [Key](../Topics/Keys.md) of 
+`mystatemachine`.  That State Machine will have an event called `event1` defined.  To cause the 
+State Machine to handle that event, you can use the following script:
 
 ```
 // Handle an event without a parameter
