@@ -2,11 +2,11 @@
 title: Parsing with Topics
 keywords: messages, messaging, parsing, regex, regularexpression
 
-status: readyforreview
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
