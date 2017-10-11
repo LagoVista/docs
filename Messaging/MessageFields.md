@@ -2,7 +2,7 @@
 title: Device Messaging
 keywords: messages, messaging, devices
 
-status:new
+status:  new
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf
