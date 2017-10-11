@@ -1,11 +1,12 @@
-﻿---
+---
 title: Parsing from Body or Payload
 keywords: messages, messaging, devices, parsing, payload, body, post, form, text, http, rest
 
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
