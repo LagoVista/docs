@@ -1,4 +1,4 @@
-﻿---
+---
 title: Parsing from a Path
 keywords: messages, messaging, parsing, rest, querystring, path, http
 
