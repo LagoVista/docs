@@ -1,4 +1,4 @@
-﻿---
+---
 title: Parsing from a Query String
 keywords: messages, messaging, parsing, rest, querystring, http
 
