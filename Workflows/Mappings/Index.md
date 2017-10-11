@@ -2,11 +2,11 @@
 title: Workflow Mapping
 keywords: workflow, mapping
 
-status: readyforreview
+status: readyforapproval
 created: 20171009
-updated: 20171009
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Workflow](../Index.md) 
 
@@ -32,4 +32,4 @@ updatedby: Kevin D. Wolf
 [State Machine to Output Command](StateMachineToOutputCommand.md)  
 
 ### Mappings from Output Commands
-There are no mappings from output commands to any other nodes since they are only outputs
+There are no mappings from output commands to any other nodes since they are only outputs.
