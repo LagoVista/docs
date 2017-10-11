@@ -2,25 +2,25 @@
 title: Azure IoT Hub Device Repository
 keywords: device, devicerepo, azureiothub
 
-status: readyforreview
+status: readyforapproval
 created: 20170922
-updated: 20170922
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Devices](Index.md)
 
 # Device Messages
 
-IoT is all about devices and sensors communicating with the cloud.  These conversations are called messages.  Device Messages can
-be sent either from the device to the cloud or sent from the cloud back to the device.  If you are using an off-the-shelf type of 
-device, you will likely not have the ability to change the message format.
+IoT is all about devices and sensors communicating with the cloud.  These conversations are called Messages.  Device Messages can
+be sent either from the device to the cloud or from the cloud back to the device.  If you are using an off-the-shelf type of 
+device, you will probably not have the ability to change the message format.
 
 Since messages play such a huge part of any IoT implementation, one of the first things you will do is add device messages. 
 When you add your messages, you do not associate them with any specific device type or configuration. You do this so that you can
 reuse message definitions on many different configurations.
 
-When we define our device messages, we don't simply give it a name and [Key](../Topics/Keys.md),we describe the messages in a level of detail that ensures that the NuvIoT platform has enough information to extract or parse individual fields
+When you define your Device Messages, you don't simply give them a name and [Key](../Topics/Keys.md), you describe the messages at a level of detail that ensures that the NuvIoT platform has enough information to extract or parse individual fields
 from the message payload.  In addition, to identify the message, each message usually has some sort of Message ID.
 
 Messages can contain useful data, including headers, path, query string, and body for HTTP type of messages or topics 
@@ -29,7 +29,7 @@ bytes.
 
 The data associated with things like headers, path, query strings and topics generally, but not always, contains metadata about the 
 message, such as Device and Message ID. The main content of the message is typically found in the payload.  Metadata is generally
-made up of string values that can easily be parsed, payloads can contain either binary or string values.
+made up of string values that can easily be parsed. Payloads can contain either binary or string values.
 
 NuvIoT supports parsing both string and binary payloads.
 
