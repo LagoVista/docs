@@ -15,7 +15,7 @@ updatedby: klworkman
 You can provide a link to your Azure Event Hub to consume messages.  This will allow you
 to use your own front end to capture the events and use NuvIoT to process messages and perform workflows.
 
-You must have an [Azure Account](https://portal.azure.com) and have a configured [Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/).
+You must have an [Azure Account](https://portal.azure.com) and a configured [Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/).
 
 If you need help getting started, [Contact Us](http://support.nuviot.com) and we will put you in touch with one 
 of our implementation partners to help you get going.
@@ -31,23 +31,23 @@ In addition to the standard fields that are required for any listener, the follo
 * Listener Type 
 `Azure Event Hub`
 
-* Content Type  
+* Content Type    
 Select the [Content Type](../../Messaging/ContentTypes.md) of the message that you are expecting.  All Content Types are acceptable.
 
-* Host Name 
+* Host Name   
 The Host Name of the Event Hub Resource you created in Azure.  For example in
 ```sb://myeventhub.servicebus.windows.net``` the Host Name would be ```myeventhub.servicebus.windows.net```
 
-* Resource Name  
+* Resource Name    
 The name of the specific Event Hub you wish to listen on.
 
-* Access Key  
+* Access Key    
 The Primary or Secondary Key to allow access to your Event Hub.  No keys are stored in plain text.
 
 ### Optional Fields
 
-* Access Key Name 
+* Access Key Name   
 Enter a custom Policy/Access Key name where applicable.  If you leave this blank, the default will be: ```RootManageSharedAccessKey``` 
 
-* Consumer Group 
+* Consumer Group   
 If you wish to listen on a specific Consumer Group, enter it here.  If this is left blank, you will connect to the ```[$Default]``` Consumer Group.
