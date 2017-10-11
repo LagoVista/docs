@@ -2,7 +2,7 @@
 title: Verifiers
 keywords: messages, messaging, verifiers, samplemessages
 
-status:readyforreview
+status:  readyforreview
 created: 20170927
 updated: 20171011
 createdby: Kevin D. Wolf
