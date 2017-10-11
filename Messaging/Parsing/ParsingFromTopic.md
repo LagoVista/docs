@@ -1,4 +1,4 @@
-﻿---
+---
 title: Parsing with Topics
 keywords: messages, messaging, parsing, regex, regularexpression
 
