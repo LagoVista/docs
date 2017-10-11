@@ -2,16 +2,17 @@
 title: Device Messaging
 keywords: messages, messaging, devices
 
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md)
 
 # Device Messaging
 
-Devices communicate with the servers by sending and receiving messages.  You should define all messages
+Devices communicate with servers by sending and receiving messages.  You should define all messages
 that you want your application to send and receive.  As part of this, you will define the format that your message will use.
 Examples of formats include: JSON, XML, Binary, Delimited, etc.  
 
