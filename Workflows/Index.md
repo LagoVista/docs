@@ -2,7 +2,7 @@
 
 # Workflow
 
-Workflows will allow you to provide custom logic that can be applied to your incoming messages.
+Workflows allow you to provide custom logic that can be applied to your incoming messages.
 
 * [Attributes](Attributes.md) - Properties that represent the current state of your device
 * [Inputs](Input.md) - New values that arrive from incoming messages
