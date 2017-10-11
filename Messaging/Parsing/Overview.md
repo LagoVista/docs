@@ -81,7 +81,7 @@ Note:  Arrays are not currently supported.  Please [Contact Us](http://support.n
 For textual values, use a [Regular Expression](RegExValueSelector.md) to extract a value. 
 
 ### Validating Message Values
-Once a value is extracted, you can use three mechanisms to [Validate](Validation.md) the value prior to using it in your workflow.
+Once a value is extracted, you can use available mechanisms to [Validate](Validation.md) the value prior to using it in your workflow.
 
 
 
