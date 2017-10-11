@@ -4,7 +4,7 @@ keywords: messages, messaging, verifiers, samplemessages
 
 status:readyforreview
 created: 20170927
-updated: 20171010
+updated: 20171011
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
