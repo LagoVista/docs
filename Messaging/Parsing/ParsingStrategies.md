@@ -2,19 +2,20 @@
 title: Parsing Strategies
 keywords: messages, messaging, parsing, payload, header
 
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171011
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](Index.md) > [Device Messaging](../Index.md)
 
 # Parsing Strategies
 
-Values can be parsed to find a Message Id and Device ID or values from the message payload.
+Values can be parsed to find a Message ID and Device ID or values from the message payload.
 
 ### Device Id and Message Id
-One of the responsibilities of the [planner](../../PipelineModules/Planner.md) is to extract a Message ID from the device.  You will need to create parsers to extract these values.
+One of the responsibilities of the [Planner](../../PipelineModules/Planner.md) is to extract a Message ID from the device.  You will need to create parsers to extract these values.
 
 ### Payload
 Your message is likely to contain a number of attributes to extract that will be used in workflow processing.  These values are defined as part of the message and are considered the message payload.
