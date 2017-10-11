@@ -56,7 +56,7 @@ There are two parts to defining how values are parsed out of a message.  First, 
 There are three important parts of defining how your messages are parsed and used, including: 
 * [Key](../../Topics/Keys.md) - The key identifies this value as it is used to further process the message
 * [Search Location](#Search-Location) - The listener populates different components that can be used to search for message values
-* [Storage Type](#Storage-Types) - This is the data type that is used to identify the data
+* [Storage Type](../TypeSystem/Index.md) - This is the data type that is used to identify the data
 
 
 #### Search Locations
