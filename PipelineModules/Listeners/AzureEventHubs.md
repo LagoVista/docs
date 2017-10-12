@@ -4,7 +4,7 @@ keywords: listener, cloud, azure, eventhub, messagequeue
 
 status: readyforapproval
 created: 20170922
-updated: 20171011
+updated: 20171012
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
@@ -22,7 +22,7 @@ of our implementation partners to help you get going.
 
 The next steps assume that you have been able to successfully [Create an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) and have access to the necessary credentials.
 
-First, create a [Listener](../Listener.md) and select the Listener Type of Event Hub.
+First, create a [Listener](../Listener.md) and select the Listener Type of **Event Hub**.
 
 ### Required Fields
 
@@ -50,4 +50,4 @@ The Primary or Secondary Key to allow access to your Event Hub.  No keys are sto
 Enter a custom Policy/Access Key name where applicable.  If you leave this blank, the default will be: ```RootManageSharedAccessKey``` 
 
 * Consumer Group   
-If you wish to listen on a specific Consumer Group, enter it here.  If this is left blank, you will connect to the ```[$Default]``` Consumer Group.
+If you wish to listen in on a specific Consumer Group, enter it here.  If this is left blank, you will connect to the ```[$Default]``` Consumer Group.
