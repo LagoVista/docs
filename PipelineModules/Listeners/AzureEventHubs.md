@@ -20,7 +20,7 @@ You must have an [Azure Account](https://portal.azure.com) and a configured [Eve
 If you need help getting started, [Contact Us](http://support.nuviot.com) and we will put you in touch with one 
 of our implementation partners to help you get going.
 
-The next steps assume that you have [Successfully Created an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) and have access to the necessary credentials.
+The next steps assume that you have been able to successfully [Create an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) and have access to the necessary credentials.
 
 First, create a [Listener](../Listener.md) and select the Listener Type of Event Hub.
 
