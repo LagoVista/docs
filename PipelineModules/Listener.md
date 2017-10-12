@@ -43,4 +43,4 @@ With queue-based pipeline architecture, your Listener will almost always be a po
 both in terms of high availability and performance.
 
 Note:  At this time, high availability architecture for the Listeners has been designed but not implemented.  This includes
-geo-redundant load balancers.  If you are in need of this, please [Contact Us] (http:/NuvIoT/support) and we will work with you to help understand this approach and ensure that it is in place prior to your system going live.
+geo-redundant load balancers.  If you are in need of this, please [Contact Us](http://support.nuviot.com) and we will work with you to help understand this approach and ensure that it is in place prior to your system going live.
