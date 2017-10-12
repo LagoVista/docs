@@ -2,9 +2,9 @@
 title: Getting Started
 keywords: help, overview, tutorial
 
-status: readyforapproval
+status: issues links in process, new, or nonexistent
 created: 20171002
-updated: 20171011
+updated: 20171012
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
