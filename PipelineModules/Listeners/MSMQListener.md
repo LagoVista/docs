@@ -32,6 +32,6 @@ User Name with access priveleges to your MQTT Server (if not an anonymous connec
 Password with access priveleges to your MQTT Server (if not an anonymous connection).
 
 * Listen on Port     
-The port that you want to listen for MQTT connections.  This is usually 1883, but you can add additional listeners that run on different ports.  
+The port that you want to use to listen for MQTT connections.  This is usually 1883, but you can add additional listeners that run on different ports.  
 
-**NOTE:**  As this is a low-volume listener, primarily intendend for development and non-critical applications, SSL/TLS connections are not supported. 
+**NOTE:**  Since this is a low-volume listener, primarily intendend for development and non-critical applications, SSL/TLS connections are not supported. 
