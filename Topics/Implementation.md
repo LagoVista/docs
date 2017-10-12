@@ -21,7 +21,7 @@ IoT App Studio lets you define messages and fields that will be sent by your dev
 value comes in doing something with the data.  You can use a graphical user interface to map processes and check conditions using the 
 data contained in messages from your device.  
 
-1. [Pipeline Modules](../PipelineModules/Index.md) - To support ultimate flexibility, you chain together a set of Pipeline 
+1. [Pipeline Modules](../PipelineModules/Index.md) - To support ultimate flexibility, chain together a set of Pipeline 
 Modules that will act on the device messages as they are received.  A typical chain includes:
 
     1. [Sentinel](../PipelineModules/Sentinel.md) - Performs security checks
@@ -36,14 +36,14 @@ your Listeners are configured and can choose from options such as listening on a
 
 1. [Planner](../PipelineModules/Planner.md) - Next, the Planner takes the message from the listener and decides how it should be processed.  It uses parsers you configure to extract the Device ID and optionally a Message ID. This information is then used to determine how the device messages should be processed. 
 
-1. [Device Configuration](../Devices/DeviceConfigurations.md) - To pull all of the above components together, you create a Device Configuration. A Device Configuration 
+1. [Device Configuration](../Devices/DeviceConfigurations.md) - To pull all of the above components together, create a Device Configuration. A Device Configuration 
 consists of a collection of routes.  Routes are used to map an incoming message to how it will be processed.
 
-1. [Device Repository](../Devices/DeviceRepositories.md) - To help organize your devices, you define and allocate storage in the form of a Device Repository.
+1. [Device Repository](../Devices/DeviceRepositories.md) - To help organize your devices, define and allocate storage in the form of a Device Repository.
 
 1. [Solution](../Deployment/Solution.md) - All of the above items make up reusable components that you can assemble into a Solution.
 
-1. [Instance](../Deployment/Instance.md) - After you have created your solution, you will choose the compute resources and hardware configuration and deploy your 
+1. [Instance](../Deployment/Instance.md) - After you have created your solution, choose the compute resources and hardware configuration and deploy your 
 Solution to an Instance. 
     
 
