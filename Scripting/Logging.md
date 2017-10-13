@@ -18,7 +18,7 @@ While developing your scripts, there are some options for writing data and messa
 #### Device Log
 
 You can write a value to the Device Log.  Values that are written to the Device Log are saved between
-sessions and are available until the Device Log is cleared or the device is removed.
+sessions and are available until the log is cleared or the device is removed.
 
 To see the values that are written, click on **Device Log** in the Device Explorer. The Device Log
 is also available via API.
