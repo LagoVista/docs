@@ -2,22 +2,22 @@
 title: Working with Attributes
 keywords: workflow, scripting, attribute
 
-status: readyforreview
+status: readyforapproval
 created: 20171002
-updated: 20171002
+updated: 20171013
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Scripting](Index.md)
 
 # Working with Attributes
 
-When working with scripts that have access to your device, you have access to read, write and clear [attributes](../Workflows/Attributes.md).
+When working with scripts that have access to your device, you are able to read, write and clear [Attributes](../Workflows/Attributes.md).
 
-While editing your script you will have access to the entire [Device](DeviceScriptingModel.md) and [Device Workflow](DeviceWorkflowScriptingModel.md) data.
+While editing your script, you have access to the entire [Device](DeviceScriptingModel.md) and [Device Workflow](DeviceWorkflowScriptingModel.md) data.
 
 ##### Setting an Attribute
-If you have a named attribute `temperature` on your workflow you can get and set it with any scripts associated 
+If you have a named Attribute, `temperature`, on your workflow, you can get and set it with any scripts associated 
 with the workflow.
 
 The script template that will set the value will look as follows:
@@ -27,9 +27,9 @@ function onXXXX(value) {
     Attributes.temperature.value = value;
 };
 ```
-It's important to realize that each [Attribute](../Workflows/Attributes.md) has a [specific data type](../Messaging/TypeSystem/Index.md) assigned to it.  When
-you assign a new value, the type should match.  If the type should match if it doesn't an attempt will be made to convert
-the assigned value to the correct type.  This will cause an error and the entire device transition will fail
+It is important to realize that each [Attribute](../Workflows/Attributes.md) has a specific [Data Type](../Messaging/TypeSystem/Index.md) assigned to it.  When
+you assign a new value, the type should match.  If the type does not match, an attempt will be made to convert
+the assigned value to the correct type.  This will cause an error and the entire device transition will fail.
 
 
 ##### Getting an Attribute
@@ -42,7 +42,7 @@ function onXXXX(value) {
 ```
 
 ##### Clearing an Attribute
-The script that clears an attribute will look as follows:
+The script that clears an Attribute will look as follows:
 
 ```
 function onXXXX(value) {
