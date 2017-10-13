@@ -2,11 +2,11 @@
 title: Devices
 keywords: device, devicerepo, azureiothub, index, deviceconfiguratio, devicetype
 
-status: readyforreview
+status: readyforapproval
 created: 20170922
-updated: 20170922
+updated: 20171013
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md)
 
