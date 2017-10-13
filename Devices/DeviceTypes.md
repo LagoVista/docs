@@ -2,9 +2,9 @@
 title: Device Types
 keywords: device, devicetypes, deviceconfiguration
 
-status: readyforreview
+status: readyforapproval
 created: 20170922
-updated: 20171011
+updated: 20171013
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
