@@ -2,25 +2,25 @@
 title: Scripting Property Bag
 keywords: workflow, scripting, properties, storage
 
-status: readyforreview
+status: readyforapproval
 created: 20171007
-updated: 20171007
+updated: 20171013
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Scripting](Index.md)
 
 # Property Bag
 
-Your device contains the concept of a property bag.  This is a free from key-value-pair storage type where you can add values in your workflow that will
-be persisted between workflow invocations.  This is similar to an [Attribute](../Workflows/Attributes.md) but these values are scoped private to  the device
-that is to say that they can not be accessed other than through a workflow.
+Your device contains the concept of a Property Bag.  This is a free, from key-value pair storage type where you can add values in your workflow that will
+be persisted between workflow invocations.  This is similar to an [Attribute](../Workflows/Attributes.md), but these values are scoped as private to the device.
+This means that they cannot be accessed other than through a workflow.
 
-**Note 1:** Values put in a property bag are scoped at the device level, that is to say if you put a property called `length` into the property bag in 
-one [workflow](../Workflows/Index.md), any other [workflows](../Workflows/Index.md) have access to both get and set that value.
+**Note 1:** Values put in a Property Bag are scoped at the device level.  That is to say, if you put a property called `length` into the Property Bag in 
+one [Workflow](../Workflows/Index.md), any other workflows have access to both get and set that value.
 
-**Note 2:** Values put into a property bag maintain their types.  If you put in a `number`, when you get it at a later time, you will also receive a
-value that has the JavaScript type of `number`
+**Note 2:** Values put into a Property Bag maintain their types.  If you put in a `number`, when you get it at a later time, you will also receive a
+value that has the JavaScript type of `number`.
   
 
 #### Adding an Item
@@ -70,7 +70,7 @@ function onSet(value) {
 
 #### Clearing a Value
 
-**Note:** Clearing a value that does not exist in the property bag will **not** be considered an error.
+**Note:** Clearing a value that does not exist in the Property Bag will **not** be considered an error.
 
 ```
 function onSet(value) {
@@ -82,4 +82,4 @@ function onSet(value) {
 
 #### Supported Data Types
 
-The following types in JavaScript are supported `date`,`number`,`string` and JSON object graphs are stored as `object`
+The following types in JavaScript are supported: `date`,`number`, and`string`.  In addition, JSON object graphs are stored as `object`.
