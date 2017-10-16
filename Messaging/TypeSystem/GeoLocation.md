@@ -2,20 +2,20 @@
 title: Working with Geolocation Values
 keywords: messages, messaging, parsing, fields, geo, geolocation, latitude, longitude, location
 
-status: readyforreview
+status: readyforapproval
 created: 20170927
-updated: 20170927
+updated: 20171016
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)
 
 # Working with Geolocation Values
 
-In addition to the basic types, NuvIoT supports a native format for working with geolocation values.
+In addition to the basic types, NuvIoT supports a native format for working with Geolocation Values.
 
 ## Storage Format
-To maintain consistency, we normalize any geolocation values to two decimal numbers with six digits to the right of the decimal point that are stored as strings.
+To maintain consistency, we normalize geolocation values to two decimal numbers with six digits to the right of the decimal point, stored as strings.
 
 We then convert those two decimal numbers to string values and concatenate them with a comma.  Latitude will be the first number and longitude will be the second number.
 
