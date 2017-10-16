@@ -38,7 +38,6 @@ Use the standard three or four-character notation such as x34 or 0x34.
    ```
 
 **Option 3**
-
 Use a continuous stream of hex values. Note that this **must** always have an even length.
 
    Example:
