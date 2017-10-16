@@ -14,62 +14,62 @@ updatedby: Kevin D. Wolf
 ### Simulator Settings
 
 
-**Name** (*Required*)  
-Name of the Simulator
+1.Name (*Required*)     
+Name of Simulator   
 
-**Key** (*Required*)  
-A [unique key](../Topics/Keys.md) to identify the message
+2, Key (*Required*)     
+[Unique Key](../Topics/Keys.md) to identify the message   
 
-**Transport** (*Required*)  
-For an Azure Service Bus simulator this should be `Azure Service Bus`
+3. Transport (*Required*)       
+`Azure Service Bus`   
 
-**Default End Point** (*Required*)  
-The name of your event hub resource as created in Azure, this should only be the name not the full event hub url such as `myservicebus` not ~~`myservicebus.servicebus.windows.net`~~
+4. Default End Point (*Required*)  
+Name of your Event Hub resource as created in Azure, such as `myservicebus`.  This should not be the full Event Hub URL, ~~`myservicebus.servicebus.windows.net`~~
 
-**Hub Name** (*Required*)  
-Name of the actual event hub where you will be publishing your messages.
+5. Hub Name (*Required*)  
+Name of the actual Event Hub where you will be publishing your messages
 
-**Device Id**  
-The Device ID that will be used to send along with each message
+6. Device ID  
+Device ID that will be used to send along with each message
 
-**Access Key Name** (*Required*)  
+7. Access Key Name (*Required*)  
 Name of the Access Key for the provided SAS Policy that has `Send` privileges
 
-**Access Key**  (*Required*)  
-Key that has `Send` privileges for the supplied **Access Key Name**
+8. Access Key (*Required*)  
+Key that has `Send` privileges for the supplied Access Key Name
 
-**Default Payload Type**  (*Required*)  
-The default format of the payload you will send with each message, it can be either a simple string or [binary](BinaryContent.md)
+9. Default Payload Type (*Required*)  
+Default format of the payload you will send with each message, it can be either a simple string or [Binary](BinaryContent.md)
 
-**Description**  
-Free form text use to provide notes for your simulator
+10. Description  
+Free-form text use to provide notes for your simulator
 
-### Message Setting
+### Message Settings
 
-**Name**  (*Required*)  
+1. Name (*Required*)  
 Name of the Message
 
-**Key** (*Required*)  
-A [unique key](../Topics/Keys.md) to identify the message
+2. Key (*Required*)  
+A [Unique Key](../Topics/Keys.md) to identify the message
 
-**Payload Type** (*Required*)  
-Either send a Text Message or a Binary message, in almost all cases this will be text.
+3. Payload Type (*Required*)  
+Text or Binary message.  In most cases, this will be text.
 
-**Append CR (0x0D)**  
-If set the ascii character 0x0D will be appended to the message
+4. Append CR (0x0D)  
+ASCII character 0x0D will be appended to the message
 
-**Append LF (0x0A)**  
-If set the ascii character 0x0D will be appended to the message
+5. Append LF (0x0A)  
+ASCII character 0x0D will be appended to the message
 
-**Note:** *Based on your Payload Type you can add either a text or binary messsage*
+6. Text or Binary Message
+Based on your Payload Type, you can add either a text or binary messsage.
+    * Text  
+      Add content to be sent as the body of the message.  This allows for [Tag Replacement](DynamicFields.md)
 
-**Text**  
-Add any content that will be sent as the body of the message [allows for tag replacement](DynamicFields.md)
+      *or*
 
--or-
-
-**Binary**  
+    * Binary    
 [Binary Content](BinaryContent.md) to be sent as a message
 
-**Dynamic Attributes** (*For Text Paylaods Only*)  
+7. Dynamic Attributes (*For Text Paylaods Only*)  
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
