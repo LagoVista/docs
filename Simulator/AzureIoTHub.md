@@ -20,19 +20,19 @@ Name of the Simulator
 A [Unique Key](../Topics/Keys.md) to identify the message
 
 3. Transport (*Required*)  
-For an Azure IoT Hub Simulator, this should be `Azure IoT Hub`
+`Azure IoT Hub`
 
 4. Default End Point (*Required*)  
 This is the full URL of your IoT hub. It should be something similar to `myiothub.azure-devices.net`
 
 5. Access Key (*Required*)  
-The primary key for the Device ID as specified for this simulator.
+The primary key for the Device ID as specified for this simulator
 
 6. Device Id (*Required*)    
 Device ID that has been allocated on your Azure IoT Hub
 
 7. Default Payload Type (*Required*)  
-Default format of the payload you will send with each message.  This can be either a simple string or [Binary](BinaryContent.md)
+Default format of the payload you will send with each message.  This can be either a simple string or [Binary](BinaryContent.md).
 
 8. Description  
 Free-form text used to provide notes for your simulator
@@ -57,17 +57,13 @@ ASCII character 0x0D, if set, will be appended to the message
 6. Append LF (0x0A)  
 ASCII character 0x0A, if set, will be appended to the message
 
-**NOTE**: Based on your Payload Type, you can add either a Text or Binary messsage.
-
 7. Text or Binary Message
-This is based on your Payload Type
+This is based on your Payload Type, select either Text **or** Binary.
    * Text  
      Add any content that will be sent as the body of the message.  This option allows for [Tag Replacement](DynamicFields.md)
-
-     *or*
 
    * Binary  
      [Binary Content](BinaryContent.md) to be sent as a message
 
-8. Dynamic Attributes (*For Text Paylaods Only*)  
+8. Dynamic Attributes (*For Text Payloads Only*)  
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
