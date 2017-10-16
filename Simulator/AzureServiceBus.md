@@ -2,11 +2,11 @@
 title: Azure Service Bus Simulator
 keywords: simulator, messaging, windows, servicebus
 
-status: readyforreview
+status: readyforapproval
 created: 20171003
-updated: 20171003
+updated: 20171016
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
 # Azure Service Bus Simulator
