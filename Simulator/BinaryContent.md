@@ -37,7 +37,7 @@ Use the standard three or four-character notation such as x34 or 0x34.
    0x02 0x24 0x03 0x52 0x5A 0x5C 0x3F 0x21 0x04 0x05
    ```
 
-**Option 3**
+**Option 3**   
 Use a continuous stream of hex values. Note that this **must** always have an even length.
 
    Example:
