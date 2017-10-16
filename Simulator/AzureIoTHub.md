@@ -2,69 +2,72 @@
 title: Azure IoT Hub Simulator
 keywords: simulator, windows, azureiothub
 
+status: readyforapproval
 created: 20171003
-updated: 20171003
+updated: 20171016
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
 # Azure IoT Hub Simulator
 
 ### Simulator Settings
 
-**Name** (*Required*)  
+1. Name (*Required*)  
 Name of the Simulator
 
-**Key** (*Required*)  
-A [unique key](../Topics/Keys.md) to identify the message
+2. Key (*Required*)  
+A [Unique Key](../Topics/Keys.md) to identify the message
 
-**Transport** (*Required*)  
-For an Azure IoT Hub simulator this should be `Azure IoT Hub`
+3. Transport (*Required*)  
+For an Azure IoT Hub Simulator, this should be `Azure IoT Hub`
 
-**Default End Point** (*Required*)  
-This is the full url of your IoT hub, it should be something similar to `myiothub.azure-devices.net`
+4. Default End Point (*Required*)  
+This is the full URL of your IoT hub. It should be something similar to `myiothub.azure-devices.net`
 
-**Access Key** (*Required*)  
-The Primary key for For the device id as specified for this simulator.
+5. Access Key (*Required*)  
+The primary key for the Device ID as specified for this simulator.
 
-**Device Id** (*Required*)    
-A device id that has been allocated on your Azure IoT Hub
+6. Device Id (*Required*)    
+Device ID that has been allocated on your Azure IoT Hub
 
-**Default Payload Type**  (*Required*)  
-The default format of the payload you will send with each message, it can be either a simple string or [binary](BinaryContent.md)
+7. Default Payload Type (*Required*)  
+Default format of the payload you will send with each message.  This can be either a simple string or [Binary](BinaryContent.md)
 
-**Description**  
-Free form text use to provide notes for your simulator
+8. Description  
+Free-form text used to provide notes for your simulator
 
 ### Message Setting
 
-**Name**  
+1. Name  
 Name of the Message
 
-**Key**  
-A [unique key](../Topics/Keys.md) to identify the message
+2. Key  
+[Unique Key](../Topics/Keys.md) to identify the message
 
-**Payload Type**  (*Required*)  
-Either send a Text Message or a Binary message, in almost all cases this will be text.
+3. Payload Type (*Required*)  
+Text or Binary message.  In most cases, you will send a Text message.
 
-**Topic**  
+4. Topic  
 Topic in which to publish your message
 
-**Append CR (0x0D)**  
-If set the ascii character 0x0D will be appended to the message
+5. Append CR (0x0D) 
+ASCII character 0x0D, if set, will be appended to the message
 
-**Append LF (0x0A)**  
-If set the ascii character 0x0A will be appended to the message
+6. Append LF (0x0A)  
+ASCII character 0x0A, if set, will be appended to the message
 
-NOTE: *Based on your Payload Type you can add either a text or binary messsage*
+**NOTE**: Based on your Payload Type, you can add either a Text or Binary messsage.
 
-**Text**  
-Add any content that will be sent as the body of the message [allows for tag replacement](DynamicFields.md)
+7. Text or Binary Message
+This is based on your Payload Type
+   * Text  
+     Add any content that will be sent as the body of the message.  This option allows for [Tag Replacement](DynamicFields.md)
 
--or-
+     *or*
 
-**Binary**  
-[Binary Content](BinaryContent.md) to be sent as a message
+   * Binary  
+     [Binary Content](BinaryContent.md) to be sent as a message
 
-**Dynamic Attributes** (*For Text Paylaods Only*)  
+8. Dynamic Attributes (*For Text Paylaods Only*)  
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
