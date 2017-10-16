@@ -14,10 +14,10 @@ updatedby: Kevin D. Wolf
 ### Simulator Settings
 
 
-1.Name (*Required*)     
+1. Name (*Required*)     
 Name of Simulator   
 
-2, Key (*Required*)     
+2. Key (*Required*)     
 [Unique Key](../Topics/Keys.md) to identify the message   
 
 3. Transport (*Required*)       
