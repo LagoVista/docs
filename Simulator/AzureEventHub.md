@@ -62,12 +62,11 @@ ASCII character 0x0D, if set, will be appended to the message
 ASCII character 0x0D, if set, will be appended to the message
 
 6. Text or Binary Message   
-Based on your Payload Type:
+Based on your Payload Type, select either Text **or** Binary
    * Text    
      Content to be sent as the body of the message.  This selection allows for [Tag Replacement](DynamicFields.md).   
-     *or*   
    * Binary    
      [Binary Content](BinaryContent.md) to be sent as a message   
 
-7. Dynamic Attributes (*For Text Paylaods Only*)    
+7. Dynamic Attributes (*For Text Payloads Only*)    
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
