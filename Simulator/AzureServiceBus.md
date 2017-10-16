@@ -24,7 +24,8 @@ Name of Simulator
 `Azure Service Bus`   
 
 4. Default End Point (*Required*)  
-Name of your Event Hub resource as created in Azure, such as `myservicebus`.  This should not be the full Event Hub URL, ~~`myservicebus.servicebus.windows.net`~~
+Name of your Event Hub resource as created in Azure, such as `myservicebus`.  
+**Note:** This should not be the full Event Hub URL, such as: ~~`myservicebus.servicebus.windows.net`~~
 
 5. Hub Name (*Required*)  
 Name of the actual Event Hub where you will be publishing your messages
@@ -39,10 +40,10 @@ Name of the Access Key for the provided SAS Policy that has `Send` privileges
 Key that has `Send` privileges for the supplied Access Key Name
 
 9. Default Payload Type (*Required*)  
-Default format of the payload you will send with each message, it can be either a simple string or [Binary](BinaryContent.md)
+Default format of the payload you will send with each message.  It can be either a simple string or [Binary](BinaryContent.md).
 
 10. Description  
-Free-form text use to provide notes for your simulator
+Free-form text used to provide notes for your simulator
 
 ### Message Settings
 
@@ -50,7 +51,7 @@ Free-form text use to provide notes for your simulator
 Name of the Message
 
 2. Key (*Required*)  
-A [Unique Key](../Topics/Keys.md) to identify the message
+[Unique Key](../Topics/Keys.md) to identify the message
 
 3. Payload Type (*Required*)  
 Text or Binary message.  In most cases, this will be text.
@@ -62,7 +63,7 @@ ASCII character 0x0D will be appended to the message
 ASCII character 0x0D will be appended to the message
 
 6. Text or Binary Message
-Based on your Payload Type, you can add either a text or binary messsage.
+Based on your Payload Type, you can add either a text or binary message.
     * Text  
       Add content to be sent as the body of the message.  This allows for [Tag Replacement](DynamicFields.md)
 
@@ -71,5 +72,5 @@ Based on your Payload Type, you can add either a text or binary messsage.
     * Binary    
 [Binary Content](BinaryContent.md) to be sent as a message
 
-7. Dynamic Attributes (*For Text Paylaods Only*)  
+7. Dynamic Attributes (*For Text Payloads Only*)  
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
