@@ -20,7 +20,7 @@ To add a Binary message, you have three options, and all use the process of addi
 Use two-character values that represent the hex values that will be sent.  The hex alpha characters are case-independent but
 since they are hex identifiers, they must be A-F.
 
-   ##### Example
+   Example:
    ```
    02 24 03 52 5A 5C 3F 21 04 05
    ```
@@ -28,7 +28,7 @@ since they are hex identifiers, they must be A-F.
 **Option 2**   
 Use the standard three or four-character notation such as x34 or 0x34.
 
-   ##### Example
+   Example:
    ```
    x02 x24 x03 x52 x5A x5C x3F x21 x04 x05
    ```
@@ -41,7 +41,7 @@ Use the standard three or four-character notation such as x34 or 0x34.
 
 Use a continuous stream of hex values. Note that this **must** always have an even length.
 
-   ##### Example
+   Example:
    ```
    022403525A5C3F210405
    ```
