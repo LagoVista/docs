@@ -77,5 +77,5 @@ A solution is a complete specification that will listen for and process messages
 
 ### Instance
 
-A solution describes how your application should work.  To make it do something, you need to deploy it as an instance.  To deploy it, you need to select a [Deployment Configuration](./Deployment/DeploymentConfiguration.md) that will determine the physical compute
+A solution describes how your application should work.  To make it do something, you need to deploy it as an instance.  To deploy it, you need to select a [Deployment Configuration](.docs/Deployment/Configuration.md) that will determine the physical compute
 resources that will be allocated.  You also need to specify a key that will be used to identify the domain name where you can access your listeners.
