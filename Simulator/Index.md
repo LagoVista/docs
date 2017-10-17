@@ -48,4 +48,5 @@ To help make the most of your Simulator, you have some options to build reusable
 Read more about providing [Binary Content](BinaryContent.md) to be sent with your message.
 
 #### Open Source
-The full source is available. Code has been released as [Open Source](Opensource.md).
+The full source is available. Code has been released as [Open Source](Simulator/Opensource.md).
+
