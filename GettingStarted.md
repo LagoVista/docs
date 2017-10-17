@@ -2,9 +2,9 @@
 title: Getting Started
 keywords: help, overview, tutorial
 
-status: issues links in process, new, or nonexistent
+status: readyforapproval
 created: 20171002
-updated: 20171012
+updated: 20171017
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
@@ -50,7 +50,7 @@ Remember, you are creating a reusable component, so it does not have to map 1:1 
 
 ### Create your Pipeline
 
-To allow for maximum flexibiity and performance, we have chosen a pipeline architecture to process messages.  This allows you to use default modules (where necessary), configure standard modules as needed, and even build a custom module as your needs dictate.  The following is a typical 
+To allow for maximum flexibility and performance, we have chosen a pipeline architecture to process messages.  This allows you to use default modules (where necessary), configure standard modules as needed, and even build a custom module as your needs dictate.  The following is a typical 
 chain of pipeline modules:
 1. [Listener](./PipelineModules/Listener.md) - A mechanism that listens to a port and protocol or subscribes to events or topics from an external server
 1. [Planner](./PipelineModules/Planner.md) - Examines each message for a Message ID and a Device ID, then plans out the rest of the route
