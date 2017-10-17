@@ -2,11 +2,11 @@
 title: REST/HTTP Simulator
 keywords: simulator, windows, rest, http
 
-status: readyforreview
+status: readyforapproval
 created: 20171003
-updated: 20171003
+updated: 20171017
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
 
@@ -14,67 +14,67 @@ updatedby: Kevin D. Wolf
 
 ### Simulator Settings
 
-**Name** (*Required*)    
+1. Name (*Required*)    
 Name of the Simulator
 
-**Key** (*Required*)    
-A [unique key](../Topics/Keys.md) to identify the message
+2. Key (*Required*)    
+[Unique Key](../Topics/Keys.md) to identify the message
 
-**Transport** (*Required*)    
-For a REST simulator this should be `REST (http)` or `REST (https)` for SSL
+3. Transport (*Required*)    
+For a REST simulator, use `REST (http)` or `REST (https)` for SSL
 
-**Default End Point** (*Required*)  
-The dns name or IP address that will be used to make the call.  Note: this does **not include** the protocol such as http:// or https://
+4. Default Endpoint (*Required*)  
+DNS name or IP address that will be used to make the call     
+**Note**: this does **not** include the protocol, such as http:// or https://.
 
-**Default Port** (*Required*)  
-The port to send http request, this is usually `80` for REST (http) and `443` for REST (https) but is not required to be so.
+5. Default Port (*Required*)  
+Port to send HTTP request. This is usually `80` for REST (http) and `443` for REST (https), but that is not required.
 
-**Device Id**  
-The Device ID that will be used to send along with each message.  The Device ID will be available for [tag replacement](StandardFields.md) in your message
+6. Device ID  
+Device ID that will be used to send along with each message.  The Device ID will be available for [Tag Replacement](StandardFields.md) in your message.
 
-**User Name**  
-You can provide a user name that will be available for you to use in [tag replacement](StandardFields.md) to provide authentication with your message
+7. User Name  
+User Name that will be available for you to use in [Tag Replacement](StandardFields.md) to provide authentication with your message.
 
-**Password**  
-You can provide a password that will be available for you to use in [tag replacement](StandardFields.md) to provide authentication with your message
+8. Password  
+Password that will be available for you to use in [Tag Replacement](StandardFields.md) to provide authentication with your message.
 
-**Access Key**  
-If your device requires authentication, you can specify and access key, this could also be a password.  This will be available for
-[tag replacement](StandardFields.md).  You can also add any authentication credentials to the each message as well.
+9. Access Key  
+Access Key if your device requires authentication, this could also be a password.  This will be available for [Tag Replacement](StandardFields.md).  You can also add authentication credentials to each message.
 
-**Description**  
-Free form text use to provide notes for your simulator
+10. Description    
+Free-form text used to provide notes for your Simulator
 
-### Message Setting
+### Message Settings
 
-**Name**  
-Name of the Message
+1. Name  
+Name of the message
 
-**Key**  
-A [unique key](../Topics/Keys.md) to identify the message
+2. Key  
+[Unique Key](../Topics/Keys.md) to identify the message
 
-**Content Type**  
-If you have a specific content type such as `application/json` you can enter it here.  If you leave this blank it will send the content type `text/plain`
+3. Content Type    
+Content Type, if applicable, such as `application/json`.  If left blank, it will send the Content Type `text/plain`.
 
-**HTTP Verb**  
+4. HTTP Verb    
 `GET, POST, PUT` and `DELETE`
 
-**Text**  
-Add any content that will be sent as the body of the message [allows for tag replacement](DynamicFields.md)
+5. Text      
+Content that will be sent as the body of the message. This will be available for [Tag Replacement](DynamicFields.md).
 
-**Path and Query String**
-Add the path and query string that will be sent to the server [allows for tag replacement](DynamicFields.md).  Note the Path should be in the format  
-`/mypath/~deviceid~?field=value`
+6. Path and Query String   
+Path and Query String that will be sent to the server. This will be available for [Tag Replacement](DynamicFields.md).   
 
-Note that it should have `/` as the first value.
+   **Note**: the Path should be in the following format, with `/` as the first value.   
+   /mypath/~deviceid~?field=value 
 
 #### Message Headers
-Add key value pairs that will be sent with the message  
-* **Name** (*Required*) - Name of the Field use to identify
-* **Key** (*Required*) - Unique key for the header (can be same as header name)
-* **Header Name** (*Required*) - Name of the Header Field to be sent to the server
-* **Value** (*Required*) - Value to be sent to the server  [allows for tag replacement](DynamicFields.md)
-* **Description** - Simple text to help document the purpose of the field
+Add Key Value pairs that will be sent with the message, including:   
+* Name (*Required*) - Name of the field
+* Key (*Required*) - Unique Key for the header.  This can be the same as Header Name.
+* Header Name (*Required*) - Name of the Header Field to be sent to the server
+* Value (*Required*) - Value to be sent to the server.  This will be available for [Tag Replacement](DynamicFields.md)
+* Description - Simple text to help document the purpose of the field
 
 #### Dynamic Attributes
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
