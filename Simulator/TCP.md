@@ -59,5 +59,5 @@ Add any content that will be sent as the body of the message.  This option allow
    * Binary    
 [Binary Content](BinaryContent.md) to be sent as a message
 
-7. Dynamic Attributes (*For Text Payloads Only*)  
+### Dynamic Attributes (*For Text Payloads Only*)  
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
