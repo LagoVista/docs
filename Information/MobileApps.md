@@ -2,7 +2,7 @@
 title: Mobile Apps
 keywords: mobile, apps
 
-status: issue Although the X is created by your device and sensors...
+status: readyforapproval
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff
@@ -13,7 +13,8 @@ updatedby: klworkman
 
 NuvIoT is a complete, end-to-end system. It allows you to capture and process data from sensors and devices.  *After all, without devices and sensors, you cannot have IoT.*
 
-Although the is created by your devices and sensors, the real value comes in when that data is put to use.  In addition to providing online tools to manage and report on incoming data, we offer two paths for Mobile Apps.
+Although the data is created by your devices and sensors, the real value comes in when that data is put to use.  In addition to providing online tools to manage and report on incoming data, we offer two paths for Mobile Apps.
+
 
 ### Standard Mobile Apps
   
