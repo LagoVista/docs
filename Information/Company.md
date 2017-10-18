@@ -2,7 +2,7 @@
 title: Company
 keywords: company, about, softwarelogistics, history info
 
-status: readyforapproval
+status: issue need to add logo
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff
