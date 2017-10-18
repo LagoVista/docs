@@ -2,9 +2,9 @@
 title: Binary Content
 keywords: simulator, binary, hex
 
-status: readyforreview
+status: readyforapproval
 created: 20171003
-updated: 20171016
+updated: 20171018
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
