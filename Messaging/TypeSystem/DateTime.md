@@ -11,4 +11,4 @@ updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)
 
-# Date Time Values
+# Date and Time Values
