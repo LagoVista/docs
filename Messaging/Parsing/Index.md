@@ -12,7 +12,7 @@ updatedby: klworkman
 
 ### Introduction
 
-The following topics apply to Parsing Messages:
+The following topics apply to Parsing messages:
 
 * [Overview](Overview.md)
 * [Device ID](DeviceIdParsing.md)
@@ -27,5 +27,5 @@ The following topics apply to Parsing Messages:
 * [Parsing Text with Position](ParsingStringMessage.md)
 * [Parsing Text with Regular Expressions](ParsingWithRegEx.md)
 * [Parsing from Topic](ParsingFromTopic.md)
-* [JSON Messages](ParsingJsonMessage.md)
-* [XML Messages](ParsingXmlMessage.md)
+* [Parsing JSON Messages](ParsingJsonMessage.md)
+* [Parsing XML Messages](ParsingXmlMessage.md)
