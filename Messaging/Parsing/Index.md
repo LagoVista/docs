@@ -4,7 +4,7 @@ keywords: parsers, messaging, messages
 
 status: readyforapproval
 created: 20170927
-updated: 20171010
+updated: 20171018
 createdby: Kevin D. Wolf
 updatedby: klworkman
 ---
@@ -14,12 +14,12 @@ updatedby: klworkman
 
 The following topics apply to Parsing messages:
 
-* [Overview](Overview.md)
-* [Device ID](DeviceIdParsing.md)
+* [Parsing Overview](Overview.md)
+* [Device ID Parsing](DeviceIdParsing.md)
 * [Framing Bytes](FramingBytes.md)
-* [Binary Messages](ParsingBinaryMessages.md)
-* [Delimited Messages](ParsingDelimitedMessage.md)
-* [Message ID](MessageIdParsing.md)
+* [Parsing a Binary Message](ParsingBinaryMessages.md)
+* [Parsing a Delimited Message](ParsingDelimitedMessage.md)
+* [Message ID Parsing](MessageIdParsing.md)
 * [Parsing from Body](ParsingFromBody.md)
 * [Parsing from Header](ParsingFromHeader.md)
 * [Parsing from Path](ParsingFromPath.md)
@@ -27,5 +27,5 @@ The following topics apply to Parsing messages:
 * [Parsing Text with Position](ParsingStringMessage.md)
 * [Parsing Text with Regular Expressions](ParsingWithRegEx.md)
 * [Parsing from Topic](ParsingFromTopic.md)
-* [Parsing JSON Messages](ParsingJsonMessage.md)
-* [Parsing XML Messages](ParsingXmlMessage.md)
+* [Parsing a JSON Message](ParsingJsonMessage.md)
+* [Parsing an XML Message](ParsingXmlMessage.md)
