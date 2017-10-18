@@ -1,5 +1,5 @@
 * [Home](Index.md)
-* [FAQ](Faq.md)
+* [FAQ](faq.md)
 * [Getting Started](GettingStarted.md)
 * [Implementation Overview](./Topics/Implementation.md)
 * [Design Philosophy](./About/DesignPhilosophy.md)
