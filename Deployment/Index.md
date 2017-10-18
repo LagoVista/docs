@@ -29,4 +29,4 @@ get you started:
 
 * [Solution](Solution.md)
 
-* [Subscriptions](Subscriptions.md)
+* [Subscription](Subscriptions.md)
