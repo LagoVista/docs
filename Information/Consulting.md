@@ -17,4 +17,6 @@ updatedby: klworkman
 
 Software Logistics or one of our implementation partners can help make your IoT implementation successful in much less time than you ever thought possible.
 
-The easiest way to get started is to <a href="/Account/Register">Sign Up</a> for a free account, then use our [Expert System AI](ExpertSystem.md) to help capture your specific requirements.
+The easiest way to get started is to [Sign Up](https://www.iotappstudio.com/Account/Register) for a free account, then use our [Expert System AI](ExpertSystem.md) to help capture your specific requirements.
+
+
