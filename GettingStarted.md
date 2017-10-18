@@ -28,11 +28,11 @@ When designing any sort of complex architecture, it is a good idea to decouple t
 Let's start with your devices, sensors and equipment.  The goal of this step is to configure all the specific device types that you want to integrate as well as any messages that they will send and/or receive.
 
 The following assumes that you have decided on some sensors that communicate in a way over which you have no control.  If you are creating your own sensors and communication protocols, you can use the following steps to help capture requirements:
-1. Define your [Device Types](./Devices/DeviceTypes.md)
-2. Define your [Device Messages](./Devices/DeviceMessages.md)
+1. Define [Device Types](./Devices/DeviceTypes.md)
+2. Define [Device Messages](./Devices/DeviceMessages.md)
  
  
-### Define Your Device Workflow
+### Define Device Workflow
 Now that you have figured out how your devices communicate, let's configure your solution to do something with those messages and data.  In this step, you will:
 1. Configure the [Inputs](./Workflows/Input.md) by mapping the fields from your messages.  
 2. Describe [Attributes](./Workflows/Attributes.md) or "data called" state that will be 

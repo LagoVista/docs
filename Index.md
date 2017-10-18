@@ -2,11 +2,11 @@
 title: Select a Help Topic
 keywords: help, index, topics
 
-status: readyforreview
+status: readyforapproval
 created: 20171009
-updated: 20171008
+updated: 20171018
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 ### Select a Help Topic
 
@@ -14,7 +14,7 @@ updatedby: Kevin D. Wolf
 * [Getting Started](GettingStarted.md)
 * [Implementationv Overview](./Topics/Implementation.md)
 * [Design Philosophy](./About/DesignPhilosophy.md)
-* [API](./API/Index.md)
+* [API](./API/index.md )
 * [Deployment](./Deployment/Index.md)
 * [Devices](./Devices/Index.md)
 * [Messaging](./Messaging/Index.md)

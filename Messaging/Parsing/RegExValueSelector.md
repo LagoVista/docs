@@ -2,11 +2,11 @@
 title: Regular Expression Value Selectors
 keywords: messages, messaging, parsers, fields, regex, regularexpressions
 
-status:readyforreview
+status: readyorapproval
 created: 20170927
-updated: 20170927
+updated: 20171018
 createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)
 
@@ -21,7 +21,7 @@ Temperature = 32.0 F
 
 The value that you want to extract as the temperature is simply ```32.0```
 
-If you use a regular expression similar to:
+If you use a Regular Expression similar to:
 
 ```
 ^Temperature\s?=\s?([\d\.]{1,5})\s?F$
@@ -29,5 +29,5 @@ If you use a regular expression similar to:
 
 The value that will be used is 32.0
 
-An excellent tool to test your regular expressions is [Regular Expressions 101](http://regex101.com).  Also, make sure you take advantage of our 
+An excellent tool to test your Regular Expressions is [Regular Expressions 101](http://regex101.com).  Also, make sure you take advantage of our 
 [Verifiers](Verifiers.md) to ensure that the parsing process works as you expect. 

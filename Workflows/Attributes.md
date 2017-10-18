@@ -10,7 +10,7 @@ updatedby: klworkman
 ---
 [Home](../Index.md) > [Workflow](Index.md)
 
-# Attribute
+# Attributes
 
 Attributes are properties of your device or system that are stored on the server. Once they are assigned, they will always
 be available for reporting or to use in any workflows associated with your device.
