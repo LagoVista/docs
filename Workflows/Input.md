@@ -10,7 +10,7 @@ updatedby: klworkman
 ---
 [Home](../Index.md) > [Workflow](Index.md)
 
-# Input
+# Inputs
 
 An Input is a value that comes from a [Device Message](../Messaging/Index.md) that has a specific [Type](../Messaging/TypeSystem/Index.md).      
 
