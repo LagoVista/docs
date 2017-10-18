@@ -71,6 +71,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38
 		Workflows\InputCommands.md = Workflows\InputCommands.md
 		Workflows\OutputCommandFields.md = Workflows\OutputCommandFields.md
 		Workflows\OutputCommands.md = Workflows\OutputCommands.md
+		Workflows\Properties.md = Workflows\Properties.md
 		Workflows\StateMachines.md = Workflows\StateMachines.md
 	EndProjectSection
 EndProject
@@ -183,6 +184,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 		Scripting\Utilities.md = Scripting\Utilities.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
 		Scripting\WorkingWithAttributes.md = Scripting\WorkingWithAttributes.md
+		Scripting\WorkingWithProperties.md = Scripting\WorkingWithProperties.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{9231A2EF-953A-4367-917E-F76D71B6F8FF}"

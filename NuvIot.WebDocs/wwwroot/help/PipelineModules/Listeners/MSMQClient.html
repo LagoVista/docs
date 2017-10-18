@@ -2,25 +2,35 @@
 <h1>MSMQ Client</h1>
 <p>If you have your own dedicated MSMQ server, you can establish a connection to it and monitor it for incoming messages.</p>
 <h3>Required Fields</h3>
-<p>In addition to the standard fields that are required for any listener the following fields are required:</p>
-<p><strong>Listener Type</strong><br />
-<code>MQTT Client</code></p>
-<p><strong>Host Name</strong><br />
-URL or IP address where your MQTT server is hosted.</p>
-<p><strong>Anonymous Connection</strong><br />
-Select this option if your MQTT server does not require authentication (not recommended)</p>
-<p><strong>User Name</strong><br />
-User Name with access privelages to your MQTT Server if not an anonymous connection</p>
-<p><strong>Password</strong><br />
-Password with access privelages to your MQTT Server if not an anonymous connection</p>
-<p><strong>Connect with SSL/TLS</strong><br />
-Select this option if your server supports SSL/TLS</p>
-<p><strong>Connect to Port</strong><br />
-The port that will be used to connect to your server, usually 1883 or 8883 for SSL/TLS</p>
-<p><strong>Topic</strong><br />
-Topic to listen for messages, note you can use wildcards as supported by your MQTT server such as <code>#</code> and <code>+</code> where</p>
+<p>In addition to the standard fields that are required for any listener, the following fields are required:</p>
 <ul>
-<li><code>+</code> (plus) can substitute for exactly one word.</li>
-<li><code>#</code> (hash) can substitute for zero or more words.</li>
+<li><p>Listener Type<br />
+<code>MQTT Client</code></p>
+</li>
+<li><p>Host Name<br />
+URL or IP address where your MQTT server is hosted.</p>
+</li>
+<li><p>Anonymous Connection<br />
+Select this option if your MQTT server does not require authentication (not recommended).</p>
+</li>
+<li><p>User Name<br />
+User Name with access priveleges to your MQTT Server (if not an anonymous connection).</p>
+</li>
+<li><p>Password<br />
+Password with access priveleges to your MQTT Server (if not an anonymous connection).</p>
+</li>
+<li><p>Connect with SSL/TLS<br />
+Select this option if your server supports SSL/TLS.</p>
+</li>
+<li><p>Connect to Port<br />
+The port that will be used to connect to your server, usually 1883 or 8883 for SSL/TLS.</p>
+</li>
+<li><p>Topic<br />
+Topic to listen for messages.  Note that you can use wildcards as supported by your MQTT server such as <code>#</code> and <code>+</code> where</p>
+<ul>
+<li><code>+</code> (plus) can substitute for exactly one word</li>
+<li><code>#</code> (hash) can substitute for zero or more words</li>
 </ul>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/10/2017 19:08:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/12/2017 08:16:57</div><div>Copyright Sofware Logistics - 2017</div></div>

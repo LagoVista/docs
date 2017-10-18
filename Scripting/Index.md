@@ -28,13 +28,14 @@ use to create scripts in JavaScript.
 [Device Model](DeviceScriptingModel.md) - Properties and Methods that are available to access Device data in your script.  
 [Device Workflow Model](DeviceWorkflowScriptingModel.md) - Properties and Methods that are availabe to access Device Workflow methods  
 [Property Bag](PropertyBag.md) - While executing your scripts you have access to a general purpose property bag where you can store random variables and data.  
-[Working with Attributes](WorkingWithAttributes.md) - You can set, get and clear attributes of your device.
+[Working with Attributes](WorkingWithAttributes.md) - Attributes are data generated from the device or workflow.  
+[Working with Properties](WorkingWithProperties.md) - Properties are used to modify user settings and defaults.
 
 #### Networking
 [Networking](Networking.md) - Basic Methods to make Network calls
 
 #### Other
-[Utilities](Utilities.md) - General purpose methods available to your scripts
+[Utilities](Utilities.md) - General purpose methods available to your scripts  
 [Logging](Logging.md) - Methods available to log messages from your scripts  
 
 

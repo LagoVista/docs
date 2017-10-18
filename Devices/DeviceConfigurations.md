@@ -15,7 +15,7 @@ updatedby: Kevin D. Wolf
 A device configuration consists of two parts:
 
 * A collection of [routes](../Routes/Route.md)
-* A set of supported [messages defintions](../Devices/DeviceMessages.md) that will trigger those routes
+* A set of Properties
 
 When you create a [solution](../Deployment/Solution.md) you specify a set of [listeners](../PipelineModules/Listener.md) and a
 planner as well as any supported device configurations.  The listeners job is to listen for messages, once a message is received

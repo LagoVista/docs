@@ -4,7 +4,7 @@
 <p>Before you begin, it is important to understand your goals. There are a lot of cool things that you can do, so it is a good idea to make a list and prioritize. Assuming that you have completed your list, let's get started.</p>
 <p>This Getting Started guide assumes that you have a basic idea of what you want to do and that you have identified your sensors.  If you need help with this, please feel free to <a href="#http://support.nuviot.com">Contact Us</a> and we would be happy to discuss options.</p>
 <h4>General Approach</h4>
-<p>When designing any sort of complex architecture, it is a good idea to decouple the components of your system as much as possible, both for testing and for reuse.  Our system lets you create small, reusable, data-driven configurations for much of what you need to do for any typical IoT system.  Once you have configured your components, you can then assemble them into a fully functional and testable solution.  After a short amount of time, you will assemble a collection of reusable, data-driven components that let you bring on whole new solutions in a small fraction of the time it would take to start from scratch.</p>
+<p>When designing any sort of complex architecture, it is a good idea to decouple the components of your system as much as possible, both for testing and for reuse.  Our system lets you create small, reusable, data-driven configurations for much of what you need to do for any typical IoT system.  Once you have configured your components, you can then assemble them into a fully functional and testable solution.  After a short amount of time, you will assemble a collection of reusable, data-driven components that lets you bring on whole new solutions in a small fraction of the time it would take to start from scratch.</p>
 <h3>Without Devices and Sensors, You Cannot Have IoT</h3>
 <p>Let's start with your devices, sensors and equipment.  The goal of this step is to configure all the specific device types that you want to integrate as well as any messages that they will send and/or receive.</p>
 <p>The following assumes that you have decided on some sensors that communicate in a way over which you have no control.  If you are creating your own sensors and communication protocols, you can use the following steps to help capture requirements:</p>
@@ -16,18 +16,18 @@
 <p>Now that you have figured out how your devices communicate, let's configure your solution to do something with those messages and data.  In this step, you will:</p>
 <ol>
 <li>Configure the <a href="#/Workflows/Input.md">Inputs</a> by mapping the fields from your messages.</li>
-<li>Describe <a href="#/Workflows/Attributes.md">Attributes</a> or data called state that will be
+<li>Describe <a href="#/Workflows/Attributes.md">Attributes</a> or &quot;data called&quot; state that will be
 saved between device calls.</li>
 <li>Add <a href="#/Workflows/InputCommands.md">Input Commands</a> where you can expose REST-based services to interact with your
-workflow and ultimately with your devices from third party applications or services.</li>
+workflow and ultimately with your devices from third-party applications or services.</li>
 <li>Add <a href="#/Workflows/StateMachines.md">State Machines</a> to define how your devices should react to
-incoming data and messages.   Don't worry, this isn't as hard as it sounds!</li>
+incoming data and messages.   Don't worry, this is not as hard as it sounds!</li>
 <li>Define your <a href="#/Workflows/OutputCommands.md">Output Commands</a> that will be used to send data or commands back to the device.</li>
 </ol>
-<p>You can do all of this via a WYSWIG designer, where you can add custom scripts and even calls to your custom code with our container frameworks.</p>
+<p>You can do all of this via a WYSIWIG designer, where you can add custom scripts and even calls to your custom code with our container frameworks.</p>
 <p>Remember, you are creating a reusable component, so it does not have to map 1:1 with your devices.  In this step, you just configure what you want to do and then map it to the devices at a later time.</p>
 <h3>Create your Pipeline</h3>
-<p>To allow for maximum flexibiity and performance, we have chosen a pipeline architecture to process messages.  This allows you to use default modules (where necessary), configure standard modules as needed, and even build a custom module where your needs dictate.  The following is a typical
+<p>To allow for maximum flexibiity and performance, we have chosen a pipeline architecture to process messages.  This allows you to use default modules (where necessary), configure standard modules as needed, and even build a custom module as your needs dictate.  The following is a typical
 chain of pipeline modules:</p>
 <ol>
 <li><a href="#/PipelineModules/Listener.md">Listener</a> - A mechanism that listens to a port and protocol or subscribes to events or topics from an external server</li>
@@ -49,5 +49,5 @@ your solution needs to specify the <a href="#/PipelineModules/Listener.md">Liste
 <p>A solution is a complete specification that will listen for and process messages from a device.</p>
 <h3>Instance</h3>
 <p>A solution describes how your application should work.  To make it do something, you need to deploy it as an instance.  To deploy it, you need to select a <a href="#/Deployment/DeploymentConfiguration.md">Deployment Configuration</a> that will determine the physical compute
-resources that will be allocated.  You also need to specify a key that will be used to the domain name where you can access your listeners.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/10/2017 19:08:40</div><div>Copyright Sofware Logistics - 2017</div></div>
+resources that will be allocated.  You also need to specify a key that will be used to identify the domain name where you can access your listeners.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/12/2017 08:16:57</div><div>Copyright Sofware Logistics - 2017</div></div>

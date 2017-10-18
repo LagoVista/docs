@@ -87,6 +87,7 @@
   * [State Machine - handle](./Scripting/StateMachineSendEvent.md)
   * [Utilities](./Scripting/Utilities.md)
   * [Working with Attributes](./Scripting/WorkingWithAttributes.md)
+  * [Working with Properties](./Scripting/WorkingWithProperties.md)
 * [Simulator](./Simulator/Index.md)
   * [Open Source](./Simulator/OpenSource.md)
   * [AMQP](./Simulator/AMQP.md) 
