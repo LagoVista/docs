@@ -14,7 +14,7 @@ updatedby: Kevin D. Wolf
 * [Getting Started](GettingStarted.md)
 * [Implementationv Overview](./Topics/Implementation.md)
 * [Design Philosophy](./About/DesignPhilosophy.md)
-* [API](./API/Index.md)
+* [API](./https://github.com/LagoVista/docs/blob/master/API/index.md)
 * [Deployment](./Deployment/Index.md)
 * [Devices](./Devices/Index.md)
 * [Messaging](./Messaging/Index.md)
