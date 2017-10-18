@@ -21,7 +21,7 @@ get you started:
 
 * [High Availability](HighAvailability.md)
 
-* [Hosts](Host.md)
+* [Host](Host.md)
 
 * [NuvIoT Infrastructure](NuvIoTInfrastructure.md)
 
