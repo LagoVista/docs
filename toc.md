@@ -3,7 +3,7 @@
 * [Getting Started](GettingStarted.md)
 * [Implementation Overview](./Topics/Implementation.md)
 * [Design Philosophy](./About/DesignPhilosophy.md)
-* [API](API/Index.md)
+* [API](https://github.com/LagoVista/docs/blob/master/API/index.md)
 * [Deployment](./Deployment/Index.md)
     * [Configurations](./Deployment/Configuration.md)
     * [Edge Technology](./Deployment/EdgeTechnology.md)
