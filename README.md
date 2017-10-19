@@ -34,7 +34,7 @@ Here are a description of the meta data fields
 3. **readyforreview** - Developers think that the content is complete and ready for QA/Technical writing cleanup.
 4. **readyforapproval** - QA/Technical writers have reviewed the content for grammer and made sure it follows a the style guide.
 5. **issues** - Developers, QA/Technical writers have found an issue that needs to be resolved in the document.  The actual issue itself can either be added as a Github issue or added as free form at the end of the metadata.  Once the issue has been resolve the issues should be removed from the meta data.   
-6  **approved** - A project architect has approved the content and edits and the documentation is ready for publishing.
+6. **approved** - A project architect has approved the content and edits and the documentation is ready for publishing.
 
 For now to find documents in different status, just search the repository by status name, in the future tooling might be available.
 
