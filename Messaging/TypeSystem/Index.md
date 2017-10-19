@@ -22,7 +22,7 @@ As messages are parsed and data is made available, a type is associated with tho
 [Integers](Integers.md) - Whole numbers (1,-1, 100, 0, etc.)  
 [Decimals](Decimals.md) - Numbers with a decimal (1.42, 523.4, -53.5, etc.)  
 [Boolean](Booleans.md)  - True or false values     
-[Date Time](DateTime.md) - Contains date and time values  
+[Date and Time](DateTime.md) - Contains date and time values  
 [Geolocations](GeoLocation.md) - Represents a latitude and longitude value  
 [States and Enumerations](StatesAndEnums.md) - Represents a set of variables that can be used to constrain a value (On/Off, etc.)    
 [Values with Units](ValueWithUnits.md) - Represents a [Decimal Value](Decimals.md) that has a unit attached.  The unit can have multiple conversion factors.
