@@ -17,7 +17,7 @@ and then hand them off to the [Planner](Planner.md) to determine how the message
 
 The following standard Listener Types are supported and can be configured to meet your needs:
 * [AMQP Client](./Listeners/AMQPClient.md) - Connect to a 3rd Party AMQP Server for Messages
-* [Azure Event Hubs](./Listeners/AzureEventHubs.md) - Connect to an [Azure Event Hub](https://azure.microsoft.com/en-us/services/event-hubs/)
+* [Azure Event Hub](./Listeners/AzureEventHubs.md) - Connect to an [Azure Event Hub](https://azure.microsoft.com/en-us/services/event-hubs/)
 * [Azure IoT Event Hub](./Listeners/AzureIoTHub.md) - Connect to an [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/)
 * [Azure Service Bus](./Listeners/AzureServiceBus.md) - Connect to an [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) 
 * [MSMQ Client](./Listeners/MSMQClient.md) - Connect to a 3rd Party MQTT Broker and listen for messages
