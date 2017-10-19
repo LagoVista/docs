@@ -1,14 +1,14 @@
 ---
-title: MQTT Client
-keywords: listener, cloud, mqtt, mqttbroker, messagequeue, topics
+title: MQTT Transmitter
+keywords: transmitter, cloud, mqtt, mqttbroker, messagequeue, topics
 
-status: approved
-created: 20170922
-updated: 20171011
+status: readyforapproval
+created: 20171019
+updated: 20171019
 createdby: bytemaster-0xff
-updatedby: klworkman
+updatedby: bytemaster-0xff
 ---
-[Home](../../Index.md) > [Pipeline Modules](../Index.md) > [Listeners](../Listener.md)
+[Home](../../Index.md) > [Pipeline Modules](../Index.md) > [Transmitters](../Transmitter.md)
 
 # MQTT Client
 
@@ -16,7 +16,7 @@ If you have your own dedicated MQTT server, you can establish a connection to it
 
 ### Required Fields
 
-In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any listener, the following fields are required:
+In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any transmitter, the following fields are required:
 
 * Listener Type     
 `MQTT Client`

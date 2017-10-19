@@ -5,7 +5,7 @@ keywords: messages, messaging, devices
 status: readyforapproval
 created: 20170927
 updated: 20171011
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md)
@@ -23,6 +23,8 @@ To help get you started, complete the following steps:
 
 After you have created your messages, you can use them as a basis for building simulators to test out your system
 flow prior to bringing real devices online.
+
+Messages can either be [received from a device](IncomingMessages.md) from a [Listener](../PipelineModules/Listener.md) or [sent to a server or service](OutgoingMessages.md) from a [Transmitter](../PipelineModules/Transmitter.md).
 
 
 ## Topics

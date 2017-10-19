@@ -2,10 +2,10 @@
 title: REST Server
 keywords: listeners, rest, networking, pipelinemodule
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171012
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Pipeline Modules](../Index.md) > [Listeners](../Listener.md)
@@ -34,17 +34,17 @@ are using a CNAME or ANAME DNS record to connect to this server, please [Contact
 
 ### Required Fields
 
-In addition to the standard fields that are required for any listener, the following fields are required:
+In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any listener, the following fields are required:
 
-* Listener Type     
+* **Listener Type** (required)     
 `REST`
 
-* Content Type    
+* **Content Type** (required)    
 Select the [Content Type](../../Messaging/ContentTypes.md) of the message you are expecting. Any Content Type is acceptable.
 
-* Secure Connection   
+* **Secure Connection** (required)   
 If you select this option, your devices/request must support HTTPS connections. Work is underway to automate the generation of the SSL certificates.  Please [Contact Us](http://support.nuviot.com) if you need us to manually add a certificate to your installation based on the automatically-generated host names.
 if you use your own host name, we will need to work with you to upload your customer-provided certificate.
 
-* Listen on Port     
+* **Listen on Port** (required)     
 This is the port you wish to listen to for incoming messages.  This is normally port 80 or port 443 for SSL connections, but any port is supported in both configurations.

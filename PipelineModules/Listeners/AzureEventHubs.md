@@ -2,10 +2,10 @@
 title: Azure Event Hubs
 keywords: listener, cloud, azure, eventhub, messagequeue
 
-status: readyforapproval
+status: approved
 created: 20170922
 updated: 20171012
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Pipeline Modules](../Index.md) > [Listeners](../Listener.md)
@@ -26,22 +26,22 @@ First, create a [Listener](../Listener.md) and select the Listener Type of **Eve
 
 ### Required Fields
 
-In addition to the standard fields that are required for any listener, the following fields are required:
+In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any listener, the following fields are required:
 
-* Listener Type 
+* **Listener Type** (required)
 `Azure Event Hub`
 
-* Content Type    
+* **Content Type** (required)  
 Select the [Content Type](../../Messaging/ContentTypes.md) of the message that you are expecting.  All Content Types are acceptable.
 
-* Host Name   
+* **Host Name** (required)   
 The Host Name of the Event Hub Resource you created in Azure.  For example in
 ```sb://myeventhub.servicebus.windows.net``` the Host Name would be ```myeventhub.servicebus.windows.net```
 
-* Resource Name    
+* **Resource Name** (required)    
 The name of the specific Event Hub you wish to listen on.
 
-* Access Key    
+* **Access Key** (required)    
 The Primary or Secondary Key to allow access to your Event Hub.  No keys are stored in plain text.
 
 ### Optional Fields

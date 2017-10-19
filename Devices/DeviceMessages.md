@@ -1,11 +1,11 @@
 ---
-title: Azure IoT Hub Device Repository
+title: Device Messages
 keywords: device, devicerepo, azureiothub
 
 status: readyforapproval
 created: 20170922
 updated: 20171011
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Devices](Index.md)

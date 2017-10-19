@@ -2,10 +2,10 @@
 title: Azure IoT Hub Device Repository
 keywords: device, devicerepo, azureiothub
 
-status: readyforapproval
+status: approved
 created: 20170922
 updated: 20171011
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Devices](Index.md)
@@ -21,11 +21,13 @@ When you connect your NuvIoT repository to the Azure IoT Hub, you need to use a 
 
 ### Required Fields
 
-* Resource Name    
+In addition to the [standard fields](../Topics/StandardFields.md) that are required, the following fields are required:
+
+* **Resource Name** (required)    
 The name of your Azure IoT Hub
 
-* Access Key Name    
+* **Access Key Name** (required)  
 The name of the Policy/Key that has "Registry write" permissions
 
-* Access Key     
+* **Access Key** (required)     
 The Shared Access Key for the policy/key that has "Registry Write" permissions as specified in the Access Key Name field.  This is a Base 64 encoded value.

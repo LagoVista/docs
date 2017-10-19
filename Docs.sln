@@ -6,8 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}"
 	ProjectSection(SolutionItems) = preProject
 		Messaging\ContentTypes.md = Messaging\ContentTypes.md
+		Messaging\IncomingMessages.md = Messaging\IncomingMessages.md
 		Messaging\Index.md = Messaging\Index.md
 		Messaging\MessageFields.md = Messaging\MessageFields.md
+		Messaging\OutgoingMessages.md = Messaging\OutgoingMessages.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04EDBE3-F54D-407D-9F97-6F8CFBD25256}"
@@ -142,6 +144,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topics", "Topics", "{7489B6
 	ProjectSection(SolutionItems) = preProject
 		Topics\Implementation.md = Topics\Implementation.md
 		Topics\Keys.md = Topics\Keys.md
+		Topics\StandardFields.md = Topics\StandardFields.md
 		Topics\Terminology.md = Topics\Terminology.md
 	EndProjectSection
 EndProject
@@ -223,6 +226,34 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B86E8080-EC3
 		API\index.md = API\index.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Information", "Information", "{3E333A9E-3892-4F55-A52D-6E694C8F1690}"
+	ProjectSection(SolutionItems) = preProject
+		Information\Company.md = Information\Company.md
+		Information\Consultation.md = Information\Consultation.md
+		Information\Consulting.md = Information\Consulting.md
+		Information\ExpertSystem.md = Information\ExpertSystem.md
+		Information\Extensibility.md = Information\Extensibility.md
+		Information\FreeTier.md = Information\FreeTier.md
+		Information\How.md = Information\How.md
+		Information\MobileApps.md = Information\MobileApps.md
+		Information\OpenSource.md = Information\OpenSource.md
+		Information\Performance.md = Information\Performance.md
+		Information\Pricing.md = Information\Pricing.md
+		Information\Security.md = Information\Security.md
+		Information\What.md = Information\What.md
+		Information\Why.md = Information\Why.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transmitters", "Transmitters", "{6A706411-8CA1-48CC-B9AF-E27B091036A2}"
+	ProjectSection(SolutionItems) = preProject
+		PipelineModules\Transmitters\AzureEventHubs.md = PipelineModules\Transmitters\AzureEventHubs.md
+		PipelineModules\Transmitters\AzureIoTHub.md = PipelineModules\Transmitters\AzureIoTHub.md
+		PipelineModules\Transmitters\AzureServiceBus.md = PipelineModules\Transmitters\AzureServiceBus.md
+		PipelineModules\Transmitters\MQTTClient.md = PipelineModules\Transmitters\MQTTClient.md
+		PipelineModules\Transmitters\OriginalListener.md = PipelineModules\Transmitters\OriginalListener.md
+		PipelineModules\Transmitters\Rest.md = PipelineModules\Transmitters\Rest.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -247,6 +278,7 @@ Global
 		{2B9A7390-DCBB-4E38-B308-5ABF4CB6159F} = {C09DB466-10FA-4F80-9FDE-1ECE7EC3F938}
 		{23022230-21D5-4B41-A0B1-16B2FD87A440} = {38765E25-6F53-4D43-A420-A10EDF456AAF}
 		{7C7C2C70-D37A-439D-AA70-A15D8CA1AD18} = {55C74D1B-6D8D-4302-B9EB-CC2788F5EEEA}
+		{6A706411-8CA1-48CC-B9AF-E27B091036A2} = {C09DB466-10FA-4F80-9FDE-1ECE7EC3F938}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AEF05668-C86F-47DE-8CF3-18E0B6EE9F89}

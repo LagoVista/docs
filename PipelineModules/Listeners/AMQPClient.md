@@ -2,17 +2,17 @@
 title: AMQP Client
 keywords: listener, cloud, azure, eventhub, messagequeue
 
-status: inprocess
+status: approved
 created: 20170922
 updated: 20170922
-createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+createdby: bytemaster-0xff
+createdby: bytemaster-0xff
 ---
 [Home](../../Index.md) > [Pipeline Modules](../Index.md) > [Listeners](../Listener.md)
 
 # AMQP Client
 
-**Note:**  *Please [contact us](http://support.nuviot.com) if you plan to use your AMQP Server or Broker and are running into issues with integration, we'll be
+**Note:**  *Please [contact us](http://support.nuviot.com/contactus) if you plan to use your AMQP Server or Broker and are running into issues with integration, we'll be
 happy to work with you to ensure a successful integration*
 
 Currently NuvIoT doesn't implement it's own dedicated AMQP server, it does however offer the option to connect to a 3rd party AMQP server
@@ -26,24 +26,24 @@ AMQP server, it will automatically authenticate your devices.  Please contact us
 
 ### Required Fields
 
-In addition to the standard fields that are required for any listener the following fields are required:
+In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any listener, the following fields are required:
 
-**Listener Type**  
+* **Listener Type**  (required)  
 `AMQP Client`
 
-**Content Type**  
+* **Content Type**   
 Select the [content type](../../Messaging/ContentTypes.md) of the message you are expecting, any content types are acceptable.
 
-**Host Name**  
+* **Host Name** (required)  
 Host Name of your AMQP Server
 
-**User Id**  
+* **User Id**  (required)  
 User Id of the account that has access to the AMQP queues
 
-**Password**  
+* **Password** (required)  
 Password of the account that has access to the AMQP queues
 
-**Topic**  
+*  **Topic** (required)  
 The Topic or Queue to listen for messages, note you can use wildcards such as `#` and `*` where
-  * `*` (star) can substitute for exactly one word.
-  * `#` (hash) can substitute for zero or more words.
+   * `*` (star) can substitute for exactly one word.
+   * `#` (hash) can substitute for zero or more words.
