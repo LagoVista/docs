@@ -15,7 +15,7 @@ updatedby: klworkman
 After you have built your IoT application, you need to deploy it.  The following are some of the resources that will help
 get you started:
 
-* [Configurations](Configuration.md)
+* [Configuration](Configuration.md)
 
 * [Edge Technology](EdgeTechnology.md)
 
