@@ -84,19 +84,24 @@ updatedby: klworkman
   * [Mappings](./Routes/Mappings/Index.md)
     * [Input Translator to Workflow Input](./Routes/Mappings/InputTranslatorToWorkflow.md) 
 * [Scripting](./Scripting/Index.md)
-  * [Attribute - onSet](./Scripting/AttributeOnSet.md)
-  * [Device Data Model](./Scripting/DeviceScriptingModel.md)
-  * [Workflow Data Model](./Scripting/DeviceWorkflowScriptingModel.md)
-  * [Input - onSet](./Scripting/WorkflowInputOnSet.md)
-  * [Input Command - onArrive](./Scripting/InputCommandArrive.md)
+  * Scripts
+    * [Attribute - onSet](./Scripting/AttributeOnSet.md)
+    * [Input - onSet](./Scripting/WorkflowInputOnSet.md)
+    * [Input Command - onArrive](./Scripting/InputCommandArrive.md)
+    * [Device Data Model](./Scripting/DeviceScriptingModel.md)
+    * [Workflow Data Model](./Scripting/DeviceWorkflowScriptingModel.md)
+    * [State Machine - Handle](./Scripting/StateMachineSendEvent.md)
+    * [State Machine - onTransition](./Scripting/StateTransition.md)
+ 
+  
   * [Invoking Ouput Commands](./Scripting/InvokeOutputCommand.md)
   * [Logging](./Scripting/Logging.md)
   * [Networking](./Scripting/Networking.md)
   * [OutputCommand - Send](./Scripting/InvokeOutputCommand.md)
   * [OutputCommand - onExecute](./Scripting/OutputCommandCreate.md)
   * [Property Bag](./Scripting/PropertyBag.md)
-  * [State Machine - onTransition](./Scripting/StateTransition.md)
-  * [State Machine - Handle](./Scripting/StateMachineSendEvent.md)
+ 
+
   * [Utilities](./Scripting/Utilities.md)
   * [Working with Attributes](./Scripting/WorkingWithAttributes.md)
   * [Working with Properties](./Scripting/WorkingWithProperties.md)
