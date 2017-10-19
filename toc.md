@@ -23,6 +23,7 @@ updatedby: klworkman
     * [NuvIoT Infrastructure](./Deployment/NuvIoTInfrastructure.md)
     * [Instance](./Deployment/Instance.md)
     * [Solution](./Deployment/Solution.md)
+    * [Subscription](Deployment/Subscriptions.md)
 * [Devices](./Devices/Index.md)
     * [Azure IoT Hub Repository](./Devices/AzureIoTHubDeviceRepo.md)
     * [Device Types](./Devices/DeviceTypes.md)
