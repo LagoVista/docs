@@ -12,7 +12,7 @@ updatedby: klworkman
 
 
 * [Getting Started](GettingStarted.md)
-* [Implementationv Overview](./Topics/Implementation.md)
+* [Implementation Overview](./Topics/Implementation.md)
 * [Design Philosophy](./About/DesignPhilosophy.md)
 * [API](./API/index.md )
 * [Deployment](./Deployment/Index.md)
