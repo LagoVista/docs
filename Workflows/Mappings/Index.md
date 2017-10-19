@@ -23,7 +23,7 @@ updatedby: klworkman
 
 ### Mappings from Input Commands
 [Input Command to Attribute](InputCommandToAttribute.md)  
-[Input Command to Output Cmmand](InputCommandToOutputCommand.md)  
+[Input Command to Output Command](InputCommandToOutputCommand.md)  
 [Input Command to State Machine](InputCommandToStateMachine.md)  
 
 
