@@ -2,7 +2,7 @@
 title: Consulting Servicecs
 keywords: consulting, development, implementations
 
-status: readyforapproval
+status: approved
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff

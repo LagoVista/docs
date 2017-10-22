@@ -33,4 +33,5 @@ There are three mobile apps that are part of the NuvIoT platform.  These applica
 * **Device Manager** - Used to provision monitor and interacct with Devices registered with the NuvIoT Platform
 * **Platform Manager** - A simple tool to monitor and manaage your IoT Applications
 
-These applications have also been relased as Open Source Software built on the Xamarin application framesworks and an SDK will be provided to quickly build your own custom white labeled apps for your customers
+These applications have also been relased as Open Source Software built on the Xamarin application frameworks 
+and an SDK will be provided to quickly build your own custom white labeled apps for your customers

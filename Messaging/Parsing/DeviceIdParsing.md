@@ -2,10 +2,10 @@
 title: Device Id Parsing
 keywords: planner, parsers, messaging, devices, deviceid, routes, deviceconfigurations
 
-status:  readyforapproval
+status:  inprocess
 created: 20170927
 updated: 20171010
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing](Index.md)

@@ -12,7 +12,8 @@ updatedby: bytemaster-0xff
 # Pricing
 
 #### Pay for What You Use
-   ***For a limited time:*** As we are rolling out our product, we are offering deep discounts for up to the first two years of your services costs, [contact us](http://support.nuviot.com) for more details.
+   ***For a limited time:*** As we are rolling out our product, we are offering deep discounts for up to the first 
+two years of your services costs, [contact us](http://support.nuviot.com/contactus) for more details.
 
 #### Our Pricing Structure is Broken into the following Areas:
 

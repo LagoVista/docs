@@ -12,4 +12,7 @@ updatedby: Kevin D. Wolf
 
 # Route Pipeline Module Mappings
 
-[Input Translator to Workflow](InputTranslatorToWorkflow.md)
+
+* [Input Translator to Workflow Inputs](InputTranslatorToWorkflow.md)
+* [Workflow Output Command to Output Translator](WorkflowToOutputTranslator.md)
+* [Output Translator to Transmitter](OutputTranslatorToTransmitter.md)

@@ -2,7 +2,7 @@
 title: Mobile Apps
 keywords: mobile, apps
 
-status: readyforapproval
+status: inprocess (need to put links for actual apps, maybe screen shots)
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff

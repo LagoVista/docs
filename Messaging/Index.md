@@ -2,7 +2,7 @@
 title: Device Messaging
 keywords: messages, messaging, devices
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171011
 createdby: bytemaster-0xff

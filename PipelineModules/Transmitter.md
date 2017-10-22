@@ -2,19 +2,22 @@
 title: Workflow
 keywords: workflow, pipeline, transmitter, pipelinemoudle 
 
-status: new
+status: readyforreview
 created: 20170922
 updated: 20170922
-createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+createdby: bytemaster-0xff
+updatedby: bytemaster-0xff
 ---
 [Home](../Index.md) > [Pipeline Modules](Index.md)
 
 # Transmitter
 
+Transmitters are used to take [outgoing messages](../Messaging/OutgoingMessages.md) and send them to the originating device or a 
+3rd party server or service.
+
 * [Azure Event Hub](./Transmitters/AzureEventHubs.md)
 * [Azure IoT Hub](./Transmitters/AzureIoTHub.md)
 * [Azure Service Bus](./Transmitters/AzureServiceBus.md)
-* [MQTT Client](./Transmitters/MQTTClient.md)
+* [MQTT](./Transmitters/MQTTClient.md)
 * [Original Listener](./Transmitters/OriginalListener.md)
-* [REST Client](./Transmitters/Rest.md)
+* [REST Service](./Transmitters/Rest.md)

@@ -2,14 +2,15 @@
 title: Select a Help Topic
 keywords: help, index, topics
 
-status: readyforapproval
+status: approved
 created: 20171009
 updated: 20171018
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 ### Select a Help Topic
 
+Welcome to our Online Help System
 
 * [Getting Started](GettingStarted.md)
 * [Implementation Overview](./Topics/Implementation.md)

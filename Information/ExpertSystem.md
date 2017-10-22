@@ -2,7 +2,7 @@
 title: Expert Systems AI
 keywords: consulting, development, implementations, expert system, ai
 
-status: readyforapproval
+status: approved
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff

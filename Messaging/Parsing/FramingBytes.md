@@ -14,7 +14,7 @@ updatedby: klworkman
 
 When parsing a binary message, you can use framing bytes to ensure that your message is in the exact format you expect.  You can also set checkpoints for relative locations in your message.  
 
-Note: this has not been implemented as of 5/18/2017.
+**Note:** This has not been implemented as of 5/18/2017.
 
 Framing bytes consist of two parameters:
 

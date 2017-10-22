@@ -15,5 +15,5 @@ You shouldn't have to pay to innovate, use our Free Tier to build your Next Grea
 
 Sign up for an account and you can deploy up to 5 free basic instances. 
 
- <i>Here's the Catch</i> After you spin up your instance
-you'll need to login to our portal within 2 days or your instance will be put to sleep, but don't worry you can login and manually restart your instance (see terms and conditions for more details).
+*Here's the Catch* After you spin up your instance you'll need to login to our portal within 2 days 
+or your instance will be put to sleep, but don't worry you can login and manually restart your instance (see terms and conditions for more details).
