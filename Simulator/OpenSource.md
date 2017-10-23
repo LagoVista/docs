@@ -2,10 +2,10 @@
 title: Simulator - Open Source
 keywords: simulator, development, opensource
 
-status: readyforapproval
+status: approved
 created: 20171003
 updated: 20171017
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)

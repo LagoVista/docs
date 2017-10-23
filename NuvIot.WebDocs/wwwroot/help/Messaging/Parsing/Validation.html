@@ -4,7 +4,7 @@
 | <a href="#/Messaging/TypeSystem/Integers.md">Integer</a> | A whole number such has 1, 5, -5, 1,000,333 or 0 |
 | <a href="#/Messaging/TypeSystem/GeoLocation.md">Geolocations</a> | A valid latitude and longitude.  For a full description of what is valid, please see <a href="#/Messaging/TypeSystem/GeoLocation.md">Working with Geolocation Values</a> for more information. |
 | <a href="#/Messaging/TypeSystem/StatesAndEnums.md">State Sets</a> | State Sets are an important data type in that they ensure that only the values you specify can be assigned.  For example, if your State Set only includes <code>on</code> and <code>off</code> and the value you receive is True, that value will be considered invalid.|
-| <a href="#/Messaging/TypeSystem/Strings.md">Strings</a> | Almost any value can be stored to a String Location.  Currently, only ASCII values are supported. If your message sends unicode strings, please <a href="#http://support.nuviot.com">Contact Us</a> for assistance. |
+| <a href="#/Messaging/TypeSystem/Strings.md">Strings</a> | Almost any value can be stored to a String Location.  Currently, only ASCII values are supported. If your message sends unicode strings, please <a href="http://support.nuviot.com">Contact Us</a> for assistance. |
 | <a href="#/Messaging/TypeSystem/Integers.md">Values with Units</a> | Values with Units or Unit Sets are units that can be applied to a value.  Validation on incoming values is the same as for a decimal value.  However, you can specify the number of digits to the right of decimal place (precision) for storage. |</p>
 <h3>Additional Validation</h3>
 <h4>For All Storage Type Values</h4>
@@ -14,4 +14,4 @@ processing will not continue.</p>
 <p>RegEx Validation - If the value you are extracting is a string, you can add a regular expression that will be used to validate the contents of that string value.</p>
 <h4>For Integer and Decimal Storage Type Values</h4>
 <p>Minimum Value and Maximum Value - You can provide values that will limit the range either to a minimum value, a maximum value, or both to indicate acceptable incoming values.  These values are inclusive of the range values.  For example, if a minimum value of <code>8</code> was specified, a value of <code>8</code> would be valid but <code>7.99999</code> would not.  If minimum or maximum value is not present, no validation will take place.  It is possible to have a minumum value without a maximum value and vice-versa.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>

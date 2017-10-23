@@ -2,10 +2,10 @@
 title: REST/HTTP Simulator
 keywords: simulator, windows, rest, http
 
-status: readyforapproval
+status: approved
 created: 20171003
 updated: 20171017
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
@@ -14,55 +14,61 @@ updatedby: klworkman
 
 ### Simulator Settings
 
-1. Name (*Required*)    
+* **Name** (required)    
 Name of the Simulator
 
-2. Key (*Required*)    
+* **Key** (required)    
 [Unique Key](../Topics/Keys.md) to identify the message
 
-3. Transport (*Required*)    
+* **Transport** (required)    
 For a REST simulator, use `REST (http)` or `REST (https)` for SSL
 
-4. Default Endpoint (*Required*)  
+* **Default Endpoint** (required)  
 DNS name or IP address that will be used to make the call     
 **Note**: this does **not** include the protocol, such as http:// or https://.
 
-5. Default Port (*Required*)  
+* **Default Port** (required)  
 Port to send HTTP request. This is usually `80` for REST (http) and `443` for REST (https), but that is not required.
 
-6. Device ID  
+* **Device ID**  
 Device ID that will be used to send along with each message.  The Device ID will be available for [Tag Replacement](StandardFields.md) in your message.
 
-7. User Name  
+* **Anonymous**  
+Set this option if you connect without a user name and password to MQTT broker.
+
+* **Use Basic Auth**  
+If you provide a User Name and Password and select this option, your User Name Password combination will be sent in the Authorization Header using the [Basic access authorization scheme](https://en.wikipedia.org/wiki/Basic_access_authentication)
+
+* **User Name**  (required if not anonymous)  
 User Name that will be available for you to use in [Tag Replacement](StandardFields.md) to provide authentication with your message.
 
-8. Password  
+* **Password**  (required if not anonymous)    
 Password that will be available for you to use in [Tag Replacement](StandardFields.md) to provide authentication with your message.
 
-9. Access Key  
+*  **Access Key**  
 Access Key if your device requires authentication, this could also be a password.  This will be available for [Tag Replacement](StandardFields.md).  You can also add authentication credentials to each message.
 
-10. Description    
+* **Description**    
 Free-form text used to provide notes for your Simulator
 
 ### Message Settings
 
-1. Name  
+* **Name** (required)    
 Name of the message
 
-2. Key  
+* **Key** (required)  
 [Unique Key](../Topics/Keys.md) to identify the message
 
-3. Content Type    
-Content Type, if applicable, such as `application/json`.  If left blank, it will send the Content Type `text/plain`.
-
-4. HTTP Verb    
+* **HTTP Verb** (required)  
 `GET, POST, PUT` and `DELETE`
 
-5. Text      
+* **Content Type**     
+Content Type, if applicable, such as `application/json`.  If left blank, it will send the Content Type `text/plain`.
+
+*  **Text**        
 Content that will be sent as the body of the message. This will be available for [Tag Replacement](DynamicFields.md).
 
-6. Path and Query String   
+* **Path and Query String**     
 Path and Query String that will be sent to the server. This will be available for [Tag Replacement](DynamicFields.md).   
 
    **Note**: the Path should be in the following format, with `/` as the first value.   

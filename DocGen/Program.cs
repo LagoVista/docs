@@ -92,32 +92,35 @@ namespace DocGen
 
                 foreach (var link in orderedlinks)
                 {
-                    var newLink = String.Empty;
-                    if (link.StartsWith("./"))
+                    if (!link.ToLower().StartsWith("http"))
                     {
-                        newLink = link.Replace("./", $"/{dirPath}");
-                    }
-                    else if (link.StartsWith("../.."))
-                    {
-                        var parentPath = dirPath.Substring(0, dirPath.LastIndexOf("/"));
-                        parentPath = parentPath.Substring(0, parentPath.LastIndexOf("/"));
-                        newLink = link.Replace("../..", parentPath);
-                    }
-                    else if (link.StartsWith("../"))
-                    {
-                        newLink = link.Replace("..", dirPath.Substring(0, dirPath.LastIndexOf("/")));
-                    }
-                    else if (link.ToLower().StartsWith("http"))
-                    {
-                        newLink = link;
-                    }
-                    else
-                    {
+                        var newLink = String.Empty;
+                        if (link.StartsWith("./"))
+                        {
+                            newLink = link.Replace("./", $"/{dirPath}");
+                        }
+                        else if (link.StartsWith("../.."))
+                        {
+                            var parentPath = dirPath.Substring(0, dirPath.LastIndexOf("/"));
+                            parentPath = parentPath.Substring(0, parentPath.LastIndexOf("/"));
+                            newLink = link.Replace("../..", parentPath);
+                        }
+                        else if (link.StartsWith("../"))
+                        {
+                            newLink = link.Replace("..", dirPath.Substring(0, dirPath.LastIndexOf("/")));
+                        }
+                        else if (link.ToLower().StartsWith("http"))
+                        {
+                            newLink = link;
+                        }
+                        else
+                        {
 
-                        newLink = $"{dirPath}/{link}";
-                    }
+                            newLink = $"{dirPath}/{link}";
+                        }
 
-                    md = md.Replace($@"""{link}""", $@"""#{newLink}""");
+                        md = md.Replace($@"""{link}""", $@"""#{newLink}""");
+                    }
                 }
 
                 if (fileInfo.Name.ToLower() != "toc.md")

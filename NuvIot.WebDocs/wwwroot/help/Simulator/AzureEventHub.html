@@ -1,65 +1,67 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
 <h1>Azure Event Hub Simulator</h1>
 <h3>Simulator Settings</h3>
-<ol>
-<li><p>Name<br />
+<ul>
+<li><p><strong>Name</strong> (required)<br />
 Name of the Simulator</p>
 </li>
-<li><p>Key<br />
+<li><p><strong>Key</strong> (required)<br />
 <a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
 </li>
-<li><p>Transport<br />
+<li><p><strong>Transport</strong> (required)<br />
 <code>Azure Event Hub</code></p>
 </li>
-<li><p>Default End Point (<em>Required</em>)<br />
+<li><p><strong>Default End Point</strong> (required)<br />
 Name of your Event Hub resource as created in Azure. Use the Name, not the full Event Hub URL.  For example, use <code>myeventhub</code>, not ~~<code>myeventhub.servicebus.windows.net</code>~~.</p>
 </li>
-<li><p>Hub Name (<em>Required</em>)<br />
-Name of the actual Event Hub where you will be publishing your messages</p>
+<li><p><strong>Device ID</strong><br />
+Device ID that will be sent along with each message, although this field is not necessarily required, you should probably add a device id to be used in your messages.</p>
 </li>
-<li><p>Device ID<br />
-Device ID that will be sent along with each message</p>
-</li>
-<li><p>Access Key Name<br />
+<li><p><strong>Access Key Name</strong> (required)<br />
 Name of the Access Key for the provided SAS Policy that has <code>Send</code> privileges</p>
 </li>
-<li><p>Access Key<br />
+<li><p><strong>Access Key</strong> (required)<br />
 Key that has <code>Send</code> privileges for the supplied Access Key Name</p>
 </li>
-<li><p>Default Payload Type (<em>Required</em>)<br />
+<li><p><strong>Hub Name</strong> (required)<br />
+Name of the actual Event Hub where you will be publishing your messages</p>
+</li>
+<li><p><strong>Default Payload Type</strong> (required)<br />
 Default format of the payload that will be sent with each message.  This can be either a simple string or <a href="#/Simulator/BinaryContent.md">Binary</a>.</p>
 </li>
-<li><p>Description<br />
+<li><p><strong>Description</strong><br />
 Free-form text to provide notes for your simulator</p>
 </li>
-</ol>
+</ul>
 <h3>Message Settings</h3>
-<ol>
-<li><p>Name<br />
+<ul>
+<li><p><strong>Name</strong> (required)<br />
 Name of the Message</p>
 </li>
-<li><p>Key<br />
+<li><p><strong>Key</strong> (required)<br />
 <a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
 </li>
-<li><p>Payload Type (<em>Required</em>)<br />
-Text or Binary message.  In most cases, this will be Text.</p>
+<li><p><strong>Payload Type</strong> (required)<br />
+Text or Binary message.  In most cases, you will send a Text message.</p>
 </li>
-<li><p>Append CR (0x0D)<br />
+<li><p><strong>Append CR</strong> <code>0x0D</code><br />
 ASCII character 0x0D, if set, will be appended to the message</p>
 </li>
-<li><p>Append LF (0x0A)<br />
-ASCII character 0x0D, if set, will be appended to the message</p>
+<li><p><strong>Append LF</strong> <code>0x0A</code><br />
+ASCII character 0x0A, if set, will be appended to the message</p>
 </li>
-<li><p>Text or Binary Message<br />
-Based on your Payload Type, select either Text <strong>or</strong> Binary</p>
+<li><p><strong>Text or Binary Message</strong><br />
+This is based on your Payload Type, select either Text <strong>or</strong> Binary.</p>
 <ul>
-<li>Text<br />
-Content to be sent as the body of the message.  This selection allows for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a>.</li>
-<li>Binary<br />
-<a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</li>
+<li><p>Text<br />
+Add any content that will be sent as the body of the message.  This option allows for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a></p>
+</li>
+<li><p>Binary<br />
+<a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</p>
+</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3>Dynamic Attributes (<em>For Text Payloads Only</em>)</h3>
 <p>For more information, please see the <a href="#/Simulator/DynamicFields.md">Dynamic Fields</a> section.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>

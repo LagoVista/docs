@@ -2,10 +2,10 @@
 title: Binary Content
 keywords: simulator, binary, hex
 
-status: readyforapproval
+status: approved
 created: 20171003
 updated: 20171018
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)

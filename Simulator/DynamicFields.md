@@ -2,10 +2,10 @@
 title: Dynamic Fields
 keywords: simulator, message, dynamicfields, attributes
 
-status: readyforapproval
+status: approved
 created: 20171003
 updated: 20171016
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
@@ -21,19 +21,19 @@ To send a Dynamic Field, create the field with data as shown.  In this example, 
 
 
 ### Dynamic Attributes Form
-1. Name (*Required*)  
+* **Name** (required)   
 Name to identify the field
 
-2. Key (*Required*)    
+* **Key** (required)  
 [Unique Key](../Topics/Keys.md), also the value you will use to replace content in your message
 
-3. Parameter Type (*Required*)  
+* **Parameter Type** (required)  
 Selection from standard [Parameter Types](../Messaging/TypeSystem/Index.md)
 
-4. Default Value (*Required*)    
+* **Default Value** (required)  
 Default Value that will be sent if it is not customized
 
-5. Description  
+* **Description**    
 Free-form text field for adding a description to your Dynamic Fields
 
 

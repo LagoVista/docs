@@ -2,7 +2,7 @@
 <p>Building an IoT application is a non-trivial task.  As with any non-trivial task, it is best to tackle it in small, easy, and verifiable steps.  Our built-in Project Management feature with task templates will be very helpful in getting you off to a great start!</p>
 <p>In addition, we have created an Expert System that you can use to help capture your requirements and device your solution.  After answering a number of questions, our Expert System will create a project plan, including a set of pre-populated tasks that you can complete to build out your application.</p>
 <p>Before you begin, it is important to understand your goals. There are a lot of cool things that you can do, so it is a good idea to make a list and prioritize. Assuming that you have completed your list, let's get started.</p>
-<p>This Getting Started guide assumes that you have a basic idea of what you want to do and that you have identified your sensors.  If you need help with this, please feel free to <a href="#http://support.nuviot.com">Contact Us</a> and we would be happy to discuss options.</p>
+<p>This Getting Started guide assumes that you have a basic idea of what you want to do and that you have identified your sensors.  If you need help with this, please feel free to <a href="http://support.nuviot.com">Contact Us</a> and we would be happy to discuss options.</p>
 <h4>General Approach</h4>
 <p>When designing any sort of complex architecture, it is a good idea to decouple the components of your system as much as possible, both for testing and for reuse.  Our system lets you create small, reusable, data-driven configurations for much of what you need to do for any typical IoT system.  Once you have configured your components, you can then assemble them into a fully functional and testable solution.  After a short amount of time, you will assemble a collection of reusable, data-driven components that lets you bring on whole new solutions in a small fraction of the time it would take to start from scratch.</p>
 <h3>Without Devices and Sensors, You Cannot Have IoT</h3>
@@ -43,11 +43,11 @@ chain of pipeline modules:</p>
 A Device Configuration consists of a <a href="#/Routes/Route.md">Route</a> that includes all the messages from the <a href="#/PipelineModules/Sentinel.md">Sentinel</a> to the <a href="#/PipelineModules/Transmitter.md">Transmitter</a>
 and definitions of the message types that, when found, should trigger this <a href="#/Routes/Route.md">Route</a>.  A device configuration can have many routes.</p>
 <h3>Assemble a Solution</h3>
-<p>A <a href="#/Deployment/Solution.md">Solution</a> is a collection of <a href="#https://github.com/LagoVista/docs/blob/master/Devices/DeviceConfigurations.md">Device Configurations</a>
+<p>A <a href="#/Deployment/Solution.md">Solution</a> is a collection of <a href="https://github.com/LagoVista/docs/blob/master/Devices/DeviceConfigurations.md">Device Configurations</a>
 that implements a specific set of services to manage a device.  A solution can consist of many device configurations.  In addition,
 your solution needs to specify the <a href="#/PipelineModules/Listener.md">Listeners</a> that will listen for messages from your devices.  Finally, a solution must include exactly one <a href="#/PipelineModules/Planner.md">Planner</a> module to map the incoming messages to <a href="#/Routes/Route.md">Routes</a>.</p>
 <p>A solution is a complete specification that will listen for and process messages from a device.</p>
 <h3>Instance</h3>
-<p>A solution describes how your application should work.  To make it do something, you need to deploy it as an instance.  To deploy it, you need to select a <a href="#https://github.com/LagoVista/docs/blob/master/Deployment/Configuration.md">Deployment Configuration</a> that will determine the physical compute
+<p>A solution describes how your application should work.  To make it do something, you need to deploy it as an instance.  To deploy it, you need to select a <a href="https://github.com/LagoVista/docs/blob/master/Deployment/Configuration.md">Deployment Configuration</a> that will determine the physical compute
 resources that will be allocated.  You also need to specify a key that will be used to identify the domain name where you can access your listeners.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:45</div><div>Copyright Sofware Logistics - 2017</div></div>

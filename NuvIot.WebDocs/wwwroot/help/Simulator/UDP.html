@@ -1,56 +1,58 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
 <h1>UDP Simulator</h1>
 <h3>Simulator Settings</h3>
-<ol>
-<li><p>Name (<em>Required</em>)<br />
+<ul>
+<li><p><strong>Name</strong> (required)<br />
 Name of the Simulator</p>
 </li>
-<li><p>Key (<em>Required</em>)<br />
+<li><p><strong>Key</strong> (required)<br />
 <a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
 </li>
-<li><p>Transport** (<em>Required</em>)<br />
+<li><p><strong>Transport</strong> (<em>Required</em>)<br />
 <code>TCP</code></p>
 </li>
-<li><p>Default Endpoint (<em>Required</em>)<br />
-Full URL of your IoT hub.  It should be something similar to: <code>myiothub.azure-devices.net</code></p>
+<li><p><strong>Default Endpoint</strong> (required)<br />
+Url or IP Address of the Endpoint to connect to with the TCP Simulator.</p>
 </li>
-<li><p>Port (<em>Required</em>)<br />
+<li><p><strong>Port</strong> (required)<br />
 Port to communicate with the server</p>
 </li>
-<li><p>Default Payload Type  (<em>Required</em>)<br />
+<li><p><strong>Default Payload Type</strong> (required)<br />
 Default format of the payload you will send with each message.  It can be either a simple string or <a href="#/Simulator/BinaryContent.md">Binary</a>.</p>
 </li>
-<li><p>Description<br />
+<li><p><strong>Description</strong><br />
 Free-form text used to provide notes for your simulator</p>
 </li>
-</ol>
+</ul>
 <h3>Message Settings</h3>
-<ol>
-<li><p>Name<br />
-Name of the message</p>
+<ul>
+<li><p><strong>Name</strong> (required)<br />
+Name of the Message</p>
 </li>
-<li><p>Key<br />
+<li><p><strong>Key</strong> (required)<br />
 <a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
 </li>
-<li><p>Payload Type (<em>Required</em>)<br />
-Either send a Text message or a Binary message.  In most cases this will be text.</p>
+<li><p><strong>Payload Type</strong> (required)<br />
+Text or Binary message.  In most cases, this will be text.</p>
 </li>
-<li><p>Append CR (0x0D)
-ASCII character 0x0D, if set, will be appended to the message</p>
+<li><p><strong>Append CR</strong> <code>0x0D</code><br />
+ASCII character 0x0D will be appended to the message</p>
 </li>
-<li><p>Append LF (0x0A)
-ASCII character 0x0D, if set, will be appended to the message</p>
+<li><p><strong>Append LF</strong> <code>0x0A</code>
+ASCII character 0x0D will be appended to the message</p>
 </li>
-<li><p>Text or Binary message<br />
-Based on your Payload Type, you can add either a Text <em>or</em> a Binary message</p>
+<li><p><strong>Text or Binary Message</strong><br />
+Based on your Payload Type, you can add either a text <strong>or</strong> binary message.</p>
 <ul>
-<li>Text<br />
-Add content that will be sent as the body of the message.  This option allows for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a></li>
-<li>Binary<br />
-<a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</li>
+<li><p><strong>Text</strong><br />
+Add content to be sent as the body of the message.  This allows for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a></p>
+</li>
+<li><p><strong>Binary</strong><br />
+<a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</p>
+</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3>Dynamic Attributes (<em>For Text Payloads Only</em>)</h3>
 <p>For more information, please see the <a href="#/Simulator/DynamicFields.md">Dynamic Fields</a> section.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>
