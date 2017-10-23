@@ -22,7 +22,7 @@ of our implementation partners to help you get going.
 
 The next steps assume that you have been able to successfully [Create an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) and have access to the necessary credentials.
 
-Create a [Transmitter](../Transmitter.md) and select the Listener Type of **Event Hub**, then populated the required fields as applicable.
+Create a [Transmitter](../Transmitter.md) and select the Listener Type of `Azure Event Hub`, then populated the required fields as applicable.
 
 ### Required Fields
 
@@ -35,7 +35,7 @@ In addition to the [standard fields](../../Topics/StandardFields.md) that are re
 The Host Name of the Event Hub Resource you created in Azure.  For example in
 ```sb://myeventhub.servicebus.windows.net``` the Host Name would be ```myeventhub.servicebus.windows.net```
 
-* **Resource Name** (required)  
+* **Hub Name** (required)  
 The name of the specific Event Hub you wish to listen on.
 
 * **Access Key** (required)  

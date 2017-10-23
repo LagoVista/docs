@@ -1,0 +1,30 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Transmitter.md">Transmitters</a></p>
+<h1>MQTT Client Transmitter</h1>
+<p>If you have your own dedicated MQTT server, you can establish a connection to it and monitor it for incoming messages.  The key that you specify for your MQTT client
+will be the Client Id that will be sent to MQTT broker.</p>
+<h3>Required Fields</h3>
+<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required for any transmitter, the following fields are required:</p>
+<ul>
+<li><p><strong>Transmitter Type</strong> (required)<br />
+<code>MQTT Client</code></p>
+</li>
+<li><p><strong>Host Name</strong> (required)<br />
+URL or IP address where your MQTT server is hosted.</p>
+</li>
+<li><p><strong>Anonymous Connection</strong><br />
+Select this option if your MQTT server does not require authentication (not recommended).</p>
+</li>
+<li><p><strong>User Name</strong> (required if not anonymous)<br />
+User Name with access priveleges to your MQTT Server (if not an anonymous connection).</p>
+</li>
+<li><p><strong>Password</strong>  (required if not anonymous)<br />
+Password with access priveleges to your MQTT Server (if not an anonymous connection).</p>
+</li>
+<li><p><strong>Connect with SSL/TLS</strong><br />
+Select this option if your broker supports SSL/TLS.</p>
+</li>
+<li><p><strong>Connect to Port</strong> (required)<br />
+The port that will be used to connect to your server, usually 1883 or 8883 for SSL/TLS.</p>
+</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

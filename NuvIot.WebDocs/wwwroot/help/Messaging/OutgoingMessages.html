@@ -1,0 +1,27 @@
+<p><a href="#/Messaging/Index.md">Home</a> &gt; <a href="#/Index.md">Device Messaging</a></p>
+<h1>Outgoing Messages</h1>
+<p>Outgoing Messages are Messages that are generated from the <a href="#/PipelineModules/OutputTranslator.md">Output Translator</a>
+from <a href="#/Workflows/OutputCommands.md">Output Commands</a> within a <a href="#/Workflows/Index.md">device workflow</a> and sent from
+a <a href="#/PipelineModules/Transmitter.md">Transmitter</a>.</p>
+<p>When you create your <strong>Outgoing Message Defintion</strong> you will need to specify <strong>Message Direction</strong> of either <code>Outgoing Message</code> or <code>Incoming and Outgoing</code>.</p>
+<h4>Additional Outgoing Message Fields</h4>
+<p>If you specify your mesasge as Outgoing you will have some additional options that will be ignored if</p>
+<ol>
+<li>The message definition is used to parse an incoming message or</li>
+<li>The transmitter that is used does not support that field.</li>
+</ol>
+<p>An example of the <a href="#/PipelineModules/Transmitter.md">Transmitter</a> not supporting the fields would be sending a message to an <a href="#/PipelineModules/Transmitters/MQTTClient.md">MQTT Transmitter</a>
+and providing a Path or Query String.  In the case of an MQTT transmitter, a Topic will be supported, however a Path and Query String will not.  See details on each Transmitter
+for which fields are suppoted.</p>
+<p><strong>Path and Query String</strong><br />
+You can provide a path and query string that will be used to build a complete URL to send your message.  This is is primarily applicable to a <a href="#/PipelineModules/Transmitters/Rest.md">REST Transmitter</a>.
+When providing a path you should only provide the path portion and not the domain name or host.  The domain name and host will be provided by the transmitter.</p>
+<p><strong>Headers</strong><br />
+You can provide a set of key value pairs that will be sent along with the header of your message.  This is is primarily applicable to a <a href="#/PipelineModules/Transmitters/Rest.md">REST Transmitter</a>.</p>
+<p><strong>Topic</strong><br />
+A Topic can be provided to be sent along with your message.  This is more applicable to <a href="#https://en.wikipedia.org/wiki/Message_queue">Message Queue</a> based protocols.</p>
+<p><strong>REST Method</strong><br />
+For <a href="#/PipelineModules/Transmitters/Rest.md">REST Transmitter</a> you can provide the method that will be invoked.  If you use a REST Transmitter and do not provide a method, it will be assumed that the method is <code>GET</code>.</p>
+<p><strong>Device Id</strong> (required for Azure IoT Hub)<br />
+When creating your outgoing message for Azure IoT Hub, you should set the Device ID in the outgoing message of the device where this message should be sent.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

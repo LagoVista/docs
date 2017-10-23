@@ -1,0 +1,16 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/ParsingStrategies.md">Parsing Strategies</a></p>
+<h1>Parsing a String With Regular Expressions</h1>
+<p>You can treat your message as a single string and then use a regular expession to extract the values from the string.  This is useful if your format changes and has optional values.</p>
+<p>There are two steps to extract values from your message as a string:</p>
+<ol>
+<li>Define a Regular Expression including name groups to extract the values.</li>
+<li>Create fields that map to each value you wish to extract.  Each group will contain the Regular Expression Group Name to extract the value from the regular expression result.</li>
+</ol>
+<p>For Example, at the message level you declare the Regular Expression:
+<code>&lt;val1:(?'V1'[0-9]*)&gt;</code>,</p>
+<p>Then add a field to the message with the Group Name <code>V1</code>.</p>
+<p>If the message parser receives a message similar to:</p>
+<p><code>&lt;val1:32&gt;</code>,</p>
+<p>The field will be assigned to the field <code>32</code>.</p>
+<p>A great tool to test your Regular Expressions is <a href="#https://regex101.com/">Regular Expressions 101</a>.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

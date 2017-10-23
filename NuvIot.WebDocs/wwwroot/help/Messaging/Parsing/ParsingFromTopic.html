@@ -1,0 +1,20 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/Index.md">Parsing</a></p>
+<h1>Parsing from Topics</h1>
+<p>To extract a value from the path, use the following syntax for your Topic Locator:</p>
+<p><code>/deviceadmin/{deviceid}</code></p>
+<p>With the above Topic Locator and a path of</p>
+<p><code>/deviceadmin/device1234</code></p>
+<p>The value device1234 will be made available to the message with the key as set for this field.</p>
+<h3>Special Note for Outgoing Messages</h3>
+<p>When creating an outgoing message, you can use some tag replacement fields within your topic locator, the two fields that are available are:</p>
+<ul>
+<li>~deviceid~ Will insert the current device id into the topic</li>
+<li>~messageid~ Will insert the current message id into the topic.</li>
+</ul>
+<p>An example of this would be for Device Id <code>DEV001</code> and a Topic Locator of:</p>
+<pre><code>/devices/~deviceid~
+</code></pre>
+<p>would send the following topic</p>
+<pre><code>/devices/DEV001
+</code></pre>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

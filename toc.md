@@ -1,14 +1,3 @@
----
-title: Table of Contents
-description:
-keywords:
-
-status: readyforreview
-created: 
-updated: 20171018
-updatedby: klworkman
----
-
 * [Home](Index.md)
 * [FAQ](faq.md)
 * [Getting Started](GettingStarted.md)
@@ -61,7 +50,7 @@ updatedby: klworkman
     * [State And Enumerations](./Messaging/TypeSystem/StatesAndEnums.md)
     * [Values with Units](./Messaging/TypeSystem/ValueWithUnits.md)
   * [Verifiers](./Messaging/Parsing/Verifiers.md)
-* Miscellaneous
+* [Miscellaneous](./Index.md)
   * [Keys](./Topics/Keys.md)
   * [Standard Fields](./Topics/StandardFields.md)
   * [Terminology](./Topics/Terminology.md)
@@ -78,11 +67,6 @@ updatedby: klworkman
      * [REST Server](./PipelineModules/Listeners/Rest.md)
      * [TCP Listener](./PipelineModules/Listeners/TCP.md)
      * [UDP Listener](./PipelineModules/Listeners/UDP.md)
-  * [Planner](./PipelineModules/Planner.md)
-  * [Input Translator](./PipelineModules/InputTranslator.md)
-  * [Sentinel](./PipelineModules/Sentinel.md)
-  * [Workflow](./PipelineModules/Workflow.md)
-  * [Output Translator](./PipelineModules/OutputTranslator.md)
   * [Transmitter](./PipelineModules/Transmitter.md)
      * [Azure Event Hub](./PipelineModules/Transmitters/AzureEventHubs.md)
      * [Azure IoT Hub](./PipelineModules/Transmitters/AzureIoTHub.md)
@@ -90,6 +74,11 @@ updatedby: klworkman
      * [MQTT Client](./PipelineModules/Transmitters/MQTTClient.md)
      * [Original Listener](./PipelineModules/Transmitters/OriginalListener.md)
      * [REST Client](./PipelineModules/Transmitters/Rest.md)
+  * [Planner](./PipelineModules/Planner.md)
+  * [Input Translator](./PipelineModules/InputTranslator.md)
+  * [Sentinel](./PipelineModules/Sentinel.md)
+  * [Workflow](./PipelineModules/Workflow.md)
+  * [Output Translator](./PipelineModules/OutputTranslator.md)
 * [Routes](./Routes/Route.md)
   * [Mappings](./Routes/Mappings/Index.md)
     * [Input Translator to Workflow Input](./Routes/Mappings/InputTranslatorToWorkflow.md) 
@@ -126,7 +115,6 @@ updatedby: klworkman
   * [Dynamic Fields](./Simulator/DynamicFields.md)
   * [Standard Fields](./Simulator/StandardFields.md)
   * [Binary Content](./Simulator/BinaryContent.md)  
-
 * [Workflow](./Workflows/Index.md) 
   * [Attributes](./Workflows/Attributes.md)
   * [Inputs](./Workflows/Input.md)

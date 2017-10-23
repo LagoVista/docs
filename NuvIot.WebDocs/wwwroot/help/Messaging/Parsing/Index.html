@@ -1,0 +1,38 @@
+<p><a href="#/Messaging/Parsing/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a></p>
+<h1>Messaging Parsing</h1>
+<h3>Introduction</h3>
+<p>When building a system that process messages, you need to normalize the content of those messages into a format you can use in your application.</p>
+<p>Normally this is done by writing code.  In NuvIoT we use a data driven approach to describe your messages and then have a powerful parsing
+engine that will extract the data from those messages and turn it into a format that can be used in your application.</p>
+<p>This has two key benefits over parsing messages in code:</p>
+<ol>
+<li>To update your parsing algorithm, you don't need to compile and re-build your application, you can simply make the changes and redeploy.</li>
+<li>The protocols and message definitions are self-documenting as part of the solution, not burried somewhere in a code file.</li>
+</ol>
+<p>From a performance perspective, the parsing algorithm was optimized and in fact uses many of the same constructs you would use if you
+developed a hard coded parsing algorithm, we just provide a data-driven mechanism for ultimate flexibility.</p>
+<h4>Overview</h4>
+<ul>
+<li><a href="#/Messaging/Parsing/Overview.md">Parsing Overview</a></li>
+<li><a href="#/Messaging/Parsing/DeviceIdParsing.md">Device ID Parsing</a></li>
+<li><a href="#/Messaging/Parsing/MessageIdParsing.md">Message ID Parsing</a></li>
+</ul>
+<h4>Parsing from Different Locations within a Message</h4>
+<ul>
+<li><a href="#/Messaging/Parsing/ParsingFromHeader.md">Parsing from Header</a></li>
+<li><a href="#/Messaging/Parsing/ParsingFromPath.md">Parsing from Path</a></li>
+<li><a href="#/Messaging/Parsing/ParsingFromQueryString.md">Parsing from Query String</a></li>
+<li><a href="#/Messaging/Parsing/ParsingFromTopic.md">Parsing from Topic</a></li>
+<li><a href="#/Messaging/Parsing/ParsingFromBody.md">Parsing from Message Body or Message Payload</a></li>
+</ul>
+<h4>Parsing content from within messages</h4>
+<ul>
+<li><a href="#/Messaging/Parsing/FramingBytes.md">Framing Bytes</a></li>
+<li><a href="#/Messaging/Parsing/ParsingBinaryMessages.md">Parsing a Binary Message</a></li>
+<li><a href="#/Messaging/Parsing/ParsingDelimitedMessage.md">Parsing a Delimited Message</a></li>
+<li><a href="#/Messaging/Parsing/ParsingStringMessage.md">Parsing Text with Position</a></li>
+<li><a href="#/Messaging/Parsing/ParsingWithRegEx.md">Parsing Text with Regular Expressions</a></li>
+<li><a href="#/Messaging/Parsing/ParsingJsonMessage.md">Parsing a JSON Message</a></li>
+<li><a href="#/Messaging/Parsing/ParsingXmlMessage.md">Parsing an XML Message</a></li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

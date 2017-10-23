@@ -50,9 +50,14 @@
         }
 
         function createHelpLeaf(parentNode, nodes) {
+            console.log(parentNode);
             var previousNode;
             for (let node of nodes) {
                 if (node.children) {
+                    if (!previousNode) {
+                        previousNode = $(`<li><a href=\"${node.link}\">${node.name}</a></li>`);
+                        parentNode.append(previousNode);
+                    }
                     var newParent = $('<ul class=\"childNodeSet\"></ul>');
                     previousNode.append(newParent);
                     previousNode.prepend('<i class="fa fa-plus"></i>');
@@ -70,7 +75,7 @@
             let element = $(tree);
             var nodes = [];
             parseChildNodes(element, nodes);
-
+            console.log(element);
             let parentNode = $("<ul class='topNodeSet'></ul>");
             createHelpLeaf(parentNode, nodes);
             $('.list').append(parentNode);
@@ -80,7 +85,6 @@
             console.log(parentNodes);
 
             $('.list  ul > li.parentNode > i').click(function (e) {
-                console.log("THIS CLICKED");
                 e.stopPropagation();
 
                 var childNodeList = $(this).parent().find("ul").first();
@@ -97,11 +101,6 @@
                     toggleElement.removeClass('fa-minus')
                 }
             });
-        });
-
-        $(document).ready(function () {
-            console.log("Map to Click");
-
         });
     </script>
     <style>

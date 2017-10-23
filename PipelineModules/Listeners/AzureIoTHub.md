@@ -12,10 +12,12 @@ updatedby: klworkman
 
 # Azure IoT Hubs
 
-NuvIoT supports connecting directly to your IoT Hub.  It is important to realize that, in order to connect to Azure IoT Hub,
+NuvIoT supports connecting directly to your IoT Hub.  
+
+**Important Note 1:** In order to connect to Azure IoT Hub,
 you will need to find the URL from the Event Hub-compatible connection string and the Event Hub-compatible name. Refer to this [Blog Post](https://blogs.msdn.microsoft.com/iotdev/2017/05/09/understand-different-connection-strings-in-azure-iot-hub/) for more information on IoT Hub Connection Strings.  
 
-**Important Note:** If you use Azure IoT Hub as a listener, those devices must be registered in the [Azure IoT Hub Device Repository](../../Devices/AzureIoTHubDeviceRepo.md).
+**Important Note 2:** If you use Azure IoT Hub as a listener, those devices must be registered in the [Azure IoT Hub Device Repository](../../Devices/AzureIoTHubDeviceRepo.md).
 
 ### Required Fields
 
@@ -40,7 +42,7 @@ You can also create your own custom endpoint via the Azure Portal if you need to
 Enter the name of the Access Key (similar to iothubowner, services).  It is important that your key has `service connect` permissions.
 
 * **Access Key**  (required)    
-Enter the assigned Access Key for your IoT Hub that was specified in the **Access Key Name** section.
+Enter the assigned Access Key for your IoT Hub that was specified in the **Access Key Name** section.  Your Access Key will not be saved in plain text and will not be displayed when editing.
 
 ### Optional Fields
 * **Consumer Group**      

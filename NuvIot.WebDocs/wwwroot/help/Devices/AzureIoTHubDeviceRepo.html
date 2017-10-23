@@ -1,0 +1,20 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Devices/Index.md">Devices</a></p>
+<h1>Azure IoT Hub Device Repository</h1>
+<p>If you are using Azure IoT Hub to connect your devices, you will need to use the Azure IoT Hub Device Repository.</p>
+<p>To maintain consistent data, NuvIoT currently requires you to use the NuvIoT built-in Device Repository Editor to provision and update your devices.<br />
+If you need afeature that is not available in our built-in Management Console, please <a href="#http://support.nuviot.com">Contact Us</a> so that we can work with you to meet your needs.</p>
+<p>When you connect your NuvIoT repository to the Azure IoT Hub, you need to use a Shared Access Key that has registry read/write permissions.</p>
+<h3>Required Fields</h3>
+<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required, the following fields are required:</p>
+<ul>
+<li><p><strong>Resource Name</strong> (required)<br />
+The name of your Azure IoT Hub</p>
+</li>
+<li><p><strong>Access Key Name</strong> (required)<br />
+The name of the Policy/Key that has &quot;Registry write&quot; permissions</p>
+</li>
+<li><p><strong>Access Key</strong> (required)<br />
+The Shared Access Key for the policy/key that has &quot;Registry Write&quot; permissions as specified in the Access Key Name field.  This is a Base 64 encoded value.</p>
+</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

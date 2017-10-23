@@ -1,0 +1,38 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
+<h1>Dynamic Fields</h1>
+<p>For text fields that are sent with your message, you can create a set of Dynamic Fields that can be used to change the content
+of the messages before they are sent to the server.</p>
+<p>On the view that you use to send messages, open an Options dialog where you can replace the default value.</p>
+<p>To send a Dynamic Field, create the field with data as shown.  In this example, assume that you want to send different temperature values:</p>
+<h3>Dynamic Attributes Form</h3>
+<ol>
+<li><p>Name (<em>Required</em>)<br />
+Name to identify the field</p>
+</li>
+<li><p>Key (<em>Required</em>)<br />
+<a href="#/Topics/Keys.md">Unique Key</a>, also the value you will use to replace content in your message</p>
+</li>
+<li><p>Parameter Type (<em>Required</em>)<br />
+Selection from standard <a href="#/Messaging/TypeSystem/Index.md">Parameter Types</a></p>
+</li>
+<li><p>Default Value (<em>Required</em>)<br />
+Default Value that will be sent if it is not customized</p>
+</li>
+<li><p>Description<br />
+Free-form text field for adding a description to your Dynamic Fields</p>
+</li>
+</ol>
+<h3>Usage</h3>
+<p>To use the Dynamic Value in your message, simply use the format:
+<code>~key~</code></p>
+<p>Referring to the example, if you specified <code>temperature</code> as the key of
+your Dynamic Field and want to use it in the query string of your message, you might use the following syntax:<br />
+<code>/submit/temp?temperature=~temperature~</code>.</p>
+<p>Then, if your Default Value as specified is <code>98.6</code>, the message will be sent as:<br />
+<code>/submit/temp?temperature=98.6</code></p>
+<p>Prior to sending the message, you can change the Default Value. If you changed it to <code>64.8</code>, the message will be sent as:<br />
+<code>/submit/temp?temperature=64.8</code></p>
+<h3>Standard Fields</h3>
+<p>In addition to these dynamically declared fields, there are a number of system-defined, or <a href="#/Simulator/StandardFields.md">Standard Fields</a> that will be used to replace tags
+in your message.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

@@ -1,0 +1,39 @@
+<p><a href="#/Index.md">Home</a></p>
+<h1>Route</h1>
+<p>Routes are used to create a path through <a href="#/PipelineModules/Index.md">Pipeline Execution Modules</a> that will be used to process
+<a href="#/Messaging/IncomingMessages.md">Incoming Messages</a> from your devices.</p>
+<p>A <a href="#/Devices/DeviceConfigurations.md">Device Configuration</a> can have many routes and each route is associated
+with a <a href="#/Messaging/Parsing/MessageIdParsing.md">Message Id</a>.</p>
+<p>Here is the basic flow.</p>
+<ol>
+<li>The <a href="#/PipelineModules/Planner.md">Planner</a> will determine the device configuration from the <a href="#/Messaging/Parsing/DeviceIdParsing.md">Device Id</a> and the message from the <a href="#/Messaging/Parsing/MessageIdParsing.md">Message Id</a> from the incoming message.</li>
+<li>Based the type of message and device configuration, the planner will look up the corresponding route.</li>
+<li>The Planner will then create a set of instructions that reference pipeline modules that will executed to process the message.</li>
+</ol>
+<h3>Creating a Route</h3>
+<ol>
+<li>Ensure you have created and configured the <a href="#/PipelineModules/Index.md">Pipleine Modules</a> you will use in the route.</li>
+<li>Open a <a href="#/Devices/DeviceConfigurations.md">Device Configuration</a></li>
+<li>Click Add Route - A default route will be created where you can select pipeline modules.</li>
+<li>Select a <a href="#/Messaging/Index.md">Message Definition</a>, doing so will associate this route with a message as it arrives from the device.</li>
+<li>Click on a node in our route and select a Pipeline Module.</li>
+<li>To add a <a href="#/PipelineModules/Transmitter.md">Transmitter</a>, click the Add Transmitter button above route canvas.</li>
+<li>Configure <a href="#//RoutesMappings/Index.md">Mappings</a> between applicable nodes.</li>
+</ol>
+<p>Below is an example of a typical route</p>
+<p><img src="../Images/Route.png" alt="Route Exampmle" /></p>
+<ol>
+<li>For this route <a href="#/Devices/Security.md">Device Security</a> is handled by the <a href="#/PipelineModules/Listener.md">Listener</a>, so we can use an Anonymous <a href="#/PipelineModules/Sentinel.md">Sentinal module</a>.</li>
+<li>The <a href="#/Messaging/IncomingMessages.md">Incoming Mesage</a> contains enough information to <a href="#/Messaging/Parsing/Index.md">Parse the Fields</a> from the message so we use a default message <a href="#/PipelineModules/InputTranslator.md">Input Translator</a>.</li>
+<li>We Execute a <a href="#/Workflows/Index.md">workflow</a> called Simple Workflow that you have created</li>
+<li>The <a href="#/PipelineModules/OutputTranslator.md">Output Translator</a> takes the <a href="#/Workflows/OutputCommands.md">Output Commands</a> from the workflow and convert it to an <a href="#/Messaging/OutgoingMessages.md">outgoing messages</a> that can be either sent back to the device or a 3rd party endpoint with a <a href="#/PipelineModules/Transmitter.md">Transmitter</a>.</li>
+<li>The <a href="#/PipelineModules/Transmitter.md">Transmitter modules</a> take those <a href="#/Messaging/OutgoingMessages.md">Outogoing Messages</a> and either send them back to the device via the original listener, or forward to a 3rd party endpoint.</li>
+</ol>
+<h3>Mappings</h3>
+<p>To allow for maximum reusability, some pipeline modules require <a href="#//RoutesMappings/Index.md">mappings</a>.</p>
+<ul>
+<li><strong>Input Translator to Workflow Inputs</strong> <a href="#//RoutesMappings/OutputTranslatorToTransmitter.md">Map</a> the <a href="#/Messaging/MessageFields.md">fields</a> from <a href="#/Messaging/IncomingMessages.md">messages</a> that were <a href="#/Messaging/Parsing/Index.md">parsed</a> with the <a href="#/PipelineModules/InputTranslator.md">Input Translator</a> to <a href="#/Workflows/Input.md">Inputs</a> on the <a href="#/PipelineModules/Workflow.md">Workflow Module</a> that will process the message.</li>
+<li><strong>Workflow Output Commands to Output Translator</strong> <a href="#//RoutesMappings/OutputTranslatorToTransmitter.md">Map</a> the <a href="#/Workflows/OutputCommands.md">outputs</a> created by the <a href="#/Workflows/index.md">Device Workflow</a> to <a href="#/Messaging/OutgoingMessages.md">messages</a> that will be created by the <a href="#/PipelineModules/OutputTranslator.md">Output Translator</a>.</li>
+<li><strong>Output Translator to Transmitter</strong> <a href="#//RoutesMappings/OutputTranslatorToTransmitter.md">Map</a> the messages you created with the <a href="#/PipelineModules/OutputTranslator.md">Output Translator</a> to the <a href="#/PipelineModules/Transmitter.md">Transmitter</a> that will send them.</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

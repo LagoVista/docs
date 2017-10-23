@@ -1,0 +1,30 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
+<h1>Azure Service Bus</h1>
+<p>Azure Service Bus is a good choice for listening for incoming messages, it will allow incredible scale.
+For this option, your devices will communicate directly with  <a href="#https://azure.microsoft.com/en-us/services/service-bus/">Azure Service Bus</a>
+and NuvIoT will subscribe to that bus to receive messages.  Once the message is received, it can participate in
+the standard NuvIoT <a href="#/PipelineModules/Index.md">Procssing Pipeline</a>, including the Device ID and Message Parsers.</p>
+<h3>Required Fields</h3>
+<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required for any listener, the following fields are required:</p>
+<ul>
+<li><p><strong>Listener Type</strong> (required)<br />
+<code>Azure Service Bus</code></p>
+</li>
+<li><p><strong>Content Type</strong> (required)<br />
+Select the <a href="#/Messaging/ContentTypes.md">Content Type</a> of the message that you are expecting.  All Content Types are acceptable.</p>
+</li>
+<li><p><strong>Host Name</strong> (required)<br />
+The Host Name of the Service Resource you created in Azure.  For example in
+<code>sb://myeventhub.servicebus.windows.net</code> the Host Name would be <code>myeventhub.servicebus.windows.net</code></p>
+</li>
+<li><p><strong>Queue</strong> (required)<br />
+The name of the <a href="#https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions">Service Bus Queue</a> to listen on.</p>
+</li>
+<li><p><strong>Access Key Name</strong> (required)<br />
+Enter the name of the Access Key.  It is important that your key has <code>listen</code> permissions.</p>
+</li>
+<li><p><strong>Access Key</strong>  (required)<br />
+Enter the assigned Access Key for your IoT Hub that was specified in the <strong>Access Key Name</strong> section. Your Access Key will not be saved in plain text and will not be displayed when editing.</p>
+</li>
+</ul>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/22/2017 18:55:51</div><div>Copyright Sofware Logistics - 2017</div></div>

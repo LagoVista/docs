@@ -20,4 +20,7 @@ the device connects.
 
 ### Required Fields
 
-There are no configuration options for this transmitter.
+In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any transmitter, the following fields are required:
+
+* **Transmitter Type** (required)  
+`Origianl Listener`
