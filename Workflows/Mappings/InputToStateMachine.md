@@ -2,10 +2,10 @@
 title: Workflow Mapping - Input to State Machine
 keywords: workflow, mapping, input, statemachine
 
-status: readyforapproval
+status: approved
 created: 20171009
 updated: 20171011
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Workflow](../Index.md) > [Mappings](Index.md)

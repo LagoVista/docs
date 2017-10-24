@@ -21,7 +21,7 @@ The message is then passed to the [Output Translator](../PipelineModules/OutputT
 
 ### Scripting
 To work with output commands you will use simple scripts.  To create an output command, you will use the [send command](../Scripting/InvokeOutputCommand.md) in any script.  To build the content of the output command 
-you will create a [function called onExecute](../Scripting/OutputCommandCreate.md).
+you will create a function called [onExecute](../Scripting/OutputCommandCreate.md).
 
 ### Mappings from Output Commands
 None - An Output Command can only have incoming connections.

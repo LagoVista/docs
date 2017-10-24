@@ -2,7 +2,7 @@
 title: Implementation Credit
 keywords: implementationcredit, deployment, engagement
 
-status: readyforreview
+status: approved
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff
