@@ -1,0 +1,19 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
+<h1>Attribute - onSet</h1>
+<p>When designing your workflow, you can add a script that will be executed when the value is being assigned.  If no script
+has been assigned, the value will simply be set without executing any scripts.</p>
+<p>If you have a script in place, you need to make the assignment in the script.  That also means that you can cancel the setting of the Attribute within the script.</p>
+<p>If you do not need to execute any logic, you should not create a script.  Assigning the value directly will be much faster than through a script.</p>
+<p>While editing your script, you will have access to the entire <a href="#/Scripting/DeviceScriptingModel.md">Device</a> and <a href="#/Scripting/DeviceWorkflowScriptingModel.md">Device Workflow</a> data.</p>
+<h5>Setting a Value</h5>
+<p>If you have a named Attribute, <code>temperature</code>, on your workflow, you can get and set it with any scripts associated
+with the workflow.</p>
+<p>The script template that will set the value will look as follows:</p>
+<pre><code>function onSet(value) {
+    Attributes.temperature.value = value;
+};
+</code></pre>
+<p>It is important to realize that each <a href="#/Workflows/Attributes.md">Attribute</a> has a <a href="#/Messaging/TypeSystem/Index.md">Specific Data Type</a> assigned to it.  When
+you assign a new value, the type should match.  If it does not match, an attempt will be made to convert
+the assigned value to the correct type.  This will cause an error and the entire device transition will fail.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>

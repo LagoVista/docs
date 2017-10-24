@@ -2,10 +2,10 @@
 title: MQTT Simulator
 keywords: simulator, windows, mqtt
 
-status: readyforapproval
+status: approved
 created: 20171003
 updated: 20171017
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
@@ -17,67 +17,71 @@ updatedby: klworkman
 **Note:** For the initial release, our MQTT Simulator does not support MQTT over TLS/SSL. This functionality is planned for Q1 2018.  If you need this sooner, please consider
 submitting a [Pull Request](http://github.com/lagovista/simulator) or [Contact Us](http://support.nuviot.com.).
 
-1. Name (*Required*)   
+* **Name** (required)  
 Name of the Simulator
 
-2. Key (*Required*)   
+* **Key** (required)  
 [Unique Key](../Topics/Keys.md) to identify the message
 
-3. Transport (*Required*)   
+* **Transport** (required)  
 `MQTT`
 
-4. Default Endpoint (*Required*)  
-Full URL of your IoT hub. It should be something similar to `myiothub.azure-devices.net`.
+* **Default Endpoint** (required)  
+Full URL of your MQTT Broker. It should be something similar to `mybroker.mydomain.com`.
 
-5. Port (*Required*)  
-Usually 1883 or 8883 when TLS/SSL is supported.
+* **Port** (required)  
+Usually 1883 or 8883 when TLS/SSL is suppoed.
 
-6. DeviceID  
+* **Device Id**    
 You can add a Device ID to your simulator. This may be the same as the User Name, but this is not a requirement.
 
-7. User Name  
+* **Anonymous**  
+Set this option if you connect without a user name and password to MQTT broker.
+
+* **User Name**  (required if not anonymous)  
 User Name to log in to your MQTT server
 
-8. Password  
+* **Password**  (required if not anonymous)    
 Password to log in to your MQTT server
 
-9. Subscription (*Optional*)  
+* **Subscription**
 You can subscribe to an MQTT Topic and receive messages in your Simulator.  To subscribe to a Topic based on device, use
 the following format:   
 ```/messages/~deviceid~```, where `~deviceid~` is replaced by the Device ID you added for your Simulator
 
-10. Default Payload Type (*Required*)  
+* **Default Payload Type** (required)   
 Default format of the payload you will send with each message.  This can be either a simple string or [Binary](BinaryContent.md).
 
-11. Description  
+* **Description**    
 Free-form text used to provide notes for your Simulator
 
 ### Message Settings
 
-1. Name (*Required*)    
-Name of the message
+* **Name** (required)    
+Name of the Message
 
-2. Key (*Required*)    
-A [Unique Key](../Topics/Keys.md) to identify the message
+* **Key** (required)       
+[Unique Key](../Topics/Keys.md) to identify the message
 
-3. Payload Type (*Required*)  
-Send either a Text message or a Binary message. In most cases, this will be text.
+* **Payload Type** (required)     
+Text or Binary message.  In most cases, you will send a Text message.
 
-4. Topic  
+* **Topic**      
 Topic in which to publish your message
 
-5. Append CR (0x0D)  
+* **Append CR** `0x0D`    
 ASCII character 0x0D, if set, will be appended to the message
 
-6. Append LF (0x0A)  
-ASCII character 0x0D, if set, will be appended to the message
+* **Append LF** `0x0A`      
+ASCII character 0x0A, if set, will be appended to the message
 
-7.  Text or Binary Message   
-Add Text or Binary message based on your Payload Type
-     * Text   
-Add content that will be sent as the body of the message. This option allows for [Tag Replacement](DynamicFields.md).
-     * Binary   
-[Binary Content](BinaryContent.md) to be sent as a message
+* **Text or Binary Message**   
+This is based on your Payload Type, select either Text **or** Binary.
+   * Text     
+     Add any content that will be sent as the body of the message.  This option allows for [Tag Replacement](DynamicFields.md)
 
-### Dynamic Attributes (*For Text Payloads Only*)  
+   * Binary     
+     [Binary Content](BinaryContent.md) to be sent as a message
+
+### Dynamic Attributes (*For Text Payloads Only*)     
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.

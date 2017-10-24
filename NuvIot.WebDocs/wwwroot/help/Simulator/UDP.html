@@ -1,0 +1,58 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
+<h1>UDP Simulator</h1>
+<h3>Simulator Settings</h3>
+<ul>
+<li><p><strong>Name</strong> (required)<br />
+Name of the Simulator</p>
+</li>
+<li><p><strong>Key</strong> (required)<br />
+<a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
+</li>
+<li><p><strong>Transport</strong> (<em>Required</em>)<br />
+<code>TCP</code></p>
+</li>
+<li><p><strong>Default Endpoint</strong> (required)<br />
+Url or IP Address of the Endpoint to connect to with the TCP Simulator.</p>
+</li>
+<li><p><strong>Port</strong> (required)<br />
+Port to communicate with the server</p>
+</li>
+<li><p><strong>Default Payload Type</strong> (required)<br />
+Default format of the payload you will send with each message.  It can be either a simple string or <a href="#/Simulator/BinaryContent.md">Binary</a>.</p>
+</li>
+<li><p><strong>Description</strong><br />
+Free-form text used to provide notes for your simulator</p>
+</li>
+</ul>
+<h3>Message Settings</h3>
+<ul>
+<li><p><strong>Name</strong> (required)<br />
+Name of the Message</p>
+</li>
+<li><p><strong>Key</strong> (required)<br />
+<a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
+</li>
+<li><p><strong>Payload Type</strong> (required)<br />
+Text or Binary message.  In most cases, this will be text.</p>
+</li>
+<li><p><strong>Append CR</strong> <code>0x0D</code><br />
+ASCII character 0x0D will be appended to the message</p>
+</li>
+<li><p><strong>Append LF</strong> <code>0x0A</code>
+ASCII character 0x0D will be appended to the message</p>
+</li>
+<li><p><strong>Text or Binary Message</strong><br />
+Based on your Payload Type, you can add either a text <strong>or</strong> binary message.</p>
+<ul>
+<li><p><strong>Text</strong><br />
+Add content to be sent as the body of the message.  This allows for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a></p>
+</li>
+<li><p><strong>Binary</strong><br />
+<a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Dynamic Attributes (<em>For Text Payloads Only</em>)</h3>
+<p>For more information, please see the <a href="#/Simulator/DynamicFields.md">Dynamic Fields</a> section.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>

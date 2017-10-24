@@ -2,10 +2,10 @@
 title: UDP Simulator
 keywords: simulator, windows, tcp
 
-status: readyforapproval
+status: approved
 created: 20171003
 updated: 20171016
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
@@ -14,49 +14,51 @@ updatedby: klworkman
 
 ### Simulator Settings
 
-1. Name (*Required*)    
+* **Name** (required)     
 Name of the Simulator
 
-2. Key (*Required*)    
+* **Key** (required)  
 [Unique Key](../Topics/Keys.md) to identify the message   
 
-3. Transport** (*Required*)    
+* **Transport** (*Required*)    
 `TCP`   
 
-4. Default Endpoint (*Required*)  
-Full URL of your IoT hub.  It should be something similar to: `myiothub.azure-devices.net`   
+* **Default Endpoint** (required)  
+Url or IP Address of the Endpoint to connect to with the TCP Simulator.
 
-5. Port (*Required*)  
+* **Port** (required)  
 Port to communicate with the server
 
-6. Default Payload Type  (*Required*)  
+* **Default Payload Type** (required)  
 Default format of the payload you will send with each message.  It can be either a simple string or [Binary](BinaryContent.md).   
 
-7. Description   
+* **Description**   
 Free-form text used to provide notes for your simulator
 
 ### Message Settings
 
-1. Name   
-Name of the message
+* **Name** (required)  
+Name of the Message
 
-2. Key  
+* **Key** (required)  
 [Unique Key](../Topics/Keys.md) to identify the message
 
-3. Payload Type (*Required*)  
-Either send a Text message or a Binary message.  In most cases this will be text.
+* **Payload Type** (required)  
+Text or Binary message.  In most cases, this will be text.
 
-4. Append CR (0x0D) 
-ASCII character 0x0D, if set, will be appended to the message
+* **Append CR** `0x0D`  
+ASCII character 0x0D will be appended to the message
 
-5. Append LF (0x0A) 
-ASCII character 0x0D, if set, will be appended to the message   
-6.  Text or Binary message       
-Based on your Payload Type, you can add either a Text *or* a Binary message   
-    * Text    
-Add content that will be sent as the body of the message.  This option allows for [Tag Replacement](DynamicFields.md)      
-    * Binary    
+* **Append LF** `0x0A`
+ASCII character 0x0D will be appended to the message
+
+* **Text or Binary Message**  
+Based on your Payload Type, you can add either a text **or** binary message.
+    * **Text**    
+      Add content to be sent as the body of the message.  This allows for [Tag Replacement](DynamicFields.md)
+
+    * **Binary**      
 [Binary Content](BinaryContent.md) to be sent as a message
 
-### Dynamic Attributes (*For Text Payloads Only*)     
+### Dynamic Attributes (*For Text Payloads Only*)  
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.

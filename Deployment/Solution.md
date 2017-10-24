@@ -11,6 +11,9 @@ updatedby: Kevin D. Wolf
 [Home](../Index.md) > [Deployment](Index.md)
 
 # Solution
+
+Solutions are where your application comes together.
+
 NuvIoT is made up of a number of reusable components, including:
 *  [Listeners](../PipelineModules/Listener.md) 
 *  [Routes](../Routes/Route.md)

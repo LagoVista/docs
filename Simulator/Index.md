@@ -2,7 +2,7 @@
 title: Simulator
 keywords: simulator, windows, udp, tcp, mqtt, azureiothub, azureeventhub, rest
 
-status: readyforapproval
+status: approved
 created: 20171003
 updated: 20171017
 createdby: Kevin D. Wolf
@@ -11,6 +11,10 @@ updatedby: klworkman
 [Home](../Index.md)
 
 # Simulator
+
+**Important Note:** At this time you should only use this simulator for development purposes.  As part of creating a simulator you will be adding keys and passwords, 
+although they are encrypted, they are currently stored on our servers.  We are evalulating options to store these locally or in your private storage, please stay tuned
+for future updates.
 
 To help make your implementation go smoothly and get you up and running as quickly as possible, NuvIoT offers a free Simulator that you
 can download from the Windows Store.

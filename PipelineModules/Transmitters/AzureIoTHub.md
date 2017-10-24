@@ -17,11 +17,13 @@ you will need to find the URL from the Event Hub-compatible connection string an
 
 Also if you are sending a message back to a device that originally connected to an [Azure IoT Hub Listener](../Listeners/AzureIoTHub.md) you should use the [Original Listener](OriginalListener.md) option as your transmitter.
 
+When creating your outgoing message for Azure IoT Hub, you should set the Device ID in the outgoing message of the device where this message should be sent. 
+
 ### Required Fields
 
 In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any transmitter, the following fields are required:
 
-* **Listener Type** (required)  
+* **Transmitter Type** (required)  
 `Azure IoT Hub`
 
 * **Host Name** (required)  
@@ -40,5 +42,5 @@ Enter the name of the Access Key (similar to iothubowner, services).  It is impo
 Enter the assigned Access Key for your IoT Hub that was specified in the **Access Key Name** section.
 
 ### Optional Fields
-* Consumer Group    
+* **Consumer Group**    
 If you do not add a Consumer Group, the `$Default` Consumer Group will be used.

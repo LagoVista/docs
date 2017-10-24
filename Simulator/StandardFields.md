@@ -2,10 +2,10 @@
 title: Standard Fields
 keywords: simulator, message, standardfields, attributes
 
-status: issues clarify second bullet point
+status: approved
 created: 20171003
 updated: 20171016
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Simulator](Index.md)
@@ -17,7 +17,7 @@ If there are custom fields that you would like to define to make your messages d
 By default, the following fields are available to be added to your message:
 
 * `~datetime~` - Date Time, using the current locale as specified by the operating system or runtime
-* `~datetimeiso8601~` - Current Date Time in GMT in the ISO8601 Format YYYY-MM-DDTHH:MM:SS.sssZ will have three decimal points behind second
+* `~datetimeiso8601~` - Will use a string from the Current Date Time in GMT with the ISO8601 Format YYYY-MM-DDTHH:MM:SS.sssZ will have always three decimal points for milliseconds
 * `~deviceid~` - Device ID as specified in the Simulator settings
 * `~username~` - User Name as specified in the Simulator settings
 * `~password~` - Password as specified in the Simulator settings

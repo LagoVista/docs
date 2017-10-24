@@ -28,22 +28,30 @@ AMQP server, it will automatically authenticate your devices.  Please contact us
 
 In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any listener, the following fields are required:
 
-* **Listener Type**  (required)  
+* **Listener Type** (required)  
 `AMQP Client`
 
-* **Content Type**   
+* **Content Type** (required)   
 Select the [content type](../../Messaging/ContentTypes.md) of the message you are expecting, any content types are acceptable.
 
 * **Host Name** (required)  
 Host Name of your AMQP Server
 
-* **User Id**  (required)  
-User Id of the account that has access to the AMQP queues
+* **Anonymous Connection**     
+Select this option if your AMQP server does not require authentication.
 
-* **Password** (required)  
-Password of the account that has access to the AMQP queues
+* **User Name**  (required if not anonymous)     
+User Id of the account that has access to the AMQP server.
 
-*  **Topic** (required)  
-The Topic or Queue to listen for messages, note you can use wildcards such as `#` and `*` where
-   * `*` (star) can substitute for exactly one word.
-   * `#` (hash) can substitute for zero or more words.
+* **Password** (required if not anonymous)      
+Password of the account that has access to the AMQP server.
+
+* **Subscriptions** (required)  
+The Subscriptions you provide will be used to select the messages that you will receive from your AMQP server.
+
+    You must provided at least one subscription to listen for messages.  
+    Each Subscription must contain a a topic with wildcards as supported by your MQTT server such as `#` and `*` where:
+  * `*` (star) can substitute for exactly one word
+  * `#` (hash) can substitute for zero or more words  
+ 
+

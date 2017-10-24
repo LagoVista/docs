@@ -36,9 +36,9 @@ The Host Name of the Service Resource you created in Azure.  For example in
 The name of the [Service Bus Queue](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) to listen on.
 
 * **Access Key Name** (required)   
-Enter the name of the Access Key (similar to iothubowner, services).  It is important that your key has `service connect` permissions.
+Enter the name of the Access Key.  It is important that your key has `listen` permissions. 
 
 * **Access Key**  (required)    
-Enter the assigned Access Key for your IoT Hub that was specified in the **Access Key Name** section.
+Enter the assigned Access Key for your IoT Hub that was specified in the **Access Key Name** section. Your Access Key will not be saved in plain text and will not be displayed when editing.
 
 

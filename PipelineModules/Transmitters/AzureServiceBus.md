@@ -2,7 +2,7 @@
 title: Azure Service Bus
 keywords: transmitter, cloud, azure, servicebus, messagequeue, topics
 
-status: readyforapproval
+status: new
 created: 20171019
 updated: 20171019
 createdby: bytemaster-0xff
@@ -12,13 +12,28 @@ updatedby: bytemaster-0xff
 
 # Azure Service Bus Transmitter
 
-Azure Service Bus is a good choice for listening for incoming messages, it will allow incredible scale.
-For this option, your devices will communicate directly with  [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/)
-and NuvIoT will subscribe to that bus to receive messages.  Once the message is received, it can participate in
-the standard NuvIoT [Procssing Pipeline](../Index.md), including the Device ID and Message Parsers.
+You can easily send messages to an [Azure Service Bus](https://azure.microsoft.com/en-us/services/service-bus/) server for external process.
 
-To configure Service Bus, you will need to provide:
+### Required Fields
 
-* Name of Service Bus
-* Shared Access Key
+In addition to the [standard fields](../../Topics/StandardFields.md) that are required for any transmitter, the following fields are required:
 
+* **Transmitter Type** (required)  
+`Azure Service Bus`
+
+* **Content Type** (required)  
+Select the [Content Type](../../Messaging/ContentTypes.md) of the message that you are expecting.  All Content Types are acceptable.
+
+
+* **Host Name** (required)  
+The Host Name of the Service Resource you created in Azure.  For example in
+```sb://myeventhub.servicebus.windows.net``` the Host Name would be ```myeventhub.servicebus.windows.net```
+
+* **Queue** (required)     
+The name of the [Service Bus Queue](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) to listen on.
+
+* **Access Key Name** (required)   
+Enter the name of the Access Key (similar to iothubowner, services).  It is important that your key has `service connect` permissions.
+
+* **Access Key**  (required)    
+Enter the assigned Access Key for your IoT Hub that was specified in the **Access Key Name** section.

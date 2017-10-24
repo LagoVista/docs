@@ -1,0 +1,17 @@
+<p><a href="#/Index.md">Home</a></p>
+<h1>Pipeline Modules</h1>
+<p>To allow for maximum reuse and scalability, build your application as a set of Pipeline Modules.  Once the <a href="#/PipelineModules/Listener.md">Listener</a>
+receives a message that is handed off to the <a href="#/PipelineModules/Planner.md">Planner</a> to determine processing, a <a href="#/Routes/Route.md">Route</a> is created.</p>
+<p>A route is a series of Pipeline Modules that are executed sequentially to perform processing on incoming messages.</p>
+<p>The following are the default Pipeline Modules that make up a typical route:</p>
+<ul>
+<li><a href="#/PipelineModules/Sentinel.md">Sentinel</a> - Authenticates and potentially decrypts the message</li>
+<li><a href="#/PipelineModules/InputTranslator.md">Input Translator</a> - Extracts values from the input message</li>
+<li><a href="#/PipelineModules/Workflows/Index.md">Workflow</a> - Performs any business logic and prepares output messages</li>
+<li><a href="#/PipelineModules/OutputTranslator.md">Output Translator</a> - Converts outputs from the workflow back into a format that the device can understand</li>
+<li><a href="#/PipelineModules/Transmitter.md">Transmitter</a> - Sends values back to the device, either directly or by queueing them</li>
+</ul>
+<p>Most of the time, message business logic is done in the <a href="#/PipelineModules/Workflow.md">Workflow Module</a>.  The workflow allows for a significant amount
+of customization in the form of scripting and creating <a href="#/Workflows/StateMachines.md">State Machines</a>.  If these don't meet
+your needs, you can always create Pipeline Modules with custom code and deploy them as containers to participate in the device workflow.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>

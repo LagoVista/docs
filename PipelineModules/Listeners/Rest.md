@@ -29,7 +29,7 @@ ensures that it is valid prior to processing.
 **Note:** Automated processes are being developed to simplify the effort required to bring an HTTPS server online.
 
 Currently, SSL connections are supported, but we will need to manually add the certificate for your automatically-generated host name, such as `https://[yourapp][yourns].iothost.net`.  If you 
-are using a CNAME or ANAME DNS record to connect to this server, please [Contact Us](http://support.nuviot.com) to install your certificate.  
+are using a CNAME or ANAME DNS record to connect to this server, please [Contact Us](http://support.nuviot.com/contactus?source=restsslcert) to install your certificate.  
 
 
 ### Required Fields
@@ -42,9 +42,22 @@ In addition to the [standard fields](../../Topics/StandardFields.md) that are re
 * **Content Type** (required)    
 Select the [Content Type](../../Messaging/ContentTypes.md) of the message you are expecting. Any Content Type is acceptable.
 
-* **Secure Connection** (required)   
-If you select this option, your devices/request must support HTTPS connections. Work is underway to automate the generation of the SSL certificates.  Please [Contact Us](http://support.nuviot.com) if you need us to manually add a certificate to your installation based on the automatically-generated host names.
-if you use your own host name, we will need to work with you to upload your customer-provided certificate.
-
 * **Listen on Port** (required)     
 This is the port you wish to listen to for incoming messages.  This is normally port 80 or port 443 for SSL connections, but any port is supported in both configurations.
+
+* **Allowable Connection Type** (required)   
+Your REST server can listen on HTTP/HTTPS or HTTPS.  If you choose an HTTPS option, you must manually upload your the SSL certificate.  
+Work is underway to automate the generation of the SSL certificates and is expected to be complete by the end of 2018.
+Please [Contact Us](http://support.nuviot.com/contactus?source=restsslcert) manually add this certificate to your installation based on the automatically-generated host names.
+if you use your own host name, we will need to work with you to upload your customer-provided certificate.
+
+* **Anonymous Connection**
+Allow Anonymous connections to this REST server, if you use an anonymous connection, you will likely use the [Sentinel](../../PipelineModules/Sentinel.md) module to authenticate your devices.
+If you uncheck this option, you will need to enter a User Name and Password and send that data in an Authrorization header using [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).  If you need
+additional Authentication schemes with your REST server, please [contact us](http://support.nuviot.com/contactus?source=restauthscheme).
+
+* **User Name**  (required if not anonymous)     
+User Name that your devices will use to access this REST resource  [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
+
+* **Password** (required if not anonymous)      
+User Name that your devices will use to access this REST resource  [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).

@@ -1,0 +1,61 @@
+<p><a href="#/Messaging/Parsing/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a></p>
+<h1>Parsing Overview</h1>
+<p>Since in many cases you cannot dictate what messages your devices will send, you can create contracts that define how data should be extracted from your messages.  Extracting this data is independent of the message source.</p>
+<p>In addition, the same parsing system is used to extract Message IDs and Device IDs from the message.</p>
+<h3>Message Components (Search Location)</h3>
+<p>Depending on the source of your message, you will have different areas from which to extract fields from your message.  In addition, you may have metadata about the message (if applicable based on the listener you are using).</p>
+<h4>Headers</h4>
+<p>For HTTP sources such as REST or SOAP, these are the <a href="#/Messaging/Parsing/ParsingFromHeader.md">HTTP Headers</a> that come along with the message.  For other transport types, additional data may be available.  See documentation about the particular listener you are using.</p>
+<h4>Query String</h4>
+<p>This is primarily used for REST-based protocols but can be used to extract values from a <a href="#/Messaging/Parsing/ParsingFromQueryString.md">Query String</a> using key value pairs.</p>
+<h4>Topics</h4>
+<p>For pub/sub protocols, messages can be identified by <a href="#/Messaging/Parsing/ParsingFromTopic.md">Topics</a>.</p>
+<h4>Path</h4>
+<p>In addition to the server and port number being available in your message, if the message also specifies a resource address such as https://mydomain.coom/device/run/2342, the /device/run/2342 can be used to populate the message content.</p>
+<h4>Body or Payload</h4>
+<p>If you have a REST message, this will be the POST or PUT content.  Most transports have some mechanism for passing data along with your message.  The body can be either <a href="#/Messaging/Parsing/ParsingBinaryMessages.md">Binary</a> or Text.  A Text message can be one of the following:</p>
+<ul>
+<li><a href="#/Messaging/Parsing/ParsingStringMessage.md">String</a></li>
+<li><a href="#/Messaging/Parsing/ParsingDelimitedMessage.md">Delimited</a></li>
+<li><a href="#/Messaging/Parsing/ParsingJsonMessage.md">JSON</a></li>
+<li><a href="#/Messaging/Parsing/ParsingXmlMessage.md">XML</a></li>
+</ul>
+<h3>Message ID and Device ID Parsers</h3>
+<p>An important part of processing the incoming data is to identify the <a href="#/Messaging/Parsing/MessageIdParsing.md">Message ID</a> and the <a href="#/Messaging/Parsing/DeviceIdParsing.md">Device ID</a>.
+This can be extracted using the same mechanisms available for extracting values for a message.
+The difference is, since the type of message is not defined, you need to include things such as delimiter,
+endianness, and other values that are normally specified at the message level to extract the field.</p>
+<p>You can also perform a <a href="#/Messaging/Parsing/ParsingWithRegEx.md">Regular Expression Validation</a> on the value.</p>
+<p>Your Message and Device IDs are always saved as strings.</p>
+<h3>Message Value Parsers</h3>
+<p>There are two parts to defining how values are parsed out of a message.  First, define common parameters such as the delimiter, quoted text, and endianness at the message level.  Next, define field particulars such as the field index or parameter name.  More details are available based on the type of message.</p>
+<p>There are three important parts of defining how your messages are parsed and used, including:</p>
+<ul>
+<li><a href="#/Topics/Keys.md">Key</a> - The key identifies this value as it is used to further process the message</li>
+<li><a href="#/Messaging/Parsing/ParsingFromPath.md">Search Location</a> - The listener populates different components that can be used to search for message values</li>
+<li><a href="#/Messaging/TypeSystem/Index.md">Storage Type</a> - This is the data type that is used to identify the data</li>
+</ul>
+<h4>Search Locations</h4>
+<p>The following are four different areas that can be searched.  These values are populated from the listener. More details are available in that section.  Note that not all listeners support all of the different locations.</p>
+<ul>
+<li>Headers</li>
+<li>Query String</li>
+<li>Path</li>
+<li>Body or Payload</li>
+</ul>
+<h4>Storage Types</h4>
+<p>These make up the type system that is used throughout the rest of the system:</p>
+<ul>
+<li>String - Text, currently single-byte ASCII text is supported</li>
+<li>Integer - 64-bit signed integer</li>
+<li>Decimal - Double precision floating point format</li>
+<li>True False - Boolean</li>
+<li>Geolocation - Stored as latitude and longitude in decimal degrees to six decimal places</li>
+<li>Date Time - Stored in <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 Format</a></li>
+</ul>
+<p>Note:  Arrays are not currently supported.  Please <a href="http://support.nuviot.com">Contact Us</a> if they are required for implementation.</p>
+<h3>Fine Tuning Selections</h3>
+<p>For textual values, use a <a href="#/Messaging/Parsing/RegExValueSelector.md">Regular Expression</a> to extract a value.</p>
+<h3>Validating Message Values</h3>
+<p>Once a value is extracted, you can use available mechanisms to <a href="#/Messaging/Parsing/Validation.md">Validate</a> the value prior to using it in your workflow.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:45</div><div>Copyright Sofware Logistics - 2017</div></div>

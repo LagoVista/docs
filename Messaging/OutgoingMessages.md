@@ -41,3 +41,5 @@ A Topic can be provided to be sent along with your message.  This is more applic
 **REST Method**  
 For [REST Transmitter](../PipelineModules/Transmitters/Rest.md) you can provide the method that will be invoked.  If you use a REST Transmitter and do not provide a method, it will be assumed that the method is `GET`.
 
+**Device Id** (required for Azure IoT Hub)  
+When creating your outgoing message for Azure IoT Hub, you should set the Device ID in the outgoing message of the device where this message should be sent.

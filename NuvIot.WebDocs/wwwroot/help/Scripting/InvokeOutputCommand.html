@@ -1,0 +1,19 @@
+<p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
+<h1>Scripting - Invoking Output Commands</h1>
+<p><a href="#/Workflows/OutputCommands.md">Output Commands</a> are used to build up the content that will be either sent out to devices or exported.</p>
+<p>Ouptut Commands are invoked in script. In our example, we have an Output Command with a key of <code>sensoroutput</code>.  It can
+be invoked with the following script:</p>
+<pre><code>function onXXXX(value){
+    OutputCommands.[KEYNAME].send('on',32);
+}
+
+- or -
+
+function onXXXX(value){
+    OutputCommands.sensoroutput.send('on',32);
+}
+</code></pre>
+<p>When you call the <code>send</code> method, the <a href="#/Scripting/OutputCommandCreate.md">onExecute</a> on the Output Command will be executed to build up the content
+that will be available to send or export messages.  When sending a message, you can pass parameters that will be available to the <code>onExecute</code>
+method.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>
