@@ -16,17 +16,10 @@ After you have built your IoT application, you need to deploy it.  The following
 get you started:
 
 * [Configuration](Configuration.md)
-
 * [Edge Technology](EdgeTechnology.md)
-
 * [High Availability](HighAvailability.md)
-
 * [Host](Host.md)
-
 * [NuvIoT Infrastructure](NuvIoTInfrastructure.md)
-
 * [Instance](Instance.md)
-
 * [Solution](Solution.md)
-
 * [Subscription](Subscriptions.md)
