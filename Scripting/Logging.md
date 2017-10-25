@@ -2,15 +2,17 @@
 title: Logging
 keywords: workflow, logging, scripts
 
-status: readyforapproval
+status: approved
 created: 20171009
 updated: 20171013
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Scripting](Index.md)
 
-# Logging
+# Logging (EXPERIMENTEL)
+
+
 
 While developing your scripts, there are some options for writing data and messages to a log.
 
@@ -28,7 +30,7 @@ is also available via API.
 ##### Writing to the Device Log
 ```
 function onSet(value) {
-    logDevice('log message');
+    logToDevice('log message');
 }
 ```
 ##### Clearing the Device Log

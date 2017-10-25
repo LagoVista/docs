@@ -1,3 +1,10 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
 <h1>Workflow Input - OnSet Script</h1>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>You can add a script that will be executed when the <a href="#/PipelineModules/InputTranslator.md">Input Translator</a> set the <a href="#/Workflows/Input.md">Input</a> on your workflow.</p>
+<p>An example of such a script would be as follows</p>
+<pre><code>function onSet(value /* Integer */) {
+
+}
+</code></pre>
+<p>You will also have access to the <a href="#/Scripting/WorkingWithAttributes.md">Device Properties</a>, <a href="#/Scripting/WorkingWithProperties.md">Device Properties</a>, <a href="#/Scripting/PropertyBag.md">Property Bag</a> and state machines and can invoke <a href="https://github.com/LagoVista/docs/blob/master/Scripting/OutputCommandCreate.md">Output Commands</a>.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>

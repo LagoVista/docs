@@ -1,8 +1,8 @@
 ---
 title: Scripting Property Bag
-keywords: workflow, scripting, properties, storage
+keywords: workflow, scripting, propertybag, storage
 
-status: readyforapproval
+status: approved
 created: 20171007
 updated: 20171013
 createdby: Kevin D. Wolf
@@ -27,12 +27,12 @@ value that has the JavaScript type of `number`.
 ```
 // Insert a string
 function onSet(value) {
-    setDeviceProperty('mystring','hithere');
+    addToPropertyBag('mystring','hithere');
 }
 
 // Insert a nummber
 function onSet(value) {
-    setDeviceProperty('mynumber',123);
+    addToPropertyBag('mynumber',123);
 }
 
 // Insert an object
@@ -42,29 +42,39 @@ function onSet(value) {
         lastName: 'Flintstone'
     };
 
-    setDeviceProperty('person',person);
+    addToPropertyBag('person',person);
 }
 ```
 
 #### Getting an Item
+The following script assume the previous scripts in the **Adding an Item** section have been run.
+
+**Note** that on getFromPropertyBag you can provide a default value if the value is not present.
+
 ```
-// Insert a string
+// Get a string
 function onSet(value) {
-    var value = getDeviceProperty('mystring');
+    var value = getFromPropertyBag('mystring');
     // value will be equal to the string hithere
 }
 
-// Insert a nummber
+// Get a nummber
 function onSet(value) {
-    var value = getDeviceProperty('mynumber');
+    var value = getFromPropertyBag('mynumber');
     // value will be equal to the number 123
 }
 
-// Insert an object
+// Get an object
 function onSet(value) {
-    var person = getDeviceProperty('person',person);
+    var person = getFromPropertyBag('person');
     // person.firstName will be equal to Fred
     // person.lastName will be equal to Flintstone
+}
+
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = getFromPropertyBag('notinbag',23);
+    // number will be 23
 }
 ```
 
@@ -74,7 +84,7 @@ function onSet(value) {
 
 ```
 function onSet(value) {
-    clearDeviceProperty('mynumber');
+    clearPropertyBagValue('mynumber');
     var value = getDeviceProperty('mynumber');
     // mynumber will return null
 }

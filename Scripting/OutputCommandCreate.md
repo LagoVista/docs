@@ -2,7 +2,7 @@
 title: Scripting - Building Output Commands
 keywords: workflow, scripting, workflow, outputs, messages, sending, transmitter
 
-status: readyforapproval
+status: approved
 created: 20171010
 updated: 20171013
 createdby: bytemaster-0xff

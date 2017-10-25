@@ -10,10 +10,10 @@ has been assigned, the value will simply be set without executing any scripts.</
 with the workflow.</p>
 <p>The script template that will set the value will look as follows:</p>
 <pre><code>function onSet(value) {
-    Attributes.temperature.value = value;
+    Attributes.temperature = value;
 };
 </code></pre>
 <p>It is important to realize that each <a href="#/Workflows/Attributes.md">Attribute</a> has a <a href="#/Messaging/TypeSystem/Index.md">Specific Data Type</a> assigned to it.  When
 you assign a new value, the type should match.  If it does not match, an attempt will be made to convert
 the assigned value to the correct type.  This will cause an error and the entire device transition will fail.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>

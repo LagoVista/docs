@@ -10,12 +10,12 @@ value that has the JavaScript type of <code>number</code>.</p>
 <h4>Adding an Item</h4>
 <pre><code>// Insert a string
 function onSet(value) {
-    setDeviceProperty('mystring','hithere');
+    addToPropertyBag('mystring','hithere');
 }
 
 // Insert a nummber
 function onSet(value) {
-    setDeviceProperty('mynumber',123);
+    addToPropertyBag('mynumber',123);
 }
 
 // Insert an object
@@ -25,37 +25,45 @@ function onSet(value) {
         lastName: 'Flintstone'
     };
 
-    setDeviceProperty('person',person);
+    addToPropertyBag('person',person);
 }
 </code></pre>
 <h4>Getting an Item</h4>
-<pre><code>// Insert a string
+<p>The following script assume the previous scripts in the <strong>Adding an Item</strong> section have been run.</p>
+<p><strong>Note</strong> that on getFromPropertyBag you can provide a default value if the value is not present.</p>
+<pre><code>// Get a string
 function onSet(value) {
-    var value = getDeviceProperty('mystring');
+    var value = getFromPropertyBag('mystring');
     // value will be equal to the string hithere
 }
 
-// Insert a nummber
+// Get a nummber
 function onSet(value) {
-    var value = getDeviceProperty('mynumber');
+    var value = getFromPropertyBag('mynumber');
     // value will be equal to the number 123
 }
 
-// Insert an object
+// Get an object
 function onSet(value) {
-    var person = getDeviceProperty('person',person);
+    var person = getFromPropertyBag('person');
     // person.firstName will be equal to Fred
     // person.lastName will be equal to Flintstone
+}
+
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = getFromPropertyBag('notinbag',23);
+    // number will be 23
 }
 </code></pre>
 <h4>Clearing a Value</h4>
 <p><strong>Note:</strong> Clearing a value that does not exist in the Property Bag will <strong>not</strong> be considered an error.</p>
 <pre><code>function onSet(value) {
-    clearDeviceProperty('mynumber');
+    clearPropertyBagValue('mynumber');
     var value = getDeviceProperty('mynumber');
     // mynumber will return null
 }
 </code></pre>
 <h4>Supported Data Types</h4>
 <p>The following types in JavaScript are supported: <code>date</code>,<code>number</code>, and<code>string</code>.  In addition, JSON object graphs are stored as <code>object</code>.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>

@@ -48,9 +48,6 @@ Name of the Message
 * **Payload Type** (required)     
 Text or Binary message.  In most cases, you will send a Text message.
 
-* **Topic**      
-Topic in which to publish your message
-
 * **Append CR** `0x0D`    
 ASCII character 0x0D, if set, will be appended to the message
 

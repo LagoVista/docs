@@ -2,10 +2,10 @@
 title: State Machine - Handle
 keywords: workflow, scripting, handle, statemchine
 
-status: readyforapproval
+status: approved
 created: 20171009
 updated: 20171013
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Scripting](Index.md)

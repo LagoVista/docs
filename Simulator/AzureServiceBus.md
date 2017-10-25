@@ -53,7 +53,7 @@ Name of the Message
 * **Key** (required)  
 [Unique Key](../Topics/Keys.md) to identify the message
 
-* **Queue Name** (required)
+* **Queue Name** (required)  
 Name of the Queue where this message should be sent.
 
 * **Payload Type** (required)  

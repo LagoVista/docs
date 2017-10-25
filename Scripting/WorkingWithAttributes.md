@@ -2,10 +2,10 @@
 title: Working with Attributes
 keywords: workflow, scripting, attribute
 
-status: readyforapproval
+status: approved
 created: 20171002
 updated: 20171013
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Scripting](Index.md)

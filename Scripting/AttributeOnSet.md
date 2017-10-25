@@ -30,7 +30,7 @@ The script template that will set the value will look as follows:
 
 ```
 function onSet(value) {
-    Attributes.temperature.value = value;
+    Attributes.temperature = value;
 };
 ```
 It is important to realize that each [Attribute](../Workflows/Attributes.md) has a [Specific Data Type](../Messaging/TypeSystem/Index.md) assigned to it.  When

@@ -112,6 +112,7 @@ function getHelpIndexRoutes() { return [{"link":"/faq.md","file":"/help/faq.html
 {"link":"/Routes/Mappings/OutputTranslatorToTransmitter.md","file":"/help/Routes/Mappings/OutputTranslatorToTransmitter.html"},
 {"link":"/Routes/Mappings/WorkflowToOutputTranslator.md","file":"/help/Routes/Mappings/WorkflowToOutputTranslator.html"},
 {"link":"/Scripting/AttributeOnSet.md","file":"/help/Scripting/AttributeOnSet.html"},
+{"link":"/Scripting/DeviceProperties.md","file":"/help/Scripting/DeviceProperties.html"},
 {"link":"/Scripting/DeviceScriptingModel.md","file":"/help/Scripting/DeviceScriptingModel.html"},
 {"link":"/Scripting/DeviceWorkflowScriptingModel.md","file":"/help/Scripting/DeviceWorkflowScriptingModel.html"},
 {"link":"/Scripting/Index.md","file":"/help/Scripting/Index.html"},

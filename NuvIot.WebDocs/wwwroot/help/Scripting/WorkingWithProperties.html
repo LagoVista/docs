@@ -1,16 +1,20 @@
 <p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
-<h1>Working with Properties</h1>
-<h5>Setting A Property</h5>
-<h5>Getting an Attribute</h5>
-<p>The script template that will get a value will look as follows:</p>
-<pre><code>function onXXXX(value) {
-    var currentValue = Attributes.temperature.value;
-};
-</code></pre>
-<h5>Clearing an Attribute</h5>
-<p>The script that clears an attribute will look as follows:</p>
-<pre><code>function onXXXX(value) {
-    Attributes.temperature.value = null;
+<h1>Working with Device Properties</h1>
+<p>Properties are values that are created as part of your <a href="#/Devices/DeviceConfigurations.md">Device Configuration</a> and are available to your scripts.  Device Properties are
+different from <a href="#/Scripting/PropertyBag.md">Property Bag</a> values in that they are accessible via an API and through the Device Manager app.</p>
+<ul>
+<li><strong>Device Properties</strong> - Can be thought of as configuration settings that external source can set on the device.</li>
+<li><strong>Property Bag Values</strong> - Are values that you can use within your script to store variables.</li>
+</ul>
+<p>To access <strong>Device Properties</strong> from your script use a common <code>DeviceProperties</code> object within your script.  Unfortunately since
+work flows can be shared across many device configurations you are not guarenteed that the DeviceProperty will exists for a particular
+DeviceConfiguration.  If it does not exists, it  will be ignored.  Also at the DeviceWorkflow level we don't know about DeviceConfigurations
+so we can offer Intellisense as to the properties on the workflow</p>
+<p>Here is a sample script that asumes you have defined a Property <code>setpoint</code> on your <a href="#/Devices/DeviceConfigurations.md">Device Configuration</a></p>
+<pre><code>function onSet(value) {
+    if(DeviceProperties.setPoint) {
+       /* ...do something interesting... */
+    }
 }
 </code></pre>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/23/2017 18:24:46</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>

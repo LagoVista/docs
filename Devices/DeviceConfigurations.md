@@ -23,4 +23,6 @@ it is passed to the listener that determine the message id and device id.  With 
 to find a match for a device configuration based on known devices and supported messages types.  If a match is found it will 
 then use the steps as defined in the route to process the rest of the message.
 
+Device Properties can be used as [part of your scripts](../Scripting/WorkingWithProperties.md).
+
 ![planner process](../Images/Planner.png) 

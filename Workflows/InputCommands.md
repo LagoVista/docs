@@ -16,3 +16,4 @@ Input Commands are REST endpoints you can create that can be called from externa
 allow you to invoke methods and get information about your devices.
 
 
+### Input Command Parameters

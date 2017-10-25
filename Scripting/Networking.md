@@ -11,4 +11,4 @@ updatedby: Kevin D. Wolf
 [Home](../Index.md) > [Scripting](Index.md)
 # Networking
 
-There are a number of methods you can invoke to make basic network calls
+...coming soon...
