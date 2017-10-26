@@ -2,10 +2,10 @@
 title: Working with Geolocation Values
 keywords: messages, messaging, parsing, fields, geo, geolocation, latitude, longitude, location
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171016
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)
@@ -63,7 +63,7 @@ EWNS are the upper case characters E, W, N and S for East, West North and South.
 
 If a decimal value is provided for the geolocation, the format is assumed to be (+/-)DDD.DDDDD.
 
-At this time, parsing [NEMA GGA](http://www.gpsinformation.org/dale/nmea.htm#GGA) messages is unsupported.  If you need this or any other format, please [Contact Us](http://support.nuviot.com/) and we will work with you to ensure that your format is supported.
+At this time, parsing [NEMA GGA](http://www.gpsinformation.org/dale/nmea.htm#GGA) messages is unsupported.  If you need this or any other format, please [Contact Us](http://support.nuviot.com/contactus?source=gpsformats) and we will work with you to ensure that your format is supported.
 
 If you are unsure whether or not your GPS format will work, please use our [Verifier Technology](../Parsing/Verifiers.md) and supply some sample messages with the formats you intend to use.
 

@@ -2,7 +2,7 @@
 title: Azure Event Hubs Transmitter
 keywords: transmitter, cloud, azure, eventhub, messagequeue
 
-status: readyforapproval
+status: approved
 created: 20171019
 updated: 20171019
 createdby: bytemaster-0xff
@@ -17,7 +17,7 @@ to use your own front end to capture the events and use NuvIoT to process messag
 
 You must have an [Azure Account](https://portal.azure.com) and a configured [Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/).
 
-If you need help getting started, [Contact Us](http://support.nuviot.com) and we will put you in touch with one 
+If you need help getting started, [Contact Us](http://support.nuviot.com/contactus?source=azureeventhubs) and we will put you in touch with one 
 of our implementation partners to help you get going.
 
 The next steps assume that you have been able to successfully [Create an Event Hub](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create) and have access to the necessary credentials.

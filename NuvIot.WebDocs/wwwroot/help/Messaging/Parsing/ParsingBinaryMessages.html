@@ -1,4 +1,4 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/Parsing/ParsingStrategies.md">Parsing Strategies</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a> &gt; <a href="#/messaging/parsing/parsingstrategies">Parsing Strategies</a></p>
 <h1>Parsing a Binary Message</h1>
 <h2>Intro</h2>
 <p>Parsing a binary message is fairly complex, but there are many options for specifying how values should be extracted from the binary message payload.</p>
@@ -16,12 +16,12 @@
 <li>Int64 - big or little endian</li>
 <li>UInt64 - big or little endian</li>
 <li>Boolean - 0 = False, Not 0 = true</li>
-<li>String (<a href="#/Messaging/Parsing/ParsingStringMessage.md">Configurable</a>)</li>
+<li>String (<a href="#/messaging/parsing/parsingstringmessage">Configurable</a>)</li>
 <li>Single-precision floating point as defined by <a href="https://en.wikipedia.org/wiki/IEEE_754-1985">IEEE 754-1985</a></li>
 <li>Double-precision floating point as defined by <a href="https://en.wikipedia.org/wiki/IEEE_754-1985">IEEE 754-1985</a></li>
 </ul>
 <h2>Framing Bytes</h2>
-<p><a href="#/Messaging/Parsing/FramingBytes.md">Framing Bytes</a> can be used to confirm the validity of your message as well as provide checkpoints for relative parsing of the message.</p>
+<p><a href="#/messaging/parsing/framingbytes">Framing Bytes</a> can be used to confirm the validity of your message as well as provide checkpoints for relative parsing of the message.</p>
 <h2>Binary Offset</h2>
 <p>Enter the absolute offset or relative offset within the message to extract the value.  The data type will determine how many bytes will be read.  If you attempt to read past the end of the message, the parser will fail.</p>
 <p>Note: In this case, the index or binary offset is 0-based which is different than parsing delimited values where the index of the delimited value is:</p>
@@ -42,4 +42,4 @@
 </ul>
 </li>
 </ul>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

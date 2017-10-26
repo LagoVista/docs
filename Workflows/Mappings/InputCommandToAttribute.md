@@ -2,7 +2,7 @@
 title: Workflow Mapping - Input Command to Attribute
 keywords: workflow, mapping, inputcommand, attribute
 
-status: readyforapproval
+status: approved
 updated: 20171011
 createdby: bytemaster-0xff
 updatedby: klworkman

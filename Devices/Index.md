@@ -10,6 +10,8 @@ updatedby: klworkman
 ---
 [Home](../Index.md)
 
+# Devices
+
 * [Device Configurations](DeviceConfigurations.md)
 * [Device Messages](DeviceMessages.md)
 * [Device Repositories](DeviceRepositories.md)

@@ -4,15 +4,11 @@
     <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
   <ItemGroup>
-    <Content Remove="wwwroot\Controllers\ChatController.cs" />
-    <Content Remove="wwwroot\Models\Activity.cs" />
+    <Content Remove="Controllers\ChatController.cs" />
+    <Content Remove="Models\Activity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="nuviot.pfx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="wwwroot\Controllers\ChatController.cs" />
-    <Compile Include="wwwroot\Models\Activity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="nuviot.pfx" />

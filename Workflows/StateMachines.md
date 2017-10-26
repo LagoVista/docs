@@ -26,14 +26,9 @@ execute as events are generated from different parts of the workflow.
 
 You can even send events to other State Machines within the workflow.
 
-### Mappings From State Machines
-[To Attribute](./Mappings/StateMachineToAttribute.md)  
-[To Output Command](./Mappings/StateMachineToOutputCommand.md)  
-[To Other State Machines](./Mappings/StateMachineToStateMachine.md)  
-
 ### Mappings to State Machines
 [From Inputs](./Mappings/InputToStateMachine.md)  
 [From Input Commands](./Mappings/InputCommandToStateMachine.md)  
 [From Attributes](./Mappings/AttributeToStateMachine.md)  
-[From Other State Machines](./Mappings/StateMachineToStateMachine.md)  
+
 

@@ -41,5 +41,5 @@ Password with access priveleges to your MQTT Server.
 
 ### Authentication
 In our production version of this broker, we only support a single user authenatication mechanism.  We have an experimental version that
-is associated with device id's in your repository.  If you need this, please [contact us](http://support.nuviot.com/contactus) and we'll work
+is associated with device id's in your repository.  If you need this, please [contact us](http://support.nuviot.com/contactus?source=mqttauth) and we'll work
 with you.

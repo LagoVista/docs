@@ -2,7 +2,7 @@
 title: REST Transmitter
 keywords: transmitter, rest, networking, pipelinemodule
 
-status: readyforapproval
+status: approved
 created: 20171019
 updated: 20171019
 createdby: bytemaster-0xff
@@ -46,7 +46,7 @@ The REST Transmittter supports sending [HTTP](https://en.wikipedia.org/wiki/Hype
     Your host name should not end in a forward slash `/`, if it is, the transmitter may strip that out if your path from the message starts with a `/`
 
 * **Anonymous Connection**  
-Select this option if your MQTT server does not require authentication (not recommended).
+Select this option if your REST server does not require authentication (not recommended).
 
 * **User Name/Password**  
 The user name and password are optional, but if provided will be used to send an authorization header as a [Basic Access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).  We understand

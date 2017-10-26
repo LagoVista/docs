@@ -22,3 +22,5 @@ NuvIoT is made up of a number of reusable components, including:
 
 A solution represents how you take all of the reusable components you have created and assemble them into an IoT Application.  Once you
 have created your solution, you will able to deploy an [Instance](Instance.md) of it to a [Host](Host.md).
+
+...more details coming soon....

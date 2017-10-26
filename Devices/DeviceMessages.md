@@ -2,7 +2,7 @@
 title: Device Messages
 keywords: device, devicerepo, azureiothub
 
-status: readyforapproval
+status: approved
 created: 20170922
 updated: 20171011
 createdby: bytemaster-0xff

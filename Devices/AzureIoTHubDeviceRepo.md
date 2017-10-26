@@ -15,7 +15,7 @@ updatedby: klworkman
 If you are using Azure IoT Hub to connect your devices, you will need to use the Azure IoT Hub Device Repository.
 
 To maintain consistent data, NuvIoT currently requires you to use the NuvIoT built-in Device Repository Editor to provision and update your devices.  
-If you need afeature that is not available in our built-in Management Console, please [Contact Us](http://support.nuviot.com) so that we can work with you to meet your needs.
+If you need afeature that is not available in our built-in Management Console, please [Contact Us](http://support.nuviot.com/contactus?source=auzreiothubrepo) so that we can work with you to meet your needs.
 
 When you connect your NuvIoT repository to the Azure IoT Hub, you need to use a Shared Access Key that has registry read/write permissions.
 

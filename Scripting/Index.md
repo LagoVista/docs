@@ -2,7 +2,7 @@
 title: Scripting 
 keywords: workflow, scripting
 
-status: new
+status: approved
 created: 20171009
 updated: 20171008
 createdby: Kevin D. Wolf

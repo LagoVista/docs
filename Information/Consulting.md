@@ -2,7 +2,7 @@
 title: Consulting Servicecs
 keywords: consulting, development, implementations
 
-status: approved
+status: inprocess
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff
@@ -20,3 +20,4 @@ Software Logistics or one of our implementation partners can help make your IoT 
 The easiest way to get started is to [Sign Up](https://www.iotappstudio.com/Account/Register) for a free account, then use our [Expert System AI](ExpertSystem.md) to help capture your specific requirements.
 
 
+...more details coming soon...

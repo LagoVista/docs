@@ -2,10 +2,10 @@
 title: Parsing from a Query String
 keywords: messages, messaging, parsing, rest, querystring, http
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171010
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
@@ -19,7 +19,7 @@ For the following URL:
 https://myapp.iothost.net/power?state=on
 ```
 
-The Query String is the portion after the ? or"
+The Query String is the portion after the ? or
 ```
 state=on
 ```

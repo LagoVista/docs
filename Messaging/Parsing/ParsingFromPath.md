@@ -2,10 +2,10 @@
 title: Parsing from a Path
 keywords: messages, messaging, parsing, rest, querystring, path, http
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171011
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)

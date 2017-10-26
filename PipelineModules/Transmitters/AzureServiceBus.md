@@ -2,7 +2,7 @@
 title: Azure Service Bus
 keywords: transmitter, cloud, azure, servicebus, messagequeue, topics
 
-status: new
+status: approved
 created: 20171019
 updated: 20171019
 createdby: bytemaster-0xff

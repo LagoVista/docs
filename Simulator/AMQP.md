@@ -2,7 +2,7 @@
 title: AMQP Simulator
 keywords: simulator, amqp
 
-status: new
+status: inprocess
 created: 20171003
 updated: 20171003
 createdby: Kevin D. Wolf
@@ -13,5 +13,4 @@ updatedby: Kevin D. Wolf
 # AMQP Simulator
 
 
-(Coming Soon)
-
+...coming soon...

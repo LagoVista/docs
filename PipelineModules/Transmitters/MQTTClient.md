@@ -2,7 +2,7 @@
 title: MQTT Transmitter
 keywords: transmitter, cloud, mqtt, mqttbroker, messagequeue, topics
 
-status: readyforapproval
+status: approved
 created: 20171019
 updated: 20171019
 createdby: bytemaster-0xff

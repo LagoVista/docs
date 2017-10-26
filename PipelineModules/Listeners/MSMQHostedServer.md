@@ -12,5 +12,5 @@ createdby: bytemaster-0xff
 
 # MQTT Hosted Broker
 
-Currently in development is a integration to a scalable high-availability MQTT server with tight integration into NuvIoT.  Please [contact us](http://support.nuviot.com) if you need this capability.
+Currently in development is a integration to a scalable high-availability MQTT server with tight integration into NuvIoT.  Please [contact us](http://support.nuviot.com/contactus?source=dedicatedmqtt) if you need this capability.
 You can also [connect to your own server](MSMQClient.md).

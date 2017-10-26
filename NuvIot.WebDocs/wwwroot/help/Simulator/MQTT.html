@@ -1,14 +1,14 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/simulator/index">Simulator</a></p>
 <h1>MQTT Simulator</h1>
 <h3>Simulator Settings</h3>
 <p><strong>Note:</strong> For the initial release, our MQTT Simulator does not support MQTT over TLS/SSL. This functionality is planned for Q1 2018.  If you need this sooner, please consider
-submitting a <a href="http://github.com/lagovista/simulator">Pull Request</a> or <a href="http://support.nuviot.com.">Contact Us</a>.</p>
+submitting a <a href="http://github.com/lagovista/simulator">Pull Request</a> or <a href="http://support.nuviot.com/source=mqttsimulator">Contact Us</a>.</p>
 <ul>
 <li><p><strong>Name</strong> (required)<br />
 Name of the Simulator</p>
 </li>
 <li><p><strong>Key</strong> (required)<br />
-<a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
+<a href="#/topics/keys">Unique Key</a> to identify the message</p>
 </li>
 <li><p><strong>Transport</strong> (required)<br />
 <code>MQTT</code></p>
@@ -37,7 +37,7 @@ the following format:<br />
 <code>/messages/~deviceid~</code>, where <code>~deviceid~</code> is replaced by the Device ID you added for your Simulator</p>
 </li>
 <li><p><strong>Default Payload Type</strong> (required)<br />
-Default format of the payload you will send with each message.  This can be either a simple string or <a href="#/Simulator/BinaryContent.md">Binary</a>.</p>
+Default format of the payload you will send with each message.  This can be either a simple string or <a href="#/simulator/binarycontent">Binary</a>.</p>
 </li>
 <li><p><strong>Description</strong><br />
 Free-form text used to provide notes for your Simulator</p>
@@ -49,7 +49,7 @@ Free-form text used to provide notes for your Simulator</p>
 Name of the Message</p>
 </li>
 <li><p><strong>Key</strong> (required)<br />
-<a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
+<a href="#/topics/keys">Unique Key</a> to identify the message</p>
 </li>
 <li><p><strong>Payload Type</strong> (required)<br />
 Text or Binary message.  In most cases, you will send a Text message.</p>
@@ -67,14 +67,14 @@ ASCII character 0x0A, if set, will be appended to the message</p>
 This is based on your Payload Type, select either Text <strong>or</strong> Binary.</p>
 <ul>
 <li><p>Text<br />
-Add any content that will be sent as the body of the message.  This option allows for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a></p>
+Add any content that will be sent as the body of the message.  This option allows for <a href="#/simulator/dynamicfields">Tag Replacement</a></p>
 </li>
 <li><p>Binary<br />
-<a href="#/Simulator/BinaryContent.md">Binary Content</a> to be sent as a message</p>
+<a href="#/simulator/binarycontent">Binary Content</a> to be sent as a message</p>
 </li>
 </ul>
 </li>
 </ul>
 <h3>Dynamic Attributes (<em>For Text Payloads Only</em>)</h3>
-<p>For more information, please see the <a href="#/Simulator/DynamicFields.md">Dynamic Fields</a> section.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>For more information, please see the <a href="#/simulator/dynamicfields">Dynamic Fields</a> section.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

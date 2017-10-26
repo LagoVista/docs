@@ -2,7 +2,7 @@
 title: Azure IoT Hub
 keywords: transmitter, cloud, azure, iothub, messagequeue
 
-status: readyforapproval
+status: approved
 created: 20171019
 updated: 20171019
 createdby: bytemaster-0xff

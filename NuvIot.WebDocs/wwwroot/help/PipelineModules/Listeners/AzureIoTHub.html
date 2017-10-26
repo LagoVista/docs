@@ -1,17 +1,17 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/pipelinemodules/index">Pipeline Modules</a> &gt; <a href="#/pipelinemodules/listener">Listeners</a></p>
 <h1>Azure IoT Hubs</h1>
 <p>NuvIoT supports connecting directly to your IoT Hub.</p>
 <p><strong>Important Note 1:</strong> In order to connect to Azure IoT Hub,
 you will need to find the URL from the Event Hub-compatible connection string and the Event Hub-compatible name. Refer to this <a href="https://blogs.msdn.microsoft.com/iotdev/2017/05/09/understand-different-connection-strings-in-azure-iot-hub/">Blog Post</a> for more information on IoT Hub Connection Strings.</p>
-<p><strong>Important Note 2:</strong> If you use Azure IoT Hub as a listener, those devices must be registered in the <a href="#/Devices/AzureIoTHubDeviceRepo.md">Azure IoT Hub Device Repository</a>.</p>
+<p><strong>Important Note 2:</strong> If you use Azure IoT Hub as a listener, those devices must be registered in the <a href="#/devices/azureiothubdevicerepo">Azure IoT Hub Device Repository</a>.</p>
 <h3>Required Fields</h3>
-<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required for any listener, the following fields are required:</p>
+<p>In addition to the <a href="#/topics/standardfields">standard fields</a> that are required for any listener, the following fields are required:</p>
 <ul>
 <li><p><strong>Listener Type</strong> (required)<br />
 <code>Azure IoT Hub</code></p>
 </li>
 <li><p><strong>Content Type</strong>  (required)<br />
-Select the <a href="#/Messaging/ContentTypes.md">Content Type</a> of the message you are expecting.  Any Content Type is acceptable.</p>
+Select the <a href="#/messaging/contenttypes">Content Type</a> of the message you are expecting.  Any Content Type is acceptable.</p>
 </li>
 <li><p><strong>Host Name</strong> (required)<br />
 Identify the Host Name of the Event Hub-compatible endpoint.  This is not the the primary host name associated with the Azure IoT Hub.
@@ -34,4 +34,4 @@ Enter the assigned Access Key for your IoT Hub that was specified in the <strong
 <li><strong>Consumer Group</strong><br />
 If you do not add a Consumer Group, the <code>$Default</code> Consumer Group will be used.</li>
 </ul>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

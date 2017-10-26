@@ -2,10 +2,10 @@
 title: Pipeline Modules
 keywords: pipelinemodules
 
-status: readyforapproval
+status: approved
 created: 20170922
 updated: 20171012
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) 
@@ -21,7 +21,7 @@ The following are the default Pipeline Modules that make up a typical route:
 
 * [Sentinel](Sentinel.md) - Authenticates and potentially decrypts the message
 * [Input Translator](InputTranslator.md) - Extracts values from the input message
-* [Workflow](Workflows/Index.md) - Performs any business logic and prepares output messages
+* [Workflow](Workflow.md) - Performs any business logic and prepares output messages
 * [Output Translator](OutputTranslator.md) - Converts outputs from the workflow back into a format that the device can understand
 * [Transmitter](Transmitter.md) - Sends values back to the device, either directly or by queueing them
 

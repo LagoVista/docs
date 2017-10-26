@@ -2,7 +2,7 @@
 title: WorkflowToOutputTranslator
 keywords: messages, messaging, workflow, outputtranslator, pipelinemodule
 
-status: new
+status: inprocess
 created: 20171022
 updated: 20171022
 createdby: bytemaster-0xff
@@ -12,3 +12,4 @@ updatedby: bytemaster-0xff
 
 # Workflow to Output Translator
 
+...coming soon...

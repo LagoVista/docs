@@ -12,6 +12,8 @@ updatedby: Kevin D. Wolf
 
 # Input Translator
 
+...more details coming soon...
+
 The Input Translators job is to take the incoming message in it's raw format and extract the values into a normalized array of 
 key value pairs so that further processing can be done on the message.  As part of defining your [device messages](../Devices/DeviceMessages.md) 
 you defined the [fields](../Messaging/MessageFields.md) that make up the message, as part of this you also defined how those fields

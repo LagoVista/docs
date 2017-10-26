@@ -2,7 +2,7 @@
 title: Outgoing Messages
 keywords: messaging, messages, receive, outgoing
 
-status: new
+status: inprocess
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff
@@ -11,6 +11,8 @@ updatedby: klworkman
 [Home](Index.md) > [Device Messaging](../Index.md)
 
 # Outgoing Messages
+
+...more details coming soon...
 
 Outgoing Messages are Messages that are generated from the [Output Translator](../PipelineModules/OutputTranslator.md) 
 from [Output Commands](../Workflows/OutputCommands.md) within a [device workflow](../Workflows/Index.md) and sent from 

@@ -2,7 +2,7 @@
 title: Input Translator
 keywords: listeners, inputtranslator, pipelinemodule, workflow
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171012
 createdby: Kevin D. Wolf
@@ -42,5 +42,5 @@ open until the processing of the message has been completed.
 With queue-based pipeline architecture, your Listener will almost always be a potential bottleneck and the most critical part of the system 
 both in terms of high availability and performance.
 
-Note:  At this time, high availability architecture for the Listeners has been designed but not implemented.  This includes
-geo-redundant load balancers.  If you are in need of this, please [Contact Us](http://support.nuviot.com) and we will work with you to help understand this approach and ensure that it is in place prior to your system going live.
+**Note:**  At this time, high availability architecture for the Listeners has been designed but not implemented.  This includes
+geo-redundant load balancers.  If you are in need of this, please [Contact Us](http://support.nuviot.com/contactus?source=highavailability) and we will work with you to help understand this approach and ensure that it is in place prior to your system going live.

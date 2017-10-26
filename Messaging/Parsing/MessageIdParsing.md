@@ -12,6 +12,8 @@ updatedby: klworkman
 
 # Message ID Parsing
 
+...more details coming soon...
+
 To allow for maximum flexibility, your listeners can support monitoring and connecting to many different devices.  In addition, 
 devices may send different types of messages.  What you do in response to an incoming message is dependent on the
 device sending the message and the Message ID.  Prior to the planner establishing a course of action, the Message ID

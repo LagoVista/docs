@@ -14,7 +14,7 @@ Welcome to our Online Help System
 
 * [Getting Started](GettingStarted.md)
 * [Implementation Overview](./Topics/Implementation.md)
-* [Design Philosophy](./About/DesignPhilosophy.md)
+* [Design Philosophy](./Information/DesignPhilosophy.md)
 * [API](./API/index.md )
 * [Deployment](./Deployment/Index.md)
 * [Devices](./Devices/Index.md)

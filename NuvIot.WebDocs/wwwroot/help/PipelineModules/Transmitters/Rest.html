@@ -1,18 +1,18 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Transmitter.md">Transmitters</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/pipelinemodules/index">Pipeline Modules</a> &gt; <a href="#/pipelinemodules/transmitter">Transmitters</a></p>
 <h1>REST Transmitter</h1>
-<p>A simple yet powerful option to send messages to other systems is to use the REST Transmitter, this will take <a href="#/Messaging/OutgoingMessages.md">Outgoing Message Definition</a>
-as procesed by the <a href="#/PipelineModules/OutputTranslator.md">Output Translator</a> and send them to a REST endpoint.</p>
-<p>As part of your <a href="#/Messaging/OutgoingMessages.md">Outgoing Message Definition</a> you have the option to provide a REST Method, if you do not provide one, the transmitter will
+<p>A simple yet powerful option to send messages to other systems is to use the REST Transmitter, this will take <a href="#/messaging/outgoingmessages">Outgoing Message Definition</a>
+as procesed by the <a href="#/pipelinemodules/outputtranslator">Output Translator</a> and send them to a REST endpoint.</p>
+<p>As part of your <a href="#/messaging/outgoingmessages">Outgoing Message Definition</a> you have the option to provide a REST Method, if you do not provide one, the transmitter will
 assume it's a <code>GET</code> method.</p>
 <h3>Required Fields</h3>
-<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required for any transmitter, the following fields are required:</p>
+<p>In addition to the <a href="#/topics/standardfields">standard fields</a> that are required for any transmitter, the following fields are required:</p>
 <ul>
 <li><p><strong>Transmitter Type</strong> (required)<br />
 <code>REST</code></p>
 </li>
 <li><p><strong>Host Name</strong>  (required)<br />
 Provide the protocol and domain name of that server that you wish to send the message to.<br />
-Although you can enter a path, that path should come from the <a href="#/Messaging/OutgoingMessages.md">Outgoing Message Definition</a>.  An exception to this is a partial path that will be used to
+Although you can enter a path, that path should come from the <a href="#/messaging/outgoingmessages">Outgoing Message Definition</a>.  An exception to this is a partial path that will be used to
 send all the messages to on the server.<br />
 The REST Transmittter supports sending <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> and <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a> messages as specified in the Host Name.</p>
 <p>Examples:</p>
@@ -26,7 +26,7 @@ http://myserver.com:9353
 <p>Your host name should not end in a forward slash <code>/</code>, if it is, the transmitter may strip that out if your path from the message starts with a <code>/</code></p>
 </li>
 <li><p><strong>Anonymous Connection</strong><br />
-Select this option if your MQTT server does not require authentication (not recommended).</p>
+Select this option if your REST server does not require authentication (not recommended).</p>
 </li>
 <li><p><strong>User Name/Password</strong><br />
 The user name and password are optional, but if provided will be used to send an authorization header as a <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Access authentication</a>.  We understand
@@ -36,4 +36,4 @@ this may not meet your needs so please <a href="http://support.nuviot.com/contac
 In addition to the headers that will come from the message you can add additional headers that will be sent along with the request.</p>
 </li>
 </ul>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

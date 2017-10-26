@@ -2,10 +2,10 @@
 title: Attributes
 keywords: workflow, attributes
 
-status: readyforapproval
+status: approved
 created: 20171009
 updated: 20171011
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../Index.md) > [Workflow](Index.md)
@@ -31,5 +31,4 @@ In addition, you can access and set Attributes through a [Script](../Scripting/W
 
 [From Input](./Mappings/InputToAttribute.md)  
 [From Input Command](./Mappings/InputCommandToAttribute.md)  
-[From State Machine](./Mappings/StateMachineToAttribute.md)  
 

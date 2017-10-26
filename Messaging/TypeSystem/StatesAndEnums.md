@@ -2,10 +2,10 @@
 title: States and Enumerations
 keywords: statemachine, workflow, states
 
-status: readyforapproval
+status: approved
 created: 20170922
 updated: 20171010
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)

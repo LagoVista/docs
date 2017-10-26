@@ -5,8 +5,8 @@ keywords: deployment, infrastructure, cloud, azure, digitalocean, aws, bluemix, 
 status: inprocess
 created: 20170922
 updated: 20170922
-createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+createdby: bytemaster-0xff
+updatedby: bytemaster-0xff
 ---
 [Home](../Index.md) > [Deployment](Index.md)
 
@@ -22,3 +22,5 @@ We currently host our applications using the following cloud providers
 * [Microsoft Azure](https://www.WindowsAzure.com) 
 
 And will be coming to AWS and IBM's Blue Mix in 2018
+
+...more details coming soon....

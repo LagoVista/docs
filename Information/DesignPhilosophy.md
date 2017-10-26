@@ -2,7 +2,7 @@
 title: Design Philosophy
 keywords: development, about, info, architecture
 
-status: readyforapproval
+status: approved
 created: 20170922
 updated: 20171013
 createdby: bytemaster-0xff

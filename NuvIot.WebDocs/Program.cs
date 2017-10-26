@@ -1,4 +1,6 @@
-﻿using System;
+﻿//# define SSL
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,19 +13,37 @@ namespace NuvIot.WebDocs
     {
         public static void Main(string[] args)
         {
-            var sslkey = Environment.GetEnvironmentVariable("SSLKEY");
+            var hostBuilder = new WebHostBuilder()
+               .UseKestrel(options =>
+               {
+               })
+               .UseContentRoot(Directory.GetCurrentDirectory())
+               .UseIISIntegration()
+               .UseStartup<Startup>()
+               .UseApplicationInsights();
 
-            var host = new WebHostBuilder()
-                .UseKestrel(options =>
+            if (Environment.GetEnvironmentVariable("USESSL") == "true")
+            {
+                var sslkey = Environment.GetEnvironmentVariable("SSLKEY");
+
+                var urls = new List<string>()
                 {
-                  //  options.UseHttps("nuviot.pfx", sslkey);
-                })
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
-                //.UseUrls("https://support.nuviot.com:443", "http://support.nuviot.com:80")
-                .UseStartup<Startup>()
-                .UseApplicationInsights()
-                .Build();
+                    "https://support.nuviot.com:443", "http://support.nuviot.com:80", "https://about.nuviot.com:443", "http://about.nuviot.com:80",
+                };
+
+                hostBuilder.UseKestrel(options =>
+                {
+                    options.UseHttps("nuviot.pfx", sslkey);
+                });
+
+                hostBuilder.UseUrls(urls.ToArray());
+            }
+            else
+            {
+                hostBuilder.UseKestrel();
+            }
+
+            var host = hostBuilder.Build();
 
             host.Run();
         }

@@ -2,7 +2,7 @@
 title: Working with Properties
 keywords: workflow, scripting, properties
 
-status: new
+status: approved
 created: 20171002
 updated: 20171002
 createdby: bytemaster-0xff

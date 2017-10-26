@@ -2,7 +2,7 @@
 title: Scripting - Device Data Model
 keywords: workflow, scripting
 
-status: new
+status: inprocess
 created: 20171009
 updated: 20171008
 createdby: Kevin D. Wolf

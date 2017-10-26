@@ -2,7 +2,7 @@
 title: Scripting Atribute - onSet
 keywords: workflow, scripting, attribute, onset
 
-status: readyforapproval
+status: approved
 created: 20171002
 updated: 20171011
 createdby: Kevin D. Wolf

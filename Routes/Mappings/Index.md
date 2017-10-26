@@ -2,7 +2,7 @@
 title: Route - Pipeline Module Mappings
 keywords: route, workflow, mappings, input, inputcommand, inputtranslator, outputtranslaro
 
-status: new
+status: inprocess
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf
@@ -12,6 +12,7 @@ updatedby: Kevin D. Wolf
 
 # Route Pipeline Module Mappings
 
+...more details coming soon...
 
 * [Input Translator to Workflow Inputs](InputTranslatorToWorkflow.md)
 * [Workflow Output Command to Output Translator](WorkflowToOutputTranslator.md)

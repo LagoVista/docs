@@ -13,7 +13,7 @@ createdby: bytemaster-0xff
 # RabbitMQ Client
 
 If you have your own RabbitMQ client that you wish to connect to, you can add a RabbitMQ Client Listener and connect to and subscribe
-to topics/queues.  Our RabbitMQ client is currently in development.  Please [contact us](http://support.nuviot.com/contactus) if you need this functionality and we'll work with you to ensure a successful implmentation.
+to topics/queues.  Our RabbitMQ client is currently in development.  Please [contact us](http://support.nuviot.com/contactus?source=rabbitmqclient) if you need this functionality and we'll work with you to ensure a successful implmentation.
 
 ### Required Fields
 

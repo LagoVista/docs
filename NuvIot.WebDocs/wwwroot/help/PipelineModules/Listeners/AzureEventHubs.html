@@ -1,20 +1,20 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/pipelinemodules/index">Pipeline Modules</a> &gt; <a href="#/pipelinemodules/listener">Listeners</a></p>
 <h1>Azure Event Hubs</h1>
 <p>You can provide a link to your Azure Event Hub to consume messages.  This will allow you
 to use your own front end to capture the events and use NuvIoT to process messages and perform workflows.</p>
 <p>You must have an <a href="https://portal.azure.com">Azure Account</a> and a configured <a href="https://docs.microsoft.com/en-us/azure/event-hubs/">Event Hub</a>.</p>
-<p>If you need help getting started, <a href="http://support.nuviot.com">Contact Us</a> and we will put you in touch with one
+<p>If you need help getting started, <a href="http://support.nuviot.com/contactus?source=azureeventhub">Contact Us</a> and we will put you in touch with one
 of our implementation partners to help you get going.</p>
 <p>The next steps assume that you have been able to successfully <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create">Create an Event Hub</a> and have access to the necessary credentials.</p>
-<p>First, create a <a href="#/PipelineModules/Listener.md">Listener</a> and select the Listener Type of <strong>Event Hub</strong>.</p>
+<p>First, create a <a href="#/pipelinemodules/listener">Listener</a> and select the Listener Type of <strong>Event Hub</strong>.</p>
 <h3>Required Fields</h3>
-<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required for any listener, the following fields are required:</p>
+<p>In addition to the <a href="#/topics/standardfields">standard fields</a> that are required for any listener, the following fields are required:</p>
 <ul>
 <li><p><strong>Listener Type</strong> (required)<br />
 <code>Azure Event Hub</code></p>
 </li>
 <li><p><strong>Content Type</strong> (required)<br />
-Select the <a href="#/Messaging/ContentTypes.md">Content Type</a> of the message that you are expecting.  All Content Types are acceptable.</p>
+Select the <a href="#/messaging/contenttypes">Content Type</a> of the message that you are expecting.  All Content Types are acceptable.</p>
 </li>
 <li><p><strong>Host Name</strong> (required)<br />
 The Host Name of the Event Hub Resource you created in Azure.  For example in
@@ -36,4 +36,4 @@ Enter a custom Policy/Access Key name where applicable.  If you leave this blank
 If you wish to listen in on a specific Consumer Group, enter it here.  If this is left blank, you will connect to the <code>[$Default]</code> Consumer Group.</p>
 </li>
 </ul>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

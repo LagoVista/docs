@@ -2,7 +2,7 @@
 title: Strings
 keywords: messages, messaging, typesystem, values, string, text, types, datatypes
 
-status: new
+status: inprocess
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf
@@ -11,3 +11,5 @@ updatedby: Kevin D. Wolf
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)
 
 # Strings
+
+...coming soon...

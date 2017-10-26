@@ -55,7 +55,7 @@
             for (let node of nodes) {
                 if (node.children) {
                     if (!previousNode) {
-                        previousNode = $(`<li><a href=\"${node.link}\">${node.name}</a></li>`);
+                        previousNode = $(`<li><a href=\"${node.link.toLowerCase().replace(".md", "")}\">${node.name}</a></li>`);
                         parentNode.append(previousNode);
                     }
                     var newParent = $('<ul class=\"childNodeSet\"></ul>');
@@ -65,7 +65,7 @@
                     createHelpLeaf(newParent, node.children);
                 }
                 else {
-                    previousNode = $(`<li><a href=\"${node.link}\">${node.name}</a></li>`);
+                    previousNode = $(`<li><a href=\"${node.link.toLowerCase().replace(".md","")}\">${node.name}</a></li>`);
                     parentNode.append(previousNode);
                 }
             }

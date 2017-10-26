@@ -1,10 +1,10 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/Scripting/Index.md">Scripting</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/scripting/index">Scripting</a></p>
 <h1>Property Bag</h1>
 <p>Your device contains the concept of a Property Bag.  This is a free, from key-value pair storage type where you can add values in your workflow that will
-be persisted between workflow invocations.  This is similar to an <a href="#/Workflows/Attributes.md">Attribute</a>, but these values are scoped as private to the device.
+be persisted between workflow invocations.  This is similar to an <a href="#/workflows/attributes">Attribute</a>, but these values are scoped as private to the device.
 This means that they cannot be accessed other than through a workflow.</p>
 <p><strong>Note 1:</strong> Values put in a Property Bag are scoped at the device level.  That is to say, if you put a property called <code>length</code> into the Property Bag in
-one <a href="#/Workflows/Index.md">Workflow</a>, any other workflows have access to both get and set that value.</p>
+one <a href="#/workflows/index">Workflow</a>, any other workflows have access to both get and set that value.</p>
 <p><strong>Note 2:</strong> Values put into a Property Bag maintain their types.  If you put in a <code>number</code>, when you get it at a later time, you will also receive a
 value that has the JavaScript type of <code>number</code>.</p>
 <h4>Adding an Item</h4>
@@ -66,4 +66,4 @@ function onSet(value) {
 </code></pre>
 <h4>Supported Data Types</h4>
 <p>The following types in JavaScript are supported: <code>date</code>,<code>number</code>, and<code>string</code>.  In addition, JSON object graphs are stored as <code>object</code>.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

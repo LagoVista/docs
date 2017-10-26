@@ -2,10 +2,10 @@
 title: Type System
 keywords: messages, messaging, types, string, decimal, integer, boolean, datetime, geolocation, latitude, longitude, state, unit
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171010
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md)

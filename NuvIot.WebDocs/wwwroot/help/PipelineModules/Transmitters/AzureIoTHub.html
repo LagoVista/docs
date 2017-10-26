@@ -1,11 +1,11 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Transmitter.md">Transmitters</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/pipelinemodules/index">Pipeline Modules</a> &gt; <a href="#/pipelinemodules/transmitter">Transmitters</a></p>
 <h1>Azure IoT Hub Transmitter</h1>
 <p>NuvIoT supports connecting directly to your IoT Hub so you can send messages to your devices.  It is important to realize that, in order to connect to Azure IoT Hub,
 you will need to find the URL from the Event Hub-compatible connection string and the Event Hub-compatible name. Refer to this <a href="https://blogs.msdn.microsoft.com/iotdev/2017/05/09/understand-different-connection-strings-in-azure-iot-hub/">Blog Post</a> for more information on IoT Hub Connection Strings.</p>
-<p>Also if you are sending a message back to a device that originally connected to an <a href="#/PipelineModules/Listeners/AzureIoTHub.md">Azure IoT Hub Listener</a> you should use the <a href="#/PipelineModules/Transmitters/OriginalListener.md">Original Listener</a> option as your transmitter.</p>
+<p>Also if you are sending a message back to a device that originally connected to an <a href="#/pipelinemodules/listeners/azureiothub">Azure IoT Hub Listener</a> you should use the <a href="#/pipelinemodules/transmitters/originallistener">Original Listener</a> option as your transmitter.</p>
 <p>When creating your outgoing message for Azure IoT Hub, you should set the Device ID in the outgoing message of the device where this message should be sent.</p>
 <h3>Required Fields</h3>
-<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required for any transmitter, the following fields are required:</p>
+<p>In addition to the <a href="#/topics/standardfields">standard fields</a> that are required for any transmitter, the following fields are required:</p>
 <ul>
 <li><p><strong>Transmitter Type</strong> (required)<br />
 <code>Azure IoT Hub</code></p>
@@ -31,4 +31,4 @@ Enter the assigned Access Key for your IoT Hub that was specified in the <strong
 <li><strong>Consumer Group</strong><br />
 If you do not add a Consumer Group, the <code>$Default</code> Consumer Group will be used.</li>
 </ul>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

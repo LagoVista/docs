@@ -2,7 +2,7 @@
 title: Workflow Mapping - Input Command to Output Command
 keywords: workflow, mapping, inputcommand, outputcommand
 
-status: new
+status: inprocess
 created: 20171009
 updated: 20171009
 createdby: Kevin D. Wolf

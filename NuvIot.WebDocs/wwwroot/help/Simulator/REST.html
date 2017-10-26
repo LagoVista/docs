@@ -1,4 +1,4 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/Simulator/Index.md">Simulator</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/simulator/index">Simulator</a></p>
 <h1>REST/HTTP Simulator</h1>
 <h3>Simulator Settings</h3>
 <ul>
@@ -6,7 +6,7 @@
 Name of the Simulator</p>
 </li>
 <li><p><strong>Key</strong> (required)<br />
-<a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
+<a href="#/topics/keys">Unique Key</a> to identify the message</p>
 </li>
 <li><p><strong>Transport</strong> (required)<br />
 For a REST simulator, use <code>REST (http)</code> or <code>REST (https)</code> for SSL</p>
@@ -19,7 +19,7 @@ DNS name or IP address that will be used to make the call<br />
 Port to send HTTP request. This is usually <code>80</code> for REST (http) and <code>443</code> for REST (https), but that is not required.</p>
 </li>
 <li><p><strong>Device ID</strong><br />
-Device ID that will be used to send along with each message.  The Device ID will be available for <a href="#/Simulator/StandardFields.md">Tag Replacement</a> in your message.</p>
+Device ID that will be used to send along with each message.  The Device ID will be available for <a href="#/simulator/standardfields">Tag Replacement</a> in your message.</p>
 </li>
 <li><p><strong>Anonymous</strong><br />
 Set this option if you connect without a user name and password to MQTT broker.</p>
@@ -28,13 +28,13 @@ Set this option if you connect without a user name and password to MQTT broker.<
 If you provide a User Name and Password and select this option, your User Name Password combination will be sent in the Authorization Header using the <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic access authorization scheme</a></p>
 </li>
 <li><p><strong>User Name</strong>  (required if not anonymous)<br />
-User Name that will be available for you to use in <a href="#/Simulator/StandardFields.md">Tag Replacement</a> to provide authentication with your message.</p>
+User Name that will be available for you to use in <a href="#/simulator/standardfields">Tag Replacement</a> to provide authentication with your message.</p>
 </li>
 <li><p><strong>Password</strong>  (required if not anonymous)<br />
-Password that will be available for you to use in <a href="#/Simulator/StandardFields.md">Tag Replacement</a> to provide authentication with your message.</p>
+Password that will be available for you to use in <a href="#/simulator/standardfields">Tag Replacement</a> to provide authentication with your message.</p>
 </li>
 <li><p><strong>Access Key</strong><br />
-Access Key if your device requires authentication, this could also be a password.  This will be available for <a href="#/Simulator/StandardFields.md">Tag Replacement</a>.  You can also add authentication credentials to each message.</p>
+Access Key if your device requires authentication, this could also be a password.  This will be available for <a href="#/simulator/standardfields">Tag Replacement</a>.  You can also add authentication credentials to each message.</p>
 </li>
 <li><p><strong>Description</strong><br />
 Free-form text used to provide notes for your Simulator</p>
@@ -46,7 +46,7 @@ Free-form text used to provide notes for your Simulator</p>
 Name of the message</p>
 </li>
 <li><p><strong>Key</strong> (required)<br />
-<a href="#/Topics/Keys.md">Unique Key</a> to identify the message</p>
+<a href="#/topics/keys">Unique Key</a> to identify the message</p>
 </li>
 <li><p><strong>HTTP Verb</strong> (required)<br />
 <code>GET, POST, PUT</code> and <code>DELETE</code></p>
@@ -55,10 +55,10 @@ Name of the message</p>
 Content Type, if applicable, such as <code>application/json</code>.  If left blank, it will send the Content Type <code>text/plain</code>.</p>
 </li>
 <li><p><strong>Text</strong><br />
-Content that will be sent as the body of the message. This will be available for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a>.</p>
+Content that will be sent as the body of the message. This will be available for <a href="#/simulator/dynamicfields">Tag Replacement</a>.</p>
 </li>
 <li><p><strong>Path and Query String</strong><br />
-Path and Query String that will be sent to the server. This will be available for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a>.</p>
+Path and Query String that will be sent to the server. This will be available for <a href="#/simulator/dynamicfields">Tag Replacement</a>.</p>
 <p><strong>Note</strong>: the Path should be in the following format, with <code>/</code> as the first value.<br />
 /mypath/~deviceid~?field=value</p>
 </li>
@@ -69,9 +69,9 @@ Path and Query String that will be sent to the server. This will be available fo
 <li>Name (<em>Required</em>) - Name of the field</li>
 <li>Key (<em>Required</em>) - Unique Key for the header.  This can be the same as Header Name.</li>
 <li>Header Name (<em>Required</em>) - Name of the Header Field to be sent to the server</li>
-<li>Value (<em>Required</em>) - Value to be sent to the server.  This will be available for <a href="#/Simulator/DynamicFields.md">Tag Replacement</a></li>
+<li>Value (<em>Required</em>) - Value to be sent to the server.  This will be available for <a href="#/simulator/dynamicfields">Tag Replacement</a></li>
 <li>Description - Simple text to help document the purpose of the field</li>
 </ul>
 <h4>Dynamic Attributes</h4>
-<p>For more information, please see the <a href="#/Simulator/DynamicFields.md">Dynamic Fields</a> section.</p>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<p>For more information, please see the <a href="#/simulator/dynamicfields">Dynamic Fields</a> section.</p>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

@@ -2,10 +2,10 @@
 title: Input Translator
 keywords: messages, messaging, inputtranslator, pipelinemodule
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171013
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Route](../Route.md) > [Mappings](Index.md)

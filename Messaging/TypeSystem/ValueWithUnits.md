@@ -2,10 +2,10 @@
 title: Value with Units
 keywords: messages, messaging, typesystem, values, unit, unitset, types, datatypes
 
-status: readyforapproval
+status: approved
 created: 20170922
 updated: 20171010
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Type System](Index.md)

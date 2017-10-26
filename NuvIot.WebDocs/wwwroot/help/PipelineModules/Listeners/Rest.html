@@ -1,4 +1,4 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/PipelineModules/Index.md">Pipeline Modules</a> &gt; <a href="#/PipelineModules/Listener.md">Listeners</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/pipelinemodules/index">Pipeline Modules</a> &gt; <a href="#/pipelinemodules/listener">Listeners</a></p>
 <h1>REST Server (HTTP/HTTPS)</h1>
 <p>NuvIoT has a dedicated REST Server that you can configure to easily receive messages from your devices.  As HTTP requests are made, the following
 data is available to be processed by the message:</p>
@@ -16,13 +16,13 @@ ensures that it is valid prior to processing.</p>
 <p>Currently, SSL connections are supported, but we will need to manually add the certificate for your automatically-generated host name, such as <code>https://[yourapp][yourns].iothost.net</code>.  If you
 are using a CNAME or ANAME DNS record to connect to this server, please <a href="http://support.nuviot.com/contactus?source=restsslcert">Contact Us</a> to install your certificate.</p>
 <h3>Required Fields</h3>
-<p>In addition to the <a href="#/Topics/StandardFields.md">standard fields</a> that are required for any listener, the following fields are required:</p>
+<p>In addition to the <a href="#/topics/standardfields">standard fields</a> that are required for any listener, the following fields are required:</p>
 <ul>
 <li><p><strong>Listener Type</strong> (required)<br />
 <code>REST</code></p>
 </li>
 <li><p><strong>Content Type</strong> (required)<br />
-Select the <a href="#/Messaging/ContentTypes.md">Content Type</a> of the message you are expecting. Any Content Type is acceptable.</p>
+Select the <a href="#/messaging/contenttypes">Content Type</a> of the message you are expecting. Any Content Type is acceptable.</p>
 </li>
 <li><p><strong>Listen on Port</strong> (required)<br />
 This is the port you wish to listen to for incoming messages.  This is normally port 80 or port 443 for SSL connections, but any port is supported in both configurations.</p>
@@ -34,7 +34,7 @@ Please <a href="http://support.nuviot.com/contactus?source=restsslcert">Contact 
 if you use your own host name, we will need to work with you to upload your customer-provided certificate.</p>
 </li>
 <li><p><strong>Anonymous Connection</strong>
-Allow Anonymous connections to this REST server, if you use an anonymous connection, you will likely use the <a href="#/PipelineModules/Sentinel.md">Sentinel</a> module to authenticate your devices.
+Allow Anonymous connections to this REST server, if you use an anonymous connection, you will likely use the <a href="#/pipelinemodules/sentinel">Sentinel</a> module to authenticate your devices.
 If you uncheck this option, you will need to enter a User Name and Password and send that data in an Authrorization header using <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentication</a>.  If you need
 additional Authentication schemes with your REST server, please <a href="http://support.nuviot.com/contactus?source=restauthscheme">contact us</a>.</p>
 </li>
@@ -45,4 +45,4 @@ User Name that your devices will use to access this REST resource  <a href="http
 User Name that your devices will use to access this REST resource  <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentication</a>.</p>
 </li>
 </ul>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

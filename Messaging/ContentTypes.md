@@ -2,7 +2,7 @@
 title: Content Types
 keywords: messages, messaging, contenttype, listener, json, string, binary, xml, delimited
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171011
 createdby: bytemaster-0xff

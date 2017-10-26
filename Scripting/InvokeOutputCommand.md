@@ -10,7 +10,7 @@ updatedby: klworkman
 ---
 [Home](../Index.md) > [Scripting](Index.md)
 
-# Scripting - Invoking Output Commands
+# Scripting - Sending Output Commands
 
 [Output Commands](../Workflows/OutputCommands.md) are used to build up the content that will be either sent out to devices or exported.
 

@@ -2,7 +2,7 @@
 title: Device Workflow Scripting
 keywords: workflow, scripting
 
-status: new
+status: inprocess
 created: 20170927
 updated: 20170927
 createdby: Kevin D. Wolf

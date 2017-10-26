@@ -1,4 +1,4 @@
-<p><a href="#/Index.md">Home</a> &gt; <a href="#/Messaging/Index.md">Device Messaging</a> &gt; <a href="#/Messaging/TypeSystem/Index.md">Type System</a></p>
+<p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a> &gt; <a href="#/messaging/typesystem/index">Type System</a></p>
 <h1>Working with Geolocation Values</h1>
 <p>In addition to the basic types, NuvIoT supports a native format for working with Geolocation Values.</p>
 <h2>Storage Format</h2>
@@ -37,8 +37,8 @@ DDD.DDDDD° (EWNS) - Text Format
 EWNS are the upper case characters E, W, N and S for East, West North and South.
 </code></pre>
 <p>If a decimal value is provided for the geolocation, the format is assumed to be (+/-)DDD.DDDDD.</p>
-<p>At this time, parsing <a href="http://www.gpsinformation.org/dale/nmea.htm#GGA">NEMA GGA</a> messages is unsupported.  If you need this or any other format, please <a href="http://support.nuviot.com/">Contact Us</a> and we will work with you to ensure that your format is supported.</p>
-<p>If you are unsure whether or not your GPS format will work, please use our <a href="#/Messaging/Parsing/Verifiers.md">Verifier Technology</a> and supply some sample messages with the formats you intend to use.</p>
+<p>At this time, parsing <a href="http://www.gpsinformation.org/dale/nmea.htm#GGA">NEMA GGA</a> messages is unsupported.  If you need this or any other format, please <a href="http://support.nuviot.com/contactus?source=gpsformats">Contact Us</a> and we will work with you to ensure that your format is supported.</p>
+<p>If you are unsure whether or not your GPS format will work, please use our <a href="#/messaging/parsing/verifiers">Verifier Technology</a> and supply some sample messages with the formats you intend to use.</p>
 <p>As a reference, the following regular expressions are used to parse DM and DMS geolocation values.  A good place to test the expressions and your values is <a href="https://regex101.com/">RegEx 101</a>.</p>
 <pre><code>Latitude DM
     ^(?'hh'\d{1,3})°?\s?(?'mm'[0-9\.]{1,8})'?\s??\s?(?'ns'[NS])$
@@ -58,4 +58,4 @@ Latitude as String DDD.DDDDDD (NS)
 Longitude as String DDD.DDDDDD (EW)
     ^(?'ddd'\d{1,3}\.\d{1,10})°?\s?(?'ew'[EW])$
 </code></pre>
-<hr /><div class="helppage-footer"><div>Documentation Built: 10/25/2017 18:54:00</div><div>Copyright Sofware Logistics - 2017</div></div>
+<hr /><div class="helppage-footer"><div>Documentation Built: 10/26/2017 09:50:36</div><div>Copyright Sofware Logistics - 2017</div></div>

@@ -2,13 +2,13 @@
 title: Company
 keywords: company, about, softwarelogistics, history info
 
-status: issue need to add logo
+status: approved
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff
 updatedby: klworkman
 ---
-![alt Logo](/images/sftlog-large.png)
+![alt Logo](../images/sftlog-large.png)
 
 Software Logistics was established by Kevin D. Wolf in 2001 as a high-end software consulting business. It has provided
 consulting and development services for many prominent international companies, including Microsoft, Yahoo, Intel, IBM, Qualcomm, Flickr, and American Airlines, 

@@ -2,7 +2,7 @@
 title: Output Commands
 keywords: workflow, outputcommand
 
-status: new
+status: inprocess
 created: 20171009
 updated: 20171008
 createdby: Kevin D. Wolf
@@ -11,6 +11,8 @@ updatedby: Kevin D. Wolf
 [Home](../Index.md) > [Workflow](Index.md)
 
 # Output Commands
+
+...more details coming soon...
 
 Output Commands are used to send a message back to your device.  When creating an output command you select a [Message 
 Definition](../Messaging/Index.md) that contains the fields that make up your outgoing message.  You will then be required
@@ -29,5 +31,4 @@ None - An Output Command can only have incoming connections.
 ### Mappings to Output Commands
 
 [Input to Output Command](./Mappings/InputToOutputCommand.md)  
-[State Machine to Output Command](./Mappings/StateMachineToOutputCommand.md)  
 [Input Command to Output Cmmand](./Mappings/InputCommandToOutputCommand.md)  

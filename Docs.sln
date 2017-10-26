@@ -37,8 +37,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04E
 		Messaging\Parsing\Verifiers.md = Messaging\Parsing\Verifiers.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{AA4E331B-EE82-475D-9EF7-559C3207A1D6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instances", "Instances", "{F66103ED-F8CC-4368-8951-39E08B670C56}"
 	ProjectSection(SolutionItems) = preProject
 		Instances\Index.md = Instances\Index.md
@@ -160,9 +158,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mappings", "Mappings", "{23
 		Workflows\Mappings\InputToAttribute.md = Workflows\Mappings\InputToAttribute.md
 		Workflows\Mappings\InputToOutputCommand.md = Workflows\Mappings\InputToOutputCommand.md
 		Workflows\Mappings\InputToStateMachine.md = Workflows\Mappings\InputToStateMachine.md
-		Workflows\Mappings\StateMachineToAttribute.md = Workflows\Mappings\StateMachineToAttribute.md
-		Workflows\Mappings\StateMachineToOutputCommand.md = Workflows\Mappings\StateMachineToOutputCommand.md
-		Workflows\Mappings\StateMachineToStateMachine.md = Workflows\Mappings\StateMachineToStateMachine.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mappings", "Mappings", "{7C7C2C70-D37A-439D-AA70-A15D8CA1AD18}"
@@ -215,15 +210,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulator", "Simulator", "{
 		Simulator\UDP.md = Simulator\UDP.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{D6A9F977-1D00-4C9B-AD21-66C122EC495B}"
-	ProjectSection(SolutionItems) = preProject
-		About\Branding.md = About\Branding.md
-		About\Company.md = About\Company.md
-		About\DesignPhilosophy.md = About\DesignPhilosophy.md
-		About\Faq.md = About\Faq.md
-		About\Why.md = About\Why.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B86E8080-EC33-4652-9137-6315891E0B0D}"
 	ProjectSection(SolutionItems) = preProject
 		API\index.md = API\index.md
@@ -234,6 +220,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Information", "Information"
 		Information\Company.md = Information\Company.md
 		Information\Consultation.md = Information\Consultation.md
 		Information\Consulting.md = Information\Consulting.md
+		Information\DesignPhilosophy.md = Information\DesignPhilosophy.md
 		Information\Developer.md = Information\Developer.md
 		Information\ExpertSystem.md = Information\ExpertSystem.md
 		Information\Extensibility.md = Information\Extensibility.md
@@ -245,6 +232,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Information", "Information"
 		Information\Performance.md = Information\Performance.md
 		Information\Pricing.md = Information\Pricing.md
 		Information\Security.md = Information\Security.md
+		Information\Subscriptions.md = Information\Subscriptions.md
 		Information\What.md = Information\What.md
 		Information\Why.md = Information\Why.md
 	EndProjectSection

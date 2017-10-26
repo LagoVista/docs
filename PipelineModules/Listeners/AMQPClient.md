@@ -12,7 +12,7 @@ createdby: bytemaster-0xff
 
 # AMQP Client
 
-**Note:**  *Please [contact us](http://support.nuviot.com/contactus) if you plan to use your AMQP Server or Broker and are running into issues with integration, we'll be
+**Note:**  *Please [contact us](http://support.nuviot.com/contactus?source=amqplistener) if you plan to use your AMQP Server or Broker and are running into issues with integration, we'll be
 happy to work with you to ensure a successful integration*
 
 Currently NuvIoT doesn't implement it's own dedicated AMQP server, it does however offer the option to connect to a 3rd party AMQP server
@@ -22,7 +22,7 @@ You have any number of options for adding an AMQP server, you can use a could ba
 [Amazon](https://aws.amazon.com/) or you can launch a dedicated AMQP server in a container that is preconfigured to specifically work with NuvIoT. 
 If you use a 3rd party server you will be responsible for managing authentication of devices as they connect (_although if the third
 party service allows you can call our [API](../../API/Index.md) to authenticate your devices_).  If you choose to launch a dedicated 
-AMQP server, it will automatically authenticate your devices.  Please contact us for more details on dedicated AMQP server availability.
+AMQP server, it will automatically authenticate your devices.  Please [contact us](http://support.nuviot.com/contactus?source=amqpavailability) for more details on dedicated AMQP server availability.
 
 ### Required Fields
 

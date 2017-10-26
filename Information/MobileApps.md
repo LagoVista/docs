@@ -2,11 +2,13 @@
 title: Mobile Apps
 keywords: mobile, apps
 
-status: inprocess (need to put links for actual apps, maybe screen shots)
+status: inprocess 
 created: 20171018
 updated: 20171018
 createdby: bytemaster-0xff
 updatedby: klworkman
+
+(need to put links for actual apps, maybe screen shots)
 ---
 
 # Mobile Apps

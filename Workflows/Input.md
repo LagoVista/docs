@@ -2,7 +2,7 @@
 title: Input
 keywords: workflow, input
 
-status: readyforapproval
+status: approved
 created: 20171009
 updated: 20171011
 createdby: Kevin D. Wolf

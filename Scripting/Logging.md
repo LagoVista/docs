@@ -12,8 +12,6 @@ updatedby: klworkman
 
 # Logging (EXPERIMENTEL)
 
-
-
 While developing your scripts, there are some options for writing data and messages to a log.
 
 

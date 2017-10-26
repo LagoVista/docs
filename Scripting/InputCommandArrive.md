@@ -2,7 +2,7 @@
 title: Input Command - OnArrive
 keywords: workflow, inputcommand, scripts, onarrive
 
-status: new
+status: approved
 created: 20170922
 updated: 20170922
 createdby: Kevin D. Wolf

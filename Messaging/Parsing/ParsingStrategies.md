@@ -2,10 +2,10 @@
 title: Parsing Strategies
 keywords: messages, messaging, parsing, payload, header
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171011
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](Index.md) > [Device Messaging](../Index.md)

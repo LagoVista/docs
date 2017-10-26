@@ -2,10 +2,10 @@
 title: Parsing Overview
 keywords: parsers, messaging, messages
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171010
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](Index.md) > [Device Messaging](../Index.md)
@@ -75,7 +75,7 @@ These make up the type system that is used throughout the rest of the system:
 * Geolocation - Stored as latitude and longitude in decimal degrees to six decimal places
 * Date Time - Stored in [ISO 8601 Format](https://en.wikipedia.org/wiki/ISO_8601)
 
-Note:  Arrays are not currently supported.  Please [Contact Us](http://support.nuviot.com) if they are required for implementation.
+Note:  Arrays are not currently supported.  Please [Contact Us](http://support.nuviot.com/contactus?source=storagearrays) if they are required for implementation.
 
 ### Fine Tuning Selections
 For textual values, use a [Regular Expression](RegExValueSelector.md) to extract a value. 

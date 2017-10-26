@@ -2,11 +2,11 @@
 title: Logging
 keywords: workflow, networking, rest, http, https, scripts
 
-status: new
+status: inprocess
 created: 20171009
 updated: 20171009
-createdby: Kevin D. Wolf
-updatedby: Kevin D. Wolf
+createdby: bytemaster-0xff
+updatedby: bytemaster-0xff
 ---
 [Home](../Index.md) > [Scripting](Index.md)
 # Networking

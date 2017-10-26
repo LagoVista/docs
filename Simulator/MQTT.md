@@ -15,7 +15,7 @@ updatedby: klworkman
 ### Simulator Settings
 
 **Note:** For the initial release, our MQTT Simulator does not support MQTT over TLS/SSL. This functionality is planned for Q1 2018.  If you need this sooner, please consider
-submitting a [Pull Request](http://github.com/lagovista/simulator) or [Contact Us](http://support.nuviot.com.).
+submitting a [Pull Request](http://github.com/lagovista/simulator) or [Contact Us](http://support.nuviot.com/source=mqttsimulator).
 
 * **Name** (required)  
 Name of the Simulator

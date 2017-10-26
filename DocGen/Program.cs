@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace DocGen
 {
@@ -15,6 +16,9 @@ namespace DocGen
         static int fileCount = 0;
         static StringBuilder bldr = new StringBuilder("function getHelpIndexRoutes() { return [");
         static string RelativePath;
+
+        static List<string> _files = new List<string>();
+        static List<string> _links = new List<string>();
 
         static void AddFileByStatus(string status, string fileName)
         {
@@ -30,10 +34,17 @@ namespace DocGen
         {
             System.IO.Directory.CreateDirectory(outputDir);
 
+           
             var files = System.IO.Directory.GetFiles(dir, "*.md");
             foreach (var file in files)
             {
                 var fileInfo = new System.IO.FileInfo(file);
+                if(fileInfo.Name.ToLower() == "readme.md" || 
+                    fileInfo.Name.ToLower() == "toc.md")
+                {
+                    continue;
+                }
+
                 var markdown = System.IO.File.ReadAllText(file);
                 var headerRegEx = new Regex(@"(---[\s\S]{0,}---)");
 
@@ -97,7 +108,7 @@ namespace DocGen
                         var newLink = String.Empty;
                         if (link.StartsWith("./"))
                         {
-                            newLink = link.Replace("./", $"/{dirPath}");
+                            newLink = link.Replace("./", $"{dirPath}/");
                         }
                         else if (link.StartsWith("../.."))
                         {
@@ -119,7 +130,14 @@ namespace DocGen
                             newLink = $"{dirPath}/{link}";
                         }
 
-                        md = md.Replace($@"""{link}""", $@"""#{newLink}""");
+                        
+                        var relativeLink = newLink.ToLower().Replace(".md", "");
+                        if(relativeLink.StartsWith("//"))
+                        {
+                            relativeLink = relativeLink.Substring(1);
+                        }
+                        md = md.Replace($@"""{link}""", $@"""#{relativeLink}""");
+                        _links.Add(relativeLink);
                     }
                 }
 
@@ -134,8 +152,9 @@ namespace DocGen
 
                 var newFileName = fileInfo.Name.Replace(".md", ".html");
                 System.IO.File.WriteAllText($@"{outputDir}\\{newFileName}", md);
-
+                bldr.AppendLine($@"{{""link"":""{fullFilePath.ToLower().Replace(".md", "")}"",""file"":""/help{fullFilePath.Replace(".md", ".html")}""}},");
                 bldr.AppendLine($@"{{""link"":""{fullFilePath}"",""file"":""/help{fullFilePath.Replace(".md", ".html")}""}},");
+                _files.Add(fullFilePath.Replace(".md", "").ToLower());
             }
             var dirs = System.IO.Directory.GetDirectories(dir);
             foreach (var childDir in dirs)
@@ -191,15 +210,51 @@ namespace DocGen
                 Console.WriteLine($"{status} {_filesByStatus[status].Count}");
             }
 
-            var noHeaders = _filesByStatus["noheader"];
-            foreach(var noHeader in noHeaders)
+            if (_filesByStatus.ContainsKey("new"))
             {
-                Console.WriteLine(noHeader);
+                var newFiles = _filesByStatus["new"];
+                Console.WriteLine("==============");
+                Console.WriteLine("New Files");
+                foreach (var noHeader in newFiles)
+                {
+                    Console.WriteLine(noHeader);
+                }
+                Console.Write(" ");
             }
 
+            if (_filesByStatus.ContainsKey("readforapproval"))
+            {
+                var readyForApproval = _filesByStatus["readyforapproval"];
+                Console.WriteLine("==============");
+                Console.WriteLine("Ready for Approval");
+                foreach (var noHeader in readyForApproval)
+                {
+                    Console.WriteLine(noHeader);
+                }
+                Console.Write(" ");
+            }
 
-            Console.WriteLine("==============");
-            Console.WriteLine("Completed");
+            if (_filesByStatus.ContainsKey("noheader"))
+            {
+                var noHeaders = _filesByStatus["noheader"];
+                Console.WriteLine("==============");
+                Console.WriteLine("No Header Files");
+                foreach (var noHeader in noHeaders)
+                {
+                    Console.WriteLine(noHeader);
+                }
+                Console.Write(" ");
+            }
+
+            foreach (var link in _links)
+            {
+                if (!_files.Where(fil => fil == link).Any())
+                {
+                    Console.WriteLine(link);
+                }
+            }
+
+            Console.WriteLine("Press Any Key to Close");
             Console.ReadKey();
         }
     }

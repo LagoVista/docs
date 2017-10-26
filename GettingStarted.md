@@ -2,10 +2,10 @@
 title: Getting Started
 keywords: help, overview, tutorial
 
-status: readyforapproval
+status: approved
 created: 20171002
 updated: 20171017
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 # Getting Started
@@ -16,7 +16,7 @@ In addition, we have created an Expert System that you can use to help capture y
 
 Before you begin, it is important to understand your goals. There are a lot of cool things that you can do, so it is a good idea to make a list and prioritize. Assuming that you have completed your list, let's get started.
 
-This Getting Started guide assumes that you have a basic idea of what you want to do and that you have identified your sensors.  If you need help with this, please feel free to [Contact Us](http://support.nuviot.com) and we would be happy to discuss options.
+This Getting Started guide assumes that you have a basic idea of what you want to do and that you have identified your sensors.  If you need help with this, please feel free to [Contact Us](http://support.nuviot.com/contactus?source=gettingstarted) and we would be happy to discuss options.
 
 
 #### General Approach

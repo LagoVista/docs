@@ -2,10 +2,10 @@
 title: Parsing String Messages
 keywords: messages, messaging, parsing, text, string, regularexpression, regex, position
 
-status: readyforapproval
+status: approved
 created: 20170927
 updated: 20171010
-createdby: Kevin D. Wolf
+createdby: bytemaster-0xff
 updatedby: klworkman
 ---
 [Home](../../Index.md) > [Device Messaging](../Index.md) > [Parsing Strategies](ParsingStrategies.md)
