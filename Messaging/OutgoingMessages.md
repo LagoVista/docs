@@ -12,7 +12,6 @@ updatedby: klworkman
 
 # Outgoing Messages
 
-...more details coming soon...
 
 Outgoing Messages are Messages that are generated from the [Output Translator](../PipelineModules/OutputTranslator.md) 
 from [Output Commands](../Workflows/OutputCommands.md) within a [device workflow](../Workflows/Index.md) and sent from 
@@ -45,3 +44,6 @@ For [REST Transmitter](../PipelineModules/Transmitters/Rest.md) you can provide 
 
 **Device Id** (required for Azure IoT Hub)  
 When creating your outgoing message for Azure IoT Hub, you should set the Device ID in the outgoing message of the device where this message should be sent.
+
+**Output Message Script** (required for JSON messages)  
+Add a [script](OutgoingMessageScript.md) that will build up the JSON document that will be sent as the message.

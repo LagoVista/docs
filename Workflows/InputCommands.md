@@ -12,10 +12,31 @@ updatedby: Kevin D. Wolf
 
 # Input Commands
 
-...more details coming soon...
+Input Commands are a very powerful mechanism where you can define your own REST endpoints that will be made available for external applications to set properties and invoke methods within the workflow.
 
-Input Commands are REST endpoints you can create that can be called from external sources such as applications or web sites.  These input commands
-allow you to invoke methods and get information about your devices.
+Input Commands are device specific that is to say as part of the REST URI, you will include your device id so the workflows will be run in individual devices.
 
+Input Commands support the following HTTP Methods:
+* **GET**
+* **POST**
+* **PUT**
+* **DELETE** 
+
+A feature that will be enabled by the end of 2017 will be a full documentation site of your IoT application, this will specifiy the details of your REST endpoints, until then please [contact us](https://support.nuviot.com/contactus?source=inputcommands) 
+for some 1-on-1 assistance to understand how Input Commands work.
 
 ### Input Command Parameters
+
+You can pass parameters along with your Input Commands to add a parameter click on Add and specify the following parameters
+
+* **Name** (required)  
+A simple name to identify your parameter, this is only for reference
+
+* **Key** (required)  
+A unique [key](../Topics/Keys.md)  to identify the paremter this will also be used to establish how the parameter should be sent.
+
+* **Parameter Location** (required)  
+The location where the paramter should be sent, this can be in the query string or the body (for POST/PUT methods)
+
+* **Parameter Type**   
+The [data type](../Messaging/TypeSystem/Index.md) of the parameter.

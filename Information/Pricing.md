@@ -11,8 +11,6 @@ updatedby: bytemaster-0xff
 
 # Pricing
 
-...more details coming soon...
-
 #### Pay for What You Use
    ***For a limited time:*** As we are rolling out our product, we are offering deep discounts for up to the first 
 two years of your services costs, [contact us](http://support.nuviot.com/contactus?source=pricing) for more details.
@@ -21,7 +19,7 @@ two years of your services costs, [contact us](http://support.nuviot.com/contact
 
 * **Compute Resources** Based on your scalability needs, pay for only the compute resources you need.  Our plans start as little as $199 a month for a dedicated instance.
 * **Device Storage** Configure the storage resource that meet your needs, there are two factors you need to consider, amount of storage as well as the performance needs of your storage repository.  Our storage solutions start at $49 a month for geo-redundent medium capacity solution.
-* **High Availability** We offer High Availability solutions for your most demanding applications.  Our always on solution includes distributed load balanancers feeding processing queues in multiple data centers.
+* **High Availability** We offer High Availability solutions for your most demanding applications.  Our always on solution includes distributed load balanceers feeding processing queues in multiple data centers.  Currently our High Availability solution requires a custom deployment, but until the end of 2017, we'll be offering our services at a greatly reduced rate.
 * **IoT Edge Computing** If you need a portion of your application to run on-site, we lease dedicated compute devices to run much of your logic locally, these generally require custom solutions so please [contact us](http://support.nuviot.com/contactus?source=edgecomputing) for more details.
 
 #### In addition we offer the following value add services

@@ -1,0 +1,17 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a> &gt; <a href="#/messaging/typesystem/index">Type System</a></p>
+<h1>Strongly Typed Named Value Pairs</h1>
+<p>Since we want to build a system that is not dependent on any underlying technology, protocol or message types, we normalize (provide a common/consistent format) any data that is received from a message or other source.</p>
+<p>Some examples of data that is stored in <strong>Strongly Typed Name Value Pairs</strong></p>
+<ul>
+<li><strong>Device Attributes</strong></li>
+<li><strong>Device Properties</strong></li>
+<li><strong>Message Values</strong></li>
+</ul>
+<p>Each field of data is stored with four components:</p>
+<ul>
+<li><strong>Name</strong> - The human readable name of the field, this can be changed in the defintiion of the field and will be applied to any new fields going forward, however it will not update past values.</li>
+<li><strong>Key</strong> - A <a href="#/topics/keys">Key</a> that will be used to identify this field internally and within scripts.  Once the key is defined for a field, it can not be modified.</li>
+<li><strong>Value</strong> - The actual content of the values.</li>
+<li><strong>Type</strong> - One of the types from our <a href="#/messaging/typesystem/index">Type System</a></li>
+</ul>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2017<br/>Documentation Build Date: 10/27/2017 16:16:14<p</div>

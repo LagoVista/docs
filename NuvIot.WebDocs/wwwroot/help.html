@@ -4,15 +4,16 @@
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="css/bootstrap.css" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="/images/nuviotico.png" />
+    <link href="/css//site.css" rel="stylesheet" />
     <script src="/help/index.js"></script>
 
-    <title>NuvIot - Documentation</title>
+    <title>Documentation - NuvIoT</title>
 
     <script>
         var app = angular.module("DocApp", ["ngRoute"]);
@@ -65,7 +66,7 @@
                     createHelpLeaf(newParent, node.children);
                 }
                 else {
-                    previousNode = $(`<li><a href=\"${node.link.toLowerCase().replace(".md","")}\">${node.name}</a></li>`);
+                    previousNode = $(`<li><a href=\"${node.link.toLowerCase().replace(".md", "")}\">${node.name}</a></li>`);
                     parentNode.append(previousNode);
                 }
             }
@@ -104,23 +105,9 @@
         });
     </script>
     <style>
-        @font-face {
-            font-family: RobotoBlack;
-            src: url(/fonts/Roboto-Black.ttf);
+        .helppage-footer  p {
+            font-size:8pt
         }
-
-        @font-face {
-            font-family: RobotoBold;
-            src: url(/fonts/Roboto-Black.ttf);
-        }
-
-        @font-face {
-            font-family: RobotoRegular;
-            src: url(/fonts/Roboto-Regular.ttf);
-        }
-
-        body { padding-top:50px; }
-
         ul.topNodeSet > li {
             list-style: none;
             margin-left: -25px;
@@ -139,7 +126,7 @@
 
         .list ul > li.parentNode > i {
             color: #337ab7;
-            cursor:pointer;
+            cursor: pointer;
         }
 
         li > i {
@@ -157,29 +144,36 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="https://www.IoTAppStudio.com" class="navbar-brand">NuvIoT</a>
-            
         </div>
 
         <a href="/" class="navbar-brand">Home</a>
+        <ul class="nav navbar-nav navbar-right" style="margin-right:50px">
+            <li><a href="/help.html#/information/company" target="_blank">Company </a></li>
+            <li><a href="/contactus" target="_blank">Contact Us </a></li>
+        </ul>
     </div>
-
-    <div style="background-color:#f0f0f0">
-        <div>
-            <img src="images/NuvIoT-64x64B.png" />
-            <img src="images/sftlog-small.png" />
-        </div>
-    </div>
-    <div class="container" >
+    <div class="container">
         <div class="row">
             <div class="col-lg-3">
                 <div style="align-items:stretch">
                     <div style="overflow-y:auto" class="list"></div>
                 </div>
             </div>
-            <div class="col-lg-9" ng-view style="overflow-y:auto">
+            <div class="col-lg-9" ng-view style="overflow-y:auto;padding-bottom:30px">
 
             </div>
         </div>
     </div>
+
+    <div class="skype-button bubble" data-bot-id="01499698-dd31-4e44-b90d-6becf37f8605"></div>
+
+    <div style="position:fixed;bottom:0;width:100%;background-color:rgba(0,0,0,0.5);padding:5px;">
+        <span style="color:white;margin-left:50px">&copy; 2017 - Software Logistics, LLC</span>
+        <div style="float:right">
+            <a style="margin-right:50px;color:white" href="https://app.termly.io/document/terms-of-use-for-saas/90eaf71a-610a-435e-95b1-c94b808f8aca" target="_blank">Terms and Conditions</a>
+            <a style="margin-right:50px;color:white" href="https://app.termly.io/document/privacy-policy-for-website/f0b67cde-2a08-4fe8-a35e-5e4571545d00" target="_blank">Privacy Statement</a>
+        </div>
+    </div>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
 </body>
 </html>

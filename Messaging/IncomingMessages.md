@@ -12,6 +12,7 @@ updatedby: klworkman
 
 # Incoming Messages
 
+...more details coming soon...
+
 Incoming Messages are Messages that are received from a Listener.
 
-...more details coming soon...

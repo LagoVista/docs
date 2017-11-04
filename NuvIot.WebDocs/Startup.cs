@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace NuvIot.WebDocs
 {
@@ -37,6 +38,9 @@ namespace NuvIot.WebDocs
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            var provider = new FileExtensionContentTypeProvider();
+            provider.Mappings[".ico"] = "image/x-icon";
+
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
 
             loggerFactory.AddConsole();
@@ -49,7 +53,10 @@ namespace NuvIot.WebDocs
             app.UseMvc();
 
             app.UseDefaultFiles();
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()             
+                {
+                    ContentTypeProvider = provider
+                });
         }
     }
 }

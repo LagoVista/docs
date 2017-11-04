@@ -39,8 +39,7 @@ namespace DocGen
             foreach (var file in files)
             {
                 var fileInfo = new System.IO.FileInfo(file);
-                if(fileInfo.Name.ToLower() == "readme.md" || 
-                    fileInfo.Name.ToLower() == "toc.md")
+                if(fileInfo.Name.ToLower() == "readme.md")
                 {
                     continue;
                 }
@@ -78,7 +77,10 @@ namespace DocGen
                 }
                 else
                 {
-                    AddFileByStatus("noheader", fileInfo.FullName);
+                    if (fileInfo.Name.ToLower() != "toc.md")
+                    {
+                        AddFileByStatus("noheader", fileInfo.FullName);
+                    }
                 }
 
                 var md = Markdown.ToHtml(markdown);
@@ -145,8 +147,9 @@ namespace DocGen
                 {
                     md += "<hr />";
                     md += "<div class=\"helppage-footer\">";
-                    md += $"<div>Documentation Built: {DateTime.Now.ToString()}</div>";
-                    md += $"<div>Copyright Sofware Logistics - {DateTime.Now.Year}</div>";
+                    md += $"<p>Copyright Software Logistics - {DateTime.Now.Year}<br/>";
+                    md += $"Documentation Build Date: {DateTime.Now.ToString()}<p";
+                    
                     md += "</div>";
                 }
 

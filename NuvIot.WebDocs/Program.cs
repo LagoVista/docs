@@ -28,7 +28,7 @@ namespace NuvIot.WebDocs
 
                 var urls = new List<string>()
                 {
-                    "https://support.nuviot.com:443", "http://support.nuviot.com:80", "https://about.nuviot.com:443", "http://about.nuviot.com:80",
+                    "https://support.nuviot.com:443", "http://support.nuviot.com:80",
                 };
 
                 hostBuilder.UseKestrel(options =>

@@ -5,66 +5,52 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/images/nuviotico.png" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    <style>
-        @font-face {
-            font-family: RobotoBlack;
-            src: url(/fonts/Roboto-Black.ttf);
-        }
-
-        @font-face {
-            font-family: RobotoBold;
-            src: url(/fonts/Roboto-Black.ttf);
-        }
-
-        @font-face {
-            font-family: RobotoRegular;
-            src: url(/fonts/Roboto-Regular.ttf);
-        }
-
-        body {
-            margin-top: 70px
-        }
-    </style>
-
-    <title>NuvIot - Documentation</title>
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css//site.css" rel="stylesheet" />
+    <title>Support Network - NuvIoT</title>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header" style="margin-left:50px">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="https://www.IoTAppStudio.com" target="_blank" class="navbar-brand">NuvIoT</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right" style="margin-right:50px">
-            <li><a href="https://www.IoTAppStudio.com/Contact" target="_blank">Contact Us <i class="fa fa-phone"></i> </a></li>
-        </ul>
-    </div>
-
     <div class="container">
-        <p style="font-family:'Myanmar Text'" class="mast-head lead">NuvIoT Support Network</p>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header" style="margin-left:50px">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="https://www.IoTAppStudio.com" target="_blank" class="navbar-brand">NuvIoT</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right" style="margin-right:50px">
+                <li><a href="/help.html#/information/company" target="_blank">Company </a></li>
+                <li><a href="/contactus" target="_blank">Contact Us  </a></li>
+            </ul>
+        </div>
+
+        <div class="row" style="margin-top:60px">
+            <p style="font-family:'Myanmar Text'" class="mast-head lead">NuvIoT Support Network</p>
+        </div>
+
         <div class="row hidden-md">
-            <div class="col-lg-6" style="text-align:center;padding-top:40px">
+            <div class="col-lg-6" style="text-align:center;padding-top:20px">
+                <p style="font-family:'Myanmar Text'" class="mast-head lead">IoT App Builder</p>
                 <img src="/images/NuvIoT-256x256B.png" style="display:inline-block" />
+                
             </div>
             <div class="col-lg-6" style="text-align:center">
-                <img src="/images/SupportGirl.png" style="display:inline-block" />
+                <img src="/images/SupportGirl.jpg" style="display:inline-block" />
             </div>
         </div>
         <hr />
         <div class="row">
             <div class="col-lg-3">
                 <div class="panel panel-default" style="height:210px">
-                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Online Help</div>
+                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">Online Help</div>
                     <div class="panel-body">
                         <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-question"></i>
                         Our Comprehensive Online Help library should answer a number of your questions.
@@ -76,19 +62,19 @@
             </div>
             <div class="col-lg-3">
                 <div class="panel panel-default" style="height:210px">
-                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Open a Support Ticket</div>
+                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">Open a Support Ticket</div>
                     <div class="panel-body">
                         <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-ticket"></i>
                         If you need extra support, have an issue with our software or need an additional feature, please feel free to submit a support ticket.
                         <div style="position:absolute;bottom:20px;right:30px;">
-                            <a href="https://nuviot.supportsystem.com">Open a Support Ticket >></a>
+                            <a href="http://tickets.nuviot.com" target="_blank">Open a Support Ticket >></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div class="panel panel-default" style="height:210px;">
-                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Online Forums</div>
+                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">Online Forums</div>
                     <div class="panel-body">
                         <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-th-list"></i>
                         Get Help or Help Others with our Online Forum.  This is a great resource to work with real world experts.
@@ -100,19 +86,15 @@
             </div>
             <div class="col-lg-3">
                 <div class="panel panel-default" style="height:210px">
-                    <div class="panel-heading" style="background-color:#D48D17;color:white;font-weight:bold;font-size:larger">Chat</div>
+                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">AI Chat-Bot</div>
                     <div class="panel-body">
                         <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-comments"></i>
-                            Coming Soon, use our Online Chat system to get real time assistance for your implementation or pre-sales questions.
-                        <div style="position:absolute;bottom:20px;right:30px;">
-                            <a href="/Chat">Chat >></a>
-                        </div>
+                        Use our Online Support AI Chat-Bot to ask your questions by clicking the Chat icon at the bottom right of your screen and type Hi to get started.
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="skype-button bubble" data-bot-id="01499698-dd31-4e44-b90d-6becf37f8605"></div>
 
 
         <hr />
@@ -120,6 +102,8 @@
             <img src="/Images/sftlog-medium.png" />
         </div>
     </div>
+
+    <div class="skype-button bubble" data-bot-id="01499698-dd31-4e44-b90d-6becf37f8605"></div>
 
     <div style="position:fixed;bottom:0;width:100%;background-color:rgba(0,0,0,0.5);padding:5px;">
         <span style="color:white;margin-left:50px">&copy; 2017 - Software Logistics, LLC</span>

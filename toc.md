@@ -82,6 +82,8 @@
 * [Routes](./Routes/Route.md)
   * [Mappings](./Routes/Mappings/Index.md)
     * [Input Translator to Workflow Input](./Routes/Mappings/InputTranslatorToWorkflow.md) 
+    * [Workflow to Ouput Translator](./Routes/Mappings/OutputTranslatorToTransmitter.md) 
+    * [Output Translator to Transmitter](./Routes/Mappings/WorkflowToOutputTranslator.md) 
 * [Scripting](./Scripting/Index.md)
   * [Scripts](./Scripting/Index.md)
     * [Attribute - onSet](./Scripting/AttributeOnSet.md)

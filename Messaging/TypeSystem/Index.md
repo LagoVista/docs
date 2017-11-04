@@ -18,6 +18,8 @@ As messages are parsed and data is made available, a type is associated with tho
 
 #### Available Types
 
+[Strongly Typed Named Value Pairs](NameValuePairs.md) - How data is stored in our system.
+
 [String](Strings.md) - Simple textual representation of data  
 [Integers](Integers.md) - Whole numbers (1,-1, 100, 0, etc.)  
 [Decimals](Decimals.md) - Numbers with a decimal (1.42, 523.4, -53.5, etc.)  
