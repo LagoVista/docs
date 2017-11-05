@@ -67,6 +67,7 @@
      * [REST Server](./PipelineModules/Listeners/Rest.md)
      * [TCP Listener](./PipelineModules/Listeners/TCP.md)
      * [UDP Listener](./PipelineModules/Listeners/UDP.md)
+     * [WebSockets](./PipelineModules/Listeners/WebSockets.md)
   * [Transmitter](./PipelineModules/Transmitter.md)
      * [Azure Event Hub](./PipelineModules/Transmitters/AzureEventHubs.md)
      * [Azure IoT Hub](./PipelineModules/Transmitters/AzureIoTHub.md)

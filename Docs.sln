@@ -140,6 +140,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{
 		PipelineModules\Listeners\Rest.md = PipelineModules\Listeners\Rest.md
 		PipelineModules\Listeners\TCP.md = PipelineModules\Listeners\TCP.md
 		PipelineModules\Listeners\UDP.md = PipelineModules\Listeners\UDP.md
+		PipelineModules\Listeners\WebSockets.md = PipelineModules\Listeners\WebSockets.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topics", "Topics", "{7489B6D0-6287-47A2-9051-7F227A4E6917}"

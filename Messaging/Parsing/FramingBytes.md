@@ -14,7 +14,7 @@ updatedby: klworkman
 
 When parsing a binary message, you can use framing bytes to ensure that your message is in the exact format you expect.  You can also set checkpoints for relative locations in your message.  
 
-**Note:** This has not been implemented as of 10/25/2017, please [contact us](http://support.nuviot.com/contact?source=framingbytes) if you need this feature.
+**Note:** This has not been implemented as of 10/25/2017, please [Contact Us](http://support.nuviot.com/contact?source=framingbytes) if you need this feature.
 
 Framing bytes consist of two parameters:
 

@@ -28,6 +28,7 @@ The following standard Listener Types are supported and can be configured to mee
 * [REST](./Listeners/Rest.md) - Listen for HTTP and HTTPS [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) messages
 * [TCP](./Listeners/TCP.md) - Listen on a TCP port for messages
 * [UDP](./Listeners/UDP.md) - Listen on a UDP port for datagram-based messages
+* [WebSocket](./Listeners/WebSockets.md) - Listen to a WebSocket Server for messages
 
 If you have something that is unique for your implementation, you can create a custom Listener that monitors your unique channel
 and then hands these off to the planner to leverage existing processing.
