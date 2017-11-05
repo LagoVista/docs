@@ -7078,11 +7078,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\nuviot\\do.Documentation\\DocGen\\DocGen.csproj",
+      "projectUniqueName": "D:\\nuviot\\do.documentation\\DocGen\\DocGen.csproj",
       "projectName": "DocGen",
-      "projectPath": "D:\\nuviot\\do.Documentation\\DocGen\\DocGen.csproj",
+      "projectPath": "D:\\nuviot\\do.documentation\\DocGen\\DocGen.csproj",
       "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "D:\\nuviot\\do.Documentation\\DocGen\\obj\\",
+      "outputPath": "D:\\nuviot\\do.documentation\\DocGen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "D:\\nuviot\\NuGet.Config",
@@ -7096,7 +7096,8 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
         "D:\\nuviot\\LocalPackages": {},
         "D:\\nuviot\\LocalPrivatePackages": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://slsys.pkgs.visualstudio.com/_packaging/lagovista/nuget/v2": {}
       },
       "frameworks": {
         "netcoreapp1.1": {
