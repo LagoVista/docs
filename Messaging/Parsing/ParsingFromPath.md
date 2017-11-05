@@ -12,22 +12,36 @@ updatedby: klworkman
 
 # Parsing from a Path
 
-To extract a value from a path, select the search location:
+To extract a value from a path, usually from a URL of a REST type message use search location of `Path`.  To extract values from
+a query string of a REST type message use a search location of [Query String](ParsingFromQueryString.md).
 
-**Search Location**  
-Path
+**Name** (required)  
+Textual name to describe the the path locator.
 
-And use the following syntax in the Path Locator:
+**Key**  (required)  
+The key is used as the place holder to extract the field from the path.
 
-**Path Locator**  
-`/deviceadmin/{deviceid}`
+**Search Location**  (required)  
+When parsing from a path, the value `Path` should be selected
 
+**Path Locator** (required)  
+A string that uses the key as a place holder to extract the field.
 
-With the above Path Locator and a path of
-
-`/deviceadmin/device1234`
-
-The value ```device1234``` will be made available to the message.
-
-##### Storage Type
+**Storage Type** (required for parsing from messages, not used for Message Id and Device Id Parsing)
 You will also need to add a [Storage Type](../TypeSystem/Index.md) to identify how this field should be stored.
+
+**RegEx Value Selector**  
+Can can provide a regular expression to extract values from the returned value.
+
+**RegEx Validation
+
+## Consider the following example:  
+**Key**  was defined as the text `deviceid`
+
+**Path Locator** was defined as `/deviceadmin/{deviceid}`
+
+
+_Input Path_ = `/deviceadmin/device1234`
+
+The value ```device1234``` will be parsed and made available to the [message](Index.md), [message id](MessageIdParsing.md) or [device id](DeviceIdParsing.md)
+

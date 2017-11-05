@@ -2,7 +2,7 @@
 title: Parsing Text Messages
 keywords: messages, messaging, devices, parsing, payload, body, post, form, text, http, rest
 
-status: approved
+status: inprocess (need better description of positional parsing)
 created: 20170927
 updated: 20171011
 createdby: bytemaster-0xff

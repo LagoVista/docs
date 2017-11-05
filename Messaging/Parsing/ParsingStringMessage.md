@@ -2,7 +2,7 @@
 title: Parsing String Messages
 keywords: messages, messaging, parsing, text, string, regularexpression, regex, position
 
-status: approved
+status: inprocess (need better description of positional parsing)
 created: 20170927
 updated: 20171010
 createdby: bytemaster-0xff
@@ -12,8 +12,8 @@ updatedby: klworkman
 
 # Parsing a String Message
 
-There are two options for parsing a pure String Message.  One is with regular 
-expressions, the second is by using positional attributes.
+There are two options for parsing a pure String Message.  One is with [regular 
+expressions](ParsingWithRegEx.md), the second is by using [positional attributes](ParsingTextMessages.md).
 
 For your message, select the Content Type **String with Position** and provide a 
 start index and a length in order to extract the field from the string content.  If your message uses delimiters, 

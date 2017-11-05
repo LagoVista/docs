@@ -38,10 +38,10 @@ Is Required - You can mark this field if it is required.  If it is not present i
 processing will not continue.
 
 #### For String Storage Type Values
-RegEx Validation - If the value you are extracting is a string, you can add a regular expression that will be used to validate the contents of that string value.
+**RegEx Validation** - If the value you are extracting is a string, you can add a regular expression that will be used to validate the contents of that string value.
 
 #### For Integer and Decimal Storage Type Values
-Minimum Value and Maximum Value - You can provide values that will limit the range either to a minimum value, a maximum value, or both to indicate acceptable incoming values.  These values are inclusive of the range values.  For example, if a minimum value of ```8``` was specified, a value of ```8``` would be valid but `7.99999` would not.  If minimum or maximum value is not present, no validation will take place.  It is possible to have a minumum value without a maximum value and vice-versa. 
+**Minimum Value** and **Maximum Value** - You can provide values that will limit the range either to a minimum value, a maximum value, or both to indicate acceptable incoming values.  These values are inclusive of the range values.  For example, if a minimum value of ```8``` was specified, a value of ```8``` would be valid but `7.99999` would not.  If minimum or maximum value is not present, no validation will take place.  It is possible to have a minumum value without a maximum value and vice-versa. 
 
 
 
