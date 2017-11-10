@@ -21,5 +21,6 @@ get you started:
 * [Host](Host.md)
 * [NuvIoT Infrastructure](NuvIoTInfrastructure.md)
 * [Instance](Instance.md)
+* [Runtime](Runtime.md)
 * [Solution](Solution.md)
 * [Subscription](Subscriptions.md)

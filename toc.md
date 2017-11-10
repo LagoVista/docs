@@ -11,6 +11,7 @@
     * [Host](./Deployment/Host.md)
     * [NuvIoT Infrastructure](./Deployment/NuvIoTInfrastructure.md)
     * [Instance](./Deployment/Instance.md)
+    * [Runtime](./Deployment/Runtime.md)
     * [Solution](./Deployment/Solution.md)
     * [Subscription](Deployment/Subscriptions.md)
 * [Devices](./Devices/Index.md)

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,6 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04E
 		Messaging\Parsing\FramingBytes.md = Messaging\Parsing\FramingBytes.md
 		Messaging\Parsing\Index.md = Messaging\Parsing\Index.md
 		Messaging\Parsing\MessageIdParsing.md = Messaging\Parsing\MessageIdParsing.md
+		Messaging\Parsing\MessageTypeFields.md = Messaging\Parsing\MessageTypeFields.md
 		Messaging\Parsing\Overview.md = Messaging\Parsing\Overview.md
 		Messaging\Parsing\ParsingBinaryMessages.md = Messaging\Parsing\ParsingBinaryMessages.md
 		Messaging\Parsing\ParsingDelimitedMessage.md = Messaging\Parsing\ParsingDelimitedMessage.md
@@ -110,6 +111,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", 
 		Deployment\Index.md = Deployment\Index.md
 		Deployment\Instance.md = Deployment\Instance.md
 		Deployment\NuvIoTInfrastructure.md = Deployment\NuvIoTInfrastructure.md
+		Deployment\Runtime.md = Deployment\Runtime.md
 		Deployment\Solution.md = Deployment\Solution.md
 		Deployment\Subscriptions.md = Deployment\Subscriptions.md
 	EndProjectSection
@@ -140,7 +142,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{
 		PipelineModules\Listeners\Rest.md = PipelineModules\Listeners\Rest.md
 		PipelineModules\Listeners\TCP.md = PipelineModules\Listeners\TCP.md
 		PipelineModules\Listeners\UDP.md = PipelineModules\Listeners\UDP.md
-		PipelineModules\Listeners\WebSockets.md = PipelineModules\Listeners\WebSockets.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topics", "Topics", "{7489B6D0-6287-47A2-9051-7F227A4E6917}"
