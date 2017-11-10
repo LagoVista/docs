@@ -67,7 +67,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{9126
 		Devices\Security.md = Devices\Security.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{38765E25-6F53-4D43-A420-A10EDF456AAF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{38765E25-6F53-4D43-A420-A10EDF456AAF}"
 	ProjectSection(SolutionItems) = preProject
 		Workflows\Attributes.md = Workflows\Attributes.md
 		Workflows\Index.md = Workflows\Index.md
