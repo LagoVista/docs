@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}"
 	ProjectSection(SolutionItems) = preProject
@@ -198,7 +198,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{9231A2EF-953A-4367-917E-F76D71B6F8FF}"
 	ProjectSection(SolutionItems) = preProject
+		Security\AccessKey.md = Security\AccessKey.md
+		Security\Anonymous.md = Security\Anonymous.md
+		Security\BasicAuth.md = Security\BasicAuth.md
+		Security\DeviceSecurity.md = Security\DeviceSecurity.md
 		Security\Index.md = Security\Index.md
+		Security\LocatingSecurityField.md = Security\LocatingSecurityField.md
+		Security\SAS.md = Security\SAS.md
+		Security\SecurityFields.md = Security\SecurityFields.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulator", "Simulator", "{16705012-FDE6-4043-B921-97D4FDD329DA}"

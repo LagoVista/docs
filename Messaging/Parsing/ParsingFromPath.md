@@ -33,7 +33,9 @@ You will also need to add a [Storage Type](../TypeSystem/Index.md) to identify h
 **RegEx Value Selector**  
 Can can provide a regular expression to extract values from the returned value.
 
-**RegEx Validation
+**Additional Validation Fields**  
+After the message has been parsed there are a number of [options](Validation.md) that can be used to validate the value, if validation fails, the message will be rejected.
+
 
 ## Consider the following example:  
 **Key**  was defined as the text `deviceid`
