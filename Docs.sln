@@ -231,8 +231,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{D6A9F977
 		About\Branding.md = About\Branding.md
 		About\Company.md = About\Company.md
 		About\DesignPhilosophy.md = About\DesignPhilosophy.md
-		About\Faq.md = About\Faq.md
-		About\Why.md = About\Why.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B86E8080-EC33-4652-9137-6315891E0B0D}"
@@ -269,6 +267,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transmitters", "Transmitter
 		PipelineModules\Transmitters\MQTTClient.md = PipelineModules\Transmitters\MQTTClient.md
 		PipelineModules\Transmitters\OriginalListener.md = PipelineModules\Transmitters\OriginalListener.md
 		PipelineModules\Transmitters\Rest.md = PipelineModules\Transmitters\Rest.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Billing", "Billing", "{F32C665F-A6B8-4120-BCF7-8581560A38E6}"
+	ProjectSection(SolutionItems) = preProject
+		Billing\BillingEvents.md = Billing\BillingEvents.md
+		Billing\BillingPeriods.md = Billing\BillingPeriods.md
+		Billing\CreditCardTransactions.md = Billing\CreditCardTransactions.md
+		Billing\Index.md = Billing\Index.md
+		Billing\Invoicing.md = Billing\Invoicing.md
 	EndProjectSection
 EndProject
 Global
