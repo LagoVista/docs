@@ -13,7 +13,7 @@ updatedby: klworkman
 A simple yet less secure mechanism of authentication is to use [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication).
 
 Using this mechanism, the Device ID and either the primary or secondary Access Keys are concatenated and separated wih a colon (:).  The resulting
-string is then [Base64](https://en.wikipedia.org/wiki/Base64) encoded and sent as the [Security Field](SecurityFields.md).
+string is then [Base64](https://en.wikipedia.org/wiki/Base64)-encoded and sent as the [Security Field](SecurityFields.md).
 
 An exmple of this, for User ID `Aladdin` and a Primary Key of `OpenSesame` would be a combinded string of:
 ```
