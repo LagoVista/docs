@@ -2,11 +2,11 @@
 title: Workflow
 keywords: workflow, pipeline, transmitter, pipelinemoudle 
 
-status: readyforreview
+status: readyforapproval
 created: 20171022
-updated: 20171022
+updated: 20171120
 createdby: bytemaster-0xff
-updatedby: bytemaster-0xff
+updatedby: klworkman
 ---
 [Home](../Index.md) > [Pipeline Modules](Index.md)
 
