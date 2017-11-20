@@ -2,11 +2,11 @@
 title: Basic Access Authorization
 keywords: messaging, devices, security, authorization, basic authentication, security fields
 
-status: readyforreview
+status: readyforapproval
 created: 20171112
-updated: 20171112
+updated: 20171120
 createdby: bytemaster-0xff
-updatedby: bytemaster-0xff
+updatedby: klworkman
 ---
 # Basic Access Authorization
 
