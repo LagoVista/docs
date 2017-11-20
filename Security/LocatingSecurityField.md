@@ -23,7 +23,7 @@ unauthorized device is placed in an Unauthorized Message folder.  You specify ho
 is located and used within the sentinel module.  
 
 #### Finding your Security Field within a Message
-You can search for [Message Fields](../Messaging/MessageFields.md), [Message ID](../Messaging/Parsing/MessageIdParsing.md) and [Device IDs](../Messaging/Parsing/DeviceIdParsing.md) from within your message, so
+You can search for [Message Fields](../Messaging/MessageFields.md), [Message IDs](../Messaging/Parsing/MessageIdParsing.md), and [Device IDs](../Messaging/Parsing/DeviceIdParsing.md) from within your message, so
 you can configure parsers to look for IDs in different locations of your message as follows:
 
 * [Header](../Messaging/Parsing/ParsingFromHeader.md)
