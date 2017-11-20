@@ -2,7 +2,7 @@
 title: Security Fields
 keywords: messaging, devices, security, authorization, security fields
 
-status: readyforapproval
+status: issues you indicate there are two ways to authenticate but there are three bullet points.  The verbiage for the first two bullet points is identical.
 created: 20171112
 updated: 20171120
 createdby: bytemaster-0xff
