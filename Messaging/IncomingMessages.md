@@ -14,5 +14,5 @@ updatedby: klworkman
 
 ...more details coming soon...
 
-Incoming Messages are Messages that are received from a Listener.
+Incoming Messages are messages that are received from a Listener.
 
