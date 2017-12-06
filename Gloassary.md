@@ -8,7 +8,7 @@ updated: 20171116
 createdby: bytemaster-0xff
 updatedby: bytemaster-0xff
 ---
-# Gloassary
+# Glossary
 
 **Attributes**  
 As part of processing messages from our device, you can define Attributes within your Device Workflows.  You can think of
