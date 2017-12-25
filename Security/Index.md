@@ -27,7 +27,7 @@ Below are some of the topics about securing device access:
 * [Anonymous](Anonymous.md)
 * [Basic Authentication](BasicAuth.md)
 * [Device Security](DeviceSecurity.md)
-* [LocatingSecurityField](DeviceSecurity.md)
+* [Locating Security Fields](DeviceSecurity.md)
 * [Shared Access Signature](SecurityFields.md)
 * [Security Fields](SecurityFields.md)
 

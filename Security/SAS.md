@@ -12,13 +12,16 @@ updatedby: Kevin D. Wolf
 
 ...more details to come...
 
-A Shared Access Signature is an [HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code) computed value that includes a expiration date and is [base 64](https://en.wikipedia.org/wiki/Base64) encoded that can only be created with a primary or secondary access 
+A Shared Access Signature is an [HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code) computed value that includes a 
+expiration date and is [base 64](https://en.wikipedia.org/wiki/Base64) encoded that can only be created with a primary or secondary access 
 key from a device that is sent as a [security field](SecurityFields.md).
 
 There are three steps to create your shared access signature
 
 1. Build up the raw string that will be signed with your primary or secondary access key
 ```
+DeviceId + '\n'
+DateStampAsPresentedInMessage + '\n'
 
 ```
 
