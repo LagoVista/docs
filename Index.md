@@ -16,6 +16,7 @@ Welcome to our Online Help System
 * [Implementation Overview](./Topics/Implementation.md)
 * [Design Philosophy](./Information/DesignPhilosophy.md)
 * [API](./API/index.md )
+* [How Do I?](HowDoI.md )
 * [Deployment](./Deployment/Index.md)
 * [Devices](./Devices/Index.md)
 * [Messaging](./Messaging/Index.md)

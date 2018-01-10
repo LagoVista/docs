@@ -15,8 +15,6 @@ updatedby: bytemaster-0xff
 A **Host** is a single or collection of compute resources that have been created to manage our IoT application.  A **Host**
 is the runtime that runs your [instance](Instance.md)
 
-...more details coming soon...
-
 ## Host States
 
 #### Startup Sequence

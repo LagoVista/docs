@@ -1,6 +1,18 @@
 <p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a> &gt; <a href="#/messaging/parsing/index">Parsing</a></p>
 <h1>Parsing from Body or Payload</h1>
-<p>In most cases, you will be pulling the content of the message from the body or payload.  For REST type messages, this will be available in POST or PUT methods.
-For other protocols, you may only receive the payload.  Once you have the body or payload, you need to determine the format of the content. Is it <a href="#/messaging/parsing/parsingtextmessages">Text</a> in one
-format or another or is it <a href="#/messaging/parsing/parsingbinarymessages">Binary</a>?</p>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2017<br/>Documentation Build Date: 10/27/2017 16:16:14<p</div>
+<p>In most cases, you will be pulling the content of the message from the body or payload.  For REST type messages, this will be available for message sent with POST or PUT methods.
+For other protocols, you may only receive the payload.  Once you have the body or payload, you need to determine the format of the content.</p>
+<h4>Parsing Options</h4>
+<p>When parsing from the body or payload of the message you have two options:</p>
+<ul>
+<li>The content of the message could also be <a href="#/messaging/parsing/parsingbinarymessages">binary</a> where the message is a stream of bytes.</li>
+<li>The format of your message can be <a href="#/messaging/parsing/parsingtextmessages">text</a> where the content is a set of ASCII or UTF8 characters.</li>
+</ul>
+<p>Each message type is parsed differently and <a href="#/messaging/parsing/parsingtextmessages">text</a> have the following strategies for extracting values:</p>
+<ul>
+<li><a href="#/messaging/parsing/parsingstringmessage">String</a></li>
+<li><a href="#/messaging/parsing/parsingdelimitedmessage">Delimited</a></li>
+<li><a href="#/messaging/parsing/parsingjsonmessage">JSON</a></li>
+<li><a href="#/messaging/parsing/parsingxmlmessage">XML</a></li>
+</ul>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 1/10/2018 14:44:07<p</div>

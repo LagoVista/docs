@@ -1,3 +1,76 @@
-<h1>How do I?</h1>
-<p>...more details going soon...</p>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2017<br/>Documentation Build Date: 10/27/2017 16:16:14<p</div>
+<h1>How do I...</h1>
+<h4>How do I get started?</h4>
+<p>A great place to get started is our <a href="#/gettingstarted">getting started</a> guide.</p>
+<h4>How can I get support?</h4>
+<p>We have a number of support options including <a href="https://support.nuviot.com/help">documentation</a>,
+an <a href="http://forum.nuviot.com">online forum</a> as well as a <a href="http://tickets.nuviot.com">ticketing</a> system.
+If none of those options work for you please <a href="http://support.nuviot.com/contactus">contact us</a>.</p>
+<h4>How can I get help building my application?</h4>
+<p>Please <a href="http://nuviot.com/contactus?source=implementationpartner">contact us</a> to be put in
+touch with an implementation partner.</p>
+<h4>How do I host my application?</h4>
+<p>Applications built with NuvIoT are managed and hosted on a number of trusted cloud providers,
+deploying and hosting your application is automated as part of the system. If you need to host
+your application, please <a href="https://support.nuviot.com/contactus?source=edgehosting">contact us</a> to
+discuss options to install our NuvIoT runtime on your servers.</p>
+<h4>How do I get data into the system?</h4>
+<p>The entry point for data into the system is a <a href="#/pipelinemodules/listener">Listener</a>. You define
+how your listener works and the listener monitors a port, protocol or external source for <a href="Messaging/IncomingMessages">incoming
+messages</a>.</p>
+<h4>How do I listen for messages?</h4>
+<p>You will create a <a href="#/pipelinemodules/listener">listener</a> that will listen on a port,
+protocol or connect to an external messaging queing source that will accept <a href="Messaging/IncomingMessages">incoming
+messages</a>.</p>
+<h4>How do I identify my devices?</h4>
+<p>You will need to pass an unique identifer as part of your message. As part of building
+your application, you will create a <a href="#/messaging/parsing/deviceidparsing">device id parser</a>
+that will identify what part and how the device id should be extracted from your incoming messaage.</p>
+<h4>How do I identify my message?</h4>
+<p>In some case you will only have one type of message that you are listening for, if you have
+multiple message types you will need to establish a message id and send that within your messagae.
+Once you have your message id you will need to add a <a href="#/messaging/parsing/messageidparsing">messag id parser</a>
+that will identify what part and how the message id should be extracted from your incoming messaage.</p>
+<h4>How do I store data from my messages?</h4>
+<p>Once you create your <a href="#/messaging/index">message definition</a> you will have added a number
+of fields that you expect in your message. Those fields are automatically stored from each message.
+In addition you can create <a href="#/workflows/attributes">attributes</a> of your device that store
+the most current value that was received in a message.</p>
+<h4>How do I handle different messages using different workflows?</h4>
+<p>After the <a href="#/pipelinemodules/planner">planner</a> identifies the
+<a href="#/messaging/parsing/messageidparsing">message id</a> it will use the
+<a href="#/devices/deviceconfigurations">device configuration</a> to select a
+<a href="#/routes/route">route</a> which will specify the <a href="#/pipelinemodules/index">pipeline modules</a> that will
+be used to process your message.</p>
+<h4>How do I specify what is contained in my incoming messages?</h4>
+<p>You build up a message definition. The <a href="#/messaging/messagefields">message definition</a>
+contains all the <a href="#/messaging/messagefields">fields</a> that make up your message. Once a
+message has been identified by the <a href="#/messaging/parsing/messageidparsing">message id</a> the
+values of your message will be extracted and can be used in your workflow.</p>
+<h4>How do I build an IoT Application?</h4>
+<p>Check out our <a href="#/topics/implementation">overview</a> to get an idea of what's involved with building your application.</p>
+<h4>How do I test my application?</h4>
+<p>After you <a href="#/deployment/index">deploy</a> your application, we povide a <a href="#/simulator/index">simulator</a>
+to create messages you can send to your application.</p>
+<h4>How do I add my devices?</h4>
+<p>Devices are stored in <a href="#/devices/devicerepositories">device repositories</a>, after you create
+your repository you can add them through our IoT App Studio in the Device Repositories section
+or you can add them with our <a href="#/information/mobileapps">mobile app</a>. If you have a large number
+of devices you need to add, please <a href="https://support.nuviot.com/contactus?source=importdevices">contact us</a>
+to help you import your devices.</p>
+<h4>How do I secure my devices?</h4>
+<p><a href="#/information/security">Security</a> is very critical part of any IoT platform. We have a
+<a href="#/pipelinemodules/sentinel">sentinel module</a> that every message must pass through before
+we use any data that is passed in to our system.</p>
+<h4>How do I build my workflows?</h4>
+<p>We provide a sophisticated <a href="#/pipelinemodules/workflow">workflow engine</a> where you can visualy configure how your messaages
+are processed, we also provide a <a href="#/workflows/statemachines">state machine engine</a> to build state dependent
+behavior. In addition we provide a <a href="#/scripting/index">javascript editor</a> to build scripts.</p>
+<h4>How do I integrate with other systems?</h4>
+<p>There are three primary strategies with integrating with other systems, the first is
+to listen for incoming messages on a port, protocol or external messaging system with
+a <a href="#/pipelinemodules/listener">listener</a>. The second is to send messages to an end
+point or service from an <a href="#/workflows/outputcommands">output command</a> in your
+<a href="#/pipelinemodules/workflow">workflow</a> with a <a href="#/pipelinemodules/transmitter">transmitter</a>.
+The final way is to expose an <a href="#/workflows/inputcommands">input command</a> as a REST service
+from within your workflow.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 1/10/2018 14:44:07<p</div>

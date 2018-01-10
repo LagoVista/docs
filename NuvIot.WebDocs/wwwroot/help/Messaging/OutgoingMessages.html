@@ -24,4 +24,6 @@ A Topic can be provided to be sent along with your message.  This is more applic
 For <a href="#/pipelinemodules/transmitters/rest">REST Transmitter</a> you can provide the method that will be invoked.  If you use a REST Transmitter and do not provide a method, it will be assumed that the method is <code>GET</code>.</p>
 <p><strong>Device Id</strong> (required for Azure IoT Hub)<br />
 When creating your outgoing message for Azure IoT Hub, you should set the Device ID in the outgoing message of the device where this message should be sent.</p>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2017<br/>Documentation Build Date: 10/27/2017 16:16:14<p</div>
+<p><strong>Output Message Script</strong> (required for JSON messages)<br />
+Add a <a href="#/messaging/outgoingmessagescript">script</a> that will build up the JSON document that will be sent as the message.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 1/10/2018 14:44:07<p</div>

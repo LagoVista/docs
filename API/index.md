@@ -12,4 +12,5 @@ updatedby: Kevin D. Wolf
 
 # API
 
-...coming soon...
+Please visit our [API documentation](https://api.nuviot.com/swagger/index.html) and [contact us](http://support.nuviot.com/contactus?source=apikey) if you need an API key to access the system.
+

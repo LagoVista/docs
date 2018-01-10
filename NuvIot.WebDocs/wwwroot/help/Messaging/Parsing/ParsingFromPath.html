@@ -1,14 +1,28 @@
 <p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a> &gt; <a href="#/messaging/parsing/parsingstrategies">Parsing Strategies</a></p>
 <h1>Parsing from a Path</h1>
-<p>To extract a value from a path, select the search location:</p>
-<p><strong>Search Location</strong><br />
-Path</p>
-<p>And use the following syntax in the Path Locator:</p>
-<p><strong>Path Locator</strong><br />
-<code>/deviceadmin/{deviceid}</code></p>
-<p>With the above Path Locator and a path of</p>
-<p><code>/deviceadmin/device1234</code></p>
-<p>The value <code>device1234</code> will be made available to the message.</p>
-<h5>Storage Type</h5>
-<p>You will also need to add a <a href="#/messaging/typesystem/index">Storage Type</a> to identify how this field should be stored.</p>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2017<br/>Documentation Build Date: 10/27/2017 16:16:14<p</div>
+<p>To extract a value from a path, usually from a URL of a REST type message use search location of <code>Path</code>.  To extract values from
+a query string of a REST type message use a search location of <a href="#/messaging/parsing/parsingfromquerystring">Query String</a>.</p>
+<p><strong>Name</strong> (required)<br />
+Textual name to describe the the path locator.</p>
+<p><strong>Key</strong>  (required)<br />
+The key is used as the place holder to extract the field from the path.</p>
+<p><strong>Search Location</strong>  (required)<br />
+When parsing from a path, the value <code>Path</code> should be selected</p>
+<p><strong>Path Locator</strong> (required)<br />
+A string that uses the key as a place holder to extract the field.  The wild card * may be used.</p>
+<p><strong>Storage Type</strong> (required for parsing from messages, not used for Message Id and Device Id Parsing)
+You will also need to add a <a href="#/messaging/typesystem/index">Storage Type</a> to identify how this field should be stored.</p>
+<p><strong>RegEx Value Selector</strong><br />
+Can can provide a regular expression to extract values from the returned value.</p>
+<p><strong>RegEx Validation</strong></p>
+<h2>Consider the following example</h2>
+<p><strong>Key</strong>  was defined as the text <code>deviceid</code></p>
+<p><strong>Path Locator</strong> was defined as <code>/deviceadmin/{deviceid}</code></p>
+<p><em>Input Path</em> = <code>/deviceadmin/device1234</code></p>
+<p>The value <code>device1234</code> will be parsed and made available to the <a href="#/messaging/parsing/index">message</a>, <a href="#/messaging/parsing/messageidparsing">message id</a> or <a href="#/messaging/parsing/deviceidparsing">device id</a></p>
+<h2>Example using wild cards</h2>
+<p><strong>Key</strong>  was defined as the text <code>status</code></p>
+<p><strong>Path Locator</strong> was defined as <code>/motion/*/{status}</code></p>
+<p><em>Input Path</em> = <code>/motion/device001/active</code></p>
+<p>The value <code>active</code> will be parsed and made available to the <a href="#/messaging/parsing/index">message</a>, <a href="#/messaging/parsing/messageidparsing">message id</a> or <a href="#/messaging/parsing/deviceidparsing">device id</a></p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 1/10/2018 14:44:07<p</div>

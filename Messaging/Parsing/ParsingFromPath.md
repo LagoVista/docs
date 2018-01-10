@@ -25,7 +25,7 @@ The key is used as the place holder to extract the field from the path.
 When parsing from a path, the value `Path` should be selected
 
 **Path Locator** (required)  
-A string that uses the key as a place holder to extract the field.
+A string that uses the key as a place holder to extract the field.  The wild card * may be used.
 
 **Storage Type** (required for parsing from messages, not used for Message Id and Device Id Parsing)
 You will also need to add a [Storage Type](../TypeSystem/Index.md) to identify how this field should be stored.
@@ -33,9 +33,9 @@ You will also need to add a [Storage Type](../TypeSystem/Index.md) to identify h
 **RegEx Value Selector**  
 Can can provide a regular expression to extract values from the returned value.
 
-**RegEx Validation
+**RegEx Validation**
 
-## Consider the following example:  
+## Consider the following example
 **Key**  was defined as the text `deviceid`
 
 **Path Locator** was defined as `/deviceadmin/{deviceid}`
@@ -45,3 +45,13 @@ _Input Path_ = `/deviceadmin/device1234`
 
 The value ```device1234``` will be parsed and made available to the [message](Index.md), [message id](MessageIdParsing.md) or [device id](DeviceIdParsing.md)
 
+## Example using wild cards
+
+**Key**  was defined as the text `status`
+
+**Path Locator** was defined as `/motion/*/{status}`
+
+
+_Input Path_ = `/motion/device001/active`
+
+The value ```active``` will be parsed and made available to the [message](Index.md), [message id](MessageIdParsing.md) or [device id](DeviceIdParsing.md)
