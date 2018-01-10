@@ -32,3 +32,5 @@ look forward to working with you to understand those needs and ensure that our s
 authorize your devices.  We offer may ways to get your data into our system to include everything from MQTT and REST using simple user name/password
 combinations to using [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security) as a proxy to ensure a completely 
 secure solution. 
+
+Read more about [security](../Security/Index.md).

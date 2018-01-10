@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}"
 	ProjectSection(SolutionItems) = preProject
@@ -49,6 +49,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TopLevel", "TopLevel", "{1C
 	ProjectSection(SolutionItems) = preProject
 		Faq.md = Faq.md
 		GettingStarted.md = GettingStarted.md
+		Gloassary.md = Gloassary.md
 		HowDoI.md = HowDoI.md
 		Index.md = Index.md
 		overview.md = overview.md
@@ -198,7 +199,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{9231A2EF-953A-4367-917E-F76D71B6F8FF}"
 	ProjectSection(SolutionItems) = preProject
+		Security\AccessKey.md = Security\AccessKey.md
+		Security\Anonymous.md = Security\Anonymous.md
+		Security\BasicAuth.md = Security\BasicAuth.md
+		Security\DeviceSecurity.md = Security\DeviceSecurity.md
 		Security\Index.md = Security\Index.md
+		Security\LocatingSecurityField.md = Security\LocatingSecurityField.md
+		Security\SAS.md = Security\SAS.md
+		Security\SecurityFields.md = Security\SecurityFields.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulator", "Simulator", "{16705012-FDE6-4043-B921-97D4FDD329DA}"
@@ -223,8 +231,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{D6A9F977
 		About\Branding.md = About\Branding.md
 		About\Company.md = About\Company.md
 		About\DesignPhilosophy.md = About\DesignPhilosophy.md
-		About\Faq.md = About\Faq.md
-		About\Why.md = About\Why.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B86E8080-EC33-4652-9137-6315891E0B0D}"
@@ -261,6 +267,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transmitters", "Transmitter
 		PipelineModules\Transmitters\MQTTClient.md = PipelineModules\Transmitters\MQTTClient.md
 		PipelineModules\Transmitters\OriginalListener.md = PipelineModules\Transmitters\OriginalListener.md
 		PipelineModules\Transmitters\Rest.md = PipelineModules\Transmitters\Rest.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Billing", "Billing", "{F32C665F-A6B8-4120-BCF7-8581560A38E6}"
+	ProjectSection(SolutionItems) = preProject
+		Billing\BillingEvents.md = Billing\BillingEvents.md
+		Billing\BillingPeriods.md = Billing\BillingPeriods.md
+		Billing\CreditCardTransactions.md = Billing\CreditCardTransactions.md
+		Billing\Index.md = Billing\Index.md
+		Billing\Invoicing.md = Billing\Invoicing.md
 	EndProjectSection
 EndProject
 Global

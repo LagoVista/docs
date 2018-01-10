@@ -7101,8 +7101,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
         "D:\\nuviot\\LocalPackages": {},
         "D:\\nuviot\\LocalPrivatePackages": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://slsys.pkgs.visualstudio.com/_packaging/lagovista/nuget/v2": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp1.1": {
