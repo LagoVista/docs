@@ -24,7 +24,7 @@ The script template that will set the value will look as follows:
 
 ```
 function onXXXX(value) {
-    Attributes.temperature.value = value;
+    Attributes.temperature = value;
 };
 ```
 It is important to realize that each [Attribute](../Workflows/Attributes.md) has a specific [Data Type](../Messaging/TypeSystem/Index.md) assigned to it.  When
@@ -37,8 +37,19 @@ The script template that will get a value will look as follows:
 
 ```
 function onXXXX(value) {
-    var currentValue = Attributes.temperature.value;
+    var currentValue = Attributes.temperature;
 };
+
+function onXXXX2(value) {
+    /* For geo-lcoations*
+    var lat = WorkflowInputs.location.longitude;
+    var lon = WorkflowInputs.location.latitude;
+};
+
+function onXXXX3(value) {
+    /* For date time data types*
+    var year = WorkflowInputs.dateStamp.getFullYear();
+}; 
 ```
 
 ##### Clearing an Attribute
@@ -46,6 +57,6 @@ The script that clears an Attribute will look as follows:
 
 ```
 function onXXXX(value) {
-    Attributes.temperature.value = null;
+    Attributes.temperature = null;
 }
 ```
