@@ -13,6 +13,35 @@
     src: url(/fonts/Roboto-Regular.ttf);
 }
 
-body {
-    margin-top: 70px
+@font-face {
+    font-family: RobotoLight;
+    src: url(/fonts/Roboto-Light.ttf);
 }
+
+
+.topNodeSet a {
+    color:#1a1a1a;
+}
+
+.list ul > li.parentNode > i {
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+body {
+    margin-top: 50px
+}
+
+div.bnr {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.bnr-headling {
+    color: white;
+    font-family: RobotoLight;
+    font-size:48pt;
+    text-align: center;
+}
+

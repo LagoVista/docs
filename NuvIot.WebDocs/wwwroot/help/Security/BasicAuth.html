@@ -1,0 +1,26 @@
+<h1>Basic Access Authorization</h1>
+<p>A simple yet less secure mechanism of authentication is to use <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentication</a>.</p>
+<p>Using this mechanism, the Device ID and either the primary or secondary Access Keys are concatenated and separated wih a colon (:).  The resulting
+string is then <a href="https://en.wikipedia.org/wiki/Base64">Base64</a>-encoded and sent as the <a href="#/security/securityfields">Security Field</a>.</p>
+<p>An exmple of this, for User ID <code>Aladdin</code> and a Primary Key of <code>OpenSesame</code> would be a combinded string of:</p>
+<pre><code>Aladdin:OpenSesame
+</code></pre>
+<p>After the string has been Base64 encoded, the resulting security field would be:</p>
+<pre><code>QWxhZGRpbjpPcGVuU2VzYW1l
+</code></pre>
+<p><strong>Note:</strong> When sending the encoded string, you will <strong>not</strong> add <code>Basic</code> as in an HTTP Header.</p>
+<pre><code>/* This is used in HTTP(S) headers NOT with a security field */
+Authorization: Basic QWxhZGRpbjpPcGVuU2VzYW1l
+</code></pre>
+<h3>Using REST Listeners</h3>
+<p>If you are using a <a href="#/pipelinemodules/listeners/rest">REST Listener</a>, you can configure it to use Basic Authentication
+but your User ID and Password will be the same for all connections.  If you wish to do per-device authentication using
+a REST listener and b
+Basic Authorization in the HTTP headers, use the following mechanism:</p>
+<ol>
+<li>Configure <a href="#/pipelinemodules/sentinel">Sentintel</a> to use Basic Access
+Authorization.</li>
+<li>Configure the <a href="#/security/locatingsecurityfield">Security Field Locator</a> to <a href="#/messaging/parsing/parsingfromheader">Search in the Headers</a>.</li>
+<li>Search for an <code>Authorization</code> header and use the <strong>RegEx Value Selector</strong> to extract your Base64-encoded Basic Access Authorization value.</li>
+</ol>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 2/12/2018 17:53:46<p</div>

@@ -1,0 +1,88 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/images/nuviotico.png" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet" />
+    <style>
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["MetaDescription"]" />
+</head>
+<body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header" style="margin-left:50px">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="https://www.IoTAppStudio.com" target="_blank" class="navbar-brand">NuvIoT</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" id="verticalsMenu">Services <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/services/assetracking">Asset Management and Tracking</a></li>
+                        <li><a class="dropdown-item" href="/services/dronetech">Drone Technology</a></li>
+                        <li><a class="dropdown-item" href="/services/manufacturing">Manufacturing</a></li>
+                        <li><a class="dropdown-item" href="/services/hospitality">Hospitality</a></li>
+                        <li><a class="dropdown-item" href="/services/smartpools">Smart Pools</a></li>
+                        <li><a class="dropdown-item" href="/services/temperaturemonitoring">Heating/Cooling</a></li>
+                        <li><a class="dropdown-item" href="/services/hightechnology">High Technology</a></li>
+                        <li><a class="dropdown-item" href="/services/trainingsimulation">Training and Simulation</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" id="verticalsMenu">Technologies <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/services/integrations">Integrations</a></li>
+                        <li><a class="dropdown-item" href="/services/messaging">Messaging</a></li>
+                        <li><a class="dropdown-item" href="/services/devicemanagement">Device Management</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" id="verticalsMenu">Businesses <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/services/smallbusiness">Small Business</a></li>
+                        <li><a class="dropdown-item" href="/services/midsizedbusiness">Medium Sized Business</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-right:50px">
+                <li><a href="https://www.IoTAppStudio.com/account/register" target="_blank">Register</a></li>
+                <li><a href="/help.html#/information/company" target="_blank">Company </a></li>
+                <li><a href="/contactus" target="_blank">Contact Us  </a></li>
+            </ul>
+        </div>
+
+    @RenderBody();
+
+    <div class="skype-button bubble" data-bot-id="01499698-dd31-4e44-b90d-6becf37f8605"></div>
+    <div style="position:fixed;bottom:0;width:100%;background-color:rgba(0,0,0,0.5);padding:5px;">
+        <span style="color:white;margin-left:50px">&copy; 2018 - Software Logistics, LLC</span>
+        <div style="float:right">
+            <a style="margin-right:50px;color:white" href="https://app.termly.io/document/terms-of-use-for-saas/90eaf71a-610a-435e-95b1-c94b808f8aca" target="_blank">Terms and Conditions</a>
+            <a style="margin-right:50px;color:white" href="https://app.termly.io/document/privacy-policy-for-website/f0b67cde-2a08-4fe8-a35e-5e4571545d00" target="_blank">Privacy Statement</a>
+        </div>
+    </div>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+</body>
+
+</html>

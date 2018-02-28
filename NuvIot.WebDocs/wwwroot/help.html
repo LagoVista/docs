@@ -61,7 +61,7 @@
                     }
                     var newParent = $('<ul class=\"childNodeSet\"></ul>');
                     previousNode.append(newParent);
-                    previousNode.prepend('<i class="fa fa-plus"></i>');
+                    previousNode.prepend('<i class="fa fa-chevron-right"></i>');
                     previousNode.addClass("parentNode");
                     createHelpLeaf(newParent, node.children);
                 }
@@ -94,40 +94,38 @@
                 var toggleElement = $(this);
 
                 if (childNodeList.is(":visible")) {
-                    toggleElement.removeClass('fa-plus')
-                    toggleElement.addClass('fa-minus')
+                    toggleElement.removeClass('fa-chevron-right')
+                    toggleElement.addClass('fa-chevron-down')
                 }
                 else {
-                    toggleElement.addClass('fa-plus')
-                    toggleElement.removeClass('fa-minus')
+                    toggleElement.addClass('fa-chevron-right')
+                    toggleElement.removeClass('fa-chevron-down')
                 }
             });
         });
     </script>
     <style>
-        .helppage-footer  p {
-            font-size:8pt
+        .helppage-footer p {
+            font-size: 8pt
         }
+
         ul.topNodeSet > li {
             list-style: none;
             margin-left: -25px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         ul.childNodeSet > li {
             list-style: none;
-            margin-left: -15px;
-            margin-bottom: 10px;
+            margin-left: -5px;
+            margin-bottom: 20px;
         }
 
         ul {
             margin-top: 10px;
         }
 
-        .list ul > li.parentNode > i {
-            color: #337ab7;
-            cursor: pointer;
-        }
+
 
         li > i {
             margin-right: 5px;
@@ -152,23 +150,21 @@
             <li><a href="/contactus" target="_blank">Contact Us </a></li>
         </ul>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div style="align-items:stretch">
-                    <div style="overflow-y:auto" class="list"></div>
-                </div>
-            </div>
-            <div class="col-lg-9" ng-view style="overflow-y:auto;max-height:90vh;">
 
-            </div>
+    <div style="overflow-y:auto;width:300px;background-color:#f9f9f9;border-right:1px solid rgba(0,0,0,0.07);bottom:30px;top:50px; position:absolute">
+        <div style="overflow-y:auto" class="list"></div>
+    </div>
+
+    <div style="overflow-y:auto;max-height:90vh;margin-left:500px">
+        <div ng-view style="max-width:800px">
+
         </div>
     </div>
 
     <div class="skype-button bubble" data-bot-id="01499698-dd31-4e44-b90d-6becf37f8605"></div>
 
     <div style="position:fixed;bottom:0;width:100%;background-color:rgba(0,0,0,0.5);padding:5px;">
-        <span style="color:white;margin-left:50px">&copy; 2017 - Software Logistics, LLC</span>
+        <span style="color:white;margin-left:50px">&copy; 2018 - Software Logistics, LLC</span>
         <div style="float:right">
             <a style="margin-right:50px;color:white" href="https://app.termly.io/document/terms-of-use-for-saas/90eaf71a-610a-435e-95b1-c94b808f8aca" target="_blank">Terms and Conditions</a>
             <a style="margin-right:50px;color:white" href="https://app.termly.io/document/privacy-policy-for-website/f0b67cde-2a08-4fe8-a35e-5e4571545d00" target="_blank">Privacy Statement</a>

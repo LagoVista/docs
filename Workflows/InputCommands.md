@@ -22,9 +22,6 @@ Input Commands support the following HTTP Methods:
 * **PUT**
 * **DELETE** 
 
-A feature that will be enabled by the end of 2017 will be a full documentation site of your IoT application, this will specifiy the details of your REST endpoints, until then please [contact us](https://support.nuviot.com/contactus?source=inputcommands) 
-for some 1-on-1 assistance to understand how Input Commands work.
-
 ### Input Command Parameters
 
 You can pass parameters along with your Input Commands to add a parameter click on Add and specify the following parameters

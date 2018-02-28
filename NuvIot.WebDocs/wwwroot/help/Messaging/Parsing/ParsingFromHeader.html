@@ -1,11 +1,18 @@
 <p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a> &gt; <a href="#/messaging/parsing/parsingstrategies">Parsing Strategies</a></p>
 <h1>Parsing from Headers</h1>
 <p>If your message was sent via REST (HTTP or HTTPS), the headers that were sent with your message will be made available to the parsing algorithm.</p>
-<p>To parse a value from a header:</p>
-<ol>
-<li>Add a field</li>
-<li>Select <strong>Search Location</strong> header</li>
-<li>Populate the field Header Name with the name of the header that contains the field you wish to extract or populate</li>
-<li>Add a <a href="#/messaging/typesystem/index">Storage Type</a> to identify how this field should be stored</li>
-</ol>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 1/10/2018 14:44:07<p</div>
+<p><strong>Name</strong> (required)<br />
+Textual name to describe the the path locator.</p>
+<p><strong>Key</strong>  (required)<br />
+The key is used as the place holder to extract the field from the path.</p>
+<p><strong>Search Location</strong>  (required)<br />
+When parsing from an HTTP header, the value <code>Headers</code> should be selected</p>
+<p><strong>Storage Type</strong> (required for parsing from messages, not used for Message Id and Device Id Parsing)
+You will also need to add a <a href="#/messaging/typesystem/index">Storage Type</a> to identify how this field should be stored.</p>
+<p><strong>Header Name</strong> (required)<br />
+Name of the HTTP header that contains the value.</p>
+<p><strong>RegEx Value Selector</strong><br />
+Can can provide a regular expression to extract values from the returned value.</p>
+<p><strong>Additional Validation Fields</strong><br />
+After the message has been parsed there are a number of <a href="#/messaging/parsing/validation">options</a> that can be used to validate the value, if validation fails, the message will be rejected.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 2/12/2018 17:53:46<p</div>

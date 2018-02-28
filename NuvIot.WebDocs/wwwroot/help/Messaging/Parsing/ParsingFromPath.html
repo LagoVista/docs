@@ -14,7 +14,8 @@ A string that uses the key as a place holder to extract the field.  The wild car
 You will also need to add a <a href="#/messaging/typesystem/index">Storage Type</a> to identify how this field should be stored.</p>
 <p><strong>RegEx Value Selector</strong><br />
 Can can provide a regular expression to extract values from the returned value.</p>
-<p><strong>RegEx Validation</strong></p>
+<p><strong>Additional Validation Fields</strong><br />
+After the message has been parsed there are a number of <a href="#/messaging/parsing/validation">options</a> that can be used to validate the value, if validation fails, the message will be rejected.</p>
 <h2>Consider the following example</h2>
 <p><strong>Key</strong>  was defined as the text <code>deviceid</code></p>
 <p><strong>Path Locator</strong> was defined as <code>/deviceadmin/{deviceid}</code></p>
@@ -25,4 +26,4 @@ Can can provide a regular expression to extract values from the returned value.<
 <p><strong>Path Locator</strong> was defined as <code>/motion/*/{status}</code></p>
 <p><em>Input Path</em> = <code>/motion/device001/active</code></p>
 <p>The value <code>active</code> will be parsed and made available to the <a href="#/messaging/parsing/index">message</a>, <a href="#/messaging/parsing/messageidparsing">message id</a> or <a href="#/messaging/parsing/deviceidparsing">device id</a></p>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 1/10/2018 14:44:07<p</div>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 2/12/2018 17:53:46<p</div>
