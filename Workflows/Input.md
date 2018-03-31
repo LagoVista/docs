@@ -20,6 +20,7 @@ the fields on the standard message format are mapped to inputs within a [Route](
 
 In addition, you can provide a [Script](../Scripting/WorkflowInputOnSet.md) that will get executed when the input is set.
 
+Finally within your scripts, you can [access the raw input values](../Scripting/WorkingWithWorkflowInputs.md).
 
 
 ### Mapping from Inputs

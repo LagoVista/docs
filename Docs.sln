@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{75CF4DEF-3C33-47A0-BB5B-ED97CCD0E077}"
 	ProjectSection(SolutionItems) = preProject
@@ -189,12 +189,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 		Scripting\Networking.md = Scripting\Networking.md
 		Scripting\OutputCommandCreate.md = Scripting\OutputCommandCreate.md
 		Scripting\PropertyBag.md = Scripting\PropertyBag.md
+		Scripting\SendingMessages.md = Scripting\SendingMessages.md
+		Scripting\SendingNotifications.md = Scripting\SendingNotifications.md
+		Scripting\SessionValues.md = Scripting\SessionValues.md
 		Scripting\StateMachineSendEvent.md = Scripting\StateMachineSendEvent.md
 		Scripting\StateTransition.md = Scripting\StateTransition.md
 		Scripting\Utilities.md = Scripting\Utilities.md
+		Scripting\WorkflowHandlers.md = Scripting\WorkflowHandlers.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
 		Scripting\WorkingWithAttributes.md = Scripting\WorkingWithAttributes.md
 		Scripting\WorkingWithProperties.md = Scripting\WorkingWithProperties.md
+		Scripting\WorkingWithWorkflowInputs.md = Scripting\WorkingWithWorkflowInputs.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{9231A2EF-953A-4367-917E-F76D71B6F8FF}"

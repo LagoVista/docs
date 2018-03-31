@@ -16,6 +16,9 @@ Your device contains the concept of a Property Bag.  This is a free, from key-va
 be persisted between workflow invocations.  This is similar to an [Attribute](../Workflows/Attributes.md), but these values are scoped as private to the device.
 This means that they cannot be accessed other than through a workflow.
 
+Proprety Bag values are different than [Session Values](SessionValues.md) in that they are stored with the device.  Session values are ones that are specific the current message that is
+being processed and will not be available once the workflow has completed
+
 **Note 1:** Values put in a Property Bag are scoped at the device level.  That is to say, if you put a property called `length` into the Property Bag in 
 one [Workflow](../Workflows/Index.md), any other workflows have access to both get and set that value.
 
@@ -75,6 +78,22 @@ function onSet(value) {
 function onSet(value) {
     var number = getFromPropertyBag('notinbag',23);
     // number will be 23
+}
+```
+
+
+#### Determine if Property Bag Value exists
+```
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = hasPropertyBagValue('mystring');
+    // number will be true
+}
+
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = hasPropertyBagValue('notinbag',23);
+    // number will be false
 }
 ```
 

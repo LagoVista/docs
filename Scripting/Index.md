@@ -23,13 +23,22 @@ use to create scripts in JavaScript.
 [State Machine - onTransition](StateTransition.md) - As a state transition is executed on your  [state machine](../Workflows/StateMachines.md)  you can add a custom script.  
 [OutputCommand - send](InvokeOutputCommand.md) - You can invoke the send method to generate an output command, this will execute the [onExecute](OutputCommandCreate.md) method.  
 [OutputCommand - onExecute](OutputCommandCreate.md) - This method can be used to build up an output command to be forwarded to the [Output Translator](../PipelineModules/OutputTranslator.md).  
+[OutputCommand - onExecute](OutputCommandCreate.md) - This method can be used to build up an output command to be forwarded to the [Output Translator](../PipelineModules/OutputTranslator.md).  
+[Workflow - preHandler](WorkflowHandlers.md) - This method is called prior to any of the workflow methods being called, WorkflowInputs will be available.  
+[Workflow - postHandler](WorkflowHandlers.md) - This method is called after all the worfklow methods have been called.  
 
 #### Data Models
 [Device Model](DeviceScriptingModel.md) - Properties and Methods that are available to access Device data in your script.  
 [Device Workflow Model](DeviceWorkflowScriptingModel.md) - Properties and Methods that are availabe to access Device Workflow methods  
 [Property Bag](PropertyBag.md) - While executing your scripts you have access to a general purpose property bag where you can store random variables and data.  
+[Session Values](SessionValues.md) - While executing your scripts you have access to a temporary variable storage mechanism that will be destroyed after the workflow has completed.  
 [Working with Attributes](WorkingWithAttributes.md) - Attributes are data generated from the device or workflow.  
 [Working with Properties](WorkingWithProperties.md) - Properties are used to modify user settings and defaults.
+[Working with Workflow Inputs](WorkingWithWorkflowInputs.md) - Properties are used to modify user settings and defaults.
+
+#### Messaging
+[Sending Messages](SendingMessages.md) - Send messages to other devices or device configurations
+[Sending Notifications](SendingNotifications.md) - Send web socket based notifications to subscribed clients 
 
 #### Networking
 [Networking](Networking.md) - Basic Methods to make Network calls

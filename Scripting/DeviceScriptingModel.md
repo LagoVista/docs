@@ -12,5 +12,14 @@ updatedby: Kevin D. Wolf
 
 # Scripting - Device Data Model
 
+Properties of your deevice can be accessed via the IoTDevice properties within the script.
+
+```
+function onXXX() {
+    var deviceId = IoTDevice.DeviceId;
+}
+
+```
+
 ...coming soon...
 
