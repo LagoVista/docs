@@ -45,3 +45,17 @@ h1.bnr-headling {
     text-align: center;
 }
 
+p.copy {
+    font-family: 'RobotoLight';
+    font-size: x-large;
+    color: rgb(102,102,102)
+}
+
+p.pullquote {
+    background: #1565b4;
+    color: white;
+    font-family: RobotoRegular;
+    font-size: xx-large;
+    padding: 20px;
+    text-align: center
+}

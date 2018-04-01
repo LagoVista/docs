@@ -283,6 +283,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Billing", "Billing", "{F32C
 		Billing\Invoicing.md = Billing\Invoicing.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStreams", "DataStreams", "{D8F5992B-19B1-4A96-9C63-6953F43D6696}"
+	ProjectSection(SolutionItems) = preProject
+		DataStreams\AWSElasticSearch.md = DataStreams\AWSElasticSearch.md
+		DataStreams\AWSS3.md = DataStreams\AWSS3.md
+		DataStreams\AzureBlob.md = DataStreams\AzureBlob.md
+		DataStreams\AzureEventHubs.md = DataStreams\AzureEventHubs.md
+		DataStreams\AzureTable.md = DataStreams\AzureTable.md
+		DataStreams\Index.md = DataStreams\Index.md
+		DataStreams\SQLServer.md = DataStreams\SQLServer.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

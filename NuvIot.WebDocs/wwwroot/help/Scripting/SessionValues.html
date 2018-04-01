@@ -1,0 +1,81 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/scripting/index">Scripting</a></p>
+<h1>Session Values</h1>
+<p>While execucting your workflow you can have access to a temporary variable store.  You can think of these as local variables that are destroyed after your workflow
+has completed.</p>
+<p>Session values are different than <a href="#/scripting/propertybag">Property Bag Values</a> in that they are <strong>not stored</strong> with the device.  Property Bag values are stored with the
+device and ara available after the workflow has been completed and can be accessed by anything that has access to the device.</p>
+<p><strong>Note:</strong> Values put into a Property Bag maintain their types.  If you put in a <code>number</code>, when you get it at a later time, you will also receive a
+value that has the JavaScript type of <code>number</code>.</p>
+<h4>Adding an Item</h4>
+<pre><code>// Insert a string
+function onSet(value) {
+    setSessionValue('mystring','hithere');
+}
+
+// Insert a nummber
+function onSet(value) {
+    setSessionValue('mynumber',123);
+}
+
+// Insert an object
+function onSet(value) {
+    var person = {
+        firstName: 'Fred',
+        lastName: 'Flintstone'
+    };
+
+    setSessionValue('person',person);
+}
+</code></pre>
+<h4>Getting an Item</h4>
+<p>The following script assume the previous scripts in the <strong>Adding an Item</strong> section have been run.</p>
+<p><strong>Note</strong> that with getSessionValue you can provide a default value if the value is not present.</p>
+<pre><code>// Get a string
+function onSet(value) {
+    var value = getSessionValue('mystring');
+    // value will be equal to the string hithere
+}
+
+// Get a nummber
+function onSet(value) {
+    var value = getSessionValue('mynumber');
+    // value will be equal to the number 123
+}
+
+// Get an object
+function onSet(value) {
+    var person = getSessionValue('person');
+    // person.firstName will be equal to Fred
+    // person.lastName will be equal to Flintstone
+}
+
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = getSessionValue('notinbag',23);
+    // number will be 23
+}
+</code></pre>
+<h4>Determine if session value exists</h4>
+<pre><code>// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = hasSessionValue('mystring');
+    // number will be true
+}
+
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = hasSessionValue('notinbag',23);
+    // number will be false
+}
+</code></pre>
+<h4>Clearing a Value</h4>
+<p><strong>Note:</strong> Clearing a value that does not exist in the Property Bag will <strong>not</strong> be considered an error.</p>
+<pre><code>function onSet(value) {
+    clearSessionValue('mynumber');
+    var value = hasSessionValue('mynumber');
+    // value will be false
+}
+</code></pre>
+<h4>Supported Data Types</h4>
+<p>The following types in JavaScript are supported: <code>date</code>,<code>number</code>, and<code>string</code>.  In addition, JSON object graphs are stored as <code>object</code>.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 3/31/2018 16:16:13<p</div>

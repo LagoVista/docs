@@ -7,7 +7,7 @@
 with the workflow.</p>
 <p>The script template that will set the value will look as follows:</p>
 <pre><code>function onXXXX(value) {
-    Attributes.temperature.value = value;
+    Attributes.temperature = value;
 };
 </code></pre>
 <p>It is important to realize that each <a href="#/workflows/attributes">Attribute</a> has a specific <a href="#/messaging/typesystem/index">Data Type</a> assigned to it.  When
@@ -16,13 +16,24 @@ the assigned value to the correct type.  This will cause an error and the entire
 <h5>Getting an Attribute</h5>
 <p>The script template that will get a value will look as follows:</p>
 <pre><code>function onXXXX(value) {
-    var currentValue = Attributes.temperature.value;
+    var currentValue = Attributes.temperature;
 };
+
+function onXXXX2(value) {
+    /* For geo-lcoations*
+    var lat = WorkflowInputs.location.longitude;
+    var lon = WorkflowInputs.location.latitude;
+};
+
+function onXXXX3(value) {
+    /* For date time data types*
+    var year = WorkflowInputs.dateStamp.getFullYear();
+}; 
 </code></pre>
 <h5>Clearing an Attribute</h5>
 <p>The script that clears an Attribute will look as follows:</p>
 <pre><code>function onXXXX(value) {
-    Attributes.temperature.value = null;
+    Attributes.temperature = null;
 }
 </code></pre>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 2/12/2018 17:53:46<p</div>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 3/31/2018 16:16:13<p</div>

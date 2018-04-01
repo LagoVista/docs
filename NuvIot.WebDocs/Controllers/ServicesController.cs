@@ -57,6 +57,20 @@ namespace NuvIot.WebDocs.Controllers
             return View();
         }
 
+
+        [HttpGet("/services/machinelearning")]
+        public IActionResult MachineLearning()
+        {
+            return View();
+        }
+
+
+        [HttpGet("/services/smartcities")]
+        public IActionResult SmartCities()
+        {
+            return View();
+        }
+
         [HttpGet("/services/hospitality")]
         public IActionResult Hospitality()
         {

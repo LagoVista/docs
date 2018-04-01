@@ -19,6 +19,7 @@ Welcome to our Online Help System
 * [How Do I?](HowDoI.md )
 * [Deployment](./Deployment/Index.md)
 * [Devices](./Devices/Index.md)
+* [Data Streams](./DataStreams/Index.md)
 * [Messaging](./Messaging/Index.md)
 * [Keys](./Topics/Keys.md)
 * [Pipeline Modules](./PipelineModules/Index.md)
