@@ -26,6 +26,8 @@
 	* [Azure Blob](./DataStreams/AzureBlob.md)
 	* [Azure Event Hubs](./DataStreams/AzureEventHubs.md)
 	* [Azure Table Storage](./DataStreams/AzureTable.md)
+	* [Built In Data Stream Storage](./DataStreams/BuiltIn.md)
+	* [Data Stream Fields](./DataStreams/DataStreamFields.md)
 	* [SQL Server](./DataStreams/SQLServer.md)
 * [Messaging](./Messaging/Index.md)
   * [Message Fields](./Messaging/MessageFields.md)

@@ -2,13 +2,15 @@
 title: Azure Blob Storage Data Stream
 keywords: azure, blobstorage, datastreams, export
 
-status: inprocess
+status: readyforreview
 created: 20180331
 updated: 20180331
 createdby: bytemaster-0xff
 updatedby: bytemaster-0xff
 ---
 # Azure Blob Storage Data Stream
+
+You can export data to be stored in Azure Blob Storage for used in external processes such as analytics.  Data can only be exported to Azure Blob Storage, to used in an external process.  Data stored in S3 is not available for charting or reporting.
 
 ### Azure Table Storage Settings
 
@@ -18,36 +20,27 @@ Name of the data stream
 * **Key** (required)  
 A [Unique Key](../Topics/Keys.md) to identify the data stream
 
-* **Transport** (required)  
-`Azure IoT Hub`
+* **Steam Type** (required)  
+`Azure Blob Storage`
 
-* **Default End Point** (required)  
-This is the full URL of your IoT hub. It should be something similar to `myiothub.azure-devices.net`
+* **Time Stamp Field Name** (required)  
+The Time Stamp Field Name is the name of the column in a database or the JSON property that is associated with the time stamp for the data stream record.
 
-* **Device Id** (required)    
-The `Device ID` for the device that has been provisioned on your Azure IoT Hub
+* **Device Id Field Name** (required)    
+The Device Id Field Name is the name of the column in the datbase or the JSON property that is associated with the device that generated the values for the data stream.
 
-* **Access Key** (required)  
-The `Primary key` from the Device Details for the `Device ID` as specified for this simulator
+* **Date Storage Format** (required)
+When storing the date associated with the data stream record, you can store it as a long value of seconds since unix Epoch (1/1/1970) or the standard JSON ISO 8601 format () both are stored with respect to UTC
 
+* **Azure Storage Account Name** (required)  
+Enter the name of the storage account where you will be accessing Blob storage.
+
+* **Azure Access Key** (required)
+Enter the azure access key for accessing the storage account.  This will be encrypted on the server at rest and will not be visible when editing the storage details.  If you enter a new access key when editing the storage details, the old one will be replaced.
+
+* **Blob Container Name** (required)
+Enter the name of your blob storage container, if it does not exist it will be craeted.
 
 * **Description**     
-Free-form text used to provide notes for your simulator
-
-### Message Setting
-
-* **Name** (required)    
-Name of the Message
-
-* **Key** (required)       
-[Unique Key](../Topics/Keys.md) to identify the message
-
-* **Payload Type** (required)     
-Text or Binary message.  In most cases, you will send a Text message.
-
-* **Append CR** `0x0D`    
-ASCII character 0x0D, if set, will be appended to the message
-
-* **Append LF** `0x0A`      
-ASCII character 0x0A, if set, will be appended to the message
+Free-form text used to provide a description for your data stream.
 

@@ -1,0 +1,43 @@
+<h1>Field Name</h1>
+<p>The [Field Name will be the text that makes up the column or field within the output JSON, XML or Table ouptut.  The
+field name has the following formatting requirements, these may be more restrictive than your target system, but are
+in place to ensure maximum compatibility across different targets</p>
+<ul>
+<li>Between 3 and 64 characters.</li>
+<li>Contain only letters (upper/lower case), numbers</li>
+<li>Must start with a letter</li>
+</ul>
+<h3>Data Stream Field Settings</h3>
+<ul>
+<li><p><strong>Name</strong> (required)<br />
+Name of the data stream</p>
+</li>
+<li><p><strong>Key</strong> (required)<br />
+A <a href="#/topics/keys">Unique Key</a> to identify the data stream</p>
+</li>
+<li><p><strong>Field Name</strong> (required)
+This is the name of the database column or JSON property that will contain the data from your data stream, it will be used for validation to ensure the data types are correct.</p>
+</li>
+<li><p><strong>Data Type</strong> (required)
+The <a href="#/messaging/typesystem/index">data type</a> that will be stored in this record.</p>
+</li>
+<li><p><strong>Is Required</strong>
+If you set this option and the value is not present in the data stream record, the insert will fail.</p>
+</li>
+<li><p><strong>Min Value</strong>  (optional and available for numeric data types)
+Minnimum allowable value to be inserted.</p>
+</li>
+<li><p><strong>Maximum Value</strong> (optional and available for numeric data types)
+Maximum allowable value to be inserted.</p>
+</li>
+<li><p><strong>Number Decimal</strong> (optional and available for real data types)
+Number of decimal points that will be stored in the field (additional precision will be rounded.)</p>
+</li>
+<li><p><strong>Description</strong><br />
+Free-form text used to provide a description for your field.</p>
+</li>
+<li><p><strong>Notes</strong><br />
+Free-form text used to provide notes for your your field.</p>
+</li>
+</ul>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 4/2/2018 18:15:35<p</div>

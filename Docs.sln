@@ -290,6 +290,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStreams", "DataStreams"
 		DataStreams\AzureBlob.md = DataStreams\AzureBlob.md
 		DataStreams\AzureEventHubs.md = DataStreams\AzureEventHubs.md
 		DataStreams\AzureTable.md = DataStreams\AzureTable.md
+		DataStreams\BuiltIn.md = DataStreams\BuiltIn.md
+		DataStreams\DataStreamFields.md = DataStreams\DataStreamFields.md
 		DataStreams\Index.md = DataStreams\Index.md
 		DataStreams\SQLServer.md = DataStreams\SQLServer.md
 	EndProjectSection
