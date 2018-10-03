@@ -15,6 +15,12 @@ these values in a native format for performance.</p>
 <p>In degrees, (-) on latitude indicates South. If no sign is present, a positive, or North, is assumed.  Likewise (-) on longitude is West and no sign on longitude is assumed to be positive, or East.</p>
 <p>In addition, there will always be six digits to the right of the decimal point and zeroes will be padded if the source does not provide that resolution.
 The values will have a minimum of one digit.  That digit will be 0, if applicable, and values will not be padded.  Longitude may have up to three digits and latitude will have up to two digits.</p>
+<h2>Using in a Script</h2>
+<p>If you have a latitude and longitude, you can call the function setGeoLocation to write that location to the device</p>
+<pre><code>function onSet(latitude, longitude) {
+   setDeviceGeoLocation(latitude, longitude);
+}
+</code></pre>
 <h2>Parsing Values</h2>
 <p>Currently, the parsing algorithm is smart enough to convert between common geolocation formats to the internal format.</p>
 <p>The parsing algorithm will attempt to parse the following formats until one succeeds:</p>
@@ -58,4 +64,4 @@ Latitude as String DDD.DDDDDD (NS)
 Longitude as String DDD.DDDDDD (EW)
     ^(?'ddd'\d{1,3}\.\d{1,10})°?\s?(?'ew'[EW])$
 </code></pre>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 4/2/2018 18:15:35<p</div>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 10/3/2018 18:04:53<p</div>

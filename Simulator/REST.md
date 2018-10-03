@@ -84,3 +84,38 @@ Add Key Value pairs that will be sent with the message, including:
 
 #### Dynamic Attributes
 For more information, please see the [Dynamic Fields](DynamicFields.md) section.
+
+#### Simulating Geo Location Paths
+Our simulator current support sending a stream of geo location data points to the server.  At this time support is very basic, please contact us for additional more robust options.
+
+To use this feature, select the Geo Path content type, and add a path to the payload.
+
+To Simulate the data your path will consist of a set of latitude and longitudes as in:
+```
+28.048950, -82.709276, 5
+28.051980, -82.710048, 5
+28.055010, -82.711250, 5
+28.056525, -82.712022, 5
+28.059630, -82.711936, 5
+28.061372, -82.710992, 5
+28.064553, -82.708503, 5
+28.066109, -82.707077, 5
+28.068305, -82.705360, 5
+28.071373, -82.704588, 5
+28.073304, -82.704330, 5
+28.075955, -82.703815, 5
+28.077053, -82.703417, 5
+28.077545, -82.704575, 5
+28.078189, -82.705048, 5
+28.078264, -82.705992, 5
+28.078643, -82.706893, 5
+28.078908, -82.707150, 5
+28.078605, -82.707751, 5
+28.078189, -82.708524, 5
+28.077772, -82.708996, 5
+28.077204, -82.709382, 5
+28.076409, -82.709983, 5
+```
+
+The first value is the latitude and the second is the longitude.  The third value is how long between sending of the data points.
+

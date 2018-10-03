@@ -23,3 +23,4 @@ The following Message Content Types are supported:
 * **JSON** - We support receving messages in [JSON](https://en.wikipedia.org/wiki/JSON).  JSON Messages can easily be parsed with our [JSON Message Parser](./Parsing/ParsingJsonMessage.md).
 * **String** - String messages can be parsed by either a regular expression or position with a string using our [String Parser](./Parsing/ParsingStringMessage.md).
 * **XML** - XML Messages can be processed using XPath and our [XML Message Parser](./Parsing/ParsingXmlMessage.md).
+* **Images/Media** - Upload Images/Media(WorkingWithMedia.md).

@@ -10,7 +10,7 @@ updatedby: bytemaster-0xff
 ---
 
 # Field Name
-The [Field Name will be the text that makes up the column or field within the output JSON, XML or Table ouptut.  The 
+The Field Name will be the text that makes up the column or field within the output JSON, XML or Table ouptut.  The 
 field name has the following formatting requirements, these may be more restrictive than your target system, but are 
 in place to ensure maximum compatibility across different targets
 * Between 3 and 64 characters.

@@ -18,4 +18,4 @@ D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.csproj.CoreCompileInputs
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.AssemblyInfo.cs
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.dll
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.pdb
-D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.csprojResolveAssemblyReference.cache
+D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.csprojAssemblyReference.cache
