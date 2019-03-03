@@ -21,6 +21,8 @@ The following connectors are provided for data streams.
 * [Azure Event Hubs](AzureEventHubs.md) - (Write Only) Write data to Azure Event Hubs
 * [Azure Table Storage](AzureTable.md) - (Read/Write) Read and Write data to Azure Table Storage
 * [Built In Data Stream Storage](BuiltIn.md) - (Read/Write) Read and Write data to our built in data storage
+* [Postgressql](Postgresql.md) - (Read/Write) Read and Write data to a Postgresql server
+* [Redis](Redis.md) - (Read/Write) Read and Write data to a Redis Server or Cluster
 * [SQL Server](SQLServer.md) - (Read/Write) Read and Write data to a Microsoft SQL Server
 
 #### Data FIelds
