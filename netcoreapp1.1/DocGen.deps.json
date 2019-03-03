@@ -16,7 +16,10 @@
       },
       "Markdig/0.13.3": {
         "runtime": {
-          "lib/netstandard1.1/Markdig.dll": {}
+          "lib/netstandard1.1/Markdig.dll": {
+            "assemblyVersion": "0.13.3.0",
+            "fileVersion": "0.13.3.0"
+          }
         }
       }
     }

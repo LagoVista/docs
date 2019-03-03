@@ -4,6 +4,10 @@
 from <a href="#/workflows/outputcommands">Output Commands</a> within a <a href="#/workflows/index">device workflow</a> and sent from
 a <a href="#/pipelinemodules/transmitter">Transmitter</a>.</p>
 <p>When you create your <strong>Outgoing Message Defintion</strong> you will need to specify <strong>Message Direction</strong> of either <code>Outgoing Message</code> or <code>Incoming and Outgoing</code>.</p>
+<p><strong>Note:</strong> <em>It is important to realize that when you configure your message, you don't specify how it will be sent out, you only define the parameters and values that should be set.  Therefore one message can be sent out to both a REST and MQTT transmitter.</em></p>
+<h4>Security</h4>
+<p>When you define your outgoing message you only define the content of the data that should be sent.  You will define any security as to how to connect to your remote servers in the transmitter.</p>
+<p>Within the message you have the ability to add additional headers, you can also specify headers in transmitter.  If the same header appears in both places the one associated with the message will be used.</p>
 <h4>Additional Outgoing Message Fields</h4>
 <p>If you specify your mesasge as Outgoing you will have some additional options that will be ignored if</p>
 <ol>
@@ -16,14 +20,59 @@ for which fields are suppoted.</p>
 <p><strong>Path and Query String</strong><br />
 You can provide a path and query string that will be used to build a complete URL to send your message.  This is is primarily applicable to a <a href="#/pipelinemodules/transmitters/rest">REST Transmitter</a>.
 When providing a path you should only provide the path portion and not the domain name or host.  The domain name and host will be provided by the transmitter.</p>
+<p>Within the path and query string you can send a device id.  To do so, simply use the token <code>~deviceid~</code> where you want the device id inserted.</p>
+<p>For example a path and query string entered as:</p>
+<pre><code>/updatestate/~deviceid~/on
+</code></pre>
+<p>With a device id of dev001 will be transformed to:</p>
+<pre><code>/updatestate/dev001/on
+</code></pre>
+<p>prior to being sent out.</p>
+<p><strong>Authorization Scheme</strong>
+If you provide</p>
+<p><strong>Authorization Parameter</strong></p>
 <p><strong>Headers</strong><br />
 You can provide a set of key value pairs that will be sent along with the header of your message.  This is is primarily applicable to a <a href="#/pipelinemodules/transmitters/rest">REST Transmitter</a>.</p>
 <p><strong>Topic</strong><br />
 A Topic can be provided to be sent along with your message.  This is more applicable to <a href="https://en.wikipedia.org/wiki/Message_queue">Message Queue</a> based protocols.</p>
+<p>Within the topic you can send the device id.  To do so, simply use the token <code>~deviceid~</code> where you want the device id inserted.</p>
+<p>For example a topic entered as:</p>
+<pre><code>updatestate/~deviceid~/on
+</code></pre>
+<p>With a device id of dev001 will be transformed to:</p>
+<pre><code>updatestate/dev001/on
+</code></pre>
+<p>prior to being sent out.</p>
 <p><strong>REST Method</strong><br />
 For <a href="#/pipelinemodules/transmitters/rest">REST Transmitter</a> you can provide the method that will be invoked.  If you use a REST Transmitter and do not provide a method, it will be assumed that the method is <code>GET</code>.</p>
 <p><strong>Device Id</strong> (required for Azure IoT Hub)<br />
 When creating your outgoing message for Azure IoT Hub, you should set the Device ID in the outgoing message of the device where this message should be sent.</p>
 <p><strong>Output Message Script</strong> (required for JSON messages)<br />
 Add a <a href="#/messaging/outgoingmessagescript">script</a> that will build up the JSON document that will be sent as the message.</p>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 4/2/2018 18:15:35<p</div>
+<p>Example:</p>
+<pre><code>/* 
+ * Add a script that will build up an JSON
+ * document that will be sent as the payload
+ * of your output message.
+ * 
+ * The fields that you added to your output command
+ * will be in a variable called [Fields] and you 
+ * access them via their key.
+ *
+ * An example message may look like:
+ *
+ * function getOutputMessage() {
+ *     return {
+ *
+ */
+function getOutputMessage() {
+    return {
+        action:Fields.action,
+        parameter:Fields.parameter
+    };
+}
+</code></pre>
+<p>In the above example, if the fields action and parameter had values of <code>forward</code> and 100 respectively the resulting JSON document that will be sent out looks as follows:</p>
+<pre><code>{action:'forward', parameter:100}
+</code></pre>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:15:16<p</div>

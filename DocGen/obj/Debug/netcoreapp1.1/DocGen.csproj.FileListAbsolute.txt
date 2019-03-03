@@ -18,4 +18,15 @@ D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.csproj.CoreCompileInputs
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.AssemblyInfo.cs
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.dll
 D:\nuviot\do.Docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.pdb
-D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.csprojResolveAssemblyReference.cache
+D:\nuviot\docs\netcoreapp1.1\DocGen.deps.json
+D:\nuviot\docs\netcoreapp1.1\DocGen.runtimeconfig.json
+D:\nuviot\docs\netcoreapp1.1\DocGen.runtimeconfig.dev.json
+D:\nuviot\docs\netcoreapp1.1\DocGen.dll
+D:\nuviot\docs\netcoreapp1.1\DocGen.pdb
+D:\nuviot\docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.csprojAssemblyReference.cache
+D:\nuviot\docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.csproj.CoreCompileInputs.cache
+D:\nuviot\docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.AssemblyInfoInputs.cache
+D:\nuviot\docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.AssemblyInfo.cs
+D:\nuviot\docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.dll
+D:\nuviot\docs\DocGen\obj\Debug\netcoreapp1.1\DocGen.pdb
+D:\nuviot\do.Documentation\DocGen\obj\Debug\netcoreapp1.1\DocGen.csprojAssemblyReference.cache
