@@ -29,6 +29,8 @@
 	* [Azure Table Storage](./DataStreams/AzureTable.md)
 	* [Built In Data Stream Storage](./DataStreams/BuiltIn.md)
 	* [Data Stream Fields](./DataStreams/DataStreamFields.md)
+    * [PostgreSQL](./DataStreams/Postgresql.md)
+    * [Redis](./DataStreams/Redis.md)
 	* [SQL Server](./DataStreams/SQLServer.md)
 * [Messaging](./Messaging/Index.md)
   * [Message Fields](./Messaging/MessageFields.md)

@@ -1,0 +1,7 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a></p>
+<h1>Working with Media</h1>
+<p>Currently NuvIoT supports uploading media to be associated with a Device.  We currently don't support multip-part uploads and only support uploading a binary stream that we will store as-is and return as requested.</p>
+<p>To upload the file simply create a REST listener as you normally would.  Then add a message of message type media.  You need to specify a message id and use the Planner as you normally would.</p>
+<p>In the headers your content type must be image/*** or vidoe/*** to be stored and the body must be a byte array.</p>
+<p>Please contact us if you have additional specific needs.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2018<br/>Documentation Build Date: 10/3/2018 18:04:53<p</div>

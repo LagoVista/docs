@@ -45,6 +45,7 @@ use to create scripts in JavaScript.
 
 #### Other
 [Utilities](Utilities.md) - General purpose methods available to your scripts  
+[Working with Locations](WorkingWithLocations.md) - There are some utilities you can use to work with locations of your device
 [Logging](Logging.md) - Methods available to log messages from your scripts  
 
 

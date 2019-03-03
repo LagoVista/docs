@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{
 		Messaging\Index.md = Messaging\Index.md
 		Messaging\MessageFields.md = Messaging\MessageFields.md
 		Messaging\OutgoingMessages.md = Messaging\OutgoingMessages.md
+		Messaging\WorkingWithMedia.md = Messaging\WorkingWithMedia.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parsing", "Parsing", "{D04EDBE3-F54D-407D-9F97-6F8CFBD25256}"
@@ -178,6 +179,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{01432627-DE08-44BF-9B6C-2B63DB88E064}"
 	ProjectSection(SolutionItems) = preProject
 		Scripting\AttributeOnSet.md = Scripting\AttributeOnSet.md
+		Scripting\DataStreams.md = Scripting\DataStreams.md
 		Scripting\DeviceScriptingModel.md = Scripting\DeviceScriptingModel.md
 		Scripting\DeviceWorkflowScriptingModel.md = Scripting\DeviceWorkflowScriptingModel.md
 		Scripting\Index.md = Scripting\Index.md
@@ -196,6 +198,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripting", "Scripting", "{
 		Scripting\WorkflowHandlers.md = Scripting\WorkflowHandlers.md
 		Scripting\WorkflowInputOnSet.md = Scripting\WorkflowInputOnSet.md
 		Scripting\WorkingWithAttributes.md = Scripting\WorkingWithAttributes.md
+		Scripting\WorkingWithLocations.md = Scripting\WorkingWithLocations.md
 		Scripting\WorkingWithProperties.md = Scripting\WorkingWithProperties.md
 		Scripting\WorkingWithWorkflowInputs.md = Scripting\WorkingWithWorkflowInputs.md
 	EndProjectSection
@@ -292,6 +295,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStreams", "DataStreams"
 		DataStreams\BuiltIn.md = DataStreams\BuiltIn.md
 		DataStreams\DataStreamFields.md = DataStreams\DataStreamFields.md
 		DataStreams\Index.md = DataStreams\Index.md
+		DataStreams\Postgresql.md = DataStreams\Postgresql.md
 		DataStreams\SQLServer.md = DataStreams\SQLServer.md
 	EndProjectSection
 EndProject

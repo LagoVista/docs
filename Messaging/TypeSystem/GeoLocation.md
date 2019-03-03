@@ -36,6 +36,13 @@ In degrees, (-) on latitude indicates South. If no sign is present, a positive, 
 In addition, there will always be six digits to the right of the decimal point and zeroes will be padded if the source does not provide that resolution.
 The values will have a minimum of one digit.  That digit will be 0, if applicable, and values will not be padded.  Longitude may have up to three digits and latitude will have up to two digits.
 
+## Using in a Script
+If you have a latitude and longitude, you can call the function setGeoLocation to write that location to the device
+```
+function onSet(latitude, longitude) {
+   setDeviceGeoLocation(latitude, longitude);
+}
+```
 
 ## Parsing Values
 Currently, the parsing algorithm is smart enough to convert between common geolocation formats to the internal format.
