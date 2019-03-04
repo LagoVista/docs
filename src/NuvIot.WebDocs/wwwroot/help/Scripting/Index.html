@@ -1,0 +1,33 @@
+<p><a href="#/index">Home</a></p>
+<h1>Scripting</h1>
+<p>To provide an easy level of customization, NuvIoT includes a robust online editor and script engine you can
+use to create scripts in JavaScript.</p>
+<h4>Scripts</h4>
+<p><a href="#/scripting/attributeonset">Attribute - onSet</a> - When an <a href="#/workflows/attributes">Attribute</a> is set from any source you can add a custom script<br />
+<a href="#/scripting/workflowinputonset">Input - onSet</a> - When an <a href="#/workflows/input">Input</a> is set from a Device Message you can add a custom script<br />
+<a href="#/scripting/inputcommandarrive">Input Command - onArrive</a> - When an <a href="#/workflows/inputcommands">Input Command</a> arrives from from an external source you can add a custom script<br />
+<a href="#/scripting/statemachinesendevent">State Machine - handle</a> - You can invoke the <code>handle</code> method on your state machines to cause a <a href="#/workflows/statemachines">state machine</a> to handle an event.<br />
+<a href="#/scripting/statetransition">State Machine - onTransition</a> - As a state transition is executed on your  <a href="#/workflows/statemachines">state machine</a>  you can add a custom script.<br />
+<a href="#/scripting/invokeoutputcommand">OutputCommand - send</a> - You can invoke the send method to generate an output command, this will execute the <a href="#/scripting/outputcommandcreate">onExecute</a> method.<br />
+<a href="#/scripting/outputcommandcreate">OutputCommand - onExecute</a> - This method can be used to build up an output command to be forwarded to the <a href="#/pipelinemodules/outputtranslator">Output Translator</a>.<br />
+<a href="#/scripting/outputcommandcreate">OutputCommand - onExecute</a> - This method can be used to build up an output command to be forwarded to the <a href="#/pipelinemodules/outputtranslator">Output Translator</a>.<br />
+<a href="#/scripting/workflowhandlers">Workflow - preHandler</a> - This method is called prior to any of the workflow methods being called, WorkflowInputs will be available.<br />
+<a href="#/scripting/workflowhandlers">Workflow - postHandler</a> - This method is called after all the worfklow methods have been called.</p>
+<h4>Data Models</h4>
+<p><a href="#/scripting/devicescriptingmodel">Device Model</a> - Properties and Methods that are available to access Device data in your script.<br />
+<a href="#/scripting/deviceworkflowscriptingmodel">Device Workflow Model</a> - Properties and Methods that are availabe to access Device Workflow methods<br />
+<a href="#/scripting/propertybag">Property Bag</a> - While executing your scripts you have access to a general purpose property bag where you can store random variables and data.<br />
+<a href="#/scripting/sessionvalues">Session Values</a> - While executing your scripts you have access to a temporary variable storage mechanism that will be destroyed after the workflow has completed.<br />
+<a href="#/scripting/workingwithattributes">Working with Attributes</a> - Attributes are data generated from the device or workflow.<br />
+<a href="#/scripting/workingwithproperties">Working with Properties</a> - Properties are used to modify user settings and defaults.
+<a href="#/scripting/workingwithworkflowinputs">Working with Workflow Inputs</a> - Properties are used to modify user settings and defaults.</p>
+<h4>Messaging</h4>
+<p><a href="#/scripting/sendingmessages">Sending Messages</a> - Send messages to other devices or device configurations
+<a href="#/scripting/sendingnotifications">Sending Notifications</a> - Send web socket based notifications to subscribed clients</p>
+<h4>Networking</h4>
+<p><a href="#/scripting/networking">Networking</a> - Basic Methods to make Network calls</p>
+<h4>Other</h4>
+<p><a href="#/scripting/utilities">Utilities</a> - General purpose methods available to your scripts<br />
+<a href="#/scripting/workingwithlocations">Working with Locations</a> - There are some utilities you can use to work with locations of your device
+<a href="#/scripting/logging">Logging</a> - Methods available to log messages from your scripts</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

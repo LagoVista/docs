@@ -1,0 +1,36 @@
+<h1>Azure Blob Storage Data Stream</h1>
+<p>You can export data to be stored in Azure Blob Storage for used in external processes such as analytics.  Data can only be exported to Azure Blob Storage, to used in an external process.  Data stored in S3 is not available for charting or reporting.</p>
+<h3>Azure Table Storage Settings</h3>
+<ul>
+<li><p><strong>Name</strong> (required)<br />
+Name of the data stream</p>
+</li>
+<li><p><strong>Key</strong> (required)<br />
+A <a href="#/topics/keys">Unique Key</a> to identify the data stream</p>
+</li>
+<li><p><strong>Steam Type</strong> (required)<br />
+<code>Azure Blob Storage</code></p>
+</li>
+<li><p><strong>Time Stamp Field Name</strong> (required)<br />
+The Time Stamp Field Name is the name of the column in a database or the JSON property that is associated with the time stamp for the data stream record.</p>
+</li>
+<li><p><strong>Device Id Field Name</strong> (required)<br />
+The Device Id Field Name is the name of the column in the datbase or the JSON property that is associated with the device that generated the values for the data stream.</p>
+</li>
+<li><p><strong>Date Storage Format</strong> (required)
+When storing the date associated with the data stream record, you can store it as a long value of seconds since unix Epoch (1/1/1970) or the standard JSON ISO 8601 format () both are stored with respect to UTC</p>
+</li>
+<li><p><strong>Azure Storage Account Name</strong> (required)<br />
+Enter the name of the storage account where you will be accessing Blob storage.</p>
+</li>
+<li><p><strong>Azure Access Key</strong> (required)
+Enter the azure access key for accessing the storage account.  This will be encrypted on the server at rest and will not be visible when editing the storage details.  If you enter a new access key when editing the storage details, the old one will be replaced.</p>
+</li>
+<li><p><strong>Blob Container Name</strong> (required)
+Enter the name of your blob storage container, if it does not exist it will be craeted.</p>
+</li>
+<li><p><strong>Description</strong><br />
+Free-form text used to provide a description for your data stream.</p>
+</li>
+</ul>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:40<p</div>

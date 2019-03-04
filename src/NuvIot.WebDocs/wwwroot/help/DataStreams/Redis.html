@@ -1,0 +1,42 @@
+<h1>Redis Data Straem</h1>
+<p>If you have access to a Redis server or cluster you can configure your data stream to read and write records to your server.  This data can be used for other processes such as analytics and also be used for our IoT Dashboard</p>
+<h3>Redis Data Stream Settings</h3>
+<ul>
+<li><p><strong>Name</strong> (required)<br />
+Name of the data stream</p>
+</li>
+<li><p><strong>Key</strong> (required)<br />
+A <a href="#/topics/keys">Unique Key</a> to identify the data stream</p>
+</li>
+<li><p><strong>Steam Type</strong> (required)<br />
+<code>Postgresql</code></p>
+</li>
+<li><p><strong>Time Stamp Field Name</strong> (required)<br />
+The Time Stamp Field Name is the name of the column in a database where the timestamp of the data stream record will be inserted.  This column must exist on the database table and be of type datetime, datetime2 or datetimeoffset</p>
+</li>
+<li><p><strong>Device Id Field Name</strong> (required)<br />
+The Device Id Field Name is the name of the column in the datbase where the device id associated with this data stream record will be inserted.  This column must exist on the database table and be of type char, varchar, nchar or nvarchar</p>
+</li>
+<li><p><strong>Date Storage Format</strong> (required)
+When storing the date associated with the data stream record, you can store it as a long value of seconds since unix Epoch (1/1/1970) or the standard JSON ISO 8601 format () both are stored with respect to UTC</p>
+</li>
+<li><p><strong>Redis Server Urls</strong> (required)<br />
+Provide a minumum of one URL to access your redis server.  If you have a cluster, enter all the URLs.  If you provide a port in the URI such as myserver.myhost.net:6379 it will use that port.  If you just provide the host name, it will use the default port of 6379</p>
+</li>
+<li><p><strong>Redis Password</strong> (Optional)<br />
+You can provide a password to access your redis server, in some cases on a private network your server or cluster may not have a password however it is highly recommended to have a <a href="https://www.ostechnix.com/4-easy-ways-to-generate-a-strong-password-in-linux/">strong password</a> if your server is exposed to the public internet.</p>
+</li>
+</ul>
+<h3>Note:</h3>
+<ol>
+<li>A more traditional way of using Redis in your IoT application is in the form of an Applications Dictionary.</li>
+<li>Currently our Redis Data Stream connector uses the  <a href="https://stackexchange.github.io/StackExchange.Redis/">Stack Exchange .NET NUGET Pacakge</a></li>
+<li>In most cases, Redis will be used as a Key Value Pair dictionary where discrete items can be stored and retreived for a particular device within a stream, rather then be able to run time series queires.  Please contact us to discuss how you plan to user Redis, we are interested in understanding our customer requirements.</li>
+<li>The methods GetItems will always return exactly zero records if the device does not have any data, or one record if it has data.  This type of data stream currently only supports one record per device.  Again, please contact us to discuss your uses as this will likely evolve in future versions.</li>
+<li>When updating a redis item, please use the following syntax, remember for a Redis data stream we only have one value per key</li>
+</ol>
+<pre><code>updateDataStream([DATATREAMKEY], 
+            { -JSONVALUETO BE STORED- } ,
+            { 'deviceId':[YOURDEVICEID]} )'
+</code></pre>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:40<p</div>

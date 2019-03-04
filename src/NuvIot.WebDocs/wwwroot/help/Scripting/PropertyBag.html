@@ -1,0 +1,84 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/scripting/index">Scripting</a></p>
+<h1>Property Bag</h1>
+<p>Your device contains the concept of a Property Bag.  This is a free, from key-value pair storage type where you can add values in your workflow that will
+be persisted between workflow invocations.  This is similar to an <a href="#/workflows/attributes">Attribute</a>, but these values are scoped as private to the device.
+This means that they cannot be accessed other than through a workflow.</p>
+<p>Proprety Bag values are different than <a href="#/scripting/sessionvalues">Session Values</a> in that they are stored with the device.  Session values are ones that are specific the current message that is
+being processed and will not be available once the workflow has completed</p>
+<p><strong>Note 1:</strong> Values put in a Property Bag are scoped at the device level.  That is to say, if you put a property called <code>length</code> into the Property Bag in
+one <a href="#/workflows/index">Workflow</a>, any other workflows have access to both get and set that value.</p>
+<p><strong>Note 2:</strong> Values put into a Property Bag maintain their types.  If you put in a <code>number</code>, when you get it at a later time, you will also receive a
+value that has the JavaScript type of <code>number</code>.</p>
+<h4>Adding an Item</h4>
+<pre><code>// Insert a string
+function onSet(value) {
+    addToPropertyBag('mystring','hithere');
+}
+
+// Insert a nummber
+function onSet(value) {
+    addToPropertyBag('mynumber',123);
+}
+
+// Insert an object
+function onSet(value) {
+    var person = {
+        firstName: 'Fred',
+        lastName: 'Flintstone'
+    };
+
+    addToPropertyBag('person',person);
+}
+</code></pre>
+<h4>Getting an Item</h4>
+<p>The following script assume the previous scripts in the <strong>Adding an Item</strong> section have been run.</p>
+<p><strong>Note</strong> that on getFromPropertyBag you can provide a default value if the value is not present.</p>
+<pre><code>// Get a string
+function onSet(value) {
+    var value = getFromPropertyBag('mystring');
+    // value will be equal to the string hithere
+}
+
+// Get a nummber
+function onSet(value) {
+    var value = getFromPropertyBag('mynumber');
+    // value will be equal to the number 123
+}
+
+// Get an object
+function onSet(value) {
+    var person = getFromPropertyBag('person');
+    // person.firstName will be equal to Fred
+    // person.lastName will be equal to Flintstone
+}
+
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = getFromPropertyBag('notinbag',23);
+    // number will be 23
+}
+</code></pre>
+<h4>Determine if Property Bag Value exists</h4>
+<pre><code>// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = hasPropertyBagValue('mystring');
+    // number will be true
+}
+
+// Get a number that was not inserted with a default.
+function onSet(value) {
+    var number = hasPropertyBagValue('notinbag',23);
+    // number will be false
+}
+</code></pre>
+<h4>Clearing a Value</h4>
+<p><strong>Note:</strong> Clearing a value that does not exist in the Property Bag will <strong>not</strong> be considered an error.</p>
+<pre><code>function onSet(value) {
+    clearPropertyBagValue('mynumber');
+    var value = getDeviceProperty('mynumber');
+    // mynumber will return null
+}
+</code></pre>
+<h4>Supported Data Types</h4>
+<p>The following types in JavaScript are supported: <code>date</code>,<code>number</code>, and<code>string</code>.  In addition, JSON object graphs are stored as <code>object</code>.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

@@ -1,0 +1,29 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/scripting/index">Scripting</a></p>
+<h1>DataStreams</h1>
+<h3>addToDataStream</h3>
+<p>Add a record to a data stream, note that the ids as in the example below <code>column1</code> and <code>column2</code> must be present in the data string.</p>
+<pre><code>const streamKey = 'mydatastream'
+
+var insertedValues = {
+	column1:'value1',
+	column2:'value1',
+};
+
+addToDataStream(streamKey, insertedValues)
+
+</code></pre>
+<h3>updateDataStream</h3>
+<p>Update a record in a data stream, note that the ids as in the example below <code>column1</code> and <code>id</code> must be present in the data string.</p>
+<pre><code>const streamKey = 'mydatastream'
+
+var updateValues = {
+	colum1:'newValue'
+};
+
+var filterValues = {
+	id:IoTDevice.DeviceId
+};
+
+updateDataStream(streamKey, updateValues, filterValues);
+</code></pre>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

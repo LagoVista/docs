@@ -1,0 +1,43 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/pipelinemodules/index">Pipeline Modules</a> &gt; <a href="#/pipelinemodules/listener">Listeners</a></p>
+<h1>AMQP Client</h1>
+<p><strong>Note:</strong>  <em>Please <a href="http://support.nuviot.com/contactus?source=amqplistener">contact us</a> if you plan to use your AMQP Server or Broker and are running into issues with integration, we'll be
+happy to work with you to ensure a successful integration</em></p>
+<p>Currently NuvIoT doesn't implement it's own dedicated AMQP server, it does however offer the option to connect to a 3rd party AMQP server
+of your choosing.</p>
+<p>You have any number of options for adding an AMQP server, you can use a could based provider such as <a href="https://portal.azure.com">Azure</a> or
+<a href="https://aws.amazon.com/">Amazon</a> or you can launch a dedicated AMQP server in a container that is preconfigured to specifically work with NuvIoT.
+If you use a 3rd party server you will be responsible for managing authentication of devices as they connect (<em>although if the third
+party service allows you can call our <a href="#/api/index">API</a> to authenticate your devices</em>).  If you choose to launch a dedicated
+AMQP server, it will automatically authenticate your devices.  Please <a href="http://support.nuviot.com/contactus?source=amqpavailability">contact us</a> for more details on dedicated AMQP server availability.</p>
+<h3>Required Fields</h3>
+<p>In addition to the <a href="#/topics/standardfields">standard fields</a> that are required for any listener, the following fields are required:</p>
+<ul>
+<li><p><strong>Listener Type</strong> (required)<br />
+<code>AMQP Client</code></p>
+</li>
+<li><p><strong>Content Type</strong> (required)<br />
+Select the <a href="#/messaging/contenttypes">content type</a> of the message you are expecting, any content types are acceptable.</p>
+</li>
+<li><p><strong>Host Name</strong> (required)<br />
+Host Name of your AMQP Server</p>
+</li>
+<li><p><strong>Anonymous Connection</strong><br />
+Select this option if your AMQP server does not require authentication.</p>
+</li>
+<li><p><strong>User Name</strong>  (required if not anonymous)<br />
+User Id of the account that has access to the AMQP server.</p>
+</li>
+<li><p><strong>Password</strong> (required if not anonymous)<br />
+Password of the account that has access to the AMQP server.</p>
+</li>
+<li><p><strong>Subscriptions</strong> (required)<br />
+The Subscriptions you provide will be used to select the messages that you will receive from your AMQP server.</p>
+<p>You must provided at least one subscription to listen for messages.<br />
+Each Subscription must contain a a topic with wildcards as supported by your MQTT server such as <code>#</code> and <code>*</code> where:</p>
+<ul>
+<li><code>*</code> (star) can substitute for exactly one word</li>
+<li><code>#</code> (hash) can substitute for zero or more words</li>
+</ul>
+</li>
+</ul>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

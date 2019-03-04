@@ -1,0 +1,14 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/messaging/index">Device Messaging</a> &gt; <a href="#/messaging/parsing/index">Parsing</a></p>
+<h1>Regular Expression Value Selectors</h1>
+<p>To allow for maximum flexibility in extracting values from your message, we have provided a mechanism that allows you to extract a value from a string.</p>
+<p>Consider the following scenario, where your initial selector will find the following string:</p>
+<pre><code>Temperature = 32.0 F
+</code></pre>
+<p>The value that you want to extract as the temperature is simply <code>32.0</code></p>
+<p>If you use a Regular Expression similar to:</p>
+<pre><code>^Temperature\s?=\s?([\d\.]{1,5})\s?F$
+</code></pre>
+<p>The value that will be used is 32.0</p>
+<p>An excellent tool to test your Regular Expressions is <a href="http://regex101.com">Regular Expressions 101</a>.  Also, make sure you take advantage of our
+<a href="#/messaging/parsing/verifiers">Verifiers</a> to ensure that the parsing process works as you expect.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

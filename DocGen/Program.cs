@@ -193,7 +193,7 @@ namespace DocGen
                 }
             }
 
-            var outputDirectory = Path.Combine(rootPath, "NuvIot.WebDocs", "wwwroot", "help");
+            var outputDirectory = Path.Combine(rootPath, "src", "NuvIot.WebDocs", "wwwroot", "help");
             if (System.IO.Directory.Exists(outputDirectory))
             {
                 System.IO.Directory.Delete(outputDirectory, true);

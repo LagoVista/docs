@@ -1,0 +1,23 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/scripting/index">Scripting</a></p>
+<h1>State Machine - onTransition</h1>
+<p>When a State Machine performs a transiton between States, a method will be called that you can customize.</p>
+<pre><code>function onTransition() {
+    ...
+}
+
+- or -
+
+function onTransition(value) {
+    ...
+}
+
+- or -
+
+function onTransition(latitude, longitude) {
+    ...
+}
+</code></pre>
+<p>The method can be called with an optional parameter.  The value that will be passed in will be added by the <a href="#/scripting/statemachinesendevent">Handle</a> method that initiates
+the transition.  If the value is a geolocation, both the latitude and longitude will be provided.</p>
+<p>You will also have access to the <a href="#/scripting/workingwithattributes">Device Properties</a>, <a href="#/scripting/workingwithproperties">Device Properties</a>, <a href="#/scripting/propertybag">Property Bag</a> and state machines and can invoke <a href="https://github.com/LagoVista/docs/blob/master/Scripting/OutputCommandCreate.md">Output Commands</a>.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

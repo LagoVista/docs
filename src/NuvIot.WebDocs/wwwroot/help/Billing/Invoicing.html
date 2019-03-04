@@ -1,0 +1,13 @@
+<h1>Invoicing</h1>
+<p>At <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC or Greenwich Mean Time (GMT)</a> on the first day of a
+subscriptions billing cycle, a process is ran to close out any open <a href="#/billing/billingevents">Billing Events</a> from the previous
+period and create new ones for the current period.</p>
+<p>Once the Billing Events are closed out for the previous period, they are summarized and turned into Line Items that will
+be added to an Invoice.  These Line Items are then summarized and an Invoice is created.</p>
+<p>When you upgrade your account from a trial account to put your application into production or add additional resources,
+you will register a credit card with <a href="https://www.stripe.com">Stripe</a> (your <a href="#/billing/creditcardtransactions">credit card information</a>
+is never stored in our system).</p>
+<p>Once the invoice has been created, a transaction will be charged to your credit card for the ammount of your invoice.  In addition
+an email will be sent to the billing contact of organization for the subscription with details of what was charged.</p>
+<p>Your invoice and details will always be available to be reviewed once it has been created.</p>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:40<p</div>

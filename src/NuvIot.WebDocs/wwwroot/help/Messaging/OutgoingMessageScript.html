@@ -1,0 +1,13 @@
+<p><a href="#/messaging/index">Home</a> &gt; <a href="#/index">Device Messaging</a> &gt; <a href="#/messaging/outgoingmessages">Outgoing Messages</a></p>
+<h1>Outgoing Message Scripts</h1>
+<p>When creating a JSON output message you will create a script that builds up the JSON document that contains the fields you will send.</p>
+<p>Here is an example of the output script assuming that the outgoing message has fields with keys <code>msgfld1</code> and <code>msgfld4</code>.  You do not need
+to add quotes around the field, the process that builds the document will add these if necessary.</p>
+<pre><code>function getOutputMessage(){
+    return {
+        'out1':Fields.msgfld1,
+        'out2':Fields.msgfld4
+    };
+}
+</code></pre>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

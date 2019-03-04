@@ -1,0 +1,15 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/simulator/index">Simulator</a></p>
+<h1>Standard Fields</h1>
+<p>If there are custom fields that you would like to define to make your messages dynamic, you can define some <a href="#/simulator/dynamicfields">Dynamic Fields</a>.</p>
+<p>By default, the following fields are available to be added to your message:</p>
+<ul>
+<li><code>~datetime~</code> - Date Time, using the current locale as specified by the operating system or runtime</li>
+<li><code>~datetimeiso8601~</code> - Will use a string from the Current Date Time in GMT with the ISO8601 Format YYYY-MM-DDTHH:MM:SS.sssZ will have always three decimal points for milliseconds</li>
+<li><code>~deviceid~</code> - Device ID as specified in the Simulator settings</li>
+<li><code>~username~</code> - User Name as specified in the Simulator settings</li>
+<li><code>~password~</code> - Password as specified in the Simulator settings</li>
+<li><code>~accesskey~</code> - Access Key as specified in the Simulator settings</li>
+<li><code>~random-float.x.y~</code> - Generate a random floating point number between x and y.  For example,  <code>~random-float,-5.5,30.0~</code> would generate floating point numbers from five to fifteen inclusive of the endpoints.  Values are rounded to two digits to the right of the decimal point.</li>
+<li><code>~random-int.x.y~</code> - Generate a random integer number between x and y.  For example, <code>~random-int,53,80~</code> would generate integer numbers from 53 to 80 inclusive of the endpoints.</li>
+</ul>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

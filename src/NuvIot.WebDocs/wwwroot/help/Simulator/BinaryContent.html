@@ -1,0 +1,24 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/simulator/index">Simulator</a></p>
+<h1>Binary Content</h1>
+<p>In addition to sending standard Text payloads, you can also build Binary payloads to send with your message.</p>
+<p>To add a Binary message, you have three options, and all use the process of adding hex values as text to your message.</p>
+<p><strong>Option 1</strong><br />
+Use two-character values that represent the hex values that will be sent.  The hex alpha characters are case-independent but
+since they are hex identifiers, they must be A-F.</p>
+<p>Example:</p>
+<pre><code>02 24 03 52 5A 5C 3F 21 04 05
+</code></pre>
+<p><strong>Option 2</strong><br />
+Use the standard three or four-character notation such as x34 or 0x34.</p>
+<p>Example:</p>
+<pre><code>x02 x24 x03 x52 x5A x5C x3F x21 x04 x05
+</code></pre>
+<p><em>or</em></p>
+<pre><code>0x02 0x24 0x03 0x52 0x5A 0x5C 0x3F 0x21 0x04 0x05
+</code></pre>
+<p><strong>Option 3</strong><br />
+Use a continuous stream of hex values. Note that this <strong>must</strong> always have an even length.</p>
+<p>Example:</p>
+<pre><code>022403525A5C3F210405
+</code></pre>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>

@@ -1,0 +1,39 @@
+<p><a href="#/index">Home</a> &gt; <a href="#/scripting/index">Scripting</a></p>
+<h1>Sending Notifications</h1>
+<p>Notifications are WebSocket messages that clients can subscribe to, to be  notified as data is updated on the server.  For now we
+only publically support WebSocket notifications.  If you need SMS, Email or Native notifications, please contact us and will work with
+you to send notifications to other services.</p>
+<p>You can send a notification that is associated with one of the following entities</p>
+<ol>
+<li><strong>Instance</strong> - the current IoT Application that is running the script.</li>
+<li><strong>Device Configuration</strong> - Send the notification to any clients that are susbscribed to the device configuration of the current device</li>
+<li><strong>Device</strong> - Send a notification to to any clients subscribe to the current device.</li>
+</ol>
+<p>Each method takes two parameters:</p>
+<ol>
+<li><strong>payloadType</strong> - A string that will identify the type of data that is being sent</li>
+<li><strong>payload</strong> - JSON that represents the data that will be sent.</li>
+</ol>
+<h3>Examples</h3>
+<pre><code>/* Send a notification to the current Instance/IoT Application */
+function sendIt1(){
+    let payloadType = 'sensorUpdated';
+    let payload = {'newValue':32};
+    sendInstanceNotification(payloadType, payload);
+}
+
+/* Send a notification to any client subscribed to the current devices configuration */
+function sendDeviceConfigurationNotification(){
+    let payloadType = 'sensorUpdated';
+    let payload = {'newValue':32};
+    sendInstanceNotification(payloadType, payload);
+}
+
+/* Send a notifijcation to the current device */
+function sendDeviceNotification(){
+    let payloadType = 'sensorUpdated';
+    let payload = {'newValue':32};
+    sendInstanceNotification(payloadType, payload);
+}
+</code></pre>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>
