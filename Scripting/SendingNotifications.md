@@ -1,6 +1,6 @@
 ---
 title: Scripting - Sending Notifications
-keywords: workflow, scripts, notifications
+keywords: workflow, scripts, notifications, email, sms, text-message
 
 status: approved
 created: 20180121
@@ -48,4 +48,15 @@ function sendDeviceNotification(){
     let payload = {'newValue':32};
     sendInstanceNotification(payloadType, payload);
 }
+
+/* Send an email to a user */
+function onSet() {
+    sendEmail('myemail@mydomain.com','Email subject', 'Email Body');
+}
+
+/* Send an email to a user */
+function onSet() {
+    sendSMS('6125551212','Message to be sent via SMS');
+}
+
 ```
