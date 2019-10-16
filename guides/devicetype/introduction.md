@@ -1,3 +1,3 @@
 # Device Types
 
-This is a **device type*
+This is a **device type**
