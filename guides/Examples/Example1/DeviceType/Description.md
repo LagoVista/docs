@@ -9,3 +9,4 @@ will need to give it a name, key, and model number.  You can also add a manufact
 
 Finally, you will need to add a default [Device Configuration](../Devices/DeviceConfigurations.md).  Since Device Types are used
 to provision new devices, the default Device Configuration will be selected but can be overridden.   
+
