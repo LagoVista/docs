@@ -8,3 +8,5 @@
 1. Browser permissions  
 	1. Youtube video enabled  
 	1. Sound enabled  
+1. Chrome
+	1. Allow scripts from other sources  
