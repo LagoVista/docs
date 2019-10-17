@@ -1,8 +1,11 @@
 
 
-1. What Name - Made it Descriptive -> DT Temperature Sensor  
-1. What Key - The key is unique within the Device Type domain  and can used in scripting so make it intuitive  Example -> "dttempsens" -> device type temperature sensor  
-1. Model Number and Manufacturer are optional fields  they are used to group/identify devices which will work  and behave similar throughout NuvIoT   
-   1. Manufacturer -> ACME  
-   1. Model -> TempSensModel X  
-1. Description is optional  
+| Field | Data Used | Reason |
+|:--|:--|:--|
+| Name | "DT Temperature Sensor" | Easy to understand what devices of this type do |
+| Key | "dttempsens" | Unique key available in scripting later |
+| Model | "TempSensMod X" | Matches the model # from the manufacturer |
+| Manufacturer | "ACME" | The manufacturer |
+| Default Device Configuration | not selected (yet) | Still need to create the Device Configuration |
+| Description | Blank | Is optional |
+
