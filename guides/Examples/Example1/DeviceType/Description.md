@@ -1,5 +1,5 @@
-#### Device Types  
-
+  
+  
 Without devices and sensors, you cannot have IoT.  At the heart of any IoT system, you will find devices and sensors. Ideally, you will be able to find off-the-shelf hardware, but you may need to create custom hardware.  Either way, these 
 devices and sensors will have attributes such as names, model numbers, etc.  
 
