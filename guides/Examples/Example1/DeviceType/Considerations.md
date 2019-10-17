@@ -1,4 +1,4 @@
-#### Decisions made for the Device Type in this Example
+
 
 1. What Name - Made it Descriptive -> DT Temperature Sensor  
 1. What Key - The key is unique within the Device Type domain  and can used in scripting so make it intuitive  Example -> "dttempsens" -> device type temperature sensor  
