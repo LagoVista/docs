@@ -1,8 +1,5 @@
   
   
-  
-  
-### Overview
 You can use this powerful Device Message Parser to extract values from your message for many different types of protocols and formats.  Once you have created your parser, the fields that you have extracted will be available to be used later in the workflow.  
 
 Devices communicate with servers by sending and receiving messages. You should define all messages that you want your application to send and receive. As part of this, you will define the format that your message will use. Examples of formats include: JSON, XML, Binary, Delimited, etc.
