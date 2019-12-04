@@ -1,4 +1,4 @@
-### Things you need to finish the Example 1 Guide succesfully.
+_Things you need to finish the Guides succesfully_
 
 1. Minimum display size 1280*1024
 1. A supported browser  
