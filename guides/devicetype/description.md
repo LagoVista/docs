@@ -1,6 +1,8 @@
-#### Device Type (NuvIoT Documentation)
+#### Standard Documentation
 
-[Read up on Device Types](https://support.nuviot.com/help.html#/devices/devicetypes){:target="_blank"}
+[Read up on Device Types](https://support.nuviot.com/help.html#/devices/devicetypes)  
+
+<a href="http://example.com/" target="_blank">example</a>
 
 #### Device Type (Guide)
 
