@@ -8,7 +8,7 @@ Here is the main documentation for <a href="https://support.nuviot.com/help.html
 
 A device type is way to group devices together and define the attributes that are common between them
 
-#### What are they used for
+#### What are Device Types used for
 
 A device type is used provision new devices.  It is one of the piece of information that is required to add an IoT device instance to your solution instance.
 
