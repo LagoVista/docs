@@ -7,5 +7,5 @@ _If nothing happens_
     
 **Recommendation:**  
 
-Follow along using a manual and/or other information you have about the devices and infrastructe that you are going to use in your IoT Solution(s).  
+Follow along using a manual and/or other information you have about the devices and infrastructure that you are going to use in your IoT Solution(s).  
 
