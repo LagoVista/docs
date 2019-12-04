@@ -1,6 +1,6 @@
 #### Device Type (NuvIoT Documentation)
 
-[Device Types](DeviceTypes.md)
+[Read up on Device Types](https://support.nuviot.com/help.html#/devices/devicetypes)
 
 #### Device Type (Guide)
 
