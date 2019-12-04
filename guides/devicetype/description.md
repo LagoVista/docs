@@ -16,6 +16,6 @@ A device type is used provision new devices.  It is one of the piece of informat
 
 We will show you the minimum set up necessary to get a device message type added to the system, as well as some of the more elaborate set up with more options enabled.
 
-#### 
+#### Recommendation:
 
 _You will get better benefit from the guides, if you have a "manual" and/or other information of a sensor and/or actuator (devices) available.__

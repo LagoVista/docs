@@ -1,24 +1,23 @@
-#### Device Messages
+#### Device Message Types
 
-IoT is all about devices and sensors communicating with the cloud.  These conversations are called Messages.  Device Messages can
-be sent either from the device to the cloud or from the cloud back to the device.  If you are using an off-the-shelf type of 
-device, you will probably not have the ability to change the message format.
+#### Standard Documentation
 
-Since messages play such a huge part of any IoT implementation, one of the first things you will do is add device messages. 
-When you add your messages, you do not associate them with any specific device type or configuration. You do this so that you can
-reuse message definitions on many different configurations.
+The relevant standard NuvIoT documentation is accessable via the Help Resources section below.
 
-When you define your Device Messages, you don't simply give them a name and key, you describe the messages at a level of detail that ensures that the NuvIoT platform has enough information to extract or parse individual fields
-from the message payload.  In addition, to identify the message, each message usually has some sort of Message ID.
+Here is the main documentation for <a href="https://support.nuviot.com/help.html#/devices/devicemessages" target="_blank">Device Message Type</a>
 
-Messages can contain useful data, including headers, path, query string, and body for HTTP type of messages or topics 
-and payloads for message queue type messages.  They may even exist as a stream of data that may be either a string or array of 
-bytes.
+#### What is a Device Message Definition
 
-The data associated with things like headers, path, query strings and topics generally, but not always, contains metadata about the 
-message, such as Device and Message ID. The main content of the message is typically found in the payload.  Metadata is generally
-made up of string values that can easily be parsed. Payloads can contain either binary or string values.
+A device message type is way to group device messages together and define the attributes that are common between them
 
-NuvIoT supports parsing both string and binary payloads.  
-More about that later.
+#### What are Device Message Definitions used for
 
+A device message type is used in the Device Configuration Route.  It is the one of the piece of information that is required to define the route that the message takes as part of the device configuration.
+
+#### Device Message Type (Guide)
+
+We will show you the minimum set up necessary to get a device message type added to the system, as well as some of the more elaborate set up with more options enabled.
+
+#### Recommendation:
+
+_You will get better benefit from the guides, if you have a "manual" and/or other information of a sensor and/or actuator (devices) available.__
