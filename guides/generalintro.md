@@ -1,4 +1,11 @@
-Learn how to set up, what they are and how they get used within NuvIoT.  
+This guide will walk you through:
 
-**_NOTE:  The Guide Steps cannot be out of sequence (currently)_**  
+1. What they are
+1. What they are used for
+1. How to maintain them
+    1. Add
+    1. Edit
+    1. Delete
+
+**NOTE:  The Guide Steps should not be _used_ out of sequence (currently)**  
 This has to do with the underlying demo DB and data reset abilities that we haven't created yet.
