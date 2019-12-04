@@ -1,8 +1,8 @@
 #### Standard Documentation
 
-[Read up on Device Types, standard MD](https://support.nuviot.com/help.html#/devices/devicetypes)  
+The relevant standard NuvIoT documentation is accessable via the Help Resources tab below.
 
-<a href="https://support.nuviot.com/help.html#/devices/devicetypes" target="_blank">Read up on Device Types, New Tab via HTML</a>
+<a href="https://support.nuviot.com/help.html#/devices/devicetypes" target="_blank">Here is the main documentation for Device Types</a>
 
 #### What is a Device Type
 
