@@ -10,4 +10,4 @@ We will show you the minimum set up necessary to get a device message type added
 
 #### 
 
-_You will benefit from the guides more if you have a "manual" and/or other information of a sensor and/or actuator ready to use.__
+_You will get better benefit from the guides, if you have a "manual" and/or other information of a sensor and/or actuator (devices) available.__
