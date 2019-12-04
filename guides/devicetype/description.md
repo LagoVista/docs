@@ -4,6 +4,14 @@
 
 <a href="https://support.nuviot.com/help.html#/devices/devicetypes" target="_blank">Read up on Device Types, New Tab via HTML</a>
 
+#### What is a Device Type
+
+A device type is way to group devices together and define the attributes that are common between them
+
+#### What are they used for
+
+A device type is used provision new devices.  It is one of the piece of information that is required to add an IoT device instance to your solution instance.
+
 #### Device Type (Guide)
 
 We will show you the minimum set up necessary to get a device message type added to the system, as well as some of the more elaborate set up with more options enabled.
