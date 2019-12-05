@@ -19,7 +19,7 @@ Which can also be found in the Help Resources
   
 **Field Service Lite**
 
-The _Resource (0), Bill of Material (0), and the Associated Equipment (0)_ will be explained in the _Field Service Lite (FSL) tutorial.  They are not application unless you are implementating FSL.
+The _Resource (0), Bill of Material (0), and the Associated Equipment (0)_ will be explained in the _Field Service Lite (FSL) tutorial.  They are not applicable unless you are implementating FSL.
   
 Here is the main documentation for <a href="https://support.nuviot.com/help.html#/fieldservice/description" target="_blank">Field Service Lite</a>  
 Which can also be found in the Help Resources
