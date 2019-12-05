@@ -1,14 +1,28 @@
-**Listeners are part of the pipeline modules used to monitor a port, protocol or service for messages from your devices**
+**Standard Documentation**
 
-To allow for maximum reuse and scalability, build your application as a set of Pipeline Modules. Once the Listener receives a message that is handed off to the Planner to determine processing, a Route is created.
+The relevant standard NuvIoT documentation is accessable via the Help Resources section below.
 
-A route is a series of Pipeline Modules that are executed sequentially to perform processing on incoming messages.
+Here is the main documentation for <a href="https://support.nuviot.com/help.html#/pipelinemodules/listener" target="_blank">Listeners</a>
 
-The following are the default Pipeline Modules that make up a typical route:
+**What is a Listener**
 
-Sentinel - Authenticates and potentially decrypts the message
-Input Translator - Extracts values from the input message
-Workflow - Performs any business logic and prepares output messages
-Output Translator - Converts outputs from the workflow back into a format that the device can understand
-Transmitter - Sends values back to the device, either directly or by queueing them
-Most of the time, message business logic is done in the Workflow Module. The workflow allows for a significant amount of customization in the form of scripting and creating State Machines. If these don't meet your needs, you can always create Pipeline Modules with custom code and deploy them as containers to participate in the device workflow.
+A listener is way to define ingress into your solution and define the attributes for that ingress.  
+
+**What are Listeners used for**
+
+Listeners are used to monitor a port, protocol or service for messages from your devices.  
+
+**Listener (Tutorial)**
+
+We will show you the minimum set up necessary to get a listener added to the system, as well as some of the more elaborate set up with more options enabled.
+
+**_Recommendation:_**
+
+_You will get better benefit from the guides, if you have a "manual" and/or other information of a sensor and/or actuator (devices) available.__
+
+
+
+**Listeners are part of the pipeline modules**  
+
+Here is the main documentation for <a href="https://support.nuviot.com/help.html#/pipelinemodules/index" target="_blank">Pipeline Modules</a>  
+
