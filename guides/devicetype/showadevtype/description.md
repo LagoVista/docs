@@ -1,9 +1,10 @@
 In this Guide step, we are going to walk through some of the basic fields
 
-**Field Table**  
+**Field Explanation Table**  
 
 | Field | Data Used | Reason |
 |:--|:--|:--|
+| | | |  
 | Name | "Temperature Sensor ACME Mod X" | Easy to understand what devices of this type do |
 | Key | "tempsensmodx" | Unique key available in scripting later |
 | Model | "Model X" | Matches the model # from the manufacturer |
