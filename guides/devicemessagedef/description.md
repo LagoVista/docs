@@ -5,11 +5,11 @@ The relevant standard NuvIoT documentation is accessable via the Help Resources 
 
 Here is the main documentation for <a href="https://support.nuviot.com/help.html#/devices/devicemessages" target="_blank">Device Message Type</a>
 
-#### What is a Device Message Definition
+<h1> What is a Device Message Definition </h1>
 
 A device message type is way to group device messages together and define the attributes that are common between them
 
-#### What are Device Message Definitions used for
+<h2> What are Device Message Definitions used for </h2>
 
 A device message type is used in the Device Configuration Route.  It is the one of the piece of information that is required to define the route that the message takes as part of the device configuration.
 
