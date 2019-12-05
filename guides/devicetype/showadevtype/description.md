@@ -14,6 +14,5 @@ In this Guide step, we are going to walk through some of the basic fields
   
 
 Here is the main documentation for <a href="https://support.nuviot.com/help.html#/topics/standardfields" target="_blank">the Standard Fields</a>  
-
 Which can also be found in the Help Resources
 
