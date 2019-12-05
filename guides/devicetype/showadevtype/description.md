@@ -1,4 +1,4 @@
-In this Guide step, we are going to walk through some of the basic fields
+In this Tutorial step, we are going to walk through some of the basic fields
 
 **Field Explanation Table**  
 

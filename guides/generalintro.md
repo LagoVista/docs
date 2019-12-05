@@ -1,4 +1,4 @@
-This guide contains and will walk you through:
+This tutorial contains and will walk you through:
 
 1. What they are
 1. What they are used for
