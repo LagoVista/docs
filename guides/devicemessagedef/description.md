@@ -1,6 +1,5 @@
-#### Device Message Types
-
-#### Standard Documentation
+  
+#### Standard Documentation  
 
 The relevant standard NuvIoT documentation is accessable via the Help Resources section below.
 
