@@ -5,12 +5,12 @@ In this Guide step, we are going to walk through some of the basic fields
 | Field | Data Used | Reason |
 |:--|:--|:--|
 | | | |  
-| Name | "Temperature Sensor ACME Mod X" | Easy to understand what devices of this type do |
-| Key | "tempsensmodx" | Unique key available in scripting later |
-| Is Public | "Model X" | Matches the model # from the manufacturer |
-| Message Id | "ACME - America" | The manufacturer |
-| Message Direction | not selected (yet) | Still need to create the Device Configuration |
-| Content Type | "    " | Is optional |  
+| Name | "Temperature Message ACME Mod X" | Easy to understand what devices of this type do |
+| Key | "tempmessmodx" | Unique key available in scripting later |
+| Is Public | " " | Makes this Device Message Type available for all organizations and all client in NuvIoT |
+| Message Id | "tempacmemodx" | The identifier used to identify and process messages of this type |
+| Message Direction | "Incoming Message | Options are: In, Out or Both |
+| Content Type | "JSON" | See <a href="https://support.nuviot.com/help.html#/messaging/contenttypes" target="_blank">Content Types</a>  |  
   
   
 Here is the main documentation for <a href="https://support.nuviot.com/help.html#/topics/standardfields" target="_blank">the Standard Fields</a>  
