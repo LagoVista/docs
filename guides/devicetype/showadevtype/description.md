@@ -1,3 +1,13 @@
 In this Guide step, we are going to walk through some of the basic fields
 
-**And way more info on what it is we are showing and why**
+**Field Table**  
+
+| Field | Data Used | Reason |
+|:--|:--|:--|
+| Name | "DT Temperature Sensor" | Easy to understand what devices of this type do |
+| Key | "dttempsens" | Unique key available in scripting later |
+| Model | "TempSensMod X" | Matches the model # from the manufacturer |
+| Manufacturer | "ACME" | The manufacturer |
+| Default Device Configuration | not selected (yet) | Still need to create the Device Configuration |
+| Description | Blank | Is optional |
+
