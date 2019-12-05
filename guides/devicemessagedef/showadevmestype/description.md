@@ -35,13 +35,12 @@ Fields used to identify which/what data/information is going to be used from wit
 |:--|:--|:--|
 | | | |  
 | Name | "Temperature Message ACME Mod X" | Easy to understand what devices of this type do |
+| Key | "tempmessmodx" | Unique key available in scripting later |
 | Search Location | "tempmessmodx" | Unique key available in scripting later |
 | Message Field Type | " " | Makes this Device Message Type available for all organizations and all client in NuvIoT |
 | Storage Field Type | "tempacmemodx" | The identifier used to identify and process messages of this type |
 | Is Required | "Incoming Message | Options are: In, Out or Both |  
-  
-The rest of the Message Field options are dependent upon which **Content Type** was selected in the Device Message Type definition.  
-
-| Content Type | "JSON" | See <a href="https://support.nuviot.com/help.html#/messaging/contenttypes" target="_blank">Content Types</a>  |  
-  
+| JSON Path | "JSON" | See <a href="https://support.nuviot.com/help.html#/messaging/contenttypes" target="_blank">Content Types</a>  |  
+    
+The JSON Path is context sensitive as are the rest of the Message Field options bason on which **Content Type** was selected in the Device Message Type definition.  
   
