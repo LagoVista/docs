@@ -45,3 +45,5 @@ Fields used to identify which/what data/information is going to be used from wit
 The JSON Path is context sensitive as are the rest of the Message Field options based on on which **Content Type** was selected in the Device Message Type definition.  
 Read more about parsing data from different content types <a href="https://support.nuviot.com/help.html#/messaging/parsing/index" target="_blank">Parsing from .........</a>
   
+  
+  
