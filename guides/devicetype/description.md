@@ -3,8 +3,6 @@
 
 The relevant standard NuvIoT documentation is accessable via the Help Resources section below.
 
-Here is the main documentation for <a href="https://support.nuviot.com/help.html#/devices/devicetypes" target="_blank">Device Types</a>
-
 **What is a Device Type**
 
 A device type is way to group devices together and define the attributes that are common between them
