@@ -13,16 +13,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
  <o:DocumentProperties>
   <o:Author>Microsoft Office User</o:Author>
   <o:LastAuthor>Microsoft Office User</o:LastAuthor>
-  <o:Revision>3</o:Revision>
-  <o:TotalTime>19</o:TotalTime>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>23</o:TotalTime>
   <o:Created>2019-12-06T11:45:00Z</o:Created>
-  <o:LastSaved>2019-12-06T12:08:00Z</o:LastSaved>
+  <o:LastSaved>2019-12-06T12:22:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>132</o:Words>
-  <o:Characters>756</o:Characters>
-  <o:Lines>6</o:Lines>
+  <o:Words>111</o:Words>
+  <o:Characters>637</o:Characters>
+  <o:Lines>5</o:Lines>
   <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>887</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>747</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -1725,6 +1725,9 @@ minor-latin'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoNormal><b><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
 minor-latin'>Fields used in the example:<o:p></o:p></span></b></p>
 
+<p class=MsoNormal><b><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'><o:p>&nbsp;</o:p></span></b></p>
+
 <table class=MsoTable15Grid1LightAccent1 border=1 cellspacing=0 cellpadding=0
  width=638 style='width:478.85pt;margin-left:-.25pt;border-collapse:collapse;
  border:none;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
@@ -1933,9 +1936,7 @@ minor-latin'>Fields used in the example:<o:p></o:p></span></b></p>
 minor-latin'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
-minor-latin'>Documentation link for the <a
-href="https://support.nuviot.com/help.html#/topics/standardfields">The Standard
-Fields</a><o:p></o:p></span></p>
+minor-latin'>Also see the Help Resources for about the Standard Fields<o:p></o:p></span></p>
 
 <h1><b><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Field Service
@@ -1958,13 +1959,8 @@ background:white'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
-background:white'>Documentation link for <a
-href="https://support.nuviot.com/help.html#/fieldservice/description">Field
-Service Lite</a></span><span style='mso-fareast-font-family:"Times New Roman";
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
-minor-latin'><o:p>&nbsp;</o:p></span></p>
+background:white'>See the Help Resources for more about Field Service Lite.</span><span
+style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
 
 </div>
 
