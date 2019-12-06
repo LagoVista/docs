@@ -1,10 +1,3 @@
-<h1> Title Big </h1>  
-  
-**_Markdown_**
-
-The table from Word  
-  
-
 <html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
 xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
@@ -20,16 +13,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
  <o:DocumentProperties>
   <o:Author>Microsoft Office User</o:Author>
   <o:LastAuthor>Microsoft Office User</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>8</o:TotalTime>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>19</o:TotalTime>
   <o:Created>2019-12-06T11:45:00Z</o:Created>
-  <o:LastSaved>2019-12-06T11:45:00Z</o:LastSaved>
+  <o:LastSaved>2019-12-06T12:08:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>35</o:Words>
-  <o:Characters>204</o:Characters>
-  <o:Lines>1</o:Lines>
+  <o:Words>132</o:Words>
+  <o:Characters>756</o:Characters>
+  <o:Lines>6</o:Lines>
   <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>238</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>887</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -47,7 +40,7 @@ target="mdtable.fld/props015.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
-  <w:Zoom>210</w:Zoom>
+  <w:Zoom>130</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
@@ -700,6 +693,115 @@ target="mdtable.fld/props015.xml">
 	mso-hansi-theme-font:minor-latin;
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:normal;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
 span.SpellE
 	{mso-style-name:"";
 	mso-spl-e:yes;}
@@ -1609,9 +1711,19 @@ table.MsoTable15Grid3Accent5SWCell
 <![endif]-->
 </head>
 
-<body lang=EN-US style='tab-interval:.5in'>
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in'>
 
 <div class=WordSection1>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'>We are going to walk through some of the basic fields of the Device
+Type configuration<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'>Fields used in the example:<o:p></o:p></span></b></p>
 
 <table class=MsoTable15Grid1LightAccent1 border=1 cellspacing=0 cellpadding=0
  width=638 style='width:478.85pt;margin-left:-.25pt;border-collapse:collapse;
@@ -1626,7 +1738,8 @@ table.MsoTable15Grid3Accent5SWCell
   102;mso-border-bottom-alt:solid #8EAADB 1.5pt;mso-border-bottom-themecolor:
   accent1;mso-border-bottom-themetint:153;padding:0in 5.4pt 0in 5.4pt;
   height:12.7pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:5'><b>Field<o:p></o:p></b></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:5'><b><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Field<o:p></o:p></span></b></p>
   </td>
   <td width=246 valign=top style='width:184.5pt;border-top:solid #B4C6E7 1.0pt;
   mso-border-top-themecolor:accent1;mso-border-top-themetint:102;border-left:
@@ -1637,7 +1750,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-themecolor:accent1;mso-border-themetint:102;
   mso-border-bottom-alt:solid #8EAADB 1.5pt;mso-border-bottom-themecolor:accent1;
   mso-border-bottom-themetint:153;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:1'><b>Data Used<o:p></o:p></b></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Data Used<o:p></o:p></span></b></p>
   </td>
   <td width=260 valign=top style='width:195.35pt;border-top:solid #B4C6E7 1.0pt;
   mso-border-top-themecolor:accent1;mso-border-top-themetint:102;border-left:
@@ -1648,7 +1762,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-themecolor:accent1;mso-border-themetint:102;
   mso-border-bottom-alt:solid #8EAADB 1.5pt;mso-border-bottom-themecolor:accent1;
   mso-border-bottom-themetint:153;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:1'><b>Reason<o:p></o:p></b></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Reason<o:p></o:p></span></b></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:0;height:12.7pt'>
@@ -1657,7 +1772,8 @@ table.MsoTable15Grid3Accent5SWCell
   mso-border-top-alt:solid #B4C6E7 .5pt;mso-border-top-themecolor:accent1;
   mso-border-top-themetint:102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:
   accent1;mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:4'>Name</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Name<o:p></o:p></span></p>
   </td>
   <td width=246 valign=top style='width:184.5pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1667,7 +1783,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal>Temperature Sensor ACME Mod X</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>Temperature Sensor ACME Mod X<o:p></o:p></span></p>
   </td>
   <td width=260 valign=top style='width:195.35pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1677,7 +1794,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal>Explanatory info about the device</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>Explanatory info about the device<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:1;height:12.3pt'>
@@ -1686,7 +1804,8 @@ table.MsoTable15Grid3Accent5SWCell
   mso-border-top-alt:solid #B4C6E7 .5pt;mso-border-top-themecolor:accent1;
   mso-border-top-themetint:102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:
   accent1;mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.3pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:4'>Key</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Key<o:p></o:p></span></p>
   </td>
   <td width=246 valign=top style='width:184.5pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1696,7 +1815,9 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.3pt'>
-  <p class=MsoNormal><span class=SpellE>tempsensmodx</span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-bidi-font-family:Calibri;
+  mso-bidi-theme-font:minor-latin'>tempsensmodx</span></span><span
+  style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
   </td>
   <td width=260 valign=top style='width:195.35pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1706,7 +1827,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.3pt'>
-  <p class=MsoNormal>Unique key</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>Unique key<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:2;height:12.7pt'>
@@ -1715,7 +1837,8 @@ table.MsoTable15Grid3Accent5SWCell
   mso-border-top-alt:solid #B4C6E7 .5pt;mso-border-top-themecolor:accent1;
   mso-border-top-themetint:102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:
   accent1;mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:4'>Model</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Model<o:p></o:p></span></p>
   </td>
   <td width=246 valign=top style='width:184.5pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1725,7 +1848,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal>Model X</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>Model X<o:p></o:p></span></p>
   </td>
   <td width=260 valign=top style='width:195.35pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1735,7 +1859,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal>The manufacturers model number</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>The manufacturers model number<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3;height:12.7pt'>
@@ -1744,7 +1869,8 @@ table.MsoTable15Grid3Accent5SWCell
   mso-border-top-alt:solid #B4C6E7 .5pt;mso-border-top-themecolor:accent1;
   mso-border-top-themetint:102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:
   accent1;mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:4'>Manufacturer</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Manufacturer<o:p></o:p></span></p>
   </td>
   <td width=246 valign=top style='width:184.5pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1754,7 +1880,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal>ACME – America</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>ACME – America<o:p></o:p></span></p>
   </td>
   <td width=260 valign=top style='width:195.35pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1764,7 +1891,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal>The manufacturer</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>The manufacturer<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;height:12.7pt'>
@@ -1773,7 +1901,8 @@ table.MsoTable15Grid3Accent5SWCell
   mso-border-top-alt:solid #B4C6E7 .5pt;mso-border-top-themecolor:accent1;
   mso-border-top-themetint:102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:
   accent1;mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:4'>Description</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:4'><span style='mso-bidi-font-family:
+  Calibri;mso-bidi-theme-font:minor-latin'>Description<o:p></o:p></span></p>
   </td>
   <td width=246 valign=top style='width:184.5pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1783,7 +1912,8 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'><o:p>&nbsp;</o:p></span></p>
   </td>
   <td width=260 valign=top style='width:195.35pt;border-top:none;border-left:
   none;border-bottom:solid #B4C6E7 1.0pt;mso-border-bottom-themecolor:accent1;
@@ -1793,22 +1923,51 @@ table.MsoTable15Grid3Accent5SWCell
   solid #B4C6E7 .5pt;mso-border-left-themecolor:accent1;mso-border-left-themetint:
   102;mso-border-alt:solid #B4C6E7 .5pt;mso-border-themecolor:accent1;
   mso-border-themetint:102;padding:0in 5.4pt 0in 5.4pt;height:12.7pt'>
-  <p class=MsoNormal>Optional</p>
+  <p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+  minor-latin'>Optional<o:p></o:p></span></p>
   </td>
  </tr>
 </table>
 
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'>Documentation link for the <a
+href="https://support.nuviot.com/help.html#/topics/standardfields">The Standard
+Fields</a><o:p></o:p></span></p>
+
+<h1><b><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Field Service
+Lite (FSL)<o:p></o:p></span></b></h1>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+background:white'>There are some sets of information in the Device Type:<span
+style='mso-spacerun:yes'>  </span>The&nbsp;<b><i>Resource (0), Bill of Material
+(0), and the Associated Equipment (0)</i></b>&nbsp;and they will be explained
+in the Field Service Lite tutorial. They are not applicable unless you are implementing
+FSL.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+background:white'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+background:white'>Documentation link for <a
+href="https://support.nuviot.com/help.html#/fieldservice/description">Field
+Service Lite</a></span><span style='mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin'><o:p>&nbsp;</o:p></span></p>
 
 </div>
 
 </body>
 
 </html>
-
-
-
-**Some Other Stuff**  _and more_  
-asdfasd  
-  
-asdfasd
