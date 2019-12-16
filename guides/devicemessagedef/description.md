@@ -17,4 +17,4 @@ We will show you the minimum set up necessary to get a device message type added
   
 **Recommendation:**  
   
-_To get the most out of this tutorial it may be helpful to have message specifications for the devices you plan to use in your application.__
+_To get the most out of this tutorial it may be helpful to have message specifications for the devices you plan to use in your application._
