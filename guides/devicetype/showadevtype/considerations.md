@@ -11,7 +11,7 @@ Follow along using a manual and/or other information you have about the devices 
   
 **Standard Documentation**
 
-The relevant standard NuvIoT documentation is accessable via the Help Resources section below.
+The relevant standard NuvIoT documentation is accessable via the Help Resources section above.
 
 **What is a Device Type**
 
