@@ -19,5 +19,3 @@ We will show you the minimum set up necessary to get a listener added to the sys
 _You will get better benefit from the tutorials, if you have a "manual" and/or other information of a sensor and/or actuator (devices) available.__
   
 **Listeners are part of the pipeline modules**  
-
-
