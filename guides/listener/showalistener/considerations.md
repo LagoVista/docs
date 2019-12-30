@@ -12,9 +12,7 @@ Follow along using a manual and/or other information you have about the devices 
 **Standard Documentation**
 
 The relevant standard NuvIoT documentation is accessable via the Help Resources section above.
-
-Here is the main documentation for <a href="https://support.nuviot.com/help.html#/pipelinemodules/listener" target="_blank">Listeners</a>
-
+  
 **What is a Listener**
 
 A listener is way to define ingress into your solution and define the attributes for that ingress.  
@@ -30,10 +28,5 @@ We will show you the minimum set up necessary to get a listener added to the sys
 **_Recommendation:_**
 
 _You will get better benefit from the tutorials, if you have a "manual" and/or other information of a sensor and/or actuator (devices) available.__
-
-
-
+  
 **Listeners are part of the pipeline modules**  
-
-Here is the main documentation for <a href="https://support.nuviot.com/help.html#/pipelinemodules/index" target="_blank">Pipeline Modules</a>  
-
