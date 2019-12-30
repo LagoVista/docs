@@ -5,11 +5,11 @@ The relevant standard NuvIoT documentation is accessable via the Help Resources 
 
 **What is a Device Configuration**
 
-A device type is way to group devices together and define the attributes that are common between them
-
+A device configuration is way to assign routes and properties to groups of devices.  
+  
 **What are Device Configurations used for**
 
-A device type is used provision new devices.  It is one of the pieces of information that is required to add an IoT device instance to your solution instance.
+A device configuration is used to define routes and properties for a set of devices. It is one of the pieces of information that is required to add an IoT device instance to your solution instance.
 
 **Device Configuration (Tutorial)**
 
