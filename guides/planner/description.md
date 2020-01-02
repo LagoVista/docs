@@ -18,3 +18,8 @@ We will show you the minimum set up necessary to get a device workflows added to
 **_Recommendation:_**
 
 _You will get better benefit from the tutorials , if you have a "manual" and/or other information of a sensor and/or actuator (devices) available._
+
+In this Guide step, we are going to walk through some of the basic fields
+
+**Used for**  
+After your message comes from the device, it is handed off to the Planner. The Planner is then responsible for using its Device-ID and Message-ID parsers for mapping the contents of a message for a particular device configuration to a route in order to perform additional processing.
