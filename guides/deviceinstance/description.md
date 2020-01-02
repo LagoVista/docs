@@ -1,6 +1,6 @@
   
 **Standard Documentation**  
-The relevant standard NuvIoT documentation is accessable via the Help Resources section below.
+The relevant standard NuvIoT documentation is accessable via the Help Resources section below.  
 **What is the Device Explorer**  
 The Device Explorer is the way to manage and view your actual device instances.  
 **What are Planners used for**  
