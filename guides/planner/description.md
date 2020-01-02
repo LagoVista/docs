@@ -11,7 +11,7 @@ A planner is the way to find the device and message id's of the incoming message
 
 The Planner is responsible for using its Device-ID and Message-ID parsers for mapping the contents of a message for a particular device configuration to a route in order to perform additional processing.
 
-**Device Workflow (Tutorial)**
+**Planner (Tutorial)**
 
 We will show you the minimum set up necessary to get a planner added to the system, as well as some of the more elaborate set up with more options enabled.
 
