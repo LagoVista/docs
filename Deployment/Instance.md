@@ -4,7 +4,7 @@ keywords: deployment, instance, solution, host, iotapplication
 
 status: inprocess
 created: 20170922
-updated: 20170922
+updated: 20200103
 createdby: bytemaster-0xff
 updatedby: bytemaster-0xff
 ---
@@ -45,17 +45,20 @@ With this option you only need to select how the data for your devices are store
 * Cloud - Run this as a container in your data center or private cloud, please contact us for more information.
 * On Premise - Run this container in your data center or factory floor as an IoT edge device.
 
-* Working Storage *
+* **Working Storage**
 Please indicate where the log data for your instance will be stored.  Note that when you specific a device repository you select where both your devices and the data they generate are stored.  The options for your instance log data are in the cloud or locally in a SQLite database.
 
-* Image Size *
+* **Image Size**
 Select the size of the VM you will be using for your instance, the larger the instance the more processing power and thus more messages and complex business logic your application will be able to handle.
 
-* Container Repository *
+* **Container Repository**
 Select the container repository that contains the image of the run time you wish to deploy.  This can either be a one of our standard images, you have access to our standard images within the **Container Runtime** repository.  You can also select a custom one that you have built that contains code specific to your application.
 
-* Container Tag *
+* **Container Tag**
 Once you select your container repository it will populate the **Container Tag** with the default image that will be used.  You have the option to override with with a specific version or tag.
+
+#### Cluster
+Please contact us to help you select the best options for your cluster.
 
 #### Startup Sequence
 The startup sequence will begin executing as soon as the container is started
