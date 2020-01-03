@@ -9,7 +9,7 @@ The Solution is the place where your Application is defined.
   
 **What are Solutions used for**
 
-A Solution is where you use all the NuvIoT componentsthat will make up your application, a Solution consists of a set of supported device configurations, listeners, and a planner.
+A Solution is where you use all the NuvIoT components that will make up your application, a Solution consists of a set of supported device configurations, listeners, and a planner.
 
 **Solution (Tutorial)**
 
