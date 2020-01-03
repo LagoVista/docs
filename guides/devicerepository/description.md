@@ -3,17 +3,17 @@
 
 The relevant standard NuvIoT documentation is accessable via the Help Resources section below.
 
-**What is a Device Type**
+**What is a Device Repository**
 
-A device type is way to group devices together and define the attributes that are common between them
+A device repository is way define the allowed # of devices and storage and assigm them to a subscription.
 
-**What are Device Types used for**
+**What are Device Repositories used for**
 
-A device type is used provision new devices.  It is one of the pieces of information that is required to add an IoT device instance to your solution instance.
+A device repository is used to set up accounting for the hosting of NuvIoT.  It is possible to to cost accounting of devices and storage within a device repository.
 
-**Device Type (Tutorial)**
+**Device Repository (Tutorial)**
 
-We will show you the minimum set up necessary to get a device message type added to the system, as well as some of the more elaborate set up with more options enabled.
+We will show you the minimum set up necessary to get a device repository is added to the system, as well as some of the more elaborate set up with more options enabled.
 
 **_Recommendation:_**
 
