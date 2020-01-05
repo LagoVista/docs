@@ -4,7 +4,7 @@ keywords: deployment, instance, solution, host, iotapplication
 
 status: inprocess
 created: 20170922
-updated: 20170922
+updated: 20200103
 createdby: bytemaster-0xff
 updatedby: bytemaster-0xff
 ---
@@ -22,6 +22,43 @@ that runs on the [IoT Edge](EdgeTechnology.md).
 
 ## Instance States
 
+#### Configuring your Instance
+You have four options for creating your instances, we call these NuvIoT editions:
+* **App** - Windows 10 UWP (coming soon to the Windows Store) this can either be ran in a stand alone mode on your PC or on Windows 10 IoT Core.
+* **Container** - Your application will be ran as a container with docker.  This can be ran in our cloud, your cloud or even on premise as an IoT Edge Device.  If you run your instance in our cloud, unless you are using our trial instance you will be billed by how long your instance is running.  For running in your data center or as IoT edge device please contact us for more information.
+* **Cluster** - For high-availability and high-peformace we recommend using our Cluster deployment option.  We are currently targetting Kubernetes and can help you customize your cluster based on your specific needs.
+
+#### Common Configuration
+* **Assigned Solution** - Select the solution that you will be deploying for your application
+* **Solution Version** (optional) - You can optionally select a specific version of your solution to deploy.  If you do not specify a solution the most current solution will be used.
+* **Subscription** - Select the subscription you will be using for this instance.
+
+#### Instance Options 
+Based on the edition of NuvIoT you are selecting you have different choices for how to configure your instance.
+##### App
+*Device Repository*
+With this option you only need to select how the data for your devices are stored.  In most cases you will likely choose the Local version of the store to keep all your device data local in a SQLite database.
+
+#### Container
+* Deployment Type *
+* Managed (Cloud) - Run this as a container in our data center, this is our most attractive option since deploying is as simple as one click.
+* Cloud - Run this as a container in your data center or private cloud, please contact us for more information.
+* On Premise - Run this container in your data center or factory floor as an IoT edge device.
+
+* **Working Storage**
+Please indicate where the log data for your instance will be stored.  Note that when you specific a device repository you select where both your devices and the data they generate are stored.  The options for your instance log data are in the cloud or locally in a SQLite database.
+
+* **Image Size**
+Select the size of the VM you will be using for your instance, the larger the instance the more processing power and thus more messages and complex business logic your application will be able to handle.
+
+* **Container Repository**
+Select the container repository that contains the image of the run time you wish to deploy.  This can either be a one of our standard images, you have access to our standard images within the **Container Runtime** repository.  You can also select a custom one that you have built that contains code specific to your application.
+
+* **Container Tag**
+Once you select your container repository it will populate the **Container Tag** with the default image that will be used.  You have the option to override with with a specific version or tag.
+
+#### Cluster
+Please contact us to help you select the best options for your cluster.
 
 #### Startup Sequence
 The startup sequence will begin executing as soon as the container is started

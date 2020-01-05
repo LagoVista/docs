@@ -16,4 +16,4 @@ updatedby: klworkman
 * [Device Messages](DeviceMessages.md)
 * [Device Repositories](DeviceRepositories.md)
 * [Azure IoT Hub Repository](AzureIoTHubDeviceRepo.md)
-* [Device Types](DeviceRepositories.md)
+* [Device Types](DeviceTypes.md)
