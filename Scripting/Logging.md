@@ -31,6 +31,15 @@ function onSet(value) {
     logToDevice('log message');
 }
 ```
+
+##### Writing to the Device Log with a Title
+```
+function onSet(value) {
+    logToDevice('log message', 'message title');
+}
+```
+
+
 ##### Clearing the Device Log
 ```
 function onSet(value) {

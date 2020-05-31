@@ -7,6 +7,49 @@ how your solution will scale.</p>
 <p>Instances can also be either cloud based that runs on the <a href="#/deployment/nuviotinfrastructure">NuvIoT Infrastructure</a> or one
 that runs on the <a href="#/deployment/edgetechnology">IoT Edge</a>.</p>
 <h2>Instance States</h2>
+<h4>Configuring your Instance</h4>
+<p>You have four options for creating your instances, we call these NuvIoT editions:</p>
+<ul>
+<li><strong>App</strong> - Windows 10 UWP (coming soon to the Windows Store) this can either be ran in a stand alone mode on your PC or on Windows 10 IoT Core.</li>
+<li><strong>Container</strong> - Your application will be ran as a container with docker.  This can be ran in our cloud, your cloud or even on premise as an IoT Edge Device.  If you run your instance in our cloud, unless you are using our trial instance you will be billed by how long your instance is running.  For running in your data center or as IoT edge device please contact us for more information.</li>
+<li><strong>Cluster</strong> - For high-availability and high-peformace we recommend using our Cluster deployment option.  We are currently targetting Kubernetes and can help you customize your cluster based on your specific needs.</li>
+</ul>
+<h4>Common Configuration</h4>
+<ul>
+<li><strong>Assigned Solution</strong> - Select the solution that you will be deploying for your application</li>
+<li><strong>Solution Version</strong> (optional) - You can optionally select a specific version of your solution to deploy.  If you do not specify a solution the most current solution will be used.</li>
+<li><strong>Subscription</strong> - Select the subscription you will be using for this instance.</li>
+</ul>
+<h4>Instance Options</h4>
+<p>Based on the edition of NuvIoT you are selecting you have different choices for how to configure your instance.</p>
+<h5>App</h5>
+<p><em>Device Repository</em>
+With this option you only need to select how the data for your devices are stored.  In most cases you will likely choose the Local version of the store to keep all your device data local in a SQLite database.</p>
+<h4>Container</h4>
+<ul>
+<li><p>Deployment Type *</p>
+</li>
+<li><p>Managed (Cloud) - Run this as a container in our data center, this is our most attractive option since deploying is as simple as one click.</p>
+</li>
+<li><p>Cloud - Run this as a container in your data center or private cloud, please contact us for more information.</p>
+</li>
+<li><p>On Premise - Run this container in your data center or factory floor as an IoT edge device.</p>
+</li>
+<li><p><strong>Working Storage</strong>
+Please indicate where the log data for your instance will be stored.  Note that when you specific a device repository you select where both your devices and the data they generate are stored.  The options for your instance log data are in the cloud or locally in a SQLite database.</p>
+</li>
+<li><p><strong>Image Size</strong>
+Select the size of the VM you will be using for your instance, the larger the instance the more processing power and thus more messages and complex business logic your application will be able to handle.</p>
+</li>
+<li><p><strong>Container Repository</strong>
+Select the container repository that contains the image of the run time you wish to deploy.  This can either be a one of our standard images, you have access to our standard images within the <strong>Container Runtime</strong> repository.  You can also select a custom one that you have built that contains code specific to your application.</p>
+</li>
+<li><p><strong>Container Tag</strong>
+Once you select your container repository it will populate the <strong>Container Tag</strong> with the default image that will be used.  You have the option to override with with a specific version or tag.</p>
+</li>
+</ul>
+<h4>Cluster</h4>
+<p>Please contact us to help you select the best options for your cluster.</p>
 <h4>Startup Sequence</h4>
 <p>The startup sequence will begin executing as soon as the container is started</p>
 <ul>
@@ -30,4 +73,4 @@ that runs on the <a href="#/deployment/edgetechnology">IoT Edge</a>.</p>
 <li><strong>Failed to Start</strong> - The instance was loaded, however an unrecoverable error occurred while the instance was being started.</li>
 <li><strong>Fatal Error</strong> - Something happened after the instance was started it could not recover from.</li>
 </ul>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:40<p</div>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2020<br/>Documentation Build Date: 1/22/2020 17:18:34<p</div>

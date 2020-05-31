@@ -4,101 +4,158 @@
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="/images/nuviotico.png" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/nuviotico.png" />
     <link href="/css//site.css" rel="stylesheet" />
-    <title>Support Network - NuvIoT</title>
+    <script src="/help/index.js"></script>
+
+    <title>Documentation - NuvIoT</title>
+
+    <script>
+        var app = angular.module("DocApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            var routes = getHelpIndexRoutes();
+            $routeProvider.when("/", { templateUrl: "/help/Index.html" });
+
+            for (var route of routes) {
+                $routeProvider.when(route.link, { templateUrl: route.file });
+            }
+
+        });
+
+        function parseChildNodes(parentNode, nodes) {
+            let parent = $(parentNode);
+
+            for (let node of parent.children()) {
+                let child = $(node);
+                if (child.children().length > 0) {
+                    var grandChildren = child.children();
+                    if (grandChildren) {
+                        for (let grandChild of grandChildren) {
+                            if (grandChild.localName == "ul") {
+                                var childNodes = [];
+                                nodes.push({ 'children': childNodes });
+                                parseChildNodes(grandChild, childNodes);
+                            }
+                            else if (grandChild.localName === "a") {
+                                nodes.push({ 'link': grandChild.href, 'name': grandChild.innerText });
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        function createHelpLeaf(parentNode, nodes) {
+            console.log(parentNode);
+            var previousNode;
+            for (let node of nodes) {
+                if (node.children) {
+                    if (!previousNode) {
+                        previousNode = $(`<li><a href=\"${node.link.toLowerCase().replace(".md", "")}\">${node.name}</a></li>`);
+                        parentNode.append(previousNode);
+                    }
+                    var newParent = $('<ul class=\"childNodeSet\"></ul>');
+                    previousNode.append(newParent);
+                    previousNode.prepend('<i class="fa fa-chevron-right"></i>');
+                    previousNode.addClass("parentNode");
+                    createHelpLeaf(newParent, node.children);
+                }
+                else {
+                    previousNode = $(`<li><a href=\"${node.link.toLowerCase().replace(".md", "")}\">${node.name}</a></li>`);
+                    parentNode.append(previousNode);
+                }
+            }
+        }
+
+        $.get("/help/toc.html", function (tree) {
+            let element = $(tree);
+            var nodes = [];
+            parseChildNodes(element, nodes);
+            console.log(element);
+            let parentNode = $("<ul class='topNodeSet'></ul>");
+            createHelpLeaf(parentNode, nodes);
+            $('.list').append(parentNode);
+            $('ul.childNodeSet').toggle();
+
+            var parentNodes = $('.list ul > li.parentNode > i');
+            console.log(parentNodes);
+
+            $('.list  ul > li.parentNode > i').click(function (e) {
+                e.stopPropagation();
+
+                var childNodeList = $(this).parent().find("ul").first();
+                childNodeList.toggle();
+
+                var toggleElement = $(this);
+
+                if (childNodeList.is(":visible")) {
+                    toggleElement.removeClass('fa-chevron-right')
+                    toggleElement.addClass('fa-chevron-down')
+                }
+                else {
+                    toggleElement.addClass('fa-chevron-right')
+                    toggleElement.removeClass('fa-chevron-down')
+                }
+            });
+        });
+    </script>
+    <style>
+        .helppage-footer p {
+            font-size: 8pt
+        }
+
+        ul.topNodeSet > li {
+            list-style: none;
+            margin-left: -25px;
+            margin-bottom: 20px;
+        }
+
+        ul.childNodeSet > li {
+            list-style: none;
+            margin-left: -5px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+
+
+        li > i {
+            margin-right: 5px;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-header" style="margin-left:50px">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="https://www.NuvIoT.com" target="_blank" class="navbar-brand">NuvIoT</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right" style="margin-right:50px">
-                <li><a href="/help.html#/information/company" target="_blank">Company </a></li>
-                <li><a href="/contactus" target="_blank">Contact Us  </a></li>
-            </ul>
+<body ng-app="DocApp">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://www.nuviot.com" class="navbar-brand">NuvIoT</a>
         </div>
 
-        <div class="row" style="margin-top:60px">
-            <p style="font-family:'Myanmar Text';font-size:xx-large" class="mast-head lead">NuvIoT Support Network</p>
-        </div>
+        <ul class="nav navbar-nav navbar-right" style="margin-right:50px">
+            <li><a href="https://www.software-logistics.com" target="_blank">Software Logistics</a></li>
+        </ul>
+    </div>
 
-        <div class="row hidden-md">
-            <div class="col-lg-6" style="text-align:center;padding-top:20px">
-                <p style="font-family:'Myanmar Text'" class="mast-head lead">IoT App Builder</p>
-                <img src="/images/NuvIoT-256x256B.png" style="display:inline-block" />
-                
-            </div>
-            <div class="col-lg-6" style="text-align:center">
-                <img src="/images/SupportGirl.jpg" style="display:inline-block" />
-            </div>
-        </div>
-        <hr />
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="panel panel-default" style="height:210px">
-                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">Online Help</div>
-                    <div class="panel-body">
-                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-question"></i>
-                        Our Comprehensive Online Help library should answer a number of your questions.
-                        <div style="position:absolute;bottom:20px;right:30px;">
-                            <a href="/help.html">Go To Help Site >></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="panel panel-default" style="height:210px">
-                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">Open a Support Ticket</div>
-                    <div class="panel-body">
-                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-ticket"></i>
-                        If you need extra support, have an issue with our software or need an additional feature, please feel free to submit a support ticket.
-                        <div style="position:absolute;bottom:20px;right:30px;">
-                            <a href="http://tickets.nuviot.com" target="_blank">Open a Support Ticket >></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="panel panel-default" style="height:210px;">
-                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">Online Forums</div>
-                    <div class="panel-body">
-                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-th-list"></i>
-                        Get Help or Help Others with our Online Forum.  This is a great resource to work with real world experts.
-                        <div style="position:absolute;bottom:20px;right:30px;">
-                            <a href="http://forums.nuviot.com" target="_blank">Visit our Forum >></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="panel panel-default" style="height:210px">
-                    <div class="panel-heading" style="background-color:#1976d2;color:white;font-weight:bold;font-size:larger">AI Chat-Bot</div>
-                    <div class="panel-body">
-                        <i style="float:left;font-size:36px;margin-right:9px;color:#D48D17" class="fa fa-comments"></i>
-                        Use our Online Support AI Chat-Bot to ask your questions by clicking the Chat icon at the bottom right of your screen and type Hi to get started.
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div style="overflow-y:auto;width:300px;background-color:#f9f9f9;border-right:1px solid rgba(0,0,0,0.07);bottom:30px;top:50px; position:absolute">
+        <div style="overflow-y:auto" class="list"></div>
+    </div>
 
+    <div style="overflow-y:auto;max-height:90vh;margin-left:500px">
+        <div ng-view style="max-width:800px">
 
-
-        <hr />
-        <div class="row" align="center">
-            <img src="/images/sftlog-medium.png" />
         </div>
     </div>
 

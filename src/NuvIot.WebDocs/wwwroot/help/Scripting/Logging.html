@@ -12,6 +12,11 @@ is also available via API.</p>
     logToDevice('log message');
 }
 </code></pre>
+<h5>Writing to the Device Log with a Title</h5>
+<pre><code>function onSet(value) {
+    logToDevice('log message', 'message title');
+}
+</code></pre>
 <h5>Clearing the Device Log</h5>
 <pre><code>function onSet(value) {
     clearDeviceLog();
@@ -26,4 +31,4 @@ are not saved between sessions.</p>
     logConsole('message')
 }
 </code></pre>
-<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2019<br/>Documentation Build Date: 3/3/2019 18:50:41<p</div>
+<hr /><div class="helppage-footer"><p>Copyright Software Logistics - 2020<br/>Documentation Build Date: 1/22/2020 17:18:35<p</div>
