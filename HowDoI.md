@@ -100,5 +100,5 @@ to listen for incoming messages on a port, protocol or external messaging system
 a [listener](./PipelineModules/Listener.md). The second is to send messages to an end
 point or service from an [output command](./Workflows/OutputCommands.md) in your 
 [workflow](./PipelineModules/Workflow.md) with a [transmitter](./PipelineModules/Transmitter.md).
-The final way is to expose an [input command](./WOrkflows/InputCommands.md) as a REST service
+The final way is to expose an [input command](./Workflows/InputCommands.md) as a REST service
 from within your workflow.
