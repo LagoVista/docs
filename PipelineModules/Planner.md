@@ -15,7 +15,7 @@ updatedby: Kevin D. Wolf
 ...more details coming soon...
 
 The planner is responsible for determine how the incoming messages should be processed. Although you can implement
-your own custom planner, which you will use your custom [message](../Messaging/Parsing/MessageIdParsing.md) and [device](../Messaging/Parsing/DeviceIdParsing.md) as configured [device configuration](../Devices/DeviceCOnfigurations.md) 
+your own custom planner, which you will use your custom [message](../Messaging/Parsing/MessageIdParsing.md) and [device](../Messaging/Parsing/DeviceIdParsing.md) as configured [device configuration](../Devices/DeviceConfigurations.md) 
 to find a match, once a match is found, the [route](../Routes/Route.md) associated with that device configuration is determined 
 and the steps to process the message are queued up for execution.
 
