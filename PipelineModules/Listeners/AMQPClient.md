@@ -21,7 +21,7 @@ of your choosing.
 You have any number of options for adding an AMQP server, you can use a could based provider such as [Azure](https://portal.azure.com) or 
 [Amazon](https://aws.amazon.com/) or you can launch a dedicated AMQP server in a container that is preconfigured to specifically work with NuvIoT. 
 If you use a 3rd party server you will be responsible for managing authentication of devices as they connect (_although if the third
-party service allows you can call our [API](../../API/Index.md) to authenticate your devices_).  If you choose to launch a dedicated 
+party service allows you can call our [API](../../API/index.md) to authenticate your devices_).  If you choose to launch a dedicated 
 AMQP server, it will automatically authenticate your devices.  Please [contact us](http://support.nuviot.com/contactus?source=amqpavailability) for more details on dedicated AMQP server availability.
 
 ### Required Fields
