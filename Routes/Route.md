@@ -40,7 +40,7 @@ This is an example of a typical route:
 
 1. For this route, [Device Security](../Devices/Security.md) is handled by the [Listener](../PipelineModules/Listener.md), so you can use an anonymous [Sentinal Module](../PipelineModules/Sentinel.md).
 2. The [Incoming Message](../Messaging/IncomingMessages.md) contains enough information to [Parse Fields](../Messaging/Parsing/Index.md) from the message so we use a default message [Input Translator](../PipelineModules/InputTranslator.md).
-3. We execute a [Workflow](../Workflows/Index.md) called Simple Workflow that you have created.
+3. We execute a [Workflow](../Workflows/index.md) called Simple Workflow that you have created.
 4. The [Output Translator](../PipelineModules/OutputTranslator.md) takes the [Output Commands](../Workflows/OutputCommands.md) from the workflow and converts them into an [Outgoing Message](../Messaging/OutgoingMessages.md) that can be either sent back to the device or a third-party endpoint with a [Transmitter](../PipelineModules/Transmitter.md).
 5. The [Transmitter Modules](../PipelineModules/Transmitter.md) take those [Outgoing Messages](../Messaging/OutgoingMessages.md) and either send them back to the device via the original listener, or forward them to a third-party endpoint.
 
