@@ -24,4 +24,9 @@ Once you have added your report, you can use the reporting portal to:
 3.  View previously ran reports
 
 ## Topics
-1.  Creating a custom report in Python
+1.  [Creating](PythonReport.md) a custom report in Python
+2.  [Adding](AddingReport.md) the report to NuvIoT
+3.  Getting [data](ReportData.md) from your devices
+4.  [Specifying Parameters](Parameters.md) for your report
+5.  [Running](RunningReport.md) your report
+6.  [Scheduling](SchedulingReport.md) your report

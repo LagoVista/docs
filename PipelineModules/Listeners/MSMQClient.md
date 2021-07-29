@@ -31,10 +31,10 @@ URL or IP address where your MQTT server is hosted.
 Select this option if your MQTT server does not require authentication.
 
 * **User Name**  (required if not anonymous)     
-User Name with access priveleges to your MQTT Broker.
+User Name with access privileged to your MQTT Broker.
 
 * **Password** (required if not anonymous)      
-Password with access priveleges to your MQTT Broker.
+Password with access privileges to your MQTT Broker.
 
 * **Connect with SSL/TLS**     
 Select this option if your server supports SSL/TLS.

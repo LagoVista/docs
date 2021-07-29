@@ -27,7 +27,7 @@ A [Unique Key](../Topics/Keys.md) to identify the data stream
 The Time Stamp Field Name is the name of the column in a database where the timestamp of the data stream record will be inserted.  This column must exist on the database table and be of type datetime, datetime2 or datetimeoffset
 
 * **Device Id Field Name** (required)    
-The Device Id Field Name is the name of the column in the datbase where the device id associated with this data stream record will be inserted.  This column must exist on the database table and be of type char, varchar, nchar or nvarchar
+The Device Id Field Name is the name of the column in the database where the device id associated with this data stream record will be inserted.  This column must exist on the database table and be of type char, varchar, nchar or nvarchar
 
 * **Date Storage Format** (required)
 When storing the date associated with the data stream record, you can store it as a long value of seconds since unix Epoch (1/1/1970) or the standard JSON ISO 8601 format () both are stored with respect to UTC
@@ -45,7 +45,7 @@ Name of the database scema
 Enter the name of the database on the database server.
 
 * **Database User Name** (required)
-Enter the user name of a user that has read/write privelages to the table where this data stream will access.  If you plan to validate the schema, please ensure that the user has appropriate rights to access the system tables such as sysobjects and syscolumns.
+Enter the user name of a user that has read/write privileges to the table where this data stream will access.  If you plan to validate the schema, please ensure that the user has appropriate rights to access the system tables such as sysobjects and syscolumns.
 
 * **Database Password** (required)
 Enter the password for accessing the Server.  This will be encrypted on the server at rest and will not be visible when editing the storage details.  If you enter a new password when editing the database details, the old one will be replaced.

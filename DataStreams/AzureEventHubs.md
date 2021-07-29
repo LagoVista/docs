@@ -29,19 +29,19 @@ The Time Stamp Field Name is the name of the column in a database or the JSON pr
 * **Device Id Field Name** (required)    
 The Device Id Field Name is the name of the column in the datbase or the JSON property that is associated with the device that generated the values for the data stream.
 
-* **Date Storage Format** (required)
+* **Date Storage Format** (required)  
 When storing the date associated with the data stream record, you can store it as a long value of seconds since unix Epoch (1/1/1970) or the standard JSON ISO 8601 format () both are stored with respect to UTC
 
 * **Azure Storage Account Name** (required)  
 Enter the name of the storage account where you will be accessing Blob storage.
 
-* **Azure Access Key** (required)
+* **Azure Access Key** (required)  
 Enter the azure access key for accessing the storage account.  This will be encrypted on the server at rest and will not be visible when editing the storage details.  If you enter a new access key when editing the storage details, the old one will be replaced.
 
-* **Azure Event Hub Name** (required)
+* **Azure Event Hub Name** (required)  
 Name of your Azure Event Hub
 
-* **Azure Event Hub Entity Path** (required)
+* **Azure Event Hub Entity Path** (required)  
 Name of the event hub entity path on your event hub.
 
 * **Description**     
