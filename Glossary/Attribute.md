@@ -2,19 +2,19 @@
 title: Attribute
 keywords: 
 
-status: new
+status: Complete
 created: 20210910
 updated: 20210912
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Quick Def
+Note: Quick Def.
 ---
-[Home](../Index.md)
+[Home](../Index.md) > [Glossary](./Index.md)
 
 # Attribute
 ## Definition
-Attributes are categories of values associated with a [Device](./Glossary/Device.md) that may be saved for future reference.
+Attributes are values associated with a [Device](./Glossary/Device.md) that can be calculated from sensor data, be used in [Business Logic](./Glossary/BusinessLogic.md) and saved for future reference.
 
 <br>
 <br>
@@ -22,10 +22,12 @@ Attributes are categories of values associated with a [Device](./Glossary/Device
 
 ## Example
 
-Temperatures of the *Plymouth IoT Conveyor Belt* were saved as an Attribute of the belt.
+The current temperature of the *Plymouth IoT Conveyor Belt* was saved as an Attribute on the device. It was then used in a calculation by [Business Logic](./Glosssary/BusinessLogic.md) to determine if it was over heating.
 
 <br>
 <br>
 <br>
 
-## Related Terms
+# Related Terms
+- [Business Logic](./Glosssary/BusinessLogic.md)
+- [Device](./Glossary/Device.md)

@@ -12,27 +12,6 @@ updatedby: klworkman
 
 # Verifiers
 
-...more details coming soon...
-
-Once you have created your parser, you should test it to make sure that it behaves as expected.  You can create a verifier that will take a sample message and run it through the Verifier to ensure that you get the results you need, all without using actual devices.  As long as your devices send the messages you expect, the parser will behave the same way it does through the verifier and you will have the same fields available to the workflow.
-
-### Add a Verifier
-
-1. Add a message parser
-2. Click on **Verifiers** > **Edit**
-3. Click on **Add**
-4. Add the Name and Key
-5. Select a Payload Type
-6. Populate the fields that make up your sample message
-7. Add expected values.  You can use the fields you created as part of the message to add an expected value.
-
-**NOTE:** If you have a binary message, you can copy the hex bytes that make up your messages into the payload field such as:
-```
-0x03 0x43 0x04 0x23 0x52 0x41 0x05 0x06 
-```
-
-### To Use a Verifier
-
-1. On the Device Message Definition, press **Run**.  Your results will be displayed.
+Once a Parser has been created, it should be tested to make sure that it behaves as expected. A Verifier is used to confirm that values received from incoming messages are values that are expected.  Using a Verifier to ensure that messages are defined correctly is generally much easier and faster than trying to do this from an actual device or simulator.  It gives an idea of how long it may take to extract the value from your message. 
 
 

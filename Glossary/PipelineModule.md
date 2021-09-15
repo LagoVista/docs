@@ -4,16 +4,15 @@ keywords: pipelinemodules
 
 status: complete
 created: 20210823
-updated: 20210908
+updated: 20210914
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Notes: What is an expected temperature for bearings?  Ready for review 9/8 - Wording in example - Ready for Review  Complete
+Notes: What is an expected temperature for bearings?  Ready for review 9/8 - Wording in example - Ready for Review  Complete.
 ---
-[Home](../Index.md) 
+[Home](../Index.md) > [Glossary](./Index.md) 
 
 # Pipeline Modules
-
 ## Definition
 Pipeline Modules can be thought of as containers of very specific functions, or logic, that are performed on a [PEM](./Glossary/PEM.md).  They are connected so that as one module completes its task, it hands the [PEM](./Glossary/PEM.md) off to the next module or modules for execution.  
 
@@ -22,7 +21,6 @@ Pipeline Modules can be thought of as containers of very specific functions, or 
 <br>
 
 ## Example
-
 The [Cloud](./Glossary/Cloud.md) receives a [Message](./Glossary/Message.md) from the *Plymouth IoT Conveyor Belt* with a bearing temperature reading of 360°.  This [Message](./Glossary/Message.md) is converted to a [PEM](./Glossary/PEM.md) and passed through several Pipeline Modules.
   1.  One module determines the [Message](./Glossary/Message.md) is from PICBelt0012.  
   2.  Another extracts the value of the temperature, 360°.  
@@ -33,4 +31,7 @@ The [Cloud](./Glossary/Cloud.md) receives a [Message](./Glossary/Message.md) fro
 <br>
 <br>
 
-## Related Terms
+# Related Terms
+- [Cloud](./Glossary/Cloud.md)
+- [Message](./Glossary/Message.md)
+- [PEM](./Glossary/PEM.md)

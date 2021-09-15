@@ -4,46 +4,38 @@ keywords: messages, messaging, devices
 
 status: approved
 created: 20170927
-updated: 20171011
+updated: 20210824
 createdby: bytemaster-0xff
-updatedby: klworkman
+updatedby: JennyWrenWolf
 ---
 [Home](../Index.md)
 
-# Device Messaging
-
-Devices communicate with servers by sending and receiving messages.  You should define all messages
-that you want your application to send and receive.  As part of this, you will define the format that your message will use.
-Examples of formats include: JSON, XML, Binary, Delimited, etc.  
-
-To help get you started, complete the following steps:
-1. Create samples of the messages to be used in both verifiers and simulators.
-2. Define the fields that make up your messages as well as how those fields should be extracted or parsed.
-3. As an optional step, create verifiers to check your parsers without even having your device send messages.
-
-After you have created your messages, you can use them as a basis for building simulators to test out your system
-flow prior to bringing real devices online.
-
-Messages can either be [received from a device](IncomingMessages.md) from a [Listener](../PipelineModules/Listener.md) or [sent to a server or service](OutgoingMessages.md) from a [Transmitter](../PipelineModules/Transmitter.md).
+# Message
 
 
-## Topics
+## Definition
+IoT is all about Devices and the Cloud communicating.  These conversations are made up of Messages that share data and initiate actions. They generally consist of four parts:
 
-[Parsing Index](Parsing/Index.md)
+- [Device ID](./Glossary/DeviceID.md) - which specific [Device](./Glossary/Device.md) sent the message
+- Where the message is being sent to      device configuration????????
+- [Message ID](./Glossary/MessageID.md) - what type of message is being sent
+- [Payload](./Glossary/Payload.md) - the data or value being sent
 
-[Overview](Parsing/Overview.md)
+Messages are formatted in the NuvIoT Studio as independent objects which means that a single [Message ID] may be used in a variety of situations.  If using an off the shelf Device Type (which is a pre-constructed unit with sensors and control boards), you will probably not have the ability to change the message format.
 
-[Content Types](ContentTypes.md)
+<br>
+<br>
+<br>
 
-[Message Fields](MessageFields.md)
+## Example
 
-[Parsing Strategies](Parsing/ParsingStrategies.md)
+The *Heat Sensing Conveyor Belt* owned by *Plymouth Manufacturing* began to overheat.  It sent a message to the Cloud stating that HSBelt0012, it's ID number, was sending a message to the Cloud with a temperature reading of 120 degrees.
+<br>
 
-[State Sets](./TypeSystem/StatesAndEnums.md)
+## Related Terms
+- Device Message
+- Pipeline Execution Model
 
-[Type System](./TypeSystem/Index.md)
 
-[Unit Sets](./TypeSystem/ValueWithUnits.md)
 
-[Verifiers](./Parsing/Verifiers.md)
 
