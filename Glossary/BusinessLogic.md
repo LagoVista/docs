@@ -2,25 +2,42 @@
 title: BusinessLogic
 keywords: 
 
-status: new
+status: Complete
 created: 20210910
 updated: 20210912
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Quick Def
+Note: Quick Def.
 ---
-[Home](../Index.md)
+[Home](../Index.md) > [Glossary](./Index.md)
 
 # Business Logic 
 ## Definition
-Business Logic is [Script](./Glossary/Script.md) in a [Workflow](./Glossary/Workflow.md) that compares incoming values to expected values.  If the incoming value is expected, the [Script](./Glossary/Script.md) will indicate True.  However, if the value is not expected, False is produced.  Business Logic can also indicate why a False response was created and may be programmed to specify an [Error Code](./Glossary/ErrorCode.md).  
+Business Logic is [Script](./Glossary/Script.md) in a [Workflow](./Glossary/Workflow.md) that can perform calculations and comparisons, send emails and [Messages](./Glossary/Message.md), as well as multiple other functions that are typical of programs. 
 
 <br>
 <br>
 <br>
 
-## Example
-The *Heat Sensing Conveyor Belt* sent a [Message](./Glossary/Message.md) to the [Cloud](./Glossary/Cloud.md) containing a value of 135°.  This value is expected so a True response is indicated in the [Workflow](./Glossary/Workflow.md).  A reading of 1000° would not have been valid and would have produced an [Error Code](./Glossary/ErrorCode.md).
+## Examples
 
+- *Example 1*
 
+    The *Plymouth IoT Conveyor Belt* sent a [Message](./Glossary/Message.md) to the [Cloud](./Glossary/Cloud.md) containing a value of 135°.  This value is in the expected range so a True response is indicated in the [Workflow](./Glossary/Workflow.md).  A reading of 480° would not have been in the expected range and would have produced an [Error Code](./Glossary/ErrorCode.md).
+
+<br>
+
+- *Example 2*
+
+    The *Plymouth IoT Conveyor Belt* sent a [Message](./Glossary/Message.md) to the [Cloud](./Glossary/Cloud.md) that it was shutting down at 3:30PM.  The belt is supposed to run until 4:00PM so an [Error Code](./Glossary/ErrorCode.md) was produced and the manager received a [Message](./Glossary/Message.md) of the conflict.
+<br>
+<br>
+<br>
+
+# Related Terms
+- [Cloud](./Glossary/Cloud.md)
+- [Error Code](./Glossary/ErrorCode.md)
+- [Message](./Glossary/Message.md)
+- [Script](./Glossary/Script.md)
+- [Workflow](./Glossary/Workflow.md)

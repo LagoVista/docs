@@ -12,10 +12,27 @@ updatedby: Kevin D. Wolf
 
 # Device Configurations
 
-A device configuration consists of two parts:
+## **Definition**
+A Device Configuration is a set of instructions called [Routes](./Routes/Route.md) which provide instructions on how [Messages](./) from a [Device](./Devices/Index.md) are handled and stored in the Cloud.  It is built independently of any [Device](./Devices/Index.md) so it can be reused.  A Device Configuration also contains [Properies](./), [Custom State Sets](./), [Error Codes](./) and [Watch Dogs](./).
 
-* A collection of [routes](../Routes/Route.md)
-* A set of Properties
+<br>
+
+## Example
+
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+Move to Routes page
 
 When you create a [solution](../Deployment/Solution.md) you specify a set of [listeners](../PipelineModules/Listener.md) and a
 planner as well as any supported device configurations.  The listeners job is to listen for messages, once a message is received

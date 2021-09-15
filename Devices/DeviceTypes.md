@@ -2,24 +2,20 @@
 title: Device Types
 keywords: device, devicetypes, deviceconfiguration
 
-status: approved
+status: inprocess
 created: 20170922
-updated: 20171013
+updated: 20210819
 createdby: bytemaster-0xff
-updatedby: klworkman
+updatedby: JennyWrenWolf
 ---
 [Home](../Index.md) > [Devices](Index.md)
 
 # Device Types
 
-Without devices and sensors, you cannot have IoT.  At the heart of any IoT system, you will find devices and sensors.
-Ideally, you will be able to find off-the-shelf hardware, but you may need to create custom hardware.  Either way, these 
-devices and sensors will have attributes such as names, model numbers, etc.
+## Definition
 
-You can add Device Types to help describe devices in your application.  When you create your Device Type, you
-will need to give it a name, key, and model number.  You can also add a manufacturer and other metadata about the Device Type.
+The Device Type is a piece of hardware that contains a unique set of sensors, actuators, and control boards whose data is processed in a specific manner. The Device Type identifies what Device is sending a message.  When NuvIoT receives the message, it can process it in a manner specific to that Device.  
 
-Finally, you will need to add a default [Device Configuration](../Devices/DeviceConfigurations.md).  Since Device Types are used
-to provision new devices, the default Device Configuration will be selected but can be overridden. 
-
+## Example
  
+## Related Terms

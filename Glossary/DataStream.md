@@ -8,17 +8,15 @@ updated: 20210909
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Notes: Complete
+Notes: Complete.
 ---
-[Home](../Index.md)
+[Home](../Index.md) > [Glossary](./Index.md)
 
 # Data Stream
-
 ## Definition
 
-Data Streams are a powerful way to capture and organize data.  They produce information consisting of the [Device ID](./Glossary/DeviceID.md), [Message ID](./MessageID.md) and a time stamp for when the data was received.  The Data Streams may then be used within a [Deployment Instance](./Glossary/DeploymentInstance.md) for calculations and comparisons.  They may also be stored for later reference and use.
+Data Streams are a powerful way to capture and organize data.  They produce information consisting of the [Device ID](./Glossary/DeviceID.md), [Message ID](./Glossary/MessageID.md) and a time stamp for when the data was received.  The Data Streams may then be used within a [Deployment Instance](./Glossary/DeploymentInstance.md) for calculations and comparisons.  They may also be stored for later reference and use.
   
-
 <br>
 <br>
 <br>
@@ -31,4 +29,10 @@ Temperatures of the *Plymouth IoT Conveyor Belt* were saved as Data Streams.  Ev
 <br>
 <br>
 
-## Related Terms
+# Related Terms
+- [Cloud](./Glossary/Cloud.md)
+- [Deployment Instance](./Glossary/DeploymentInstance.md)
+- [Device](./Glossary/Device.md)
+- [Device ID](./Glossary/DeviceID.md)
+- [Message ID](./Glossary/MessageID.md)
+- [Time Series Data Stream](./Glossary/TimeSeriesDataStream.md)

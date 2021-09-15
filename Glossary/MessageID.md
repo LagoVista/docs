@@ -4,16 +4,15 @@ keywords:
 
 status: new
 created: 20210910
-updated: 20210912
+updated: 20210914
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Quick Def
+Note: Quick Def.
 ---
-[Home](../Index.md)
+[Home](../Index.md) > [Glossary](./Index.md)
 
 # Message ID
-
 ## Definition
 A Message ID is a unique set of letters and/or numbers that is used to identify the type of [Message](./Glossary/Message.md).  It allows the program to define how the [Message](./Glossary/Message.md) should be processed on the server.
 
@@ -22,4 +21,13 @@ A Message ID is a unique set of letters and/or numbers that is used to identify 
 <br>
 
 ## Example
-The *Plymouth IoT Conveyor Belt* sends a [Message](./Glossary/Message.md) to the [Cloud](./Glossary/Cloud.md) with its Message ID of Temperature.  The [Cloud](./Glossary/Cloud.md) uses the Message ID to identify that the [Message](./Glossary/Message.md) contains a temperature. This information is used to identify the correct [Device Configuration](./Glossary/Device Confguration.md) to process the data.
+The *Plymouth IoT Conveyor Belt* sends a [Message](./Glossary/Message.md) to the [Cloud](./Glossary/Cloud.md) with a Message ID of Temperature.  The [Cloud](./Glossary/Cloud.md) uses the Message ID to identify that the [Message](./Glossary/Message.md) contains a temperature. This information is used to identify the correct [Device Configuration](./Glossary/DeviceConfiguration.md) to process the data.
+
+<br>
+<br>
+<br>
+
+# Related Terms
+- [Cloud](./Glossary/Cloud.md)
+- [Device Configuration](./Glossary/DeviceConfiguration.md)
+- [Message](./Glossary/Message.md)

@@ -4,17 +4,15 @@ keywords: messages, messaging, devices
 
 status: complete
 created: 20210823
-updated: 20210909
+updated: 20210914
 createdby: JennyWrensWolf
 updatedby: JennyWrenWolf
 
-NOtes: Complete
+NOtes: Complete.
 ---
-[Home](../Index.md)
+[Home](../Index.md) > [Glossary](./Index.md)
 
 # Message
-
-
 ## Definition
 IoT is all about [Devices](./Glossary/Device.md) and the [Cloud](Glossary/Cloud.md) communicating.  These conversations are made up of Messages that share data and initiate actions. They generally consist of three parts:
 
@@ -29,10 +27,17 @@ Message formats are defined in the [Studio](./Glossary/Studio.md) as reusable ob
 <br>
 
 ## Example
-
 The bearings' in the *Plymouth Iot Conveyor Belt* began to overheat so it sent a message to the [Cloud](./Glossary/Cloud.md).  The Message contained the [Device ID](./Glossary/DeviceID.md) (PICBelt0012), the [Message ID](./Glossary/MessageID.md) (overheat), and a [Payload](./Glossary/Payload.md) (435°).
+
 <br>
 <br>
 <br>
 
-## Related Terms
+# Related Terms
+- [Cloud](Glossary/Cloud.md)
+- [Device](./Glossary/Device.md)
+- [Device ID](./Glossary/DeviceID.md)
+- [Message ID](./Glossary/MessageID.md)
+- [Payload](./Glossary/Payload.md)
+- [Solutions](./Glossary/Solution.md)
+- [Studio](./Glossary/Studio.md)
