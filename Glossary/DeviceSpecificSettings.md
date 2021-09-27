@@ -1,35 +1,34 @@
 ---
-title: Device Specific Settings
+title: Device Properties
 keywords: 
 
-status: in process
+status: complete
 created: 20210910
 updated: 20210915
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Quick Def. 9/15 Example
+Note: Quick Def. 9/15 Example.  Should this be called Properties? Instead of Device Specific Settings? How?  By using Device Configuration or Firmware?
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
-# Device Specific Settings
+# Device Specific Settings (Properties)
 ## Definition
-Properties are used to define values saved along with a [Device](./Glossary/Device.md).  These settings allow for customizing each [Device](./Glossary/Device.md) individually.
+Properties are defined in a [Device Configuration](./DeviceConfiguration.md) and allow values to be saved with a specific [Device](./Device.md).  These settings allow for customizing each [Device](./Device.md) individually and can be used in [Workflows](./Workflow.md) and [Firmware](./Firmware.md).
 
 <br>
 <br>
 <br>
 
 ## Example
-*Plymouth Manufacturing* decided to upgrade their security system by catching activity on video for one minute every hour.  They were able to add a Device Specific Setting to their [Device](./Glossary/Device.md) to film every hour versus the programmed "Triggered by Motion" setting.
- upgraded their security system by recording video based on their location. In some high-traffic locations, they wanted to only record 15 seconds of video when motion is detected, where as in high risk areas they wanted to record 2 minutes. They were able to create and configure this setting as a property on the device .
+*Plymouth Manufacturing* decided to upgrade their security system based on the camera's location. In high-traffic areas, they only wanted to record fifteen seconds of video when motion was detected.  They wanted to record two minutes in high-risk areas. They were able to create and configure a Device Property on each [Device](./Device.md) to define how much time was recorded.
 
 <br>
 <br>
 <br>
 
 # Related Terms
-- [Deployment Instance](./Glossary/DeploymentInstance.md)
-- [Device Repository](./Glossary/DeviceRepository.md)
+- [Deployment Instance](./DeploymentInstance.md)
+- [Device Repository](./DeviceRepository.md)
 
 

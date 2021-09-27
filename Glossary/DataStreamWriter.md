@@ -2,29 +2,34 @@
 title: DataStreamWriter
 keywords: 
 
-status: new
+status: complete
 created: 20210910
-updated: 20210910
+updated: 20210924
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Look at Definition and Example
+Note: Look at Definition and Example.  Message or PEM?.
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
-# Data Stream Writer ...Coming Soon
+# Data Stream Writer
 ## Definition
-A Pipeline Module that will write data from a device Message to a data stream.
+A Data Stream Writer is a [Pipeline Module](./PipelineModule.md) that writes data from a [Message](./Message.md) or a [Workflow](./Workflow.md) to a [Data Stream](./DataStream.md).
+
 <br>
 <br>
 <br>
 
 ## Example
-
-For the PL Belt Iot Application the engineer wanted to track the belt's temperat over time.  When the engineer built the route for the messages received from the cb they added a data stream writer and mapped the message data to the writer.
+The engineer wanted to track the temperature of the *Plymouth IoT Conveyor Belt* over time.  When  she built the [Route](./Route.md) for the [Messages](./Message.md) received from the belt, she added a Data Stream Writer and [Mapped](./Mapping.md) the [Message](./Message.md) data to it. This made the captured data available to be used in the [Dashboard](./Dashboard.md).
 
 <br>
 <br>
 <br>
 
 # Related Terms
+- [Data Stream](./DataStream.md)
+- [Mapped](./Mapping.md)
+- [Message](./Message.md)
+- [Pipeline Module](./PipelineModule.md)
+- [Route](./Route.md)

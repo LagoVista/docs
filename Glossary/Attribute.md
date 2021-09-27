@@ -14,7 +14,7 @@ Note: Quick Def.
 
 # Attribute
 ## Definition
-Attributes are values associated with a [Device](./Glossary/Device.md) that can be calculated from sensor data, be used in [Business Logic](./Glossary/BusinessLogic.md) and saved for future reference.
+Attributes are values associated with a [Device](./Device.md) that can be calculated from sensor data, be used in [Business Logic](./BusinessLogic.md) and saved for future reference.
 
 <br>
 <br>
@@ -22,12 +22,12 @@ Attributes are values associated with a [Device](./Glossary/Device.md) that can 
 
 ## Example
 
-The current temperature of the *Plymouth IoT Conveyor Belt* was saved as an Attribute on the device. It was then used in a calculation by [Business Logic](./Glosssary/BusinessLogic.md) to determine if it was over heating.
+The current temperature of the *Plymouth IoT Conveyor Belt* was saved as an Attribute on the device. It was then used in a calculation by [Business Logic](./BusinessLogic.md) to determine if it was over heating.
 
 <br>
 <br>
 <br>
 
 # Related Terms
-- [Business Logic](./Glosssary/BusinessLogic.md)
-- [Device](./Glossary/Device.md)
+- [Business Logic](./BusinessLogic.md)
+- [Device](./Device.md)

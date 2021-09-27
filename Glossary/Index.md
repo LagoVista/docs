@@ -18,49 +18,49 @@ Note:
 
 # <a name="jumpA"></a> A
 
-[Apps](./Glossary/Apps.md) 
+[Apps](./Apps.md) 
 
-[Attribute](./Glossary/Attribute.md)
+[Attribute](./Attribute.md)
 
 # <a name="jumpB"></a> B
 
-[Business Logic](./Glossary/BusinessLogic.md)
+[Business Logic](./BusinessLogic.md)
 
 # <a name="jumpC"></a> C
 
-[Cloud](./Glossary/Cloud.md)
+[Cloud](./Cloud.md)
 
-[Custom Settings](./Glossary/CustomSettings.md) 
+[Custom Settings](./CustomSettings.md) 
 
 # <a name="jumpD"></a> D
 
-[Dashboard](./Glossary/Dashboard.md)
+[Dashboard](./Dashboard.md)
 
-[Data Stream](./Glossary/DataStream.md)
+[Data Stream](./DataStream.md)
 
-[Data Stream Writer](./Glossary/DataStreamWriter.md)
+[Data Stream Writer](./DataStreamWriter.md)
 
-[Deployment Instance](./Glossary/DeploymentInstance.md) 
+[Deployment Instance](./DeploymentInstance.md) 
 
-[Device](./Glossary/Device.md)
+[Device](./Device.md)
 
-[Device Configuration](./Glossary/DeviceConfiguration.md)
+[Device Configuration](./DeviceConfiguration.md)
 
-[Device ID](./Glossary/DeviceID.md)
+[Device ID](./DeviceID.md)
 
-[Device Model](./Glossary/DeviceModel.md)
+[Device Model](./DeviceModel.md)
 
-[Device Repository](./Glossary/DeviceRepository.md)
+[Device Repository](./DeviceRepository.md)
 
-[Device Specific Settings](./Glossary/DeviceSpecificSettings.md) 
+[Device Specific Settings](./DeviceSpecificSettings.md) 
 
 # <a name="jumpE"></a> E
 
-[Error Code](./Glossary/ErrorCode.md)
+[Error Code](./ErrorCode.md)
 
 # <a name="jumpF"></a> F
 
-[Field Service Lite](./Glossary/FieldServiceLite.md)
+[Field Service Lite](./FieldServiceLite.md)
 
 # <a name="jumpG"></a> G
 
@@ -68,11 +68,11 @@ Note:
 
 # <a name="jumpI"></a> I
 
-[Input](./Glossary/Input.md)
+[Input](./Input.md)
 
-[Input Command](./Glossary/InputCommand.md)
+[Input Command](./InputCommand.md)
 
-[IoT Edge](./Glossary/IoTEdge.md)
+[IoT Edge](./IoTEdge.md)
 
 # <a name="jumpJ"></a> J
 
@@ -80,72 +80,72 @@ Note:
 
 # <a name="jumpL"></a> L
 
-[Listener](./Glossary/Listener.md)
+[Listener](./Listener.md)
 
 # <a name="jumpM"></a> M
 
-[Mapping](./Glossary/Mapping.md)
+[Mapping](./Mapping.md)
 
-[Message](./Glossary/Message.md) 
+[Message](./Message.md) 
 
-[Message ID](./Glossary/MessageID.md)
+[Message ID](./MessageID.md)
 
 
 # <a name="jumpN"></a> N
 
 # <a name="jumpO"></a> O
 
-[Output Command](./Glossary/OutputCommand.md)
+[Output Command](./OutputCommand.md)
 
 # <a name="jumpP"></a> P
 
-[Parser](./Glossary/Parser.md)
+[Parser](./Parser.md)
 
-[Payload](./Glossary/Payload.md)
+[Payload](./Payload.md)
 
-[PEM](./Glossary/PEM.md) 
+[PEM](./PEM.md) 
 
-[Pipeline Module](./Glossary/PipelineModule.md) 
+[Pipeline Module](./PipelineModule.md) 
 
-[Planner](./Glossary/Planner.md) 
+[Planner](./Planner.md) 
 
 # <a name="jumpQ"></a> Q
 
 # <a name="jumpR"></a> R
 
-[Routes](./Glossary/Routes.md)
+[Routes](./Routes.md)
 
 # <a name="jumpS"></a> S
 
-[Script](./Glossary/Script.md) 
+[Script](./Script.md) 
 
-[Sentinel](./Glossary/Sentinel.md)
+[Sentinel](./Sentinel.md)
 
-[Service Ticket](./Glossary/ServiceTicket.md) 
+[Service Ticket](./ServiceTicket.md) 
 
-[Solution](./Glossary/Solution.md) 
+[Solution](./Solution.md) 
 
-[State Machine](./Glossary/StateMachine.md)
+[State Machine](./StateMachine.md)
 
-[State Set](./Glossary/StateSet.md) 
+[State Set](./StateSet.md) 
 
-[Studio](./Glossary/Studio.md)
+[Studio](./Studio.md)
 
 # <a name="jumpT"></a> T
 
-[Time Series Data Stream](./Glossary/TimeSeriesDataStream)
+[Time Series Data Stream](./TimeSeriesDataStream)
 
 # <a name="jumpU"></a> U
 
 # <a name="jumpV"></a> V
 
-[Versioning](./Glossary/Versioning.md)
+[Versioning](./Versioning.md)
 
 # <a name="jumpW"></a> W
 
-[Widget](./Glossary/Widget.md)
+[Widget](./Widget.md)
 
-[Workflow](./Glossary/Workflow.md)
+[Workflow](./Workflow.md)
 
 # <a name="jumpX"></a> X
 

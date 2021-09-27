@@ -4,7 +4,7 @@ keywords: messages, messaging, devices
 
 status: complete
 created: 20210823
-updated: 20210914
+updated: 20210924
 createdby: JennyWrensWolf
 updatedby: JennyWrenWolf
 
@@ -14,30 +14,30 @@ NOtes: Complete.
 
 # Message
 ## Definition
-IoT is all about [Devices](./Glossary/Device.md) and the [Cloud](Glossary/Cloud.md) communicating.  These conversations are made up of Messages that share data and initiate actions. They generally consist of three parts:
+IoT is all about [Devices](./Device.md) and the [Cloud](./Cloud.md) communicating.  These conversations are made up of Messages that share data and initiate actions. They generally consist of three parts:
 
-- [Device ID](./Glossary/DeviceID.md) - which specific [Device](./Glossary/Device.md) sent the message
-- [Message ID](./Glossary/MessageID.md) - what type of message is being sent
-- [Payload](./Glossary/Payload.md) - the data or value being sent
+- [Device ID](./DeviceID.md) - which specific [Device](./Device.md) sent the message
+- [Message ID](./MessageID.md) - what type of message is being sent
+- [Payload](./Payload.md) - the data or value being sent
 
-Message formats are defined in the [Studio](./Glossary/Studio.md) as reusable objects.  This means that a single Message format may be used in a variety of [Solutions](./Glossary/Solution.md).  
+Message formats are defined in the [Studio](./Studio.md) as reusable objects.  This means that a single Message format may be used in a variety of [Solutions](./Solution.md).  
 
 <br>
 <br>
 <br>
 
 ## Example
-The bearings' in the *Plymouth Iot Conveyor Belt* began to overheat so it sent a message to the [Cloud](./Glossary/Cloud.md).  The Message contained the [Device ID](./Glossary/DeviceID.md) (PICBelt0012), the [Message ID](./Glossary/MessageID.md) (overheat), and a [Payload](./Glossary/Payload.md) (435°).
+The bearings' in the *Plymouth Iot Conveyor Belt* began to overheat so it sent a message to the [Cloud](./Cloud.md).  The Message contained the [Device ID](./DeviceID.md) (PICBelt0012), the [Message ID](./MessageID.md) (overheat), and a [Payload](./Payload.md) (435°).
 
 <br>
 <br>
 <br>
 
 # Related Terms
-- [Cloud](Glossary/Cloud.md)
-- [Device](./Glossary/Device.md)
-- [Device ID](./Glossary/DeviceID.md)
-- [Message ID](./Glossary/MessageID.md)
-- [Payload](./Glossary/Payload.md)
-- [Solutions](./Glossary/Solution.md)
-- [Studio](./Glossary/Studio.md)
+- [Cloud](./Cloud.md)
+- [Device](./Device.md)
+- [Device ID](./DeviceID.md)
+- [Message ID](./MessageID.md)
+- [Payload](./Payload.md)
+- [Solutions](./Solution.md)
+- [Studio](./Studio.md)
