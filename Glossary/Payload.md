@@ -2,30 +2,30 @@
 title: Payload
 keywords: 
 
-status: new
+status: complete
 created: 20210910
-updated: 20210914
+updated: 20210924
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Quick Def.
+Note: wording
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # Payload
-The Payload of a [Message](./Glossary/Message.md) is specific values or data produced by a [Device](./Glossary/Device.md).
+The Payload of a [Message](./Message.md) contains specific values or data produced by a [Device](./Device.md).  The Payload can be formatted as different [Content Types](./ContentType.md).
 
 <br>
 <br>
 <br>
 
 ## Example
-The *Plymouth IoT Conveyor Belt* sent a [Message](./Glossary/Message.md) with a payload of 130°.
+The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) with a Payload of 130°.  This payload was sent as JSON string and looked like `{temperature:130}`.
 
 <br>
 <br>
 <br>
 
 # Related Words
-- [Device](./Glossary/Device.md)
-- [Message](./Glossary/Message.md)
+- [Device](./Device.md)
+- [Message](./Message.md)

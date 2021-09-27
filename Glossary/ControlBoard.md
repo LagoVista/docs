@@ -1,19 +1,21 @@
 ---
-title: FieldServiceLite
+title: ControlBoard
 keywords: 
 
-status: new
-created: 20210915
-updated: 20210915
+status:new
+created: 20210924
+updated: 20210924
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: in brain dump
+Note: 
 ---
+
 [Home](../Index.md) > [Glossary](./Index.md)
 
-# Field Service Lite ...Coming Soon
+# Control Board ... Coming Soon
 ## Definition
+
 
 
 <br>
@@ -21,6 +23,8 @@ Note: in brain dump
 <br>
 
 ## Example
+
+
 
 <br>
 <br>

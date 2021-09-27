@@ -71,20 +71,20 @@ Notes: Questions in body (Software-Logistics?  Software-Logistics is mentioned i
 <br>
 
 ___
-# **Definition** <a name="jumpA"></a>   
+# Definition <a name="jumpA"></a>   
 A Deployment Instance is a deployed, or published, version of a [Solution](./Glossary/Solution.md).   When the Instance begins functioning, the IoT [Device](./Glossary/Device.md) and the Cloud begin to communicate.
 
 <br>
 
 ___
-# **Example** <a name="jumpB"></a> 
+# Example <a name="jumpB"></a> 
 
 The employees at *Plymouth Manufacturing* cheered when *NuvIoT* published the Deployment Instance for their all of their *Plymouth IoT Conveyor Belts* and their security system.  Now the belts are connected by IoT which will monitor the bearings' temperatures and address overheating problems on their own.
 
 <br>
 
 ___
-## **Overview** <a name="jumpC"></a> 
+# Overview <a name="jumpC"></a> 
 I think the 2nd paragraph belongs with Solutions, not Deployment Instance.
 
 Once a Solution and Device Repository have been created, you are ready to publish your first Deployment Instance as a proof of concept.  Once this is published, it will be up and running and waiting to receive messages.  
