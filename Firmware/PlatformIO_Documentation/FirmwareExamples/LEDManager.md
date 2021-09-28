@@ -22,7 +22,7 @@ This Example blinks LED's on via the ESP32's IO.
 <br>
 
 ## Example
-*A Comany* has one of these boards.   It will be posiible to send commands back through a simpleserial app to change the blink rate of any of the onbaord LED's.  
+*A Company* has one of these boards.   It will be posiible to send commands back through a simpleserial app to change the blink rate of any of the onbaord LED's. 
 
 <br>
 <br>
