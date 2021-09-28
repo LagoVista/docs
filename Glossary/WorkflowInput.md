@@ -8,7 +8,7 @@ updated: 20210914
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Is this even necessary?  Everyone knows what input is  Quick Def.
+Note:  Quick Def.
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 

@@ -23,7 +23,7 @@ The Device Model is a piece of hardware that contains a unique set of sensors, a
 ## Example
 - *Example 1*
 
-    When *Plymouth Manufacturing* purchased their conveyor belt, they had a choice between two Device Models.  The Standard Device Model had an AC motor driven belt that monitored the bearings' temperature through an IoT platform.  The Elite Device Model had a DC motor driven belt, was made of stronger materials, and monitored both the bearings' temperatures and weight load through an IoT platform.  Both of these Device Models used the same [Device Configuration](./Glossary/DeviceConfiguration.md).
+    When *Plymouth Manufacturing* purchased their conveyor belt, they had a choice between two Device Models.  The Standard Device Model had an AC motor driven belt that monitored the bearings' temperature through an IoT platform.  The Elite Device Model had a DC motor driven belt, was made of stronger materials, and monitored both the bearings' temperatures and weight load through an IoT platform.  Both of these Device Models used the same [Device Configuration](./DeviceConfiguration.md).
 
 - *Example 2*
 
@@ -35,5 +35,5 @@ The Device Model is a piece of hardware that contains a unique set of sensors, a
 
 # Related Terms
 - [Devices](./Glosssary/Devices.md)
-- [Device Configuration](./Glossary/DeviceConfiguration.md)
+- [Device Configuration](./DeviceConfiguration.md)
 
