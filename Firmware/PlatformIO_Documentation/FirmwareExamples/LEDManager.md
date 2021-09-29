@@ -1,12 +1,12 @@
 ---
-title: LEDManager
-keywords: 
+Title: LEDManager
+Keywords: 
 
-status: complete
-created: 20210928
-updated: 20210928
-createdby: RMD
-updatedby: RMD
+Status: complete
+Created: 20210928
+Updated: 20210928
+Createdby: RMD
+Updatedby: RMD
 
 Notes: This firmware example will compile locally.   But it is necessary to open the .ini file and change the nuviot library location.
 ---
@@ -20,9 +20,15 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 
 
 ## Example
-*A Company* has one of these boards.   It will be posiible to send commands back through a simple serial app to change the blink rate of any of the onbaord LED's. 
+> In this example, there are three separate variables controlling three separate flash rates.
+> 1. **appBeatRate** will affect how often that K5 (relay-5) will turn off and on.   
+> This can control a piezo electric beeper attached to this relay.
+> 2. **appOnlineRate** controls how often the onboard blue LED will turn on and off.
+> 3. **appErrorRate** controls how often the red LED blinks.   The red LED is the LED used to display an 'error' codition.
+> 
 
 ## Link
-[LEDManager](https://github.com/softwarelogistics/FirmwareExamples/tree/main/LEDManager)
+> The below link is the source for the code.\
+> [LEDManager](https://github.com/softwarelogistics/FirmwareExamples/tree/main/LEDManager)
 
 
