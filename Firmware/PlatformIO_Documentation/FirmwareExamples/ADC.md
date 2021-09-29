@@ -30,6 +30,10 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 >>  adc.setBankEnabled(2, true);\
 >>  adc.setup(&ioConfig);
 
+## Console Output
+> Below is a picture of part of the console output.   
+![Console Output](https://github.com/LagoVista/docs/blob/09282021WIP/Firmware/PlatformIO_Documentation/FirmwareExamples/images/ADC_console_out.PNG)
+
 ## Link
 > The below link is the source for the code.\
 > [ADC](https://github.com/softwarelogistics/FirmwareExamples/tree/main/ADC)
