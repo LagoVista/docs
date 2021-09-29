@@ -19,10 +19,10 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 
 
 ## Example
->You can set up each of the ADC's in a different way by using the following code snip inside setup()
->>  ioConfig.ADC1Config = ADC_CONFIG_ADC;
->>  ioConfig.ADC1Name = "adc1";
->>  ioConfig.ADC1Scaler = 1.0;
+>You can set up each of the ADC's in a different way by using the following code snip inside setup()\
+>>  ioConfig.ADC1Config = ADC_CONFIG_ADC;\
+>>  ioConfig.ADC1Name = "adc1";\
+>>  ioConfig.ADC1Scaler = 1.0;\
 >Naturally, you'll want to repeat this code and change the nomenclature to match whichever ADC you happen to be using.
 ### Use:
 >If you woudl like to use this example in a project, you'll need to copy over the functions:
