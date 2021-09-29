@@ -26,7 +26,7 @@ This Example blinks LED's on via the ESP32's IO.
 
 ## Link
 <br>
-[LEDManager https://github.com/softwarelogistics/FirmwareExamples/tree/main/LEDManager] [LEDManager]
+[LEDManager] (https://github.com/softwarelogistics/FirmwareExamples/tree/main/LEDManager)
 <br>
 <br>
 <br>
