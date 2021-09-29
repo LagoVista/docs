@@ -8,7 +8,7 @@ Updated: 20210928
 Createdby: RMD
 Updatedby: RMD
 
-Notes: This firmware example will compile locally.   But it is necessary to open the .ini file and change the nuviot library location.
+Notes: This firmware example will compile locally.   But it is necessary to open the .ini file and change the nuviot library location.   In my case, I changed one line in the .ini file to 'lib_extra_dirs = C:\DEV\nuviot'.
 ---
 
 # LEDManager
