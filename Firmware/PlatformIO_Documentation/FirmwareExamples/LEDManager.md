@@ -25,7 +25,9 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 > This can control a piezo electric beeper attached to this relay.
 > 2. **appOnlineRate** controls how often the onboard blue LED will turn on and off.
 > 3. **appErrorRate** controls how often the red LED blinks.   The red LED is the LED used to display an 'error' codition.
-> 
+### Use:
+>If you were to use this example in a new project, you will be able to stop/start the blinking of an LED by changing the value of any of the variables mentioned above.
+>You can even effect change by sending commands back with the 'console.registerCallback(cmdCallback)' function shown in the example.
 
 ## Link
 > The below link is the source for the code.\
