@@ -26,8 +26,8 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 >Naturally, you'll want to repeat this code and change the nomenclature to match whichever ADC you happen to be using.
 ### Use:
 >If you woudl like to use this example in a project, you'll need to copy over the functions:
->>  adc.setBankEnabled(1, true);
->>  adc.setBankEnabled(2, true);
+>>  adc.setBankEnabled(1, true);\
+>>  adc.setBankEnabled(2, true);\
 >>  adc.setup(&ioConfig);
 
 ## Link
