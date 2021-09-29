@@ -13,7 +13,7 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 
 # LEDManager
 
-## Definition
+## Description
 >This Example blinks LED's on via the ESP32's IO.
 >You can use LagoVista.SerialPortApp.exe to send commands back to the board to effect changes in the blink rate.
 >A local method: void cmdCallback(String cmd) is used to send that data.   
