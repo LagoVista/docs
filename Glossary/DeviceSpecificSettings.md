@@ -28,7 +28,11 @@ Properties are defined in a [Device Configuration](./DeviceConfiguration.md) and
 <br>
 
 # Related Terms
+- [Device](./Device.md)
+- [Device Configuration](./DeviceConfiguration.md)
 - [Deployment Instance](./DeploymentInstance.md)
 - [Device Repository](./DeviceRepository.md)
+- [Firmware](./Firmware.md)
+- [Workflows](./Workflow.md)
 
 

@@ -4,7 +4,7 @@ keywords:
 
 status: new
 created: 20210910
-updated: 20210914
+updated: 20210928
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,21 +14,26 @@ Note:  Quick Def.
 
 # Input
 ## Definition
-Data or values that are received from a [Device](./Glosssary/Device.md) and entered into a [Pipeline Module](./Glossary/PipelineModule.md).
+When a [Message](./Message.md) is received from a [Device](./Device.md), the [Input Translator](./InputTranslator) is responsible for extracting data from the [Payload](./Payload.md) and making it available within the [Workflow](./Workflow.md).  The data that is produced from the [Input Translator](./InputTranslator) is considered the Workflow Input.
+
+
 
 <br>
 <br>
 <br>
 
 ## Example
-Motion was detected by the Motion Detector at *Plymouth Manufacturing*.  The [Device](./Glossary/Device.md) sent a [Message](./Device/Message.md) that provided an Input to the [Cloud](./Glossary/Cloud.md) of "On," indicating motion.
+The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) to its [Deployment Instance](./DeploymentInstance.md) with a [Payload](./Payload) of 425°.  This was extracted as an integer and used as Workflow Input into the `temperature` [Workflow](./Workflow.md).
 
 <br>
 <br>
 <br>
 
 # Related Terms
-- [Cloud](./Glossary/Cloud.md)
+- [Deployment Instance](./DeploymentInstance.md)
 - [Device](./Glosssary/Device.md)
+- [Input Translator](./InputTranslator)
 - [Message](./Device/Message.md)
-- [Pipeline Module](./Glossary/PipelineModule.md)
+- [Payload](./Payload.md)
+- [Pipeline Module](./PipelineModule.md)
+- [Workflow](./Workflow.md)

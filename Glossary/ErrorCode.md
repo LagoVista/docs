@@ -29,7 +29,7 @@ Optionally, NuvIoT has a very basic [Field Service](./FieldServiceLite.md) imple
 <br>
 
 ## Example
-The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) to the [Cloud](./Cloud.md) with a bearing temperature of 425°.  [Business Logic](./BusinessLogic.md) determined this was out of range and generated an Error Code which sent a [Notification](./Notification.md) to the company owner. It also sent a [Message](./Message.md) back to the [Device](./Device.md) to stop the conveyor belt before any damage took place.  No further [Messages](./Message.md) were received by the [Message Watch Dog](./WatchDog.md) which once again generated an Error Code and sent a [Notification](./Notification) to the owner.  
+The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) to the [Deployment Instance](./DeploymentInstance.md) with a bearing temperature of 425°.  [Business Logic](./BusinessLogic.md) determined this was out of range and generated an Error Code which sent a [Notification](./Notification.md) to the company owner. It also sent a [Message](./Message.md) back to the [Device](./Device.md) to stop the conveyor belt before any damage took place.  No further [Messages](./Message.md) were received by the [Message Watch Dog](./WatchDog.md) which once again generated an Error Code and sent a [Notification](./Notification) to the owner.  
 
 <br>
 <br>
@@ -37,11 +37,12 @@ The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) to the [Cloud](.
 
 # Related Terms
 - [Business Logic](./BusinessLogic.md)
-- [Cloud](./Cloud.md)
+- [Deployment Instance](./DeploymentInstance.md)
 - [Device](./Device.md)
 - [Device Configuration](./DeviceConfiguration.md)
 - [Distribution List](./DistributionList.md)
 - [Field Service Lite](./FieldServiceLite.md)
 - [Message](./Message.md)
-- [Service Tickets](./ServiceTicket.md)
+- [Notification](./Notification.md)
+- [Service Ticket](./ServiceTicket.md)
 - [Watch Dog](./WatchDog.md)

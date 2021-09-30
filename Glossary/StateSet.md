@@ -2,19 +2,19 @@
 title: StateSet
 keywords: 
 
-status: new
+status: Complete
 created: 20210910
-updated: 20210914
+updated: 20210927
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: QuickDef.
+Note: 
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # State Set
 ## Definition
-A State Set is a set of terms which a [State Machine](./Glossary/StateMachine.md) may use to describe the current condition of a [Device](./Glossary/Device.md).
+A State Set is a set of terms which a [State Machine](./StateMachine.md) may use to describe the current condition of a [Device](./Device.md).
 
 <br>
 <br>
@@ -26,12 +26,12 @@ The State Set listed for the *Plymouth IoT Conveyor Belt* included
 - Off
 - Running
 - Paused
-- Stopped
+- Overheated
 
 <br>
 <br>
 <br>
 
 # Related Terms
-- [Device](./Glossary/Device.md)
-- [State Machine](./Glossary/StateMachine.md)
+- [Device](./Device.md)
+- [State Machine](./StateMachine.md)

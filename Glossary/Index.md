@@ -4,7 +4,7 @@ keywords:
 
 status: New
 created: 20210913
-updated: 20210913
+updated: 20210929
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -18,6 +18,8 @@ Note:
 
 # <a name="jumpA"></a> A
 
+[Actuator](./Actuator.md)
+
 [Apps](./Apps.md) 
 
 [Attribute](./Attribute.md)
@@ -29,6 +31,10 @@ Note:
 # <a name="jumpC"></a> C
 
 [Cloud](./Cloud.md)
+
+[Content Type](./ContentType.md)
+
+[Control Board](./ControlBoard.md)
 
 [Custom Settings](./CustomSettings.md) 
 
@@ -50,9 +56,13 @@ Note:
 
 [Device Model](./DeviceModel.md)
 
+[Device Firmware Update](./DevieFirmwareUpdate.md)
+
 [Device Repository](./DeviceRepository.md)
 
 [Device Specific Settings](./DeviceSpecificSettings.md) 
+
+[Distribution List](./DistributionList.md)
 
 # <a name="jumpE"></a> E
 
@@ -61,6 +71,8 @@ Note:
 # <a name="jumpF"></a> F
 
 [Field Service Lite](./FieldServiceLite.md)
+
+[Firmware](./Firmware.md)
 
 # <a name="jumpG"></a> G
 
@@ -71,6 +83,8 @@ Note:
 [Input](./Input.md)
 
 [Input Command](./InputCommand.md)
+
+[Input Translator](./InputTranslator.md)
 
 [IoT Edge](./IoTEdge.md)
 
@@ -84,14 +98,19 @@ Note:
 
 # <a name="jumpM"></a> M
 
+[Machine Learning](./MachineLearning.md)
+
 [Mapping](./Mapping.md)
 
 [Message](./Message.md) 
 
 [Message ID](./MessageID.md)
 
+[Message Type](./MessageType.md)
 
 # <a name="jumpN"></a> N
+
+[Notification](./Notification.md)
 
 # <a name="jumpO"></a> O
 
@@ -111,17 +130,25 @@ Note:
 
 # <a name="jumpQ"></a> Q
 
+[Queue](./Queue.md)
+
 # <a name="jumpR"></a> R
 
-[Routes](./Routes.md)
+[Route](./Route.md)
 
 # <a name="jumpS"></a> S
 
 [Script](./Script.md) 
 
+[Sensor](./Sensor.md)
+
 [Sentinel](./Sentinel.md)
 
+[Service Board](./ServiceBoard.md)
+
 [Service Ticket](./ServiceTicket.md) 
+
+[Seven Segment Parser](./Mapping.md)
 
 [Solution](./Solution.md) 
 
@@ -137,6 +164,8 @@ Note:
 
 # <a name="jumpU"></a> U
 
+[Unit Set](./UnitSet.md)
+
 # <a name="jumpV"></a> V
 
 [Versioning](./Versioning.md)
@@ -146,6 +175,8 @@ Note:
 [Widget](./Widget.md)
 
 [Workflow](./Workflow.md)
+
+[Workflow Input](./WorkflowInput.md)
 
 # <a name="jumpX"></a> X
 

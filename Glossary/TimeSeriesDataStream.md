@@ -2,32 +2,29 @@
 title: TimeSeriesDataStream
 keywords: 
 
-status: new
+status: in process
 created: 20210914
-updated: 20210920
+updated: 20210929
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Notes:  
+Notes:  Example is from Data Stream - if this is based on time isn't it a better example here?  Each data point must have a time stamp.  Analysize based on the time stamps.  Time Bucket (a period of time where data is grouped for analysis)
 
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # Time Series Data Stream
 ## Definition
-Time-Series Data Streams are an optimized storage technology that is very powerful for understanding the behavior of IoT devices over time.
+Time-Series Data Streams are an optimized storage technology that is very powerful for understanding the behavior of IoT devices over a period of time. 
 
-
-
-A NuvIoT supports a special type of Data Stream that allows for performing operations on data streams with respect to time.  These Data Streams are called Time Series Data Streams and  There is no difference in the way that data points are inserted into a Time Series Data Stream.  An example of these types of operations is to capture an average of values over a predefined period of time.  These predefined periods can then be grouped into what can be thought of as buckets.  Then a collection of buckets consisting of an average can be returned.  If you are familiar with writing SQL queries, you can think of this as averaging over a group-by in a SQL statement but the underlying technology makes this easier to implement as well as more efficient.  The Smart Litter Box team wanted to know how often the litter box was used each day, they could simply create an Analytics Query where the group by period or window is defined as “Days”, the window size would be defined as 1, or 1 Day, and the fields to be returned would be “Average Cycle”.  This analytics query would then be executed against the database to capture the average number of cycles that our Smart Litter Box has performed per 1 day period.
-
+How many times an event took place over a period of time.  How many different events took place over a period of time.  The Average temperature over a period of time.
 
 <br>
 <br>
 <br>
 
 ## Example
-
+Temperatures of the *Plymouth IoT Conveyor Belt* were saved as Data Streams.  Every time a bearings' temperature was sent from the [Device](./Device.md) to the [Cloud](./Cloud.md), it was saved in a special format that allowed the engineer to look at what temperatures were produced over a period of time.
 <br>
 <br>
 <br>

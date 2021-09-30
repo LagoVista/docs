@@ -21,13 +21,15 @@ A Message ID is a unique set of letters and/or numbers that is used to identify 
 <br>
 
 ## Example
-The *Plymouth IoT Conveyor Belt* sends a [Message](./Message.md) to the [Cloud](./Cloud.md) with a Message ID of **Temperature**.  The [Planner](./Planner.md) uses the Message ID to identify that the [Message](./Message.md) contains a temperature. This information is used along with the [Device ID](./DeviceID.md) to identify the correct [Device Configuration](./DeviceConfiguration.md) to process the data.
+The *Plymouth IoT Conveyor Belt* sends a [Message](./Message.md) to the [Deployment Instance](./DeploymentInstance.md) with a Message ID of **Temperature**.  The [Planner](./Planner.md) uses the Message ID to identify that the [Message](./Message.md) contains a temperature. This information is used along with the [Device ID](./DeviceID.md) to identify the correct [Device Configuration](./DeviceConfiguration.md) to process the data.
 
 <br>
 <br>
 <br>
 
 # Related Terms
-- [Cloud](./Cloud.md)
+- [Deployment Instance](./DeploymentInstance.md)
 - [Device Configuration](./DeviceConfiguration.md)
+- [Device ID](./DeviceID.md)
 - [Message](./Message.md)
+- [Planner](./Planner.md)
