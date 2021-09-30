@@ -4,11 +4,11 @@ keywords:
 
 status: Complete
 created: 20210910
-updated: 20210924
+updated: 20210930
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Quick Def. Look at wording.  Check again with Kevin - Wording at end of example - 9/24 Links in example
+Note: Quick Def. Look at wording.  Check again with Kevin - Wording at end of example - 9/24 Links in example  I think we need to relook at this.
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 

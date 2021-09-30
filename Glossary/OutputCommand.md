@@ -8,13 +8,13 @@ updated: 20210924
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: wording
+Note: In example, does the output command tell the transmitter to "Send", does it build the message? Where does the message come from?
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # Output Command
 ## Definition
-Just as [Input Commands](./InputCommand.md) provide a way to map values from incoming [Messages](./Message.md) into a [Workflow](./Workflow.md), Output Commands are used to provide outputs or trigger events that can either be sent back to the [Device](./Device.md) or to other systems.  A single [Workflow](./Workflow.md) can have multiple Output Commands.  Each of these Output Commands need to be [Mapped](./Mapping.md) to a [Message](./Message.md).
+Just as [Input Commands](./InputCommand.md) provide a way to map values from an incoming [Message](./Message.md) into a [Workflow](./Workflow.md), Output Commands provide outputs or trigger events that can either be sent back to the [Device](./Device.md) or to other systems.  A single [Workflow](./Workflow.md) can have multiple Output Commands.  Each of these Output Commands need to be [Mapped](./Mapping.md) to a [Message](./Message.md).
 
 <br>
 <br>

@@ -8,7 +8,7 @@ updated: 20210929
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Complete?
+Note: Complete?  Are each of these terms going to need to be defined?  what is it converted to in example?
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
@@ -44,7 +44,7 @@ Note: Complete?
 <br>
 
 ## Example
-The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) that contained a JSON payload of 425°. A [Parser](./Parser.md) had been created in the belt's [Deployment Instance](./DeploymentInstance.md) to extract the temperature out of that JSON payload and convert it to a value that could be used by the [Workflow](./workflow.md).
+The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) that contained a JSON payload (human read-able text) of 425°. A [Parser](./Parser.md) had been created in the belt's [Deployment Instance](./DeploymentInstance.md) to extract the temperature out of that JSON payload and convert it to a value that could be used by the [Workflow](./workflow.md).
 
 <br>
 <br>

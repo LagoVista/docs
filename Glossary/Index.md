@@ -52,11 +52,11 @@ Note:
 
 [Device Configuration](./DeviceConfiguration.md)
 
+[Device Firmware Update](./DevieFirmwareUpdate.md)
+
 [Device ID](./DeviceID.md)
 
 [Device Model](./DeviceModel.md)
-
-[Device Firmware Update](./DevieFirmwareUpdate.md)
 
 [Device Repository](./DeviceRepository.md)
 

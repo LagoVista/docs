@@ -15,18 +15,20 @@ Notes:  Example is from Data Stream - if this is based on time isn't it a better
 
 # Time Series Data Stream
 ## Definition
-Time-Series Data Streams are an optimized storage technology that is very powerful for understanding the behavior of IoT devices over a period of time. 
-
-How many times an event took place over a period of time.  How many different events took place over a period of time.  The Average temperature over a period of time.
+Time-Series Data Streams are an optimized storage technology that is very powerful for understanding the behavior of IoT [Devices](./Device.md) over a period of time. Every data point recorded in this type of [Data Stream](./DataStream.md) must have a time stamp. These data points may than be grouped together for analysis.  This sampling can be thought of as a *Time Bucket* which holds all the recorded data within a predefined period of time.  The data within the bucket be used (where?) 
 
 <br>
 <br>
 <br>
 
 ## Example
-Temperatures of the *Plymouth IoT Conveyor Belt* were saved as Data Streams.  Every time a bearings' temperature was sent from the [Device](./Device.md) to the [Cloud](./Cloud.md), it was saved in a special format that allowed the engineer to look at what temperatures were produced over a period of time.
+Vibrations produced by a *Plymouth IoT Conveyor Belt* were recorded in a Time Series Data Stream.  [Machine Learning](./MachineLearning.md) analysed the Time Series Data Stream to determine an acceptable level of vibration.  When the Time Series Data Streams began producing consistently higher levels of vibration, an [Error Code](./ErrorCode.md) was produced.
 <br>
 <br>
 <br>
 
 # Related Terms
+- [Data Stream](./DataStream.md)
+- [Devices](./Device.md)
+- [Error Code](./ErrorCode.md)
+- [Machine Learning](./MachineLearning.md)

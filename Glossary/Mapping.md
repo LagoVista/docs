@@ -8,13 +8,13 @@ updated: 20210928
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Input has a link, does output need one too?
+Note: Input has a link, does output need one too?  How is this different than what the planner does?
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # Mapping
 ## Definition
-Mapping of data is sometimes required within [Routes](./Route.md) between [Pipeline Modules](./PipelineModule.md).  Mapping identifies how the output produced from one module is passed on as input to other modules.
+Mapping data is sometimes required between [Pipeline Modules](./PipelineModule.md) within [Routes](./Route.md).  Mapping identifies how the output produced from one module is passed on as input to other modules.
 
 <br>
 <br>

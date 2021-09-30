@@ -14,14 +14,14 @@ Note: Example reword
 
 # Machine Learning
 ## Definition
-Machine Learning allows NuvIoT to analyse data coming from a [Device](./Device.md) and look for patterns, thereby providing the ability to detect anomalies.
+Machine Learning allows *NuvIoT* to analyse data coming from a [Device](./Device.md) in order to identify patterns.  After patterns are established, anomalies can be detected and corrected.
 
 <br>
 <br>
 <br>
 
 ## Example
-After collecting belt vibration data from a *Plymouth Iot Conveyor Belt*, the data scientists were able to produce a Machine Learning model.  The model used uploaded monitor vibration data from a running belt to look for anomalies.  After using this model for only two weeks, they were able to detect an abnormal vibration from one of their primary belts and fix it by simply changing the lubricant.  This Machine Learning model saved them from lots of down time.
+After collecting vibration data from a *Plymouth Iot Conveyor Belt*, data scientists produced a Machine Learning model.  The model used uploaded vibration data from a running belt to look for anomalies.  After using this model for only two weeks, they were able to detect an abnormal vibration from one of their primary belts and fix it by simply changing the lubricant.  This Machine Learning model eliminated down time and a loss in productivity.
 
 <br>
 <br>

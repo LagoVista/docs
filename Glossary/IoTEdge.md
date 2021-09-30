@@ -8,14 +8,13 @@ updated: 20210928
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Reword Example
+Note: Reword Example  Added last sentence of Definition to explain why
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # IoT Edge
 ## Definition
- 
-[Deployment Instances](./DeploymentInstance.md) are typically deployed in the [Cloud](./Cloud.md), which means they operate and store information on remote servers.  An IoT Edge deployment allows the [Deployment Instance](./DeploymentInstance.md) to be deployed locally.
+[Deployment Instances](./DeploymentInstance.md) are typically deployed in the [Cloud](./Cloud.md), which means they operate and store information on remote servers.  An IoT Edge deployment allows the [Deployment Instance](./DeploymentInstance.md) to be deployed locally.  This is often needed when large amounts of data are being transmitted.
 
 <br>
 <br>

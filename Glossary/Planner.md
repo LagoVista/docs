@@ -8,13 +8,13 @@ updated: 20210928
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note: Wording 2/28 In example, why was information used to identify the Device?  Is the Message type located in the Device Configuration?
+Note: Wording 2/28 In example, why was information used to identify the Device?  Is the Message type located in the Device Configuration?  2/30  Draw me a picture of how each part relates to the other.
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # Planner
 ## Definition
-A Planner is a [Pipeline Module](./PipelineModule.md) that receives a [Message](./Message.md) from a [Listener](./Listener.md) and determines how it should be processed.  The Planner uses the [Device ID](./DeviceID.md) and [Message ID](./MessageID.md) to locate the [Message Type](./MessageType.md) and [Device Configuration](./DeviceConfiguration.md).  It combines this data into a [PEM](./PEM.md) and passes the information along to the [Device Configuration](./DeviceConfiguration.md). 
+A Planner is a [Pipeline Module](./PipelineModule.md) that determines how a [Message](./Message.md) should be processed.  The Planner uses the [Device ID](./DeviceID.md) and [Message ID](./MessageID.md) to locate the [Message Type](./MessageType.md) and [Device Configuration](./DeviceConfiguration.md).  It combines [Message](./Message.md) data into a [PEM](./PEM.md) and passes the information along to the [Device Configuration](./DeviceConfiguration.md). 
 
 <br>
 <br>

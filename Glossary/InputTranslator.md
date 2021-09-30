@@ -8,7 +8,7 @@ updated: 20210928
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Note:  
+Note:  How is this different from the Planner
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
