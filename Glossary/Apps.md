@@ -23,7 +23,7 @@ Building an IoT system will generate data which is collected in *NuvIoT*.  This 
 
 ## Example
 
-The engineer at *Plymouth Manufacturing* opened the *NuvIoT* [Dashboard](./Dashboard.md) and clicked on the *Plymouth IoT Conveyor Belt* App.  From there, she was able to view the current temperature of the belt's bearings and view a historical data chart.  She was also able to see that the conveyor belt ran from 7:37AM - 4:15PM.  She was also able to view a [Widget](./Widget.md) that told her all eight of the other conveyor belts were properly functioning. 
+The engineer at *Plymouth Manufacturing* opened the *NuvIoT* [Dashboard](./Dashboard.md) and clicked on the *Plymouth IoT Conveyor Belt* App.  From there, she was able to view the current temperature of the belt's bearings and view a historical data chart.  She was also able to see that the conveyor belt ran from 7:37AM - 4:15PM.  There was also a [Widget](./Widget.md) that told her all eight of the other conveyor belts were properly functioning. 
 
 <br>
 <br>

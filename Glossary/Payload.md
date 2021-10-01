@@ -13,7 +13,7 @@ Note: wording
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # Payload
-The Payload of a [Message](./Message.md) contains specific values or data produced by a [Device](./Device.md).  The Payload can be formatted as different [Content Types](./ContentType.md).
+The Payload of a [Message](./Message.md) contains specific values or data produced by a [Device](./Device.md).  The Payload can be formatted with different [Content Types](./ContentType.md).
 
 <br>
 <br>
@@ -27,5 +27,6 @@ The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) with a Payload o
 <br>
 
 # Related Words
+- [Content Types](./ContentType.md)
 - [Device](./Device.md)
 - [Message](./Message.md)

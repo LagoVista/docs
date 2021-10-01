@@ -1,6 +1,6 @@
 ---
 title: Device Model
-keywords: device, devicetypes, deviceconfiguration
+keywords: 
 
 status: complete
 created: 20210823
@@ -14,7 +14,7 @@ Notes: Complete.
 
 # Device Model
 ## Definition
-The Device Model is a piece of hardware that contains a unique set of sensors, actuators, and control boards whose data is processed in a specific manner. A Device Model may contain a number of different [Devices](./Glosssary/Devices.md) that all function in fundamentally the same manner.
+The Device Model is a piece of hardware that contains a unique set of sensors, actuators, and control boards whose data is processed in a specific manner. A Device Model may contain a number of different [Devices](./Devices.md) that all function in fundamentally the same manner.
 
 <br>
 <br>

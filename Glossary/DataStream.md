@@ -22,7 +22,6 @@ Data Streams are a powerful way to capture and organize data.  They produce info
 <br>
 
 ## Example
-
 Temperatures of the *Plymouth IoT Conveyor Belt* were saved as Data Streams.  Every time a bearings' temperature was sent from the [Device](./Device.md) to the [Cloud](./Cloud.md), it was saved in a special format that allowed the engineer to look at what temperatures were produced over a period of time.
 
 <br>

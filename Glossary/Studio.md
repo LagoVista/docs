@@ -15,22 +15,22 @@ Notes:  complete.
 
 # Studio
 ## Definition
-Studio is an online development tool where a [Solution](./Glossary/Solution.md) can be made, [Deployment Instances](./Glossary/DeploymentInstance.md) and [Devices](./Glossary/Device.md) managed, and observe how the Internet of Things is running in real time.
+Studio is an online development tool where a [Solution](./Solution.md) can be made, [Deployment Instances](./DeploymentInstance.md) and [Devices](./Device.md) managed, and observation may be seen of how the Internet of Things is running in real time.
 
 <br>
 <br>
 <br>
 
 ## Example
-After building a [Solution](./Glossary/Solution.md) and publishing a [Deployment Instance](./Glossary/DeploymentInstance) in Studio, the engineer at *Plymouth Manufacturing* logged back into Studio to monitor how the [Instance](./Glossary/DeploymentInstance.md) was running and to update the [Workflow](./Glossary/Workflow).
+After building a [Solution](./Solution.md) and publishing a [Deployment Instance](./DeploymentInstance.md) in Studio, the engineer at *Plymouth Manufacturing* logged back into Studio to monitor how the [Deployment Instance](./DeploymentInstance.md) was running and to update the [Workflow](./Workflow.md).
 
 <br>
 <br>
 <br>
 
 # Related Terms
-- [Deployment Instance](./Glossary/DeploymentInstance.md)
-- [Device](./Glossary/Device.md)
-- [Device Repository](./Glossary/DeviceRepository.md)
-- [Solution](./Glossary/Solution.md)
-- [Workflow](./Glossary/Workflow)
+- [Deployment Instance](./DeploymentInstance.md)
+- [Device](./Device.md)
+- [Device Repository](./DeviceRepository.md)
+- [Solution](./Solution.md)
+- [Workflow](./Workflow)

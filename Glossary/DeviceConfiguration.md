@@ -1,6 +1,6 @@
 ---
 title: Device Configurations
-keywords: device, deviceconfiguration, devicetypes route, pipelinemodules
+keywords: 
 
 status: complete
 created: 20210823
@@ -21,7 +21,7 @@ A Device Configuration is a set of [Pipeline Modules](./PipelineModules.md) that
 <br>
 
 ## Example
-*Plymouth Manufacturing* wants to buy a new and more efficient IoT Conveyor Belt that is made with a stronger belt material. *NuvIoT* was able to use the same set of instructions, or [Device Configuration](./DeviceConfiguration.md), from the original *Plymouth IoT Conveyor Belt* without making any changes to the system.
+*Plymouth Manufacturing* wants to buy a new and more efficient IoT Conveyor Belt that is made with a stronger belt material. *NuvIoT* was able to use the same set of instructions, or Device Configuration, from the original *Plymouth IoT Conveyor Belt* without making any changes to the system.
 
 <br>
 <br>
@@ -30,7 +30,6 @@ A Device Configuration is a set of [Pipeline Modules](./PipelineModules.md) that
 # Related Terms
 - [Cloud](./Cloud.md)
 - [Device](./Device.md)
-- [Device Configuration](./DeviceConfiguration.md)
 - [Device Model](./DeviceModel.md)
 - [Messages](./Message.md)
 - [Pipeline Modules](./PipelineModules.md)

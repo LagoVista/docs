@@ -14,7 +14,7 @@ Notes: Reword Definition.  Check both Definition and Example - Should example be
 
 # Device Repository
 ## Definition
-A Device Repository is a collection of [Devices](./Device.md) that belong to a single [Deployment Instance](./DeploymentInstance.md). A Device Repository can only belong to one [Deployment Instance](..DeploymentInstance.md) and a Deployment Instance can only have one Device Repository. Some of the information that is stored includes 
+A Device Repository is a collection of [Devices](./Device.md) that belong to a single [Deployment Instance](./DeploymentInstance.md). A Device Repository can only belong to one [Deployment Instance](.DeploymentInstance.md) and a Deployment Instance can only have one Device Repository. Some of the information that is stored includes 
 
 - [Attributes](./Attribute.md) 
 - [Device Configuration](./DeviceConfiguration.md) 

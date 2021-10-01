@@ -21,7 +21,7 @@ A Deployment Instance is a deployed, or published, version of a [Solution](./Sol
 <br>
 
 ## Example
-The employees at *Plymouth Manufacturing* cheered when *NuvIoT* published the [Deployment Instance](./DeploymentInstance.md) for their factory floor full of *Plymouth IoT Conveyor Belts* and security systems.  Now the belts are connected by IoT which will monitor their bearing' temperatures and address overheating problems.
+The employees at *Plymouth Manufacturing* cheered when *NuvIoT* published the Deployment Instance for their factory floor full of *Plymouth IoT Conveyor Belts* and security systems.  Now the belts were connected by the Internet of Things which will monitor their bearing' temperatures and address overheating problems.
 
 <br>
 <br>
@@ -29,6 +29,5 @@ The employees at *Plymouth Manufacturing* cheered when *NuvIoT* published the [D
 
 # Related Terms
 - [Cloud](./Cloud.md)
-- [Deployment Instance](./DeploymentInstance.md)
 - [Device](./Device.md)
 - [Solution](./Solution.md)

@@ -2,34 +2,33 @@
 title: TimeSeriesDataStream
 keywords: 
 
-status: new
+status: in process
 created: 20210914
-updated: 20210920
+updated: 20210929
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Notes:  
+Notes:  Example is from Data Stream - if this is based on time isn't it a better example here?  Each data point must have a time stamp.  Analysize based on the time stamps.  Time Bucket (a period of time where data is grouped for analysis)
 
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 
 # Time Series Data Stream
 ## Definition
-Time-Series Data Streams are an optimized storage technology that is very powerful for understanding the behavior of IoT devices over time.
-
-
-
-A NuvIoT supports a special type of Data Stream that allows for performing operations on data streams with respect to time.  These Data Streams are called Time Series Data Streams and  There is no difference in the way that data points are inserted into a Time Series Data Stream.  An example of these types of operations is to capture an average of values over a predefined period of time.  These predefined periods can then be grouped into what can be thought of as buckets.  Then a collection of buckets consisting of an average can be returned.  If you are familiar with writing SQL queries, you can think of this as averaging over a group-by in a SQL statement but the underlying technology makes this easier to implement as well as more efficient.  The Smart Litter Box team wanted to know how often the litter box was used each day, they could simply create an Analytics Query where the group by period or window is defined as “Days”, the window size would be defined as 1, or 1 Day, and the fields to be returned would be “Average Cycle”.  This analytics query would then be executed against the database to capture the average number of cycles that our Smart Litter Box has performed per 1 day period.
-
+Time-Series Data Streams are an optimized storage technology that is very powerful for understanding the behavior of IoT [Devices](./Device.md) over a period of time. Every data point recorded in this type of [Data Stream](./DataStream.md) must have a time stamp. These data points may than be grouped together for analysis.  This sampling can be thought of as a *Time Bucket* which holds all the recorded data within a predefined period of time.  The data within the bucket be used (where?) 
 
 <br>
 <br>
 <br>
 
 ## Example
-
+Vibrations produced by a *Plymouth IoT Conveyor Belt* were recorded in a Time Series Data Stream.  [Machine Learning](./MachineLearning.md) analysed the Time Series Data Stream to determine an acceptable level of vibration.  When the Time Series Data Streams began producing consistently higher levels of vibration, an [Error Code](./ErrorCode.md) was produced.
 <br>
 <br>
 <br>
 
 # Related Terms
+- [Data Stream](./DataStream.md)
+- [Devices](./Device.md)
+- [Error Code](./ErrorCode.md)
+- [Machine Learning](./MachineLearning.md)
