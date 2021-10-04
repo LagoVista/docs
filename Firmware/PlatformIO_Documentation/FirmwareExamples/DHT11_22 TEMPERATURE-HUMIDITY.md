@@ -13,7 +13,7 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 # GPIO'S AND TEMPERATURE SENSORS
 
 ## Overview
->There are commonly used temperature and himidity sensors available on the market.   The two models, DHT11 and the DHT22 are inexpensive and they's work well woith the NuvIoT Sensor Board.
+>There are commonly used temperature and himidity sensors available on the market.   The two models, DHT11 and the DHT22 are inexpensive and they work well woith the NuvIoT Sensor Board.
 >Each of these modules will provide a temperature and matching humidity reading via the digital output pin on each module.
 >
 
