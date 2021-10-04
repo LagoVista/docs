@@ -40,4 +40,4 @@ Notes: This firmware example will compile locally.   But it is necessary to open
 
 ## Link
 > The below link is the source for the code.\
-> [ADC](https://github.com/softwarelogistics/FirmwareExamples/tree/main/ADC)
+> [GPIO_DHT22](https://github.com/softwarelogistics/FirmwareExamples/tree/main/GPIO_DHT22)
