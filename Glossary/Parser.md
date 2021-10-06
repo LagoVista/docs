@@ -2,9 +2,9 @@
 title: Parser
 keywords: 
 
-status: in process
+status: Complete
 created: 20210910
-updated: 20210928
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -20,10 +20,7 @@ Note: wording,  9/28 Why did we include the link to JSON?  Are we only talking a
 <br>
 
 ## Example
-The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) that contains a JSON [Payload](./Payload.md). A Parser was created that extracted the JSON temperature and made the values available to the [Workflow](./Workflow) module.
-
-
-https://en.wikipedia.org/wiki/JSON
+The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) that contains a JSON [Payload](./Payload.md). A Parser was created that extracted the temperature from the JSON and made that value available to the [Workflow](./Workflow) module.
 
 <br>
 <br>

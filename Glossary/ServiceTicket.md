@@ -2,9 +2,9 @@
 title: ServiceTicket
 keywords: 
 
-status: new
+status: Complete
 created: 20210928
-updated: 20210928
+updated: 20211006
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,7 +14,7 @@ Note:
 
 # Service Ticket 
 ## Definition
-Service Tickets are produced within [Field Service Lite](./FieldServiceLite.md).  They are produced by an [Error Code](./ErrorCode.md) in a [Device Configuration](./DeviceConfiguration.md).  Service Tickets contain information on what went wrong with the [Device](./Device.md) as well as other information useful in correcting the [Error Code](./ErrorCode.md).
+Service Tickets are created and managed within [Field Service Lite](./FieldServiceLite.md).  They are produced by an [Error Code](./ErrorCode.md) in a [Device Configuration](./DeviceConfiguration.md).  Service Tickets contain information on what went wrong with the [Device](./Device.md) as well as other information useful in correcting the [Error Code](./ErrorCode.md).
 
 <br>
 <br>

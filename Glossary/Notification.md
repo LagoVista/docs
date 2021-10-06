@@ -2,9 +2,9 @@
 title: Notification
 keywords: 
 
-status: in process
+status: complete
 created: 20210924
-updated: 20210928
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,7 +14,7 @@ Note: wording
 
 # Notification
 ## Definition
-A Notification is a [Message](./Message.md) that is generated to let a user know that something is happening with one or more of their [Devices](./Device.md). Currently, Notifications can be sent via email or SMS(Text Messages).
+A Notification is generated to let a user know that something is happening with one or more of their [Devices](./Device.md). Currently, Notifications can be sent via email or SMS(Text Messages).
 
 <br>
 <br>

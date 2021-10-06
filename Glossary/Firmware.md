@@ -2,9 +2,9 @@
 title: Firmware
 keywords: 
 
-status: new
+status: Complete
 created: 20210924
-updated: 20210929
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,13 +14,7 @@ Note: 9/29 Device Firmware Update..  wording of example  add Device Firmware Upd
 
 # Firmware 
 ## Definition
-Firmware is a type of software located on the [Control Board](./ControlBoard.md) of a [Device](./Device.md) that provides low-level control of a [Device's](./Device.md) functions.  Firmware can be thought of as a very simple computer that needs to be configured to identify and process [Messages](./Message.md), control and monitor [Device](./Device.md) activity and provide connectivity to the [Deployment Instance](./DeploymentInstance.md).  
-
-<br>
-
-[**Device Firmware Update (DFU)**](./DeviceFirmwareUpdate.md)
-
-NuvIoT provides the ability to update Firmware remotely Over the Air (OTA).  When a new version of Firmware becomes available, an OTA update can be done by sending a standard [Message](./Message.md) from the [Device Configuration](./DeviceConfiguration.md) to the [Device](./Device.md).  [Device Firmware Update](./DeviceFirmwareUpdate.md) provides a safe, convenient and cost-effective way to update Firmware.
+Firmware is a type of software located on the [Control Board](./ControlBoard.md) of a [Device](./Device.md) that provides low-level control of a [Device's](./Device.md) functions.  Firmware is a computer program that was created to identify and process [Messages](./Message.md), control and monitor [Devices](./Device.md) activity and provide connectivity to the [Deployment Instance](./DeploymentInstance.md).  
 
 <br>
 <br>

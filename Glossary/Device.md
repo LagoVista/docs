@@ -15,8 +15,7 @@ Notes: complete.
 # Devices
 
 ## Definition
-A Device is a single product that communicates with the [Cloud](./Cloud.md) using IoT.
-
+A Device is a single product that communicates with the [Cloud](./Cloud.md) using IoT.  A Device consists of a [Control Board](./ControlBoard.md), [Sensors](./Sensor.md), [Actuators](./Actuator.md) and [Firmware](./Firmware.md).
 <br>
 <br>
 <br>

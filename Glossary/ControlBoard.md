@@ -2,9 +2,9 @@
 title: ControlBoard
 keywords: 
 
-status:new
+status: Complete
 created: 20210924
-updated: 20210927
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -21,7 +21,7 @@ A Control Board is a piece of hardware located at a [Device](./Device.md).  It i
 - a General Purpose Board that allows for rapid prototyping 
 - a Production Ready Board that makes it easy to move into production 
 
-Both of these boards contain libraries that make it easy to communicate with a wide variety of [Sensors](./Sensor.md) and send standardized [Messages](./Message.md) to a [Deployment Instance](./DeploymentInstance.md).
+Both of these boards contain [Libraries](./Library.md) that make it easy to communicate with a wide variety of [Sensors](./Sensor.md) and send standardized [Messages](./Message.md) to a [Deployment Instance](./DeploymentInstance.md).
 
 <br>
 <br>

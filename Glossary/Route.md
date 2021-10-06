@@ -2,9 +2,9 @@
 title: Route
 keywords: 
 
-status: inprocess
+status: Complete
 created: 20210823
-updated: 20210928
+updated: 20211006
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,19 +14,7 @@ Notes: work on mapping, check wording of example.  Is the planner part of the ro
 
 # Route
 ## Definition
-Routes identify how a [Message](./Message.md) is processed when received by a [Deployment Instance](./DeploymentInstance.md).  They consist of a set of [Pipeline Modules](./PipelineModule.md) which may include 
-
-- [7-Segment Parser](./SevenSegmentParser.md)
-- [Business Logic](./BusinessLogic.md)
-- [Data Stream Writer](./DataStreamWriter.md)
-- [Machine Learning](./MachineLearning.md)
-- [Parsers](./Parsers.md)
-- [Sentinels](./Sentinel.md)
-- [Workflows](./Workflow.md) 
-
-Routes can also send [Messages](./Message.md) back to the [Device](./Device.md), to other systems, and/or write data to a [Data Stream](./DataStream.md).
-
-Within Routes, it is sometime necessary to provide [Mapping](./Mapping.md) of the data between [Pipeline Modules](./PipelineModule.md).  [Mapping](./Mapping.md) identifies how the output produced from one module is passed on as input to other modules.  
+Routes identify how a [Message](./Message.md) is processed when received by a [Deployment Instance](./DeploymentInstance.md) and consist of [Pipeline Modules](./PipelineModule.md).  Routes can also send [Messages](./Message.md) back to the [Device](./Device.md), to other systems, and/or write data to a [Data Stream](./DataStream.md).  Within Routes, it is sometime necessary to provide [Mapping](./Mapping.md) of the data between [Pipeline Modules](./PipelineModule.md).  [Mapping](./Mapping.md) identifies how the output produced from one module is passed on as input to other modules.  
 
 <br>
 <br>
@@ -34,11 +22,7 @@ Within Routes, it is sometime necessary to provide [Mapping](./Mapping.md) of th
 
 ## Example
 
-The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) to its [Deployment Instance](./DeploymentInstance.md) that the bearings reached a temperature of 425°.  
-1. The [Listener](./Listener.md) received the [Message](./Message.md) and [Queued](./Queue.md) it for processing by the [Planner](./Planner.md).
-2. The [Planner](./Planner.md) used the [Device ID](./DeviceID.md) and [Message ID](./MessageID.md) to identify the Route that will be used to process the [Message](./Message.md).  The [Planner](./Planner.md) also constructed a [PEM](./PEM.md).  
-
-Following is an example of a Route that is identified by the [Planner](./Planner.md):  
+The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) to its [Deployment Instance](./DeploymentInstance.md) that the bearings reached a temperature of 425°. Following is an example of a Route that is identified by the [Planner](./Planner.md):  
 
 3. The [PEM](./PEM.md) was sent to the appropriate Route which used the [Sentinel Module](./Sentinel.md) to ensure the [Message](./Message.md) came from *PICBelt001*.  When this was confirmed, the [PEM](./PEM.md) was [Queued](./Queue.md) to a [Parser Module](./Parser.md).
 4. The [Parser Module](./Parsers.md) extracted the temperature of 425° and sent it to the `temperature` [Workflow](./Workflow.md).

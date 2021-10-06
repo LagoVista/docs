@@ -2,9 +2,9 @@
 title: FieldServiceLite
 keywords: 
 
-status: InProcess
+status: Complete
 created: 20210915
-updated: 20210929
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,9 +14,9 @@ Note: New term - field service ticket and service board? 9/29 wording
 
 # Field Service Lite
 ## Definition
-NuvIoT provides a program called *Field Service Lite*.  It offers basic implementation for core features of a typical Field Service Application and was designed to be integrated with a preexisting Application. 
+NuvIoT provides a program called *Field Service Lite*.  It offers a basic implementation for core features of a typical Field Service Application and was designed to be integrated with more robust Field Service Applications. 
 
-When a [Device](./Device.md) generates an [Error Code](./ErrorCode.md), *Field Service Lite* creates a [Service Ticket](./ServiceTicket.md) providing information about the error.  The [Service Ticket](./ServiceTicket) is then sent to an individual's  [Service Board](./ServiceBoard.md) to be processed.  
+When a [Device](./Device.md) generates an [Error Code](./ErrorCode.md), *Field Service Lite* creates a [Service Ticket](./ServiceTicket.md) providing information about the error.  The [Service Ticket](./ServiceTicket) is then sent to a [Service Board](./ServiceBoard.md) to be managed.  
 
 <br>
 <br>
