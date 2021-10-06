@@ -2,9 +2,9 @@
 title: IoTEdge
 keywords: 
 
-status: in process
+status: Complete
 created: 20210910
-updated: 20210928
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 

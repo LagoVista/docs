@@ -2,9 +2,9 @@
 title: UnitSet
 keywords: 
 
-status: new
+status: Complete
 created: 20210928
-updated: 20210928
+updated: 20211006
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -15,17 +15,16 @@ Notes:  This was copied from values with units.
 
 # Unit Set
 ## Definition
-The primitive data types are simply numbers and values that stand alone, by themselves they don’t convey any context of what they are or how they can be used.  A primitive number would just be 98.6.  NuvIoT has the concept of creating units, a commonly used example of units is temperature.  Temperature that can be either Celsius for Fahrenheit.  Units can be created as part of your organization and reused anywhere data types can be defined.  When creating your unit, you will need to specify how the value will be stored, that is to say how it comes in from the source.  This will be considered the default unit to be associated with your units definition.  You can provide alternative units as well.  For the case of temperature, you may decide that the default way you want the values stored is Celsius and the alternative unit is Fahrenheit.  For each alternative unit you will need to provide either a calibration factor in the form of a number that will convert between units, or a JavaScript that will provide the conversion.
+when a [Message](./Message.md) is received from a [Device](./Device.md), data is sent as simply numbers or values.  In order for the data to be better understood, a Unit can be added.  Units are labels such as Fahrenheit, Kilograms, or Watts.  NuvIoT has the ability to manage multiple unit definitions within a unit set, such as Fahrenheit and Celsius, and is able to convert between those units.
 
 <br>
 <br>
 <br>
 
 ## Example
-
-
-<br>
-<br>
-<br>
+The *Plymouth Iot Conveyor Belt* sent a [Message](./Message.md) with a payload of `{temperature:425}`.  The number 425 was saved in the [Device Repository](./DeviceRepository.md) as `425° Fahrenheit`.  The temperature could also be displayed as `218° Celsius`.
 
 # Related Terms
+- [Device](./Device.md)
+- [Device Repository](./DeviceRepository.md)
+- [Message](./Message.md)

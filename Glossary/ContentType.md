@@ -2,9 +2,9 @@
 title: Content Type
 keywords: 
 
-status: InProcess
+status: Complete
 created: 20210927
-updated: 20210929
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -44,7 +44,7 @@ Note: Complete?  Are each of these terms going to need to be defined?  what is i
 <br>
 
 ## Example
-The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) that contained a JSON payload (human read-able text) of 425°. A [Parser](./Parser.md) had been created in the belt's [Deployment Instance](./DeploymentInstance.md) to extract the temperature out of that JSON payload and convert it to a value that could be used by the [Workflow](./workflow.md).
+The *Plymouth IoT Conveyor Belt* sent a [Message](./Message.md) that contained a JSON payload (human read-able text) of 425°. A [Parser](./Parser.md) had been created in the belt's [Deployment Instance](./DeploymentInstance.md) to extract the temperature out of that JSON payload and convert it to a real number that could be used by the [Workflow](./workflow.md).
 
 <br>
 <br>

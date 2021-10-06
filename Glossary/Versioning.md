@@ -2,9 +2,9 @@
 title: Versioning
 keywords: 
 
-status: new
+status: Complete
 created: 20210914
-updated: 20210928
+updated: 20211006
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -24,7 +24,7 @@ When creating or reconfiguring a [Solution](./Solution.md), it may be saved at a
 <br>
 
 ## Example
-Shortly after updating the [Solution](./Solution.md) for their conveyor belts, *Plymouth Manufacturing* discovered a problem in capturing data.  They contacted NuvIoT and had them revert back to the last Version of the [Solution](./Solution.md) which did not have the glitch. 
+Shortly after updating the [Solution](./Solution.md) for their conveyor belts, *Plymouth Manufacturing* discovered a problem in capturing data.  They were able to revert back to the last Version of the [Solution](./Solution.md) which did not have the glitch. 
 
 <br>
 <br>

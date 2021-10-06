@@ -14,7 +14,15 @@ Notes: What is an expected temperature for bearings?  Ready for review 9/8 - Wor
 
 # Pipeline Modules
 ## Definition
-Pipeline Modules can be thought of as containers of very specific functions, or logic, that are performed on a [PEM](./PEM.md).  They are connected so that as one module completes its task, it hands the [PEM](./PEM.md) off to the next module or modules for execution.  
+Pipeline Modules can be thought of as containers of very specific functions, or logic, that are performed on a [PEM](./PEM.md).  They are connected so that as one module completes its task, it hands the [PEM](./PEM.md) off to the next module or modules for execution.   [Pipeline Modules](./PipelineModule.md) include 
+
+- [7-Segment Parser](./SevenSegmentParser.md)
+- [Business Logic](./BusinessLogic.md)
+- [Data Stream Writer](./DataStreamWriter.md)
+- [Machine Learning](./MachineLearning.md)
+- [Parsers](./Parsers.md)
+- [Sentinels](./Sentinel.md)
+- [Workflows](./Workflow.md) 
 
 <br>
 <br>

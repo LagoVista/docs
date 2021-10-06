@@ -2,9 +2,9 @@
 title: Device Firmware Update
 keywords: 
 
-status: new
+status: complete
 created: 20210930
-updated: 20210930
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,14 +14,14 @@ Note:
 
 # Device Firmware Update (DFU)
 ## Definition
-NuvIoT provides the ability to update [Firmware](./Firmware.md) remotely by means of Over the Air (OTA).  When a new version of [Firmware](./Firmware.md) becomes available, an OTA update can be done by sending a standard [Message](./Message.md) from the [Device Configuration](./DeviceConfiguration.md) to the [Device](./Device.md).  [Device Firmware Update (DFU)](./DeviceFirmwareUpdate.md) provides a safe, convenient and cost-effective way to update [Firmware](./Firmware.md). 
+NuvIoT provides the ability to remotely update the [Firmware](./Firmware.md) Over the Air (OTA).  When a new version of [Firmware](./Firmware.md) becomes available, an OTA update can be done by sending a standard [Message](./Message.md) from the [Deployment Instance](./DeploymentInstance.md) to the [Device](./Device.md).  [Device Firmware Update (DFU)](./DeviceFirmwareUpdate.md) provides a safe, convenient and cost-effective way to update [Firmware](./Firmware.md). 
 
 <br>
 <br>
 <br>
 
 ## Example
-*Plymouth Manufacturing* wanted to change a standard setting on the [Firmware](./Firmware.md) of all their conveyor belts.  Rather than configuring each belt at their Minneapolis and Tampa plant separately, they were able to use a Device Firmware Update to make the change on the [Device Configuration](./DeviceConfiguration.md).  This update was then sent by [Message](./Message.md) to all of the belts and the [Firmware](./Firmware.md) was updated.  Each belt sent a return [Message](./Message.md) indicating that the upgrade was successful. 
+*Plymouth Manufacturing* wanted to optimize performance of the [Firmware](./Firmware.md) on all their conveyor belts.  Rather than configuring each belt at their Minneapolis and Tampa plant separately, they were able to use a Device Firmware Update to make the change to all of their [Devices](./Devices.md) remotely.  This update was sent by [Message](./Message.md) to all of the belts and the Device Firmware Update was initiated.  Each belt sent a return [Message](./Message.md) indicating that the upgrade was successful. 
 
 <br>
 <br>

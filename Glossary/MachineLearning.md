@@ -2,9 +2,9 @@
 title: MachineLearning
 keywords: 
 
-status: Inprogress
+status: Complete
 created: 20210928
-updated: 20210929
+updated: 20211004
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
@@ -14,7 +14,7 @@ Note: Example reword
 
 # Machine Learning
 ## Definition
-Machine Learning allows *NuvIoT* to analyse data coming from a [Device](./Device.md) in order to identify patterns.  After patterns are established, anomalies can be detected and corrected.
+Machine Learning allows *NuvIoT* to analyze data coming from a [Device](./Device.md) in order to identify patterns.  After patterns are established, anomalies can be detected.
 
 <br>
 <br>
