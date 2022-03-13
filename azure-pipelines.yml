@@ -1,0 +1,980 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: windows-latest
+
+variables:
+  TempDir: '$(Agent.WorkFolder)\1\Temp'
+  DeployDir: '$(Agent.WorkFolder)\1\Temp\SphinxDeploy'
+  WorkingDir: '$(Agent.WorkFolder)\1\Temp\SphinxDeploy\NuvIotProcedures'
+  RepoDir: '$(Agent.WorkFolder)\1\Temp\SphinxDeploy\NuvIotProcedures\Repo'
+  SphinxDir: '$(Agent.WorkFolder)\1\Temp\SphinxDeploy\NuvIotProcedures\Sphinx'
+  ProjectName: 'NuvIoT Procedures'
+  ProjectAuth: 'Software Logistics, LLC'
+  ProjectVersion: '0.0.1'
+  DockerAccessToken: 'f2ac92e1-1b3c-49ed-af70-57bff53b2bf9'
+stages:
+  - stage: 'Build_Artifact'
+    jobs:
+    - job : 'CreateArtifact'
+      displayName: 'Creating Site Artifact'
+      continueOnError: false
+      steps: 
+          - task: PowerShell@2
+            displayName: 'DefineProjectVersionPS'
+            name: 'SetProjVersion'
+            inputs:
+              targetType: 'inline'
+              script: |
+                function Create-VersionNumber {
+                    Write-Host "Creating Version Number..."    
+                    $end = Get-Date
+                    $start = Get-Date "5/17/2017"
+                    $today = Get-Date
+                    $today = $today.ToShortDateString()
+                    $today = Get-Date $today
+                    
+                    $major = 1
+                    $minor = 6 
+                    
+                    $minutes = New-TimeSpan -Start $today -End $end
+                    $revisionNumber = (New-TimeSpan -Start $start -End $end).Days
+                    $buildNumber = ("{0:00}" -f [math]::Round($minutes.Hours)) + ("{0:00}" -f ([math]::Round($minutes.Minutes)))
+                    $pv = "$major.$minor.$revisionNumber.$buildNumber"
+                    Write-Host ("Current Version Number: {0}" -f $pv)
+                    return $pv
+                }
+ 
+                $ProjectVersion = Create-VersionNumber
+                echo "##vso[build.updatebuildnumber]v$ProjectVersion"
+                Write-Host "##vso[task.setvariable variable=ProjectVersion;isOutput=true]$ProjectVersion" 
+                
+                Write-Host "##vso[task.setvariable variable=ProjectVersion]$ProjectVersion"
+              workingDirectory: '$(Build.SourcesDirectory)'
+          
+          - task: PowerShell@2
+            displayName: 'CreateTempDirsPS'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $RepoDir = $env:RepoDir
+                $SphinxDir = $env:SphinxDir
+                $TempDir = $env:TempDir
+                $WorkingDir = $env:WorkingDir
+                $DeployDir = $env:DeployDir
+                
+                function Remove-TempDirectories {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $RepoDirectory,
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    Write-Host '#####################################################################'
+                    Write-Host 'Clearing Sphinx\Build\Html'
+                    $HtmlPath = "{0}\build\html" -f $SphinxDirectory
+                    If((Test-Path -Path $HtmlPath) -eq $true)
+                    {
+                        Remove-Item -Path $HtmlPath -Force -Recurse -Verbose 
+                    }
+                
+                    Write-Host '##################################'
+                    Write-Host 'Removing Existing Temp Directories'
+                    If((Test-Path -Path $RepoDirectory) -eq $true)
+                    {
+                        Remove-Item -Path $RepoDirectory -Force -Recurse -Verbose 
+                    }
+                    
+                    If((Test-Path -Path $SphinxDirectory) -eq $true)
+                    {
+                        Remove-Item -Path $SphinxDirectory -Force -Recurse -Verbose
+                    }
+                
+                }
+                
+                function Create-TempDirectories {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $TempDirectory,
+                        [parameter(Mandatory=$true)]
+                        $WorkingDirectory,
+                        [parameter(Mandatory=$true)]
+                        $RepoDirectory,
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    Write-Host '##################################'
+                    Write-Host 'Creating Temp Directories'
+                    If((Test-Path -Path $TempDirectory) -eq $false)
+                    {
+                        New-Item -Path $TempDirectory -ItemType Directory -Verbose | Out-Null
+                    }
+                
+                    If((Test-Path -Path $DeployDir) -eq $false)
+                    {
+                        New-Item -Path $DeployDir -ItemType Directory -Verbose | Out-Null
+                    }
+                    
+                    If((Test-Path -Path $WorkingDirectory) -eq $false)
+                    {
+                        New-Item -Path $WorkingDirectory -ItemType Directory -Verbose | Out-Null
+                    }
+                    
+                    If((Test-Path -Path $RepoDirectory) -eq $false)
+                    {
+                        New-Item -Path $RepoDirectory -ItemType Directory -Verbose | Out-Null
+                    }
+                    
+                    If((Test-Path -Path $SphinxDirectory) -eq $false)
+                    {
+                        New-Item -Path $SphinxDirectory -ItemType Directory -Verbose | Out-Null
+                    }
+                }
+                
+                Remove-TempDirectories `
+                    -RepoDirectory $RepoDir `
+                    -SphinxDirectory $SphinxDir
+                
+                #Create Temp Directory
+                Create-TempDirectories `
+                    -TempDirectory $TempDir `
+                    -WorkingDirectory $WorkingDir `
+                    -RepoDirectory $RepoDir `
+                    -SphinxDirectory $SphinxDir
+              workingDirectory: '$(Build.SourcesDirectory)'
+          - task: UsePythonVersion@0
+            displayName: 'GetPython3.8.X'
+            inputs:
+              versionSpec: '3.8.x'
+              addToPath: true
+              architecture: 'x64'
+          - task: Bash@3
+            displayName: 'BashInstallPIP'
+            inputs:
+              targetType: 'inline'
+              script: |
+                python -m pip install --upgrade pip
+                pip install --upgrade Pip --user
+                pip install --upgrade myst-parser --user
+                pip install --upgrade sphinx_rtd_theme --user
+          - task: PowerShell@2
+            displayName: 'CopyRepoToTemp'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $FromDir = "$(Build.SourcesDirectory)\*"
+                $ToDir = $env:RepoDir
+                
+                Copy-Item -Path $FromDir -Destination $ToDir -Recurse -Force -Verbose
+              workingDirectory: '$(TempDir)'
+          - task: PowerShell@2
+            displayName: 'CreateSphinxQuickStart'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $SphinxDir = $env:SphinxDir
+                $ProjectName = $env:ProjectName
+                $ProjectAuth = $env:ProjectAuth
+                $ProjectVersion = $env:ProjectVersion
+                
+                function Create-SphinxQuickStart {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory,
+                        [parameter(Mandatory=$true)]
+                        $ProjectName,
+                        [parameter(Mandatory=$true)]
+                        $ProjectAuthor,
+                        [parameter(Mandatory=$true)]
+                        $ProjectVersion
+                    )
+                    Write-Host '##################################'
+                    Write-Host 'Create Sphinx QuickStart'
+                    Set-Location $SphinxDirectory -Verbose
+                    sphinx-quickstart.exe -q -p $ProjectName -a $ProjectAuthor -v $ProjectVersion --sep --extensions=sphinx_rtd_theme,myst_parser,sphinx.ext.autosectionlabel
+                }
+                
+                Create-SphinxQuickStart `
+                    -SphinxDirectory $SphinxDir `
+                    -ProjectName $ProjectName `
+                    -ProjectAuthor $ProjectAuth `
+                    -ProjectVersion $ProjectVersion
+              workingDirectory: '$(TempDir)'
+          - task: PowerShell@2
+            displayName: 'ModifyConf.py'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $SphinxDir = $env:SphinxDir
+                
+                function Modify-ConfPY {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    $ConfFilePath = "{0}\source\conf.py" -f $SphinxDirectory
+                    $ConfFile = Get-ChildItem -Path $ConfFilePath
+                    $ConfContent = $ConfFile | Get-Content
+                
+                    Write-Host '##################################'
+                    Write-Host 'Manually Add Extensions to Conf.py'
+                    $ConfExtensionConfigLine = Select-String -Path $ConfFilePath -Pattern "Extension configuration"
+                    $ConfExtLineIndex = $ConfExtensionConfigLine.LineNumber
+                    $ConfExtToAdd = (
+                        "",
+                        "source_suffix = {",
+                        "    '.rst': 'restructuredtext',",
+                        "    '.md': 'markdown'",
+                        "}",
+                        "",
+                        "suppress_warnings = ['myst.header']"
+                    ) -join "`r`n"
+                
+                    $ConfContent[($ConfExtLineIndex-1)] += $ConfExtToAdd 
+                
+                    Write-Host '##################################'
+                    Write-Host 'Manually Set HTML Theme in Conf.py'
+                    $ConfThemeLine = Select-String -Path $ConfFilePath -Pattern "html_theme ="
+                    $ConfThemeLineIndex = $ConfThemeLine.LineNumber
+                    $ConfThemeHTMLSettings = (
+                        "html_theme = 'sphinx_rtd_theme'",
+                        "",
+                        "# Theme options are theme-specific and customize the look and feel of a theme",
+                        "# further.  For a list of options available for each theme, see the",
+                        "# documentation.",
+                        "html_theme_options = {",
+                        "    'collapse_navigation' : False",
+                        "}",
+                        'html_context = {',
+                        '    "display_github": True, # Integrate GitHub',
+                        '    "github_user": "softwarelogistics", # Username',
+                        '    "github_repo": "sops", # Repo name',
+                        '    "github_version": "main", # Version',
+                        '    "conf_py_path": "/", # Path in the checkout to the docs root',
+                        '}'
+                    ) -join "`r`n"
+                    $ConfContent[($ConfThemeLineIndex-1)] = $ConfThemeHTMLSettings
+                    $ConfContent| Set-Content $ConfFilePath -Force -Verbose
+                }
+                
+                
+                Modify-ConfPY `
+                    -SphinxDirectory $SphinxDir
+              workingDirectory: '$(TempDir)'
+          - task: PowerShell@2
+            displayName: 'CopyRepoToSource'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $SphinxDir = $env:SphinxDir
+                $RepoDir = $env:RepoDir
+                
+                function Copy-RepoToSource {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory,
+                        [parameter(Mandatory=$true)]
+                        $RepoDirectory
+                    )
+                    Write-Host '##################################'
+                    Write-Host 'Copy All Folders To Source Directory'
+                    $SourceDir = "{0}\source" -f $SphinxDirectory
+                    $RepoExclude = '.git','src'
+                    $RepoFolders = Get-ChildItem -Path $RepoDirectory -Recurse -Force | Where-Object {$_.GetType() -eq [System.IO.DirectoryInfo] -and $_.FullName -notlike '*.git*' -and $_.FullName -notlike '*src\*' -and $_.BaseName -ne 'src'}
+                    $RepoFolders | Foreach-Object {
+                        $Destination = $_.FullName.Replace($RepoDirectory, $SourceDir)
+                        if(!(Test-Path -Path $Destination))
+                        {
+                            Copy-Item -Path $_.FullName -Destination $Destination -Force -Verbose
+                        }
+                        else
+                        {
+                            Write-Host ("{0} already exists..." -f $Destination)
+                        }
+                    }
+                    Write-Host '##################################'
+                    Write-Host 'Copy All MD and Image Files To Source Directory'
+                    $RepoFiles = Get-ChildItem -Path $RepoDirectory -Recurse -Force | Where-Object {$_.Extension -in ('.md','.png','.jpg') -and $_.FullName -notlike '*.git*' -and $_.FullName -notlike '*src\*'}
+                    $RepoFiles | ForEach-Object {
+                        $Destination = $_.Directory.FullName.Replace($RepoDirectory, $SourceDir)
+                        if(Test-Path -Path $Destination)
+                        {
+                            Copy-Item -Path $_.FullName -Destination $Destination -Force -Verbose
+                        }
+                        else
+                        {
+                            Write-Host ("{0} does not exist... Skipping File..." -f $Destination)
+                        }
+                    }
+                    Write-Host '##################################'
+                    Write-Host 'Check Source For Any Empty Folders'
+                    Do {
+                        $EmptySourceFolders = Get-ChildItem -Path $SourceDir -Recurse -Force -Directory | Where-Object {(Get-ChildItem -Path $_.FullName).Count -eq 0} | Select-Object -ExpandProperty Fullname
+                        $EmptySourceFolders | ForEach-Object {
+                            Remove-Item $_ -Verbose
+                        }
+                    } 
+                    While ($EmptySourceFolders.Count -gt 0)
+                }
+                
+                Copy-RepoToSource `
+                    -SphinxDirectory $SphinxDir `
+                    -RepoDirectory $RepoDir
+              workingDirectory: '$(TempDir)'
+          - task: PowerShell@2
+            displayName: 'PopulateTOCs'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $SphinxDir = $env:SphinxDir
+                
+                class TOCDirectory{
+                    [String]$TOCName
+                    [String]$TOCPath
+                    [TOCDirectory[]]$TOCSubDir
+                }
+                
+                function Build-TOCList {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    #Get TOC.MD from Repo
+                    $SourceDir = "{0}\source" -f $SphinxDirectory
+                    Set-Location $SourceDir
+                    
+                    $TOCFilePath = "{0}\toc.md" -f $SourceDir
+                    $TOCFile = Get-ChildItem -Path $TOCFilePath
+                    $TOCContents = (Get-Content -Path $TOCFile).Replace("`t", "    ")
+                
+                
+                
+                    #Build TOCBuild list
+                    [TOCDirectory[]]$TOCBuild = @()
+                    $TOCContents | ForEach-Object {
+                        $CurrTOC = $_
+                        Write-Host "###################"
+                        Write-Host $CurrTOC
+                        if($CurrToc.StartsWith("`*"))
+                        {
+                            $o = [TOCDirectory]::new()
+                            $N = [Regex]::Match($CurrTOC, "\[(.*?)\]").Value.Replace("[","").Replace("]","")
+                            $P = [Regex]::Match($CurrTOC, "]\((.*?)\)").Value.Replace("](","").Replace(")","")
+                            $o.TOCName = $N
+                            $o.TOCPath = $P
+                            [TOCDirectory[]]$S = @()
+                            $o.TOCSubDir = $S
+                            $TOCBuild += $o
+                        }
+                        else
+                        {
+                            
+                            $N = [Regex]::Match($CurrTOC, "\[(.*?)\]").Value.Replace("[","").Replace("]","")
+                            #$P = [Regex]::Match($CurrTOC, "\((.*?)\)").Value.Replace("(","").Replace(")","")
+                            $P = [Regex]::Match($CurrTOC, "]\((.*?)\)").Value.Replace("](","").Replace(")","")
+                    
+                            $ParentLine = $CurrTOC
+                            #Write-Host "####################################"
+                            $Pattern = '{0}.*{1}' -f $N, ([Regex]::Escape($P))
+                            #Escape / characters
+                            $Pattern = $Pattern.Replace("/","\/")
+                            #Escape ( charcaters
+                            $Pattern = $Pattern.Replace("(","\(")
+                            #Escape ) characters
+                            $Pattern = $Pattern.Replace(")","\)")
+                            $SS = $TOCFile | Select-String -Pattern $Pattern
+                            if($SS -and $SS.Count -gt 1)
+                            {
+                                #More than one line match
+                                $SS | ForEach-Object {
+                                    $val = $_.Line
+                                    if($val -eq $CurrTOC)
+                                    {
+                                        $TOCIndex = $_.LineNumber
+                                        $TOCLine = $TOCContents[$TOCIndex -1]
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                $TOCIndex = $SS.LineNumber
+                                $TOCLine = $TOCContents[$TOCIndex -1]
+                            }
+                            #$TOCLine
+                            if($TOCLine -eq $CurrTOC)
+                            {
+                                $TOCIndent = $TOCLine.IndexOf("`*")
+                                #$TOCIndent
+                                
+                    
+                                While($TOCIndent -ge $CurrTOC.IndexOf("`*"))
+                                {
+                                    $TOCIndex -= 1
+                                    $ParentLine = $TOCContents[$TOCIndex -1]
+                                    $TOCIndent = $ParentLine.IndexOf("`*")
+                                }
+                                
+                                
+                                $ParentTOC = $TOCBuild | Where-Object {$_.TOCName -eq [Regex]::Match($ParentLine, "\[(.*?)\]").Value.Replace("[","").Replace("]","") -and $_.TOCPath -eq [Regex]::Match($ParentLine, "\((.*?)\)").Value.Replace("(","").Replace(")","")}
+                                If($null -ne $ParentTOC -and $ParentTOC.Count -eq 1)
+                                {
+                                    $o = [TOCDirectory]::new()
+                                    $o.TOCName = $N
+                                    $o.TOCPath = $P
+                                    [TOCDirectory[]]$S = @()
+                                    $o.TOCSubDir = $S
+                                    $ParentTOC.TOCSubDir += $o
+                                }
+                                else
+                                {
+                                    $ParentTOC = $TOCBuild.TOCSubDir | Where-Object {$_.TOCName -eq [Regex]::Match($ParentLine, "\[(.*?)\]").Value.Replace("[","").Replace("]","") -and $_.TOCPath -eq [Regex]::Match($ParentLine, "\((.*?)\)").Value.Replace("(","").Replace(")","")}
+                                    If($null -ne $ParentTOC -and $ParentTOC.Count -eq 1)
+                                    {
+                                        $o = [TOCDirectory]::new()
+                                        $o.TOCName = $N
+                                        $o.TOCPath = $P
+                                        [TOCDirectory[]]$S = @()
+                                        $o.TOCSubDir = $S
+                                        $ParentTOC.TOCSubDir += $o
+                                    }
+                                    else
+                                    {
+                                        $ParentToc = $TOCBuild.TOCSubDir.TOCSubDir | Where-Object {$_.TOCName -eq [Regex]::Match($ParentLine, "\[(.*?)\]").Value.Replace("[","").Replace("]","") -and $_.TOCPath -eq [Regex]::Match($ParentLine, "\((.*?)\)").Value.Replace("(","").Replace(")","")}
+                                        If($null -ne $ParentTOC -and $ParentTOC.Count -eq 1)
+                                        {
+                                            $o = [TOCDirectory]::new()
+                                            $o.TOCName = $N
+                                            $o.TOCPath = $P
+                                            [TOCDirectory[]]$S = @()
+                                            $o.TOCSubDir = $S
+                                            $ParentTOC.TOCSubDir += $o
+                                        }
+                                        else
+                                        {
+                                            $CurrTOC
+                                            Write-Host "Cannot Find TOC"
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                            Write-Host "DID NOT FIND LINE : $TOCLine -- $CurrTOC"
+                            }        
+                            
+                        }
+                    }
+                
+                    return $TOCBuild
+                }
+                
+                function Build-TOCrst {   
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory,
+                        [parameter(Mandatory=$true)]
+                        $TOCBuild
+                    )
+                    Write-Host '#####################################################################'
+                    Write-Host 'Populating TOCTREE index.rst'
+                
+                    $SourceDir = "{0}\source" -f $SphinxDirectory
+                    Set-Location $SourceDir -Verbose
+                
+                    $IndexRSTPath = "{0}\index.rst" -f $SourceDir
+                
+                    $IndexRSTHeader = (
+                        "NuvIoT Project's Documentation",
+                        "==============================",
+                        ""
+                    ) -join "`r`n"
+                
+                    $IndexRSTFooter = (
+                        "",
+                        "Table Of Contents",
+                        "^^^^^^^^^^^^^^^^^",
+                        "",
+                        '- `Table Of Contents <toc.html>`_'
+                    ) -join "`r`n"
+                
+                    #Recurse through TOCBuild until No SubDirs Are Found
+                    Recurse-TOCBuild -SphinxDirectory $SphinxDirectory -TOCBuild $TOCBuild -CurrTocLine "" -IndexFileName $IndexRSTPath -TOCHeader $IndexRSTHeader -TOCFooter $IndexRSTFooter
+                    ########################
+                }
+                
+                function Create-TOCrst {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    Write-Host '#####################################################################'
+                    Write-Host 'Creating TOC.rst'
+                    
+                    $SourceDir = "{0}\source" -f $SphinxDir
+                    Set-Location $SourceDir -Verbose
+                    
+                    $TOCRSTFilePath = "{0}\toc.rst" -f $SourceDir
+                    New-Item -Path $TOCRSTFilePath -ItemType File -Force | Out-Null
+                
+                    Write-Host '#####################################################################'
+                    Write-Host 'Populating TOC.rst'
+                    
+                    $TOCFilePath = "{0}\toc.md" -f $SourceDir
+                    $TOCFile = Get-ChildItem -Path $TOCFilePath
+                    $TOCContents = (Get-Content -Path $TOCFile).Replace("`t", "    ")
+                
+                    $RSTHeader = (
+                        "Table of Contents",
+                        "=================",
+                        ""
+                    ) -join "`r`n"
+                
+                    Set-Content -Path $TOCRSTFilePath -Value $RSTHeader -Verbose
+                    
+                    $RSTList = $TOCContents.Replace("*","-")
+                    
+                    For($i = 0; $i -lt $RSTList.Length; $i++)
+                    {
+                        $CurrLine = $RSTList[$i]    
+                        $CurrIndex = $CurrLine.IndexOf("-")
+                        if($i -gt 1 -and $CurrIndex -gt -1 -and $i -lt $RSTList.Length -1)
+                        {
+                            $PrevLine = $RSTList[$i -1]
+                            $PrevIndex = $PrevLine.IndexOf("-")
+                            if($CurrIndex -ne $PrevIndex -and $PrevIndex -gt -1)
+                            {
+                                $RSTList[$i -1] = "{0}`r`n" -f $PrevLine
+                            }
+                        }
+                        
+                    }
+                    
+                    $RSTList = $RSTList.Replace("(", "<")
+                    $RSTList = $RSTList.Replace(")", ">``_")
+                    $RSTList = $RSTList.Replace("]", " ")
+                    $RSTList = $RSTList.Replace("[", "``")
+                    $RSTList = $RSTList.Replace(".md", ".html")
+                    Add-Content -Path $TOCRSTFilePath -Value $RSTList -Verbose
+                
+                }
+                
+                function Recurse-TOCBuild {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory,
+                        [parameter(Mandatory=$true)]
+                        $TOCBuild,
+                        [parameter(Mandatory=$true)]
+                        $CurrTocLine,
+                        [parameter(Mandatory=$true)]
+                        $IndexFileName,
+                        [parameter(Mandatory=$true)]
+                        $TOCHeader,
+                        [parameter(Mandatory=$true)]
+                        $TOCFooter
+                    )
+                    #SET DIRECTORY TO SOURCE
+                    $SourceDir = "{0}\source" -f $SphinxDirectory
+                    Set-Location $SourceDir -Verbose
+                
+                    #STRING VARIABLES
+                    $NewTocTreeLine = '.. toctree::'
+                    $NewMaxDepthLine = '   :maxdepth: '
+                    $NewNamesOnlyLine = '   :titlesonly:'
+                    $NewIndentSpace = '   '
+                
+                    #################################################################################################    
+                    # Create RST
+                    $NewIndexRST = New-Item -Path $IndexFileName -ItemType File -Force -Verbose 
+                
+                    #################################################################################################    
+                    #ARRAY TO HOLD LINES TO WRITE TO FILE
+                    $IndexRSTContent = @()
+                
+                    #################################################################################################    
+                    #Get Recursion Level from Source Folder
+                    $count = 0
+                    $parent = $NewIndexRST.Directory
+                    While($parent.FullName -ne $SourceDir)
+                    {
+                        Write-Host $parent
+                        $parent = Get-Item $parent.Parent.FullName
+                        $count++
+                    }
+                    Write-Host $count
+                    $folderStr = "./"
+                    if($count -gt 0)
+                    {
+                        $folderStr = $("../" * $count)
+                    }
+                
+                    #Populate NewTOCLines
+                    #################################################################################################   
+                
+                    $IndexRSTContent += $NewTocTreeLine
+                    $IndexRSTContent += "{0}0" -f $NewMaxDepthLine
+                    $IndexRSTContent += $NewNamesOnlyLine
+                    $IndexRSTContent += ""
+                
+                    # Add Self
+                    #################################################################################################
+                    #if($CurrTocLine -ne "./Index.md" -and $CurrTocLine -ne "")
+                    if($CurrTocLine -ne "")
+                    {
+                        $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $CurrTocLine.Replace("./",$folderStr)
+                    }
+                    
+                    # Loop Through Each Item
+                    #################################################################################################
+                    $TOCBuild | ForEach-Object {
+                        $CurrTOC = $_
+                        If($CurrTOC.TOCSubDir.Count -eq 0)
+                        {
+                            Write-Host "Populating Root Directory (No Sub-Directories)"
+                            $CurrSub = $CurrTOC
+                            $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $CurrSub.TOCPath.Replace("./",$folderStr)
+                        }
+                        ElseIf ($CurrTOC.TOCSubDir.Count -gt 0)
+                        {
+                            Write-Host "Populating Directory With Sub-Directories"
+                            $CurrSub = $CurrTOC
+                
+                            #FIND PATH FOR TOC WITH SUB
+                            $SubPathDirectoryIndex = $CurrSub.TOCPath.LastIndexOf("/")
+                            $SubPathDirectory = $CurrSub.TOCPath.Substring(0,$SubPathDirectoryIndex + 1)
+                            Write-Host "####### " + $SubPathDirectory
+                            $SubPathName = "{0}_index.rst" -f $CurrSub.TOCName
+                            $SubFile = "{0}{1}" -f $SubPathDirectory, $SubPathName
+                        
+                            #GENERATE CURRSUB PATH TO NEW PATH
+                            $TOCLine = $CurrSub.TOCPath
+                
+                            #ADD NEW INDEX TO CURRENT LEVEL INDEX
+                            $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $SubFile.Replace("./",$folderStr)
+                
+                            #GENERATE HEADER
+                            $NewIndexHeader = @()
+                            $NewIndexHeader += $CurrSub.TOCName
+                            $NewIndexHeader += $("=" * $CurrSub.TOCName.Length)
+                
+                            #GENERATE FOOTER
+                            $NewIndexFooter = $TOCFooter
+                            #$NewIndexFooter += "" #Not generating footers be default
+                
+                            #RECURSE
+                            Recurse-TOCBuild -SphinxDirectory $SphinxDirectory -TOCBuild $CurrSub.TOCSubDir -CurrTocLine $TOCLine -IndexFileName $SubFile -TOCHeader $NewIndexHeader -TOCFooter $NewIndexFooter
+                        }
+                    }
+                
+                    #Populate Root Directorys (No SubDirs)
+                    #################################################################################################
+                    #Write-Host "Populating Root Directories (No Sub-Directories)"
+                    ##$NoSubDir = $TOCBuild | Where-Object {$_.TOCSubDir.Count -eq 0 -and $_.TOCName -ne 'Home'}
+                    #$NoSubDir = $TOCBuild | Where-Object {$_.TOCSubDir.Count -eq 0}
+                    #$NoSubDir | ForEach-Object{
+                    #    $CurrSub = $_
+                    #    $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $CurrSub.TOCPath.Replace("./",$folderStr)
+                    #}
+                
+                    #################################################################################################    
+                    #Populate Directories with SubDirs
+                    #Write-Host "Populating Directories With Sub-Directories"
+                    #
+                    #$HasSubDir = $TOCBuild | Where-Object {$_.TOCSubDir.Count -gt 0}
+                    #
+                    #$HasSubDir | ForEach-Object {
+                    #    $CurrSub = $_
+                    #
+                    #    #FIND PATH FOR TOC WITH SUB
+                    #    $SubPathDirectoryIndex = $CurrSub.TOCPath.LastIndexOf("/")
+                    #    $SubPathDirectory = $CurrSub.TOCPath.Substring(0,$SubPathDirectoryIndex + 1)
+                    #    Write-Host "####### " + $SubPathDirectory
+                    #    $SubPathName = "{0}_index.rst" -f $CurrSub.TOCName
+                    #    $SubFile = "{0}{1}" -f $SubPathDirectory, $SubPathName
+                    #    
+                    #    #GENERATE CURRSUB PATH TO NEW PATH
+                    #    $TOCLine = $CurrSub.TOCPath
+                    #
+                    #    #ADD NEW INDEX TO CURRENT LEVEL INDEX
+                    #    $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $SubFile.Replace("./",$folderStr)
+                    #
+                    #    #GENERATE HEADER
+                    #    $NewIndexHeader = @()
+                    #    $NewIndexHeader += $CurrSub.TOCName
+                    #    $NewIndexHeader += $("=" * $CurrSub.TOCName.Length)
+                    #
+                    #    #GENERATE FOOTER
+                    #    $NewIndexFooter = $TOCFooter
+                    #    #$NewIndexFooter += "" #Not generating footers be default
+                    #
+                    #    #RECURSE
+                    #    Recurse-TOCBuild -SphinxDirectory $SphinxDirectory -TOCBuild $CurrSub.TOCSubDir -CurrTocLine $TOCLine -IndexFileName $SubFile -TOCHeader $NewIndexHeader -TOCFooter $NewIndexFooter
+                    #}
+                    #################################################################################################    
+                    #Put it all together
+                    Write-Host "Putting Everything Together"
+                    Set-Content -Path $NewIndexRST.FullName -Value $TOCHeader -Force -Verbose
+                    $IndexRSTContent | ForEach-Object {
+                        Add-Content -Path $NewIndexRST.FullName -Value $_ -Verbose
+                    }
+                    Add-Content -Path $NewIndexRST.FullName -Value $TOCFooter -Verbose
+                
+                }
+                
+                
+                
+                #Create TOCBuild List From TOC.MD
+                $TOCBuild = Build-TOCList `
+                    -SphinxDirectory $SphinxDir
+                
+                #Populate TOC.rst and toctree index.rst
+                Create-TOCrst `
+                    -SphinxDirectory $SphinxDir 
+                
+                Build-TOCrst `
+                    -SphinxDirectory $SphinxDir `
+                    -TOCBuild $TOCBuild
+              workingDirectory: '$(TempDir)'
+          - task: PowerShell@2
+            displayName: 'PopulateHTML'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $SphinxDir = $env:SphinxDir
+                
+                function Build-HTML {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    Write-Host '#####################################################################'
+                    Write-Host 'Building HTML'
+                    
+                    $SourceDir = "{0}\source" -f $SphinxDirectory
+                    Set-Location $SourceDir -Verbose
+                    $CleanHTML = "{0}\make.bat clean" -f $SphinxDirectory
+                    Invoke-Expression $CleanHTML -Verbose
+                    
+                    $BuildHTML = "{0}\make.bat html" -f $SphinxDirectory
+                    Invoke-Expression $BuildHTML -Verbose
+                }
+                
+                function Apply-LandingPage {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory,
+                        [parameter(Mandatory=$true)]
+                        $FromPage,
+                        [parameter(Mandatory=$true)]
+                        $ToPage
+                    )
+                
+                    $HtmlDirectory = "{0}\build\Html" -f $SphinxDirectory
+                    Set-Location $HtmlDirectory -Verbose
+                
+                    $IndexHTMLPath = "{0}\{1}" -f $HtmlDirectory, $ToPage
+                    $HomeHTMLPath = "{0}\{1}" -f $HtmlDirectory, $FromPage
+                
+                    $IndexFile = Get-ChildItem -Path $IndexHTMLPath
+                    $HomeFile = Get-ChildItem -Path $HomeHTMLPath
+                
+                    #Make Backup of Index File
+                    $IndexFile | Copy-Item -Destination $("{0}\index_backup.html" -f $HtmlDirectory)
+                
+                    $IndexContent = Get-Content -Path $IndexHTMLPath     
+                    $HomeContent = Get-Content -Path $HomeHTMLPath
+                
+                    $IndexStartIndex = $IndexFile | Select-String -SimpleMatch "<section"
+                    $IndexEndIndex = $IndexFile | Select-String -SimpleMatch "</section>"
+                
+                    $HomeStartIndex = $HomeFile | Select-String -SimpleMatch "<section"
+                    $HomeEndIndex = $HomeFile | Select-String -SimpleMatch "</section>"
+                    
+                    $IndexSelection = $IndexContent[($IndexStartIndex.LineNumber[0] - 1)..($IndexEndIndex.LineNumber[0] - 1)]
+                    $HomeSelection = $HomeContent[($HomeStartIndex.LineNumber[0] - 1)..($HomeEndIndex.LineNumber[0]-1)]
+                
+                    $IndexBefore = $IndexContent[0..($IndexStartIndex.LineNumber[0] - 2)]
+                    $IndexAfter = $IndexContent[($IndexEndIndex.LineNumber[0])..($IndexContent.Length[0] -1)]
+                
+        
+                    $IndexReplacement = @()
+                    $IndexReplacement += $IndexBefore
+                    $IndexReplacement += $HomeSelection
+                    $IndexReplacement += $IndexAfter
+        
+                    $IndexFooterLine = $IndexReplacement | Where-Object {$_ -like "*<footer>*"}
+                    $IndexFooterIndex = [array]::IndexOf($IndexReplacement, $IndexFooterLine)
+                
+                    $TOCSection = @(
+                    '<div class="section" id="table-of-contents">',
+                    '    <h2>Table Of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>',
+                    '    <ul class="simple">',
+                    '        <li><p><a class="reference external" href="toc.html">Table Of Contents</a></p></li>',
+                    '    </ul>',
+                    '</div>',
+                    $IndexFooterLine
+                    ) -join "`r`n"
+                    
+                  
+                    $IndexReplacement[$IndexFooterIndex] = $TOCSection
+                
+                    $IndexReplacement | Set-Content -Path $IndexHTMLPath 
+                }
+                
+                function Clean-NGINX {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    Write-Host '#####################################################################'
+                    Write-Host 'Renaming Index.html for NGINX reasons'
+                    
+                    $BuildDir = "{0}\build\html" -f $SphinxDirectory
+                    Set-Location $BuildDir -Verbose
+                    $IndexHTMLPath = "{0}\Index.html" -f $BuildDir
+                    Rename-Item -Path $IndexHTMLPath -NewName "index.html" -Force -Verbose
+                }
+                
+                
+                
+                Build-HTML `
+                    -SphinxDirectory $SphinxDir
+                
+                #Set Home Page content into Index
+                Apply-LandingPage -SphinxDirectory $SphinxDir -FromPage "home.html" -ToPage "index.html"
+                
+                #rename Index.html for NGINX reasons
+                Clean-NGINX `
+                    -SphinxDirectory $SphinxDir
+              workingDirectory: '$(TempDir)'
+          - task: PowerShell@2
+            displayName: 'BuildDockerFile'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $SphinxDir = $env:SphinxDir
+                
+                function Build-DockerFile {
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory
+                    )
+                    Write-Host '#####################################################################'
+                    Write-Host 'Building DockerFile'
+                    $BuildDir = "{0}\build\html" -f $SphinxDirectory
+                    Set-Location $BuildDir -Verbose
+                    
+                    $DockerPath = "{0}\Dockerfile" -f $BuildDir
+                    New-Item -Path $DockerPath -ItemType File -Force -Verbose | Out-Null
+                    
+                    $DockerFile = Get-ChildItem -Path $DockerPath
+                    Set-Content -Path $DockerPath -Value 'FROM nginx:latest' -Force -Verbose
+                    Add-Content -Path $DockerPath -Value 'COPY . /usr/share/nginx/html' -Force -Verbose
+                }
+                
+                Build-DockerFile `
+                    -SphinxDirectory $SphinxDir
+              workingDirectory: '$(TempDir)'
+          - task: PowerShell@2
+            displayName: 'CopyHTMLToArtifactStagingDir'
+            inputs:
+              targetType: 'inline'
+              script: |
+                $FromDir = "$env:SphinxDir\build\html\*"
+                $ToDir = "$(Build.ArtifactStagingDirectory)"
+                                
+                Copy-Item -Path $FromDir -Destination $ToDir -Recurse -Force -Verbose
+              workingDirectory: '$(TempDir)'
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+              ArtifactName: 'NuvIoTDocArtifact'
+              publishLocation: 'Container'
+
+          - task: CmdLine@2
+            displayName: 'Show Tree'
+            inputs:
+              script: |
+                echo "Structure of work folder of this pipeline:"
+                tree $(Agent.WorkFolder)\1 /f /A
+                echo "Artifact Staging Directory"
+                echo $(Build.ArtifactStagingDirectory)
+
+  - stage: 'Create_Docker_From_Artifact'
+    dependsOn: Build_Artifact
+    pool: 
+      vmImage: ubuntu-latest
+    variables:
+        ImageVer: $[ stageDependencies.Build_Artifact.CreateArtifact.outputs['SetProjVersion.ProjectVersion'] ]
+        ImageName: 'v$(ImageVer)'
+    jobs:
+    - job : 'CreateDocker'
+      displayName: 'Building Docker From Artifact'
+      continueOnError: false
+      steps: 
+        - task: DownloadPipelineArtifact@2
+          inputs:
+            buildType: 'current'
+            artifactName: 'NuvIoTDocArtifact'
+            targetPath: '$(Build.ArtifactStagingDirectory)'
+        - task: PowerShell@2
+          inputs:
+            targetType: 'inline'
+            script: |
+              function Create-VersionNumber {
+                  Write-Host "Creating Version Number..."    
+                  $end = Get-Date
+                  $start = Get-Date "5/17/2017"
+                  $today = Get-Date
+                  $today = $today.ToShortDateString()
+                  $today = Get-Date $today
+                  
+                  $major = 1
+                  $minor = 6 
+                  
+                  $minutes = New-TimeSpan -Start $today -End $end
+                  $revisionNumber = (New-TimeSpan -Start $start -End $end).Days
+                  $buildNumber = ("{0:00}" -f [math]::Round($minutes.Hours)) + ("{0:00}" -f ([math]::Round($minutes.Minutes)))
+                  $pv = "$major.$minor.$revisionNumber.$buildNumber"
+                  Write-Host ("Current Version Number: {0}" -f $pv)
+                  return $pv
+              }
+              
+              
+              $ProjectVersion = Create-VersionNumber
+              Write-Host "##vso[task.setvariable variable=SetProjectVersion;isOutput=true]$ProjectVersion"
+        - task: Docker@2
+          inputs:
+            containerRegistry: 'Docker Hub Procedure Connector'
+            repository: 'nuviot/nuviot-doc-images'
+            command: 'buildAndPush'
+            Dockerfile: '$(Build.ArtifactStagingDirectory)/Dockerfile'
+            tags: '$(ImageName)'
+
+
+
+
+        - task: CmdLine@2
+          inputs:
+            script: |
+              echo "Build.ArtifactStagingDirectory:" 
+              
+              echo "$(Build.ArtifactStagingDirectory)"
+              
+              echo "Build.BinariesDirectory:" 
+              
+              echo "$(Build.BinariesDirectory)"
+              
+              echo "Build.SourcesDirectory:"
+              
+              echo "$(Build.SourcesDirectory)"
+              
+              echo "Pipeline.WorkSpace"
+              
+              echo "$(Pipeline.Workspace)"
