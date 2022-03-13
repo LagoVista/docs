@@ -8,8 +8,7 @@ updated: 20210928
 createdby: JennyWrenWolf
 updatedby: JennyWrenWolf
 
-Notes: Wording in Example, remove versioning and custom settings.  - Last sentence of example? Ready for review  9/9 - definition - not nece insturctions but the whole package.  9/9 - reword example and definition
-9/14 - I thinkRoute and Device Configuration should be left out of the example. Done.  Check Links
+Notes: Wording in Example, remove versioning and custom settings.  - Last sentence of example? Ready for review  9/9 - definition - not nece insturctions but the whole package.  9/9 - reword example and definition 9/14 - I thinkRoute and Device Configuration should be left out of the example. Done.  Check Links
 ---
 [Home](../Index.md) > [Glossary](./Index.md)
 

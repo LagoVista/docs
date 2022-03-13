@@ -1,8 +1,7 @@
 ---
 title: Device Repository
 keywords: 
-
-status:new new
+status: new
 created: 20210903
 updated: 20210903
 createdby: JennyWrenWolf
