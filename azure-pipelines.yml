@@ -768,64 +768,63 @@ stages:
                 
                 function Apply-LandingPage {
                     Param(
-                        [parameter(Mandatory=$true)]
-                        $SphinxDirectory,
-                        [parameter(Mandatory=$true)]
-                        $FromPage,
-                        [parameter(Mandatory=$true)]
-                        $ToPage
-                    )
-                
-                    $HtmlDirectory = "{0}\build\Html" -f $SphinxDirectory
-                    Set-Location $HtmlDirectory -Verbose
-                
-                    $IndexHTMLPath = "{0}\{1}" -f $HtmlDirectory, $ToPage
-                    $HomeHTMLPath = "{0}\{1}" -f $HtmlDirectory, $FromPage
-                
-                    $IndexFile = Get-ChildItem -Path $IndexHTMLPath
-                    $HomeFile = Get-ChildItem -Path $HomeHTMLPath
-                
-                    #Make Backup of Index File
-                    $IndexFile | Copy-Item -Destination $("{0}\index_backup.html" -f $HtmlDirectory)
-                
-                    $IndexContent = Get-Content -Path $IndexHTMLPath     
-                    $HomeContent = Get-Content -Path $HomeHTMLPath
-                
-                    $IndexStartIndex = $IndexFile | Select-String -SimpleMatch "<section"
-                    $IndexEndIndex = $IndexFile | Select-String -SimpleMatch "</section>"
-                
-                    $HomeStartIndex = $HomeFile | Select-String -SimpleMatch "<section"
-                    $HomeEndIndex = $HomeFile | Select-String -SimpleMatch "</section>"
-                    
-                    $IndexSelection = $IndexContent[($IndexStartIndex.LineNumber[0] - 1)..($IndexEndIndex.LineNumber[0] - 1)]
-                    $HomeSelection = $HomeContent[($HomeStartIndex.LineNumber[0] - 1)..($HomeEndIndex.LineNumber[0]-1)]
-                
-                    $IndexBefore = $IndexContent[0..($IndexStartIndex.LineNumber[0] - 2)]
-                    $IndexAfter = $IndexContent[($IndexEndIndex.LineNumber[0])..($IndexContent.Length[0] -1)]
-                
-        
-                    $IndexReplacement = @()
-                    $IndexReplacement += $IndexBefore
-                    $IndexReplacement += $HomeSelection
-                    $IndexReplacement += $IndexAfter
-        
-                    $IndexFooterLine = $IndexReplacement | Where-Object {$_ -like "*<footer>*"}
-                    $IndexFooterIndex = [array]::IndexOf($IndexReplacement, $IndexFooterLine)
-                
-                    $TOCSection = @(
-                    '<div class="section" id="table-of-contents">',
-                    '    <h2>Table Of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>',
-                    '    <ul class="simple">',
-                    '        <li><p><a class="reference external" href="toc.html">Table Of Contents</a></p></li>',
-                    '    </ul>',
-                    '</div>',
-                    $IndexFooterLine
-                    ) -join "`r`n"
-                    
-                  
-                    $IndexReplacement[$IndexFooterIndex] = $TOCSection
-                
-                    $IndexReplacement | Set-Content -Path $IndexHTMLPath 
+                            [parameter(Mandatory=$true)]
+                            $SphinxDirectory,
+                            [parameter(Mandatory=$true)]
+                            $FromPage,
+                            [parameter(Mandatory=$true)]
+                            $ToPage
+                        )
+
+                        $HtmlDirectory = "{0}\build\Html" -f $SphinxDirectory
+                        Set-Location $HtmlDirectory -Verbose
+
+                        $IndexHTMLPath = "{0}\{1}" -f $HtmlDirectory, $ToPage
+                        $HomeHTMLPath = "{0}\{1}" -f $HtmlDirectory, $FromPage
+
+                        $IndexFile = Get-ChildItem -Path $IndexHTMLPath
+                        $HomeFile = Get-ChildItem -Path $HomeHTMLPath
+
+                        #Make Backup of Index File
+                        $IndexFile | Copy-Item -Destination $("{0}\index_backup.html" -f $HtmlDirectory)
+
+                        $IndexContent = Get-Content -Path $IndexHTMLPath     
+                        $HomeContent = Get-Content -Path $HomeHTMLPath
+
+                        $IndexStartIndex = $IndexFile | Select-String -SimpleMatch "<section"
+                        $IndexEndIndex = $IndexFile | Select-String -SimpleMatch "</section>"
+
+                        $HomeStartIndex = $HomeFile | Select-String -SimpleMatch "<section"
+                        $HomeEndIndex = $HomeFile | Select-String -SimpleMatch "</section>"
+
+                        $IndexSelection = $IndexContent[($IndexStartIndex.LineNumber - 1)..($IndexEndIndex.LineNumber-1)]
+                        $HomeSelection = $HomeContent[($HomeStartIndex.LineNumber - 1)..($HomeEndIndex.LineNumber-1)]
+
+                        $IndexBefore = $IndexContent[0..($IndexStartIndex.LineNumber - 2)]
+                        $IndexAfter = $IndexContent[($IndexEndIndex.LineNumber)..($IndexContent.Length -1)]
+
+                        $IndexReplacement = @()
+                        $IndexReplacement += $IndexBefore
+                        $IndexReplacement += $HomeSelection
+                        $IndexReplacement += $IndexAfter
+
+                        $IndexFooterLine = $IndexReplacement | Where-Object {$_ -like "*<footer>*"}
+                        $IndexFooterIndex = [array]::IndexOf($IndexReplacement, $IndexFooterLine)
+
+                        $TOCSection = @(
+                        '<div class="section" id="table-of-contents">',
+                        '    <h2>Table Of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>',
+                        '    <ul class="simple">',
+                        '        <li><p><a class="reference external" href="toc.html">Table Of Contents</a></p></li>',
+                        '    </ul>',
+                        '</div>',
+                        $IndexFooterLine
+                        ) -join "`r`n"
+
+                        $IndexReplacement[$IndexFooterIndex] = $TOCSection
+
+
+                        $IndexReplacement | Set-Content -Path $IndexHTMLPath 
                 }
                 
                 function Clean-NGINX {
@@ -849,8 +848,8 @@ stages:
                 Apply-LandingPage -SphinxDirectory $SphinxDir -FromPage "home.html" -ToPage "index.html"
                 
                 #rename Index.html for NGINX reasons
-                #Clean-NGINX `
-                 #   -SphinxDirectory $SphinxDir
+                Clean-NGINX `
+                    -SphinxDirectory $SphinxDir
               workingDirectory: '$(TempDir)'
 
           - task: PowerShell@2
