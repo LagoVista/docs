@@ -22,7 +22,7 @@ When you upgrade your account from a trial account to put your application into 
 you will register a credit card with [Stripe](https://www.stripe.com) (your [credit card information](CreditCardTransactions.md) 
 is never stored in our system).
 
-Once the invoice has been created, a transaction will be charged to your credit card for the ammount of your invoice.  In addition
+Once the invoice has been created, a transaction will be charged to your credit card for the amount of your invoice.  In addition
 an email will be sent to the billing contact of organization for the subscription with details of what was charged.
 
 Your invoice and details will always be available to be reviewed once it has been created.

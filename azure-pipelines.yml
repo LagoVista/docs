@@ -741,6 +741,7 @@ stages:
                     -SphinxDirectory $SphinxDir `
                     -TOCBuild $TOCBuild
               workingDirectory: '$(TempDir)'
+
           - task: PowerShell@2
             displayName: 'PopulateHTML'
             inputs:
@@ -840,19 +841,18 @@ stages:
                     $IndexHTMLPath = "{0}\Index.html" -f $BuildDir
                     Rename-Item -Path $IndexHTMLPath -NewName "index.html" -Force -Verbose
                 }
-                
-                
-                
+            
                 Build-HTML `
                     -SphinxDirectory $SphinxDir
                 
                 #Set Home Page content into Index
-                Apply-LandingPage -SphinxDirectory $SphinxDir -FromPage "home.html" -ToPage "index.html"
+                #Apply-LandingPage -SphinxDirectory $SphinxDir -FromPage "home.html" -ToPage "index.html"
                 
                 #rename Index.html for NGINX reasons
-                Clean-NGINX `
-                    -SphinxDirectory $SphinxDir
+                #Clean-NGINX `
+                 #   -SphinxDirectory $SphinxDir
               workingDirectory: '$(TempDir)'
+
           - task: PowerShell@2
             displayName: 'BuildDockerFile'
             inputs:
