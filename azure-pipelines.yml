@@ -340,7 +340,7 @@ stages:
                     [TOCDirectory[]]$TOCSubDir
                 }
                 
-                function Build-TOCList {
+               function Build-TOCList {
                     Param(
                         [parameter(Mandatory=$true)]
                         $SphinxDirectory
@@ -352,15 +352,11 @@ stages:
                     $TOCFilePath = "{0}\toc.md" -f $SourceDir
                     $TOCFile = Get-ChildItem -Path $TOCFilePath
                     $TOCContents = (Get-Content -Path $TOCFile).Replace("`t", "    ")
-                
-                
-                
+
                     #Build TOCBuild list
                     [TOCDirectory[]]$TOCBuild = @()
                     $TOCContents | ForEach-Object {
                         $CurrTOC = $_
-                        Write-Host "###################"
-                        Write-Host $CurrTOC
                         if($CurrToc.StartsWith("`*"))
                         {
                             $o = [TOCDirectory]::new()
@@ -470,42 +466,8 @@ stages:
                             
                         }
                     }
-                
+
                     return $TOCBuild
-                }
-                
-                function Build-TOCrst {   
-                    Param(
-                        [parameter(Mandatory=$true)]
-                        $SphinxDirectory,
-                        [parameter(Mandatory=$true)]
-                        $TOCBuild
-                    )
-                    Write-Host '#####################################################################'
-                    Write-Host 'Populating TOCTREE index.rst'
-                
-                    $SourceDir = "{0}\source" -f $SphinxDirectory
-                    Set-Location $SourceDir -Verbose
-                
-                    $IndexRSTPath = "{0}\index.rst" -f $SourceDir
-                
-                    $IndexRSTHeader = (
-                        "NuvIoT Project's Documentation",
-                        "==============================",
-                        ""
-                    ) -join "`r`n"
-                
-                    $IndexRSTFooter = (
-                        "",
-                        "Table Of Contents",
-                        "^^^^^^^^^^^^^^^^^",
-                        "",
-                        '- `Table Of Contents <toc.html>`_'
-                    ) -join "`r`n"
-                
-                    #Recurse through TOCBuild until No SubDirs Are Found
-                    Recurse-TOCBuild -SphinxDirectory $SphinxDirectory -TOCBuild $TOCBuild -CurrTocLine "" -IndexFileName $IndexRSTPath -TOCHeader $IndexRSTHeader -TOCFooter $IndexRSTFooter
-                    ########################
                 }
                 
                 function Create-TOCrst {
@@ -521,20 +483,20 @@ stages:
                     
                     $TOCRSTFilePath = "{0}\toc.rst" -f $SourceDir
                     New-Item -Path $TOCRSTFilePath -ItemType File -Force | Out-Null
-                
+
                     Write-Host '#####################################################################'
                     Write-Host 'Populating TOC.rst'
                     
                     $TOCFilePath = "{0}\toc.md" -f $SourceDir
                     $TOCFile = Get-ChildItem -Path $TOCFilePath
                     $TOCContents = (Get-Content -Path $TOCFile).Replace("`t", "    ")
-                
+
                     $RSTHeader = (
                         "Table of Contents",
                         "=================",
                         ""
                     ) -join "`r`n"
-                
+
                     Set-Content -Path $TOCRSTFilePath -Value $RSTHeader -Verbose
                     
                     $RSTList = $TOCContents.Replace("*","-")
@@ -561,9 +523,9 @@ stages:
                     $RSTList = $RSTList.Replace("[", "``")
                     $RSTList = $RSTList.Replace(".md", ".html")
                     Add-Content -Path $TOCRSTFilePath -Value $RSTList -Verbose
-                
-                }
-                
+
+                } 
+
                 function Recurse-TOCBuild {
                     Param(
                         [parameter(Mandatory=$true)]
@@ -582,21 +544,21 @@ stages:
                     #SET DIRECTORY TO SOURCE
                     $SourceDir = "{0}\source" -f $SphinxDirectory
                     Set-Location $SourceDir -Verbose
-                
+
                     #STRING VARIABLES
                     $NewTocTreeLine = '.. toctree::'
                     $NewMaxDepthLine = '   :maxdepth: '
                     $NewNamesOnlyLine = '   :titlesonly:'
                     $NewIndentSpace = '   '
-                
+
                     #################################################################################################    
                     # Create RST
                     $NewIndexRST = New-Item -Path $IndexFileName -ItemType File -Force -Verbose 
-                
+
                     #################################################################################################    
                     #ARRAY TO HOLD LINES TO WRITE TO FILE
                     $IndexRSTContent = @()
-                
+
                     #################################################################################################    
                     #Get Recursion Level from Source Folder
                     $count = 0
@@ -613,26 +575,26 @@ stages:
                     {
                         $folderStr = $("../" * $count)
                     }
-                
+
                     #Populate NewTOCLines
                     #################################################################################################   
-                
+
                     $IndexRSTContent += $NewTocTreeLine
                     $IndexRSTContent += "{0}0" -f $NewMaxDepthLine
                     $IndexRSTContent += $NewNamesOnlyLine
                     $IndexRSTContent += ""
-                
+
                     # Add Self
                     #################################################################################################
                     #if($CurrTocLine -ne "./Index.md" -and $CurrTocLine -ne "")
-                    if($CurrTocLine -ne "")
+                    if($CurrTocLine -ne "" -and $CurrTocLine -ne "./Index.md")
                     {
                         $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $CurrTocLine.Replace("./",$folderStr)
                     }
                     
                     # Loop Through Each Item
                     #################################################################################################
-                    $TOCBuild | ForEach-Object {
+                    $TOCBuild | Where-Object {$_.TOCName -ne 'Home'} | ForEach-Object {
                         $CurrTOC = $_
                         If($CurrTOC.TOCSubDir.Count -eq 0)
                         {
@@ -644,7 +606,7 @@ stages:
                         {
                             Write-Host "Populating Directory With Sub-Directories"
                             $CurrSub = $CurrTOC
-                
+
                             #FIND PATH FOR TOC WITH SUB
                             $SubPathDirectoryIndex = $CurrSub.TOCPath.LastIndexOf("/")
                             $SubPathDirectory = $CurrSub.TOCPath.Substring(0,$SubPathDirectoryIndex + 1)
@@ -654,68 +616,25 @@ stages:
                         
                             #GENERATE CURRSUB PATH TO NEW PATH
                             $TOCLine = $CurrSub.TOCPath
-                
+
                             #ADD NEW INDEX TO CURRENT LEVEL INDEX
                             $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $SubFile.Replace("./",$folderStr)
-                
+
                             #GENERATE HEADER
                             $NewIndexHeader = @()
                             $NewIndexHeader += $CurrSub.TOCName
                             $NewIndexHeader += $("=" * $CurrSub.TOCName.Length)
-                
+
                             #GENERATE FOOTER
                             $NewIndexFooter = $TOCFooter
                             #$NewIndexFooter += "" #Not generating footers be default
-                
+
                             #RECURSE
                             Recurse-TOCBuild -SphinxDirectory $SphinxDirectory -TOCBuild $CurrSub.TOCSubDir -CurrTocLine $TOCLine -IndexFileName $SubFile -TOCHeader $NewIndexHeader -TOCFooter $NewIndexFooter
                         }
                     }
-                
-                    #Populate Root Directorys (No SubDirs)
-                    #################################################################################################
-                    #Write-Host "Populating Root Directories (No Sub-Directories)"
-                    ##$NoSubDir = $TOCBuild | Where-Object {$_.TOCSubDir.Count -eq 0 -and $_.TOCName -ne 'Home'}
-                    #$NoSubDir = $TOCBuild | Where-Object {$_.TOCSubDir.Count -eq 0}
-                    #$NoSubDir | ForEach-Object{
-                    #    $CurrSub = $_
-                    #    $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $CurrSub.TOCPath.Replace("./",$folderStr)
-                    #}
-                
-                    #################################################################################################    
-                    #Populate Directories with SubDirs
-                    #Write-Host "Populating Directories With Sub-Directories"
-                    #
-                    #$HasSubDir = $TOCBuild | Where-Object {$_.TOCSubDir.Count -gt 0}
-                    #
-                    #$HasSubDir | ForEach-Object {
-                    #    $CurrSub = $_
-                    #
-                    #    #FIND PATH FOR TOC WITH SUB
-                    #    $SubPathDirectoryIndex = $CurrSub.TOCPath.LastIndexOf("/")
-                    #    $SubPathDirectory = $CurrSub.TOCPath.Substring(0,$SubPathDirectoryIndex + 1)
-                    #    Write-Host "####### " + $SubPathDirectory
-                    #    $SubPathName = "{0}_index.rst" -f $CurrSub.TOCName
-                    #    $SubFile = "{0}{1}" -f $SubPathDirectory, $SubPathName
-                    #    
-                    #    #GENERATE CURRSUB PATH TO NEW PATH
-                    #    $TOCLine = $CurrSub.TOCPath
-                    #
-                    #    #ADD NEW INDEX TO CURRENT LEVEL INDEX
-                    #    $IndexRSTContent += "{0}{1}" -f $NewIndentSpace, $SubFile.Replace("./",$folderStr)
-                    #
-                    #    #GENERATE HEADER
-                    #    $NewIndexHeader = @()
-                    #    $NewIndexHeader += $CurrSub.TOCName
-                    #    $NewIndexHeader += $("=" * $CurrSub.TOCName.Length)
-                    #
-                    #    #GENERATE FOOTER
-                    #    $NewIndexFooter = $TOCFooter
-                    #    #$NewIndexFooter += "" #Not generating footers be default
-                    #
-                    #    #RECURSE
-                    #    Recurse-TOCBuild -SphinxDirectory $SphinxDirectory -TOCBuild $CurrSub.TOCSubDir -CurrTocLine $TOCLine -IndexFileName $SubFile -TOCHeader $NewIndexHeader -TOCFooter $NewIndexFooter
-                    #}
+
+                    
                     #################################################################################################    
                     #Put it all together
                     Write-Host "Putting Everything Together"
@@ -724,10 +643,44 @@ stages:
                         Add-Content -Path $NewIndexRST.FullName -Value $_ -Verbose
                     }
                     Add-Content -Path $NewIndexRST.FullName -Value $TOCFooter -Verbose
-                
+
                 }
-                
-                
+
+                function Build-TOCrst {   
+                    Param(
+                        [parameter(Mandatory=$true)]
+                        $SphinxDirectory,
+                        [parameter(Mandatory=$true)]
+                        $TOCBuild
+                    )
+                    Write-Host '#####################################################################'
+                    Write-Host 'Populating TOCTREE index.rst'
+
+                    $SourceDir = "{0}\source" -f $SphinxDirectory
+                    Set-Location $SourceDir -Verbose
+
+                    $IndexRSTPath = "{0}\index.rst" -f $SourceDir
+
+                    $IndexRSTHeader = (
+                        "NuvIoT Project's Documentation",
+                        "==============================",
+                        ""
+                    ) -join "`r`n"
+
+                    $IndexRSTFooter = (
+                        "",
+                        "Table Of Contents",
+                        "^^^^^^^^^^^^^^^^^",
+                        "",
+                        '- `Table Of Contents <toc.html>`_'
+                    ) -join "`r`n"
+
+                    #Recurse through TOCBuild until No SubDirs Are Found
+                    Recurse-TOCBuild -SphinxDirectory $SphinxDirectory -TOCBuild $TOCBuild -CurrTocLine "" -IndexFileName $IndexRSTPath -TOCHeader $IndexRSTHeader -TOCFooter $IndexRSTFooter
+                    ########################
+                }
+
+
                 
                 #Create TOCBuild List From TOC.MD
                 $TOCBuild = Build-TOCList `
@@ -740,6 +693,7 @@ stages:
                 Build-TOCrst `
                     -SphinxDirectory $SphinxDir `
                     -TOCBuild $TOCBuild
+
               workingDirectory: '$(TempDir)'
 
           - task: PowerShell@2
