@@ -340,7 +340,7 @@ stages:
                     [TOCDirectory[]]$TOCSubDir
                 }
                 
-               function Build-TOCList {
+                function Build-TOCList {
                     Param(
                         [parameter(Mandatory=$true)]
                         $SphinxDirectory
@@ -643,7 +643,6 @@ stages:
                         Add-Content -Path $NewIndexRST.FullName -Value $_ -Verbose
                     }
                     Add-Content -Path $NewIndexRST.FullName -Value $TOCFooter -Verbose
-
                 }
 
                 function Build-TOCrst {   
@@ -680,8 +679,6 @@ stages:
                     ########################
                 }
 
-
-                
                 #Create TOCBuild List From TOC.MD
                 $TOCBuild = Build-TOCList `
                     -SphinxDirectory $SphinxDir
