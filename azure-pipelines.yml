@@ -796,7 +796,7 @@ stages:
                     -SphinxDirectory $SphinxDir
                 
                 #Set Home Page content into Index
-                Apply-LandingPage -SphinxDirectory $SphinxDir -FromPage "home.html" -ToPage "index.html"
+                #Apply-LandingPage -SphinxDirectory $SphinxDir -FromPage "home.html" -ToPage "index.html"
                 
                 #rename Index.html for NGINX reasons
                 Clean-NGINX `
